@@ -201,7 +201,7 @@ msgid ""
 msgstr ""
 "Nếu sự cố bạn đang báo cáo chưa có trong danh sách, hãy đăng nhập vào "
 "GitHub. Nếu bạn chưa có tài khoản GitHub, hãy tạo một tài khoản mới bằng "
-"liên kết \"Đăng ký\". Không thể gửi báo cáo lỗi ẩn danh."
+"liên kết \"Sign up\". Không thể gửi báo cáo lỗi ẩn danh."
 
 #: ../../bugs.rst:72
 #, fuzzy
@@ -209,13 +209,13 @@ msgid ""
 "Being now logged in, you can submit an issue. Click on the \"New issue\" "
 "button in the top bar to report a new issue."
 msgstr ""
-"Hiện đang đăng nhập, bạn có thể gửi một vấn đề. Nhấp vào nút \"Vấn đề mới\" "
+"Hiện đang đăng nhập, bạn có thể gửi một vấn đề. Nhấp vào nút \"New issue\" "
 "ở thanh trên cùng để báo cáo vấn đề mới."
 
 #: ../../bugs.rst:75
 #, fuzzy
 msgid "The submission form has two fields, \"Title\" and \"Comment\"."
-msgstr "Biểu mẫu gửi có hai trường là \"Tiêu đề\" và \"Nhận xét\"."
+msgstr "Biểu mẫu gửi có hai trường là \"Title\" và \"Comment\"."
 
 #: ../../bugs.rst:77
 #, fuzzy
@@ -223,7 +223,7 @@ msgid ""
 "For the \"Title\" field, enter a *very* short description of the problem; "
 "fewer than ten words is good."
 msgstr ""
-"Đối với trường \"Tiêu đề\", hãy nhập mô tả ngắn gọn *very* về sự cố; ít hơn "
+"Đối với trường \"Title\", hãy nhập mô tả ngắn gọn *very* về sự cố; ít hơn "
 "mười từ là tốt."
 
 #: ../../bugs.rst:80
@@ -234,7 +234,7 @@ msgid ""
 "extension modules were involved, and what hardware and software platform you"
 " were using (including version information as appropriate)."
 msgstr ""
-"Trong trường \"Nhận xét\", hãy mô tả chi tiết vấn đề, bao gồm cả những gì "
+"Trong trường \"Comment\", hãy mô tả chi tiết vấn đề, bao gồm cả những gì "
 "bạn dự kiến ​​sẽ xảy ra và những gì đã xảy ra.  Đảm bảo bao gồm xem có bất "
 "kỳ module mở rộng nào có liên quan hay không và bạn đang sử dụng nền tảng "
 "phần cứng và phần mềm nào (bao gồm thông tin phiên bản nếu thích hợp)."
