@@ -113,6 +113,10 @@ Vietnamese developers actually use, and translating hurts clarity.
 | path, pathname | file system paths (see also "đường dẫn" below) |
 | shell script | Unix shell scripts; do not translate to "tập lệnh shell" |
 | batch file | Windows batch files; do not translate to "tệp bó" |
+| script | kept English; do not translate to "tập lệnh" |
+| tty | terminal device; kept English |
+| shebang | `#!/usr/bin/env python3` line; kept English |
+| literal | string/number literal in source code; kept English
 | GUI, I/O | interface and I/O acronyms |
 | issue, issue tracker | kept English in prose (e.g. "trên issue tracker") |
 | raw string | Python raw-string literal (e.g. `r"..."`) |
@@ -193,6 +197,15 @@ settled, widely-understood translation.
 | bottom-up, top-down | từ dưới lên, từ trên xuống |
 | indexing | truy cập theo chỉ số (action) / chỉ số (noun) |
 | slicing | cắt lát (when translated); the Python term `slice` stays English |
+| identifier | định danh (not "mã định danh") |
+| encoding | mã hoá (the verb/noun); keep specific names like UTF-8, ASCII |
+| encoding declaration | khai báo mã hoá |
+| continuation line | dòng nối tiếp |
+| primary prompt, secondary prompt | dấu nhắc chính, dấu nhắc phụ |
+| welcome message | thông điệp chào mừng |
+| standard input, standard output | stdin, stdout (prefer the short English forms in prose) |
+| exit status | mã trạng thái thoát |
+| portable code | mã đa nền tảng (not "mã di động") |
 
 ### Judgment calls
 
