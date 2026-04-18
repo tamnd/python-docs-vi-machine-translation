@@ -205,7 +205,7 @@ Tracked per file so reviewers can see what's still fuzzy. Sizes are
 - [ ] `tutorial/floatingpoint.po` (852 lines)
 - [ ] `tutorial/inputoutput.po` (1316 lines)
 - [ ] `tutorial/modules.po` (1436 lines)
-- [ ] `tutorial/stdlib.po` (799 lines)
+- [x] `tutorial/stdlib.po` (799 lines)
 - [ ] `tutorial/stdlib2.po` (941 lines)
 - [x] `tutorial/venv.po` (487 lines)
 - [x] `tutorial/whatnow.po` (201 lines)
