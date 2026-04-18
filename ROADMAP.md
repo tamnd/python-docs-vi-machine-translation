@@ -197,7 +197,7 @@ Tracked per file so reviewers can see what's still fuzzy. Sizes are
 - [x] `tutorial/interactive.po` (109 lines)
 - [x] `tutorial/interpreter.po` (333 lines)
 - [x] `tutorial/introduction.po` (1309 lines)
-- [ ] `tutorial/appendix.po` (325 lines)
+- [x] `tutorial/appendix.po` (325 lines)
 - [ ] `tutorial/classes.po` (2141 lines)
 - [ ] `tutorial/controlflow.po` (2751 lines)
 - [ ] `tutorial/datastructures.po` (1654 lines)
