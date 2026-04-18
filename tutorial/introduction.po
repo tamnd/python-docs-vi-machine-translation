@@ -1,17 +1,16 @@
-# SOME DESCRIPTIVE TITLE.
+# Vietnamese translation of An Informal Introduction to Python tutorial.
 # Copyright (C) 2001 Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+# tamnd <tamnd87@gmail.com>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-18 10:29+0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: vi <LL@li.org>\n"
+"PO-Revision-Date: 2026-04-18 17:00+0700\n"
+"Last-Translator: tamnd <tamnd87@gmail.com>\n"
+"Language-Team: vi <tamnd87@gmail.com>\n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -20,12 +19,10 @@ msgstr ""
 "Generated-By: Babel 2.18.0\n"
 
 #: ../../tutorial/introduction.rst:5
-#, fuzzy
 msgid "An Informal Introduction to Python"
 msgstr "Giới thiệu không chính thức về Python"
 
 #: ../../tutorial/introduction.rst:7
-#, fuzzy
 msgid ""
 "In the following examples, input and output are distinguished by the "
 "presence or absence of prompts (:term:`>>>` and :term:`...`): to repeat the "
@@ -42,7 +39,6 @@ msgstr ""
 "để kết thúc một lệnh nhiều dòng."
 
 #: ../../tutorial/introduction.rst:16
-#, fuzzy
 msgid ""
 "You can use the \"Copy\" button (it appears in the upper-right corner when "
 "hovering over or tapping a code example), which strips prompts and omits "
@@ -53,7 +49,6 @@ msgstr ""
 "sao chép và dán các dòng đầu vào thẳng vào trình thông dịch."
 
 #: ../../tutorial/introduction.rst:22
-#, fuzzy
 msgid ""
 "Many of the examples in this manual, even those entered at the interactive "
 "prompt, include comments.  Comments in Python start with the hash character,"
@@ -72,12 +67,10 @@ msgstr ""
 "gõ lại các ví dụ."
 
 #: ../../tutorial/introduction.rst:30
-#, fuzzy
 msgid "Some examples::"
 msgstr "Một số ví dụ::"
 
 #: ../../tutorial/introduction.rst:32
-#, fuzzy
 msgid ""
 "# this is the first comment\n"
 "spam = 1  # and this is the second comment\n"
@@ -90,12 +83,10 @@ msgstr ""
 "text = \"# Đây không phải là bình luận vì nó nằm trong dấu nháy.\""
 
 #: ../../tutorial/introduction.rst:41
-#, fuzzy
 msgid "Using Python as a Calculator"
 msgstr "Sử dụng Python làm máy tính"
 
 #: ../../tutorial/introduction.rst:43
-#, fuzzy
 msgid ""
 "Let's try some simple Python commands.  Start the interpreter and wait for "
 "the primary prompt, ``>>>``.  (It shouldn't take long.)"
@@ -104,12 +95,10 @@ msgstr ""
 "nhắc chính ``>>>`` (không mất lâu đâu)."
 
 #: ../../tutorial/introduction.rst:50
-#, fuzzy
 msgid "Numbers"
 msgstr "Số"
 
 #: ../../tutorial/introduction.rst:52
-#, fuzzy
 msgid ""
 "The interpreter acts as a simple calculator: you can type an expression into"
 " it and it will write the value.  Expression syntax is straightforward: the "
@@ -122,7 +111,6 @@ msgstr ""
 "dùng để nhóm. Ví dụ::"
 
 #: ../../tutorial/introduction.rst:58
-#, fuzzy
 msgid ""
 ">>> 2 + 2\n"
 "4\n"
@@ -143,7 +131,6 @@ msgstr ""
 "1.6"
 
 #: ../../tutorial/introduction.rst:67
-#, fuzzy
 msgid ""
 "The integer numbers (e.g. ``2``, ``4``, ``20``) have type :class:`int`, the "
 "ones with a fractional part (e.g. ``5.0``, ``1.6``) have type "
@@ -154,7 +141,6 @@ msgstr ""
 "hiểu thêm về các kiểu số ở phần sau của hướng dẫn này."
 
 #: ../../tutorial/introduction.rst:71
-#, fuzzy
 msgid ""
 "Division (``/``) always returns a float.  To do :term:`floor division` and "
 "get an integer result you can use the ``//`` operator; to calculate the "
@@ -165,7 +151,7 @@ msgstr ""
 "dư, dùng ``%``::"
 
 #: ../../tutorial/introduction.rst:75
-#, python-format, fuzzy
+#, python-format
 msgid ""
 ">>> 17 / 3  # classic division returns a float\n"
 "5.666666666666667\n"
@@ -188,14 +174,12 @@ msgstr ""
 "17"
 
 #: ../../tutorial/introduction.rst:85
-#, fuzzy
 msgid ""
 "With Python, it is possible to use the ``**`` operator to calculate powers "
 "[#]_::"
 msgstr "Python cho phép dùng toán tử ``**`` để tính luỹ thừa [#]_::"
 
 #: ../../tutorial/introduction.rst:87
-#, fuzzy
 msgid ""
 ">>> 5 ** 2  # 5 squared\n"
 "25\n"
@@ -208,7 +192,6 @@ msgstr ""
 "128"
 
 #: ../../tutorial/introduction.rst:92
-#, fuzzy
 msgid ""
 "The equal sign (``=``) is used to assign a value to a variable. Afterwards, "
 "no result is displayed before the next interactive prompt::"
@@ -217,7 +200,6 @@ msgstr ""
 "nào hiện ra trước dấu nhắc tương tác tiếp theo::"
 
 #: ../../tutorial/introduction.rst:95
-#, fuzzy
 msgid ""
 ">>> width = 20\n"
 ">>> height = 5 * 9\n"
@@ -230,7 +212,6 @@ msgstr ""
 "900"
 
 #: ../../tutorial/introduction.rst:100
-#, fuzzy
 msgid ""
 "If a variable is not \"defined\" (assigned a value), trying to use it will "
 "give you an error::"
@@ -239,7 +220,6 @@ msgstr ""
 "sẽ gây lỗi::"
 
 #: ../../tutorial/introduction.rst:103
-#, fuzzy
 msgid ""
 ">>> n  # try to access an undefined variable\n"
 "Traceback (most recent call last):\n"
@@ -252,7 +232,6 @@ msgstr ""
 "NameError: name 'n' is not defined"
 
 #: ../../tutorial/introduction.rst:108
-#, fuzzy
 msgid ""
 "There is full support for floating point; operators with mixed type operands"
 " convert the integer operand to floating point::"
@@ -261,7 +240,6 @@ msgstr ""
 "chuyển toán hạng số nguyên sang dấu phẩy động::"
 
 #: ../../tutorial/introduction.rst:111
-#, fuzzy
 msgid ""
 ">>> 4 * 3.75 - 1\n"
 "14.0"
@@ -270,7 +248,6 @@ msgstr ""
 "14.0"
 
 #: ../../tutorial/introduction.rst:114
-#, fuzzy
 msgid ""
 "In interactive mode, the last printed expression is assigned to the variable"
 " ``_``.  This means that when you are using Python as a desk calculator, it "
@@ -281,7 +258,6 @@ msgstr ""
 "phép tính sẽ dễ dàng hơn một chút, ví dụ::"
 
 #: ../../tutorial/introduction.rst:118
-#, fuzzy
 msgid ""
 ">>> tax = 12.5 / 100\n"
 ">>> price = 100.50\n"
@@ -302,7 +278,6 @@ msgstr ""
 "113.06"
 
 #: ../../tutorial/introduction.rst:127
-#, fuzzy
 msgid ""
 "This variable should be treated as read-only by the user.  Don't explicitly "
 "assign a value to it --- you would create an independent local variable with"
@@ -313,7 +288,6 @@ msgstr ""
 "khuất biến tích hợp cùng hành vi đặc biệt của nó."
 
 #: ../../tutorial/introduction.rst:131
-#, fuzzy
 msgid ""
 "In addition to :class:`int` and :class:`float`, Python supports other types "
 "of numbers, such as :class:`~decimal.Decimal` and "
@@ -327,12 +301,10 @@ msgstr ""
 "hoặc ``J`` để biểu thị phần ảo (ví dụ ``3+5j``)."
 
 #: ../../tutorial/introduction.rst:141
-#, fuzzy
 msgid "Text"
 msgstr "Văn bản"
 
 #: ../../tutorial/introduction.rst:143
-#, fuzzy
 msgid ""
 "Python can manipulate text (represented by type :class:`str`, so-called "
 "\"strings\") as well as numbers.  This includes characters \"``!``\", words "
@@ -347,7 +319,6 @@ msgstr ""
 "(``\"...\"``) và cho kết quả như nhau [#]_."
 
 #: ../../tutorial/introduction.rst:149
-#, fuzzy
 msgid ""
 ">>> 'spam eggs'  # single quotes\n"
 "'spam eggs'\n"
@@ -364,7 +335,6 @@ msgstr ""
 "'1975'"
 
 #: ../../tutorial/introduction.rst:158
-#, fuzzy
 msgid ""
 "To quote a quote, we need to \"escape\" it, by preceding it with ``\\``. "
 "Alternatively, we can use the other type of quotation marks::"
@@ -374,7 +344,6 @@ msgstr ""
 "lại::"
 
 #: ../../tutorial/introduction.rst:161
-#, fuzzy
 msgid ""
 ">>> 'doesn\\'t'  # use \\' to escape the single quote...\n"
 "\"doesn't\"\n"
@@ -399,7 +368,6 @@ msgstr ""
 "'\"Isn\\'t,\" they said.'"
 
 #: ../../tutorial/introduction.rst:172
-#, fuzzy
 msgid ""
 "In the Python shell, the string definition and output string can look "
 "different.  The :func:`print` function produces a more readable output, by "
@@ -411,7 +379,6 @@ msgstr ""
 "quanh và in ra các ký tự thoát và ký tự đặc biệt::"
 
 #: ../../tutorial/introduction.rst:176
-#, fuzzy
 msgid ""
 ">>> s = 'First line.\\nSecond line.'  # \\n means newline\n"
 ">>> s  # without print(), special characters are included in the string\n"
@@ -428,7 +395,6 @@ msgstr ""
 "Second line."
 
 #: ../../tutorial/introduction.rst:183
-#, fuzzy
 msgid ""
 "If you don't want characters prefaced by ``\\`` to be interpreted as special"
 " characters, you can use *raw strings* by adding an ``r`` before the first "
@@ -439,7 +405,6 @@ msgstr ""
 "đầu::"
 
 #: ../../tutorial/introduction.rst:187
-#, fuzzy
 msgid ""
 ">>> print('C:\\this\\name')  # here \\t means tab, \\n means newline\n"
 "C:      his\n"
@@ -454,7 +419,6 @@ msgstr ""
 "C:\\this\\name"
 
 #: ../../tutorial/introduction.rst:193
-#, fuzzy
 msgid ""
 "There is one subtle aspect to raw strings: a raw string may not end in an "
 "odd number of ``\\`` characters; see :ref:`the FAQ entry <faq-programming-"
@@ -465,7 +429,6 @@ msgstr ""
 "backslash>` để biết thêm thông tin và cách khắc phục."
 
 #: ../../tutorial/introduction.rst:198
-#, fuzzy
 msgid ""
 "String literals can span multiple lines.  One way is using triple-quotes: "
 "``\"\"\"...\"\"\"`` or ``'''...'''``.  End-of-line characters are "
@@ -479,7 +442,6 @@ msgstr ""
 "Trong ví dụ dưới đây, dòng mới ban đầu sẽ không được đưa vào::"
 
 #: ../../tutorial/introduction.rst:204
-#, fuzzy
 msgid ""
 ">>> print(\"\"\"\\\n"
 "... Usage: thingy [OPTIONS]\n"
@@ -504,7 +466,6 @@ msgstr ""
 ">>>"
 
 #: ../../tutorial/introduction.rst:215
-#, fuzzy
 msgid ""
 "Strings can be concatenated (glued together) with the ``+`` operator, and "
 "repeated with ``*``::"
@@ -513,7 +474,6 @@ msgstr ""
 "bằng ``*``::"
 
 #: ../../tutorial/introduction.rst:218
-#, fuzzy
 msgid ""
 ">>> # 3 times 'un', followed by 'ium'\n"
 ">>> 3 * 'un' + 'ium'\n"
@@ -524,7 +484,6 @@ msgstr ""
 "'unununium'"
 
 #: ../../tutorial/introduction.rst:222
-#, fuzzy
 msgid ""
 "Two or more *string literals* (i.e. the ones enclosed between quotes) next "
 "to each other are automatically concatenated. ::"
@@ -533,7 +492,6 @@ msgstr ""
 "cạnh nhau sẽ được tự động nối lại. ::"
 
 #: ../../tutorial/introduction.rst:225
-#, fuzzy
 msgid ""
 ">>> 'Py' 'thon'\n"
 "'Python'"
@@ -542,13 +500,11 @@ msgstr ""
 "'Python'"
 
 #: ../../tutorial/introduction.rst:228
-#, fuzzy
 msgid ""
 "This feature is particularly useful when you want to break long strings::"
 msgstr "Tính năng này đặc biệt hữu ích khi cần ngắt các chuỗi dài::"
 
 #: ../../tutorial/introduction.rst:230
-#, fuzzy
 msgid ""
 ">>> text = ('Put several strings within parentheses '\n"
 "...         'to have them joined together.')\n"
@@ -561,7 +517,6 @@ msgstr ""
 "'Put several strings within parentheses to have them joined together.'"
 
 #: ../../tutorial/introduction.rst:235
-#, fuzzy
 msgid ""
 "This only works with two literals though, not with variables or "
 "expressions::"
@@ -570,7 +525,6 @@ msgstr ""
 "biến hay biểu thức::"
 
 #: ../../tutorial/introduction.rst:237
-#, fuzzy
 msgid ""
 ">>> prefix = 'Py'\n"
 ">>> prefix 'thon'  # can't concatenate a variable and a string literal\n"
@@ -597,7 +551,6 @@ msgstr ""
 "SyntaxError: invalid syntax"
 
 #: ../../tutorial/introduction.rst:249
-#, fuzzy
 msgid ""
 "If you want to concatenate variables or a variable and a literal, use "
 "``+``::"
@@ -606,7 +559,6 @@ msgstr ""
 "``+``::"
 
 #: ../../tutorial/introduction.rst:251
-#, fuzzy
 msgid ""
 ">>> prefix + 'thon'\n"
 "'Python'"
@@ -615,7 +567,6 @@ msgstr ""
 "'Python'"
 
 #: ../../tutorial/introduction.rst:254
-#, fuzzy
 msgid ""
 "Strings can be *indexed* (subscripted), with the first character having "
 "index 0. There is no separate character type; a character is simply a string"
@@ -626,7 +577,6 @@ msgstr ""
 "kích thước một::"
 
 #: ../../tutorial/introduction.rst:258
-#, fuzzy
 msgid ""
 ">>> word = 'Python'\n"
 ">>> word[0]  # character in position 0\n"
@@ -641,13 +591,11 @@ msgstr ""
 "'n'"
 
 #: ../../tutorial/introduction.rst:264
-#, fuzzy
 msgid ""
 "Indices may also be negative numbers, to start counting from the right::"
 msgstr "Chỉ số cũng có thể là số âm để đếm từ bên phải::"
 
 #: ../../tutorial/introduction.rst:266
-#, fuzzy
 msgid ""
 ">>> word[-1]  # last character\n"
 "'n'\n"
@@ -664,12 +612,10 @@ msgstr ""
 "'P'"
 
 #: ../../tutorial/introduction.rst:273
-#, fuzzy
 msgid "Note that since -0 is the same as 0, negative indices start from -1."
 msgstr "Lưu ý: vì -0 bằng 0, nên chỉ số âm bắt đầu từ -1."
 
 #: ../../tutorial/introduction.rst:275
-#, fuzzy
 msgid ""
 "In addition to indexing, *slicing* is also supported.  While indexing is "
 "used to obtain individual characters, *slicing* allows you to obtain a "
@@ -679,7 +625,6 @@ msgstr ""
 "mục dùng để lấy từng ký tự riêng lẻ, *slicing* cho phép lấy một chuỗi con::"
 
 #: ../../tutorial/introduction.rst:278
-#, fuzzy
 msgid ""
 ">>> word[0:2]  # characters from position 0 (included) to 2 (excluded)\n"
 "'Py'\n"
@@ -692,7 +637,6 @@ msgstr ""
 "'tho'"
 
 #: ../../tutorial/introduction.rst:283
-#, fuzzy
 msgid ""
 "Slice indices have useful defaults; an omitted first index defaults to zero,"
 " an omitted second index defaults to the size of the string being sliced. ::"
@@ -702,7 +646,6 @@ msgstr ""
 "chuỗi đang cắt. ::"
 
 #: ../../tutorial/introduction.rst:286
-#, fuzzy
 msgid ""
 ">>> word[:2]   # character from the beginning to position 2 (excluded)\n"
 "'Py'\n"
@@ -719,7 +662,6 @@ msgstr ""
 "'on'"
 
 #: ../../tutorial/introduction.rst:293
-#, fuzzy
 msgid ""
 "Note how the start is always included, and the end always excluded.  This "
 "makes sure that ``s[:i] + s[i:]`` is always equal to ``s``::"
@@ -728,7 +670,6 @@ msgstr ""
 "đảm ``s[:i] + s[i:]`` luôn bằng ``s``::"
 
 #: ../../tutorial/introduction.rst:296
-#, fuzzy
 msgid ""
 ">>> word[:2] + word[2:]\n"
 "'Python'\n"
@@ -741,7 +682,6 @@ msgstr ""
 "'Python'"
 
 #: ../../tutorial/introduction.rst:301
-#, fuzzy
 msgid ""
 "One way to remember how slices work is to think of the indices as pointing "
 "*between* characters, with the left edge of the first character numbered 0. "
@@ -754,7 +694,6 @@ msgstr ""
 "ví dụ::"
 
 #: ../../tutorial/introduction.rst:306
-#, fuzzy
 msgid ""
 " +---+---+---+---+---+---+\n"
 " | P | y | t | h | o | n |\n"
@@ -769,7 +708,6 @@ msgstr ""
 "-6  -5  -4  -3  -2  -1"
 
 #: ../../tutorial/introduction.rst:312
-#, fuzzy
 msgid ""
 "The first row of numbers gives the position of the indices 0...6 in the "
 "string; the second row gives the corresponding negative indices. The slice "
@@ -781,7 +719,6 @@ msgstr ""
 "giữa các cạnh được gắn nhãn *i* và *j*."
 
 #: ../../tutorial/introduction.rst:317
-#, fuzzy
 msgid ""
 "For non-negative indices, the length of a slice is the difference of the "
 "indices, if both are within bounds.  For example, the length of "
@@ -791,12 +728,10 @@ msgstr ""
 "hai đều nằm trong giới hạn. Ví dụ, độ dài của ``word[1:3]`` là 2."
 
 #: ../../tutorial/introduction.rst:321
-#, fuzzy
 msgid "Attempting to use an index that is too large will result in an error::"
 msgstr "Dùng chỉ mục quá lớn sẽ gây lỗi::"
 
 #: ../../tutorial/introduction.rst:323
-#, fuzzy
 msgid ""
 ">>> word[42]  # the word only has 6 characters\n"
 "Traceback (most recent call last):\n"
@@ -809,7 +744,6 @@ msgstr ""
 "IndexError: string index out of range"
 
 #: ../../tutorial/introduction.rst:328
-#, fuzzy
 msgid ""
 "However, out of range slice indexes are handled gracefully when used for "
 "slicing::"
@@ -818,7 +752,6 @@ msgstr ""
 "để cắt::"
 
 #: ../../tutorial/introduction.rst:331
-#, fuzzy
 msgid ""
 ">>> word[4:42]\n"
 "'on'\n"
@@ -831,7 +764,6 @@ msgstr ""
 "''"
 
 #: ../../tutorial/introduction.rst:336
-#, fuzzy
 msgid ""
 "Python strings cannot be changed --- they are :term:`immutable`. Therefore, "
 "assigning to an indexed position in the string results in an error::"
@@ -840,7 +772,6 @@ msgstr ""
 "vào một vị trí được lập chỉ mục trong chuỗi sẽ gây lỗi::"
 
 #: ../../tutorial/introduction.rst:339
-#, fuzzy
 msgid ""
 ">>> word[0] = 'J'\n"
 "Traceback (most recent call last):\n"
@@ -861,12 +792,10 @@ msgstr ""
 "TypeError: 'str' object does not support item assignment"
 
 #: ../../tutorial/introduction.rst:348
-#, fuzzy
 msgid "If you need a different string, you should create a new one::"
 msgstr "Nếu cần một chuỗi khác, hãy tạo chuỗi mới::"
 
 #: ../../tutorial/introduction.rst:350
-#, fuzzy
 msgid ""
 ">>> 'J' + word[1:]\n"
 "'Jython'\n"
@@ -879,12 +808,10 @@ msgstr ""
 "'Pypy'"
 
 #: ../../tutorial/introduction.rst:355
-#, fuzzy
 msgid "The built-in function :func:`len` returns the length of a string::"
 msgstr "Hàm tích hợp sẵn :func:`len` trả về độ dài của chuỗi::"
 
 #: ../../tutorial/introduction.rst:357
-#, fuzzy
 msgid ""
 ">>> s = 'supercalifragilisticexpialidocious'\n"
 ">>> len(s)\n"
@@ -895,12 +822,10 @@ msgstr ""
 "34"
 
 #: ../../tutorial/introduction.rst:364
-#, fuzzy
 msgid ":ref:`textseq`"
 msgstr ":ref:`textseq`"
 
 #: ../../tutorial/introduction.rst:365
-#, fuzzy
 msgid ""
 "Strings are examples of *sequence types*, and support the common operations "
 "supported by such types."
@@ -909,12 +834,10 @@ msgstr ""
 "các kiểu đó cung cấp."
 
 #: ../../tutorial/introduction.rst:368
-#, fuzzy
 msgid ":ref:`string-methods`"
 msgstr ":ref:`string-methods`"
 
 #: ../../tutorial/introduction.rst:369
-#, fuzzy
 msgid ""
 "Strings support a large number of methods for basic transformations and "
 "searching."
@@ -922,32 +845,26 @@ msgstr ""
 "Chuỗi hỗ trợ nhiều method cho các thao tác biến đổi và tìm kiếm cơ bản."
 
 #: ../../tutorial/introduction.rst:372
-#, fuzzy
 msgid ":ref:`f-strings`"
 msgstr ":ref:`f-strings`"
 
 #: ../../tutorial/introduction.rst:373
-#, fuzzy
 msgid "String literals that have embedded expressions."
 msgstr "Chuỗi ký tự có biểu thức nhúng bên trong."
 
 #: ../../tutorial/introduction.rst:375
-#, fuzzy
 msgid ":ref:`formatstrings`"
 msgstr ":ref:`formatstrings`"
 
 #: ../../tutorial/introduction.rst:376
-#, fuzzy
 msgid "Information about string formatting with :meth:`str.format`."
 msgstr "Thông tin về định dạng chuỗi với :meth:`str.format`."
 
 #: ../../tutorial/introduction.rst:378
-#, fuzzy
 msgid ":ref:`old-string-formatting`"
 msgstr ":ref:`old-string-formatting`"
 
 #: ../../tutorial/introduction.rst:379
-#, fuzzy
 msgid ""
 "The old formatting operations invoked when strings are the left operand of "
 "the ``%`` operator are described in more detail here."
@@ -956,12 +873,10 @@ msgstr ""
 "toán tử ``%``, được mô tả chi tiết hơn tại đây."
 
 #: ../../tutorial/introduction.rst:386
-#, fuzzy
 msgid "Lists"
 msgstr "Danh sách"
 
 #: ../../tutorial/introduction.rst:388
-#, fuzzy
 msgid ""
 "Python knows a number of *compound* data types, used to group together other"
 " values.  The most versatile is the *list*, which can be written as a list "
@@ -976,7 +891,6 @@ msgstr ""
 "phần tử có cùng kiểu. ::"
 
 #: ../../tutorial/introduction.rst:393
-#, fuzzy
 msgid ""
 ">>> squares = [1, 4, 9, 16, 25]\n"
 ">>> squares\n"
@@ -987,7 +901,6 @@ msgstr ""
 "[1, 4, 9, 16, 25]"
 
 #: ../../tutorial/introduction.rst:397
-#, fuzzy
 msgid ""
 "Like strings (and all other built-in :term:`sequence` types), lists can be "
 "indexed and sliced::"
@@ -996,7 +909,6 @@ msgstr ""
 "thể được lập chỉ mục và cắt lát::"
 
 #: ../../tutorial/introduction.rst:400
-#, fuzzy
 msgid ""
 ">>> squares[0]  # indexing returns the item\n"
 "1\n"
@@ -1013,12 +925,10 @@ msgstr ""
 "[9, 16, 25]"
 
 #: ../../tutorial/introduction.rst:407
-#, fuzzy
 msgid "Lists also support operations like concatenation::"
 msgstr "List cũng hỗ trợ các thao tác như nối::"
 
 #: ../../tutorial/introduction.rst:409
-#, fuzzy
 msgid ""
 ">>> squares + [36, 49, 64, 81, 100]\n"
 "[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]"
@@ -1027,7 +937,6 @@ msgstr ""
 "[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]"
 
 #: ../../tutorial/introduction.rst:412
-#, fuzzy
 msgid ""
 "Unlike strings, which are :term:`immutable`, lists are a :term:`mutable` "
 "type, i.e. it is possible to change their content::"
@@ -1036,7 +945,6 @@ msgstr ""
 "nghĩa là có thể thay đổi nội dung của chúng::"
 
 #: ../../tutorial/introduction.rst:415
-#, fuzzy
 msgid ""
 ">>> cubes = [1, 8, 27, 65, 125]  # something's wrong here\n"
 ">>> 4 ** 3  # the cube of 4 is 64, not 65!\n"
@@ -1053,7 +961,6 @@ msgstr ""
 "[1, 8, 27, 64, 125]"
 
 #: ../../tutorial/introduction.rst:422
-#, fuzzy
 msgid ""
 "You can also add new items at the end of the list, by using the "
 ":meth:`list.append` *method* (we will see more about methods later)::"
@@ -1062,7 +969,6 @@ msgstr ""
 "(chúng ta sẽ tìm hiểu thêm về method ở phần sau)::"
 
 #: ../../tutorial/introduction.rst:425
-#, fuzzy
 msgid ""
 ">>> cubes.append(216)  # add the cube of 6\n"
 ">>> cubes.append(7 ** 3)  # and the cube of 7\n"
@@ -1075,7 +981,6 @@ msgstr ""
 "[1, 8, 27, 64, 125, 216, 343]"
 
 #: ../../tutorial/introduction.rst:430
-#, fuzzy
 msgid ""
 "Simple assignment in Python never copies data. When you assign a list to a "
 "variable, the variable refers to the *existing list*. Any changes you make "
@@ -1088,7 +993,6 @@ msgstr ""
 "tới list đó.::"
 
 #: ../../tutorial/introduction.rst:435
-#, fuzzy
 msgid ""
 ">>> rgb = [\"Red\", \"Green\", \"Blue\"]\n"
 ">>> rgba = rgb\n"
@@ -1107,7 +1011,6 @@ msgstr ""
 "[\"Red\", \"Green\", \"Blue\", \"Alph\"]"
 
 #: ../../tutorial/introduction.rst:443
-#, fuzzy
 msgid ""
 "All slice operations return a new list containing the requested elements.  "
 "This means that the following slice returns a :ref:`shallow copy "
@@ -1118,7 +1021,6 @@ msgstr ""
 "<shallow_vs_deep_copy>` của list::"
 
 #: ../../tutorial/introduction.rst:447
-#, fuzzy
 msgid ""
 ">>> correct_rgba = rgba[:]\n"
 ">>> correct_rgba[-1] = \"Alpha\"\n"
@@ -1135,7 +1037,6 @@ msgstr ""
 "[\"Red\", \"Green\", \"Blue\", \"Alph\"]"
 
 #: ../../tutorial/introduction.rst:454
-#, fuzzy
 msgid ""
 "Assignment to slices is also possible, and this can even change the size of "
 "the list or clear it entirely::"
@@ -1144,7 +1045,6 @@ msgstr ""
 "thước của list hoặc xoá hoàn toàn::"
 
 #: ../../tutorial/introduction.rst:457
-#, fuzzy
 msgid ""
 ">>> letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g']\n"
 ">>> letters\n"
@@ -1179,12 +1079,10 @@ msgstr ""
 "[]"
 
 #: ../../tutorial/introduction.rst:473
-#, fuzzy
 msgid "The built-in function :func:`len` also applies to lists::"
 msgstr "Hàm tích hợp sẵn :func:`len` cũng áp dụng cho list::"
 
 #: ../../tutorial/introduction.rst:475
-#, fuzzy
 msgid ""
 ">>> letters = ['a', 'b', 'c', 'd']\n"
 ">>> len(letters)\n"
@@ -1195,7 +1093,6 @@ msgstr ""
 "4"
 
 #: ../../tutorial/introduction.rst:479
-#, fuzzy
 msgid ""
 "It is possible to nest lists (create lists containing other lists), for "
 "example::"
@@ -1203,7 +1100,6 @@ msgstr ""
 "Có thể lồng list (tạo list chứa các list khác), ví dụ::"
 
 #: ../../tutorial/introduction.rst:482
-#, fuzzy
 msgid ""
 ">>> a = ['a', 'b', 'c']\n"
 ">>> n = [1, 2, 3]\n"
@@ -1226,12 +1122,10 @@ msgstr ""
 "'b'"
 
 #: ../../tutorial/introduction.rst:495
-#, fuzzy
 msgid "First Steps Towards Programming"
 msgstr "Những bước đầu tiên tới lập trình"
 
 #: ../../tutorial/introduction.rst:497
-#, fuzzy
 msgid ""
 "Of course, we can use Python for more complicated tasks than adding two and "
 "two together.  For instance, we can write an initial sub-sequence of the "
@@ -1243,7 +1137,6 @@ msgstr ""
 "<https://en.wikipedia.org/wiki/Fibonacci_sequence>`_ như sau::"
 
 #: ../../tutorial/introduction.rst:502
-#, fuzzy
 msgid ""
 ">>> # Fibonacci series:\n"
 ">>> # the sum of two elements defines the next\n"
@@ -1276,12 +1169,10 @@ msgstr ""
 "8"
 
 #: ../../tutorial/introduction.rst:517
-#, fuzzy
 msgid "This example introduces several new features."
 msgstr "Ví dụ này giới thiệu một số tính năng mới."
 
 #: ../../tutorial/introduction.rst:519
-#, fuzzy
 msgid ""
 "The first line contains a *multiple assignment*: the variables ``a`` and "
 "``b`` simultaneously get the new values 0 and 1.  On the last line this is "
@@ -1295,7 +1186,6 @@ msgstr ""
 "thức ở vế phải được tính từ trái sang phải."
 
 #: ../../tutorial/introduction.rst:525
-#, fuzzy
 msgid ""
 "The :keyword:`while` loop executes as long as the condition (here: ``a < "
 "10``) remains true.  In Python, like in C, any non-zero integer value is "
@@ -1316,7 +1206,6 @@ msgstr ""
 "bằng) và ``!=`` (khác)."
 
 #: ../../tutorial/introduction.rst:534
-#, fuzzy
 msgid ""
 "The *body* of the loop is *indented*: indentation is Python's way of "
 "grouping statements.  At the interactive prompt, you have to type a tab or "
@@ -1338,7 +1227,6 @@ msgstr ""
 "lượng."
 
 #: ../../tutorial/introduction.rst:543
-#, fuzzy
 msgid ""
 "The :func:`print` function writes the value of the argument(s) it is given. "
 "It differs from just writing the expression you want to write (as we did "
@@ -1354,7 +1242,6 @@ msgstr ""
 "thể định dạng mọi thứ gọn gàng như sau::"
 
 #: ../../tutorial/introduction.rst:550
-#, fuzzy
 msgid ""
 ">>> i = 256*256\n"
 ">>> print('The value of i is', i)\n"
@@ -1365,7 +1252,6 @@ msgstr ""
 "The value of i is 65536"
 
 #: ../../tutorial/introduction.rst:554
-#, fuzzy
 msgid ""
 "The keyword argument *end* can be used to avoid the newline after the "
 "output, or end the output with a different string::"
@@ -1374,7 +1260,6 @@ msgstr ""
 "kết thúc đầu ra bằng một chuỗi khác::"
 
 #: ../../tutorial/introduction.rst:557
-#, fuzzy
 msgid ""
 ">>> a, b = 0, 1\n"
 ">>> while a < 1000:\n"
@@ -1391,12 +1276,10 @@ msgstr ""
 "0,1,1,2,3,5,8,13,21,34,55,89,144,233,377,610,987,"
 
 #: ../../tutorial/introduction.rst:566
-#, fuzzy
 msgid "Footnotes"
 msgstr "Chú thích cuối trang"
 
 #: ../../tutorial/introduction.rst:567
-#, fuzzy
 msgid ""
 "Since ``**`` has higher precedence than ``-``, ``-3**2`` will be interpreted"
 " as ``-(3**2)`` and thus result in ``-9``.  To avoid this and get ``9``, you"
@@ -1407,7 +1290,6 @@ msgstr ""
 "dùng ``(-3)**2``."
 
 #: ../../tutorial/introduction.rst:571
-#, fuzzy
 msgid ""
 "Unlike other languages, special characters such as ``\\n`` have the same "
 "meaning with both single (``'...'``) and double (``\"...\"``) quotes. The "
@@ -1420,11 +1302,9 @@ msgstr ""
 "thoát ``\\'``), và ngược lại."
 
 #: ../../tutorial/introduction.rst:20
-#, fuzzy
 msgid "# (hash)"
 msgstr "# (băm)"
 
 #: ../../tutorial/introduction.rst:20
-#, fuzzy
 msgid "comment"
 msgstr "chú thích"
