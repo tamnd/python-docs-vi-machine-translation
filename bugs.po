@@ -1,17 +1,15 @@
-# SOME DESCRIPTIVE TITLE.
+# Vietnamese translation of the Python documentation.
 # Copyright (C) 2001 Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-18 10:29+0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: vi <LL@li.org>\n"
+"PO-Revision-Date: 2026-04-18 12:00+0700\n"
+"Last-Translator: tamnd <tamnd87@gmail.com>\n"
+"Language-Team: Vietnamese <https://github.com/tamnd/python-docs-vi>\n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -20,12 +18,10 @@ msgstr ""
 "Generated-By: Babel 2.18.0\n"
 
 #: ../../bugs.rst:5
-#, fuzzy
 msgid "Dealing with Bugs"
 msgstr "Xử lý lỗi"
 
 #: ../../bugs.rst:7
-#, fuzzy
 msgid ""
 "Python is a mature programming language which has established a reputation "
 "for stability.  In order to maintain this reputation, the developers would "
@@ -36,7 +32,6 @@ msgstr ""
 " thiếu sót nào bạn tìm thấy trong Python."
 
 #: ../../bugs.rst:11
-#, fuzzy
 msgid ""
 "It can be sometimes faster to fix bugs yourself and contribute patches to "
 "Python as it streamlines the process and involves fewer people. Learn how to"
@@ -47,12 +42,10 @@ msgstr ""
 ":ref:`contribute <contributing-to-python>`."
 
 #: ../../bugs.rst:16
-#, fuzzy
 msgid "Documentation bugs"
 msgstr "Lỗi tài liệu"
 
 #: ../../bugs.rst:18
-#, fuzzy
 msgid ""
 "If you find a bug in this documentation or would like to propose an "
 "improvement, please submit a bug report on the :ref:`issue tracker <using-"
@@ -64,7 +57,6 @@ msgstr ""
 "đề xuất về cách khắc phục, hãy kèm theo báo cáo."
 
 #: ../../bugs.rst:24
-#, fuzzy
 msgid ""
 "If the bug or suggested improvement concerns the translation of this "
 "documentation, submit the report to the `translation’s repository "
@@ -75,7 +67,6 @@ msgstr ""
 "<TRANSLATION_REPO_>`_."
 
 #: ../../bugs.rst:28
-#, fuzzy
 msgid ""
 "You can also open a discussion item on our `Documentation Discourse forum "
 "<https://discuss.python.org/c/documentation/26>`_."
@@ -84,7 +75,6 @@ msgstr ""
 "<https://discuss.python.org/c/documentation/26>`_ của chúng tôi."
 
 #: ../../bugs.rst:31
-#, fuzzy
 msgid ""
 "If you find a bug in the theme (HTML / CSS / JavaScript) of the "
 "documentation, please submit a bug report on the `python-doc-theme issue "
@@ -95,12 +85,10 @@ msgstr ""
 "<https://github.com/python/python-docs-theme>`_."
 
 #: ../../bugs.rst:37
-#, fuzzy
 msgid "`Documentation bugs`_"
 msgstr "`Documentation bugs`_"
 
 #: ../../bugs.rst:38
-#, fuzzy
 msgid ""
 "A list of documentation bugs that have been submitted to the Python issue "
 "tracker."
@@ -108,19 +96,16 @@ msgstr ""
 "Danh sách lỗi tài liệu đã được gửi lên issue tracker của Python."
 
 #: ../../bugs.rst:40
-#, fuzzy
 msgid "`Issue Tracking <https://devguide.python.org/tracker/>`_"
 msgstr "`Issue Tracking <https://devguide.python.org/tracker/>`_"
 
 #: ../../bugs.rst:41
-#, fuzzy
 msgid ""
 "Overview of the process involved in reporting an improvement on the tracker."
 msgstr ""
 "Tổng quan về quy trình báo cáo cải tiến trên issue tracker."
 
 #: ../../bugs.rst:43
-#, fuzzy
 msgid ""
 "`Helping with Documentation "
 "<https://devguide.python.org/docquality/#helping-with-documentation>`_"
@@ -129,7 +114,6 @@ msgstr ""
 "<https://devguide.python.org/docquality/#helping-with-documentation>`_"
 
 #: ../../bugs.rst:44
-#, fuzzy
 msgid ""
 "Comprehensive guide for individuals that are interested in contributing to "
 "Python documentation."
@@ -138,7 +122,6 @@ msgstr ""
 "tài liệu Python."
 
 #: ../../bugs.rst:46
-#, fuzzy
 msgid ""
 "`Documentation Translations "
 "<https://devguide.python.org/documentation/translating/>`_"
@@ -147,7 +130,6 @@ msgstr ""
 "<https://devguide.python.org/documentation/translating/>`_"
 
 #: ../../bugs.rst:47
-#, fuzzy
 msgid ""
 "A list of GitHub pages for documentation translation and their primary "
 "contacts."
@@ -155,12 +137,10 @@ msgstr ""
 "Danh sách các trang GitHub dịch tài liệu cùng đầu mối liên hệ chính."
 
 #: ../../bugs.rst:53
-#, fuzzy
 msgid "Using the Python issue tracker"
 msgstr "Sử dụng issue tracker của Python"
 
 #: ../../bugs.rst:55
-#, fuzzy
 msgid ""
 "Issue reports for Python itself should be submitted via the GitHub issues "
 "tracker (https://github.com/python/cpython/issues). The GitHub issues "
@@ -172,7 +152,6 @@ msgstr ""
 "biểu mẫu web cho phép nhập và gửi thông tin thích hợp cho nhà phát triển."
 
 #: ../../bugs.rst:60
-#, fuzzy
 msgid ""
 "The first step in filing a report is to determine whether the problem has "
 "already been reported.  The advantage in doing so, aside from saving the "
@@ -190,7 +169,6 @@ msgstr ""
 "trên issue tracker bằng hộp tìm kiếm ở đầu trang."
 
 #: ../../bugs.rst:67
-#, fuzzy
 msgid ""
 "If the problem you're reporting is not already in the list, log in to "
 "GitHub. If you don't already have a GitHub account, create a new account "
@@ -202,7 +180,6 @@ msgstr ""
 "liên kết \"Sign up\". Không thể gửi báo cáo lỗi ẩn danh."
 
 #: ../../bugs.rst:72
-#, fuzzy
 msgid ""
 "Being now logged in, you can submit an issue. Click on the \"New issue\" "
 "button in the top bar to report a new issue."
@@ -211,12 +188,10 @@ msgstr ""
 "ở thanh trên cùng để báo cáo sự cố mới."
 
 #: ../../bugs.rst:75
-#, fuzzy
 msgid "The submission form has two fields, \"Title\" and \"Comment\"."
 msgstr "Biểu mẫu gửi có hai trường là \"Title\" và \"Comment\"."
 
 #: ../../bugs.rst:77
-#, fuzzy
 msgid ""
 "For the \"Title\" field, enter a *very* short description of the problem; "
 "fewer than ten words is good."
@@ -225,7 +200,6 @@ msgstr ""
 "mười từ là tốt."
 
 #: ../../bugs.rst:80
-#, fuzzy
 msgid ""
 "In the \"Comment\" field, describe the problem in detail, including what you"
 " expected to happen and what did happen.  Be sure to include whether any "
@@ -238,7 +212,6 @@ msgstr ""
 "mềm nào (kèm thông tin phiên bản nếu thích hợp)."
 
 #: ../../bugs.rst:85
-#, fuzzy
 msgid ""
 "Each issue report will be reviewed by a developer who will determine what "
 "needs to be done to correct the problem. You will receive an update each "
@@ -249,7 +222,6 @@ msgstr ""
 "mới trên issue đó."
 
 #: ../../bugs.rst:92
-#, fuzzy
 msgid ""
 "`How to Report Bugs Effectively "
 "<https://www.chiark.greenend.org.uk/~sgtatham/bugs.html>`_"
@@ -258,7 +230,6 @@ msgstr ""
 "<https://www.chiark.greenend.org.uk/~sgtatham/bugs.html>`_"
 
 #: ../../bugs.rst:93
-#, fuzzy
 msgid ""
 "Article which goes into some detail about how to create a useful bug report."
 " This describes what kind of information is useful and why it is useful."
@@ -267,7 +238,6 @@ msgstr ""
 " loại thông tin nào hữu ích và vì sao chúng hữu ích."
 
 #: ../../bugs.rst:96
-#, fuzzy
 msgid ""
 "`Bug Writing Guidelines <https://bugzilla.mozilla.org/page.cgi?id=bug-"
 "writing.html>`_"
@@ -276,7 +246,6 @@ msgstr ""
 "writing.html>`_"
 
 #: ../../bugs.rst:97
-#, fuzzy
 msgid ""
 "Information about writing a good bug report.  Some of this is specific to "
 "the Mozilla project, but describes general good practices."
@@ -285,12 +254,10 @@ msgstr ""
 "cho dự án Mozilla, nhưng mô tả các thực hành tốt nói chung."
 
 #: ../../bugs.rst:103
-#, fuzzy
 msgid "Getting started contributing to Python yourself"
 msgstr "Bắt đầu tự mình đóng góp cho Python"
 
 #: ../../bugs.rst:105
-#, fuzzy
 msgid ""
 "Beyond just reporting bugs that you find, you are also welcome to submit "
 "patches to fix them.  You can find more information on how to get started "
