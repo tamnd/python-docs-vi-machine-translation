@@ -80,7 +80,7 @@ Kho chỉ chứa `.po`, phản chiếu cây `Doc/` của CPython:
 
 ## Điều phối viên
 
-- **tamnd** – <tamnd87@gmail.com>
+- **Duc-Tam Nguyen** – <tamnd@liteio.dev>
 
 Điều phối viên chịu trách nhiệm quản lý nhóm dịch, đảm bảo người đóng
 góp hiểu và đồng ý với Thỏa thuận đóng góp tài liệu, và duy trì chất

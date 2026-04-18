@@ -181,7 +181,7 @@ The `README.md` must include, verbatim, the agreement from PEP 545:
 
 ## Coordinator
 
-Initial coordinator: **tamnd** (`tamnd87@gmail.com`).
+Initial coordinator: **Duc-Tam Nguyen** (`tamnd@liteio.dev`).
 
 The coordinator's responsibilities per PEP 545:
 
