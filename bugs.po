@@ -169,7 +169,7 @@ msgid ""
 "and submitted to the developers."
 msgstr ""
 "Báo cáo sự cố cho Python phải được gửi qua trình theo dõi sự cố GitHub "
-"(https://github.com/tamnd/python-docs-vi/issues). Trình theo dõi sự cố "
+"(https://github.com/python/cpython/issues). Trình theo dõi sự cố "
 "GitHub cung cấp biểu mẫu web cho phép nhập và gửi thông tin thích hợp cho "
 "nhà phát triển."
 
