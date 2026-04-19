@@ -183,7 +183,7 @@ Upstream CPython keeps moving. Every few months, or when 3.15 branches:
 - [x] `GLOSSARY.md` landed.
 - [x] Pronoun and heading-style policies written down in `GLOSSARY.md`.
 - [x] `bugs.po` fully unfuzzied (language-switcher dependency).
-- [ ] `tutorial/*.po` fully unfuzzied (language-switcher dependency).
+- [x] `tutorial/*.po` fully unfuzzied (language-switcher dependency).
 - [ ] `library/functions.po` fully unfuzzied (language-switcher dependency).
 - [ ] Language-switcher milestone: request inclusion in `docsbuild-scripts`.
 
@@ -199,7 +199,7 @@ Tracked per file so reviewers can see what's still fuzzy. Sizes are
 - [x] `tutorial/introduction.po` (1309 lines)
 - [x] `tutorial/appendix.po` (325 lines)
 - [x] `tutorial/classes.po` (2141 lines)
-- [ ] `tutorial/controlflow.po` (2751 lines)
+- [x] `tutorial/controlflow.po` (2751 lines)
 - [x] `tutorial/datastructures.po` (1654 lines)
 - [x] `tutorial/errors.po` (1592 lines)
 - [x] `tutorial/floatingpoint.po` (852 lines)
