@@ -1,5 +1,11 @@
 # Bản dịch tiếng Việt tài liệu Python
 
+> [!WARNING]
+> **This repository is archived.** It holds the earlier manual translation
+> effort and is no longer maintained. Active work has moved to
+> [tamnd/python-docs-vi](https://github.com/tamnd/python-docs-vi), which is
+> synced from [Transifex](https://explore.transifex.com/python-doc/python-newest/).
+
 Kho lưu trữ các tập tin `.po` của bản dịch tiếng Việt tài liệu chính thức
 Python, tuân theo quy trình được mô tả trong
 [PEP 545](https://peps.python.org/pep-0545/).
