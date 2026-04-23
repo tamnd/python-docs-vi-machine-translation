@@ -3475,9 +3475,11 @@ msgstr ""
 "lớp C:\n"
 "    phương thức = staticmethod(regular_function)"
 
+#, fuzzy
 msgid "For more information on static methods, see :ref:`types`."
-msgstr ""
+msgstr "Để biết thêm thông tin về các phương thức tĩnh, hãy xem :ref:`types`."
 
+#, fuzzy
 msgid ""
 "Static methods now inherit the method attributes "
 "(:attr:`~function.__module__`, :attr:`~function.__name__`, "
@@ -3485,22 +3487,38 @@ msgid ""
 ":attr:`~function.__annotations__`), have a new ``__wrapped__`` attribute, "
 "and are now callable as regular functions."
 msgstr ""
+"Các phương thức tĩnh hiện kế thừa các thuộc tính phương thức "
+"(:attr:`~function.__module__`, :attr:`~function.__name__`, "
+":attr:`~function.__qualname__`, :attr:`~function.__doc__` và "
+":attr:`~function.__annotations__`), có thuộc tính ``__wrapped__`` mới và "
+"hiện có thể gọi được như các hàm thông thường."
 
+#, fuzzy
 msgid ""
 "Return a :class:`str` version of *object*.  See :func:`str` for details."
 msgstr ""
+"Trả về phiên bản :class:`str` của *object*.  Xem :func:`str` để biết chi "
+"tiết."
 
+#, fuzzy
 msgid ""
 "``str`` is the built-in string :term:`class`.  For general information about"
 " strings, see :ref:`textseq`."
 msgstr ""
+"``str`` là chuỗi :term:`class` tích hợp sẵn.  Để biết thông tin chung về "
+"chuỗi, xem :ref:`textseq`."
 
+#, fuzzy
 msgid ""
 "Sums *start* and the items of an *iterable* from left to right and returns "
 "the total.  The *iterable*'s items are normally numbers, and the start value"
 " is not allowed to be a string."
 msgstr ""
+"Tính tổng *start* và các mục của *iterable* từ trái sang phải và trả về tổng"
+" số.  Các mục của *iterable* thường là số và giá trị bắt đầu không được phép"
+" là một chuỗi."
 
+#, fuzzy
 msgid ""
 "For some use cases, there are good alternatives to :func:`sum`. The "
 "preferred, fast way to concatenate a sequence of strings is by calling "
@@ -3508,51 +3526,85 @@ msgid ""
 "precision, see :func:`math.fsum`\\.  To concatenate a series of iterables, "
 "consider using :func:`itertools.chain`."
 msgstr ""
+"Đối với một số trường hợp sử dụng, có những lựa chọn thay thế tốt cho "
+":func:`sum`. Cách nhanh chóng, ưa thích để nối một chuỗi các chuỗi là gọi "
+"``''.join(sequence)``.  Để thêm các giá trị dấu phẩy động với độ chính xác "
+"mở rộng, hãy xem :func:`math.fsum`\\.  Để nối một loạt các lần lặp, hãy cân "
+"nhắc sử dụng :func:`itertools.chain`."
 
+#, fuzzy
 msgid "The *start* parameter can be specified as a keyword argument."
-msgstr ""
+msgstr "Tham số *start* có thể được chỉ định làm đối số từ khóa."
 
+#, fuzzy
 msgid ""
 "Summation of floats switched to an algorithm that gives higher accuracy and "
 "better commutativity on most builds."
 msgstr ""
+"Tính tổng số float được chuyển sang thuật toán mang lại độ chính xác cao hơn"
+" và tính giao hoán tốt hơn trên hầu hết các bản dựng."
 
+#, fuzzy
 msgid ""
 "Added specialization for summation of complexes, using same algorithm as for"
 " summation of floats."
 msgstr ""
+"Đã thêm chuyên môn hóa để tính tổng các số phức, sử dụng thuật toán tương tự"
+" như để tính tổng các số thực."
 
+#, fuzzy
 msgid ""
 "Return a proxy object that delegates method calls to a parent or sibling "
 "class of *type*.  This is useful for accessing inherited methods that have "
 "been overridden in a class."
 msgstr ""
+"Trả về một đối tượng proxy ủy quyền các lệnh gọi phương thức cho lớp cha "
+"hoặc lớp anh chị em của *type*.  Điều này rất hữu ích để truy cập các phương"
+" thức kế thừa đã bị ghi đè trong một lớp."
 
+#, fuzzy
 msgid ""
 "The *object_or_type* determines the :term:`method resolution order` to be "
 "searched.  The search starts from the class right after the *type*."
 msgstr ""
+"*object_or_type* xác định :term:`method resolution order` cần tìm kiếm.  "
+"Việc tìm kiếm bắt đầu từ lớp ngay sau *type*."
 
+#, fuzzy
 msgid ""
 "For example, if :attr:`~type.__mro__` of *object_or_type* is ``D -> B -> C "
 "-> A -> object`` and the value of *type* is ``B``, then :func:`super` "
 "searches ``C -> A -> object``."
 msgstr ""
+"Ví dụ: nếu :attr:`~type.__mro__` của *object_or_type* là ``D -> B -> C -> A "
+"-> object`` và giá trị của *type* là ``B`` thì :func:`super` sẽ tìm kiếm ``C"
+" -> A -> object``."
 
+#, fuzzy
 msgid ""
 "The :attr:`~type.__mro__` attribute of the class corresponding to "
 "*object_or_type* lists the method resolution search order used by both "
 ":func:`getattr` and :func:`super`.  The attribute is dynamic and can change "
 "whenever the inheritance hierarchy is updated."
 msgstr ""
+"Thuộc tính :attr:`~type.__mro__` của lớp tương ứng với *object_or_type* liệt"
+" kê thứ tự tìm kiếm độ phân giải phương thức được sử dụng bởi cả "
+":func:`getattr` và :func:`super`.  Thuộc tính này là động và có thể thay đổi"
+" bất cứ khi nào hệ thống phân cấp kế thừa được cập nhật."
 
+#, fuzzy
 msgid ""
 "If the second argument is omitted, the super object returned is unbound.  If"
 " the second argument is an object, ``isinstance(obj, type)`` must be true.  "
 "If the second argument is a type, ``issubclass(type2, type)`` must be true "
 "(this is useful for classmethods)."
 msgstr ""
+"Nếu đối số thứ hai bị bỏ qua, siêu đối tượng được trả về sẽ không bị ràng "
+"buộc.  Nếu đối số thứ hai là một đối tượng thì ``isinstance(obj, type)`` "
+"phải đúng.  Nếu đối số thứ hai là một loại, ``issubclass(type2, type)`` phải"
+" đúng (điều này hữu ích cho các phương thức lớp)."
 
+#, fuzzy
 msgid ""
 "When called directly within an ordinary method of a class, both arguments "
 "may be omitted (\"zero-argument :func:`!super`\"). In this case, *type* will"
@@ -3561,14 +3613,28 @@ msgid ""
 "argument :func:`!super` will not work as expected within nested functions, "
 "including generator expressions, which implicitly create nested functions.)"
 msgstr ""
+"Khi được gọi trực tiếp trong một phương thức thông thường của một lớp, cả "
+"hai đối số có thể bị bỏ qua (\":func:`!super` không đối số\"). Trong trường "
+"hợp này, *type* sẽ là lớp kèm theo và *obj* sẽ là đối số đầu tiên của hàm "
+"bao quanh ngay lập tức (thường là ``self``). (Điều này có nghĩa là "
+":func:`!super` không đối số sẽ không hoạt động như mong đợi trong các hàm "
+"lồng nhau, bao gồm cả các biểu thức trình tạo, ngầm tạo ra các hàm lồng "
+"nhau.)"
 
+#, fuzzy
 msgid ""
 "There are two typical use cases for *super*.  In a class hierarchy with "
 "single inheritance, *super* can be used to refer to parent classes without "
 "naming them explicitly, thus making the code more maintainable.  This use "
 "closely parallels the use of *super* in other programming languages."
 msgstr ""
+"Có hai trường hợp sử dụng điển hình cho *super*.  Trong hệ thống phân cấp "
+"lớp có tính kế thừa duy nhất, *super* có thể được sử dụng để chỉ các lớp cha"
+" mà không cần đặt tên rõ ràng, do đó làm cho mã dễ bảo trì hơn.  Việc sử "
+"dụng này gần giống với việc sử dụng *super* trong các ngôn ngữ lập trình "
+"khác."
 
+#, fuzzy
 msgid ""
 "The second use case is to support cooperative multiple inheritance in a "
 "dynamic execution environment.  This use case is unique to Python and is not"
@@ -3580,23 +3646,45 @@ msgid ""
 "that order adapts to changes in the class hierarchy, and because that order "
 "can include sibling classes that are unknown prior to runtime)."
 msgstr ""
+"Trường hợp sử dụng thứ hai là hỗ trợ đa kế thừa hợp tác trong môi trường "
+"thực thi động.  Trường hợp sử dụng này là duy nhất đối với Python và không "
+"được tìm thấy trong các ngôn ngữ được biên dịch tĩnh hoặc các ngôn ngữ chỉ "
+"hỗ trợ kế thừa đơn.  Điều này giúp có thể triển khai \"sơ đồ kim cương\" "
+"trong đó nhiều lớp cơ sở triển khai cùng một phương thức.  Thiết kế tốt chỉ "
+"ra rằng các triển khai như vậy có cùng chữ ký gọi trong mọi trường hợp (vì "
+"thứ tự các cuộc gọi được xác định trong thời gian chạy, vì thứ tự đó thích "
+"ứng với những thay đổi trong hệ thống phân cấp lớp và vì thứ tự đó có thể "
+"bao gồm các lớp anh chị em chưa được biết trước khi chạy)."
 
+#, fuzzy
 msgid "For both use cases, a typical superclass call looks like this::"
 msgstr ""
+"Đối với cả hai trường hợp sử dụng, lệnh gọi siêu lớp điển hình trông như thế"
+" này::"
 
+#, fuzzy
 msgid ""
 "class C(B):\n"
 "    def method(self, arg):\n"
 "        super().method(arg)    # This does the same thing as:\n"
 "                               # super(C, self).method(arg)"
 msgstr ""
+"lớp C(B):\n"
+"    phương thức def (tự, arg):\n"
+"        super().method(arg) # This thực hiện tương tự như:\n"
+"                               # super(C, self).phương thức(arg)"
 
+#, fuzzy
 msgid ""
 "In addition to method lookups, :func:`super` also works for attribute "
 "lookups.  One possible use case for this is calling :term:`descriptors "
 "<descriptor>` in a parent or sibling class."
 msgstr ""
+"Ngoài việc tra cứu phương thức, :func:`super` còn hoạt động để tra cứu thuộc"
+" tính.  Một trường hợp sử dụng có thể áp dụng cho việc này là gọi "
+":term:`descriptors <descriptor>` trong lớp cha hoặc lớp anh chị em."
 
+#, fuzzy
 msgid ""
 "Note that :func:`super` is implemented as part of the binding process for "
 "explicit dotted attribute lookups such as ``super().__getitem__(name)``. It "
@@ -3605,7 +3693,15 @@ msgid ""
 "inheritance. Accordingly, :func:`super` is undefined for implicit lookups "
 "using statements or operators such as ``super()[name]``."
 msgstr ""
+"Lưu ý rằng :func:`super` được triển khai như một phần của quy trình liên kết"
+" để tra cứu thuộc tính chấm rõ ràng, chẳng hạn như "
+"``super().__getitem__(name)``. Nó làm như vậy bằng cách triển khai phương "
+"thức :meth:`~object.__getattribute__` của riêng mình để tìm kiếm các lớp "
+"theo thứ tự có thể dự đoán được nhằm hỗ trợ đa kế thừa hợp tác. Theo đó, "
+":func:`super` không được xác định để tra cứu ngầm bằng cách sử dụng các câu "
+"lệnh hoặc toán tử như ``super()[name]``."
 
+#, fuzzy
 msgid ""
 "Also note that, aside from the zero argument form, :func:`super` is not "
 "limited to use inside methods.  The two argument form specifies the "
@@ -3614,34 +3710,57 @@ msgid ""
 "necessary details to correctly retrieve the class being defined, as well as "
 "accessing the current instance for ordinary methods."
 msgstr ""
+"Cũng lưu ý rằng, ngoài dạng đối số bằng 0, :func:`super` không bị giới hạn "
+"sử dụng các phương thức bên trong.  Dạng hai đối số chỉ định chính xác các "
+"đối số và đưa ra các tham chiếu thích hợp.  Dạng đối số bằng 0 chỉ hoạt động"
+" bên trong định nghĩa lớp, vì trình biên dịch điền vào các chi tiết cần "
+"thiết để truy xuất chính xác lớp được định nghĩa, cũng như truy cập phiên "
+"bản hiện tại cho các phương thức thông thường."
 
+#, fuzzy
 msgid ""
 "For practical suggestions on how to design cooperative classes using "
 ":func:`super`, see `guide to using super() "
 "<https://rhettinger.wordpress.com/2011/05/26/super-considered-super/>`_."
 msgstr ""
+"Để có những gợi ý thực tế về cách thiết kế các lớp hợp tác bằng "
+":func:`super`, hãy xem `guide to using super() "
+"<https://rhettinger.wordpress.com/2011/05/26/super-considered-super/>`_."
 
+#, fuzzy
 msgid ""
 ":class:`super` objects are now :mod:`pickleable <pickle>` and  "
 ":mod:`copyable <copy>`."
 msgstr ""
+"Các đối tượng :class:`super` hiện là :mod:`pickleable <pickle>` và "
+":mod:`copyable <copy>`."
 
+#, fuzzy
 msgid ""
 "Rather than being a function, :class:`tuple` is actually an immutable "
 "sequence type, as documented in :ref:`typesseq-tuple` and :ref:`typesseq`."
 msgstr ""
+"Thay vì là một hàm, :class:`tuple` thực sự là một loại trình tự bất biến, "
+"như được ghi lại trong :ref:`typesseq-tuple` và :ref:`typesseq`."
 
+#, fuzzy
 msgid ""
 "With one argument, return the type of an *object*.  The return value is a "
 "type object and generally the same object as returned by "
 ":attr:`object.__class__`."
 msgstr ""
+"Với một đối số, trả về loại *object*.  Giá trị trả về là một đối tượng kiểu "
+"và nói chung là cùng một đối tượng được trả về bởi :attr:`object.__class__`."
 
+#, fuzzy
 msgid ""
 "The :func:`isinstance` built-in function is recommended for testing the type"
 " of an object, because it takes subclasses into account."
 msgstr ""
+"Hàm tích hợp :func:`isinstance` được khuyên dùng để kiểm tra loại đối tượng "
+"vì nó tính đến các lớp con."
 
+#, fuzzy
 msgid ""
 "With three arguments, return a new type object.  This is essentially a "
 "dynamic form of the :keyword:`class` statement. The *name* string is the "
@@ -3653,67 +3772,108 @@ msgid ""
 ":attr:`~type.__dict__` attribute. The following two statements create "
 "identical :class:`!type` objects:"
 msgstr ""
+"Với ba đối số, trả về một đối tượng kiểu mới.  Đây thực chất là một dạng "
+"động của câu lệnh :keyword:`class`. Chuỗi *name* là tên lớp và trở thành "
+"thuộc tính :attr:`~type.__name__`. Bộ *bases* chứa các lớp cơ sở và trở "
+"thành thuộc tính :attr:`~type.__bases__`; nếu trống, :class:`object`, cơ sở "
+"cuối cùng của tất cả các lớp, sẽ được thêm vào.  Từ điển *dict* chứa các "
+"định nghĩa thuộc tính và phương thức cho nội dung lớp; nó có thể được sao "
+"chép hoặc gói trước khi trở thành thuộc tính :attr:`~type.__dict__`. Hai câu"
+" lệnh sau đây tạo các đối tượng :class:`!type` giống hệt nhau:"
 
+#, fuzzy
 msgid "See also:"
-msgstr ""
+msgstr "Xem thêm:"
 
+#, fuzzy
 msgid ""
 ":ref:`Documentation on attributes and methods on classes <class-attrs-and-"
 "methods>`."
 msgstr ""
+":ref:`Documentation on attributes and methods on classes <class-attrs-and-"
+"methods>`."
 
+#, fuzzy
 msgid ":ref:`bltin-type-objects`"
-msgstr ""
+msgstr ":ref:`bltin-type-objects`"
 
+#, fuzzy
 msgid ""
 "Keyword arguments provided to the three argument form are passed to the "
 "appropriate metaclass machinery (usually :meth:`~object.__init_subclass__`) "
 "in the same way that keywords in a class definition (besides *metaclass*) "
 "would."
 msgstr ""
+"Đối số từ khóa được cung cấp cho dạng ba đối số được chuyển đến máy siêu dữ "
+"liệu thích hợp (thường là :meth:`~object.__init_subclass__`) giống như cách "
+"mà các từ khóa trong định nghĩa lớp (ngoài *metaclass*)."
 
+#, fuzzy
 msgid "See also :ref:`class-customization`."
-msgstr ""
+msgstr "Xem thêm :ref:`class-customization`."
 
+#, fuzzy
 msgid ""
 "Subclasses of :class:`!type` which don't override ``type.__new__`` may no "
 "longer use the one-argument form to get the type of an object."
 msgstr ""
+"Các lớp con của :class:`!type` không ghi đè ``type.__new__`` có thể không "
+"còn sử dụng biểu mẫu một đối số để lấy loại đối tượng nữa."
 
+#, fuzzy
 msgid ""
 "Return the :attr:`~object.__dict__` attribute for a module, class, instance,"
 " or any other object with a :attr:`!__dict__` attribute."
 msgstr ""
+"Trả về thuộc tính :attr:`~object.__dict__` cho mô-đun, lớp, phiên bản hoặc "
+"bất kỳ đối tượng nào khác có thuộc tính :attr:`!__dict__`."
 
+#, fuzzy
 msgid ""
 "Objects such as modules and instances have an updateable "
 ":attr:`~object.__dict__` attribute; however, other objects may have write "
 "restrictions on their :attr:`!__dict__` attributes (for example, classes use"
 " a :class:`types.MappingProxyType` to prevent direct dictionary updates)."
 msgstr ""
+"Các đối tượng như mô-đun và phiên bản có thuộc tính :attr:`~object.__dict__`"
+" có thể cập nhật; tuy nhiên, các đối tượng khác có thể có các hạn chế ghi "
+"trên thuộc tính :attr:`!__dict__` của chúng (ví dụ: các lớp sử dụng "
+":class:`types.MappingProxyType` để ngăn cập nhật từ điển trực tiếp)."
 
+#, fuzzy
 msgid "Without an argument, :func:`vars` acts like :func:`locals`."
-msgstr ""
+msgstr "Không cần đối số, :func:`vars` hoạt động giống như :func:`locals`."
 
+#, fuzzy
 msgid ""
 "A :exc:`TypeError` exception is raised if an object is specified but it "
 "doesn't have a :attr:`~object.__dict__` attribute (for example, if its class"
 " defines the :attr:`~object.__slots__` attribute)."
 msgstr ""
+"Một ngoại lệ :exc:`TypeError` được đưa ra nếu một đối tượng được chỉ định "
+"nhưng nó không có thuộc tính :attr:`~object.__dict__` (ví dụ: nếu lớp của nó"
+" xác định thuộc tính :attr:`~object.__slots__`)."
 
+#, fuzzy
 msgid ""
 "The result of calling this function without an argument has been updated as "
 "described for the :func:`locals` builtin."
 msgstr ""
+"Kết quả của việc gọi hàm này mà không có đối số đã được cập nhật như mô tả "
+"cho nội dung :func:`locals`."
 
+#, fuzzy
 msgid ""
 "Iterate over several iterables in parallel, producing tuples with an item "
 "from each one."
 msgstr ""
+"Lặp lại song song nhiều lần lặp, tạo ra các bộ dữ liệu với một mục từ mỗi "
+"bộ."
 
 msgid "Example::"
 msgstr "Ví dụ::"
 
+#, fuzzy
 msgid ""
 ">>> for item in zip([1, 2, 3], ['sugar', 'spice', 'everything nice']):\n"
 "...     print(item)\n"
@@ -3722,69 +3882,116 @@ msgid ""
 "(2, 'spice')\n"
 "(3, 'everything nice')"
 msgstr ""
+">>> cho mục trong zip([1, 2, 3], ['đường', 'gia vị', 'mọi thứ đều ngon']):\n"
+"... in(mục)\n"
+"...\n"
+"(1, 'đường')\n"
+"(2, 'gia vị')\n"
+"(3, 'mọi thứ đều tốt đẹp')"
 
+#, fuzzy
 msgid ""
 "More formally: :func:`zip` returns an iterator of tuples, where the *i*-th "
 "tuple contains the *i*-th element from each of the argument iterables."
 msgstr ""
+"Chính thức hơn: :func:`zip` trả về một trình vòng lặp của các bộ dữ liệu, "
+"trong đó bộ dữ liệu thứ *i* chứa phần tử thứ *i* từ mỗi đối số lặp lại."
 
+#, fuzzy
 msgid ""
 "Another way to think of :func:`zip` is that it turns rows into columns, and "
 "columns into rows.  This is similar to `transposing a matrix "
 "<https://en.wikipedia.org/wiki/Transpose>`_."
 msgstr ""
+"Một cách khác để nghĩ về :func:`zip` là nó biến hàng thành cột và cột thành "
+"hàng.  Điều này tương tự như `transposing a matrix "
+"<https://en.wikipedia.org/wiki/Transpose>`_."
 
+#, fuzzy
 msgid ""
 ":func:`zip` is lazy: The elements won't be processed until the iterable is "
 "iterated on, e.g. by a :keyword:`!for` loop or by wrapping in a "
 ":class:`list`."
 msgstr ""
+":func:`zip` lười biếng: Các phần tử sẽ không được xử lý cho đến khi lặp lại "
+"được, ví dụ: bằng vòng lặp :keyword:`!for` hoặc bằng cách gói trong "
+":class:`list`."
 
+#, fuzzy
 msgid ""
 "One thing to consider is that the iterables passed to :func:`zip` could have"
 " different lengths; sometimes by design, and sometimes because of a bug in "
 "the code that prepared these iterables.  Python offers three different "
 "approaches to dealing with this issue:"
 msgstr ""
+"Một điều cần cân nhắc là các lần lặp được truyền tới :func:`zip` có thể có "
+"độ dài khác nhau; đôi khi là do thiết kế và đôi khi là do lỗi trong mã đã "
+"chuẩn bị các lần lặp này.  Python đưa ra ba cách tiếp cận khác nhau để giải "
+"quyết vấn đề này:"
 
+#, fuzzy
 msgid ""
 "By default, :func:`zip` stops when the shortest iterable is exhausted. It "
 "will ignore the remaining items in the longer iterables, cutting off the "
 "result to the length of the shortest iterable::"
 msgstr ""
+"Theo mặc định, :func:`zip` dừng khi hết lần lặp ngắn nhất. Nó sẽ bỏ qua các "
+"mục còn lại trong các lần lặp dài hơn, cắt kết quả thành độ dài của lần lặp "
+"ngắn nhất ::"
 
+#, fuzzy
 msgid ""
 ">>> list(zip(range(3), ['fee', 'fi', 'fo', 'fum']))\n"
 "[(0, 'fee'), (1, 'fi'), (2, 'fo')]"
 msgstr ""
+">>> list(zip(range(3), ['fee', 'fi', 'fo', 'fum']))\n"
+"[(0, 'phí'), (1, 'fi'), (2, 'fo')]"
 
+#, fuzzy
 msgid ""
 ":func:`zip` is often used in cases where the iterables are assumed to be of "
 "equal length.  In such cases, it's recommended to use the ``strict=True`` "
 "option. Its output is the same as regular :func:`zip`::"
 msgstr ""
+":func:`zip` thường được sử dụng trong trường hợp các lần lặp được coi là có "
+"độ dài bằng nhau.  Trong những trường hợp như vậy, bạn nên sử dụng tùy chọn "
+"``strict=True``. Đầu ra của nó giống như :func:`zip` thông thường::"
 
+#, fuzzy
 msgid ""
 ">>> list(zip(('a', 'b', 'c'), (1, 2, 3), strict=True))\n"
 "[('a', 1), ('b', 2), ('c', 3)]"
 msgstr ""
+">>> list(zip(('a', 'b', 'c'), (1, 2, 3), strict=True))\n"
+"[('a', 1), ('b', 2), ('c', 3)]"
 
+#, fuzzy
 msgid ""
 "Unlike the default behavior, it raises a :exc:`ValueError` if one iterable "
 "is exhausted before the others:"
 msgstr ""
+"Không giống như hành vi mặc định, nó sẽ tăng :exc:`ValueError` nếu một lần "
+"lặp hết trước các hành vi khác:"
 
+#, fuzzy
 msgid ""
 "Without the ``strict=True`` argument, any bug that results in iterables of "
 "different lengths will be silenced, possibly manifesting as a hard-to-find "
 "bug in another part of the program."
 msgstr ""
+"Nếu không có đối số ``strict=True``, mọi lỗi dẫn đến các lần lặp có độ dài "
+"khác nhau sẽ bị tắt tiếng, có thể biểu hiện dưới dạng lỗi khó tìm thấy trong"
+" một phần khác của chương trình."
 
+#, fuzzy
 msgid ""
 "Shorter iterables can be padded with a constant value to make all the "
 "iterables have the same length.  This is done by "
 ":func:`itertools.zip_longest`."
 msgstr ""
+"Các lần lặp ngắn hơn có thể được đệm bằng một giá trị không đổi để làm cho "
+"tất cả các lần lặp có cùng độ dài.  Việc này được thực hiện bởi "
+":func:`itertools.zip_longest`."
 
 msgid ""
 "Edge cases: With a single iterable argument, :func:`zip` returns an iterator"
