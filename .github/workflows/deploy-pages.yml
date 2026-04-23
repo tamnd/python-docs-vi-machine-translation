@@ -1,0 +1,67 @@
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Checkout CPython
+        uses: actions/checkout@v4
+        with:
+          repository: python/cpython
+          ref: "67100b3e926c2c7cdd9d0825add677b19664f377"
+          path: cpython
+
+      - name: Set up CPython Doc venv
+        run: make -C cpython/Doc/ venv
+
+      - name: Checkout translation
+        uses: actions/checkout@v4
+        with:
+          path: cpython/Doc/locales/vi/LC_MESSAGES
+
+      - name: Build HTML
+        run: |
+          make -C cpython/Doc/ \
+            JOBS=auto \
+            SPHINXOPTS="--color -D language='vi'" \
+            SPHINXERRORHANDLING="" \
+            html
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: cpython/Doc/build/html
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
