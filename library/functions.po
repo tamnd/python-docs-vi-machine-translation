@@ -3993,14 +3993,20 @@ msgstr ""
 "tất cả các lần lặp có cùng độ dài.  Việc này được thực hiện bởi "
 ":func:`itertools.zip_longest`."
 
+#, fuzzy
 msgid ""
 "Edge cases: With a single iterable argument, :func:`zip` returns an iterator"
 " of 1-tuples.  With no arguments, it returns an empty iterator."
 msgstr ""
+"Các trường hợp cạnh: Với một đối số có thể lặp lại duy nhất, :func:`zip` trả"
+" về một trình vòng lặp gồm 1 bộ dữ liệu.  Không có đối số, nó trả về một "
+"trình vòng lặp trống."
 
+#, fuzzy
 msgid "Tips and tricks:"
-msgstr ""
+msgstr "Mẹo và thủ thuật:"
 
+#, fuzzy
 msgid ""
 "The left-to-right evaluation order of the iterables is guaranteed. This "
 "makes possible an idiom for clustering a data series into n-length groups "
@@ -4008,12 +4014,22 @@ msgid ""
 "``n`` times so that each output tuple has the result of ``n`` calls to the "
 "iterator. This has the effect of dividing the input into n-length chunks."
 msgstr ""
+"Thứ tự đánh giá từ trái sang phải của các lần lặp được đảm bảo. Điều này tạo"
+" nên một thành ngữ để phân cụm chuỗi dữ liệu thành các nhóm có độ dài n bằng"
+" cách sử dụng ``zip(*[iter(s)]*n, strict=True)``.  Điều này lặp lại *same* "
+"iterator ``n`` lần để mỗi bộ dữ liệu đầu ra có kết quả của các lệnh gọi "
+"``n`` tới iterator. Điều này có tác dụng chia đầu vào thành các đoạn có độ "
+"dài n."
 
+#, fuzzy
 msgid ""
 ":func:`zip` in conjunction with the ``*`` operator can be used to unzip a "
 "list::"
 msgstr ""
+":func:`zip` kết hợp với toán tử ``*`` có thể được sử dụng để giải nén danh "
+"sách ::"
 
+#, fuzzy
 msgid ""
 ">>> x = [1, 2, 3]\n"
 ">>> y = [4, 5, 6]\n"
@@ -4023,15 +4039,27 @@ msgid ""
 ">>> x == list(x2) and y == list(y2)\n"
 "True"
 msgstr ""
+">>> x = [1, 2, 3]\n"
+">>> y = [4, 5, 6]\n"
+">>> danh sách(zip(x, y))\n"
+"[(1, 4), (2, 5), (3, 6)]\n"
+">>> x2, y2 = zip(*zip(x, y))\n"
+">>> x == danh sách(x2) và y == danh sách(y2)\n"
+"đúng"
 
+#, fuzzy
 msgid "Added the ``strict`` argument."
-msgstr ""
+msgstr "Đã thêm đối số ``strict``."
 
+#, fuzzy
 msgid ""
 "This is an advanced function that is not needed in everyday Python "
 "programming, unlike :func:`importlib.import_module`."
 msgstr ""
+"Đây là một hàm nâng cao không cần thiết trong lập trình Python hàng ngày, "
+"không giống như :func:`importlib.import_module`."
 
+#, fuzzy
 msgid ""
 "This function is invoked by the :keyword:`import` statement.  It can be "
 "replaced (by importing the :mod:`builtins` module and assigning to "
@@ -4042,7 +4070,16 @@ msgid ""
 "implementation is in use.  Direct use of :func:`__import__` is also "
 "discouraged in favor of :func:`importlib.import_module`."
 msgstr ""
+"Hàm này được gọi bằng câu lệnh :keyword:`import`.  Nó có thể được thay thế "
+"(bằng cách nhập mô-đun :mod:`builtins` và gán cho ``builtins.__import__``) "
+"để thay đổi ngữ nghĩa của câu lệnh :keyword:`!import`, nhưng **strongly** "
+"không nên làm như vậy vì việc sử dụng móc nhập thường đơn giản hơn (xem "
+":pep:`302`) để đạt được cùng mục tiêu và không gây ra sự cố với mã giả định "
+"việc triển khai nhập mặc định đang được sử dụng.  Việc sử dụng trực tiếp "
+":func:`__import__` cũng không được khuyến khích thay vì sử dụng "
+":func:`importlib.import_module`."
 
+#, fuzzy
 msgid ""
 "The function imports the module *name*, potentially using the given "
 "*globals* and *locals* to determine how to interpret the name in a package "
@@ -4051,7 +4088,14 @@ msgid ""
 "does not use its *locals* argument at all and uses its *globals* only to "
 "determine the package context of the :keyword:`import` statement."
 msgstr ""
+"Hàm nhập mô-đun *name*, có khả năng sử dụng *globals* và *locals* đã cho để "
+"xác định cách diễn giải tên trong ngữ cảnh gói. *fromlist* cung cấp tên của "
+"các đối tượng hoặc mô-đun con cần được nhập từ mô-đun do *name* cung cấp.  "
+"Việc triển khai tiêu chuẩn hoàn toàn không sử dụng đối số *locals* của nó và"
+" chỉ sử dụng *globals* của nó để xác định ngữ cảnh gói của câu lệnh "
+":keyword:`import`."
 
+#, fuzzy
 msgid ""
 "*level* specifies whether to use absolute or relative imports. ``0`` (the "
 "default) means only perform absolute imports.  Positive values for *level* "
@@ -4059,151 +4103,216 @@ msgid ""
 "directory of the module calling :func:`__import__` (see :pep:`328` for the "
 "details)."
 msgstr ""
+"*level* chỉ định nên sử dụng nhập tuyệt đối hay tương đối. ``0`` (mặc định) "
+"có nghĩa là chỉ thực hiện nhập tuyệt đối.  Các giá trị dương cho *level* cho"
+" biết số lượng thư mục mẹ cần tìm kiếm tương ứng với thư mục của mô-đun đang"
+" gọi :func:`__import__` (xem :pep:`328` để biết chi tiết)."
 
+#, fuzzy
 msgid ""
 "When the *name* variable is of the form ``package.module``, normally, the "
 "top-level package (the name up till the first dot) is returned, *not* the "
 "module named by *name*.  However, when a non-empty *fromlist* argument is "
 "given, the module named by *name* is returned."
 msgstr ""
+"Khi biến *name* có dạng ``package.module``, thông thường, gói cấp cao nhất "
+"(tên cho đến dấu chấm đầu tiên) được trả về, *not* mô-đun được đặt tên bởi "
+"*name*.  Tuy nhiên, khi một đối số *fromlist* không trống được đưa ra, mô-"
+"đun được đặt tên bởi *name* sẽ được trả về."
 
+#, fuzzy
 msgid ""
 "For example, the statement ``import spam`` results in bytecode resembling "
 "the following code::"
 msgstr ""
+"Ví dụ: câu lệnh ``import spam`` dẫn đến mã byte giống như đoạn mã sau::"
 
+#, fuzzy
 msgid "spam = __import__('spam', globals(), locals(), [], 0)"
-msgstr ""
+msgstr "thư rác = __import__('spam', Globals(), Locals(), [], 0)"
 
+#, fuzzy
 msgid "The statement ``import spam.ham`` results in this call::"
-msgstr ""
+msgstr "Câu lệnh ``import spam.ham`` dẫn đến cuộc gọi này ::"
 
+#, fuzzy
 msgid "spam = __import__('spam.ham', globals(), locals(), [], 0)"
-msgstr ""
+msgstr "thư rác = __import__('spam.ham', Globals(), Locals(), [], 0)"
 
+#, fuzzy
 msgid ""
 "Note how :func:`__import__` returns the toplevel module here because this is"
 " the object that is bound to a name by the :keyword:`import` statement."
 msgstr ""
+"Lưu ý cách :func:`__import__` trả về mô-đun toplevel ở đây vì đây là đối "
+"tượng được liên kết với một tên bằng câu lệnh :keyword:`import`."
 
+#, fuzzy
 msgid ""
 "On the other hand, the statement ``from spam.ham import eggs, sausage as "
 "saus`` results in ::"
 msgstr ""
+"Mặt khác, câu lệnh ``from spam.ham import eggs, sausage as saus`` dẫn đến ::"
 
+#, fuzzy
 msgid ""
 "_temp = __import__('spam.ham', globals(), locals(), ['eggs', 'sausage'], 0)\n"
 "eggs = _temp.eggs\n"
 "saus = _temp.sausage"
 msgstr ""
+"_temp = __import__('spam.ham', Globals(),locals(), ['trứng', 'xúc xích'], 0)\n"
+"trứng = _temp.egg\n"
+"saus = _temp.sausage"
 
+#, fuzzy
 msgid ""
 "Here, the ``spam.ham`` module is returned from :func:`__import__`.  From "
 "this object, the names to import are retrieved and assigned to their "
 "respective names."
 msgstr ""
+"Ở đây, mô-đun ``spam.ham`` được trả về từ :func:`__import__`.  Từ đối tượng "
+"này, tên cần nhập sẽ được truy xuất và gán cho tên tương ứng của chúng."
 
+#, fuzzy
 msgid ""
 "If you simply want to import a module (potentially within a package) by "
 "name, use :func:`importlib.import_module`."
 msgstr ""
+"Nếu bạn chỉ muốn nhập một mô-đun (có thể nằm trong một gói) theo tên, hãy sử"
+" dụng :func:`importlib.import_module`."
 
+#, fuzzy
 msgid ""
 "Negative values for *level* are no longer supported (which also changes the "
 "default value to 0)."
 msgstr ""
+"Các giá trị âm cho *level* không còn được hỗ trợ (điều này cũng thay đổi giá"
+" trị mặc định thành 0)."
 
+#, fuzzy
 msgid ""
 "When the command line options :option:`-E` or :option:`-I` are being used, "
 "the environment variable :envvar:`PYTHONCASEOK` is now ignored."
 msgstr ""
+"Khi các tùy chọn dòng lệnh :option:`-E` hoặc :option:`-I` đang được sử dụng,"
+" biến môi trường :envvar:`PYTHONCASEOK` hiện bị bỏ qua."
 
 msgid "Footnotes"
 msgstr " Chú thích"
 
+#, fuzzy
 msgid ""
 "Note that the parser only accepts the Unix-style end of line convention. If "
 "you are reading the code from a file, make sure to use newline conversion "
 "mode to convert Windows or Mac-style newlines."
 msgstr ""
+"Lưu ý rằng trình phân tích cú pháp chỉ chấp nhận quy ước cuối dòng kiểu "
+"Unix. Nếu bạn đang đọc mã từ một tệp, hãy đảm bảo sử dụng chế độ chuyển đổi "
+"dòng mới để chuyển đổi dòng mới kiểu Windows hoặc Mac."
 
+#, fuzzy
 msgid "Boolean"
-msgstr ""
+msgstr "Boolean"
 
+#, fuzzy
 msgid "type"
-msgstr ""
+msgstr "loại"
 
+#, fuzzy
 msgid "built-in function"
-msgstr ""
+msgstr "chức năng tích hợp"
 
+#, fuzzy
 msgid "exec"
-msgstr ""
+msgstr "người điều hành"
 
+#, fuzzy
 msgid "NaN"
-msgstr ""
+msgstr "NaN"
 
+#, fuzzy
 msgid "Infinity"
-msgstr ""
+msgstr "vô cực"
 
+#, fuzzy
 msgid "__format__"
-msgstr ""
+msgstr "__định dạng__"
 
+#, fuzzy
 msgid "string"
-msgstr ""
+msgstr "chuỗi"
 
+#, fuzzy
 msgid "format() (built-in function)"
-msgstr ""
+msgstr "format() (hàm tích hợp)"
 
+#, fuzzy
 msgid "file object"
-msgstr ""
+msgstr "đối tượng tập tin"
 
+#, fuzzy
 msgid "open() built-in function"
-msgstr ""
+msgstr "Hàm tích hợp open()"
 
 msgid "file"
 msgstr "tệp tin"
 
+#, fuzzy
 msgid "modes"
-msgstr ""
+msgstr "chế độ"
 
+#, fuzzy
 msgid "universal newlines"
-msgstr ""
+msgstr "dòng mới phổ quát"
 
+#, fuzzy
 msgid "line-buffered I/O"
-msgstr ""
+msgstr "I/O đệm dòng"
 
+#, fuzzy
 msgid "unbuffered I/O"
-msgstr ""
+msgstr "I/O không có bộ đệm"
 
+#, fuzzy
 msgid "buffer size, I/O"
-msgstr ""
+msgstr "kích thước bộ đệm, I/O"
 
+#, fuzzy
 msgid "I/O control"
-msgstr ""
+msgstr "Kiểm soát vào/ra"
 
+#, fuzzy
 msgid "buffering"
-msgstr ""
+msgstr "đệm"
 
+#, fuzzy
 msgid "text mode"
-msgstr ""
+msgstr "chế độ văn bản"
 
+#, fuzzy
 msgid "module"
-msgstr ""
+msgstr "mô-đun"
 
+#, fuzzy
 msgid "sys"
-msgstr ""
+msgstr "hệ thống"
 
+#, fuzzy
 msgid "str() (built-in function)"
-msgstr ""
+msgstr "str() (hàm tích hợp)"
 
+#, fuzzy
 msgid "object"
-msgstr ""
+msgstr "vật thể"
 
+#, fuzzy
 msgid "statement"
-msgstr ""
+msgstr "tuyên bố"
 
+#, fuzzy
 msgid "import"
-msgstr ""
+msgstr "nhập khẩu"
 
+#, fuzzy
 msgid "builtins"
-msgstr ""
+msgstr "nội dung"
