@@ -1,0 +1,64 @@
+name: audit
+
+# Runs the deterministic checks from python-docs-vi-translator over the catalogs
+# in this repository. No model is ever called here: everything this workflow runs
+# is reproducible from the corpus alone, which is what makes a green run mean
+# something.
+#
+# Skeleton until M5. The audit job is wired up but does nothing yet, because the
+# check catalogue does not exist until tier 1 is translated. What it does do
+# today is keep the pin honest.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: audit-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: the pinned tool version is readable
+        run: |
+          test -f .pydocvi-version || { echo "no .pydocvi-version pin"; exit 1; }
+          echo "pinned to $(cat .pydocvi-version)"
+
+      - name: catalogs parse
+        run: |
+          python -m pip install --quiet polib
+          python - <<'PY'
+          import pathlib
+          import sys
+
+          import polib
+
+          bad = []
+          files = sorted(pathlib.Path(".").glob("**/*.po"))
+          files = [f for f in files if "MACHINE" not in f.parts and "locales" not in f.parts]
+          for path in files:
+              try:
+                  polib.pofile(str(path))
+              except Exception as error:
+                  bad.append(f"{path}: {error}")
+          print(f"{len(files)} catalogs parsed, {len(bad)} unreadable")
+          for line in bad:
+              print(line, file=sys.stderr)
+          sys.exit(1 if bad else 0)
+          PY
+
+      # Wired up at M5, once python-docs-vi-translator has a check catalogue.
+      #
+      # - uses: astral-sh/setup-uv@v5
+      # - run: uv tool install "python-docs-vi-translator==$(cat .pydocvi-version)"
+      # - run: pydocvi audit --report reports/audit.md
+      # - run: pydocvi apply --check
