@@ -1,13 +1,12 @@
 name: audit
 
 # Runs the deterministic checks from python-docs-vi-translator over the catalogs
-# in this repository. No model is ever called here: everything this workflow runs
-# is reproducible from the corpus alone, which is what makes a green run mean
-# something.
+# in this repository. No model is ever called here, no key is ever needed, and
+# the fleet is never touched. Everything below is reproducible from the
+# committed .po files, the pin and the glossary, which is what makes a green run
+# mean something and what makes it take under a minute.
 #
-# Skeleton until M5. The audit job is wired up but does nothing yet, because the
-# check catalogue does not exist until tier 1 is translated. What it does do
-# today is keep the pin honest.
+# Three gates, and they do not all block yet. See the comments on each.
 
 on:
   push:
@@ -28,37 +27,113 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: the pinned tool version is readable
+      - name: read the pin, and say where everything lives
+        id: pin
         run: |
-          test -f .pydocvi-version || { echo "no .pydocvi-version pin"; exit 1; }
-          echo "pinned to $(cat .pydocvi-version)"
+          test -f .pydocvi-version || { echo "no .pydocvi-version"; exit 1; }
+          test -f manifests/upstream.yaml || { echo "no manifests/upstream.yaml"; exit 1; }
+          {
+            echo "tool=$(cat .pydocvi-version)"
+            echo "repo=$(awk '/^repo:/ {print $2}' manifests/upstream.yaml)"
+            echo "commit=$(awk '/^commit:/ {print $2}' manifests/upstream.yaml)"
+          } >> "$GITHUB_OUTPUT"
+          # Set here rather than in a top-level env block, because the runner
+          # context does not exist that early and a workflow that names it there
+          # does not start at all.
+          #
+          # The mirror goes outside the workspace, and that is not tidiness. The
+          # first run of this workflow cloned it to .upstream inside the
+          # checkout, which is what PYDOCVI_CONTENT points at, so the walk found
+          # 548 mirror catalogs and counted them as ours. The coverage table grew
+          # a tier 0 of 87 008 entries and every total doubled. A nested checkout
+          # is part of the corpus unless it is somewhere the corpus cannot be.
+          {
+            echo "PYDOCVI_UPSTREAM=$RUNNER_TEMP/upstream"
+            echo "PYDOCVI_CONTENT=$GITHUB_WORKSPACE"
+            echo "PYDOCVI_WORK=$RUNNER_TEMP/work"
+          } >> "$GITHUB_ENV"
 
-      - name: catalogs parse
+      - name: the upstream mirror at the pinned commit
         run: |
-          python -m pip install --quiet polib
-          python - <<'PY'
-          import pathlib
-          import sys
+          # A shallow fetch of one commit, which is about 11 MB. Cloning the
+          # branch would get whatever the hourly Transifex writer pushed this
+          # morning, and then S01 would be comparing the corpus against a pin
+          # that no longer describes what it just fetched.
+          git init -q "$PYDOCVI_UPSTREAM"
+          git -C "$PYDOCVI_UPSTREAM" remote add origin \
+            "https://github.com/${{ steps.pin.outputs.repo }}.git"
+          git -C "$PYDOCVI_UPSTREAM" fetch -q --depth 1 origin \
+            "${{ steps.pin.outputs.commit }}"
+          git -C "$PYDOCVI_UPSTREAM" checkout -q FETCH_HEAD
 
-          import polib
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
 
-          bad = []
-          files = sorted(pathlib.Path(".").glob("**/*.po"))
-          files = [f for f in files if "MACHINE" not in f.parts and "locales" not in f.parts]
-          for path in files:
-              try:
-                  polib.pofile(str(path))
-              except Exception as error:
-                  bad.append(f"{path}: {error}")
-          print(f"{len(files)} catalogs parsed, {len(bad)} unreadable")
-          for line in bad:
-              print(line, file=sys.stderr)
-          sys.exit(1 if bad else 0)
-          PY
+      - name: install the pinned tool
+        run: |
+          # From git rather than PyPI until trusted publishing is set up, which
+          # is issue #6 on the translator repo and needs a person. The tag is
+          # what .pydocvi-version holds, so the pin still says one thing.
+          uv tool install --quiet \
+            "python-docs-vi-translator @ git+https://github.com/tamnd/python-docs-vi-translator@${{ steps.pin.outputs.tool }}"
+          pydocvi version
 
-      # Wired up at M5, once python-docs-vi-translator has a check catalogue.
-      #
-      # - uses: astral-sh/setup-uv@v5
-      # - run: uv tool install "python-docs-vi-translator==$(cat .pydocvi-version)"
-      # - run: pydocvi audit --report reports/audit.md
-      # - run: pydocvi apply --check
+      - name: audit
+        id: audit
+        # Not blocking yet. The catalogs in this repository are the 2026 Google
+        # output, written before any of these rules existed, and they currently
+        # fail thirteen hard checks with about three thousand findings. Turning
+        # this red on day one would train everybody to ignore it. It flips to
+        # blocking at M5, once pydocvi apply has written the corpus, which is
+        # what fixes the structural and whitespace groups in one pass.
+        continue-on-error: true
+        run: |
+          pydocvi audit --report reports/audit.md | tee "$RUNNER_TEMP/audit.txt"
+
+      - name: regenerate the reports
+        run: |
+          pydocvi report coverage
+          pydocvi report quality
+
+      - name: the reports match the corpus
+        # This one blocks, from today. It is the gate that stops a pull request
+        # landing a catalog change without regenerating the numbers, which is
+        # the failure that turns a coverage table into a confident claim about a
+        # corpus that is not there any more.
+        run: |
+          if ! git diff --exit-code -- README.md reports/; then
+            echo "::error::the reports are stale, run: pydocvi report coverage && pydocvi report quality"
+            exit 1
+          fi
+          echo "the committed reports are what the corpus produces"
+
+      - name: apply --check
+        # Not blocking yet either, and for a narrower reason than the audit. The
+        # committed catalogs came from the old scripts/mt.py, so they differ from
+        # what the memory and the upstream render in their headers and their line
+        # wrapping. All 548 files differ today. It flips to blocking with the
+        # audit, at the same commit and for the same reason.
+        continue-on-error: true
+        run: pydocvi apply --check
+
+      - name: summary
+        if: always()
+        run: |
+          {
+            echo "## Audit"
+            echo
+            echo "Tool \`${{ steps.pin.outputs.tool }}\`, upstream \`${{ steps.pin.outputs.commit }}\`."
+            echo
+            echo '```'
+            tail -n 25 "$RUNNER_TEMP/audit.txt" 2>/dev/null || echo "the audit did not run"
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: the report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: audit
+          path: reports/
+          if-no-files-found: warn
