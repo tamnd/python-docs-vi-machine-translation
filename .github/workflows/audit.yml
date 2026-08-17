@@ -21,26 +21,13 @@ concurrency:
   group: audit-${{ github.ref }}
   cancel-in-progress: true
 
-env:
-  # The upstream mirror is cloned here, shallow, at the pinned commit. S02 needs
-  # it to say whether a msgid was edited, and apply --check needs it because the
-  # catalogs are rendered from upstream structure plus this repo's memory.
-  #
-  # Outside the workspace, and that is not tidiness. The first run of this
-  # workflow cloned it to .upstream inside the checkout, and since the checkout
-  # is what PYDOCVI_CONTENT points at, the walk found 548 mirror catalogs and
-  # counted them as ours. The coverage table grew a tier 0 of 87 008 entries and
-  # every total doubled. A nested checkout is part of the corpus unless it is
-  # somewhere the corpus cannot be.
-  PYDOCVI_UPSTREAM: ${{ runner.temp }}/upstream
-
 jobs:
   audit:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
-      - name: read the pin
+      - name: read the pin, and say where everything lives
         id: pin
         run: |
           test -f .pydocvi-version || { echo "no .pydocvi-version"; exit 1; }
@@ -50,6 +37,21 @@ jobs:
             echo "repo=$(awk '/^repo:/ {print $2}' manifests/upstream.yaml)"
             echo "commit=$(awk '/^commit:/ {print $2}' manifests/upstream.yaml)"
           } >> "$GITHUB_OUTPUT"
+          # Set here rather than in a top-level env block, because the runner
+          # context does not exist that early and a workflow that names it there
+          # does not start at all.
+          #
+          # The mirror goes outside the workspace, and that is not tidiness. The
+          # first run of this workflow cloned it to .upstream inside the
+          # checkout, which is what PYDOCVI_CONTENT points at, so the walk found
+          # 548 mirror catalogs and counted them as ours. The coverage table grew
+          # a tier 0 of 87 008 entries and every total doubled. A nested checkout
+          # is part of the corpus unless it is somewhere the corpus cannot be.
+          {
+            echo "PYDOCVI_UPSTREAM=$RUNNER_TEMP/upstream"
+            echo "PYDOCVI_CONTENT=$GITHUB_WORKSPACE"
+            echo "PYDOCVI_WORK=$RUNNER_TEMP/work"
+          } >> "$GITHUB_ENV"
 
       - name: the upstream mirror at the pinned commit
         run: |
@@ -86,16 +88,10 @@ jobs:
         # blocking at M5, once pydocvi apply has written the corpus, which is
         # what fixes the structural and whitespace groups in one pass.
         continue-on-error: true
-        env:
-          PYDOCVI_CONTENT: ${{ github.workspace }}
-          PYDOCVI_WORK: ${{ runner.temp }}/work
         run: |
           pydocvi audit --report reports/audit.md | tee "$RUNNER_TEMP/audit.txt"
 
       - name: regenerate the reports
-        env:
-          PYDOCVI_CONTENT: ${{ github.workspace }}
-          PYDOCVI_WORK: ${{ runner.temp }}/work
         run: |
           pydocvi report coverage
           pydocvi report quality
@@ -119,9 +115,6 @@ jobs:
         # wrapping. All 548 files differ today. It flips to blocking with the
         # audit, at the same commit and for the same reason.
         continue-on-error: true
-        env:
-          PYDOCVI_CONTENT: ${{ github.workspace }}
-          PYDOCVI_WORK: ${{ runner.temp }}/work
         run: pydocvi apply --check
 
       - name: summary
