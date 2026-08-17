@@ -25,7 +25,14 @@ env:
   # The upstream mirror is cloned here, shallow, at the pinned commit. S02 needs
   # it to say whether a msgid was edited, and apply --check needs it because the
   # catalogs are rendered from upstream structure plus this repo's memory.
-  PYDOCVI_UPSTREAM: ${{ github.workspace }}/.upstream
+  #
+  # Outside the workspace, and that is not tidiness. The first run of this
+  # workflow cloned it to .upstream inside the checkout, and since the checkout
+  # is what PYDOCVI_CONTENT points at, the walk found 548 mirror catalogs and
+  # counted them as ours. The coverage table grew a tier 0 of 87 008 entries and
+  # every total doubled. A nested checkout is part of the corpus unless it is
+  # somewhere the corpus cannot be.
+  PYDOCVI_UPSTREAM: ${{ runner.temp }}/upstream
 
 jobs:
   audit:
