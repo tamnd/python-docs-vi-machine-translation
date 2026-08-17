@@ -7,3 +7,8 @@ __pycache__/
 .pospell/
 .potodo/
 .DS_Store
+
+# Working files that pydocvi glossary regenerates. The reviewed contract is
+# manifests/glossary.yaml and that one is tracked.
+manifests/glossary-candidates.yaml
+manifests/glossary-proposed.yaml
