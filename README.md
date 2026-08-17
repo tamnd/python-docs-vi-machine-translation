@@ -12,7 +12,30 @@ Kho lưu trữ các tập tin `.po` của bản dịch tiếng Việt tài liệ
 Python, tuân theo quy trình được mô tả trong
 [PEP 545](https://peps.python.org/pep-0545/).
 
-Nhánh `main` hiện đang theo dõi tài liệu Python **3.14**.
+Nhánh `main` hiện đang theo dõi tài liệu Python **3.15**.
+
+## Tiến độ
+
+Bảng dưới đây do `pydocvi report coverage` sinh ra từ chính các tập tin `.po`
+trong kho, không phải gõ tay. Chỉ cột `human` mới được tính là đã dịch: cột
+`machine` là phần cần người đọc lại, còn `passthrough` là những chuỗi không
+cần dịch. Xem thêm [reports/coverage.md](reports/coverage.md).
+
+<!-- generated: coverage -->
+
+<!-- counts: {"1": 1426, "2": 17, "3": 18, "4": 9, "5": 147, "6": 9} -->
+
+| Tier | Entries | Words | Human | Machine | Passthrough | Legacy | Untranslated |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 1 | 1,860 | 48,654 | 1,300 | 0 | 0 | 126 | 434 |
+| 2 | 2,439 | 50,711 | 17 | 0 | 0 | 0 | 2,422 |
+| 3 | 8,949 | 212,052 | 18 | 0 | 0 | 0 | 8,931 |
+| 4 | 6,322 | 110,055 | 9 | 0 | 0 | 0 | 6,313 |
+| 5 | 37,588 | 734,158 | 147 | 0 | 0 | 0 | 37,441 |
+| 6 | 25,729 | 495,077 | 9 | 0 | 0 | 0 | 25,720 |
+| **Total** | 82,887 | 1,650,707 | 1,500 | 0 | 0 | 126 | 81,261 |
+
+<!-- /generated: coverage -->
 
 ## Thỏa thuận đóng góp tài liệu
 

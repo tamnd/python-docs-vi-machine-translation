@@ -1,0 +1,10 @@
+# Written by pydocvi sync. Do not edit by hand.
+repo: tamnd/python-docs-vi
+branch: "3.15"
+commit: da475ff9dbbd2eaaefcd7338ca2648b6b7f0c61b
+counts:
+  files: 548
+  entries: 87008
+  words: 1711382
+  characters: 12526506
+  translated: 1435
