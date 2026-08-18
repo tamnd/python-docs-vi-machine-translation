@@ -82,6 +82,55 @@ jobs:
             SPHINXERRORHANDLING="" \
             html
 
+      - name: the built pages are actually in Vietnamese
+        run: |
+          # The gate this build was missing. Sphinx treats an unreadable catalog
+          # as a warning and carries on, so a corpus that no tool can parse
+          # produces a green build, a complete site, and not one word of
+          # Vietnamese. That is not a hypothetical: an ISO 8601 PO-Revision-Date
+          # made Babel raise on all 548 catalogs at once, Sphinx skipped every
+          # .mo, and the published site lost all 1 437 reviewed strings with
+          # nothing anywhere reporting it.
+          #
+          # Reads the rendered HTML rather than the .po files or the .mo files,
+          # because every layer above the browser was happy while this was
+          # broken. The only claim worth checking is the one a reader can see.
+          python3 - <<'PY'
+          import gettext, pathlib, sys
+
+          root = pathlib.Path("cpython/Doc")
+          wrong = []
+          checked = 0
+          # One page per tier 1 area. Tier 1 is where the reviewed translations
+          # are, so if anything at all is rendered it is these.
+          for doc in ("bugs", "tutorial/appetite", "library/functions"):
+              mo = root / "locales/vi/LC_MESSAGES" / f"{doc}.mo"
+              if not mo.exists():
+                  wrong.append(f"{doc}: no .mo was written, so the catalog did not parse")
+                  continue
+              with mo.open("rb") as handle:
+                  catalog = gettext.GNUTranslations(handle)._catalog
+              want = [v for k, v in catalog.items() if isinstance(k, str) and k and v]
+              if not want:
+                  # Every string on the page could be fuzzy, which is normal for
+                  # a page nobody has reviewed. Not an error, but it proves
+                  # nothing either, so it does not count towards the check.
+                  print(f"{doc}: nothing unfuzzy to look for, skipped")
+                  continue
+              checked += 1
+              page = (root / "build/html" / f"{doc}.html").read_text("utf-8")
+              found = sum(1 for one in want if one in page)
+              print(f"{doc}: {found} of {len(want)} translations reached the page")
+              if not found:
+                  wrong.append(f"{doc}: none of its {len(want)} translations reached the page")
+
+          if not checked and not wrong:
+              wrong.append("no tier 1 page had an unfuzzy string, so nothing here was verified")
+          for one in wrong:
+              print(f"::error::{one}")
+          sys.exit(1 if wrong else 0)
+          PY
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
