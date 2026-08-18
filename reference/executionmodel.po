@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-23 15:47+0000\n"
-"PO-Revision-Date: 2026-08-18 08:25+0000\n"
+"PO-Revision-Date: 2026-08-18 08:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.9\n"
+"X-Generator: pydocvi 0.1.10\n"
 
 msgid "Execution model"
 msgstr ""
@@ -96,10 +96,8 @@ msgstr ""
 msgid ":keyword:`type` statements."
 msgstr ""
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ":ref:`type parameter lists <type-params>`."
-msgstr ":ref:`type parameter lists <type-params>`."
+msgstr ""
 
 msgid ""
 "The :keyword:`!import` statement of the form ``from ... import *`` binds all "
@@ -253,15 +251,11 @@ msgstr ""
 msgid "Annotation scopes are used in the following contexts:"
 msgstr ""
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ":term:`Function annotations <function annotation>`."
-msgstr ":term:`Function annotations <function annotation>`."
+msgstr ""
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ":term:`Variable annotations <variable annotation>`."
-msgstr ":term:`Variable annotations <variable annotation>`."
+msgstr ""
 
 msgid ""
 "Type parameter lists for :ref:`generic type aliases <generic-type-aliases>`."

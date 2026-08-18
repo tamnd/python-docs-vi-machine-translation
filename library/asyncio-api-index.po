@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-05 15:48+0000\n"
-"PO-Revision-Date: 2026-08-18 08:25+0000\n"
+"PO-Revision-Date: 2026-08-18 08:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.9\n"
+"X-Generator: pydocvi 0.1.10\n"
 
 msgid "High-level API Index"
 msgstr ""
@@ -169,23 +169,15 @@ msgstr ""
 msgid "Examples"
 msgstr "Ví dụ"
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ""
 ":ref:`Using asyncio.gather() to run things in parallel "
 "<asyncio_example_gather>`."
 msgstr ""
-":ref:`Using asyncio.gather() to run things in parallel "
-"<asyncio_example_gather>`."
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ""
 ":ref:`Using asyncio.wait_for() to enforce a timeout "
 "<asyncio_example_waitfor>`."
 msgstr ""
-":ref:`Using asyncio.wait_for() to enforce a timeout "
-"<asyncio_example_waitfor>`."
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -232,14 +224,10 @@ msgstr ":class:`LifoQueue`"
 msgid "A LIFO queue."
 msgstr ""
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ""
 ":ref:`Using asyncio.Queue to distribute workload between several Tasks "
 "<asyncio_example_queue_dist>`."
 msgstr ""
-":ref:`Using asyncio.Queue to distribute workload between several Tasks "
-"<asyncio_example_queue_dist>`."
 
 msgid "See also the :ref:`Queues documentation page <asyncio-queues>`."
 msgstr ""
@@ -266,10 +254,8 @@ msgstr "``await`` :func:`create_subprocess_shell`"
 msgid "Run a shell command."
 msgstr ""
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ":ref:`Executing a shell command <asyncio_example_subprocess_shell>`."
-msgstr ":ref:`Executing a shell command <asyncio_example_subprocess_shell>`."
+msgstr ""
 
 msgid "See also the :ref:`subprocess APIs <asyncio-subprocess>` documentation."
 msgstr ""
@@ -328,10 +314,8 @@ msgstr ":class:`StreamWriter`"
 msgid "High-level async/await object to send network data."
 msgstr ""
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ":ref:`Example TCP client <asyncio_example_stream>`."
-msgstr ":ref:`Example TCP client <asyncio_example_stream>`."
+msgstr ""
 
 msgid "See also the :ref:`streams APIs <asyncio-streams>` documentation."
 msgstr ""
@@ -426,14 +410,10 @@ msgstr ":exc:`asyncio.BrokenBarrierError`"
 msgid "Raised when a Barrier is broken. See also :meth:`Barrier.wait`."
 msgstr ""
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ""
 ":ref:`Handling CancelledError to run code on cancellation request "
 "<asyncio_example_task_cancel>`."
 msgstr ""
-":ref:`Handling CancelledError to run code on cancellation request "
-"<asyncio_example_task_cancel>`."
 
 msgid ""
 "See also the full list of :ref:`asyncio-specific exceptions <asyncio-"

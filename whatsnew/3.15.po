@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 08:25+0000\n"
+"PO-Revision-Date: 2026-08-18 08:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.9\n"
+"X-Generator: pydocvi 0.1.10\n"
 
 msgid "What's new in Python 3.15"
 msgstr ""
@@ -47,146 +47,88 @@ msgstr ""
 msgid "Summary -- Release highlights"
 msgstr ""
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ""
 ":pep:`810`: :ref:`Explicit lazy imports for faster startup times "
 "<whatsnew315-lazy-imports>`"
 msgstr ""
-":pep:`810`: :ref:`Explicit lazy imports for faster startup times "
-"<whatsnew315-lazy-imports>`"
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ""
 ":pep:`814`: :ref:`Add frozendict built-in type <whatsnew315-frozendict>`"
 msgstr ""
-":pep:`814`: :ref:`Add frozendict built-in type <whatsnew315-frozendict>`"
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ":pep:`661`: :ref:`Add sentinel built-in type <whatsnew315-sentinel>`"
-msgstr ":pep:`661`: :ref:`Add sentinel built-in type <whatsnew315-sentinel>`"
+msgstr ""
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ""
 ":pep:`799`: :ref:`A dedicated profiling package for organizing Python "
 "profiling tools <whatsnew315-profiling-package>`"
 msgstr ""
-":pep:`799`: :ref:`A dedicated profiling package for organizing Python "
-"profiling tools <whatsnew315-profiling-package>`"
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ""
 ":pep:`799`: :ref:`Tachyon: High frequency statistical sampling profiler "
 "<whatsnew315-sampling-profiler>`"
 msgstr ""
-":pep:`799`: :ref:`Tachyon: High frequency statistical sampling profiler "
-"<whatsnew315-sampling-profiler>`"
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ""
 ":pep:`831`: :ref:`Frame pointers are enabled by default for improved system-"
 "level observability <whatsnew315-frame-pointers>`"
 msgstr ""
-":pep:`831`: :ref:`Frame pointers are enabled by default for improved system-"
-"level observability <whatsnew315-frame-pointers>`"
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ""
 ":pep:`798`: :ref:`Unpacking in comprehensions <whatsnew315-unpacking-in-"
 "comprehensions>`"
 msgstr ""
-":pep:`798`: :ref:`Unpacking in comprehensions <whatsnew315-unpacking-in-"
-"comprehensions>`"
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ""
-":pep:`686`: :ref:`Python now uses UTF-8 as the default encoding "
-"<whatsnew315-utf8-default>`"
+":pep:`686`: :ref:`Python now uses UTF-8 as the default encoding <whatsnew315-"
+"utf8-default>`"
 msgstr ""
-":pep:`686`: :ref:`Python now uses UTF-8 as the default encoding "
-"<whatsnew315-utf8-default>`"
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ""
 ":pep:`829`: :ref:`Package startup configuration files <whatsnew315-startup-"
 "files>`"
 msgstr ""
-":pep:`829`: :ref:`Package startup configuration files <whatsnew315-startup-"
-"files>`"
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ""
 ":pep:`728`: :ref:`TypedDict with typed extra items <whatsnew315-typeddict>`"
 msgstr ""
-":pep:`728`: :ref:`TypedDict with typed extra items <whatsnew315-typeddict>`"
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ""
 ":pep:`747`: :ref:`Annotating type forms with TypeForm <whatsnew315-typeform>`"
 msgstr ""
-":pep:`747`: :ref:`Annotating type forms with TypeForm <whatsnew315-typeform>`"
 
 msgid ":pep:`800`: Disjoint bases in the type system"
 msgstr ""
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ""
 ":pep:`782`: :ref:`A new PyBytesWriter C API to create a Python bytes object "
 "<whatsnew315-pybyteswriter>`"
 msgstr ""
-":pep:`782`: :ref:`A new PyBytesWriter C API to create a Python bytes object "
-"<whatsnew315-pybyteswriter>`"
 
 msgid ""
 ":pep:`803`, :pep:`820 <820>`, :pep:`793 <793>`: :ref:`Stable ABI for free-"
 "threaded builds <whatsnew315-abi3t>` and related C API"
 msgstr ""
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ""
-":pep:`788`: :ref:`Protection against finalization in the C API "
-"<whatsnew315-c-api-interpreter-finalization>`"
+":pep:`788`: :ref:`Protection against finalization in the C API <whatsnew315-"
+"c-api-interpreter-finalization>`"
 msgstr ""
-":pep:`788`: :ref:`Protection against finalization in the C API "
-"<whatsnew315-c-api-interpreter-finalization>`"
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ""
 ":ref:`The JIT compiler has been significantly upgraded <whatsnew315-jit>`"
 msgstr ""
-":ref:`The JIT compiler has been significantly upgraded <whatsnew315-jit>`"
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ""
 ":ref:`The official Windows 64-bit binaries now use the tail-calling "
 "interpreter <whatsnew315-windows-tail-calling-interpreter>`"
 msgstr ""
-":ref:`The official Windows 64-bit binaries now use the tail-calling "
-"interpreter <whatsnew315-windows-tail-calling-interpreter>`"
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ":ref:`Improved error messages <whatsnew315-improved-error-messages>`"
-msgstr ":ref:`Improved error messages <whatsnew315-improved-error-messages>`"
+msgstr ""
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ":ref:`More color <whatsnew315-more-color>`"
-msgstr ":ref:`More color <whatsnew315-more-color>`"
+msgstr ""
 
 msgid "New features"
 msgstr ""

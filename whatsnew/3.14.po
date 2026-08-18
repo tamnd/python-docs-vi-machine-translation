@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 08:25+0000\n"
+"PO-Revision-Date: 2026-08-18 08:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.9\n"
+"X-Generator: pydocvi 0.1.10\n"
 
 msgid "What's new in Python 3.14"
 msgstr ""
@@ -81,82 +81,50 @@ msgid ""
 "<whatsnew314-deferred-annotations>`"
 msgstr ""
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ""
-":pep:`734`: :ref:`Multiple interpreters in the standard library "
-"<whatsnew314-multiple-interpreters>`"
+":pep:`734`: :ref:`Multiple interpreters in the standard library <whatsnew314-"
+"multiple-interpreters>`"
 msgstr ""
-":pep:`734`: :ref:`Multiple interpreters in the standard library "
-"<whatsnew314-multiple-interpreters>`"
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ""
 ":pep:`750`: :ref:`Template strings <whatsnew314-template-string-literals>`"
 msgstr ""
-":pep:`750`: :ref:`Template strings <whatsnew314-template-string-literals>`"
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ""
 ":pep:`758`: :ref:`Allow except and except* expressions without brackets "
 "<whatsnew314-bracketless-except>`"
 msgstr ""
-":pep:`758`: :ref:`Allow except and except* expressions without brackets "
-"<whatsnew314-bracketless-except>`"
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ""
 ":pep:`765`: :ref:`Control flow in finally blocks <whatsnew314-finally-"
 "syntaxwarning>`"
 msgstr ""
-":pep:`765`: :ref:`Control flow in finally blocks <whatsnew314-finally-"
-"syntaxwarning>`"
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ""
-":pep:`768`: :ref:`Safe external debugger interface for CPython "
-"<whatsnew314-remote-debugging>`"
+":pep:`768`: :ref:`Safe external debugger interface for CPython <whatsnew314-"
+"remote-debugging>`"
 msgstr ""
-":pep:`768`: :ref:`Safe external debugger interface for CPython "
-"<whatsnew314-remote-debugging>`"
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ":ref:`A new type of interpreter <whatsnew314-tail-call-interpreter>`"
-msgstr ":ref:`A new type of interpreter <whatsnew314-tail-call-interpreter>`"
+msgstr ""
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ""
 ":ref:`Free-threaded mode improvements <whatsnew314-free-threaded-cpython>`"
 msgstr ""
-":ref:`Free-threaded mode improvements <whatsnew314-free-threaded-cpython>`"
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ":ref:`Improved error messages <whatsnew314-improved-error-messages>`"
-msgstr ":ref:`Improved error messages <whatsnew314-improved-error-messages>`"
+msgstr ""
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ":ref:`Incremental garbage collection <whatsnew314-incremental-gc>`"
-msgstr ":ref:`Incremental garbage collection <whatsnew314-incremental-gc>`"
+msgstr ""
 
 msgid "Significant improvements in the standard library:"
 msgstr ""
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ""
-":pep:`784`: :ref:`Zstandard support in the standard library "
-"<whatsnew314-zstandard>`"
+":pep:`784`: :ref:`Zstandard support in the standard library <whatsnew314-"
+"zstandard>`"
 msgstr ""
-":pep:`784`: :ref:`Zstandard support in the standard library "
-"<whatsnew314-zstandard>`"
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -176,11 +144,8 @@ msgstr ""
 msgid "C API improvements:"
 msgstr ""
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ":pep:`741`: :ref:`Python configuration C API <whatsnew314-capi-config>`"
 msgstr ""
-":pep:`741`: :ref:`Python configuration C API <whatsnew314-capi-config>`"
 
 msgid "Platform support:"
 msgstr ""
@@ -193,41 +158,25 @@ msgstr ""
 msgid "Release changes:"
 msgstr ""
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ""
-":pep:`779`: :ref:`Free-threaded Python is officially supported "
-"<whatsnew314-free-threaded-now-supported>`"
+":pep:`779`: :ref:`Free-threaded Python is officially supported <whatsnew314-"
+"free-threaded-now-supported>`"
 msgstr ""
-":pep:`779`: :ref:`Free-threaded Python is officially supported "
-"<whatsnew314-free-threaded-now-supported>`"
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ""
-":pep:`761`: :ref:`PGP signatures have been discontinued for official releases"
-" <whatsnew314-no-more-pgp>`"
+":pep:`761`: :ref:`PGP signatures have been discontinued for official "
+"releases <whatsnew314-no-more-pgp>`"
 msgstr ""
-":pep:`761`: :ref:`PGP signatures have been discontinued for official releases"
-" <whatsnew314-no-more-pgp>`"
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ""
 ":ref:`Windows and macOS binary releases now support the experimental just-in-"
 "time compiler <whatsnew314-jit-compiler>`"
 msgstr ""
-":ref:`Windows and macOS binary releases now support the experimental just-in-"
-"time compiler <whatsnew314-jit-compiler>`"
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ""
 ":ref:`Binary releases for Android are now provided <whatsnew314-build-"
 "changes>`"
 msgstr ""
-":ref:`Binary releases for Android are now provided <whatsnew314-build-"
-"changes>`"
 
 msgid "New features"
 msgstr ""

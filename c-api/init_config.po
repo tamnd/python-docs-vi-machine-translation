@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 08:25+0000\n"
+"PO-Revision-Date: 2026-08-18 08:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.9\n"
+"X-Generator: pydocvi 0.1.10\n"
 
 msgid "Python Initialization Configuration"
 msgstr ""
@@ -1390,14 +1390,10 @@ msgid ""
 "defaults)."
 msgstr ""
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ""
 "``PYMEM_ALLOCATOR_DEFAULT`` (``1``): :ref:`default memory allocators "
 "<default-memory-allocators>`."
 msgstr ""
-"``PYMEM_ALLOCATOR_DEFAULT`` (``1``): :ref:`default memory allocators "
-"<default-memory-allocators>`."
 
 msgid ""
 "``PYMEM_ALLOCATOR_DEBUG`` (``2``): :ref:`default memory allocators <default-"
@@ -1412,14 +1408,10 @@ msgid ""
 "ref:`debug hooks <pymem-debug-hooks>`."
 msgstr ""
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ""
 "``PYMEM_ALLOCATOR_PYMALLOC`` (``5``): :ref:`Python pymalloc memory allocator "
 "<pymalloc>`."
 msgstr ""
-"``PYMEM_ALLOCATOR_PYMALLOC`` (``5``): :ref:`Python pymalloc memory allocator "
-"<pymalloc>`."
 
 msgid ""
 "``PYMEM_ALLOCATOR_PYMALLOC_DEBUG`` (``6``): :ref:`Python pymalloc memory "
@@ -2012,14 +2004,10 @@ msgid ""
 "`PYTHONFAULTHANDLER` environment variable."
 msgstr ""
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ""
-":term:`Filesystem encoding <filesystem encoding and error handler>`: "
-":func:`sys.getfilesystemencoding`."
+":term:`Filesystem encoding <filesystem encoding and error handler>`: :func:"
+"`sys.getfilesystemencoding`."
 msgstr ""
-":term:`Filesystem encoding <filesystem encoding and error handler>`: "
-":func:`sys.getfilesystemencoding`."
 
 msgid "On macOS, Android and VxWorks: use ``\"utf-8\"`` by default."
 msgstr ""
@@ -2057,14 +2045,10 @@ msgstr ""
 msgid "See also the :c:member:`~PyConfig.filesystem_errors` member."
 msgstr ""
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ""
-":term:`Filesystem error handler <filesystem encoding and error handler>`: "
-":func:`sys.getfilesystemencodeerrors`."
+":term:`Filesystem error handler <filesystem encoding and error handler>`: :"
+"func:`sys.getfilesystemencodeerrors`."
 msgstr ""
-":term:`Filesystem error handler <filesystem encoding and error handler>`: "
-":func:`sys.getfilesystemencodeerrors`."
 
 msgid ""
 "On Windows: use ``\"surrogatepass\"`` by default, or ``\"replace\"``  if :c:"

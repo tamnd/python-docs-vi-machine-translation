@@ -28,11 +28,11 @@
 
 ## Glossary adherence
 
-640 terms against 2,023 translated entries. 285 misses over 90 terms.
+640 terms against 2,024 translated entries. 285 misses over 90 terms.
 
 | Written by | Entries | Misses | Misses per entry | Terms |
 | --- | ---: | ---: | ---: | ---: |
-| human | 1,163 | 244 | 0.21 | 84 |
+| human | 1,164 | 244 | 0.21 | 84 |
 | machine | 860 | 41 | 0.05 | 19 |
 
 | Term | Misses |

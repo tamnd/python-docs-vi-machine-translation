@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 08:25+0000\n"
+"PO-Revision-Date: 2026-08-18 08:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.9\n"
+"X-Generator: pydocvi 0.1.10\n"
 
 msgid "Lexical analysis"
 msgstr ""
@@ -71,10 +71,8 @@ msgstr ":ref:`Whitespace <whitespace>`"
 msgid "CR, LF"
 msgstr ""
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ":ref:`New line <line-structure>`"
-msgstr ":ref:`New line <line-structure>`"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -84,10 +82,8 @@ msgstr ":ref:`Indentation <indentation>`"
 msgid "backslash (``\\``)"
 msgstr ""
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ":ref:`Explicit line joining <explicit-joining>`"
-msgstr ":ref:`Explicit line joining <explicit-joining>`"
+msgstr ""
 
 msgid "(Also significant in :ref:`string escape sequences <escape-sequences>`)"
 msgstr ""
@@ -103,10 +99,8 @@ msgstr ":ref:`Comment <comments>`"
 msgid "quote (``'``, ``\"``)"
 msgstr ""
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ":ref:`String literal <strings>`"
-msgstr ":ref:`String literal <strings>`"
+msgstr ""
 
 msgid "ASCII letter (``a``-``z``, ``A``-``Z``)"
 msgstr ""
@@ -131,10 +125,8 @@ msgstr ""
 msgid "number (``0``-``9``)"
 msgstr ""
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ":ref:`Numeric literal <numbers>`"
-msgstr ":ref:`Numeric literal <numbers>`"
+msgstr ""
 
 msgid "dot (``.``)"
 msgstr ""
@@ -162,18 +154,14 @@ msgstr ""
 msgid "other printing character"
 msgstr ""
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ":ref:`Operator or delimiter <operators>`"
-msgstr ":ref:`Operator or delimiter <operators>`"
+msgstr ""
 
 msgid "end of file"
 msgstr ""
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ":ref:`End marker <endmarker-token>`"
-msgstr ":ref:`End marker <endmarker-token>`"
+msgstr ""
 
 msgid "Line structure"
 msgstr ""
@@ -924,15 +912,11 @@ msgstr ""
 msgid "The allowed prefixes are:"
 msgstr ""
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid "``b``: :ref:`Bytes literal <bytes-literal>`"
-msgstr "``b``: :ref:`Bytes literal <bytes-literal>`"
+msgstr ""
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid "``r``: :ref:`Raw string <raw-strings>`"
-msgstr "``r``: :ref:`Raw string <raw-strings>`"
+msgstr ""
 
 msgid "``f``: :ref:`Formatted string literal <f-strings>` (\"f-string\")"
 msgstr ""
@@ -1021,20 +1005,16 @@ msgstr ":ref:`Backslash <string-escape-escaped-char>`"
 msgid "``\\'``"
 msgstr "``\\'``"
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ":ref:`Single quote <string-escape-escaped-char>`"
-msgstr ":ref:`Single quote <string-escape-escaped-char>`"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
 msgid "``\\\"``"
 msgstr "``\\\"``"
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ":ref:`Double quote <string-escape-escaped-char>`"
-msgstr ":ref:`Double quote <string-escape-escaped-char>`"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -1127,10 +1107,8 @@ msgstr ":ref:`string-escape-named`"
 msgid ":samp:`\\\\u{xxxx}`"
 msgstr ":samp:`\\\\u{xxxx}`"
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ":ref:`Hexadecimal Unicode character <string-escape-long-hex>`"
-msgstr ":ref:`Hexadecimal Unicode character <string-escape-long-hex>`"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
