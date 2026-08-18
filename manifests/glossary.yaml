@@ -1,6 +1,6 @@
 # Written by pydocvi glossary. Rows are in match order, longest first.
 # GLOSSARY.md is generated from this file and G05 fails when they disagree.
-version: 1
+version: 2
 terms:
   - en: "asynchronous generator iterator"
     vi: "trình lặp sinh bất đồng bộ"
@@ -1259,6 +1259,9 @@ terms:
     vi: "kiểu C"
   - en: "finder"
     vi: "trình tìm"
+  - en: "import"
+    vi: "import"
+    keep_en: true
   - en: "lambda"
     vi: "lambda"
     keep_en: true

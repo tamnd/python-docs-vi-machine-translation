@@ -28,18 +28,19 @@
 
 ## Glossary adherence
 
-639 terms against 2,023 translated entries. 272 misses over 89 terms.
+640 terms against 2,023 translated entries. 285 misses over 90 terms.
 
 | Written by | Entries | Misses | Misses per entry | Terms |
 | --- | ---: | ---: | ---: | ---: |
-| human | 1,163 | 241 | 0.21 | 83 |
-| machine | 860 | 31 | 0.04 | 18 |
+| human | 1,163 | 244 | 0.21 | 84 |
+| machine | 860 | 41 | 0.05 | 19 |
 
 | Term | Misses |
 | --- | ---: |
 | type | 39 |
 | list | 30 |
 | sequence | 22 |
+| import | 13 |
 | dictionary | 10 |
 | newline | 8 |
 | iterator | 6 |
@@ -56,7 +57,6 @@
 | attribute | 3 |
 | base classes | 3 |
 | data types | 3 |
-| different types | 3 |
 
 ## Dead entries
 
