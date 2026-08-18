@@ -9,18 +9,18 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-09 15:16+0000\n"
-"PO-Revision-Date: 2025-09-16 00:02+0000\n"
-"Last-Translator: python-doc bot, 2025\n"
-"Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
-"vi/)\n"
+"POT-Creation-Date: 2026-05-08 18:34+0000\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: pydocvi 0.1.2\n"
 
 msgid ":mod:`!xml.dom.pulldom` --- Support for building partial DOM trees"
 msgstr ""
@@ -50,6 +50,8 @@ msgid ""
 "pass a custom parser instance in::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "from xml.dom.pulldom import parse\n"
 "from xml.sax import make_parser\n"
@@ -59,10 +61,19 @@ msgid ""
 "parser.setFeature(feature_external_ges, True)\n"
 "parse(filename, parser=parser)"
 msgstr ""
+"from xml.dom.pulldom import parse\n"
+"from xml.sax import make_parser\n"
+"from xml.sax.handler import feature_external_ges\n"
+"\n"
+"parser = make_parser()\n"
+"parser.setFeature(feature_external_ges, True)\n"
+"parse(filename, parser=parser)"
 
 msgid "Example::"
 msgstr "Ví dụ::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "from xml.dom import pulldom\n"
 "\n"
@@ -73,33 +84,57 @@ msgid ""
 "            doc.expandNode(node)\n"
 "            print(node.toxml())"
 msgstr ""
+"from xml.dom import pulldom\n"
+"\n"
+"doc = pulldom.parse('sales_items.xml')\n"
+"for event, node in doc:\n"
+"    if event == pulldom.START_ELEMENT and node.tagName == 'item':\n"
+"        if int(node.getAttribute('price')) > 50:\n"
+"            doc.expandNode(node)\n"
+"            print(node.toxml())"
 
 msgid "``event`` is a constant and can be one of:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":data:`START_ELEMENT`"
-msgstr ""
+msgstr ":data:`START_ELEMENT`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":data:`END_ELEMENT`"
-msgstr ""
+msgstr ":data:`END_ELEMENT`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":data:`COMMENT`"
-msgstr ""
+msgstr ":data:`COMMENT`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":data:`START_DOCUMENT`"
-msgstr ""
+msgstr ":data:`START_DOCUMENT`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":data:`END_DOCUMENT`"
-msgstr ""
+msgstr ":data:`END_DOCUMENT`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":data:`CHARACTERS`"
-msgstr ""
+msgstr ":data:`CHARACTERS`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":data:`PROCESSING_INSTRUCTION`"
-msgstr ""
+msgstr ":data:`PROCESSING_INSTRUCTION`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":data:`IGNORABLE_WHITESPACE`"
-msgstr ""
+msgstr ":data:`IGNORABLE_WHITESPACE`"
 
 msgid ""
 "``node`` is an object of type :class:`xml.dom.minidom.Document`, :class:`xml."
@@ -164,18 +199,33 @@ msgstr ""
 msgid "Expands all children of *node* into *node*. Example::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "from xml.dom import pulldom\n"
 "\n"
-"xml = '<html><title>Foo</title> <p>Some text <div>and more</div></p> </"
-"html>'\n"
+"xml = '<html><title>Foo</title> <p>Some text <div>and more</div></p> "
+"</html>'\n"
 "doc = pulldom.parseString(xml)\n"
 "for event, node in doc:\n"
 "    if event == pulldom.START_ELEMENT and node.tagName == 'p':\n"
 "        # Following statement only prints '<p/>'\n"
 "        print(node.toxml())\n"
 "        doc.expandNode(node)\n"
-"        # Following statement prints node with all its children '<p>Some "
-"text <div>and more</div></p>'\n"
+"        # Following statement prints node with all its children '<p>Some text"
+" <div>and more</div></p>'\n"
 "        print(node.toxml())"
 msgstr ""
+"from xml.dom import pulldom\n"
+"\n"
+"xml = '<html><title>Foo</title> <p>Some text <div>and more</div></p> "
+"</html>'\n"
+"doc = pulldom.parseString(xml)\n"
+"for event, node in doc:\n"
+"    if event == pulldom.START_ELEMENT and node.tagName == 'p':\n"
+"        # Following statement only prints '<p/>'\n"
+"        print(node.toxml())\n"
+"        doc.expandNode(node)\n"
+"        # Following statement prints node with all its children '<p>Some text"
+" <div>and more</div></p>'\n"
+"        print(node.toxml())"

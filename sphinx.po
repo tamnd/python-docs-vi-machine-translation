@@ -9,21 +9,23 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-17 14:50+0000\n"
-"PO-Revision-Date: 2025-09-16 00:02+0000\n"
-"Last-Translator: python-doc bot, 2025\n"
-"Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
-"vi/)\n"
+"POT-Creation-Date: 2026-04-23 15:47+0000\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: pydocvi 0.1.2\n"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Stable"
-msgstr ""
+msgstr "Stable"
 
 msgid "In development"
 msgstr ""
@@ -43,8 +45,10 @@ msgstr ""
 msgid "Show translation source"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Download"
-msgstr ""
+msgstr "Download"
 
 msgid "Download Python %(dl_version)s documentation"
 msgstr ""
@@ -57,8 +61,10 @@ msgid ""
 "Python:"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Format"
-msgstr ""
+msgstr "Format"
 
 msgid "Packed as .zip"
 msgstr ""
@@ -66,8 +72,10 @@ msgstr ""
 msgid "Packed as .tar.bz2"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "HTML"
-msgstr ""
+msgstr "HTML"
 
 msgid ""
 "<a href=\"%(dl_base)s/python-%(dl_version)s-docs-html.zip\">Download</a>"
@@ -88,8 +96,10 @@ msgid ""
 "<a href=\"%(dl_base)s/python-%(dl_version)s-docs-text.tar.bz2\">Download</a>"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Texinfo"
-msgstr ""
+msgstr "Texinfo"
 
 msgid ""
 "<a href=\"%(dl_base)s/python-%(dl_version)s-docs-texinfo.zip\">Download</a>"
@@ -100,8 +110,10 @@ msgid ""
 "a>"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "EPUB"
-msgstr ""
+msgstr "EPUB"
 
 msgid "<a href=\"%(dl_base)s/python-%(dl_version)s-docs.epub\">Download</a>"
 msgstr ""
@@ -123,16 +135,20 @@ msgid ""
 "for file sizes."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Problems"
-msgstr ""
+msgstr "Problems"
 
 msgid ""
 "<a href=\"%(bugs)s\">Open an issue</a>\n"
 "if you have comments or suggestions for the Python documentation."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Availability"
-msgstr ""
+msgstr "Availability"
 
 msgid "Part of the"
 msgstr ""
@@ -182,20 +198,27 @@ msgstr ""
 msgid "Deprecated since version %s, removed in version %s"
 msgstr ""
 
+msgid ":term:`Soft deprecated` since version %s"
+msgstr ""
+
 msgid "in development"
 msgstr ""
 
 msgid "pre-release"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "stable"
-msgstr ""
+msgstr "stable"
 
 msgid "security-fixes"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "EOL"
-msgstr ""
+msgstr "EOL"
 
 msgid "Welcome! This is the official documentation for Python %(release)s."
 msgstr ""
@@ -211,8 +234,10 @@ msgid ""
 "2.0</a>"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Tutorial"
-msgstr ""
+msgstr "Tutorial"
 
 msgid "Start here: a tour of Python's syntax and features"
 msgstr ""
@@ -265,14 +290,18 @@ msgstr ""
 msgid "C API reference"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "FAQs"
-msgstr ""
+msgstr "FAQs"
 
 msgid "Frequently asked questions (with answers!)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Deprecations"
-msgstr ""
+msgstr "Deprecations"
 
 msgid "Deprecated functionality"
 msgstr ""
@@ -292,8 +321,10 @@ msgstr ""
 msgid "All functions, classes, and terms"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Glossary"
-msgstr ""
+msgstr "Glossary"
 
 msgid "Terms explained"
 msgstr ""
@@ -358,19 +389,28 @@ msgstr ""
 msgid "Python developer’s guide"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "This document is for an old version of Python that is no longer supported.\n"
 "    You should upgrade, and read the"
 msgstr ""
+"This document is for an old version of Python that is no longer supported.\n"
+"    You should upgrade, and read the"
 
 msgid "Python documentation for the current stable release"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
-"This is a deploy preview created from a <a href=\"%(repository_url)s/pull/"
-"%(pr_id)s\">pull request</a>.\n"
+"This is a deploy preview created from a <a "
+"href=\"%(repository_url)s/pull/%(pr_id)s\">pull request</a>.\n"
 "  For authoritative documentation, see"
 msgstr ""
+"This is a deploy preview created from a <a "
+"href=\"%(repository_url)s/pull/%(pr_id)s\">pull request</a>.\n"
+"  For authoritative documentation, see"
 
 msgid "the current stable release"
 msgstr ""

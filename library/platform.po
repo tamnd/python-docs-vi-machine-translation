@@ -9,18 +9,18 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-09 15:16+0000\n"
-"PO-Revision-Date: 2025-09-16 00:01+0000\n"
-"Last-Translator: python-doc bot, 2025\n"
-"Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
-"vi/)\n"
+"POT-Creation-Date: 2026-05-08 18:34+0000\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: pydocvi 0.1.2\n"
 
 msgid ":mod:`!platform` ---  Access to underlying platform's identifying data"
 msgstr ""
@@ -71,8 +71,10 @@ msgid ""
 "to query the :data:`sys.maxsize` attribute::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "is_64bits = sys.maxsize > 2**32"
-msgstr ""
+msgstr "is_64bits = sys.maxsize > 2**32"
 
 msgid ""
 "Returns the machine type, e.g. ``'AMD64'``. An empty string is returned if "
@@ -223,24 +225,6 @@ msgid ""
 "external process and one needs to retrieve the updated value."
 msgstr ""
 
-msgid "Java platform"
-msgstr ""
-
-msgid "Version interface for Jython."
-msgstr ""
-
-msgid ""
-"Returns a tuple ``(release, vendor, vminfo, osinfo)`` with *vminfo* being a "
-"tuple ``(vm_name, vm_release, vm_vendor)`` and *osinfo* being a tuple "
-"``(os_name, os_version, os_arch)``. Values which cannot be determined are "
-"set to the defaults given as parameters (which all default to ``''``)."
-msgstr ""
-
-msgid ""
-"It was largely untested, had a confusing API, and was only useful for Jython "
-"support."
-msgstr ""
-
 msgid "Windows platform"
 msgstr ""
 
@@ -368,6 +352,8 @@ msgstr ""
 msgid "Example::"
 msgstr "Ví dụ::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def get_like_distro():\n"
 "    info = platform.freedesktop_os_release()\n"
@@ -377,6 +363,13 @@ msgid ""
 "        ids.extend(info[\"ID_LIKE\"].split())\n"
 "    return ids"
 msgstr ""
+"def get_like_distro():\n"
+"    info = platform.freedesktop_os_release()\n"
+"    ids = [info[\"ID\"]]\n"
+"    if \"ID_LIKE\" in info:\n"
+"        # ids are space separated and ordered by precedence\n"
+"        ids.extend(info[\"ID_LIKE\"].split())\n"
+"    return ids"
 
 msgid "Android platform"
 msgstr ""
@@ -429,8 +422,10 @@ msgid ""
 "of the interpreter::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "python -m platform [--terse] [--nonaliased] [{nonaliased,terse} ...]"
-msgstr ""
+msgstr "python -m platform [--terse] [--nonaliased] [{nonaliased,terse} ...]"
 
 msgid "The following options are accepted:"
 msgstr ""

@@ -10,18 +10,18 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-21 15:07+0000\n"
-"PO-Revision-Date: 2025-09-16 00:02+0000\n"
-"Last-Translator: Nguyen Duc Tam, 2026\n"
-"Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
-"vi/)\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: pydocvi 0.1.2\n"
 
 msgid ":mod:`!tracemalloc` --- Trace memory allocations"
 msgstr ""
@@ -69,6 +69,8 @@ msgstr ""
 msgid "Display the 10 files allocating the most memory::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import tracemalloc\n"
 "\n"
@@ -83,6 +85,18 @@ msgid ""
 "for stat in top_stats[:10]:\n"
 "    print(stat)"
 msgstr ""
+"import tracemalloc\n"
+"\n"
+"tracemalloc.start()\n"
+"\n"
+"# ... run your application ...\n"
+"\n"
+"snapshot = tracemalloc.take_snapshot()\n"
+"top_stats = snapshot.statistics('lineno')\n"
+"\n"
+"print(\"[ Top 10 ]\")\n"
+"for stat in top_stats[:10]:\n"
+"    print(stat)"
 
 msgid "Example of output of the Python test suite::"
 msgstr ""
@@ -120,6 +134,8 @@ msgstr ""
 msgid "Take two snapshots and display the differences::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import tracemalloc\n"
 "tracemalloc.start()\n"
@@ -135,6 +151,19 @@ msgid ""
 "for stat in top_stats[:10]:\n"
 "    print(stat)"
 msgstr ""
+"import tracemalloc\n"
+"tracemalloc.start()\n"
+"# ... start your application ...\n"
+"\n"
+"snapshot1 = tracemalloc.take_snapshot()\n"
+"# ... call the function leaking memory ...\n"
+"snapshot2 = tracemalloc.take_snapshot()\n"
+"\n"
+"top_stats = snapshot2.compare_to(snapshot1, 'lineno')\n"
+"\n"
+"print(\"[ Top 10 differences ]\")\n"
+"for stat in top_stats[:10]:\n"
+"    print(stat)"
 
 msgid ""
 "Example of output before/after running some tests of the Python test suite::"
@@ -184,6 +213,8 @@ msgstr ""
 msgid "Code to display the traceback of the biggest memory block::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import tracemalloc\n"
 "\n"
@@ -201,11 +232,28 @@ msgid ""
 "for line in stat.traceback.format():\n"
 "    print(line)"
 msgstr ""
+"import tracemalloc\n"
+"\n"
+"# Store 25 frames\n"
+"tracemalloc.start(25)\n"
+"\n"
+"# ... run your application ...\n"
+"\n"
+"snapshot = tracemalloc.take_snapshot()\n"
+"top_stats = snapshot.statistics('traceback')\n"
+"\n"
+"# pick the biggest memory block\n"
+"stat = top_stats[0]\n"
+"print(\"%s memory blocks: %.1f KiB\" % (stat.count, stat.size / 1024))\n"
+"for line in stat.traceback.format():\n"
+"    print(line)"
 
 msgid ""
 "Example of output of the Python test suite (traceback limited to 25 frames)::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "903 memory blocks: 870.1 KiB\n"
 "  File \"<frozen importlib._bootstrap>\", line 716\n"
@@ -242,6 +290,40 @@ msgid ""
 "  File \"/usr/lib/python3.4/runpy.py\", line 160\n"
 "    \"__main__\", fname, loader, pkg_name)"
 msgstr ""
+"903 memory blocks: 870.1 KiB\n"
+"  File \"<frozen importlib._bootstrap>\", line 716\n"
+"  File \"<frozen importlib._bootstrap>\", line 1036\n"
+"  File \"<frozen importlib._bootstrap>\", line 934\n"
+"  File \"<frozen importlib._bootstrap>\", line 1068\n"
+"  File \"<frozen importlib._bootstrap>\", line 619\n"
+"  File \"<frozen importlib._bootstrap>\", line 1581\n"
+"  File \"<frozen importlib._bootstrap>\", line 1614\n"
+"  File \"/usr/lib/python3.4/doctest.py\", line 101\n"
+"    import pdb\n"
+"  File \"<frozen importlib._bootstrap>\", line 284\n"
+"  File \"<frozen importlib._bootstrap>\", line 938\n"
+"  File \"<frozen importlib._bootstrap>\", line 1068\n"
+"  File \"<frozen importlib._bootstrap>\", line 619\n"
+"  File \"<frozen importlib._bootstrap>\", line 1581\n"
+"  File \"<frozen importlib._bootstrap>\", line 1614\n"
+"  File \"/usr/lib/python3.4/test/support/__init__.py\", line 1728\n"
+"    import doctest\n"
+"  File \"/usr/lib/python3.4/test/test_pickletools.py\", line 21\n"
+"    support.run_doctest(pickletools)\n"
+"  File \"/usr/lib/python3.4/test/regrtest.py\", line 1276\n"
+"    test_runner()\n"
+"  File \"/usr/lib/python3.4/test/regrtest.py\", line 976\n"
+"    display_failure=not verbose)\n"
+"  File \"/usr/lib/python3.4/test/regrtest.py\", line 761\n"
+"    match_tests=ns.match_tests)\n"
+"  File \"/usr/lib/python3.4/test/regrtest.py\", line 1563\n"
+"    main()\n"
+"  File \"/usr/lib/python3.4/test/__main__.py\", line 3\n"
+"    regrtest.main_in_temp_cwd()\n"
+"  File \"/usr/lib/python3.4/runpy.py\", line 73\n"
+"    exec(code, run_globals)\n"
+"  File \"/usr/lib/python3.4/runpy.py\", line 160\n"
+"    \"__main__\", fname, loader, pkg_name)"
 
 msgid ""
 "We can see that the most memory was allocated in the :mod:`importlib` module "
@@ -259,6 +341,8 @@ msgid ""
 "output, ignoring ``<frozen importlib._bootstrap>`` and ``<unknown>`` files::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import linecache\n"
 "import os\n"
@@ -294,7 +378,42 @@ msgid ""
 "snapshot = tracemalloc.take_snapshot()\n"
 "display_top(snapshot)"
 msgstr ""
+"import linecache\n"
+"import os\n"
+"import tracemalloc\n"
+"\n"
+"def display_top(snapshot, key_type='lineno', limit=10):\n"
+"    snapshot = snapshot.filter_traces((\n"
+"        tracemalloc.Filter(False, \"<frozen importlib._bootstrap>\"),\n"
+"        tracemalloc.Filter(False, \"<unknown>\"),\n"
+"    ))\n"
+"    top_stats = snapshot.statistics(key_type)\n"
+"\n"
+"    print(\"Top %s lines\" % limit)\n"
+"    for index, stat in enumerate(top_stats[:limit], 1):\n"
+"        frame = stat.traceback[0]\n"
+"        print(\"#%s: %s:%s: %.1f KiB\"\n"
+"              % (index, frame.filename, frame.lineno, stat.size / 1024))\n"
+"        line = linecache.getline(frame.filename, frame.lineno).strip()\n"
+"        if line:\n"
+"            print('    %s' % line)\n"
+"\n"
+"    other = top_stats[limit:]\n"
+"    if other:\n"
+"        size = sum(stat.size for stat in other)\n"
+"        print(\"%s other: %.1f KiB\" % (len(other), size / 1024))\n"
+"    total = sum(stat.size for stat in top_stats)\n"
+"    print(\"Total allocated size: %.1f KiB\" % (total / 1024))\n"
+"\n"
+"tracemalloc.start()\n"
+"\n"
+"# ... run your application ...\n"
+"\n"
+"snapshot = tracemalloc.take_snapshot()\n"
+"display_top(snapshot)"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "Top 10 lines\n"
 "#1: Lib/base64.py:414: 419.8 KiB\n"
@@ -319,6 +438,28 @@ msgid ""
 "6220 other: 3602.8 KiB\n"
 "Total allocated size: 5303.1 KiB"
 msgstr ""
+"Top 10 lines\n"
+"#1: Lib/base64.py:414: 419.8 KiB\n"
+"    _b85chars2 = [(a + b) for a in _b85chars for b in _b85chars]\n"
+"#2: Lib/base64.py:306: 419.8 KiB\n"
+"    _a85chars2 = [(a + b) for a in _a85chars for b in _a85chars]\n"
+"#3: collections/__init__.py:368: 293.6 KiB\n"
+"    exec(class_definition, namespace)\n"
+"#4: Lib/abc.py:133: 115.2 KiB\n"
+"    cls = super().__new__(mcls, name, bases, namespace)\n"
+"#5: unittest/case.py:574: 103.1 KiB\n"
+"    testMethod()\n"
+"#6: Lib/linecache.py:127: 95.4 KiB\n"
+"    lines = fp.readlines()\n"
+"#7: urllib/parse.py:476: 71.8 KiB\n"
+"    for a in _hexdig for b in _hexdig}\n"
+"#8: <string>:5: 62.0 KiB\n"
+"#9: Lib/_weakrefset.py:37: 60.0 KiB\n"
+"    self.data = set()\n"
+"#10: Lib/base64.py:142: 59.8 KiB\n"
+"    _b32tab2 = [a + b for a in _b32tab for b in _b32tab]\n"
+"6220 other: 3602.8 KiB\n"
+"Total allocated size: 5303.1 KiB"
 
 msgid "Record the current and peak size of all traced memory blocks"
 msgstr ""
@@ -331,6 +472,8 @@ msgid ""
 "memory usage during the computations::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import tracemalloc\n"
 "\n"
@@ -351,14 +494,36 @@ msgid ""
 "print(f\"{first_size=}, {first_peak=}\")\n"
 "print(f\"{second_size=}, {second_peak=}\")"
 msgstr ""
+"import tracemalloc\n"
+"\n"
+"tracemalloc.start()\n"
+"\n"
+"# Example code: compute a sum with a large temporary list\n"
+"large_sum = sum(list(range(100000)))\n"
+"\n"
+"first_size, first_peak = tracemalloc.get_traced_memory()\n"
+"\n"
+"tracemalloc.reset_peak()\n"
+"\n"
+"# Example code: compute a sum with a small temporary list\n"
+"small_sum = sum(list(range(1000)))\n"
+"\n"
+"second_size, second_peak = tracemalloc.get_traced_memory()\n"
+"\n"
+"print(f\"{first_size=}, {first_peak=}\")\n"
+"print(f\"{second_size=}, {second_peak=}\")"
 
 msgid "Output::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "first_size=664, first_peak=3592984\n"
 "second_size=804, second_peak=29704"
 msgstr ""
+"first_size=664, first_peak=3592984\n"
+"second_size=804, second_peak=29704"
 
 msgid ""
 "Using :func:`reset_peak` ensured we could accurately record the peak during "
@@ -371,11 +536,15 @@ msgid ""
 "writing ``sum(range(...))``)."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "API"
-msgstr ""
+msgstr "API"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Functions"
-msgstr ""
+msgstr "Functions"
 
 msgid "Clear traces of memory blocks allocated by Python."
 msgstr ""
@@ -515,8 +684,10 @@ msgstr ""
 msgid "See also the :func:`get_object_traceback` function."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "DomainFilter"
-msgstr ""
+msgstr "DomainFilter"
 
 msgid "Filter traces of memory blocks by their address space (domain)."
 msgstr ""
@@ -534,8 +705,10 @@ msgstr ""
 msgid "Address space of a memory block (``int``). Read-only property."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Filter"
-msgstr ""
+msgstr "Filter"
 
 msgid "Filter on traces of memory blocks."
 msgstr ""
@@ -606,8 +779,10 @@ msgid ""
 "attribute."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Frame"
-msgstr ""
+msgstr "Frame"
 
 msgid "Frame of a traceback."
 msgstr ""
@@ -621,8 +796,10 @@ msgstr ""
 msgid "Line number (``int``)."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Snapshot"
-msgstr ""
+msgstr "Snapshot"
 
 msgid "Snapshot of traces of memory blocks allocated by Python."
 msgstr ""
@@ -680,29 +857,43 @@ msgid ""
 "*key_type*:"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "key_type"
-msgstr ""
+msgstr "key_type"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "description"
-msgstr ""
+msgstr "description"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'filename'``"
-msgstr ""
+msgstr "``'filename'``"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "filename"
-msgstr ""
+msgstr "filename"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'lineno'``"
-msgstr ""
+msgstr "``'lineno'``"
 
 msgid "filename and line number"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'traceback'``"
-msgstr ""
+msgstr "``'traceback'``"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "traceback"
-msgstr ""
+msgstr "traceback"
 
 msgid ""
 "If *cumulative* is ``True``, cumulate size and count of memory blocks of all "
@@ -731,8 +922,10 @@ msgid ""
 "method to get a sorted list of statistics."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Statistic"
-msgstr ""
+msgstr "Statistic"
 
 msgid "Statistic on memory allocations."
 msgstr ""
@@ -754,8 +947,10 @@ msgid ""
 "Traceback where the memory block was allocated, :class:`Traceback` instance."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "StatisticDiff"
-msgstr ""
+msgstr "StatisticDiff"
 
 msgid ""
 "Statistic difference on memory allocations between an old and a new :class:"
@@ -794,8 +989,10 @@ msgid ""
 "instance."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Trace"
-msgstr ""
+msgstr "Trace"
 
 msgid "Trace of a memory block."
 msgstr ""
@@ -808,8 +1005,10 @@ msgstr ""
 msgid "Size of the memory block in bytes (``int``)."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Traceback"
-msgstr ""
+msgstr "Traceback"
 
 msgid ""
 "Sequence of :class:`Frame` instances sorted from the oldest frame to the "
@@ -863,12 +1062,19 @@ msgstr ""
 msgid "Example::"
 msgstr "Ví dụ::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "print(\"Traceback (most recent call first):\")\n"
 "for line in traceback:\n"
 "    print(line)"
 msgstr ""
+"print(\"Traceback (most recent call first):\")\n"
+"for line in traceback:\n"
+"    print(line)"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "Traceback (most recent call first):\n"
 "  File \"test.py\", line 9\n"
@@ -876,3 +1082,8 @@ msgid ""
 "  File \"test.py\", line 12\n"
 "    tb = tracemalloc.get_object_traceback(f())"
 msgstr ""
+"Traceback (most recent call first):\n"
+"  File \"test.py\", line 9\n"
+"    obj = Object()\n"
+"  File \"test.py\", line 12\n"
+"    tb = tracemalloc.get_object_traceback(f())"

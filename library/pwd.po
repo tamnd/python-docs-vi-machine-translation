@@ -1,181 +1,180 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2001 Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# Translators:
+# Nguyen Duc Tam, 2026
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-18 10:29+0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: vi\n"
-"Language-Team: vi <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"POT-Creation-Date: 2026-04-23 15:47+0000\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.18.0\n"
+"Language: vi\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: pydocvi 0.1.2\n"
 
-#: ../../library/pwd.rst:2
 msgid ":mod:`!pwd` --- The password database"
 msgstr ""
 
-#: ../../library/pwd.rst:9
 msgid ""
-"This module provides access to the Unix user account and password "
-"database.  It is available on all Unix versions."
+"This module provides access to the Unix user account and password database.  "
+"It is available on all Unix versions."
 msgstr ""
 
-#: ../../library/pwd.rst:12
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Availability"
-msgstr ""
+msgstr "Availability"
 
-#: ../../library/pwd.rst:14
 msgid ""
 "Password database entries are reported as a tuple-like object, whose "
-"attributes correspond to the members of the ``passwd`` structure "
-"(Attribute field below, see ``<pwd.h>``):"
+"attributes correspond to the members of the ``passwd`` structure (Attribute "
+"field below, see ``<pwd.h>``):"
 msgstr ""
 
-#: ../../library/pwd.rst:19
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Index"
-msgstr ""
+msgstr "Index"
 
-#: ../../library/pwd.rst:19
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Attribute"
-msgstr ""
+msgstr "Attribute"
 
-#: ../../library/pwd.rst:19
 msgid "Meaning"
-msgstr ""
+msgstr "Ý nghĩa"
 
-#: ../../library/pwd.rst:21
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "0"
-msgstr ""
+msgstr "0"
 
-#: ../../library/pwd.rst:21
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``pw_name``"
-msgstr ""
+msgstr "``pw_name``"
 
-#: ../../library/pwd.rst:21
 msgid "Login name"
 msgstr ""
 
-#: ../../library/pwd.rst:23
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "1"
-msgstr ""
+msgstr "1"
 
-#: ../../library/pwd.rst:23
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``pw_passwd``"
-msgstr ""
+msgstr "``pw_passwd``"
 
-#: ../../library/pwd.rst:23
 msgid "Optional encrypted password"
 msgstr ""
 
-#: ../../library/pwd.rst:25
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "2"
-msgstr ""
+msgstr "2"
 
-#: ../../library/pwd.rst:25
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``pw_uid``"
-msgstr ""
+msgstr "``pw_uid``"
 
-#: ../../library/pwd.rst:25
 msgid "Numerical user ID"
 msgstr ""
 
-#: ../../library/pwd.rst:27
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "3"
-msgstr ""
+msgstr "3"
 
-#: ../../library/pwd.rst:27
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``pw_gid``"
-msgstr ""
+msgstr "``pw_gid``"
 
-#: ../../library/pwd.rst:27
 msgid "Numerical group ID"
 msgstr ""
 
-#: ../../library/pwd.rst:29
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "4"
-msgstr ""
+msgstr "4"
 
-#: ../../library/pwd.rst:29
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``pw_gecos``"
-msgstr ""
+msgstr "``pw_gecos``"
 
-#: ../../library/pwd.rst:29
 msgid "User name or comment field"
 msgstr ""
 
-#: ../../library/pwd.rst:31
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "5"
-msgstr ""
+msgstr "5"
 
-#: ../../library/pwd.rst:31
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``pw_dir``"
-msgstr ""
+msgstr "``pw_dir``"
 
-#: ../../library/pwd.rst:31
 msgid "User home directory"
 msgstr ""
 
-#: ../../library/pwd.rst:33
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "6"
-msgstr ""
+msgstr "6"
 
-#: ../../library/pwd.rst:33
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``pw_shell``"
-msgstr ""
+msgstr "``pw_shell``"
 
-#: ../../library/pwd.rst:33
 msgid "User command interpreter"
 msgstr ""
 
-#: ../../library/pwd.rst:36
 msgid ""
-"The uid and gid items are integers, all others are strings. "
-":exc:`KeyError` is raised if the entry asked for cannot be found."
+"The uid and gid items are integers, all others are strings. :exc:`KeyError` "
+"is raised if the entry asked for cannot be found."
 msgstr ""
 
-#: ../../library/pwd.rst:41
 msgid ""
 "In traditional Unix the field ``pw_passwd`` usually contains a password "
-"encrypted with a DES derived algorithm.  However most modern unices  use "
-"a so-called *shadow password* system.  On those unices the *pw_passwd* "
-"field only contains an asterisk (``'*'``) or the  letter ``'x'`` where "
-"the encrypted password is stored in a file :file:`/etc/shadow` which is "
-"not world readable.  Whether the *pw_passwd* field contains anything "
-"useful is system-dependent."
+"encrypted with a DES derived algorithm.  However most modern unices  use a "
+"so-called *shadow password* system.  On those unices the *pw_passwd* field "
+"only contains an asterisk (``'*'``) or the  letter ``'x'`` where the "
+"encrypted password is stored in a file :file:`/etc/shadow` which is not "
+"world readable.  Whether the *pw_passwd* field contains anything useful is "
+"system-dependent."
 msgstr ""
 
-#: ../../library/pwd.rst:49
 msgid "It defines the following items:"
 msgstr ""
 
-#: ../../library/pwd.rst:54
 msgid "Return the password database entry for the given numeric user ID."
 msgstr ""
 
-#: ../../library/pwd.rst:59
 msgid "Return the password database entry for the given user name."
 msgstr ""
 
-#: ../../library/pwd.rst:64
 msgid ""
-"Return a list of all available password database entries, in arbitrary "
-"order."
+"Return a list of all available password database entries, in arbitrary order."
 msgstr ""
 
-#: ../../library/pwd.rst:69
 msgid "Module :mod:`grp`"
 msgstr ""
 
-#: ../../library/pwd.rst:70
 msgid "An interface to the group database, similar to this."
 msgstr ""
-

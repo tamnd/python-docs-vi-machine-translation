@@ -5,22 +5,23 @@
 #
 # Translators:
 # python-doc bot, 2025
+# Nguyen Duc Tam, 2026
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-17 14:50+0000\n"
-"PO-Revision-Date: 2025-09-16 00:00+0000\n"
-"Last-Translator: python-doc bot, 2025\n"
-"Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
-"vi/)\n"
+"POT-Creation-Date: 2026-05-08 18:34+0000\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: pydocvi 0.1.2\n"
 
 msgid "Type Object Structures"
 msgstr ""
@@ -59,8 +60,10 @@ msgstr ""
 msgid "PyTypeObject Slot [#slots]_"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":ref:`Type <slot-typedefs-table>`"
-msgstr ""
+msgstr ":ref:`Type <slot-typedefs-table>`"
 
 msgid "special methods/attrs"
 msgstr ""
@@ -68,350 +71,564 @@ msgstr ""
 msgid "Info [#cols]_"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "O"
-msgstr ""
+msgstr "O"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "T"
-msgstr ""
+msgstr "T"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "D"
-msgstr ""
+msgstr "D"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "I"
-msgstr ""
+msgstr "I"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "<R> :c:member:`~PyTypeObject.tp_name`"
-msgstr ""
+msgstr "<R> :c:member:`~PyTypeObject.tp_name`"
 
 msgid "const char *"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "__name__"
-msgstr ""
+msgstr "__name__"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "X"
-msgstr ""
+msgstr "X"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyTypeObject.tp_basicsize`"
-msgstr ""
+msgstr ":c:member:`~PyTypeObject.tp_basicsize`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:type:`Py_ssize_t`"
-msgstr ""
+msgstr ":c:type:`Py_ssize_t`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyTypeObject.tp_itemsize`"
-msgstr ""
+msgstr ":c:member:`~PyTypeObject.tp_itemsize`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyTypeObject.tp_dealloc`"
-msgstr ""
+msgstr ":c:member:`~PyTypeObject.tp_dealloc`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:type:`destructor`"
-msgstr ""
+msgstr ":c:type:`destructor`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyTypeObject.tp_vectorcall_offset`"
-msgstr ""
+msgstr ":c:member:`~PyTypeObject.tp_vectorcall_offset`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "(:c:member:`~PyTypeObject.tp_getattr`)"
-msgstr ""
+msgstr "(:c:member:`~PyTypeObject.tp_getattr`)"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:type:`getattrfunc`"
-msgstr ""
+msgstr ":c:type:`getattrfunc`"
 
 msgid "__getattribute__, __getattr__"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "G"
-msgstr ""
+msgstr "G"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "(:c:member:`~PyTypeObject.tp_setattr`)"
-msgstr ""
+msgstr "(:c:member:`~PyTypeObject.tp_setattr`)"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:type:`setattrfunc`"
-msgstr ""
+msgstr ":c:type:`setattrfunc`"
 
 msgid "__setattr__, __delattr__"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyTypeObject.tp_as_async`"
-msgstr ""
+msgstr ":c:member:`~PyTypeObject.tp_as_async`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:type:`PyAsyncMethods` *"
-msgstr ""
+msgstr ":c:type:`PyAsyncMethods` *"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":ref:`sub-slots`"
-msgstr ""
+msgstr ":ref:`sub-slots`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "%"
-msgstr ""
+msgstr "%"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyTypeObject.tp_repr`"
-msgstr ""
+msgstr ":c:member:`~PyTypeObject.tp_repr`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:type:`reprfunc`"
-msgstr ""
+msgstr ":c:type:`reprfunc`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "__repr__"
-msgstr ""
+msgstr "__repr__"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyTypeObject.tp_as_number`"
-msgstr ""
+msgstr ":c:member:`~PyTypeObject.tp_as_number`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:type:`PyNumberMethods` *"
-msgstr ""
+msgstr ":c:type:`PyNumberMethods` *"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyTypeObject.tp_as_sequence`"
-msgstr ""
+msgstr ":c:member:`~PyTypeObject.tp_as_sequence`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:type:`PySequenceMethods` *"
-msgstr ""
+msgstr ":c:type:`PySequenceMethods` *"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyTypeObject.tp_as_mapping`"
-msgstr ""
+msgstr ":c:member:`~PyTypeObject.tp_as_mapping`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:type:`PyMappingMethods` *"
-msgstr ""
+msgstr ":c:type:`PyMappingMethods` *"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyTypeObject.tp_hash`"
-msgstr ""
+msgstr ":c:member:`~PyTypeObject.tp_hash`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:type:`hashfunc`"
-msgstr ""
+msgstr ":c:type:`hashfunc`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "__hash__"
-msgstr ""
+msgstr "__hash__"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyTypeObject.tp_call`"
-msgstr ""
+msgstr ":c:member:`~PyTypeObject.tp_call`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:type:`ternaryfunc`"
-msgstr ""
+msgstr ":c:type:`ternaryfunc`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "__call__"
-msgstr ""
+msgstr "__call__"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyTypeObject.tp_str`"
-msgstr ""
+msgstr ":c:member:`~PyTypeObject.tp_str`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "__str__"
-msgstr ""
+msgstr "__str__"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyTypeObject.tp_getattro`"
-msgstr ""
+msgstr ":c:member:`~PyTypeObject.tp_getattro`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:type:`getattrofunc`"
-msgstr ""
+msgstr ":c:type:`getattrofunc`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyTypeObject.tp_setattro`"
-msgstr ""
+msgstr ":c:member:`~PyTypeObject.tp_setattro`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:type:`setattrofunc`"
-msgstr ""
+msgstr ":c:type:`setattrofunc`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyTypeObject.tp_as_buffer`"
-msgstr ""
+msgstr ":c:member:`~PyTypeObject.tp_as_buffer`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:type:`PyBufferProcs` *"
-msgstr ""
+msgstr ":c:type:`PyBufferProcs` *"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyTypeObject.tp_flags`"
-msgstr ""
+msgstr ":c:member:`~PyTypeObject.tp_flags`"
 
 msgid "unsigned long"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "?"
-msgstr ""
+msgstr "?"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyTypeObject.tp_doc`"
-msgstr ""
+msgstr ":c:member:`~PyTypeObject.tp_doc`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "__doc__"
-msgstr ""
+msgstr "__doc__"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyTypeObject.tp_traverse`"
-msgstr ""
+msgstr ":c:member:`~PyTypeObject.tp_traverse`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:type:`traverseproc`"
-msgstr ""
+msgstr ":c:type:`traverseproc`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyTypeObject.tp_clear`"
-msgstr ""
+msgstr ":c:member:`~PyTypeObject.tp_clear`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:type:`inquiry`"
-msgstr ""
+msgstr ":c:type:`inquiry`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyTypeObject.tp_richcompare`"
-msgstr ""
+msgstr ":c:member:`~PyTypeObject.tp_richcompare`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:type:`richcmpfunc`"
-msgstr ""
+msgstr ":c:type:`richcmpfunc`"
 
 msgid "__lt__, __le__, __eq__, __ne__, __gt__, __ge__"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "(:c:member:`~PyTypeObject.tp_weaklistoffset`)"
-msgstr ""
+msgstr "(:c:member:`~PyTypeObject.tp_weaklistoffset`)"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyTypeObject.tp_iter`"
-msgstr ""
+msgstr ":c:member:`~PyTypeObject.tp_iter`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:type:`getiterfunc`"
-msgstr ""
+msgstr ":c:type:`getiterfunc`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "__iter__"
-msgstr ""
+msgstr "__iter__"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyTypeObject.tp_iternext`"
-msgstr ""
+msgstr ":c:member:`~PyTypeObject.tp_iternext`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:type:`iternextfunc`"
-msgstr ""
+msgstr ":c:type:`iternextfunc`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "__next__"
-msgstr ""
+msgstr "__next__"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyTypeObject.tp_methods`"
-msgstr ""
+msgstr ":c:member:`~PyTypeObject.tp_methods`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:type:`PyMethodDef` []"
-msgstr ""
+msgstr ":c:type:`PyMethodDef` []"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyTypeObject.tp_members`"
-msgstr ""
+msgstr ":c:member:`~PyTypeObject.tp_members`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:type:`PyMemberDef` []"
-msgstr ""
+msgstr ":c:type:`PyMemberDef` []"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyTypeObject.tp_getset`"
-msgstr ""
+msgstr ":c:member:`~PyTypeObject.tp_getset`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:type:`PyGetSetDef` []"
-msgstr ""
+msgstr ":c:type:`PyGetSetDef` []"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyTypeObject.tp_base`"
-msgstr ""
+msgstr ":c:member:`~PyTypeObject.tp_base`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:type:`PyTypeObject` *"
-msgstr ""
+msgstr ":c:type:`PyTypeObject` *"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "__base__"
-msgstr ""
+msgstr "__base__"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyTypeObject.tp_dict`"
-msgstr ""
+msgstr ":c:member:`~PyTypeObject.tp_dict`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:type:`PyObject` *"
-msgstr ""
+msgstr ":c:type:`PyObject` *"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "__dict__"
-msgstr ""
+msgstr "__dict__"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyTypeObject.tp_descr_get`"
-msgstr ""
+msgstr ":c:member:`~PyTypeObject.tp_descr_get`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:type:`descrgetfunc`"
-msgstr ""
+msgstr ":c:type:`descrgetfunc`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "__get__"
-msgstr ""
+msgstr "__get__"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyTypeObject.tp_descr_set`"
-msgstr ""
+msgstr ":c:member:`~PyTypeObject.tp_descr_set`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:type:`descrsetfunc`"
-msgstr ""
+msgstr ":c:type:`descrsetfunc`"
 
 msgid "__set__, __delete__"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "(:c:member:`~PyTypeObject.tp_dictoffset`)"
-msgstr ""
+msgstr "(:c:member:`~PyTypeObject.tp_dictoffset`)"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyTypeObject.tp_init`"
-msgstr ""
+msgstr ":c:member:`~PyTypeObject.tp_init`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:type:`initproc`"
-msgstr ""
+msgstr ":c:type:`initproc`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "__init__"
-msgstr ""
+msgstr "__init__"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyTypeObject.tp_alloc`"
-msgstr ""
+msgstr ":c:member:`~PyTypeObject.tp_alloc`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:type:`allocfunc`"
-msgstr ""
+msgstr ":c:type:`allocfunc`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyTypeObject.tp_new`"
-msgstr ""
+msgstr ":c:member:`~PyTypeObject.tp_new`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:type:`newfunc`"
-msgstr ""
+msgstr ":c:type:`newfunc`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "__new__"
-msgstr ""
+msgstr "__new__"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyTypeObject.tp_free`"
-msgstr ""
+msgstr ":c:member:`~PyTypeObject.tp_free`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:type:`freefunc`"
-msgstr ""
+msgstr ":c:type:`freefunc`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyTypeObject.tp_is_gc`"
-msgstr ""
+msgstr ":c:member:`~PyTypeObject.tp_is_gc`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "<:c:member:`~PyTypeObject.tp_bases`>"
-msgstr ""
+msgstr "<:c:member:`~PyTypeObject.tp_bases`>"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "__bases__"
-msgstr ""
+msgstr "__bases__"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "~"
-msgstr ""
+msgstr "~"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "<:c:member:`~PyTypeObject.tp_mro`>"
-msgstr ""
+msgstr "<:c:member:`~PyTypeObject.tp_mro`>"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "__mro__"
-msgstr ""
+msgstr "__mro__"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "[:c:member:`~PyTypeObject.tp_cache`]"
-msgstr ""
+msgstr "[:c:member:`~PyTypeObject.tp_cache`]"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "[:c:member:`~PyTypeObject.tp_subclasses`]"
-msgstr ""
+msgstr "[:c:member:`~PyTypeObject.tp_subclasses`]"
 
 msgid "void *"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "__subclasses__"
-msgstr ""
+msgstr "__subclasses__"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "[:c:member:`~PyTypeObject.tp_weaklist`]"
-msgstr ""
+msgstr "[:c:member:`~PyTypeObject.tp_weaklist`]"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "(:c:member:`~PyTypeObject.tp_del`)"
-msgstr ""
+msgstr "(:c:member:`~PyTypeObject.tp_del`)"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "[:c:member:`~PyTypeObject.tp_version_tag`]"
-msgstr ""
+msgstr "[:c:member:`~PyTypeObject.tp_version_tag`]"
 
 msgid "unsigned int"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyTypeObject.tp_finalize`"
-msgstr ""
+msgstr ":c:member:`~PyTypeObject.tp_finalize`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "__del__"
-msgstr ""
+msgstr "__del__"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyTypeObject.tp_vectorcall`"
-msgstr ""
+msgstr ":c:member:`~PyTypeObject.tp_vectorcall`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:type:`vectorcallfunc`"
-msgstr ""
+msgstr ":c:type:`vectorcallfunc`"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "[:c:member:`~PyTypeObject.tp_watched`]"
-msgstr ""
+msgstr "[:c:member:`~PyTypeObject.tp_watched`]"
 
 msgid "unsigned char"
 msgstr ""
@@ -472,338 +689,530 @@ msgstr ""
 msgid "sub-slots"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Slot"
-msgstr ""
+msgstr "Slot"
 
 msgid "special methods"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyAsyncMethods.am_await`"
-msgstr ""
+msgstr ":c:member:`~PyAsyncMethods.am_await`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:type:`unaryfunc`"
-msgstr ""
+msgstr ":c:type:`unaryfunc`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "__await__"
-msgstr ""
+msgstr "__await__"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyAsyncMethods.am_aiter`"
-msgstr ""
+msgstr ":c:member:`~PyAsyncMethods.am_aiter`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "__aiter__"
-msgstr ""
+msgstr "__aiter__"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyAsyncMethods.am_anext`"
-msgstr ""
+msgstr ":c:member:`~PyAsyncMethods.am_anext`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "__anext__"
-msgstr ""
+msgstr "__anext__"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyAsyncMethods.am_send`"
-msgstr ""
+msgstr ":c:member:`~PyAsyncMethods.am_send`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:type:`sendfunc`"
-msgstr ""
+msgstr ":c:type:`sendfunc`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyNumberMethods.nb_add`"
-msgstr ""
+msgstr ":c:member:`~PyNumberMethods.nb_add`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:type:`binaryfunc`"
-msgstr ""
+msgstr ":c:type:`binaryfunc`"
 
 msgid "__add__ __radd__"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyNumberMethods.nb_inplace_add`"
-msgstr ""
+msgstr ":c:member:`~PyNumberMethods.nb_inplace_add`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "__iadd__"
-msgstr ""
+msgstr "__iadd__"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyNumberMethods.nb_subtract`"
-msgstr ""
+msgstr ":c:member:`~PyNumberMethods.nb_subtract`"
 
 msgid "__sub__ __rsub__"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyNumberMethods.nb_inplace_subtract`"
-msgstr ""
+msgstr ":c:member:`~PyNumberMethods.nb_inplace_subtract`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "__isub__"
-msgstr ""
+msgstr "__isub__"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyNumberMethods.nb_multiply`"
-msgstr ""
+msgstr ":c:member:`~PyNumberMethods.nb_multiply`"
 
 msgid "__mul__ __rmul__"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyNumberMethods.nb_inplace_multiply`"
-msgstr ""
+msgstr ":c:member:`~PyNumberMethods.nb_inplace_multiply`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "__imul__"
-msgstr ""
+msgstr "__imul__"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyNumberMethods.nb_remainder`"
-msgstr ""
+msgstr ":c:member:`~PyNumberMethods.nb_remainder`"
 
 msgid "__mod__ __rmod__"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyNumberMethods.nb_inplace_remainder`"
-msgstr ""
+msgstr ":c:member:`~PyNumberMethods.nb_inplace_remainder`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "__imod__"
-msgstr ""
+msgstr "__imod__"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyNumberMethods.nb_divmod`"
-msgstr ""
+msgstr ":c:member:`~PyNumberMethods.nb_divmod`"
 
 msgid "__divmod__ __rdivmod__"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyNumberMethods.nb_power`"
-msgstr ""
+msgstr ":c:member:`~PyNumberMethods.nb_power`"
 
 msgid "__pow__ __rpow__"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyNumberMethods.nb_inplace_power`"
-msgstr ""
+msgstr ":c:member:`~PyNumberMethods.nb_inplace_power`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "__ipow__"
-msgstr ""
+msgstr "__ipow__"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyNumberMethods.nb_negative`"
-msgstr ""
+msgstr ":c:member:`~PyNumberMethods.nb_negative`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "__neg__"
-msgstr ""
+msgstr "__neg__"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyNumberMethods.nb_positive`"
-msgstr ""
+msgstr ":c:member:`~PyNumberMethods.nb_positive`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "__pos__"
-msgstr ""
+msgstr "__pos__"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyNumberMethods.nb_absolute`"
-msgstr ""
+msgstr ":c:member:`~PyNumberMethods.nb_absolute`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "__abs__"
-msgstr ""
+msgstr "__abs__"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyNumberMethods.nb_bool`"
-msgstr ""
+msgstr ":c:member:`~PyNumberMethods.nb_bool`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "__bool__"
-msgstr ""
+msgstr "__bool__"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyNumberMethods.nb_invert`"
-msgstr ""
+msgstr ":c:member:`~PyNumberMethods.nb_invert`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "__invert__"
-msgstr ""
+msgstr "__invert__"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyNumberMethods.nb_lshift`"
-msgstr ""
+msgstr ":c:member:`~PyNumberMethods.nb_lshift`"
 
 msgid "__lshift__ __rlshift__"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyNumberMethods.nb_inplace_lshift`"
-msgstr ""
+msgstr ":c:member:`~PyNumberMethods.nb_inplace_lshift`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "__ilshift__"
-msgstr ""
+msgstr "__ilshift__"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyNumberMethods.nb_rshift`"
-msgstr ""
+msgstr ":c:member:`~PyNumberMethods.nb_rshift`"
 
 msgid "__rshift__ __rrshift__"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyNumberMethods.nb_inplace_rshift`"
-msgstr ""
+msgstr ":c:member:`~PyNumberMethods.nb_inplace_rshift`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "__irshift__"
-msgstr ""
+msgstr "__irshift__"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyNumberMethods.nb_and`"
-msgstr ""
+msgstr ":c:member:`~PyNumberMethods.nb_and`"
 
 msgid "__and__ __rand__"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyNumberMethods.nb_inplace_and`"
-msgstr ""
+msgstr ":c:member:`~PyNumberMethods.nb_inplace_and`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "__iand__"
-msgstr ""
+msgstr "__iand__"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyNumberMethods.nb_xor`"
-msgstr ""
+msgstr ":c:member:`~PyNumberMethods.nb_xor`"
 
 msgid "__xor__ __rxor__"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyNumberMethods.nb_inplace_xor`"
-msgstr ""
+msgstr ":c:member:`~PyNumberMethods.nb_inplace_xor`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "__ixor__"
-msgstr ""
+msgstr "__ixor__"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyNumberMethods.nb_or`"
-msgstr ""
+msgstr ":c:member:`~PyNumberMethods.nb_or`"
 
 msgid "__or__ __ror__"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyNumberMethods.nb_inplace_or`"
-msgstr ""
+msgstr ":c:member:`~PyNumberMethods.nb_inplace_or`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "__ior__"
-msgstr ""
+msgstr "__ior__"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyNumberMethods.nb_int`"
-msgstr ""
+msgstr ":c:member:`~PyNumberMethods.nb_int`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "__int__"
-msgstr ""
+msgstr "__int__"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyNumberMethods.nb_reserved`"
-msgstr ""
+msgstr ":c:member:`~PyNumberMethods.nb_reserved`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyNumberMethods.nb_float`"
-msgstr ""
+msgstr ":c:member:`~PyNumberMethods.nb_float`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "__float__"
-msgstr ""
+msgstr "__float__"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyNumberMethods.nb_floor_divide`"
-msgstr ""
+msgstr ":c:member:`~PyNumberMethods.nb_floor_divide`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "__floordiv__"
-msgstr ""
+msgstr "__floordiv__"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyNumberMethods.nb_inplace_floor_divide`"
-msgstr ""
+msgstr ":c:member:`~PyNumberMethods.nb_inplace_floor_divide`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "__ifloordiv__"
-msgstr ""
+msgstr "__ifloordiv__"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyNumberMethods.nb_true_divide`"
-msgstr ""
+msgstr ":c:member:`~PyNumberMethods.nb_true_divide`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "__truediv__"
-msgstr ""
+msgstr "__truediv__"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyNumberMethods.nb_inplace_true_divide`"
-msgstr ""
+msgstr ":c:member:`~PyNumberMethods.nb_inplace_true_divide`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "__itruediv__"
-msgstr ""
+msgstr "__itruediv__"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyNumberMethods.nb_index`"
-msgstr ""
+msgstr ":c:member:`~PyNumberMethods.nb_index`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "__index__"
-msgstr ""
+msgstr "__index__"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyNumberMethods.nb_matrix_multiply`"
-msgstr ""
+msgstr ":c:member:`~PyNumberMethods.nb_matrix_multiply`"
 
 msgid "__matmul__ __rmatmul__"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyNumberMethods.nb_inplace_matrix_multiply`"
-msgstr ""
+msgstr ":c:member:`~PyNumberMethods.nb_inplace_matrix_multiply`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "__imatmul__"
-msgstr ""
+msgstr "__imatmul__"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyMappingMethods.mp_length`"
-msgstr ""
+msgstr ":c:member:`~PyMappingMethods.mp_length`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:type:`lenfunc`"
-msgstr ""
+msgstr ":c:type:`lenfunc`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "__len__"
-msgstr ""
+msgstr "__len__"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyMappingMethods.mp_subscript`"
-msgstr ""
+msgstr ":c:member:`~PyMappingMethods.mp_subscript`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "__getitem__"
-msgstr ""
+msgstr "__getitem__"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyMappingMethods.mp_ass_subscript`"
-msgstr ""
+msgstr ":c:member:`~PyMappingMethods.mp_ass_subscript`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:type:`objobjargproc`"
-msgstr ""
+msgstr ":c:type:`objobjargproc`"
 
 msgid "__setitem__, __delitem__"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PySequenceMethods.sq_length`"
-msgstr ""
+msgstr ":c:member:`~PySequenceMethods.sq_length`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PySequenceMethods.sq_concat`"
-msgstr ""
+msgstr ":c:member:`~PySequenceMethods.sq_concat`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "__add__"
-msgstr ""
+msgstr "__add__"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PySequenceMethods.sq_repeat`"
-msgstr ""
+msgstr ":c:member:`~PySequenceMethods.sq_repeat`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:type:`ssizeargfunc`"
-msgstr ""
+msgstr ":c:type:`ssizeargfunc`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "__mul__"
-msgstr ""
+msgstr "__mul__"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PySequenceMethods.sq_item`"
-msgstr ""
+msgstr ":c:member:`~PySequenceMethods.sq_item`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PySequenceMethods.sq_ass_item`"
-msgstr ""
+msgstr ":c:member:`~PySequenceMethods.sq_ass_item`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:type:`ssizeobjargproc`"
-msgstr ""
+msgstr ":c:type:`ssizeobjargproc`"
 
 msgid "__setitem__ __delitem__"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PySequenceMethods.sq_contains`"
-msgstr ""
+msgstr ":c:member:`~PySequenceMethods.sq_contains`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:type:`objobjproc`"
-msgstr ""
+msgstr ":c:type:`objobjproc`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "__contains__"
-msgstr ""
+msgstr "__contains__"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PySequenceMethods.sq_inplace_concat`"
-msgstr ""
+msgstr ":c:member:`~PySequenceMethods.sq_inplace_concat`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PySequenceMethods.sq_inplace_repeat`"
-msgstr ""
+msgstr ":c:member:`~PySequenceMethods.sq_inplace_repeat`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyBufferProcs.bf_getbuffer`"
-msgstr ""
+msgstr ":c:member:`~PyBufferProcs.bf_getbuffer`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`getbufferproc`"
-msgstr ""
+msgstr ":c:func:`getbufferproc`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "__buffer__"
-msgstr ""
+msgstr "__buffer__"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyBufferProcs.bf_releasebuffer`"
-msgstr ""
+msgstr ":c:member:`~PyBufferProcs.bf_releasebuffer`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`releasebufferproc`"
-msgstr ""
+msgstr ":c:func:`releasebufferproc`"
 
 msgid "__release_\\ buffer\\__"
 msgstr ""
@@ -811,8 +1220,10 @@ msgstr ""
 msgid "slot typedefs"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "typedef"
-msgstr ""
+msgstr "typedef"
 
 msgid "Parameter Types"
 msgstr ""
@@ -820,26 +1231,40 @@ msgstr ""
 msgid "Return Type"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "void"
-msgstr ""
+msgstr "void"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:type:`visitproc`"
-msgstr ""
+msgstr ":c:type:`visitproc`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "int"
-msgstr ""
+msgstr "int"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Py_hash_t"
-msgstr ""
+msgstr "Py_hash_t"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:type:`getbufferproc`"
-msgstr ""
+msgstr ":c:type:`getbufferproc`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:type:`Py_buffer` *"
-msgstr ""
+msgstr ":c:type:`Py_buffer` *"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:type:`releasebufferproc`"
-msgstr ""
+msgstr ":c:type:`releasebufferproc`"
 
 msgid "See :ref:`slot-typedefs` below for more detail."
 msgstr ""
@@ -853,6 +1278,8 @@ msgid ""
 "definition found there:"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "typedef struct _typeobject {\n"
 "    PyObject_VAR_HEAD\n"
@@ -950,6 +1377,101 @@ msgid ""
 "    uint16_t tp_versions_used;\n"
 "} PyTypeObject;\n"
 msgstr ""
+"typedef struct _typeobject {\n"
+"    PyObject_VAR_HEAD\n"
+"    const char *tp_name; /* For printing, in format \"<module>.<name>\" */\n"
+"    Py_ssize_t tp_basicsize, tp_itemsize; /* For allocation */\n"
+"\n"
+"    /* Methods to implement standard operations */\n"
+"\n"
+"    destructor tp_dealloc;\n"
+"    Py_ssize_t tp_vectorcall_offset;\n"
+"    getattrfunc tp_getattr;\n"
+"    setattrfunc tp_setattr;\n"
+"    PyAsyncMethods *tp_as_async; /* formerly known as tp_compare (Python 2)\n"
+"                                    or tp_reserved (Python 3) */\n"
+"    reprfunc tp_repr;\n"
+"\n"
+"    /* Method suites for standard classes */\n"
+"\n"
+"    PyNumberMethods *tp_as_number;\n"
+"    PySequenceMethods *tp_as_sequence;\n"
+"    PyMappingMethods *tp_as_mapping;\n"
+"\n"
+"    /* More standard operations (here for binary compatibility) */\n"
+"\n"
+"    hashfunc tp_hash;\n"
+"    ternaryfunc tp_call;\n"
+"    reprfunc tp_str;\n"
+"    getattrofunc tp_getattro;\n"
+"    setattrofunc tp_setattro;\n"
+"\n"
+"    /* Functions to access object as input/output buffer */\n"
+"    PyBufferProcs *tp_as_buffer;\n"
+"\n"
+"    /* Flags to define presence of optional/expanded features */\n"
+"    unsigned long tp_flags;\n"
+"\n"
+"    const char *tp_doc; /* Documentation string */\n"
+"\n"
+"    /* Assigned meaning in release 2.0 */\n"
+"    /* call function for all accessible objects */\n"
+"    traverseproc tp_traverse;\n"
+"\n"
+"    /* delete references to contained objects */\n"
+"    inquiry tp_clear;\n"
+"\n"
+"    /* Assigned meaning in release 2.1 */\n"
+"    /* rich comparisons */\n"
+"    richcmpfunc tp_richcompare;\n"
+"\n"
+"    /* weak reference enabler */\n"
+"    Py_ssize_t tp_weaklistoffset;\n"
+"\n"
+"    /* Iterators */\n"
+"    getiterfunc tp_iter;\n"
+"    iternextfunc tp_iternext;\n"
+"\n"
+"    /* Attribute descriptor and subclassing stuff */\n"
+"    PyMethodDef *tp_methods;\n"
+"    PyMemberDef *tp_members;\n"
+"    PyGetSetDef *tp_getset;\n"
+"    // Strong reference on a heap type, borrowed reference on a static type\n"
+"    PyTypeObject *tp_base;\n"
+"    PyObject *tp_dict;\n"
+"    descrgetfunc tp_descr_get;\n"
+"    descrsetfunc tp_descr_set;\n"
+"    Py_ssize_t tp_dictoffset;\n"
+"    initproc tp_init;\n"
+"    allocfunc tp_alloc;\n"
+"    newfunc tp_new;\n"
+"    freefunc tp_free; /* Low-level free-memory routine */\n"
+"    inquiry tp_is_gc; /* For PyObject_IS_GC */\n"
+"    PyObject *tp_bases;\n"
+"    PyObject *tp_mro; /* method resolution order */\n"
+"    PyObject *tp_cache; /* no longer used */\n"
+"    void *tp_subclasses;  /* for static builtin types this is an index */\n"
+"    PyObject *tp_weaklist; /* not used for static builtin types */\n"
+"    destructor tp_del;\n"
+"\n"
+"    /* Type attribute cache version tag. Added in version 2.6.\n"
+"     * If zero, the cache is invalid and must be initialized.\n"
+"     */\n"
+"    unsigned int tp_version_tag;\n"
+"\n"
+"    destructor tp_finalize;\n"
+"    vectorcallfunc tp_vectorcall;\n"
+"\n"
+"    /* bitset of which type-watchers care about this type */\n"
+"    unsigned char tp_watched;\n"
+"\n"
+"    /* Number of tp_version_tag values used.\n"
+"     * Set to _Py_ATTR_CACHE_UNUSED if the attribute cache is\n"
+"     * disabled for this type (e.g. due to custom MRO entries).\n"
+"     * Otherwise, limited to MAX_VERSIONS_PER_CLASS (defined elsewhere).\n"
+"     */\n"
+"    uint16_t tp_versions_used;\n"
+"} PyTypeObject;\n"
 
 msgid "PyObject Slots"
 msgstr ""
@@ -963,8 +1485,10 @@ msgid ""
 "the :c:member:`~PyVarObject.ob_size` field."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`PyObject.ob_refcnt`"
-msgstr ""
+msgstr ":c:member:`PyObject.ob_refcnt`"
 
 msgid ""
 "The type object's reference count is initialized to ``1`` by the "
@@ -981,8 +1505,10 @@ msgstr ""
 msgid "This field is not inherited by subtypes."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`PyObject.ob_type`"
-msgstr ""
+msgstr ":c:member:`PyObject.ob_type`"
 
 msgid ""
 "This is the type's type, in other words its metatype.  It is initialized by "
@@ -995,8 +1521,10 @@ msgid ""
 "doing anything else.  This is typically done like this::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "Foo_Type.ob_type = &PyType_Type;"
-msgstr ""
+msgstr "Foo_Type.ob_type = &PyType_Type;"
 
 msgid ""
 "This should be done before any instances of the type are created. :c:func:"
@@ -1011,8 +1539,10 @@ msgstr ""
 msgid "PyVarObject Slots"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`PyVarObject.ob_size`"
-msgstr ""
+msgstr ":c:member:`PyVarObject.ob_size`"
 
 msgid ""
 "For :ref:`statically allocated type objects <static-types>`, this should be "
@@ -1031,6 +1561,11 @@ msgid ""
 "may set a value when the field is set to ``NULL`` then there will also be a "
 "\"Default\" section.  (Note that many fields set on :c:data:"
 "`PyBaseObject_Type` and :c:data:`PyType_Type` effectively act as defaults.)"
+msgstr ""
+
+msgid ""
+"See :c:macro:`Py_tp_name` for the corresponding :c:member:`Slot ID <PySlot."
+"sl_id>`."
 msgstr ""
 
 msgid ""
@@ -1074,6 +1609,12 @@ msgstr ""
 
 msgid ""
 "These fields allow calculating the size in bytes of instances of the type."
+msgstr ""
+
+msgid ""
+"See :c:macro:`Py_tp_basicsize`, :c:macro:`Py_tp_extra_basicsize` and :c:"
+"macro:`Py_tp_itemsize` for the corresponding :c:member:`Slot IDs <PySlot."
+"sl_id>`."
 msgstr ""
 
 msgid ""
@@ -1199,6 +1740,8 @@ msgid ""
 "could have occurred while processing a different error):"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "static void\n"
 "foo_dealloc(foo_object *self)\n"
@@ -1209,6 +1752,14 @@ msgid ""
 "    PyErr_SetRaisedException(exc);\n"
 "}"
 msgstr ""
+"static void\n"
+"foo_dealloc(foo_object *self)\n"
+"{\n"
+"    PyObject *et, *ev, *etb;\n"
+"    PyObject *exc = PyErr_GetRaisedException();\n"
+"    ...\n"
+"    PyErr_SetRaisedException(exc);\n"
+"}"
 
 msgid ""
 "The dealloc handler itself must not raise an exception; if it hits an error "
@@ -1263,6 +1814,8 @@ msgid ""
 "below.::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "static void\n"
 "foo_dealloc(PyObject *op)\n"
@@ -1273,6 +1826,14 @@ msgid ""
 "   Py_TYPE(self)->tp_free(self);\n"
 "}"
 msgstr ""
+"static void\n"
+"foo_dealloc(PyObject *op)\n"
+"{\n"
+"   foo_object *self = (foo_object *) op;\n"
+"   PyObject_GC_UnTrack(self);\n"
+"   Py_CLEAR(self->ref);\n"
+"   Py_TYPE(self)->tp_free(self);\n"
+"}"
 
 msgid ""
 ":c:member:`!tp_dealloc` must leave the exception status unchanged.  If it "
@@ -1284,6 +1845,8 @@ msgstr ""
 msgid "Example::"
 msgstr "Ví dụ::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "static void\n"
 "foo_dealloc(PyObject *self)\n"
@@ -1324,6 +1887,44 @@ msgid ""
 "    PyErr_SetRaisedException(exc);\n"
 "}"
 msgstr ""
+"static void\n"
+"foo_dealloc(PyObject *self)\n"
+"{\n"
+"    PyObject *exc = PyErr_GetRaisedException();\n"
+"\n"
+"    if (PyObject_CallFinalizerFromDealloc(self) < 0) {\n"
+"        // self was resurrected.\n"
+"        goto done;\n"
+"    }\n"
+"\n"
+"    PyTypeObject *tp = Py_TYPE(self);\n"
+"\n"
+"    if (tp->tp_flags & Py_TPFLAGS_HAVE_GC) {\n"
+"        PyObject_GC_UnTrack(self);\n"
+"    }\n"
+"\n"
+"    // Optional, but convenient to avoid code duplication.\n"
+"    if (tp->tp_clear && tp->tp_clear(self) < 0) {\n"
+"        PyErr_WriteUnraisable(self);\n"
+"    }\n"
+"\n"
+"    // Any additional destruction goes here.\n"
+"\n"
+"    tp->tp_free(self);\n"
+"    self = NULL;  // In case PyErr_WriteUnraisable() is called below.\n"
+"\n"
+"    if (tp->tp_flags & Py_TPFLAGS_HEAPTYPE) {\n"
+"        Py_CLEAR(tp);\n"
+"    }\n"
+"\n"
+"done:\n"
+"    // Optional, if something was called that might have raised an\n"
+"    // exception.\n"
+"    if (PyErr_Occurred()) {\n"
+"        PyErr_WriteUnraisable(self);\n"
+"    }\n"
+"    PyErr_SetRaisedException(exc);\n"
+"}"
 
 msgid ""
 ":c:member:`!tp_dealloc` may be called from any Python thread, not just the "
@@ -1656,6 +2257,11 @@ msgid ""
 msgstr ""
 
 msgid ""
+"See :c:macro:`Py_tp_flags` for the corresponding :c:member:`Slot ID <PySlot."
+"sl_id>`."
+msgstr ""
+
+msgid ""
 "This field is a bit mask of various flags.  Some flags indicate variant "
 "semantics for certain situations; others are used to indicate that certain "
 "fields in the type object (or in the extension structures referenced via :c:"
@@ -1708,8 +2314,10 @@ msgid ""
 "reference cycle with their own module object."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "???"
-msgstr ""
+msgstr "???"
 
 msgid ""
 "This bit is set when the type can be used as the base type of another type.  "
@@ -1790,7 +2398,7 @@ msgid ""
 "VM."
 msgstr ""
 
-msgid "If this flag is set, :c:macro:`Py_TPFLAGS_HAVE_GC` should also be set."
+msgid "If this flag is set, :c:macro:`Py_TPFLAGS_HAVE_GC` must also be set."
 msgstr ""
 
 msgid ""
@@ -1811,6 +2419,18 @@ msgstr ""
 msgid ""
 "This flag is inherited unless the :c:member:`~PyTypeObject."
 "tp_weaklistoffset` field is set in a superclass."
+msgstr ""
+
+msgid ""
+"These bits indicate that the VM will manage some fields by storing them "
+"before the object. Currently, this macro is equivalent to :c:expr:"
+"`Py_TPFLAGS_MANAGED_DICT | Py_TPFLAGS_MANAGED_WEAKREF`."
+msgstr ""
+
+msgid ""
+"This macro value relies on the implementation of the VM, so its value is not "
+"stable and may change in a future version. Prefer using individual flags "
+"instead."
 msgstr ""
 
 msgid ""
@@ -1962,9 +2582,8 @@ msgid ""
 msgstr ""
 
 msgid ""
-"This is a :term:`soft deprecated` macro that does nothing. Historically, "
-"this would indicate that the :c:member:`~PyTypeObject.tp_version_tag` field "
-"was available and initialized."
+"This macro does nothing. Historically, this would indicate that the :c:"
+"member:`~PyTypeObject.tp_version_tag` field was available and initialized."
 msgstr ""
 
 msgid ""
@@ -1981,8 +2600,10 @@ msgid ""
 "instantiated."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`abc`"
-msgstr ""
+msgstr ":mod:`abc`"
 
 msgid ""
 "Internal. Do not set or unset this flag. Historically, this was a reserved "
@@ -2005,120 +2626,10 @@ msgstr ""
 
 msgid ""
 "An optional pointer to a traversal function for the garbage collector.  This "
-"is only used if the :c:macro:`Py_TPFLAGS_HAVE_GC` flag bit is set.  The "
-"signature is::"
+"is only used if the :c:macro:`Py_TPFLAGS_HAVE_GC` flag bit is set."
 msgstr ""
 
-msgid "int tp_traverse(PyObject *self, visitproc visit, void *arg);"
-msgstr ""
-
-msgid ""
-"More information about Python's garbage collection scheme can be found in "
-"section :ref:`supporting-cycle-detection`."
-msgstr ""
-
-msgid ""
-"The :c:member:`~PyTypeObject.tp_traverse` pointer is used by the garbage "
-"collector to detect reference cycles. A typical implementation of a :c:"
-"member:`~PyTypeObject.tp_traverse` function simply calls :c:func:`Py_VISIT` "
-"on each of the instance's members that are Python objects that the instance "
-"owns. For example, this is function :c:func:`!local_traverse` from the :mod:"
-"`!_thread` extension module::"
-msgstr ""
-
-msgid ""
-"static int\n"
-"local_traverse(PyObject *op, visitproc visit, void *arg)\n"
-"{\n"
-"    localobject *self = (localobject *) op;\n"
-"    Py_VISIT(self->args);\n"
-"    Py_VISIT(self->kw);\n"
-"    Py_VISIT(self->dict);\n"
-"    return 0;\n"
-"}"
-msgstr ""
-
-msgid ""
-"Note that :c:func:`Py_VISIT` is called only on those members that can "
-"participate in reference cycles.  Although there is also a ``self->key`` "
-"member, it can only be ``NULL`` or a Python string and therefore cannot be "
-"part of a reference cycle."
-msgstr ""
-
-msgid ""
-"On the other hand, even if you know a member can never be part of a cycle, "
-"as a debugging aid you may want to visit it anyway just so the :mod:`gc` "
-"module's :func:`~gc.get_referents` function will include it."
-msgstr ""
-
-msgid ""
-"Heap types (:c:macro:`Py_TPFLAGS_HEAPTYPE`) must visit their type with::"
-msgstr ""
-
-msgid "Py_VISIT(Py_TYPE(self));"
-msgstr ""
-
-msgid ""
-"It is only needed since Python 3.9. To support Python 3.8 and older, this "
-"line must be conditional::"
-msgstr ""
-
-msgid ""
-"#if PY_VERSION_HEX >= 0x03090000\n"
-"    Py_VISIT(Py_TYPE(self));\n"
-"#endif"
-msgstr ""
-
-msgid ""
-"If the :c:macro:`Py_TPFLAGS_MANAGED_DICT` bit is set in the :c:member:"
-"`~PyTypeObject.tp_flags` field, the traverse function must call :c:func:"
-"`PyObject_VisitManagedDict` like this::"
-msgstr ""
-
-msgid "PyObject_VisitManagedDict((PyObject*)self, visit, arg);"
-msgstr ""
-
-msgid ""
-"When implementing :c:member:`~PyTypeObject.tp_traverse`, only the members "
-"that the instance *owns* (by having :term:`strong references <strong "
-"reference>` to them) must be visited. For instance, if an object supports "
-"weak references via the :c:member:`~PyTypeObject.tp_weaklist` slot, the "
-"pointer supporting the linked list (what *tp_weaklist* points to) must "
-"**not** be visited as the instance does not directly own the weak references "
-"to itself (the weakreference list is there to support the weak reference "
-"machinery, but the instance has no strong reference to the elements inside "
-"it, as they are allowed to be removed even if the instance is still alive)."
-msgstr ""
-
-msgid ""
-"The traversal function must not have any side effects.  It must not modify "
-"the reference counts of any Python objects nor create or destroy any Python "
-"objects."
-msgstr ""
-
-msgid ""
-"Note that :c:func:`Py_VISIT` requires the *visit* and *arg* parameters to :c:"
-"func:`!local_traverse` to have these specific names; don't name them just "
-"anything."
-msgstr ""
-
-msgid ""
-"Instances of :ref:`heap-allocated types <heap-types>` hold a reference to "
-"their type. Their traversal function must therefore either visit :c:func:"
-"`Py_TYPE(self) <Py_TYPE>`, or delegate this responsibility by calling "
-"``tp_traverse`` of another heap-allocated type (such as a heap-allocated "
-"superclass). If they do not, the type object may not be garbage-collected."
-msgstr ""
-
-msgid ""
-"The :c:member:`~PyTypeObject.tp_traverse` function can be called from any "
-"thread."
-msgstr ""
-
-msgid ""
-"Heap-allocated types are expected to visit ``Py_TYPE(self)`` in "
-"``tp_traverse``.  In earlier versions of Python, due to `bug 40217 <https://"
-"bugs.python.org/issue40217>`_, doing this may lead to crashes in subclasses."
+msgid "See :ref:`gc-traversal` for documentation."
 msgstr ""
 
 msgid ""
@@ -2268,6 +2779,8 @@ msgid ""
 "example::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "static int\n"
 "local_clear(PyObject *op)\n"
@@ -2280,6 +2793,16 @@ msgid ""
 "    return 0;\n"
 "}"
 msgstr ""
+"static int\n"
+"local_clear(PyObject *op)\n"
+"{\n"
+"    localobject *self = (localobject *) op;\n"
+"    Py_CLEAR(self->key);\n"
+"    Py_CLEAR(self->args);\n"
+"    Py_CLEAR(self->kw);\n"
+"    Py_CLEAR(self->dict);\n"
+"    return 0;\n"
+"}"
 
 msgid ""
 "The :c:func:`Py_CLEAR` macro should be used, because clearing references is "
@@ -2302,6 +2825,11 @@ msgid ""
 msgstr ""
 
 msgid "PyObject_ClearManagedDict((PyObject*)self);"
+msgstr ""
+
+msgid ""
+"More information about Python's garbage collection scheme can be found in "
+"section :ref:`supporting-cycle-detection`."
 msgstr ""
 
 msgid ""
@@ -2335,29 +2863,45 @@ msgid ""
 "member:`~PyTypeObject.tp_richcompare` and for :c:func:`PyObject_RichCompare`:"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Constant"
-msgstr ""
+msgstr "Constant"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Comparison"
-msgstr ""
+msgstr "Comparison"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``<``"
-msgstr ""
+msgstr "``<``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``<=``"
-msgstr ""
+msgstr "``<=``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``==``"
-msgstr ""
+msgstr "``==``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``!=``"
-msgstr ""
+msgstr "``!=``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``>``"
-msgstr ""
+msgstr "``>``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``>=``"
-msgstr ""
+msgstr "``>=``"
 
 msgid ""
 "The following macro is defined to ease writing rich comparison functions:"
@@ -3044,6 +3588,8 @@ msgid ""
 "`PyErr_WriteUnraisable` or :c:func:`PyErr_FormatUnraisable`.  For example::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "static void\n"
 "foo_finalize(PyObject *self)\n"
@@ -3065,6 +3611,25 @@ msgid ""
 "    PyErr_SetRaisedException(exc);\n"
 "}"
 msgstr ""
+"static void\n"
+"foo_finalize(PyObject *self)\n"
+"{\n"
+"    // Save the current exception, if any.\n"
+"    PyObject *exc = PyErr_GetRaisedException();\n"
+"\n"
+"    // ...\n"
+"\n"
+"    if (do_something_that_might_raise() != success_indicator) {\n"
+"        PyErr_WriteUnraisable(self);\n"
+"        goto done;\n"
+"    }\n"
+"\n"
+"done:\n"
+"    // Restore the saved exception.  This silently discards any exception\n"
+"    // raised above, so be sure to call PyErr_WriteUnraisable first if\n"
+"    // necessary.\n"
+"    PyErr_SetRaisedException(exc);\n"
+"}"
 
 msgid ""
 "Before version 3.8 it was necessary to set the :c:macro:"
@@ -3075,11 +3640,15 @@ msgstr ""
 msgid ":pep:`442`: \"Safe object finalization\""
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`PyObject_CallFinalizer`"
-msgstr ""
+msgstr ":c:func:`PyObject_CallFinalizer`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`PyObject_CallFinalizerFromDealloc`"
-msgstr ""
+msgstr ":c:func:`PyObject_CallFinalizerFromDealloc`"
 
 msgid ""
 "A :ref:`vectorcall function <vectorcall>` to use for calls of this type "
@@ -3196,6 +3765,8 @@ msgstr ""
 msgid "Here is the structure definition::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "typedef struct {\n"
 "     binaryfunc nb_add;\n"
@@ -3240,6 +3811,48 @@ msgid ""
 "     binaryfunc nb_inplace_matrix_multiply;\n"
 "} PyNumberMethods;"
 msgstr ""
+"typedef struct {\n"
+"     binaryfunc nb_add;\n"
+"     binaryfunc nb_subtract;\n"
+"     binaryfunc nb_multiply;\n"
+"     binaryfunc nb_remainder;\n"
+"     binaryfunc nb_divmod;\n"
+"     ternaryfunc nb_power;\n"
+"     unaryfunc nb_negative;\n"
+"     unaryfunc nb_positive;\n"
+"     unaryfunc nb_absolute;\n"
+"     inquiry nb_bool;\n"
+"     unaryfunc nb_invert;\n"
+"     binaryfunc nb_lshift;\n"
+"     binaryfunc nb_rshift;\n"
+"     binaryfunc nb_and;\n"
+"     binaryfunc nb_xor;\n"
+"     binaryfunc nb_or;\n"
+"     unaryfunc nb_int;\n"
+"     void *nb_reserved;\n"
+"     unaryfunc nb_float;\n"
+"\n"
+"     binaryfunc nb_inplace_add;\n"
+"     binaryfunc nb_inplace_subtract;\n"
+"     binaryfunc nb_inplace_multiply;\n"
+"     binaryfunc nb_inplace_remainder;\n"
+"     ternaryfunc nb_inplace_power;\n"
+"     binaryfunc nb_inplace_lshift;\n"
+"     binaryfunc nb_inplace_rshift;\n"
+"     binaryfunc nb_inplace_and;\n"
+"     binaryfunc nb_inplace_xor;\n"
+"     binaryfunc nb_inplace_or;\n"
+"\n"
+"     binaryfunc nb_floor_divide;\n"
+"     binaryfunc nb_true_divide;\n"
+"     binaryfunc nb_inplace_floor_divide;\n"
+"     binaryfunc nb_inplace_true_divide;\n"
+"\n"
+"     unaryfunc nb_index;\n"
+"\n"
+"     binaryfunc nb_matrix_multiply;\n"
+"     binaryfunc nb_inplace_matrix_multiply;\n"
+"} PyNumberMethods;"
 
 msgid ""
 "Binary and ternary functions must check the type of all their operands, and "
@@ -3522,6 +4135,8 @@ msgid ""
 "`awaitable` and :term:`asynchronous iterator` objects."
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "typedef struct {\n"
 "    unaryfunc am_await;\n"
@@ -3530,6 +4145,12 @@ msgid ""
 "    sendfunc am_send;\n"
 "} PyAsyncMethods;"
 msgstr ""
+"typedef struct {\n"
+"    unaryfunc am_await;\n"
+"    unaryfunc am_aiter;\n"
+"    unaryfunc am_anext;\n"
+"    sendfunc am_send;\n"
+"} PyAsyncMethods;"
 
 msgid "PyObject *am_await(PyObject *self);"
 msgstr ""
@@ -3653,6 +4274,8 @@ msgstr ""
 msgid "A basic :ref:`static type <static-types>`::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "typedef struct {\n"
 "    PyObject_HEAD\n"
@@ -3669,12 +4292,28 @@ msgid ""
 "    .tp_repr = (reprfunc)myobj_repr,\n"
 "};"
 msgstr ""
+"typedef struct {\n"
+"    PyObject_HEAD\n"
+"    const char *data;\n"
+"} MyObject;\n"
+"\n"
+"static PyTypeObject MyObject_Type = {\n"
+"    PyVarObject_HEAD_INIT(NULL, 0)\n"
+"    .tp_name = \"mymod.MyObject\",\n"
+"    .tp_basicsize = sizeof(MyObject),\n"
+"    .tp_doc = PyDoc_STR(\"My objects\"),\n"
+"    .tp_new = myobj_new,\n"
+"    .tp_dealloc = (destructor)myobj_dealloc,\n"
+"    .tp_repr = (reprfunc)myobj_repr,\n"
+"};"
 
 msgid ""
 "You may also find older code (especially in the CPython code base) with a "
 "more verbose initializer::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "static PyTypeObject MyObject_Type = {\n"
 "    PyVarObject_HEAD_INIT(NULL, 0)\n"
@@ -3717,10 +4356,52 @@ msgid ""
 "    myobj_new,                      /* tp_new */\n"
 "};"
 msgstr ""
+"static PyTypeObject MyObject_Type = {\n"
+"    PyVarObject_HEAD_INIT(NULL, 0)\n"
+"    \"mymod.MyObject\",               /* tp_name */\n"
+"    sizeof(MyObject),               /* tp_basicsize */\n"
+"    0,                              /* tp_itemsize */\n"
+"    (destructor)myobj_dealloc,      /* tp_dealloc */\n"
+"    0,                              /* tp_vectorcall_offset */\n"
+"    0,                              /* tp_getattr */\n"
+"    0,                              /* tp_setattr */\n"
+"    0,                              /* tp_as_async */\n"
+"    (reprfunc)myobj_repr,           /* tp_repr */\n"
+"    0,                              /* tp_as_number */\n"
+"    0,                              /* tp_as_sequence */\n"
+"    0,                              /* tp_as_mapping */\n"
+"    0,                              /* tp_hash */\n"
+"    0,                              /* tp_call */\n"
+"    0,                              /* tp_str */\n"
+"    0,                              /* tp_getattro */\n"
+"    0,                              /* tp_setattro */\n"
+"    0,                              /* tp_as_buffer */\n"
+"    0,                              /* tp_flags */\n"
+"    PyDoc_STR(\"My objects\"),        /* tp_doc */\n"
+"    0,                              /* tp_traverse */\n"
+"    0,                              /* tp_clear */\n"
+"    0,                              /* tp_richcompare */\n"
+"    0,                              /* tp_weaklistoffset */\n"
+"    0,                              /* tp_iter */\n"
+"    0,                              /* tp_iternext */\n"
+"    0,                              /* tp_methods */\n"
+"    0,                              /* tp_members */\n"
+"    0,                              /* tp_getset */\n"
+"    0,                              /* tp_base */\n"
+"    0,                              /* tp_dict */\n"
+"    0,                              /* tp_descr_get */\n"
+"    0,                              /* tp_descr_set */\n"
+"    0,                              /* tp_dictoffset */\n"
+"    0,                              /* tp_init */\n"
+"    0,                              /* tp_alloc */\n"
+"    myobj_new,                      /* tp_new */\n"
+"};"
 
 msgid "A type that supports weakrefs, instance dicts, and hashing::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "typedef struct {\n"
 "    PyObject_HEAD\n"
@@ -3745,6 +4426,28 @@ msgid ""
 "    .tp_richcompare = PyBaseObject_Type.tp_richcompare,\n"
 "};"
 msgstr ""
+"typedef struct {\n"
+"    PyObject_HEAD\n"
+"    const char *data;\n"
+"} MyObject;\n"
+"\n"
+"static PyTypeObject MyObject_Type = {\n"
+"    PyVarObject_HEAD_INIT(NULL, 0)\n"
+"    .tp_name = \"mymod.MyObject\",\n"
+"    .tp_basicsize = sizeof(MyObject),\n"
+"    .tp_doc = PyDoc_STR(\"My objects\"),\n"
+"    .tp_flags = Py_TPFLAGS_DEFAULT | Py_TPFLAGS_BASETYPE |\n"
+"         Py_TPFLAGS_HAVE_GC | Py_TPFLAGS_MANAGED_DICT |\n"
+"         Py_TPFLAGS_MANAGED_WEAKREF,\n"
+"    .tp_new = myobj_new,\n"
+"    .tp_traverse = (traverseproc)myobj_traverse,\n"
+"    .tp_clear = (inquiry)myobj_clear,\n"
+"    .tp_alloc = PyType_GenericNew,\n"
+"    .tp_dealloc = (destructor)myobj_dealloc,\n"
+"    .tp_repr = (reprfunc)myobj_repr,\n"
+"    .tp_hash = (hashfunc)myobj_hash,\n"
+"    .tp_richcompare = PyBaseObject_Type.tp_richcompare,\n"
+"};"
 
 msgid ""
 "A str subclass that cannot be subclassed and cannot be called to create "
@@ -3752,6 +4455,8 @@ msgid ""
 "`Py_TPFLAGS_DISALLOW_INSTANTIATION` flag::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "typedef struct {\n"
 "    PyUnicodeObject raw;\n"
@@ -3768,11 +4473,27 @@ msgid ""
 "    .tp_repr = (reprfunc)myobj_repr,\n"
 "};"
 msgstr ""
+"typedef struct {\n"
+"    PyUnicodeObject raw;\n"
+"    char *extra;\n"
+"} MyStr;\n"
+"\n"
+"static PyTypeObject MyStr_Type = {\n"
+"    PyVarObject_HEAD_INIT(NULL, 0)\n"
+"    .tp_name = \"mymod.MyStr\",\n"
+"    .tp_basicsize = sizeof(MyStr),\n"
+"    .tp_base = NULL,  // set to &PyUnicode_Type in module init\n"
+"    .tp_doc = PyDoc_STR(\"my custom str\"),\n"
+"    .tp_flags = Py_TPFLAGS_DEFAULT | Py_TPFLAGS_DISALLOW_INSTANTIATION,\n"
+"    .tp_repr = (reprfunc)myobj_repr,\n"
+"};"
 
 msgid ""
 "The simplest :ref:`static type <static-types>` with fixed-length instances::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "typedef struct {\n"
 "    PyObject_HEAD\n"
@@ -3783,12 +4504,22 @@ msgid ""
 "    .tp_name = \"mymod.MyObject\",\n"
 "};"
 msgstr ""
+"typedef struct {\n"
+"    PyObject_HEAD\n"
+"} MyObject;\n"
+"\n"
+"static PyTypeObject MyObject_Type = {\n"
+"    PyVarObject_HEAD_INIT(NULL, 0)\n"
+"    .tp_name = \"mymod.MyObject\",\n"
+"};"
 
 msgid ""
 "The simplest :ref:`static type <static-types>` with variable-length "
 "instances::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "typedef struct {\n"
 "    PyObject_VAR_HEAD\n"
@@ -3802,12 +4533,27 @@ msgid ""
 "    .tp_itemsize = sizeof(char *),\n"
 "};"
 msgstr ""
+"typedef struct {\n"
+"    PyObject_VAR_HEAD\n"
+"    const char *data[1];\n"
+"} MyObject;\n"
+"\n"
+"static PyTypeObject MyObject_Type = {\n"
+"    PyVarObject_HEAD_INIT(NULL, 0)\n"
+"    .tp_name = \"mymod.MyObject\",\n"
+"    .tp_basicsize = sizeof(MyObject) - sizeof(char *),\n"
+"    .tp_itemsize = sizeof(char *),\n"
+"};"
 
 msgid "built-in function"
-msgstr ""
+msgstr "hàm tích hợp sẵn"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "repr"
-msgstr ""
+msgstr "repr"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "hash"
-msgstr ""
+msgstr "hash"

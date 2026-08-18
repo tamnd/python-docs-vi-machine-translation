@@ -9,18 +9,18 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-17 14:50+0000\n"
-"PO-Revision-Date: 2025-09-16 00:01+0000\n"
-"Last-Translator: Nguyen Duc Tam, 2026\n"
-"Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
-"vi/)\n"
+"POT-Creation-Date: 2026-05-08 18:34+0000\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: pydocvi 0.1.2\n"
 
 msgid ":mod:`!json` --- JSON encoder and decoder"
 msgstr ""
@@ -57,6 +57,8 @@ msgstr ""
 msgid "Encoding basic Python object hierarchies::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import json\n"
 ">>> json.dumps(['foo', {'bar': ('baz', None, 1.0, 2)}])\n"
@@ -75,19 +77,42 @@ msgid ""
 ">>> io.getvalue()\n"
 "'[\"streaming API\"]'"
 msgstr ""
+">>> import json\n"
+">>> json.dumps(['foo', {'bar': ('baz', None, 1.0, 2)}])\n"
+"'[\"foo\", {\"bar\": [\"baz\", null, 1.0, 2]}]'\n"
+">>> print(json.dumps(\"\\\"foo\\bar\"))\n"
+"\"\\\"foo\\bar\"\n"
+">>> print(json.dumps('\\u1234'))\n"
+"\"\\u1234\"\n"
+">>> print(json.dumps('\\\\'))\n"
+"\"\\\\\"\n"
+">>> print(json.dumps({\"c\": 0, \"b\": 0, \"a\": 0}, sort_keys=True))\n"
+"{\"a\": 0, \"b\": 0, \"c\": 0}\n"
+">>> from io import StringIO\n"
+">>> io = StringIO()\n"
+">>> json.dump(['streaming API'], io)\n"
+">>> io.getvalue()\n"
+"'[\"streaming API\"]'"
 
 msgid "Compact encoding::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import json\n"
 ">>> json.dumps([1, 2, 3, {'4': 5, '6': 7}], separators=(',', ':'))\n"
 "'[1,2,3,{\"4\":5,\"6\":7}]'"
 msgstr ""
+">>> import json\n"
+">>> json.dumps([1, 2, 3, {'4': 5, '6': 7}], separators=(',', ':'))\n"
+"'[1,2,3,{\"4\":5,\"6\":7}]'"
 
 msgid "Pretty printing::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import json\n"
 ">>> print(json.dumps({'6': 7, '4': 5}, sort_keys=True, indent=4))\n"
@@ -96,25 +121,44 @@ msgid ""
 "    \"6\": 7\n"
 "}"
 msgstr ""
+">>> import json\n"
+">>> print(json.dumps({'6': 7, '4': 5}, sort_keys=True, indent=4))\n"
+"{\n"
+"    \"4\": 5,\n"
+"    \"6\": 7\n"
+"}"
 
 msgid "Customizing JSON object encoding::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import json\n"
 ">>> def custom_json(obj):\n"
 "...     if isinstance(obj, complex):\n"
-"...         return {'__complex__': True, 'real': obj.real, 'imag': obj."
-"imag}\n"
+"...         return {'__complex__': True, 'real': obj.real, 'imag': "
+"obj.imag}\n"
 "...     raise TypeError(f'Cannot serialize object of {type(obj)}')\n"
 "...\n"
 ">>> json.dumps(1 + 2j, default=custom_json)\n"
 "'{\"__complex__\": true, \"real\": 1.0, \"imag\": 2.0}'"
 msgstr ""
+">>> import json\n"
+">>> def custom_json(obj):\n"
+"...     if isinstance(obj, complex):\n"
+"...         return {'__complex__': True, 'real': obj.real, 'imag': "
+"obj.imag}\n"
+"...     raise TypeError(f'Cannot serialize object of {type(obj)}')\n"
+"...\n"
+">>> json.dumps(1 + 2j, default=custom_json)\n"
+"'{\"__complex__\": true, \"real\": 1.0, \"imag\": 2.0}'"
 
 msgid "Decoding JSON::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import json\n"
 ">>> json.loads('[\"foo\", {\"bar\":[\"baz\", null, 1.0, 2]}]')\n"
@@ -126,10 +170,21 @@ msgid ""
 ">>> json.load(io)\n"
 "['streaming API']"
 msgstr ""
+">>> import json\n"
+">>> json.loads('[\"foo\", {\"bar\":[\"baz\", null, 1.0, 2]}]')\n"
+"['foo', {'bar': ['baz', None, 1.0, 2]}]\n"
+">>> json.loads('\"\\\\\"foo\\\\bar\"')\n"
+"'\"foo\\x08ar'\n"
+">>> from io import StringIO\n"
+">>> io = StringIO('[\"streaming API\"]')\n"
+">>> json.load(io)\n"
+"['streaming API']"
 
 msgid "Customizing JSON object decoding::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import json\n"
 ">>> def as_complex(dct):\n"
@@ -144,10 +199,24 @@ msgid ""
 ">>> json.loads('1.1', parse_float=decimal.Decimal)\n"
 "Decimal('1.1')"
 msgstr ""
+">>> import json\n"
+">>> def as_complex(dct):\n"
+"...     if '__complex__' in dct:\n"
+"...         return complex(dct['real'], dct['imag'])\n"
+"...     return dct\n"
+"...\n"
+">>> json.loads('{\"__complex__\": true, \"real\": 1, \"imag\": 2}',\n"
+"...     object_hook=as_complex)\n"
+"(1+2j)\n"
+">>> import decimal\n"
+">>> json.loads('1.1', parse_float=decimal.Decimal)\n"
+"Decimal('1.1')"
 
 msgid "Extending :class:`JSONEncoder`::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import json\n"
 ">>> class ComplexEncoder(json.JSONEncoder):\n"
@@ -164,10 +233,26 @@ msgid ""
 ">>> list(ComplexEncoder().iterencode(2 + 1j))\n"
 "['[2.0', ', 1.0', ']']"
 msgstr ""
+">>> import json\n"
+">>> class ComplexEncoder(json.JSONEncoder):\n"
+"...     def default(self, obj):\n"
+"...         if isinstance(obj, complex):\n"
+"...             return [obj.real, obj.imag]\n"
+"...         # Let the base class default method raise the TypeError\n"
+"...         return super().default(obj)\n"
+"...\n"
+">>> json.dumps(2 + 1j, cls=ComplexEncoder)\n"
+"'[2.0, 1.0]'\n"
+">>> ComplexEncoder().encode(2 + 1j)\n"
+"'[2.0, 1.0]'\n"
+">>> list(ComplexEncoder().iterencode(2 + 1j))\n"
+"['[2.0', ', 1.0', ']']"
 
 msgid "Using :mod:`!json` from the shell to validate and pretty-print:"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "$ echo '{\"json\":\"obj\"}' | python -m json\n"
 "{\n"
@@ -176,6 +261,12 @@ msgid ""
 "$ echo '{1.2:3.4}' | python -m json\n"
 "Expecting property name enclosed in double quotes: line 1 column 2 (char 1)"
 msgstr ""
+"$ echo '{\"json\":\"obj\"}' | python -m json\n"
+"{\n"
+"    \"json\": \"obj\"\n"
+"}\n"
+"$ echo '{1.2:3.4}' | python -m json\n"
+"Expecting property name enclosed in double quotes: line 1 column 2 (char 1)"
 
 msgid "See :ref:`json-commandline` for detailed documentation."
 msgstr ""
@@ -208,7 +299,7 @@ msgid ""
 msgstr ""
 
 msgid "Parameters"
-msgstr ""
+msgstr "Tham số"
 
 msgid "The Python object to be serialized."
 msgstr ""
@@ -334,6 +425,13 @@ msgid ""
 msgstr ""
 
 msgid ""
+"If set, a function that is called with the result of any JSON array literal "
+"decoded with as a Python list. The return value of this function will be "
+"used instead of the :class:`list`. This feature can be used to implement "
+"custom decoders. Default ``None``."
+msgstr ""
+
+msgid ""
 "If set, a function that is called with the string of every JSON float to be "
 "decoded. If ``None`` (the default), it is equivalent to ``float(num_str)``. "
 "This can be used to parse JSON floats into custom datatypes, for example :"
@@ -353,8 +451,10 @@ msgid ""
 "exception if invalid JSON numbers are encountered. Default ``None``."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Raises"
-msgstr ""
+msgstr "Raises"
 
 msgid "When the data being deserialized is not a valid JSON document."
 msgstr ""
@@ -381,6 +481,9 @@ msgid ""
 "limitation <int_max_str_digits>` to help avoid denial of service attacks."
 msgstr ""
 
+msgid "Added the optional *array_hook* parameter."
+msgstr ""
+
 msgid ""
 "Identical to :func:`load`, but instead of a file-like object, deserialize "
 "*s* (a :class:`str`, :class:`bytes` or :class:`bytearray` instance "
@@ -405,59 +508,87 @@ msgstr ""
 msgid "Performs the following translations in decoding by default:"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "JSON"
-msgstr ""
+msgstr "JSON"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Python"
-msgstr ""
+msgstr "Python"
 
 msgid "object"
-msgstr ""
+msgstr "object"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "dict"
-msgstr ""
+msgstr "dict"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "array"
-msgstr ""
+msgstr "array"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "list"
-msgstr ""
+msgstr "list"
 
 msgid "string"
-msgstr ""
+msgstr "chuỗi"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "str"
-msgstr ""
+msgstr "str"
 
 msgid "number (int)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "int"
-msgstr ""
+msgstr "int"
 
 msgid "number (real)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "float"
-msgstr ""
+msgstr "float"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "true"
-msgstr ""
+msgstr "true"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "True"
-msgstr ""
+msgstr "True"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "false"
-msgstr ""
+msgstr "false"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "False"
-msgstr ""
+msgstr "False"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "null"
-msgstr ""
+msgstr "null"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "None"
-msgstr ""
+msgstr "None"
 
 msgid ""
 "It also understands ``NaN``, ``Infinity``, and ``-Infinity`` as their "
@@ -480,6 +611,16 @@ msgid ""
 msgstr ""
 
 msgid "Added support for *object_pairs_hook*."
+msgstr ""
+
+msgid ""
+"*array_hook* is an optional function that will be called with the result of "
+"every JSON array decoded as a list. The return value of *array_hook* will be "
+"used instead of the :class:`list`. This feature can be used to implement "
+"custom decoders."
+msgstr ""
+
+msgid "Added support for *array_hook*."
 msgstr ""
 
 msgid ""
@@ -550,8 +691,10 @@ msgstr ""
 msgid "int, float, int- & float-derived Enums"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "number"
-msgstr ""
+msgstr "number"
 
 msgid "Added support for int- and float-derived Enum classes."
 msgstr ""
@@ -632,6 +775,8 @@ msgid ""
 "`~JSONEncoder.default` like this::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def default(self, o):\n"
 "   try:\n"
@@ -643,29 +788,48 @@ msgid ""
 "   # Let the base class default method raise the TypeError\n"
 "   return super().default(o)"
 msgstr ""
+"def default(self, o):\n"
+"   try:\n"
+"       iterable = iter(o)\n"
+"   except TypeError:\n"
+"       pass\n"
+"   else:\n"
+"       return list(iterable)\n"
+"   # Let the base class default method raise the TypeError\n"
+"   return super().default(o)"
 
 msgid ""
 "Return a JSON string representation of a Python data structure, *o*.  For "
 "example::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> json.JSONEncoder().encode({\"foo\": [\"bar\", \"baz\"]})\n"
 "'{\"foo\": [\"bar\", \"baz\"]}'"
 msgstr ""
+">>> json.JSONEncoder().encode({\"foo\": [\"bar\", \"baz\"]})\n"
+"'{\"foo\": [\"bar\", \"baz\"]}'"
 
 msgid ""
 "Encode the given object, *o*, and yield each string representation as "
 "available.  For example::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "for chunk in json.JSONEncoder().iterencode(bigobject):\n"
 "    mysocket.write(chunk)"
 msgstr ""
+"for chunk in json.JSONEncoder().iterencode(bigobject):\n"
+"    mysocket.write(chunk)"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Exceptions"
-msgstr ""
+msgstr "Exceptions"
 
 msgid "Subclass of :exc:`ValueError` with the following additional attributes:"
 msgstr ""
@@ -762,6 +926,8 @@ msgid ""
 "Infinity``, and ``NaN`` as if they were valid JSON number literal values::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> # Neither of these calls raises an exception, but the results are not "
 "valid JSON\n"
@@ -775,6 +941,17 @@ msgid ""
 ">>> json.loads('NaN')\n"
 "nan"
 msgstr ""
+">>> # Neither of these calls raises an exception, but the results are not "
+"valid JSON\n"
+">>> json.dumps(float('-inf'))\n"
+"'-Infinity'\n"
+">>> json.dumps(float('nan'))\n"
+"'NaN'\n"
+">>> # Same when deserializing\n"
+">>> json.loads('-Infinity')\n"
+"-inf\n"
+">>> json.loads('NaN')\n"
+"nan"
 
 msgid ""
 "In the serializer, the *allow_nan* parameter can be used to alter this "
@@ -792,11 +969,16 @@ msgid ""
 "but the last name-value pair for a given name::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> weird_json = '{\"x\": 1, \"x\": 2, \"x\": 3}'\n"
 ">>> json.loads(weird_json)\n"
 "{'x': 3}"
 msgstr ""
+">>> weird_json = '{\"x\": 1, \"x\": 2, \"x\": 3}'\n"
+">>> json.loads(weird_json)\n"
+"{'x': 3}"
 
 msgid "The *object_pairs_hook* parameter can be used to alter this behavior."
 msgstr ""
@@ -868,6 +1050,8 @@ msgid ""
 "data:`sys.stdin` and :data:`sys.stdout` will be used respectively:"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "$ echo '{\"json\": \"obj\"}' | python -m json\n"
 "{\n"
@@ -876,6 +1060,12 @@ msgid ""
 "$ echo '{1.2:3.4}' | python -m json\n"
 "Expecting property name enclosed in double quotes: line 1 column 2 (char 1)"
 msgstr ""
+"$ echo '{\"json\": \"obj\"}' | python -m json\n"
+"{\n"
+"    \"json\": \"obj\"\n"
+"}\n"
+"$ echo '{1.2:3.4}' | python -m json\n"
+"Expecting property name enclosed in double quotes: line 1 column 2 (char 1)"
 
 msgid ""
 "The output is now in the same order as the input. Use the :option:`--sort-"
@@ -894,6 +1084,8 @@ msgstr ""
 msgid "The JSON file to be validated or pretty-printed:"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "$ python -m json mp_films.json\n"
 "[\n"
@@ -907,6 +1099,17 @@ msgid ""
 "    }\n"
 "]"
 msgstr ""
+"$ python -m json mp_films.json\n"
+"[\n"
+"    {\n"
+"        \"title\": \"And Now for Something Completely Different\",\n"
+"        \"year\": 1971\n"
+"    },\n"
+"    {\n"
+"        \"title\": \"Monty Python and the Holy Grail\",\n"
+"        \"year\": 1975\n"
+"    }\n"
+"]"
 
 msgid "If *infile* is not specified, read from :data:`sys.stdin`."
 msgstr ""

@@ -9,18 +9,18 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-17 14:50+0000\n"
-"PO-Revision-Date: 2025-09-16 00:00+0000\n"
-"Last-Translator: python-doc bot, 2025\n"
-"Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
-"vi/)\n"
+"POT-Creation-Date: 2026-05-08 18:34+0000\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: pydocvi 0.1.2\n"
 
 msgid "Python Initialization Configuration"
 msgstr ""
@@ -43,14 +43,18 @@ msgstr ""
 msgid ":pep:`741` \"Python Configuration C API\"."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Example"
-msgstr ""
+msgstr "Example"
 
 msgid ""
 "Example of customized Python always running with the :ref:`Python "
 "Development Mode <devmode>` enabled; return ``-1`` on error:"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "int init_python(void)\n"
 "{\n"
@@ -86,6 +90,39 @@ msgid ""
 "    }\n"
 "}"
 msgstr ""
+"int init_python(void)\n"
+"{\n"
+"    PyInitConfig *config = PyInitConfig_Create();\n"
+"    if (config == NULL) {\n"
+"        printf(\"PYTHON INIT ERROR: memory allocation failed\\n\");\n"
+"        return -1;\n"
+"    }\n"
+"\n"
+"    // Enable the Python Development Mode\n"
+"    if (PyInitConfig_SetInt(config, \"dev_mode\", 1) < 0) {\n"
+"        goto error;\n"
+"    }\n"
+"\n"
+"    // Initialize Python with the configuration\n"
+"    if (Py_InitializeFromInitConfig(config) < 0) {\n"
+"        goto error;\n"
+"    }\n"
+"    PyInitConfig_Free(config);\n"
+"    return 0;\n"
+"\n"
+"error:\n"
+"    {\n"
+"        // Display the error message.\n"
+"        //\n"
+"        // This uncommon braces style is used, because you cannot make\n"
+"        // goto targets point to variable declarations.\n"
+"        const char *err_msg;\n"
+"        (void)PyInitConfig_GetError(config, &err_msg);\n"
+"        printf(\"PYTHON INIT ERROR: %s\\n\", err_msg);\n"
+"        PyInitConfig_Free(config);\n"
+"        return -1;\n"
+"    }\n"
+"}"
 
 msgid "Create Config"
 msgstr ""
@@ -110,8 +147,10 @@ msgstr ""
 msgid "If *config* is ``NULL``, no operation is performed."
 msgstr ""
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=21ec5aea4a73 run=2026-08-17T16:43Z
+#, fuzzy
 msgid "Error Handling"
-msgstr ""
+msgstr "Xử lý lỗi"
 
 msgid "Get the *config* error message."
 msgstr ""
@@ -232,8 +271,10 @@ msgid ""
 "UTF-8 encoded strings. The string list is copied."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Module"
-msgstr ""
+msgstr "Module"
 
 msgid "Add a built-in extension module to the table of built-in modules."
 msgstr ""
@@ -267,454 +308,750 @@ msgstr ""
 msgid "Configuration Options"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Option"
-msgstr ""
+msgstr "Option"
 
 msgid "PyConfig/PyPreConfig member"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Type"
-msgstr ""
+msgstr "Type"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Visibility"
-msgstr ""
+msgstr "Visibility"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"allocator\"``"
-msgstr ""
+msgstr "``\"allocator\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`allocator <PyPreConfig.allocator>`"
-msgstr ""
+msgstr ":c:member:`allocator <PyPreConfig.allocator>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``int``"
-msgstr ""
+msgstr "``int``"
 
 msgid "Read-only"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"argv\"``"
-msgstr ""
+msgstr "``\"argv\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`argv <PyConfig.argv>`"
-msgstr ""
+msgstr ":c:member:`argv <PyConfig.argv>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``list[str]``"
-msgstr ""
+msgstr "``list[str]``"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Public"
-msgstr ""
+msgstr "Public"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"base_exec_prefix\"``"
-msgstr ""
+msgstr "``\"base_exec_prefix\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`base_exec_prefix <PyConfig.base_exec_prefix>`"
-msgstr ""
+msgstr ":c:member:`base_exec_prefix <PyConfig.base_exec_prefix>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``str``"
-msgstr ""
+msgstr "``str``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"base_executable\"``"
-msgstr ""
+msgstr "``\"base_executable\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`base_executable <PyConfig.base_executable>`"
-msgstr ""
+msgstr ":c:member:`base_executable <PyConfig.base_executable>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"base_prefix\"``"
-msgstr ""
+msgstr "``\"base_prefix\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`base_prefix <PyConfig.base_prefix>`"
-msgstr ""
+msgstr ":c:member:`base_prefix <PyConfig.base_prefix>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"buffered_stdio\"``"
-msgstr ""
+msgstr "``\"buffered_stdio\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`buffered_stdio <PyConfig.buffered_stdio>`"
-msgstr ""
+msgstr ":c:member:`buffered_stdio <PyConfig.buffered_stdio>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``bool``"
-msgstr ""
+msgstr "``bool``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"bytes_warning\"``"
-msgstr ""
+msgstr "``\"bytes_warning\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`bytes_warning <PyConfig.bytes_warning>`"
-msgstr ""
+msgstr ":c:member:`bytes_warning <PyConfig.bytes_warning>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"check_hash_pycs_mode\"``"
-msgstr ""
+msgstr "``\"check_hash_pycs_mode\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`check_hash_pycs_mode <PyConfig.check_hash_pycs_mode>`"
-msgstr ""
+msgstr ":c:member:`check_hash_pycs_mode <PyConfig.check_hash_pycs_mode>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"code_debug_ranges\"``"
-msgstr ""
+msgstr "``\"code_debug_ranges\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`code_debug_ranges <PyConfig.code_debug_ranges>`"
-msgstr ""
+msgstr ":c:member:`code_debug_ranges <PyConfig.code_debug_ranges>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"coerce_c_locale\"``"
-msgstr ""
+msgstr "``\"coerce_c_locale\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`coerce_c_locale <PyPreConfig.coerce_c_locale>`"
-msgstr ""
+msgstr ":c:member:`coerce_c_locale <PyPreConfig.coerce_c_locale>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"coerce_c_locale_warn\"``"
-msgstr ""
+msgstr "``\"coerce_c_locale_warn\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`coerce_c_locale_warn <PyPreConfig.coerce_c_locale_warn>`"
-msgstr ""
+msgstr ":c:member:`coerce_c_locale_warn <PyPreConfig.coerce_c_locale_warn>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"configure_c_stdio\"``"
-msgstr ""
+msgstr "``\"configure_c_stdio\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`configure_c_stdio <PyConfig.configure_c_stdio>`"
-msgstr ""
+msgstr ":c:member:`configure_c_stdio <PyConfig.configure_c_stdio>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"configure_locale\"``"
-msgstr ""
+msgstr "``\"configure_locale\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`configure_locale <PyPreConfig.configure_locale>`"
-msgstr ""
+msgstr ":c:member:`configure_locale <PyPreConfig.configure_locale>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"cpu_count\"``"
-msgstr ""
+msgstr "``\"cpu_count\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`cpu_count <PyConfig.cpu_count>`"
-msgstr ""
+msgstr ":c:member:`cpu_count <PyConfig.cpu_count>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"dev_mode\"``"
-msgstr ""
+msgstr "``\"dev_mode\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`dev_mode <PyConfig.dev_mode>`"
-msgstr ""
+msgstr ":c:member:`dev_mode <PyConfig.dev_mode>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"dump_refs\"``"
-msgstr ""
+msgstr "``\"dump_refs\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`dump_refs <PyConfig.dump_refs>`"
-msgstr ""
+msgstr ":c:member:`dump_refs <PyConfig.dump_refs>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"dump_refs_file\"``"
-msgstr ""
+msgstr "``\"dump_refs_file\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`dump_refs_file <PyConfig.dump_refs_file>`"
-msgstr ""
+msgstr ":c:member:`dump_refs_file <PyConfig.dump_refs_file>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"exec_prefix\"``"
-msgstr ""
+msgstr "``\"exec_prefix\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`exec_prefix <PyConfig.exec_prefix>`"
-msgstr ""
+msgstr ":c:member:`exec_prefix <PyConfig.exec_prefix>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"executable\"``"
-msgstr ""
+msgstr "``\"executable\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`executable <PyConfig.executable>`"
-msgstr ""
+msgstr ":c:member:`executable <PyConfig.executable>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"faulthandler\"``"
-msgstr ""
+msgstr "``\"faulthandler\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`faulthandler <PyConfig.faulthandler>`"
-msgstr ""
+msgstr ":c:member:`faulthandler <PyConfig.faulthandler>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"filesystem_encoding\"``"
-msgstr ""
+msgstr "``\"filesystem_encoding\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`filesystem_encoding <PyConfig.filesystem_encoding>`"
-msgstr ""
+msgstr ":c:member:`filesystem_encoding <PyConfig.filesystem_encoding>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"filesystem_errors\"``"
-msgstr ""
+msgstr "``\"filesystem_errors\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`filesystem_errors <PyConfig.filesystem_errors>`"
-msgstr ""
+msgstr ":c:member:`filesystem_errors <PyConfig.filesystem_errors>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"hash_seed\"``"
-msgstr ""
+msgstr "``\"hash_seed\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`hash_seed <PyConfig.hash_seed>`"
-msgstr ""
+msgstr ":c:member:`hash_seed <PyConfig.hash_seed>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"home\"``"
-msgstr ""
+msgstr "``\"home\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`home <PyConfig.home>`"
-msgstr ""
+msgstr ":c:member:`home <PyConfig.home>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"import_time\"``"
-msgstr ""
+msgstr "``\"import_time\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`import_time <PyConfig.import_time>`"
-msgstr ""
+msgstr ":c:member:`import_time <PyConfig.import_time>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"inspect\"``"
-msgstr ""
+msgstr "``\"inspect\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`inspect <PyConfig.inspect>`"
-msgstr ""
+msgstr ":c:member:`inspect <PyConfig.inspect>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"install_signal_handlers\"``"
-msgstr ""
+msgstr "``\"install_signal_handlers\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`install_signal_handlers <PyConfig.install_signal_handlers>`"
-msgstr ""
+msgstr ":c:member:`install_signal_handlers <PyConfig.install_signal_handlers>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"int_max_str_digits\"``"
-msgstr ""
+msgstr "``\"int_max_str_digits\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`int_max_str_digits <PyConfig.int_max_str_digits>`"
-msgstr ""
+msgstr ":c:member:`int_max_str_digits <PyConfig.int_max_str_digits>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"interactive\"``"
-msgstr ""
+msgstr "``\"interactive\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`interactive <PyConfig.interactive>`"
-msgstr ""
+msgstr ":c:member:`interactive <PyConfig.interactive>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"isolated\"``"
-msgstr ""
+msgstr "``\"isolated\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`isolated <PyConfig.isolated>`"
-msgstr ""
+msgstr ":c:member:`isolated <PyConfig.isolated>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"legacy_windows_fs_encoding\"``"
-msgstr ""
+msgstr "``\"legacy_windows_fs_encoding\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ""
-":c:member:`legacy_windows_fs_encoding <PyPreConfig."
-"legacy_windows_fs_encoding>`"
+":c:member:`legacy_windows_fs_encoding "
+"<PyPreConfig.legacy_windows_fs_encoding>`"
 msgstr ""
+":c:member:`legacy_windows_fs_encoding "
+"<PyPreConfig.legacy_windows_fs_encoding>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"legacy_windows_stdio\"``"
-msgstr ""
+msgstr "``\"legacy_windows_stdio\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`legacy_windows_stdio <PyConfig.legacy_windows_stdio>`"
-msgstr ""
+msgstr ":c:member:`legacy_windows_stdio <PyConfig.legacy_windows_stdio>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"malloc_stats\"``"
-msgstr ""
+msgstr "``\"malloc_stats\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`malloc_stats <PyConfig.malloc_stats>`"
-msgstr ""
+msgstr ":c:member:`malloc_stats <PyConfig.malloc_stats>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"module_search_paths\"``"
-msgstr ""
+msgstr "``\"module_search_paths\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`module_search_paths <PyConfig.module_search_paths>`"
-msgstr ""
+msgstr ":c:member:`module_search_paths <PyConfig.module_search_paths>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"optimization_level\"``"
-msgstr ""
+msgstr "``\"optimization_level\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`optimization_level <PyConfig.optimization_level>`"
-msgstr ""
+msgstr ":c:member:`optimization_level <PyConfig.optimization_level>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"orig_argv\"``"
-msgstr ""
+msgstr "``\"orig_argv\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`orig_argv <PyConfig.orig_argv>`"
-msgstr ""
+msgstr ":c:member:`orig_argv <PyConfig.orig_argv>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"parse_argv\"``"
-msgstr ""
+msgstr "``\"parse_argv\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`parse_argv <PyConfig.parse_argv>`"
-msgstr ""
+msgstr ":c:member:`parse_argv <PyConfig.parse_argv>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"parser_debug\"``"
-msgstr ""
+msgstr "``\"parser_debug\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`parser_debug <PyConfig.parser_debug>`"
-msgstr ""
+msgstr ":c:member:`parser_debug <PyConfig.parser_debug>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"pathconfig_warnings\"``"
-msgstr ""
+msgstr "``\"pathconfig_warnings\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`pathconfig_warnings <PyConfig.pathconfig_warnings>`"
-msgstr ""
+msgstr ":c:member:`pathconfig_warnings <PyConfig.pathconfig_warnings>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"perf_profiling\"``"
-msgstr ""
+msgstr "``\"perf_profiling\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`perf_profiling <PyConfig.perf_profiling>`"
-msgstr ""
+msgstr ":c:member:`perf_profiling <PyConfig.perf_profiling>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"platlibdir\"``"
-msgstr ""
+msgstr "``\"platlibdir\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`platlibdir <PyConfig.platlibdir>`"
-msgstr ""
+msgstr ":c:member:`platlibdir <PyConfig.platlibdir>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"prefix\"``"
-msgstr ""
+msgstr "``\"prefix\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`prefix <PyConfig.prefix>`"
-msgstr ""
+msgstr ":c:member:`prefix <PyConfig.prefix>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"program_name\"``"
-msgstr ""
+msgstr "``\"program_name\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`program_name <PyConfig.program_name>`"
-msgstr ""
+msgstr ":c:member:`program_name <PyConfig.program_name>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"pycache_prefix\"``"
-msgstr ""
+msgstr "``\"pycache_prefix\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`pycache_prefix <PyConfig.pycache_prefix>`"
-msgstr ""
+msgstr ":c:member:`pycache_prefix <PyConfig.pycache_prefix>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"quiet\"``"
-msgstr ""
+msgstr "``\"quiet\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`quiet <PyConfig.quiet>`"
-msgstr ""
+msgstr ":c:member:`quiet <PyConfig.quiet>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"run_command\"``"
-msgstr ""
+msgstr "``\"run_command\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`run_command <PyConfig.run_command>`"
-msgstr ""
+msgstr ":c:member:`run_command <PyConfig.run_command>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"run_filename\"``"
-msgstr ""
+msgstr "``\"run_filename\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`run_filename <PyConfig.run_filename>`"
-msgstr ""
+msgstr ":c:member:`run_filename <PyConfig.run_filename>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"run_module\"``"
-msgstr ""
+msgstr "``\"run_module\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`run_module <PyConfig.run_module>`"
-msgstr ""
+msgstr ":c:member:`run_module <PyConfig.run_module>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"run_presite\"``"
-msgstr ""
+msgstr "``\"run_presite\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`run_presite <PyConfig.run_presite>`"
-msgstr ""
+msgstr ":c:member:`run_presite <PyConfig.run_presite>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"safe_path\"``"
-msgstr ""
+msgstr "``\"safe_path\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`safe_path <PyConfig.safe_path>`"
-msgstr ""
+msgstr ":c:member:`safe_path <PyConfig.safe_path>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"show_ref_count\"``"
-msgstr ""
+msgstr "``\"show_ref_count\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`show_ref_count <PyConfig.show_ref_count>`"
-msgstr ""
+msgstr ":c:member:`show_ref_count <PyConfig.show_ref_count>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"site_import\"``"
-msgstr ""
+msgstr "``\"site_import\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`site_import <PyConfig.site_import>`"
-msgstr ""
+msgstr ":c:member:`site_import <PyConfig.site_import>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"skip_source_first_line\"``"
-msgstr ""
+msgstr "``\"skip_source_first_line\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`skip_source_first_line <PyConfig.skip_source_first_line>`"
-msgstr ""
+msgstr ":c:member:`skip_source_first_line <PyConfig.skip_source_first_line>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"stdio_encoding\"``"
-msgstr ""
+msgstr "``\"stdio_encoding\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`stdio_encoding <PyConfig.stdio_encoding>`"
-msgstr ""
+msgstr ":c:member:`stdio_encoding <PyConfig.stdio_encoding>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"stdio_errors\"``"
-msgstr ""
+msgstr "``\"stdio_errors\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`stdio_errors <PyConfig.stdio_errors>`"
-msgstr ""
+msgstr ":c:member:`stdio_errors <PyConfig.stdio_errors>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"stdlib_dir\"``"
-msgstr ""
+msgstr "``\"stdlib_dir\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`stdlib_dir <PyConfig.stdlib_dir>`"
-msgstr ""
+msgstr ":c:member:`stdlib_dir <PyConfig.stdlib_dir>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"tracemalloc\"``"
-msgstr ""
+msgstr "``\"tracemalloc\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`tracemalloc <PyConfig.tracemalloc>`"
-msgstr ""
+msgstr ":c:member:`tracemalloc <PyConfig.tracemalloc>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"use_environment\"``"
-msgstr ""
+msgstr "``\"use_environment\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`use_environment <PyConfig.use_environment>`"
-msgstr ""
+msgstr ":c:member:`use_environment <PyConfig.use_environment>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"use_frozen_modules\"``"
-msgstr ""
+msgstr "``\"use_frozen_modules\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`use_frozen_modules <PyConfig.use_frozen_modules>`"
-msgstr ""
+msgstr ":c:member:`use_frozen_modules <PyConfig.use_frozen_modules>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"use_hash_seed\"``"
-msgstr ""
+msgstr "``\"use_hash_seed\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`use_hash_seed <PyConfig.use_hash_seed>`"
-msgstr ""
+msgstr ":c:member:`use_hash_seed <PyConfig.use_hash_seed>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"use_system_logger\"``"
-msgstr ""
+msgstr "``\"use_system_logger\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`use_system_logger <PyConfig.use_system_logger>`"
-msgstr ""
+msgstr ":c:member:`use_system_logger <PyConfig.use_system_logger>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"user_site_directory\"``"
-msgstr ""
+msgstr "``\"user_site_directory\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`user_site_directory <PyConfig.user_site_directory>`"
-msgstr ""
+msgstr ":c:member:`user_site_directory <PyConfig.user_site_directory>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"utf8_mode\"``"
-msgstr ""
+msgstr "``\"utf8_mode\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`utf8_mode <PyPreConfig.utf8_mode>`"
-msgstr ""
+msgstr ":c:member:`utf8_mode <PyPreConfig.utf8_mode>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"verbose\"``"
-msgstr ""
+msgstr "``\"verbose\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`verbose <PyConfig.verbose>`"
-msgstr ""
+msgstr ":c:member:`verbose <PyConfig.verbose>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"warn_default_encoding\"``"
-msgstr ""
+msgstr "``\"warn_default_encoding\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`warn_default_encoding <PyConfig.warn_default_encoding>`"
-msgstr ""
+msgstr ":c:member:`warn_default_encoding <PyConfig.warn_default_encoding>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"warnoptions\"``"
-msgstr ""
+msgstr "``\"warnoptions\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`warnoptions <PyConfig.warnoptions>`"
-msgstr ""
+msgstr ":c:member:`warnoptions <PyConfig.warnoptions>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"write_bytecode\"``"
-msgstr ""
+msgstr "``\"write_bytecode\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`write_bytecode <PyConfig.write_bytecode>`"
-msgstr ""
+msgstr ":c:member:`write_bytecode <PyConfig.write_bytecode>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"xoptions\"``"
-msgstr ""
+msgstr "``\"xoptions\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`xoptions <PyConfig.xoptions>`"
-msgstr ""
+msgstr ":c:member:`xoptions <PyConfig.xoptions>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``dict[str, str]``"
-msgstr ""
+msgstr "``dict[str, str]``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"_pystats\"``"
-msgstr ""
+msgstr "``\"_pystats\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`_pystats <PyConfig._pystats>`"
-msgstr ""
+msgstr ":c:member:`_pystats <PyConfig._pystats>`"
 
 msgid "Visibility:"
 msgstr ""
@@ -821,6 +1158,8 @@ msgstr ""
 msgid "Example of customized Python always running in isolated mode::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "int main(int argc, char **argv)\n"
 "{\n"
@@ -855,9 +1194,43 @@ msgid ""
 "    Py_ExitStatusException(status);\n"
 "}"
 msgstr ""
+"int main(int argc, char **argv)\n"
+"{\n"
+"    PyStatus status;\n"
+"\n"
+"    PyConfig config;\n"
+"    PyConfig_InitPythonConfig(&config);\n"
+"    config.isolated = 1;\n"
+"\n"
+"    /* Decode command line arguments.\n"
+"       Implicitly preinitialize Python (in isolated mode). */\n"
+"    status = PyConfig_SetBytesArgv(&config, argc, argv);\n"
+"    if (PyStatus_Exception(status)) {\n"
+"        goto exception;\n"
+"    }\n"
+"\n"
+"    status = Py_InitializeFromConfig(&config);\n"
+"    if (PyStatus_Exception(status)) {\n"
+"        goto exception;\n"
+"    }\n"
+"    PyConfig_Clear(&config);\n"
+"\n"
+"    return Py_RunMain();\n"
+"\n"
+"exception:\n"
+"    PyConfig_Clear(&config);\n"
+"    if (PyStatus_IsExit(status)) {\n"
+"        return status.exitcode;\n"
+"    }\n"
+"    /* Display the error message and exit the process with\n"
+"       non-zero exit code */\n"
+"    Py_ExitStatusException(status);\n"
+"}"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "PyWideStringList"
-msgstr ""
+msgstr "PyWideStringList"
 
 msgid "List of ``wchar_t*`` strings."
 msgstr ""
@@ -896,8 +1269,10 @@ msgstr ""
 msgid "List items."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "PyStatus"
-msgstr ""
+msgstr "PyStatus"
 
 msgid ""
 "Structure to store an initialization function status: success, error or exit."
@@ -918,8 +1293,10 @@ msgstr ""
 msgid "Functions to create a status:"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Success."
-msgstr ""
+msgstr "Success."
 
 msgid "Initialization error with a message."
 msgstr ""
@@ -961,6 +1338,8 @@ msgstr ""
 msgid "Example::"
 msgstr "Ví dụ::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "PyStatus alloc(void **ptr, size_t size)\n"
 "{\n"
@@ -982,9 +1361,30 @@ msgid ""
 "    return 0;\n"
 "}"
 msgstr ""
+"PyStatus alloc(void **ptr, size_t size)\n"
+"{\n"
+"    *ptr = PyMem_RawMalloc(size);\n"
+"    if (*ptr == NULL) {\n"
+"        return PyStatus_NoMemory();\n"
+"    }\n"
+"    return PyStatus_Ok();\n"
+"}\n"
+"\n"
+"int main(int argc, char **argv)\n"
+"{\n"
+"    void *ptr;\n"
+"    PyStatus status = alloc(&ptr, 16);\n"
+"    if (PyStatus_Exception(status)) {\n"
+"        Py_ExitStatusException(status);\n"
+"    }\n"
+"    PyMem_Free(ptr);\n"
+"    return 0;\n"
+"}"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "PyPreConfig"
-msgstr ""
+msgstr "PyPreConfig"
 
 msgid "Structure used to preinitialize Python."
 msgstr ""
@@ -1010,10 +1410,14 @@ msgid ""
 "defaults)."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ""
 "``PYMEM_ALLOCATOR_DEFAULT`` (``1``): :ref:`default memory allocators "
 "<default-memory-allocators>`."
 msgstr ""
+"``PYMEM_ALLOCATOR_DEFAULT`` (``1``): :ref:`default memory allocators "
+"<default-memory-allocators>`."
 
 msgid ""
 "``PYMEM_ALLOCATOR_DEBUG`` (``2``): :ref:`default memory allocators <default-"
@@ -1028,10 +1432,14 @@ msgid ""
 "ref:`debug hooks <pymem-debug-hooks>`."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ""
 "``PYMEM_ALLOCATOR_PYMALLOC`` (``5``): :ref:`Python pymalloc memory allocator "
 "<pymalloc>`."
 msgstr ""
+"``PYMEM_ALLOCATOR_PYMALLOC`` (``5``): :ref:`Python pymalloc memory allocator "
+"<pymalloc>`."
 
 msgid ""
 "``PYMEM_ALLOCATOR_PYMALLOC_DEBUG`` (``6``): :ref:`Python pymalloc memory "
@@ -1155,10 +1563,7 @@ msgid ""
 "the :envvar:`PYTHONUTF8` environment variable."
 msgstr ""
 
-msgid "Also set to ``1`` if the ``LC_CTYPE`` locale is ``C`` or ``POSIX``."
-msgstr ""
-
-msgid "Default: ``-1`` in Python config and ``0`` in isolated config."
+msgid "Default: ``1``."
 msgstr ""
 
 msgid "Preinitialize Python with PyPreConfig"
@@ -1235,6 +1640,8 @@ msgid ""
 "<utf8-mode>`::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "PyStatus status;\n"
 "PyPreConfig preconfig;\n"
@@ -1253,9 +1660,27 @@ msgid ""
 "/* ... use Python API here ... */\n"
 "Py_Finalize();"
 msgstr ""
+"PyStatus status;\n"
+"PyPreConfig preconfig;\n"
+"PyPreConfig_InitPythonConfig(&preconfig);\n"
+"\n"
+"preconfig.utf8_mode = 1;\n"
+"\n"
+"status = Py_PreInitialize(&preconfig);\n"
+"if (PyStatus_Exception(status)) {\n"
+"    Py_ExitStatusException(status);\n"
+"}\n"
+"\n"
+"/* at this point, Python speaks UTF-8 */\n"
+"\n"
+"Py_Initialize();\n"
+"/* ... use Python API here ... */\n"
+"Py_Finalize();"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "PyConfig"
-msgstr ""
+msgstr "PyConfig"
 
 msgid "Structure containing most parameters to configure Python."
 msgstr ""
@@ -1345,17 +1770,25 @@ msgid ""
 "before calling a :c:type:`PyConfig` method:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`PyConfig.dev_mode`"
-msgstr ""
+msgstr ":c:member:`PyConfig.dev_mode`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`PyConfig.isolated`"
-msgstr ""
+msgstr ":c:member:`PyConfig.isolated`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`PyConfig.parse_argv`"
-msgstr ""
+msgstr ":c:member:`PyConfig.parse_argv`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`PyConfig.use_environment`"
-msgstr ""
+msgstr ":c:member:`PyConfig.use_environment`"
 
 msgid ""
 "Moreover, if :c:func:`PyConfig_SetArgv` or :c:func:`PyConfig_SetBytesArgv` "
@@ -1423,8 +1856,10 @@ msgstr ""
 msgid "Default: ``0`` in Python config, ``1`` in isolated config."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":data:`sys.base_exec_prefix`."
-msgstr ""
+msgstr ":data:`sys.base_exec_prefix`."
 
 msgid "Part of the :ref:`Python Path Configuration <init-path-config>` output."
 msgstr ""
@@ -1444,8 +1879,10 @@ msgstr ""
 msgid "See also :c:member:`PyConfig.executable`."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":data:`sys.base_prefix`."
-msgstr ""
+msgstr ":data:`sys.base_prefix`."
 
 msgid "See also :c:member:`PyConfig.prefix`."
 msgstr ""
@@ -1463,9 +1900,6 @@ msgstr ""
 msgid "stdin is always opened in buffered mode."
 msgstr ""
 
-msgid "Default: ``1``."
-msgstr ""
-
 msgid ""
 "If equals to ``1``, issue a warning when comparing :class:`bytes` or :class:"
 "`bytearray` with :class:`str`, or comparing :class:`bytes` with :class:`int`."
@@ -1477,6 +1911,11 @@ msgid ""
 msgstr ""
 
 msgid "Incremented by the :option:`-b` command line option."
+msgstr ""
+
+msgid ""
+"The :option:`-b` and :option:`!-bb` options will become no-op in 3.17. :c:"
+"member:`~PyConfig.bytes_warning` member will be removed in 3.17."
 msgstr ""
 
 msgid ""
@@ -1595,10 +2034,14 @@ msgid ""
 "`PYTHONFAULTHANDLER` environment variable."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ""
-":term:`Filesystem encoding <filesystem encoding and error handler>`: :func:"
-"`sys.getfilesystemencoding`."
+":term:`Filesystem encoding <filesystem encoding and error handler>`: "
+":func:`sys.getfilesystemencoding`."
 msgstr ""
+":term:`Filesystem encoding <filesystem encoding and error handler>`: "
+":func:`sys.getfilesystemencoding`."
 
 msgid "On macOS, Android and VxWorks: use ``\"utf-8\"`` by default."
 msgstr ""
@@ -1636,10 +2079,14 @@ msgstr ""
 msgid "See also the :c:member:`~PyConfig.filesystem_errors` member."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ""
-":term:`Filesystem error handler <filesystem encoding and error handler>`: :"
-"func:`sys.getfilesystemencodeerrors`."
+":term:`Filesystem error handler <filesystem encoding and error handler>`: "
+":func:`sys.getfilesystemencodeerrors`."
 msgstr ""
+":term:`Filesystem error handler <filesystem encoding and error handler>`: "
+":func:`sys.getfilesystemencodeerrors`."
 
 msgid ""
 "On Windows: use ``\"surrogatepass\"`` by default, or ``\"replace\"``  if :c:"
@@ -1653,11 +2100,15 @@ msgstr ""
 msgid "Supported error handlers:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"strict\"``"
-msgstr ""
+msgstr "``\"strict\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"surrogateescape\"``"
-msgstr ""
+msgstr "``\"surrogateescape\"``"
 
 msgid "``\"surrogatepass\"`` (only supported with the UTF-8 encoding)"
 msgstr ""
@@ -2026,12 +2477,12 @@ msgid "Value of the :option:`-m` command line option."
 msgstr ""
 
 msgid ""
-"``package.module`` path to module that should be imported before ``site.py`` "
-"is run."
+"``module`` or ``module:func`` entry point that should be executed before "
+"the :mod:`site` module is imported."
 msgstr ""
 
 msgid ""
-"Set by the :option:`-X presite=package.module <-X>` command-line option and "
+"Set by the :option:`-X presite=module:func <-X>` command-line option and "
 "the :envvar:`PYTHON_PRESITE` environment variable. The command-line option "
 "takes precedence."
 msgstr ""
@@ -2293,6 +2744,8 @@ msgstr ""
 msgid "Example setting the program name::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "void init_python(void)\n"
 "{\n"
@@ -2320,6 +2773,31 @@ msgid ""
 "    Py_ExitStatusException(status);\n"
 "}"
 msgstr ""
+"void init_python(void)\n"
+"{\n"
+"    PyStatus status;\n"
+"\n"
+"    PyConfig config;\n"
+"    PyConfig_InitPythonConfig(&config);\n"
+"\n"
+"    /* Set the program name. Implicitly preinitialize Python. */\n"
+"    status = PyConfig_SetString(&config, &config.program_name,\n"
+"                                L\"/path/to/my_program\");\n"
+"    if (PyStatus_Exception(status)) {\n"
+"        goto exception;\n"
+"    }\n"
+"\n"
+"    status = Py_InitializeFromConfig(&config);\n"
+"    if (PyStatus_Exception(status)) {\n"
+"        goto exception;\n"
+"    }\n"
+"    PyConfig_Clear(&config);\n"
+"    return;\n"
+"\n"
+"exception:\n"
+"    PyConfig_Clear(&config);\n"
+"    Py_ExitStatusException(status);\n"
+"}"
 
 msgid ""
 "More complete example modifying the default configuration, read the "
@@ -2329,6 +2807,8 @@ msgid ""
 "called will be left unchanged by initialization::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "PyStatus init_python(const char *program_name)\n"
 "{\n"
@@ -2355,7 +2835,7 @@ msgid ""
 "\n"
 "    /* Specify sys.path explicitly */\n"
 "    /* If you want to modify the default set of paths, finish\n"
-"       initialization first and then use PySys_GetObject(\"path\") */\n"
+"       initialization first and then use PySys_GetAttrString(\"path\") */\n"
 "    config.module_search_paths_set = 1;\n"
 "    status = PyWideStringList_Append(&config.module_search_paths,\n"
 "                                     L\"/path/to/stdlib\");\n"
@@ -2382,6 +2862,57 @@ msgid ""
 "    return status;\n"
 "}"
 msgstr ""
+"PyStatus init_python(const char *program_name)\n"
+"{\n"
+"    PyStatus status;\n"
+"\n"
+"    PyConfig config;\n"
+"    PyConfig_InitPythonConfig(&config);\n"
+"\n"
+"    /* Set the program name before reading the configuration\n"
+"       (decode byte string from the locale encoding).\n"
+"\n"
+"       Implicitly preinitialize Python. */\n"
+"    status = PyConfig_SetBytesString(&config, &config.program_name,\n"
+"                                     program_name);\n"
+"    if (PyStatus_Exception(status)) {\n"
+"        goto done;\n"
+"    }\n"
+"\n"
+"    /* Read all configuration at once */\n"
+"    status = PyConfig_Read(&config);\n"
+"    if (PyStatus_Exception(status)) {\n"
+"        goto done;\n"
+"    }\n"
+"\n"
+"    /* Specify sys.path explicitly */\n"
+"    /* If you want to modify the default set of paths, finish\n"
+"       initialization first and then use PySys_GetAttrString(\"path\") */\n"
+"    config.module_search_paths_set = 1;\n"
+"    status = PyWideStringList_Append(&config.module_search_paths,\n"
+"                                     L\"/path/to/stdlib\");\n"
+"    if (PyStatus_Exception(status)) {\n"
+"        goto done;\n"
+"    }\n"
+"    status = PyWideStringList_Append(&config.module_search_paths,\n"
+"                                     L\"/path/to/more/modules\");\n"
+"    if (PyStatus_Exception(status)) {\n"
+"        goto done;\n"
+"    }\n"
+"\n"
+"    /* Override executable computed by PyConfig_Read() */\n"
+"    status = PyConfig_SetString(&config, &config.executable,\n"
+"                                L\"/path/to/my_executable\");\n"
+"    if (PyStatus_Exception(status)) {\n"
+"        goto done;\n"
+"    }\n"
+"\n"
+"    status = Py_InitializeFromConfig(&config);\n"
+"\n"
+"done:\n"
+"    PyConfig_Clear(&config);\n"
+"    return status;\n"
+"}"
 
 msgid "Isolated Configuration"
 msgstr ""
@@ -2434,20 +2965,30 @@ msgstr ""
 msgid "Path configuration inputs:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`PyConfig.home`"
-msgstr ""
+msgstr ":c:member:`PyConfig.home`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`PyConfig.platlibdir`"
-msgstr ""
+msgstr ":c:member:`PyConfig.platlibdir`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`PyConfig.pathconfig_warnings`"
-msgstr ""
+msgstr ":c:member:`PyConfig.pathconfig_warnings`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`PyConfig.program_name`"
-msgstr ""
+msgstr ":c:member:`PyConfig.program_name`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`PyConfig.pythonpath_env`"
-msgstr ""
+msgstr ":c:member:`PyConfig.pythonpath_env`"
 
 msgid "current working directory: to get absolute paths"
 msgstr ""
@@ -2469,28 +3010,44 @@ msgstr ""
 msgid "Path configuration output fields:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`PyConfig.base_exec_prefix`"
-msgstr ""
+msgstr ":c:member:`PyConfig.base_exec_prefix`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`PyConfig.base_executable`"
-msgstr ""
+msgstr ":c:member:`PyConfig.base_executable`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`PyConfig.base_prefix`"
-msgstr ""
+msgstr ":c:member:`PyConfig.base_prefix`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`PyConfig.exec_prefix`"
-msgstr ""
+msgstr ":c:member:`PyConfig.exec_prefix`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`PyConfig.executable`"
-msgstr ""
+msgstr ":c:member:`PyConfig.executable`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ""
-":c:member:`PyConfig.module_search_paths_set`, :c:member:`PyConfig."
-"module_search_paths`"
+":c:member:`PyConfig.module_search_paths_set`, "
+":c:member:`PyConfig.module_search_paths`"
 msgstr ""
+":c:member:`PyConfig.module_search_paths_set`, "
+":c:member:`PyConfig.module_search_paths`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`PyConfig.prefix`"
-msgstr ""
+msgstr ":c:member:`PyConfig.prefix`"
 
 msgid ""
 "If at least one \"output field\" is not set, Python calculates the path "
@@ -2557,8 +3114,10 @@ msgstr ""
 msgid "The following configuration files are used by the path configuration:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``pyvenv.cfg``"
-msgstr ""
+msgstr "``pyvenv.cfg``"
 
 msgid "``._pth`` file (ex: ``python._pth``)"
 msgstr ""
@@ -2576,6 +3135,9 @@ msgid "Set :c:member:`~PyConfig.use_environment` to ``0``."
 msgstr ""
 
 msgid "Set :c:member:`~PyConfig.site_import` to ``0``."
+msgstr ""
+
+msgid "Set :c:member:`~PyConfig.user_site_directory` to ``0`` (since 3.15)."
 msgstr ""
 
 msgid "Set :c:member:`~PyConfig.safe_path` to ``1``."
@@ -2602,8 +3164,15 @@ msgid ""
 "`site`, therefore affected by :option:`-S`."
 msgstr ""
 
-msgid "Py_GetArgcArgv()"
+msgid ""
+":c:member:`~PyConfig.user_site_directory` is now set to ``0`` when a ``."
+"_pth`` file is present."
 msgstr ""
+
+# pydocvi: passthrough=literal_block
+#, fuzzy
+msgid "Py_GetArgcArgv()"
+msgstr "Py_GetArgcArgv()"
 
 msgid "Get the original command line arguments, before Python modified them."
 msgstr ""
@@ -2611,23 +3180,173 @@ msgstr ""
 msgid "See also :c:member:`PyConfig.orig_argv` member."
 msgstr ""
 
-msgid "Delaying main module execution"
+msgid "Multi-Phase Initialization Private Provisional API"
 msgstr ""
 
 msgid ""
-"In some embedding use cases, it may be desirable to separate interpreter "
-"initialization from the execution of the main module."
+"This section is a private provisional API introducing multi-phase "
+"initialization, the core feature of :pep:`432`:"
+msgstr ""
+
+msgid "\"Core\" initialization phase, \"bare minimum Python\":"
+msgstr ""
+
+msgid "Builtin types;"
+msgstr ""
+
+msgid "Builtin exceptions;"
+msgstr ""
+
+msgid "Builtin and frozen modules;"
 msgstr ""
 
 msgid ""
-"This separation can be achieved by setting ``PyConfig.run_command`` to the "
-"empty string during initialization (to prevent the interpreter from dropping "
-"into the interactive prompt), and then subsequently executing the desired "
-"main module code using ``__main__.__dict__`` as the global namespace."
+"The :mod:`sys` module is only partially initialized (ex: :data:`sys.path` "
+"doesn't exist yet)."
 msgstr ""
 
+msgid "\"Main\" initialization phase, Python is fully initialized:"
+msgstr ""
+
+msgid "Install and configure :mod:`importlib`;"
+msgstr ""
+
+msgid "Apply the :ref:`Path Configuration <init-path-config>`;"
+msgstr ""
+
+msgid "Install signal handlers;"
+msgstr ""
+
+msgid ""
+"Finish :mod:`sys` module initialization (ex: create :data:`sys.stdout` and :"
+"data:`sys.path`);"
+msgstr ""
+
+msgid ""
+"Enable optional features like :mod:`faulthandler` and :mod:`tracemalloc`;"
+msgstr ""
+
+msgid "Import the :mod:`site` module;"
+msgstr ""
+
+# pydocvi: passthrough=version_marker
+#, fuzzy
+msgid "etc."
+msgstr "etc."
+
+msgid "Private provisional API:"
+msgstr ""
+
+msgid ""
+"If set to ``0``, :c:func:`Py_InitializeFromConfig` stops at the \"Core\" "
+"initialization phase."
+msgstr ""
+
+msgid ""
+"Move to the \"Main\" initialization phase, finish the Python initialization."
+msgstr ""
+
+msgid ""
+"No module is imported during the \"Core\" phase and the ``importlib`` module "
+"is not configured: the :ref:`Path Configuration <init-path-config>` is only "
+"applied during the \"Main\" phase. It may allow to customize Python in "
+"Python to override or tune the :ref:`Path Configuration <init-path-config>`, "
+"maybe install a custom :data:`sys.meta_path` importer or an import hook, etc."
+msgstr ""
+
+msgid ""
+"It may become possible to calculate the :ref:`Path Configuration <init-path-"
+"config>` in Python, after the Core phase and before the Main phase, which is "
+"one of the :pep:`432` motivation."
+msgstr ""
+
+msgid ""
+"The \"Core\" phase is not properly defined: what should be and what should "
+"not be available at this phase is not specified yet. The API is marked as "
+"private and provisional: the API can be modified or even be removed anytime "
+"until a proper public API is designed."
+msgstr ""
+
+msgid ""
+"Example running Python code between \"Core\" and \"Main\" initialization "
+"phases::"
+msgstr ""
+
+# pydocvi: passthrough=literal_block
+#, fuzzy
+msgid ""
+"void init_python(void)\n"
+"{\n"
+"    PyStatus status;\n"
+"\n"
+"    PyConfig config;\n"
+"    PyConfig_InitPythonConfig(&config);\n"
+"    config._init_main = 0;\n"
+"\n"
+"    /* ... customize 'config' configuration ... */\n"
+"\n"
+"    status = Py_InitializeFromConfig(&config);\n"
+"    PyConfig_Clear(&config);\n"
+"    if (PyStatus_Exception(status)) {\n"
+"        Py_ExitStatusException(status);\n"
+"    }\n"
+"\n"
+"    /* Use sys.stderr because sys.stdout is only created\n"
+"       by _Py_InitializeMain() */\n"
+"    int res = PyRun_SimpleString(\n"
+"        \"import sys; \"\n"
+"        \"print('Run Python code before _Py_InitializeMain', \"\n"
+"               \"file=sys.stderr)\");\n"
+"    if (res < 0) {\n"
+"        exit(1);\n"
+"    }\n"
+"\n"
+"    /* ... put more configuration code here ... */\n"
+"\n"
+"    status = _Py_InitializeMain();\n"
+"    if (PyStatus_Exception(status)) {\n"
+"        Py_ExitStatusException(status);\n"
+"    }\n"
+"}"
+msgstr ""
+"void init_python(void)\n"
+"{\n"
+"    PyStatus status;\n"
+"\n"
+"    PyConfig config;\n"
+"    PyConfig_InitPythonConfig(&config);\n"
+"    config._init_main = 0;\n"
+"\n"
+"    /* ... customize 'config' configuration ... */\n"
+"\n"
+"    status = Py_InitializeFromConfig(&config);\n"
+"    PyConfig_Clear(&config);\n"
+"    if (PyStatus_Exception(status)) {\n"
+"        Py_ExitStatusException(status);\n"
+"    }\n"
+"\n"
+"    /* Use sys.stderr because sys.stdout is only created\n"
+"       by _Py_InitializeMain() */\n"
+"    int res = PyRun_SimpleString(\n"
+"        \"import sys; \"\n"
+"        \"print('Run Python code before _Py_InitializeMain', \"\n"
+"               \"file=sys.stderr)\");\n"
+"    if (res < 0) {\n"
+"        exit(1);\n"
+"    }\n"
+"\n"
+"    /* ... put more configuration code here ... */\n"
+"\n"
+"    status = _Py_InitializeMain();\n"
+"    if (PyStatus_Exception(status)) {\n"
+"        Py_ExitStatusException(status);\n"
+"    }\n"
+"}"
+
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "main()"
-msgstr ""
+msgstr "main()"
 
 msgid "argv (in module sys)"
 msgstr ""

@@ -9,18 +9,18 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-15 15:01+0000\n"
-"PO-Revision-Date: 2025-09-16 00:00+0000\n"
-"Last-Translator: python-doc bot, 2025\n"
-"Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
-"vi/)\n"
+"POT-Creation-Date: 2026-05-05 15:48+0000\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: pydocvi 0.1.2\n"
 
 msgid "Synchronization Primitives"
 msgstr ""
@@ -47,23 +47,35 @@ msgstr ""
 msgid "asyncio has the following basic synchronization primitives:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`Lock`"
-msgstr ""
+msgstr ":class:`Lock`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`Event`"
-msgstr ""
+msgstr ":class:`Event`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`Condition`"
-msgstr ""
+msgstr ":class:`Condition`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`Semaphore`"
-msgstr ""
+msgstr ":class:`Semaphore`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`BoundedSemaphore`"
-msgstr ""
+msgstr ":class:`BoundedSemaphore`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`Barrier`"
-msgstr ""
+msgstr ":class:`Barrier`"
 
 msgid "Lock"
 msgstr "Khóa"
@@ -79,6 +91,8 @@ msgstr ""
 msgid "The preferred way to use a Lock is an :keyword:`async with` statement::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "lock = asyncio.Lock()\n"
 "\n"
@@ -86,10 +100,17 @@ msgid ""
 "async with lock:\n"
 "    # access shared state"
 msgstr ""
+"lock = asyncio.Lock()\n"
+"\n"
+"# ... later\n"
+"async with lock:\n"
+"    # access shared state"
 
 msgid "which is equivalent to::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "lock = asyncio.Lock()\n"
 "\n"
@@ -100,6 +121,14 @@ msgid ""
 "finally:\n"
 "    lock.release()"
 msgstr ""
+"lock = asyncio.Lock()\n"
+"\n"
+"# ... later\n"
+"await lock.acquire()\n"
+"try:\n"
+"    # access shared state\n"
+"finally:\n"
+"    lock.release()"
 
 msgid "Removed the *loop* parameter."
 msgstr ""
@@ -155,6 +184,8 @@ msgstr ""
 msgid "Example::"
 msgstr "Ví dụ::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "async def waiter(event):\n"
 "    print('waiting for it ...')\n"
@@ -177,6 +208,26 @@ msgid ""
 "\n"
 "asyncio.run(main())"
 msgstr ""
+"async def waiter(event):\n"
+"    print('waiting for it ...')\n"
+"    await event.wait()\n"
+"    print('... got it!')\n"
+"\n"
+"async def main():\n"
+"    # Create an Event object.\n"
+"    event = asyncio.Event()\n"
+"\n"
+"    # Spawn a Task to wait until 'event' is set.\n"
+"    waiter_task = asyncio.create_task(waiter(event))\n"
+"\n"
+"    # Sleep for 1 second and set the event.\n"
+"    await asyncio.sleep(1)\n"
+"    event.set()\n"
+"\n"
+"    # Wait until the waiter task is finished.\n"
+"    await waiter_task\n"
+"\n"
+"asyncio.run(main())"
 
 msgid "Wait until the event is set."
 msgstr ""
@@ -231,6 +282,8 @@ msgid ""
 "The preferred way to use a Condition is an :keyword:`async with` statement::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "cond = asyncio.Condition()\n"
 "\n"
@@ -238,7 +291,14 @@ msgid ""
 "async with cond:\n"
 "    await cond.wait()"
 msgstr ""
+"cond = asyncio.Condition()\n"
+"\n"
+"# ... later\n"
+"async with cond:\n"
+"    await cond.wait()"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "cond = asyncio.Condition()\n"
 "\n"
@@ -249,6 +309,14 @@ msgid ""
 "finally:\n"
 "    cond.release()"
 msgstr ""
+"cond = asyncio.Condition()\n"
+"\n"
+"# ... later\n"
+"await cond.acquire()\n"
+"try:\n"
+"    await cond.wait()\n"
+"finally:\n"
+"    cond.release()"
 
 msgid "Acquire the underlying lock."
 msgstr ""
@@ -314,8 +382,10 @@ msgid ""
 "predicate evaluates to *true*. The final value is the return value."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Semaphore"
-msgstr ""
+msgstr "Semaphore"
 
 msgid "A Semaphore object.  Not thread-safe."
 msgstr ""
@@ -337,6 +407,8 @@ msgid ""
 "The preferred way to use a Semaphore is an :keyword:`async with` statement::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "sem = asyncio.Semaphore(10)\n"
 "\n"
@@ -344,7 +416,14 @@ msgid ""
 "async with sem:\n"
 "    # work with shared resource"
 msgstr ""
+"sem = asyncio.Semaphore(10)\n"
+"\n"
+"# ... later\n"
+"async with sem:\n"
+"    # work with shared resource"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "sem = asyncio.Semaphore(10)\n"
 "\n"
@@ -355,6 +434,14 @@ msgid ""
 "finally:\n"
 "    sem.release()"
 msgstr ""
+"sem = asyncio.Semaphore(10)\n"
+"\n"
+"# ... later\n"
+"await sem.acquire()\n"
+"try:\n"
+"    # work with shared resource\n"
+"finally:\n"
+"    sem.release()"
 
 msgid "Acquire a semaphore."
 msgstr ""
@@ -378,8 +465,10 @@ msgid ""
 "``release()`` calls than ``acquire()`` calls."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "BoundedSemaphore"
-msgstr ""
+msgstr "BoundedSemaphore"
 
 msgid "A bounded semaphore object.  Not thread-safe."
 msgstr ""
@@ -390,8 +479,10 @@ msgid ""
 "counter above the initial *value*."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Barrier"
-msgstr ""
+msgstr "Barrier"
 
 msgid "A barrier object.  Not thread-safe."
 msgstr ""
@@ -412,6 +503,8 @@ msgstr ""
 msgid "The barrier can be reused any number of times."
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "async def example_barrier():\n"
 "   # barrier with 3 parties\n"
@@ -434,6 +527,26 @@ msgid ""
 "\n"
 "asyncio.run(example_barrier())"
 msgstr ""
+"async def example_barrier():\n"
+"   # barrier with 3 parties\n"
+"   b = asyncio.Barrier(3)\n"
+"\n"
+"   # create 2 new waiting tasks\n"
+"   asyncio.create_task(b.wait())\n"
+"   asyncio.create_task(b.wait())\n"
+"\n"
+"   await asyncio.sleep(0)\n"
+"   print(b)\n"
+"\n"
+"   # The third .wait() call passes the barrier\n"
+"   await b.wait()\n"
+"   print(b)\n"
+"   print(\"barrier passed\")\n"
+"\n"
+"   await asyncio.sleep(0)\n"
+"   print(b)\n"
+"\n"
+"asyncio.run(example_barrier())"
 
 msgid "Result of this example is::"
 msgstr ""
@@ -462,6 +575,8 @@ msgid ""
 "housekeeping, e.g.::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "...\n"
 "async with barrier as position:\n"
@@ -469,6 +584,11 @@ msgid ""
 "      # Only one task prints this\n"
 "      print('End of *draining phase*')"
 msgstr ""
+"...\n"
+"async with barrier as position:\n"
+"   if position == 0:\n"
+"      # Only one task prints this\n"
+"      print('End of *draining phase*')"
 
 msgid ""
 "This method may raise a :class:`BrokenBarrierError` exception if the barrier "

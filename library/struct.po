@@ -5,22 +5,23 @@
 #
 # Translators:
 # python-doc bot, 2025
+# Nguyen Duc Tam, 2026
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-17 14:50+0000\n"
-"PO-Revision-Date: 2025-09-16 00:01+0000\n"
-"Last-Translator: python-doc bot, 2025\n"
-"Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
-"vi/)\n"
+"POT-Creation-Date: 2026-05-08 18:34+0000\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: pydocvi 0.1.2\n"
 
 msgid ":mod:`!struct` --- Interpret bytes as packed binary data"
 msgstr ""
@@ -144,46 +145,66 @@ msgid ""
 msgstr ""
 
 msgid "Character"
-msgstr ""
+msgstr "Ký tự"
 
 msgid "Byte order"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Size"
-msgstr ""
+msgstr "Size"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Alignment"
-msgstr ""
+msgstr "Alignment"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``@``"
-msgstr ""
+msgstr "``@``"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "native"
-msgstr ""
+msgstr "native"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``=``"
-msgstr ""
+msgstr "``=``"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "standard"
-msgstr ""
+msgstr "standard"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "none"
-msgstr ""
+msgstr "none"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``<``"
-msgstr ""
+msgstr "``<``"
 
 msgid "little-endian"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``>``"
-msgstr ""
+msgstr "``>``"
 
 msgid "big-endian"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``!``"
-msgstr ""
+msgstr "``!``"
 
 msgid "network (= big-endian)"
 msgstr ""
@@ -268,8 +289,10 @@ msgid ""
 "platform-dependent."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Format"
-msgstr ""
+msgstr "Format"
 
 msgid "C Type"
 msgstr ""
@@ -280,11 +303,15 @@ msgstr ""
 msgid "Standard size"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Notes"
-msgstr ""
+msgstr "Notes"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``x``"
-msgstr ""
+msgstr "``x``"
 
 msgid "pad byte"
 msgstr ""
@@ -292,200 +319,333 @@ msgstr ""
 msgid "no value"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "\\(7)"
-msgstr ""
+msgstr "\\(7)"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``c``"
-msgstr ""
+msgstr "``c``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:expr:`char`"
-msgstr ""
+msgstr ":c:expr:`char`"
 
 msgid "bytes of length 1"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "1"
-msgstr ""
+msgstr "1"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``b``"
-msgstr ""
+msgstr "``b``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:expr:`signed char`"
-msgstr ""
+msgstr ":c:expr:`signed char`"
 
-msgid "integer"
-msgstr ""
+# pydocvi: passthrough=version_marker
+#, fuzzy
+msgid "int"
+msgstr "int"
 
-msgid "\\(1), \\(2)"
-msgstr ""
-
-msgid "``B``"
-msgstr ""
-
-msgid ":c:expr:`unsigned char`"
-msgstr ""
-
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "\\(2)"
-msgstr ""
+msgstr "\\(2)"
 
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "``B``"
+msgstr "``B``"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":c:expr:`unsigned char`"
+msgstr ":c:expr:`unsigned char`"
+
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``?``"
-msgstr ""
+msgstr "``?``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:expr:`_Bool`"
-msgstr ""
+msgstr ":c:expr:`_Bool`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "bool"
-msgstr ""
+msgstr "bool"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "\\(1)"
-msgstr ""
+msgstr "\\(1)"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``h``"
-msgstr ""
+msgstr "``h``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:expr:`short`"
-msgstr ""
+msgstr ":c:expr:`short`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "2"
-msgstr ""
+msgstr "2"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``H``"
-msgstr ""
+msgstr "``H``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:expr:`unsigned short`"
-msgstr ""
+msgstr ":c:expr:`unsigned short`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``i``"
-msgstr ""
+msgstr "``i``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:expr:`int`"
-msgstr ""
+msgstr ":c:expr:`int`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "4"
-msgstr ""
+msgstr "4"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``I``"
-msgstr ""
+msgstr "``I``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:expr:`unsigned int`"
-msgstr ""
+msgstr ":c:expr:`unsigned int`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``l``"
-msgstr ""
+msgstr "``l``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:expr:`long`"
-msgstr ""
+msgstr ":c:expr:`long`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``L``"
-msgstr ""
+msgstr "``L``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:expr:`unsigned long`"
-msgstr ""
+msgstr ":c:expr:`unsigned long`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``q``"
-msgstr ""
+msgstr "``q``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:expr:`long long`"
-msgstr ""
+msgstr ":c:expr:`long long`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "8"
-msgstr ""
+msgstr "8"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``Q``"
-msgstr ""
+msgstr "``Q``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:expr:`unsigned long long`"
-msgstr ""
+msgstr ":c:expr:`unsigned long long`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``n``"
-msgstr ""
+msgstr "``n``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:type:`ssize_t`"
-msgstr ""
+msgstr ":c:type:`ssize_t`"
 
-msgid "\\(3)"
-msgstr ""
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "\\(2), \\(3)"
+msgstr "\\(2), \\(3)"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``N``"
-msgstr ""
+msgstr "``N``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:type:`size_t`"
-msgstr ""
+msgstr ":c:type:`size_t`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``e``"
-msgstr ""
+msgstr "``e``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:expr:`_Float16`"
-msgstr ""
+msgstr ":c:expr:`_Float16`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "float"
-msgstr ""
+msgstr "float"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "\\(4), \\(6)"
-msgstr ""
+msgstr "\\(4), \\(6)"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``f``"
-msgstr ""
+msgstr "``f``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:expr:`float`"
-msgstr ""
+msgstr ":c:expr:`float`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "\\(4)"
-msgstr ""
+msgstr "\\(4)"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``d``"
-msgstr ""
+msgstr "``d``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:expr:`double`"
-msgstr ""
+msgstr ":c:expr:`double`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``F``"
-msgstr ""
+msgstr "``F``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:expr:`float complex`"
-msgstr ""
+msgstr ":c:expr:`float complex`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "complex"
-msgstr ""
+msgstr "complex"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "\\(10)"
-msgstr ""
+msgstr "\\(10)"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``D``"
-msgstr ""
+msgstr "``D``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:expr:`double complex`"
-msgstr ""
+msgstr ":c:expr:`double complex`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "16"
-msgstr ""
+msgstr "16"
 
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "``Zf``"
+msgstr "``Zf``"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "``Zd``"
+msgstr "``Zd``"
+
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``s``"
-msgstr ""
+msgstr "``s``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:expr:`char[]`"
-msgstr ""
+msgstr ":c:expr:`char[]`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "bytes"
-msgstr ""
+msgstr "bytes"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "\\(9)"
-msgstr ""
+msgstr "\\(9)"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``p``"
-msgstr ""
+msgstr "``p``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "\\(8)"
-msgstr ""
+msgstr "\\(8)"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``P``"
-msgstr ""
+msgstr "``P``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:expr:`void \\*`"
-msgstr ""
+msgstr ":c:expr:`void \\*`"
 
-msgid "\\(5)"
-msgstr ""
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "\\(2), \\(5)"
+msgstr "\\(2), \\(5)"
 
 msgid "Added support for the ``'n'`` and ``'N'`` formats."
 msgstr ""
@@ -494,6 +654,9 @@ msgid "Added support for the ``'e'`` format."
 msgstr ""
 
 msgid "Added support for the ``'F'`` and ``'D'`` formats."
+msgstr ""
+
+msgid "Added support for the ``'Zf'`` and ``'Zd'`` formats."
 msgstr ""
 
 msgid ""
@@ -559,37 +722,40 @@ msgid ""
 "The ``'p'`` format character encodes a \"Pascal string\", meaning a short "
 "variable-length string stored in a *fixed number of bytes*, given by the "
 "count. The first byte stored is the length of the string, or 255, whichever "
-"is smaller.  The bytes of the string follow.  If the string passed in to :"
-"func:`pack` is too long (longer than the count minus 1), only the leading "
-"``count-1`` bytes of the string are stored.  If the string is shorter than "
-"``count-1``, it is padded with null bytes so that exactly count bytes in all "
-"are used.  Note that for :func:`unpack`, the ``'p'`` format character "
-"consumes ``count`` bytes, but that the string returned can never contain "
-"more than 255 bytes."
+"is smaller.  The bytes of the string follow.  If the byte string passed in "
+"to :func:`pack` is too long (longer than the count minus 1), only the "
+"leading ``count-1`` bytes of the string are stored.  If the byte string is "
+"shorter than ``count-1``, it is padded with null bytes so that exactly count "
+"bytes in all are used.  Note that for :func:`unpack`, the ``'p'`` format "
+"character consumes ``count`` bytes, but that the :class:`!bytes` object "
+"returned can never contain more than 255 bytes. When packing, arguments of "
+"types :class:`bytes` and :class:`bytearray` are accepted."
 msgstr ""
 
 msgid ""
 "For the ``'s'`` format character, the count is interpreted as the length of "
-"the bytes, not a repeat count like for the other format characters; for "
-"example, ``'10s'`` means a single 10-byte string mapping to or from a single "
-"Python byte string, while ``'10c'`` means 10 separate one byte character "
-"elements (e.g., ``cccccccccc``) mapping to or from ten different Python byte "
-"objects. (See :ref:`struct-examples` for a concrete demonstration of the "
-"difference.) If a count is not given, it defaults to 1.  For packing, the "
-"string is truncated or padded with null bytes as appropriate to make it fit. "
-"For unpacking, the resulting bytes object always has exactly the specified "
-"number of bytes.  As a special case, ``'0s'`` means a single, empty string "
-"(while ``'0c'`` means 0 characters)."
+"the byte string, not a repeat count like for the other format characters; "
+"for example, ``'10s'`` means a single 10-byte string mapping to or from a "
+"single Python byte string, while ``'10c'`` means 10 separate one byte "
+"character elements (e.g., ``cccccccccc``) mapping to or from ten different "
+"Python byte objects. (See :ref:`struct-examples` for a concrete "
+"demonstration of the difference.) If a count is not given, it defaults to "
+"1.  For packing, the byte string is truncated or padded with null bytes as "
+"appropriate to make it fit. For unpacking, the resulting :class:`!bytes` "
+"object always has exactly the specified number of bytes.  As a special case, "
+"``'0s'`` means a single, empty byte string (while ``'0c'`` means 0 "
+"characters). When packing, arguments of types :class:`bytes` and :class:"
+"`bytearray` are accepted."
 msgstr ""
 
 msgid ""
 "For the ``'F'`` and ``'D'`` format characters, the packed representation "
 "uses the IEEE 754 binary32 and binary64 format for components of the complex "
 "number, regardless of the floating-point format used by the platform. Note "
-"that complex types (``F`` and ``D``) are available unconditionally, despite "
-"complex types being an optional feature in C. As specified in the C11 "
-"standard, each complex type is represented by a two-element C array "
-"containing, respectively, the real and imaginary parts."
+"that complex types (``F``/``Zf`` and ``D``/``Zd``) are available "
+"unconditionally, despite complex types being an optional feature in C. As "
+"specified in the C11 standard, each complex type is represented by a two-"
+"element C array containing, respectively, the real and imaginary parts."
 msgstr ""
 
 msgid ""
@@ -635,6 +801,8 @@ msgid ""
 "ordering::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> from struct import *\n"
 ">>> pack(\">bhl\", 1, 2, 3)\n"
@@ -644,33 +812,54 @@ msgid ""
 ">>> calcsize('>bhl')\n"
 "7"
 msgstr ""
+">>> from struct import *\n"
+">>> pack(\">bhl\", 1, 2, 3)\n"
+"b'\\x01\\x00\\x02\\x00\\x00\\x00\\x03'\n"
+">>> unpack('>bhl', b'\\x01\\x00\\x02\\x00\\x00\\x00\\x03')\n"
+"(1, 2, 3)\n"
+">>> calcsize('>bhl')\n"
+"7"
 
 msgid "Attempt to pack an integer which is too large for the defined field::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> pack(\">h\", 99999)\n"
 "Traceback (most recent call last):\n"
 "  File \"<stdin>\", line 1, in <module>\n"
 "struct.error: 'h' format requires -32768 <= number <= 32767"
 msgstr ""
+">>> pack(\">h\", 99999)\n"
+"Traceback (most recent call last):\n"
+"  File \"<stdin>\", line 1, in <module>\n"
+"struct.error: 'h' format requires -32768 <= number <= 32767"
 
 msgid ""
 "Demonstrate the difference between ``'s'`` and ``'c'`` format characters::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> pack(\"@ccc\", b'1', b'2', b'3')\n"
 "b'123'\n"
 ">>> pack(\"@3s\", b'123')\n"
 "b'123'"
 msgstr ""
+">>> pack(\"@ccc\", b'1', b'2', b'3')\n"
+"b'123'\n"
+">>> pack(\"@3s\", b'123')\n"
+"b'123'"
 
 msgid ""
 "Unpacked fields can be named by assigning them to variables or by wrapping "
 "the result in a named tuple::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> record = b'raymond   \\x32\\x12\\x08\\x01\\x08'\n"
 ">>> name, serialnum, school, gradelevel = unpack('<10sHHb', record)\n"
@@ -680,6 +869,13 @@ msgid ""
 ">>> Student._make(unpack('<10sHHb', record))\n"
 "Student(name=b'raymond   ', serialnum=4658, school=264, gradelevel=8)"
 msgstr ""
+">>> record = b'raymond   \\x32\\x12\\x08\\x01\\x08'\n"
+">>> name, serialnum, school, gradelevel = unpack('<10sHHb', record)\n"
+"\n"
+">>> from collections import namedtuple\n"
+">>> Student = namedtuple('Student', 'name serialnum school gradelevel')\n"
+">>> Student._make(unpack('<10sHHb', record))\n"
+"Student(name=b'raymond   ', serialnum=4658, school=264, gradelevel=8)"
 
 msgid ""
 "The ordering of format characters may have an impact on size in native mode "
@@ -690,6 +886,8 @@ msgid ""
 "a little endian machine::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> pack('@ci', b'#', 0x12131415)\n"
 "b'#\\x00\\x00\\x00\\x15\\x14\\x13\\x12'\n"
@@ -700,16 +898,28 @@ msgid ""
 ">>> calcsize('@ic')\n"
 "5"
 msgstr ""
+">>> pack('@ci', b'#', 0x12131415)\n"
+"b'#\\x00\\x00\\x00\\x15\\x14\\x13\\x12'\n"
+">>> pack('@ic', 0x12131415, b'#')\n"
+"b'\\x15\\x14\\x13\\x12#'\n"
+">>> calcsize('@ci')\n"
+"8\n"
+">>> calcsize('@ic')\n"
+"5"
 
 msgid ""
 "The following format ``'llh0l'`` results in two pad bytes being added at the "
 "end, assuming the platform's longs are aligned on 4-byte boundaries::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> pack('@llh0l', 1, 2, 3)\n"
 "b'\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x02\\x00\\x03\\x00\\x00'"
 msgstr ""
+">>> pack('@llh0l', 1, 2, 3)\n"
+"b'\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x02\\x00\\x03\\x00\\x00'"
 
 msgid "Module :mod:`array`"
 msgstr ""
@@ -729,8 +939,10 @@ msgstr ""
 msgid "Python object serialization."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Applications"
-msgstr ""
+msgstr "Applications"
 
 msgid ""
 "Two main applications for the :mod:`!struct` module exist, data interchange "
@@ -758,12 +970,18 @@ msgid ""
 "Consider these two simple examples (on a 64-bit, little-endian machine)::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> calcsize('@lhl')\n"
 "24\n"
 ">>> calcsize('@llh')\n"
 "18"
 msgstr ""
+">>> calcsize('@lhl')\n"
+"24\n"
+">>> calcsize('@llh')\n"
+"18"
 
 msgid ""
 "Data is not padded to an 8-byte boundary at the end of the second format "
@@ -771,10 +989,14 @@ msgid ""
 "that problem::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> calcsize('@llh0l')\n"
 "24"
 msgstr ""
+">>> calcsize('@llh0l')\n"
+"24"
 
 msgid ""
 "The ``'x'`` format code can be used to specify the repeat, but for native "
@@ -802,6 +1024,8 @@ msgid ""
 "from the previous section, we have::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> calcsize('<qh6xq')\n"
 "24\n"
@@ -818,6 +1042,20 @@ msgid ""
 ">>> pack('@llh0l', 1, 2, 3) == pack('<qqh6x', 1, 2, 3)\n"
 "True"
 msgstr ""
+">>> calcsize('<qh6xq')\n"
+"24\n"
+">>> pack('<qh6xq', 1, 2, 3) == pack('@lhl', 1, 2, 3)\n"
+"True\n"
+">>> calcsize('@llh')\n"
+"18\n"
+">>> pack('@llh', 1, 2, 3) == pack('<qqh', 1, 2, 3)\n"
+"True\n"
+">>> calcsize('<qqh6x')\n"
+"24\n"
+">>> calcsize('@llh0l')\n"
+"24\n"
+">>> pack('@llh0l', 1, 2, 3) == pack('<qqh6x', 1, 2, 3)\n"
+"True"
 
 msgid ""
 "The above results (executed on a 64-bit machine) aren't guaranteed to match "
@@ -825,6 +1063,8 @@ msgid ""
 "executed on a 32-bit machine::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> calcsize('<qqh6x')\n"
 "24\n"
@@ -833,9 +1073,17 @@ msgid ""
 ">>> pack('@llh0l', 1, 2, 3) == pack('<qqh6x', 1, 2, 3)\n"
 "False"
 msgstr ""
+">>> calcsize('<qqh6x')\n"
+"24\n"
+">>> calcsize('@llh0l')\n"
+"12\n"
+">>> pack('@llh0l', 1, 2, 3) == pack('<qqh6x', 1, 2, 3)\n"
+"False"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Classes"
-msgstr ""
+msgstr "Classes"
 
 msgid "The :mod:`!struct` module also defines the following type:"
 msgstr ""
@@ -894,20 +1142,30 @@ msgstr ""
 msgid "The *repr()* of structs has changed.  It is now:"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "C"
-msgstr ""
+msgstr "C"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "structures"
-msgstr ""
+msgstr "structures"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "packing"
-msgstr ""
+msgstr "packing"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "binary"
-msgstr ""
+msgstr "binary"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "data"
-msgstr ""
+msgstr "data"
 
 msgid "@ (at)"
 msgstr ""

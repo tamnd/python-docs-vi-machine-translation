@@ -5,22 +5,23 @@
 #
 # Translators:
 # python-doc bot, 2025
+# Nguyen Duc Tam, 2026
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-17 14:50+0000\n"
-"PO-Revision-Date: 2025-09-16 00:01+0000\n"
-"Last-Translator: python-doc bot, 2025\n"
-"Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
-"vi/)\n"
+"POT-Creation-Date: 2026-05-08 18:34+0000\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: pydocvi 0.1.2\n"
 
 msgid ":mod:`!tkinter` --- Python interface to Tcl/Tk"
 msgstr ""
@@ -139,8 +140,10 @@ msgid ""
 "Tkinter. (ISBN 978-0321336330)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Architecture"
-msgstr ""
+msgstr "Architecture"
 
 msgid ""
 "Tcl/Tk is not a single library but rather consists of a few distinct "
@@ -149,8 +152,10 @@ msgid ""
 "with it."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Tcl"
-msgstr ""
+msgstr "Tcl"
 
 msgid ""
 "Tcl is a dynamic interpreted programming language, just like Python. Though "
@@ -165,8 +170,10 @@ msgid ""
 "difference (see `Threading model`_ for details)."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Tk"
-msgstr ""
+msgstr "Tk"
 
 msgid ""
 "Tk is a `Tcl package <https://wiki.tcl-lang.org/37432>`_ implemented in C "
@@ -176,8 +183,10 @@ msgid ""
 "appearance. Tk uses Tcl's event queue to generate and process GUI events."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Ttk"
-msgstr ""
+msgstr "Ttk"
 
 msgid ""
 "Themed Tk (Ttk) is a newer family of Tk widgets that provide a much better "
@@ -209,10 +218,14 @@ msgid ""
 "module, which provides the modern themed widget set and API::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "from tkinter import *\n"
 "from tkinter import ttk"
 msgstr ""
+"from tkinter import *\n"
+"from tkinter import ttk"
 
 msgid ""
 "Construct a toplevel Tk widget, which is usually the main window of an "
@@ -323,56 +336,74 @@ msgstr ""
 msgid "The modules that provide Tk support include:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`!tkinter`"
-msgstr ""
+msgstr ":mod:`!tkinter`"
 
 msgid "Main Tkinter module."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`tkinter.colorchooser`"
-msgstr ""
+msgstr ":mod:`tkinter.colorchooser`"
 
 msgid "Dialog to let the user choose a color."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`tkinter.commondialog`"
-msgstr ""
+msgstr ":mod:`tkinter.commondialog`"
 
 msgid "Base class for the dialogs defined in the other modules listed here."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`tkinter.filedialog`"
-msgstr ""
+msgstr ":mod:`tkinter.filedialog`"
 
 msgid "Common dialogs to allow the user to specify a file to open or save."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`tkinter.font`"
-msgstr ""
+msgstr ":mod:`tkinter.font`"
 
 msgid "Utilities to help work with fonts."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`tkinter.messagebox`"
-msgstr ""
+msgstr ":mod:`tkinter.messagebox`"
 
 msgid "Access to standard Tk dialog boxes."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`tkinter.scrolledtext`"
-msgstr ""
+msgstr ":mod:`tkinter.scrolledtext`"
 
 msgid "Text widget with a vertical scroll bar built in."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`tkinter.simpledialog`"
-msgstr ""
+msgstr ":mod:`tkinter.simpledialog`"
 
 msgid "Basic dialogs and convenience functions."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`tkinter.ttk`"
-msgstr ""
+msgstr ":mod:`tkinter.ttk`"
 
 msgid ""
 "Themed widget set introduced in Tk 8.5, providing modern alternatives for "
@@ -382,8 +413,10 @@ msgstr ""
 msgid "Additional modules:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`_tkinter`"
-msgstr ""
+msgstr ":mod:`_tkinter`"
 
 msgid ""
 "A binary module that contains the low-level interface to Tcl/Tk. It is "
@@ -393,16 +426,20 @@ msgid ""
 "interpreter."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`idlelib`"
-msgstr ""
+msgstr ":mod:`idlelib`"
 
 msgid ""
 "Python's Integrated Development and Learning Environment (IDLE). Based on :"
 "mod:`!tkinter`."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`tkinter.constants`"
-msgstr ""
+msgstr ":mod:`tkinter.constants`"
 
 msgid ""
 "Symbolic constants that can be used in place of strings when passing various "
@@ -410,16 +447,20 @@ msgid ""
 "tkinter` module."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`tkinter.dnd`"
-msgstr ""
+msgstr ":mod:`tkinter.dnd`"
 
 msgid ""
 "(experimental) Drag-and-drop support for :mod:`!tkinter`. This will become "
 "deprecated when it is replaced with the Tk DND."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`turtle`"
-msgstr ""
+msgstr ":mod:`turtle`"
 
 msgid "Turtle graphics in a Tk window."
 msgstr ""
@@ -497,8 +538,10 @@ msgstr ""
 msgid "Even this simple program illustrates the following key Tk concepts:"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "widgets"
-msgstr ""
+msgstr "widgets"
 
 msgid ""
 "A Tkinter user interface is made up of individual *widgets*. Each widget is "
@@ -640,10 +683,14 @@ msgid ""
 "values. Use :meth:`keys` to get just the names of each option."
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "btn = ttk.Button(frm, ...)\n"
 "print(btn.configure().keys())"
 msgstr ""
+"btn = ttk.Button(frm, ...)\n"
+"print(btn.configure().keys())"
 
 msgid ""
 "As most widgets have many configuration options in common, it can be useful "
@@ -822,24 +869,32 @@ msgstr ""
 msgid "At object creation time, using keyword arguments"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "fred = Button(self, fg=\"red\", bg=\"blue\")"
-msgstr ""
+msgstr "fred = Button(self, fg=\"red\", bg=\"blue\")"
 
 msgid "After object creation, treating the option name like a dictionary index"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "fred[\"fg\"] = \"red\"\n"
 "fred[\"bg\"] = \"blue\""
 msgstr ""
+"fred[\"fg\"] = \"red\"\n"
+"fred[\"bg\"] = \"blue\""
 
 msgid ""
 "Use the config() method to update multiple attrs subsequent to object "
 "creation"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "fred.config(fg=\"red\", bg=\"blue\")"
-msgstr ""
+msgstr "fred.config(fg=\"red\", bg=\"blue\")"
 
 msgid ""
 "For a complete explanation of a given option and its behavior, see the Tk "
@@ -877,64 +932,90 @@ msgid ""
 "option (such as ``('bg', 'background')``)."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Index"
-msgstr ""
+msgstr "Index"
 
 msgid "Meaning"
-msgstr ""
+msgstr "Ý nghĩa"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Example"
-msgstr ""
+msgstr "Example"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "0"
-msgstr ""
+msgstr "0"
 
 msgid "option name"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'relief'``"
-msgstr ""
+msgstr "``'relief'``"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "1"
-msgstr ""
+msgstr "1"
 
 msgid "option name for database lookup"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "2"
-msgstr ""
+msgstr "2"
 
 msgid "option class for database lookup"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'Relief'``"
-msgstr ""
+msgstr "``'Relief'``"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "3"
-msgstr ""
+msgstr "3"
 
 msgid "default value"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'raised'``"
-msgstr ""
+msgstr "``'raised'``"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "4"
-msgstr ""
+msgstr "4"
 
 msgid "current value"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'groove'``"
-msgstr ""
+msgstr "``'groove'``"
 
 msgid "Example::"
 msgstr "Ví dụ::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> print(fred.config())\n"
 "{'relief': ('relief', 'relief', 'Relief', 'raised', 'groove')}"
 msgstr ""
+">>> print(fred.config())\n"
+"{'relief': ('relief', 'relief', 'Relief', 'raised', 'groove')}"
 
 msgid ""
 "Of course, the dictionary printed will include all the options available and "
@@ -991,22 +1072,28 @@ msgid ""
 "take, see the man pages and page 183 of John Ousterhout's book."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "anchor"
-msgstr ""
+msgstr "anchor"
 
 msgid ""
 "Anchor type.  Denotes where the packer is to place each content in its "
 "parcel."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "expand"
-msgstr ""
+msgstr "expand"
 
 msgid "Boolean, ``0`` or ``1``."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "fill"
-msgstr ""
+msgstr "fill"
 
 msgid "Legal values: ``'x'``, ``'y'``, ``'both'``, ``'none'``."
 msgstr ""
@@ -1023,8 +1110,10 @@ msgstr ""
 msgid "A distance - designating external padding on each side of the content."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "side"
-msgstr ""
+msgstr "side"
 
 msgid "Legal values are: ``'left'``, ``'right'``, ``'top'``, ``'bottom'``."
 msgstr ""
@@ -1058,9 +1147,13 @@ msgid ""
 "no further intervention on your part."
 msgstr ""
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=9648862cf2b3 run=2026-08-17T16:43Z
+#, fuzzy
 msgid "For example::"
-msgstr ""
+msgstr "Ví dụ::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import tkinter as tk\n"
 "\n"
@@ -1092,6 +1185,35 @@ msgid ""
 "myapp = App(root)\n"
 "myapp.mainloop()"
 msgstr ""
+"import tkinter as tk\n"
+"\n"
+"class App(tk.Frame):\n"
+"    def __init__(self, master):\n"
+"        super().__init__(master)\n"
+"        self.pack()\n"
+"\n"
+"        self.entrythingy = tk.Entry()\n"
+"        self.entrythingy.pack()\n"
+"\n"
+"        # Create the application variable.\n"
+"        self.contents = tk.StringVar()\n"
+"        # Set it to some value.\n"
+"        self.contents.set(\"this is a variable\")\n"
+"        # Tell the entry widget to watch this variable.\n"
+"        self.entrythingy[\"textvariable\"] = self.contents\n"
+"\n"
+"        # Define a callback for when the user hits return.\n"
+"        # It prints the current value of the variable.\n"
+"        self.entrythingy.bind('<Key-Return>',\n"
+"                             self.print_contents)\n"
+"\n"
+"    def print_contents(self, event):\n"
+"        print(\"Hi. The current entry content is:\",\n"
+"              self.contents.get())\n"
+"\n"
+"root = tk.Tk()\n"
+"myapp = App(root)\n"
+"myapp.mainloop()"
 
 msgid "The Window Manager"
 msgstr ""
@@ -1118,6 +1240,8 @@ msgstr ""
 msgid "Here are some examples of typical usage::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import tkinter as tk\n"
 "\n"
@@ -1138,6 +1262,24 @@ msgid ""
 "# start the program\n"
 "myapp.mainloop()"
 msgstr ""
+"import tkinter as tk\n"
+"\n"
+"class App(tk.Frame):\n"
+"    def __init__(self, master=None):\n"
+"        super().__init__(master)\n"
+"        self.pack()\n"
+"\n"
+"# create the application\n"
+"myapp = App()\n"
+"\n"
+"#\n"
+"# here are method calls to the window manager class\n"
+"#\n"
+"myapp.master.title(\"My Do-Nothing Application\")\n"
+"myapp.master.maxsize(1000, 400)\n"
+"\n"
+"# start the program\n"
+"myapp.mainloop()"
 
 msgid "Tk Option Data Types"
 msgstr ""
@@ -1148,8 +1290,10 @@ msgid ""
 "``\"center\"``."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "bitmap"
-msgstr ""
+msgstr "bitmap"
 
 msgid ""
 "There are eight built-in, named bitmaps: ``'error'``, ``'gray25'``, "
@@ -1158,26 +1302,37 @@ msgid ""
 "file, preceded with an ``@``, as in ``\"@/usr/contrib/bitmap/gumby.bit\"``."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "boolean"
-msgstr ""
+msgstr "boolean"
 
 msgid "You can pass integers 0 or 1 or the strings ``\"yes\"`` or ``\"no\"``."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "callback"
-msgstr ""
+msgstr "callback"
 
 msgid "This is any Python function that takes no arguments.  For example::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def print_it():\n"
 "    print(\"hi there\")\n"
 "fred[\"command\"] = print_it"
 msgstr ""
+"def print_it():\n"
+"    print(\"hi there\")\n"
+"fred[\"command\"] = print_it"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "color"
-msgstr ""
+msgstr "color"
 
 msgid ""
 "Colors can be given as the names of X colors in the rgb.txt file, or as "
@@ -1187,8 +1342,10 @@ msgid ""
 "digit.  See page 160 of Ousterhout's book for details."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "cursor"
-msgstr ""
+msgstr "cursor"
 
 msgid ""
 "The standard X cursor names from :file:`cursorfont.h` can be used, without "
@@ -1197,8 +1354,10 @@ msgid ""
 "of your own. See page 179 of Ousterhout's book."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "distance"
-msgstr ""
+msgstr "distance"
 
 msgid ""
 "Screen distances can be specified in either pixels or absolute distances. "
@@ -1208,8 +1367,10 @@ msgid ""
 "is expressed as ``\"3.5i\"``."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "font"
-msgstr ""
+msgstr "font"
 
 msgid ""
 "Tk uses a list font name format, such as ``{courier 10 bold}``. Font sizes "
@@ -1217,8 +1378,10 @@ msgid ""
 "are measured in pixels."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "geometry"
-msgstr ""
+msgstr "geometry"
 
 msgid ""
 "This is a string of the form ``widthxheight``, where width and height are "
@@ -1226,16 +1389,20 @@ msgid ""
 "text). For example: ``fred[\"geometry\"] = \"200x100\"``."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "justify"
-msgstr ""
+msgstr "justify"
 
 msgid ""
 "Legal values are the strings: ``\"left\"``, ``\"center\"``, and "
 "``\"right\"``."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "region"
-msgstr ""
+msgstr "region"
 
 msgid ""
 "This is a string with four space-delimited elements, each of which is a "
@@ -1243,8 +1410,10 @@ msgid ""
 "2i\"`` and ``\"3c 2c 4c 10.43c\"``  are all legal regions."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "relief"
-msgstr ""
+msgstr "relief"
 
 msgid ""
 "Determines what the border style of a widget will be.  Legal values are: "
@@ -1252,16 +1421,20 @@ msgid ""
 "``\"ridge\"``."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "scrollcommand"
-msgstr ""
+msgstr "scrollcommand"
 
 msgid ""
 "This is almost always the :meth:`!set` method of some scrollbar widget, but "
 "can be any widget method that takes a single argument."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "wrap"
-msgstr ""
+msgstr "wrap"
 
 msgid "Must be one of: ``\"none\"``, ``\"char\"``, or ``\"word\"``."
 msgstr ""
@@ -1281,8 +1454,10 @@ msgstr ""
 msgid "where:"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "sequence"
-msgstr ""
+msgstr "sequence"
 
 msgid ""
 "is a string that denotes the target kind of event.  (See the :manpage:"
@@ -1290,8 +1465,10 @@ msgid ""
 "reference:`Tcl and the Tk Toolkit (2nd edition)`, for details)."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "func"
-msgstr ""
+msgstr "func"
 
 msgid ""
 "is a Python function, taking one argument, to be invoked when the event "
@@ -1299,8 +1476,10 @@ msgid ""
 "deployed this way are commonly known as *callbacks*.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "add"
-msgstr ""
+msgstr "add"
 
 msgid ""
 "is optional, either ``''`` or ``'+'``.  Passing an empty string denotes that "
@@ -1309,12 +1488,18 @@ msgid ""
 "of functions bound to this event type."
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def turn_red(self, event):\n"
 "    event.widget[\"activeforeground\"] = \"red\"\n"
 "\n"
 "self.button.bind(\"<Enter>\", self.turn_red)"
 msgstr ""
+"def turn_red(self, event):\n"
+"    event.widget[\"activeforeground\"] = \"red\"\n"
+"\n"
+"self.button.bind(\"<Enter>\", self.turn_red)"
 
 msgid ""
 "Notice how the widget field of the event is being accessed in the "
@@ -1327,101 +1512,163 @@ msgstr ""
 msgid "Tkinter Event Field"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "%f"
-msgstr ""
+msgstr "%f"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "focus"
-msgstr ""
+msgstr "focus"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "%A"
-msgstr ""
+msgstr "%A"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "char"
-msgstr ""
+msgstr "char"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "%h"
-msgstr ""
+msgstr "%h"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "height"
-msgstr ""
+msgstr "height"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "%E"
-msgstr ""
+msgstr "%E"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "send_event"
-msgstr ""
+msgstr "send_event"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "%k"
-msgstr ""
+msgstr "%k"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "keycode"
-msgstr ""
+msgstr "keycode"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "%K"
-msgstr ""
+msgstr "%K"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "keysym"
-msgstr ""
+msgstr "keysym"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "%s"
-msgstr ""
+msgstr "%s"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "state"
-msgstr ""
+msgstr "state"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "%N"
-msgstr ""
+msgstr "%N"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "keysym_num"
-msgstr ""
+msgstr "keysym_num"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "%t"
-msgstr ""
+msgstr "%t"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "time"
-msgstr ""
+msgstr "time"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "%T"
-msgstr ""
+msgstr "%T"
 
 msgid "type"
-msgstr ""
+msgstr "type"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "%w"
-msgstr ""
+msgstr "%w"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "width"
-msgstr ""
+msgstr "width"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "%W"
-msgstr ""
+msgstr "%W"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "widget"
-msgstr ""
+msgstr "widget"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "%x"
-msgstr ""
+msgstr "%x"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "x"
-msgstr ""
+msgstr "x"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "%X"
-msgstr ""
+msgstr "%X"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "x_root"
-msgstr ""
+msgstr "x_root"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "%y"
-msgstr ""
+msgstr "%y"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "y"
-msgstr ""
+msgstr "y"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "%Y"
-msgstr ""
+msgstr "%Y"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "y_root"
-msgstr ""
+msgstr "y_root"
 
 msgid "The index Parameter"
 msgstr ""
@@ -1488,8 +1735,10 @@ msgid ""
 "above literals, instead."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Images"
-msgstr ""
+msgstr "Images"
 
 msgid ""
 "Images of different formats can be created through the corresponding "
@@ -1569,8 +1818,10 @@ msgid ""
 "as follows::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "callback(file, mask)"
-msgstr ""
+msgstr "callback(file, mask)"
 
 msgid "Unregisters a file handler."
 msgstr ""

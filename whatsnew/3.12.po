@@ -5,28 +5,31 @@
 #
 # Translators:
 # python-doc bot, 2025
+# Nguyen Duc Tam, 2026
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-17 14:50+0000\n"
-"PO-Revision-Date: 2025-09-16 00:02+0000\n"
-"Last-Translator: python-doc bot, 2025\n"
-"Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
-"vi/)\n"
+"POT-Creation-Date: 2026-05-08 18:34+0000\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: pydocvi 0.1.2\n"
 
 msgid "What's New In Python 3.12"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Editor"
-msgstr ""
+msgstr "Editor"
 
 msgid "Adam Turner"
 msgstr ""
@@ -235,6 +238,8 @@ msgid ""
 "functions>`::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def max[T](args: Iterable[T]) -> T:\n"
 "    ...\n"
@@ -246,6 +251,15 @@ msgid ""
 "    def append(self, element: T) -> None:\n"
 "        ..."
 msgstr ""
+"def max[T](args: Iterable[T]) -> T:\n"
+"    ...\n"
+"\n"
+"class list[T]:\n"
+"    def __getitem__(self, index: int, /) -> T:\n"
+"        ...\n"
+"\n"
+"    def append(self, element: T) -> None:\n"
+"        ..."
 
 msgid ""
 "In addition, the PEP introduces a new way to declare :ref:`type aliases "
@@ -364,6 +378,8 @@ msgid ""
 "example, in Python 3.11, the following f-string raises a :exc:`SyntaxError`:"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> my_string = f\"{x z y}\" + f\"{1 + 1}\"\n"
 "  File \"<stdin>\", line 1\n"
@@ -371,6 +387,11 @@ msgid ""
 "     ^^^\n"
 "SyntaxError: f-string: invalid syntax. Perhaps you forgot a comma?"
 msgstr ""
+">>> my_string = f\"{x z y}\" + f\"{1 + 1}\"\n"
+"  File \"<stdin>\", line 1\n"
+"    (x z y)\n"
+"     ^^^\n"
+"SyntaxError: f-string: invalid syntax. Perhaps you forgot a comma?"
 
 msgid ""
 "but the error message doesn't include the exact location of the error within "
@@ -379,6 +400,8 @@ msgid ""
 "can be more precise and show the entire line:"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> my_string = f\"{x z y}\" + f\"{1 + 1}\"\n"
 "  File \"<stdin>\", line 1\n"
@@ -386,6 +409,11 @@ msgid ""
 "                   ^^^\n"
 "SyntaxError: invalid syntax. Perhaps you forgot a comma?"
 msgstr ""
+">>> my_string = f\"{x z y}\" + f\"{1 + 1}\"\n"
+"  File \"<stdin>\", line 1\n"
+"    my_string = f\"{x z y}\" + f\"{1 + 1}\"\n"
+"                   ^^^\n"
+"SyntaxError: invalid syntax. Perhaps you forgot a comma?"
 
 msgid ""
 "(Contributed by Pablo Galindo, Batuhan Taskaya, Lysandros Nikolaou, Cristián "
@@ -409,6 +437,8 @@ msgid ""
 "interpreter with its own GIL:"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "PyInterpreterConfig config = {\n"
 "    .check_multi_interp_extensions = 1,\n"
@@ -421,6 +451,16 @@ msgid ""
 "}\n"
 "/* The new interpreter is now active in the current thread. */"
 msgstr ""
+"PyInterpreterConfig config = {\n"
+"    .check_multi_interp_extensions = 1,\n"
+"    .gil = PyInterpreterConfig_OWN_GIL,\n"
+"};\n"
+"PyThreadState *tstate = NULL;\n"
+"PyStatus status = Py_NewInterpreterFromConfig(&tstate, &config);\n"
+"if (PyStatus_Exception(status)) {\n"
+"    return -1;\n"
+"}\n"
+"/* The new interpreter is now active in the current thread. */"
 
 msgid ""
 "For further examples how to use the C-API for sub-interpreters with a per-"
@@ -558,6 +598,8 @@ msgid ""
 "typed dictionaries::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "from typing import TypedDict, Unpack\n"
 "\n"
@@ -567,6 +609,13 @@ msgid ""
 "\n"
 "def foo(**kwargs: Unpack[Movie]): ..."
 msgstr ""
+"from typing import TypedDict, Unpack\n"
+"\n"
+"class Movie(TypedDict):\n"
+"  name: str\n"
+"  year: int\n"
+"\n"
+"def foo(**kwargs: Unpack[Movie]): ..."
 
 msgid "See :pep:`692` for more details."
 msgstr ""
@@ -588,6 +637,8 @@ msgstr ""
 msgid "Example::"
 msgstr "Ví dụ::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "from typing import override\n"
 "\n"
@@ -605,6 +656,21 @@ msgid ""
 "  def get_colour(self) -> str:\n"
 "    return \"red\""
 msgstr ""
+"from typing import override\n"
+"\n"
+"class Base:\n"
+"  def get_color(self) -> str:\n"
+"    return \"blue\"\n"
+"\n"
+"class GoodChild(Base):\n"
+"  @override  # ok: overrides Base.get_color\n"
+"  def get_color(self) -> str:\n"
+"    return \"yellow\"\n"
+"\n"
+"class BadChild(Base):\n"
+"  @override  # type checker error: does not override Base.get_color\n"
+"  def get_colour(self) -> str:\n"
+"    return \"red\""
 
 msgid "See :pep:`698` for more details."
 msgstr ""
@@ -724,22 +790,28 @@ msgstr ""
 msgid "New Modules"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "None."
-msgstr ""
+msgstr "None."
 
 msgid "Improved Modules"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "array"
-msgstr ""
+msgstr "array"
 
 msgid ""
 "The :class:`array.array` class now supports subscripting, making it a :term:"
 "`generic type`. (Contributed by Jelle Zijlstra in :gh:`98658`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "asyncio"
-msgstr ""
+msgstr "asyncio"
 
 msgid ""
 "The performance of writing to sockets in :mod:`asyncio` has been "
@@ -789,8 +861,10 @@ msgid ""
 "yielding tasks. (Contributed by Kumar Aditya in :gh:`78530`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "calendar"
-msgstr ""
+msgstr "calendar"
 
 msgid ""
 "Add enums :data:`calendar.Month` and :data:`calendar.Day` defining months of "
@@ -798,8 +872,10 @@ msgid ""
 "`103636`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "csv"
-msgstr ""
+msgstr "csv"
 
 msgid ""
 "Add :const:`csv.QUOTE_NOTNULL` and :const:`csv.QUOTE_STRINGS` flags to "
@@ -807,8 +883,10 @@ msgid ""
 "reader` and :class:`~csv.writer` objects."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "dis"
-msgstr ""
+msgstr "dis"
 
 msgid ""
 "Pseudo instruction opcodes (which are used by the compiler but do not appear "
@@ -823,16 +901,20 @@ msgid ""
 "exception handler. (Contributed by Irit Katriel in :gh:`94216`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "fractions"
-msgstr ""
+msgstr "fractions"
 
 msgid ""
 "Objects of type :class:`fractions.Fraction` now support float-style "
 "formatting. (Contributed by Mark Dickinson in :gh:`100161`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "importlib.resources"
-msgstr ""
+msgstr "importlib.resources"
 
 msgid ""
 ":func:`importlib.resources.as_file` now supports resource directories. "
@@ -844,8 +926,10 @@ msgid ""
 "(Contributed by Jason R. Coombs in :gh:`100598`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "inspect"
-msgstr ""
+msgstr "inspect"
 
 msgid ""
 "Add :func:`inspect.markcoroutinefunction` to mark sync functions that return "
@@ -865,8 +949,10 @@ msgid ""
 "were in Python 3.11. (Contributed by Alex Waygood in :gh:`103193`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "itertools"
-msgstr ""
+msgstr "itertools"
 
 msgid ""
 "Add :func:`itertools.batched` for collecting into even-sized tuples where "
@@ -874,8 +960,10 @@ msgid ""
 "Hettinger in :gh:`98363`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "math"
-msgstr ""
+msgstr "math"
 
 msgid ""
 "Add :func:`math.sumprod` for computing a sum of products. (Contributed by "
@@ -888,8 +976,10 @@ msgid ""
 "Dickinson, and Raymond Hettinger in :gh:`94906`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "os"
-msgstr ""
+msgstr "os"
 
 msgid ""
 "Add :const:`os.PIDFD_NONBLOCK` to open a file descriptor for a process with :"
@@ -921,8 +1011,10 @@ msgid ""
 "`99726`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "os.path"
-msgstr ""
+msgstr "os.path"
 
 msgid ""
 "Add :func:`os.path.isjunction` to check if a given path is a junction. "
@@ -934,8 +1026,10 @@ msgid ""
 "tail)``. (Contributed by Barney Gale in :gh:`101000`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "pathlib"
-msgstr ""
+msgstr "pathlib"
 
 msgid ""
 "Add support for subclassing :class:`pathlib.PurePath` and :class:`pathlib."
@@ -969,8 +1063,10 @@ msgid ""
 "process."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "platform"
-msgstr ""
+msgstr "platform"
 
 msgid ""
 "Add support for detecting Windows 11 and Windows Server releases past 2012. "
@@ -979,8 +1075,10 @@ msgid ""
 "Dower in :gh:`89545`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "pdb"
-msgstr ""
+msgstr "pdb"
 
 msgid ""
 "Add convenience variables to hold values temporarily for debug session and "
@@ -988,8 +1086,10 @@ msgid ""
 "(Contributed by Tian Gao in :gh:`103693`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "random"
-msgstr ""
+msgstr "random"
 
 msgid ""
 "Add :func:`random.binomialvariate`. (Contributed by Raymond Hettinger in :gh:"
@@ -1001,8 +1101,10 @@ msgid ""
 "by Raymond Hettinger in :gh:`100234`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "shutil"
-msgstr ""
+msgstr "shutil"
 
 msgid ""
 ":func:`shutil.make_archive` now passes the *root_dir* argument to custom "
@@ -1037,8 +1139,10 @@ msgid ""
 "Windows. (Contributed by Charles Machalow in :gh:`103179`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "sqlite3"
-msgstr ""
+msgstr "sqlite3"
 
 msgid ""
 "Add a :ref:`command-line interface <sqlite3-cli>`. (Contributed by Erlend E. "
@@ -1064,8 +1168,10 @@ msgid ""
 "database connection. (Contributed by Erlend E. Aasland in :gh:`103489`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "statistics"
-msgstr ""
+msgstr "statistics"
 
 msgid ""
 "Extend :func:`statistics.correlation` to include as a ``ranked`` method for "
@@ -1074,7 +1180,7 @@ msgid ""
 msgstr ""
 
 msgid "sys"
-msgstr ""
+msgstr "sys"
 
 msgid ""
 "Add the :mod:`sys.monitoring` namespace to expose the new :ref:`PEP 669 "
@@ -1112,8 +1218,10 @@ msgid ""
 "prevents recursion from causing a virtual machine crash."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "tempfile"
-msgstr ""
+msgstr "tempfile"
 
 msgid ""
 "The :class:`tempfile.NamedTemporaryFile` function has a new optional "
@@ -1125,8 +1233,10 @@ msgid ""
 "argument provided to the *dir* parameter is a relative path."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "threading"
-msgstr ""
+msgstr "threading"
 
 msgid ""
 "Add :func:`threading.settrace_all_threads` and :func:`threading."
@@ -1135,8 +1245,10 @@ msgid ""
 "Galindo in :gh:`93503`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "tkinter"
-msgstr ""
+msgstr "tkinter"
 
 msgid ""
 "``tkinter.Canvas.coords()`` now flattens its arguments. It now accepts not "
@@ -1147,8 +1259,10 @@ msgid ""
 "in :gh:`94473`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "tokenize"
-msgstr ""
+msgstr "tokenize"
 
 msgid ""
 "The :mod:`tokenize` module includes the changes introduced in :pep:`701`. "
@@ -1157,8 +1271,10 @@ msgid ""
 "to the :mod:`tokenize` module."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "types"
-msgstr ""
+msgstr "types"
 
 msgid ""
 "Add :func:`types.get_original_bases` to allow for further introspection of :"
@@ -1166,8 +1282,10 @@ msgid ""
 "Balfe and Alex Waygood in :gh:`101827`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "typing"
-msgstr ""
+msgstr "typing"
 
 msgid ""
 ":func:`isinstance` checks against :func:`runtime-checkable protocols <typing."
@@ -1188,6 +1306,8 @@ msgid ""
 "on :func:`isinstance` checks comparing objects to the protocol. For example::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> from typing import Protocol, runtime_checkable\n"
 ">>> @runtime_checkable\n"
@@ -1207,6 +1327,23 @@ msgid ""
 "attribute\n"
 "True"
 msgstr ""
+">>> from typing import Protocol, runtime_checkable\n"
+">>> @runtime_checkable\n"
+"... class HasX(Protocol):\n"
+"...     x = 1\n"
+"...\n"
+">>> class Foo: ...\n"
+"...\n"
+">>> f = Foo()\n"
+">>> isinstance(f, HasX)\n"
+"False\n"
+">>> f.x = 1\n"
+">>> isinstance(f, HasX)\n"
+"True\n"
+">>> HasX.y = 2\n"
+">>> isinstance(f, HasX)  # unchanged, even though HasX now also has a \"y\" "
+"attribute\n"
+"True"
 
 msgid ""
 "This change was made in order to speed up ``isinstance()`` checks against "
@@ -1234,16 +1371,20 @@ msgid ""
 "(Contributed by Erik De Bonte in :gh:`99957`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "unicodedata"
-msgstr ""
+msgstr "unicodedata"
 
 msgid ""
 "The Unicode database has been updated to version 15.0.0. (Contributed by "
 "Benjamin Peterson in :gh:`96734`)."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "unittest"
-msgstr ""
+msgstr "unittest"
 
 msgid ""
 "Add a ``--durations`` command line option, showing the N slowest test cases::"
@@ -1268,16 +1409,20 @@ msgstr ""
 msgid "(Contributed by Giampaolo Rodola in :gh:`48330`)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "uuid"
-msgstr ""
+msgstr "uuid"
 
 msgid ""
 "Add a :ref:`command-line interface <uuid-cli>`. (Contributed by Adam Chhina "
 "in :gh:`88597`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Optimizations"
-msgstr ""
+msgstr "Optimizations"
 
 msgid ""
 "Remove ``wstr`` and ``wstr_length`` members from Unicode objects. It reduces "
@@ -1405,8 +1550,10 @@ msgid ""
 "demos>`_. (Contributed by Victor Stinner in :gh:`97669`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Deprecated"
-msgstr ""
+msgstr "Deprecated"
 
 msgid ""
 ":mod:`argparse`: The *type*, *choices*, and *metavar* parameters of :class:`!"
@@ -1421,28 +1568,40 @@ msgid ""
 "Python 3.14:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`!ast.Num`"
-msgstr ""
+msgstr ":class:`!ast.Num`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`!ast.Str`"
-msgstr ""
+msgstr ":class:`!ast.Str`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`!ast.Bytes`"
-msgstr ""
+msgstr ":class:`!ast.Bytes`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`!ast.NameConstant`"
-msgstr ""
+msgstr ":class:`!ast.NameConstant`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`!ast.Ellipsis`"
-msgstr ""
+msgstr ":class:`!ast.Ellipsis`"
 
 msgid ""
 "Use :class:`ast.Constant` instead. (Contributed by Serhiy Storchaka in :gh:"
 "`90953`.)"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`asyncio`:"
-msgstr ""
+msgstr ":mod:`asyncio`:"
 
 msgid ""
 "The child watcher classes :class:`!asyncio.MultiLoopChildWatcher`, :class:`!"
@@ -1516,23 +1675,33 @@ msgid ""
 "removal in Python 3.14:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`!importlib.abc.ResourceReader`"
-msgstr ""
+msgstr ":class:`!importlib.abc.ResourceReader`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`!importlib.abc.Traversable`"
-msgstr ""
+msgstr ":class:`!importlib.abc.Traversable`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`!importlib.abc.TraversableResources`"
-msgstr ""
+msgstr ":class:`!importlib.abc.TraversableResources`"
 
 msgid "Use :mod:`importlib.resources.abc` classes instead:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`importlib.resources.abc.Traversable`"
-msgstr ""
+msgstr ":class:`importlib.resources.abc.Traversable`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`importlib.resources.abc.TraversableResources`"
-msgstr ""
+msgstr ":class:`importlib.resources.abc.TraversableResources`"
 
 msgid "(Contributed by Jason R. Coombs and Hugo van Kemenade in :gh:`93963`.)"
 msgstr ""
@@ -1569,8 +1738,10 @@ msgid ""
 "(Contributed by Soumendra Ganguly and Gregory P. Smith in :gh:`85984`.)"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`os`:"
-msgstr ""
+msgstr ":mod:`os`:"
 
 msgid ""
 "The ``st_ctime`` fields return by :func:`os.stat` and :func:`os.lstat` on "
@@ -1605,8 +1776,10 @@ msgid ""
 "`102828`.)"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`sqlite3`:"
-msgstr ""
+msgstr ":mod:`sqlite3`:"
 
 msgid ""
 ":ref:`default adapters and converters <sqlite3-default-converters>` are now "
@@ -1635,8 +1808,10 @@ msgid ""
 "default. See :ref:`tarfile-extraction-filter` for details."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`typing`:"
-msgstr ""
+msgstr ":mod:`typing`:"
 
 msgid ""
 ":class:`typing.Hashable` and :class:`typing.Sized`, aliases for :class:"
@@ -1673,10 +1848,9 @@ msgid ""
 msgstr ""
 
 msgid ""
-"Setting :attr:`~module.__package__` or :attr:`~module.__cached__` on a "
-"module is deprecated, and will cease to be set or taken into consideration "
-"by the import system in Python 3.14. (Contributed by Brett Cannon in :gh:"
-"`65961`.)"
+"Setting :attr:`~module.__package__` or ``__cached__`` on a module is "
+"deprecated, and will cease to be set or taken into consideration by the "
+"import system in Python 3.14. (Contributed by Brett Cannon in :gh:`65961`.)"
 msgstr ""
 
 msgid ""
@@ -1688,7 +1862,7 @@ msgid ""
 msgstr ""
 
 msgid ""
-"Accessing :attr:`~codeobject.co_lnotab` on code objects was deprecated in "
+"Accessing :attr:`!codeobject.co_lnotab` on code objects was deprecated in "
 "Python 3.10 via :pep:`626`, but it only got a proper :exc:"
 "`DeprecationWarning` in 3.12. May be removed in 3.15. (Contributed by Nikita "
 "Sobolev in :gh:`101866`.)"
@@ -1700,62 +1874,100 @@ msgstr ""
 msgid "Modules (see :pep:`594`):"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`!aifc`"
-msgstr ""
+msgstr ":mod:`!aifc`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`!audioop`"
-msgstr ""
+msgstr ":mod:`!audioop`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`!cgi`"
-msgstr ""
+msgstr ":mod:`!cgi`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`!cgitb`"
-msgstr ""
+msgstr ":mod:`!cgitb`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`!chunk`"
-msgstr ""
+msgstr ":mod:`!chunk`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`!crypt`"
-msgstr ""
+msgstr ":mod:`!crypt`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`!imghdr`"
-msgstr ""
+msgstr ":mod:`!imghdr`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`!mailcap`"
-msgstr ""
+msgstr ":mod:`!mailcap`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`!msilib`"
-msgstr ""
+msgstr ":mod:`!msilib`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`!nis`"
-msgstr ""
+msgstr ":mod:`!nis`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`!nntplib`"
-msgstr ""
+msgstr ":mod:`!nntplib`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`!ossaudiodev`"
-msgstr ""
+msgstr ":mod:`!ossaudiodev`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`!pipes`"
-msgstr ""
+msgstr ":mod:`!pipes`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`!sndhdr`"
-msgstr ""
+msgstr ":mod:`!sndhdr`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`!spwd`"
-msgstr ""
+msgstr ":mod:`!spwd`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`!sunau`"
-msgstr ""
+msgstr ":mod:`!sunau`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`!telnetlib`"
-msgstr ""
+msgstr ":mod:`!telnetlib`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`!uu`"
-msgstr ""
+msgstr ":mod:`!uu`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`!xdrlib`"
-msgstr ""
+msgstr ":mod:`!xdrlib`"
 
 msgid "Other modules:"
 msgstr ""
@@ -1766,29 +1978,45 @@ msgstr ""
 msgid "APIs:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`!configparser.LegacyInterpolation` (:gh:`90765`)"
-msgstr ""
+msgstr ":class:`!configparser.LegacyInterpolation` (:gh:`90765`)"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``locale.resetlocale()`` (:gh:`90817`)"
-msgstr ""
+msgstr "``locale.resetlocale()`` (:gh:`90817`)"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`!turtle.RawTurtle.settiltangle` (:gh:`50096`)"
-msgstr ""
+msgstr ":meth:`!turtle.RawTurtle.settiltangle` (:gh:`50096`)"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`!unittest.findTestCases` (:gh:`50096`)"
-msgstr ""
+msgstr ":func:`!unittest.findTestCases` (:gh:`50096`)"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`!unittest.getTestCaseNames` (:gh:`50096`)"
-msgstr ""
+msgstr ":func:`!unittest.getTestCaseNames` (:gh:`50096`)"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`!unittest.makeSuite` (:gh:`50096`)"
-msgstr ""
+msgstr ":func:`!unittest.makeSuite` (:gh:`50096`)"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`!unittest.TestProgram.usageExit` (:gh:`67048`)"
-msgstr ""
+msgstr ":meth:`!unittest.TestProgram.usageExit` (:gh:`67048`)"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`!webbrowser.MacOSX` (:gh:`86421`)"
-msgstr ""
+msgstr ":class:`!webbrowser.MacOSX` (:gh:`86421`)"
 
 msgid ":class:`classmethod` descriptor chaining (:gh:`89519`)"
 msgstr ""
@@ -1838,8 +2066,10 @@ msgid ""
 "instead. (Contributed by Nikita Sobolev in :gh:`97850`.)"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`pty`:"
-msgstr ""
+msgstr ":mod:`pty`:"
 
 msgid "``master_open()``: use :func:`pty.openpty`."
 msgstr ""
@@ -1869,10 +2099,10 @@ msgid "The import system:"
 msgstr ""
 
 msgid ""
-"Setting :attr:`~module.__cached__` on a module while failing to set :attr:"
-"`__spec__.cached <importlib.machinery.ModuleSpec.cached>` is deprecated. In "
-"Python 3.15, :attr:`!__cached__` will cease to be set or take into "
-"consideration by the import system or standard library. (:gh:`97879`)"
+"Setting ``__cached__`` on a module while failing to set :attr:`__spec__."
+"cached <importlib.machinery.ModuleSpec.cached>` is deprecated. In Python "
+"3.15, ``__cached__`` will cease to be set or take into consideration by the "
+"import system or standard library. (:gh:`97879`)"
 msgstr ""
 
 msgid ""
@@ -1882,21 +2112,25 @@ msgid ""
 "consideration by the import system or standard library. (:gh:`97879`)"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`ctypes`:"
-msgstr ""
+msgstr ":mod:`ctypes`:"
 
 msgid ""
 "The undocumented :func:`!ctypes.SetPointerType` function has been deprecated "
 "since Python 3.13."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`http.server`:"
-msgstr ""
+msgstr ":mod:`http.server`:"
 
 msgid ""
-"The obsolete and rarely used :class:`~http.server.CGIHTTPRequestHandler` has "
-"been deprecated since Python 3.13. No direct replacement exists. *Anything* "
-"is better than CGI to interface a web server with a request handler."
+"The obsolete and rarely used :class:`!CGIHTTPRequestHandler` has been "
+"deprecated since Python 3.13. No direct replacement exists. *Anything* is "
+"better than CGI to interface a web server with a request handler."
 msgstr ""
 
 msgid ""
@@ -1904,50 +2138,49 @@ msgid ""
 "line interface has been deprecated since Python 3.13."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`importlib`:"
-msgstr ""
+msgstr ":mod:`importlib`:"
 
 msgid "``load_module()`` method: use ``exec_module()`` instead."
 msgstr ""
 
-msgid ":class:`locale`:"
-msgstr ""
-
-msgid ""
-"The :func:`~locale.getdefaultlocale` function has been deprecated since "
-"Python 3.11. Its removal was originally planned for Python 3.13 (:gh:"
-"`90817`), but has been postponed to Python 3.15. Use :func:`~locale."
-"getlocale`, :func:`~locale.setlocale`, and :func:`~locale.getencoding` "
-"instead. (Contributed by Hugo van Kemenade in :gh:`111187`.)"
-msgstr ""
-
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`pathlib`:"
-msgstr ""
+msgstr ":mod:`pathlib`:"
 
 msgid ""
-":meth:`.PurePath.is_reserved` has been deprecated since Python 3.13. Use :"
+":meth:`!.PurePath.is_reserved` has been deprecated since Python 3.13. Use :"
 "func:`os.path.isreserved` to detect reserved paths on Windows."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`platform`:"
-msgstr ""
+msgstr ":mod:`platform`:"
 
 msgid ""
-":func:`~platform.java_ver` has been deprecated since Python 3.13. This "
+":func:`!platform.java_ver` has been deprecated since Python 3.13. This "
 "function is only useful for Jython support, has a confusing API, and is "
 "largely untested."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`sysconfig`:"
-msgstr ""
+msgstr ":mod:`sysconfig`:"
 
 msgid ""
 "The *check_home* argument of :func:`sysconfig.is_python_build` has been "
 "deprecated since Python 3.12."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`threading`:"
-msgstr ""
+msgstr ":mod:`threading`:"
 
 msgid ""
 ":func:`~threading.RLock` will take no arguments in Python 3.15. Passing any "
@@ -1956,11 +2189,13 @@ msgid ""
 "or keyword arguments, ignoring every argument."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`types`:"
-msgstr ""
+msgstr ":mod:`types`:"
 
 msgid ""
-":class:`types.CodeType`: Accessing :attr:`~codeobject.co_lnotab` was "
+":class:`types.CodeType`: Accessing :attr:`!codeobject.co_lnotab` was "
 "deprecated in :pep:`626` since 3.10 and was planned to be removed in 3.12, "
 "but it only got a proper :exc:`DeprecationWarning` in 3.12. May be removed "
 "in 3.15. (Contributed by Nikita Sobolev in :gh:`101866`.)"
@@ -1982,27 +2217,34 @@ msgid ""
 msgstr ""
 
 msgid ""
-"The :func:`typing.no_type_check_decorator` decorator function has been "
+"The :func:`!typing.no_type_check_decorator` decorator function has been "
 "deprecated since Python 3.13. After eight years in the :mod:`typing` module, "
 "it has yet to be supported by any major type checker."
 msgstr ""
 
+msgid ""
+":mod:`!sre_compile`, :mod:`!sre_constants` and :mod:`!sre_parse` modules."
+msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`wave`:"
-msgstr ""
+msgstr ":mod:`wave`:"
 
 msgid ""
-"The :meth:`~wave.Wave_read.getmark`, :meth:`!setmark`, and :meth:`~wave."
-"Wave_read.getmarkers` methods of the :class:`~wave.Wave_read` and :class:"
-"`~wave.Wave_write` classes have been deprecated since Python 3.13."
+"The ``getmark()``, ``setmark()`` and ``getmarkers()`` methods of the :class:"
+"`~wave.Wave_read` and :class:`~wave.Wave_write` classes have been deprecated "
+"since Python 3.13."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`zipimport`:"
-msgstr ""
+msgstr ":mod:`zipimport`:"
 
 msgid ""
-":meth:`~zipimport.zipimporter.load_module` has been deprecated since Python "
-"3.10. Use :meth:`~zipimport.zipimporter.exec_module` instead. (Contributed "
-"by Jiahao Li in :gh:`125746`.)"
+":meth:`!zipimport.zipimporter.load_module` has been deprecated since Python "
+"3.10. Use :meth:`~zipimport.zipimporter.exec_module` instead. (:gh:`125746`.)"
 msgstr ""
 
 msgid "Pending removal in Python 3.16"
@@ -2015,8 +2257,10 @@ msgid ""
 "consideration by the import system or the standard library."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`array`:"
-msgstr ""
+msgstr ":mod:`array`:"
 
 msgid ""
 "The ``'u'`` format code (:c:type:`wchar_t`) has been deprecated in "
@@ -2035,23 +2279,35 @@ msgid ""
 "3.16. In particular, the following classes and functions are deprecated:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`asyncio.AbstractEventLoopPolicy`"
-msgstr ""
+msgstr ":class:`asyncio.AbstractEventLoopPolicy`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`asyncio.DefaultEventLoopPolicy`"
-msgstr ""
+msgstr ":class:`asyncio.DefaultEventLoopPolicy`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`asyncio.WindowsSelectorEventLoopPolicy`"
-msgstr ""
+msgstr ":class:`asyncio.WindowsSelectorEventLoopPolicy`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`asyncio.WindowsProactorEventLoopPolicy`"
-msgstr ""
+msgstr ":class:`asyncio.WindowsProactorEventLoopPolicy`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`asyncio.get_event_loop_policy`"
-msgstr ""
+msgstr ":func:`asyncio.get_event_loop_policy`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`asyncio.set_event_loop_policy`"
-msgstr ""
+msgstr ":func:`asyncio.set_event_loop_policy`"
 
 msgid ""
 "Users should use :func:`asyncio.run` or :class:`asyncio.Runner` with "
@@ -2061,6 +2317,8 @@ msgstr ""
 msgid "For example, to use :class:`asyncio.SelectorEventLoop` on Windows::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import asyncio\n"
 "\n"
@@ -2069,12 +2327,20 @@ msgid ""
 "\n"
 "asyncio.run(main(), loop_factory=asyncio.SelectorEventLoop)"
 msgstr ""
+"import asyncio\n"
+"\n"
+"async def main():\n"
+"    ...\n"
+"\n"
+"asyncio.run(main(), loop_factory=asyncio.SelectorEventLoop)"
 
 msgid "(Contributed by Kumar Aditya in :gh:`127949`.)"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`builtins`:"
-msgstr ""
+msgstr ":mod:`builtins`:"
 
 msgid ""
 "Bitwise inversion on boolean types, ``~True`` or ``~False`` has been "
@@ -2084,8 +2350,10 @@ msgid ""
 "underlying integer, convert to ``int`` explicitly (``~int(x)``)."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`functools`:"
-msgstr ""
+msgstr ":mod:`functools`:"
 
 msgid ""
 "Calling the Python implementation of :func:`functools.reduce` with "
@@ -2093,8 +2361,10 @@ msgid ""
 "Python 3.14."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`logging`:"
-msgstr ""
+msgstr ":mod:`logging`:"
 
 msgid ""
 "Support for custom logging handlers with the *strm* argument is deprecated "
@@ -2102,8 +2372,10 @@ msgid ""
 "argument instead. (Contributed by Mariusz Felisiak in :gh:`115032`.)"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`mimetypes`:"
-msgstr ""
+msgstr ":mod:`mimetypes`:"
 
 msgid ""
 "Valid extensions start with a '.' or are empty for :meth:`mimetypes."
@@ -2112,8 +2384,10 @@ msgid ""
 "`75223`.)"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`shutil`:"
-msgstr ""
+msgstr ":mod:`shutil`:"
 
 msgid ""
 "The :class:`!ExecError` exception has been deprecated since Python 3.14. It "
@@ -2121,16 +2395,20 @@ msgid ""
 "now an alias of :exc:`RuntimeError`."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`symtable`:"
-msgstr ""
+msgstr ":mod:`symtable`:"
 
 msgid ""
 "The :meth:`Class.get_methods <symtable.Class.get_methods>` method has been "
 "deprecated since Python 3.14."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`sys`:"
-msgstr ""
+msgstr ":mod:`sys`:"
 
 msgid ""
 "The :func:`~sys._enablelegacywindowsfsencoding` function has been deprecated "
@@ -2144,8 +2422,10 @@ msgid ""
 "instead."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`tarfile`:"
-msgstr ""
+msgstr ":mod:`tarfile`:"
 
 msgid ""
 "The undocumented and unused :attr:`!TarFile.tarfile` attribute has been "
@@ -2155,11 +2435,45 @@ msgstr ""
 msgid "Pending removal in Python 3.17"
 msgstr ""
 
-msgid ":mod:`collections.abc`:"
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":mod:`datetime`:"
+msgstr ":mod:`datetime`:"
+
+msgid ""
+":meth:`~datetime.datetime.strptime` calls using a format string containing "
+"``%e`` (day of month) without a year. This has been deprecated since Python "
+"3.15. (Contributed by Stan Ulbrych in :gh:`70647`.)"
 msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":mod:`collections.abc`:"
+msgstr ":mod:`collections.abc`:"
 
 msgid ""
 ":class:`collections.abc.ByteString` is scheduled for removal in Python 3.17."
+msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":mod:`encodings`:"
+msgstr ":mod:`encodings`:"
+
+msgid ""
+"Passing non-ascii *encoding* names to :func:`encodings.normalize_encoding` "
+"is deprecated and scheduled for removal in Python 3.17. (Contributed by Stan "
+"Ulbrych in :gh:`136702`.)"
+msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":mod:`webbrowser`:"
+msgstr ":mod:`webbrowser`:"
+
+msgid ""
+":class:`!webbrowser.MacOSXOSAScript` is deprecated in favour of :class:`!"
+"webbrowser.MacOS`. (:gh:`137586`)"
 msgstr ""
 
 msgid ""
@@ -2176,6 +2490,236 @@ msgid ""
 "removal in Python 3.17."
 msgstr ""
 
+msgid "Pending removal in Python 3.19"
+msgstr ""
+
+msgid ""
+"Implicitly switching to the MSVC-compatible struct layout by setting :attr:"
+"`~ctypes.Structure._pack_` but not :attr:`~ctypes.Structure._layout_` on non-"
+"Windows platforms."
+msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":mod:`hashlib`:"
+msgstr ":mod:`hashlib`:"
+
+msgid ""
+"In hash function constructors such as :func:`~hashlib.new` or the direct "
+"hash-named constructors such as :func:`~hashlib.md5` and :func:`~hashlib."
+"sha256`, their optional initial data parameter could also be passed a "
+"keyword argument named ``data=`` or ``string=`` in various :mod:`!hashlib` "
+"implementations."
+msgstr ""
+
+msgid ""
+"Support for the ``string`` keyword argument name is now deprecated and "
+"slated for removal in Python 3.19."
+msgstr ""
+
+msgid ""
+"Before Python 3.13, the ``string`` keyword parameter was not correctly "
+"supported depending on the backend implementation of hash functions. Prefer "
+"passing the initial data as a positional argument for maximum backwards "
+"compatibility."
+msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":mod:`http.cookies`:"
+msgstr ":mod:`http.cookies`:"
+
+msgid ""
+":meth:`http.cookies.Morsel.js_output` is deprecated and will be removed in "
+"Python 3.19."
+msgstr ""
+
+msgid ""
+":meth:`http.cookies.BaseCookie.js_output` is deprecated and will be removed "
+"in Python 3.19."
+msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":mod:`imaplib`:"
+msgstr ":mod:`imaplib`:"
+
+msgid ""
+"Altering :attr:`IMAP4.file <imaplib.IMAP4.file>` is now deprecated and "
+"slated for removal in Python 3.19. This property is now unused and changing "
+"its value does not automatically close the current file."
+msgstr ""
+
+msgid ""
+"Before Python 3.14, this property was used to implement the corresponding "
+"``read()`` and ``readline()`` methods for :class:`~imaplib.IMAP4` but this "
+"is no longer the case since then."
+msgstr ""
+
+msgid "Pending removal in Python 3.20"
+msgstr ""
+
+msgid ""
+"Calling the ``__new__()`` method of :class:`struct.Struct` without the "
+"*format* argument is deprecated and will be removed in Python 3.20.  "
+"Calling :meth:`~object.__init__` method on initialized :class:`~struct."
+"Struct` objects is deprecated and will be removed in Python 3.20."
+msgstr ""
+
+msgid ""
+"(Contributed by Sergey B Kirpichev and Serhiy Storchaka in :gh:`143715`.)"
+msgstr ""
+
+msgid ""
+"The ``__version__``, ``version`` and ``VERSION`` attributes have been "
+"deprecated in these standard library modules and will be removed in Python "
+"3.20. Use :py:data:`sys.version_info` instead."
+msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":mod:`argparse`"
+msgstr ":mod:`argparse`"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":mod:`csv`"
+msgstr ":mod:`csv`"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":mod:`ctypes`"
+msgstr ":mod:`ctypes`"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":mod:`!ctypes.macholib`"
+msgstr ":mod:`!ctypes.macholib`"
+
+msgid ":mod:`decimal` (use :data:`decimal.SPEC_VERSION` instead)"
+msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":mod:`http.server`"
+msgstr ":mod:`http.server`"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":mod:`imaplib`"
+msgstr ":mod:`imaplib`"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":mod:`ipaddress`"
+msgstr ":mod:`ipaddress`"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":mod:`json`"
+msgstr ":mod:`json`"
+
+msgid ":mod:`logging` (``__date__`` also deprecated)"
+msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":mod:`optparse`"
+msgstr ":mod:`optparse`"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":mod:`pickle`"
+msgstr ":mod:`pickle`"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":mod:`platform`"
+msgstr ":mod:`platform`"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":mod:`re`"
+msgstr ":mod:`re`"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":mod:`socketserver`"
+msgstr ":mod:`socketserver`"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":mod:`tabnanny`"
+msgstr ":mod:`tabnanny`"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":mod:`tarfile`"
+msgstr ":mod:`tarfile`"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":mod:`tkinter.font`"
+msgstr ":mod:`tkinter.font`"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":mod:`tkinter.ttk`"
+msgstr ":mod:`tkinter.ttk`"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":mod:`wsgiref.simple_server`"
+msgstr ":mod:`wsgiref.simple_server`"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":mod:`xml.etree.ElementTree`"
+msgstr ":mod:`xml.etree.ElementTree`"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":mod:`!xml.sax.expatreader`"
+msgstr ":mod:`!xml.sax.expatreader`"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":mod:`xml.sax.handler`"
+msgstr ":mod:`xml.sax.handler`"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":mod:`zlib`"
+msgstr ":mod:`zlib`"
+
+msgid "(Contributed by Hugo van Kemenade and Stan Ulbrych in :gh:`76007`.)"
+msgstr ""
+
+msgid "Deprecations defined by :pep:`829`:"
+msgstr ""
+
+msgid ""
+"Warnings are produced for ``import`` lines found in :file:`{name}.pth` files."
+msgstr ""
+
+msgid ""
+":file:`{name}.pth` files are no longer decoded in the locale encoding by "
+"default.  They **MUST** be encoded in ``utf-8-sig``."
+msgstr ""
+
+msgid "(Contributed by Barry Warsaw in :gh:`148641`.)"
+msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":mod:`ast`:"
+msgstr ":mod:`ast`:"
+
+msgid ""
+"Creating instances of abstract AST nodes (such as :class:`ast.AST` or :class:"
+"`!ast.expr`) is deprecated and will raise an error in Python 3.20."
+msgstr ""
+
 msgid "Pending removal in future versions"
 msgstr ""
 
@@ -2184,8 +2728,10 @@ msgid ""
 "currently no date scheduled for their removal."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`argparse`:"
-msgstr ""
+msgstr ":mod:`argparse`:"
 
 msgid ""
 "Nesting argument groups and nesting mutually exclusive groups are deprecated."
@@ -2247,11 +2793,8 @@ msgid ""
 msgstr ""
 
 msgid ""
-":attr:`codeobject.co_lnotab`: use the :meth:`codeobject.co_lines` method "
+":attr:`!codeobject.co_lnotab`: use the :meth:`codeobject.co_lines` method "
 "instead."
-msgstr ""
-
-msgid ":mod:`datetime`:"
 msgstr ""
 
 msgid ""
@@ -2272,8 +2815,10 @@ msgid ""
 "deprecated: use the *optimization* parameter instead."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`importlib.metadata`:"
-msgstr ""
+msgstr ":mod:`importlib.metadata`:"
 
 msgid "``EntryPoints`` tuple interface."
 msgstr ""
@@ -2292,7 +2837,16 @@ msgid ""
 msgstr ""
 
 msgid ""
-":mod:`os`: Calling :func:`os.register_at_fork` in multi-threaded process."
+":mod:`os`: Calling :func:`os.register_at_fork` in a multi-threaded process."
+msgstr ""
+
+msgid ""
+":mod:`os.path`: :func:`os.path.commonprefix` is deprecated, use :func:`os."
+"path.commonpath` for path prefixes. The :func:`os.path.commonprefix` "
+"function is being deprecated due to having a misleading name and module. The "
+"function is not safe to use for path prefixes despite being included in a "
+"module about path manipulation, meaning it is easy to accidentally introduce "
+"path traversal vulnerabilities into Python programs by using this function."
 msgstr ""
 
 msgid ""
@@ -2306,10 +2860,6 @@ msgid ""
 "now accepted as a numerical reference.  The group name in bytes patterns and "
 "replacement strings can now only contain ASCII letters and digits and "
 "underscore. (Contributed by Serhiy Storchaka in :gh:`91760`.)"
-msgstr ""
-
-msgid ""
-":mod:`!sre_compile`, :mod:`!sre_constants` and :mod:`!sre_parse` modules."
 msgstr ""
 
 msgid ""
@@ -2334,29 +2884,45 @@ msgstr ""
 msgid "``ssl.OP_NO_TLS*`` options"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``ssl.PROTOCOL_SSLv3``"
-msgstr ""
+msgstr "``ssl.PROTOCOL_SSLv3``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``ssl.PROTOCOL_TLS``"
-msgstr ""
+msgstr "``ssl.PROTOCOL_TLS``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``ssl.PROTOCOL_TLSv1``"
-msgstr ""
+msgstr "``ssl.PROTOCOL_TLSv1``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``ssl.PROTOCOL_TLSv1_1``"
-msgstr ""
+msgstr "``ssl.PROTOCOL_TLSv1_1``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``ssl.PROTOCOL_TLSv1_2``"
-msgstr ""
+msgstr "``ssl.PROTOCOL_TLSv1_2``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``ssl.TLSVersion.SSLv3``"
-msgstr ""
+msgstr "``ssl.TLSVersion.SSLv3``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``ssl.TLSVersion.TLSv1``"
-msgstr ""
+msgstr "``ssl.TLSVersion.TLSv1``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``ssl.TLSVersion.TLSv1_1``"
-msgstr ""
+msgstr "``ssl.TLSVersion.TLSv1_1``"
 
 msgid ":mod:`threading` methods:"
 msgstr ""
@@ -2385,8 +2951,10 @@ msgstr ""
 msgid ":meth:`!threading.activeCount`: use :meth:`threading.active_count`."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`typing.Text` (:gh:`92332`)."
-msgstr ""
+msgstr ":class:`typing.Text` (:gh:`92332`)."
 
 msgid ""
 "The internal class ``typing._UnionGenericAlias`` is no longer used to "
@@ -2405,38 +2973,60 @@ msgid ""
 "instead"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``splitattr()``"
-msgstr ""
+msgstr "``splitattr()``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``splithost()``"
-msgstr ""
+msgstr "``splithost()``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``splitnport()``"
-msgstr ""
+msgstr "``splitnport()``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``splitpasswd()``"
-msgstr ""
+msgstr "``splitpasswd()``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``splitport()``"
-msgstr ""
+msgstr "``splitport()``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``splitquery()``"
-msgstr ""
+msgstr "``splitquery()``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``splittag()``"
-msgstr ""
+msgstr "``splittag()``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``splittype()``"
-msgstr ""
+msgstr "``splittype()``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``splituser()``"
-msgstr ""
+msgstr "``splituser()``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``splitvalue()``"
-msgstr ""
+msgstr "``splitvalue()``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``to_bytes()``"
-msgstr ""
+msgstr "``to_bytes()``"
 
 msgid ""
 ":mod:`wsgiref`: ``SimpleHandler.stdout.write()`` should not do partial "
@@ -2455,8 +3045,10 @@ msgid ""
 "_clear_internal_caches` instead."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Removed"
-msgstr ""
+msgstr "Removed"
 
 msgid "asynchat and asyncore"
 msgstr ""
@@ -2467,8 +3059,10 @@ msgid ""
 "(Contributed by Nikita Sobolev in :gh:`96580`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "configparser"
-msgstr ""
+msgstr "configparser"
 
 msgid ""
 "Several names deprecated in the :mod:`configparser` way back in 3.2 have "
@@ -2490,8 +3084,10 @@ msgid ""
 "meth:`~configparser.ConfigParser.read_file` instead."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "distutils"
-msgstr ""
+msgstr "distutils"
 
 msgid ""
 "Remove the :py:mod:`!distutils` package. It was deprecated in Python 3.10 "
@@ -2501,8 +3097,10 @@ msgid ""
 "Victor Stinner in :gh:`92584`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "ensurepip"
-msgstr ""
+msgstr "ensurepip"
 
 msgid ""
 "Remove the bundled setuptools wheel from :mod:`ensurepip`, and stop "
@@ -2528,24 +3126,30 @@ msgstr ""
 msgid "(Contributed by Pradyun Gedam in :gh:`95299`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "enum"
-msgstr ""
+msgstr "enum"
 
 msgid ""
 "Remove :mod:`enum`'s ``EnumMeta.__getattr__``, which is no longer needed for "
 "enum attribute access. (Contributed by Ethan Furman in :gh:`95083`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "ftplib"
-msgstr ""
+msgstr "ftplib"
 
 msgid ""
 "Remove :mod:`ftplib`'s ``FTP_TLS.ssl_version`` class attribute: use the "
 "*context* parameter instead. (Contributed by Victor Stinner in :gh:`94172`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "gzip"
-msgstr ""
+msgstr "gzip"
 
 msgid ""
 "Remove the ``filename`` attribute of :mod:`gzip`'s :class:`gzip.GzipFile`, "
@@ -2555,8 +3159,10 @@ msgid ""
 "`94196`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "hashlib"
-msgstr ""
+msgstr "hashlib"
 
 msgid ""
 "Remove the pure Python implementation of :mod:`hashlib`'s :func:`hashlib."
@@ -2566,8 +3172,10 @@ msgid ""
 "Stinner in :gh:`94199`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "importlib"
-msgstr ""
+msgstr "importlib"
 
 msgid ""
 "Many previously deprecated cleanups in :mod:`importlib` have now been "
@@ -2595,8 +3203,10 @@ msgid ""
 "have been removed.  (Contributed by Barry Warsaw in :gh:`98040`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "imp"
-msgstr ""
+msgstr "imp"
 
 msgid ""
 "The :mod:`!imp` module has been removed.  (Contributed by Barry Warsaw in :"
@@ -2606,70 +3216,108 @@ msgstr ""
 msgid "To migrate, consult the following correspondence table:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``imp.NullImporter``"
-msgstr ""
+msgstr "``imp.NullImporter``"
 
 msgid "Insert ``None`` into ``sys.path_importer_cache``"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``imp.cache_from_source()``"
-msgstr ""
+msgstr "``imp.cache_from_source()``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`importlib.util.cache_from_source`"
-msgstr ""
+msgstr ":func:`importlib.util.cache_from_source`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``imp.find_module()``"
-msgstr ""
+msgstr "``imp.find_module()``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`importlib.util.find_spec`"
-msgstr ""
+msgstr ":func:`importlib.util.find_spec`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``imp.get_magic()``"
-msgstr ""
+msgstr "``imp.get_magic()``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":const:`importlib.util.MAGIC_NUMBER`"
-msgstr ""
+msgstr ":const:`importlib.util.MAGIC_NUMBER`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``imp.get_suffixes()``"
-msgstr ""
+msgstr "``imp.get_suffixes()``"
 
 msgid ""
 ":const:`importlib.machinery.SOURCE_SUFFIXES`, :const:`importlib.machinery."
 "EXTENSION_SUFFIXES`, and :const:`importlib.machinery.BYTECODE_SUFFIXES`"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``imp.get_tag()``"
-msgstr ""
+msgstr "``imp.get_tag()``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":attr:`sys.implementation.cache_tag <sys.implementation>`"
-msgstr ""
+msgstr ":attr:`sys.implementation.cache_tag <sys.implementation>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``imp.load_module()``"
-msgstr ""
+msgstr "``imp.load_module()``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`importlib.import_module`"
-msgstr ""
+msgstr ":func:`importlib.import_module`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``imp.new_module(name)``"
-msgstr ""
+msgstr "``imp.new_module(name)``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``types.ModuleType(name)``"
-msgstr ""
+msgstr "``types.ModuleType(name)``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``imp.reload()``"
-msgstr ""
+msgstr "``imp.reload()``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`importlib.reload`"
-msgstr ""
+msgstr ":func:`importlib.reload`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``imp.source_from_cache()``"
-msgstr ""
+msgstr "``imp.source_from_cache()``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`importlib.util.source_from_cache`"
-msgstr ""
+msgstr ":func:`importlib.util.source_from_cache`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``imp.load_source()``"
-msgstr ""
+msgstr "``imp.load_source()``"
 
 msgid "*See below*"
 msgstr ""
@@ -2677,6 +3325,8 @@ msgstr ""
 msgid "Replace ``imp.load_source()`` with::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import importlib.util\n"
 "import importlib.machinery\n"
@@ -2692,6 +3342,19 @@ msgid ""
 "    loader.exec_module(module)\n"
 "    return module"
 msgstr ""
+"import importlib.util\n"
+"import importlib.machinery\n"
+"\n"
+"def load_source(modname, filename):\n"
+"    loader = importlib.machinery.SourceFileLoader(modname, filename)\n"
+"    spec = importlib.util.spec_from_file_location(modname, filename, "
+"loader=loader)\n"
+"    module = importlib.util.module_from_spec(spec)\n"
+"    # The module is always executed and not cached in sys.modules.\n"
+"    # Uncomment the following line to cache the module.\n"
+"    # sys.modules[module.__name__] = module\n"
+"    loader.exec_module(module)\n"
+"    return module"
 
 msgid "Remove :mod:`!imp` functions and attributes with no replacements:"
 msgstr ""
@@ -2699,17 +3362,25 @@ msgstr ""
 msgid "Undocumented functions:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``imp.init_builtin()``"
-msgstr ""
+msgstr "``imp.init_builtin()``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``imp.load_compiled()``"
-msgstr ""
+msgstr "``imp.load_compiled()``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``imp.load_dynamic()``"
-msgstr ""
+msgstr "``imp.load_dynamic()``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``imp.load_package()``"
-msgstr ""
+msgstr "``imp.load_package()``"
 
 msgid ""
 "``imp.lock_held()``, ``imp.acquire_lock()``, ``imp.release_lock()``: the "
@@ -2722,8 +3393,10 @@ msgid ""
 "``C_BUILTIN``, ``PY_FROZEN``, ``PY_CODERESOURCE``, ``IMP_HOOK``."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "io"
-msgstr ""
+msgstr "io"
 
 msgid ""
 "Remove :mod:`io`'s ``io.OpenWrapper`` and ``_pyio.OpenWrapper``, deprecated "
@@ -2733,8 +3406,10 @@ msgid ""
 "`94169`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "locale"
-msgstr ""
+msgstr "locale"
 
 msgid ""
 "Remove :mod:`locale`'s :func:`!locale.format` function, deprecated in Python "
@@ -2742,8 +3417,10 @@ msgid ""
 "Stinner in :gh:`94226`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "smtpd"
-msgstr ""
+msgstr "smtpd"
 
 msgid ""
 "The ``smtpd`` module has been removed according to the schedule in :pep:"
@@ -2757,11 +3434,15 @@ msgid ""
 "3.10, are now removed:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``sqlite3.enable_shared_cache()``"
-msgstr ""
+msgstr "``sqlite3.enable_shared_cache()``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``sqlite3.OptimizedUnicode``"
-msgstr ""
+msgstr "``sqlite3.OptimizedUnicode``"
 
 msgid ""
 "If a shared cache must be used, open the database in URI mode using the "
@@ -2778,8 +3459,10 @@ msgstr ""
 msgid "(Contributed by Erlend E. Aasland in :gh:`92548`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "ssl"
-msgstr ""
+msgstr "ssl"
 
 msgid ""
 "Remove :mod:`ssl`'s :func:`!ssl.RAND_pseudo_bytes` function, deprecated in "
@@ -2819,89 +3502,145 @@ msgstr ""
 msgid "Deprecated in"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``failUnless``"
-msgstr ""
+msgstr "``failUnless``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`.assertTrue`"
-msgstr ""
+msgstr ":meth:`.assertTrue`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "3.1"
-msgstr ""
+msgstr "3.1"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``failIf``"
-msgstr ""
+msgstr "``failIf``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`.assertFalse`"
-msgstr ""
+msgstr ":meth:`.assertFalse`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``failUnlessEqual``"
-msgstr ""
+msgstr "``failUnlessEqual``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`.assertEqual`"
-msgstr ""
+msgstr ":meth:`.assertEqual`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``failIfEqual``"
-msgstr ""
+msgstr "``failIfEqual``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`.assertNotEqual`"
-msgstr ""
+msgstr ":meth:`.assertNotEqual`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``failUnlessAlmostEqual``"
-msgstr ""
+msgstr "``failUnlessAlmostEqual``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`.assertAlmostEqual`"
-msgstr ""
+msgstr ":meth:`.assertAlmostEqual`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``failIfAlmostEqual``"
-msgstr ""
+msgstr "``failIfAlmostEqual``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`.assertNotAlmostEqual`"
-msgstr ""
+msgstr ":meth:`.assertNotAlmostEqual`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``failUnlessRaises``"
-msgstr ""
+msgstr "``failUnlessRaises``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`.assertRaises`"
-msgstr ""
+msgstr ":meth:`.assertRaises`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``assert_``"
-msgstr ""
+msgstr "``assert_``"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "3.2"
-msgstr ""
+msgstr "3.2"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``assertEquals``"
-msgstr ""
+msgstr "``assertEquals``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``assertNotEquals``"
-msgstr ""
+msgstr "``assertNotEquals``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``assertAlmostEquals``"
-msgstr ""
+msgstr "``assertAlmostEquals``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``assertNotAlmostEquals``"
-msgstr ""
+msgstr "``assertNotAlmostEquals``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``assertRegexpMatches``"
-msgstr ""
+msgstr "``assertRegexpMatches``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`.assertRegex`"
-msgstr ""
+msgstr ":meth:`.assertRegex`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``assertRaisesRegexp``"
-msgstr ""
+msgstr "``assertRaisesRegexp``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`.assertRaisesRegex`"
-msgstr ""
+msgstr ":meth:`.assertRaisesRegex`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``assertNotRegexpMatches``"
-msgstr ""
+msgstr "``assertNotRegexpMatches``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`.assertNotRegex`"
-msgstr ""
+msgstr ":meth:`.assertNotRegex`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "3.5"
-msgstr ""
+msgstr "3.5"
 
 msgid ""
 "You can use https://github.com/isidentical/teyit to automatically modernise "
@@ -2927,8 +3666,10 @@ msgstr ""
 msgid "(Contributed by Serhiy Storchaka in :gh:`89325`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "webbrowser"
-msgstr ""
+msgstr "webbrowser"
 
 msgid ""
 "Remove support for obsolete browsers from :mod:`webbrowser`. The removed "
@@ -2936,8 +3677,10 @@ msgid ""
 "Firebird, and Firefox versions 35 and below (:gh:`102871`)."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "xml.etree.ElementTree"
-msgstr ""
+msgstr "xml.etree.ElementTree"
 
 msgid ""
 "Remove the ``ElementTree.Element.copy()`` method of the pure Python "
@@ -2947,8 +3690,10 @@ msgid ""
 "Stinner in :gh:`94383`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "zipimport"
-msgstr ""
+msgstr "zipimport"
 
 msgid ""
 "Remove :mod:`zipimport`'s ``find_loader()`` and ``find_module()`` methods, "
@@ -2956,8 +3701,10 @@ msgid ""
 "`451` for the rationale. (Contributed by Victor Stinner in :gh:`94379`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Others"
-msgstr ""
+msgstr "Others"
 
 msgid ""
 "Remove the ``suspicious`` rule from the documentation :file:`Makefile` and :"
@@ -3278,17 +4025,25 @@ msgid ""
 "protocol <vectorcall>` was added to the :ref:`Limited API <stable>`:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:macro:`Py_TPFLAGS_HAVE_VECTORCALL`"
-msgstr ""
+msgstr ":c:macro:`Py_TPFLAGS_HAVE_VECTORCALL`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`PyVectorcall_NARGS`"
-msgstr ""
+msgstr ":c:func:`PyVectorcall_NARGS`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`PyVectorcall_Call`"
-msgstr ""
+msgstr ":c:func:`PyVectorcall_Call`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:type:`vectorcallfunc`"
-msgstr ""
+msgstr ":c:type:`vectorcallfunc`"
 
 msgid ""
 "The :c:macro:`Py_TPFLAGS_HAVE_VECTORCALL` flag is now removed from a class "
@@ -3312,14 +4067,20 @@ msgid ""
 "was added to the :ref:`Limited API <stable>`:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`PyObject_Vectorcall`"
-msgstr ""
+msgstr ":c:func:`PyObject_Vectorcall`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`PyObject_VectorcallMethod`"
-msgstr ""
+msgstr ":c:func:`PyObject_VectorcallMethod`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:macro:`PY_VECTORCALL_ARGUMENTS_OFFSET`"
-msgstr ""
+msgstr ":c:macro:`PY_VECTORCALL_ARGUMENTS_OFFSET`"
 
 msgid ""
 "This means that both the incoming and outgoing ends of the vector call "
@@ -3549,14 +4310,20 @@ msgid ""
 "created type:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`PyType_FromSpec`"
-msgstr ""
+msgstr ":c:func:`PyType_FromSpec`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`PyType_FromSpecWithBases`"
-msgstr ""
+msgstr ":c:func:`PyType_FromSpecWithBases`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`PyType_FromModuleAndSpec`"
-msgstr ""
+msgstr ":c:func:`PyType_FromModuleAndSpec`"
 
 msgid ""
 "Creating classes whose metaclass overrides :c:member:`~PyTypeObject.tp_new` "
@@ -3628,11 +4395,15 @@ msgid ""
 "a single machine word:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`PyUnstable_Long_IsCompact`"
-msgstr ""
+msgstr ":c:func:`PyUnstable_Long_IsCompact`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`PyUnstable_Long_CompactValue`"
-msgstr ""
+msgstr ":c:func:`PyUnstable_Long_CompactValue`"
 
 msgid ""
 "Custom allocators, set via :c:func:`PyMem_SetAllocator`, are now required to "
@@ -3835,20 +4606,15 @@ msgid ""
 msgstr ""
 
 msgid ""
-"The :c:func:`PyImport_ImportModuleNoBlock`: Use :c:func:"
+"The :c:func:`!PyImport_ImportModuleNoBlock`: Use :c:func:"
 "`PyImport_ImportModule` instead."
 msgstr ""
 
 msgid ""
-":c:func:`PyWeakref_GetObject` and :c:func:`PyWeakref_GET_OBJECT`: Use :c:"
+":c:func:`!PyWeakref_GetObject` and :c:func:`!PyWeakref_GET_OBJECT`: Use :c:"
 "func:`PyWeakref_GetRef` instead. The `pythoncapi-compat project <https://"
 "github.com/python/pythoncapi-compat/>`__ can be used to get :c:func:"
 "`PyWeakref_GetRef` on Python 3.12 and older."
-msgstr ""
-
-msgid ""
-":c:type:`Py_UNICODE` type and the :c:macro:`!Py_UNICODE_WIDE` macro: Use :c:"
-"type:`wchar_t` instead."
 msgstr ""
 
 msgid ""
@@ -3875,36 +4641,36 @@ msgid "Python initialization functions, deprecated in Python 3.13:"
 msgstr ""
 
 msgid ""
-":c:func:`Py_GetPath`: Use :c:func:`PyConfig_Get(\"module_search_paths\") "
+":c:func:`!Py_GetPath`: Use :c:func:`PyConfig_Get(\"module_search_paths\") "
 "<PyConfig_Get>` (:data:`sys.path`) instead."
 msgstr ""
 
 msgid ""
-":c:func:`Py_GetPrefix`: Use :c:func:`PyConfig_Get(\"base_prefix\") "
+":c:func:`!Py_GetPrefix`: Use :c:func:`PyConfig_Get(\"base_prefix\") "
 "<PyConfig_Get>` (:data:`sys.base_prefix`) instead. Use :c:func:"
 "`PyConfig_Get(\"prefix\") <PyConfig_Get>` (:data:`sys.prefix`) if :ref:"
 "`virtual environments <venv-def>` need to be handled."
 msgstr ""
 
 msgid ""
-":c:func:`Py_GetExecPrefix`: Use :c:func:`PyConfig_Get(\"base_exec_prefix\") "
+":c:func:`!Py_GetExecPrefix`: Use :c:func:`PyConfig_Get(\"base_exec_prefix\") "
 "<PyConfig_Get>` (:data:`sys.base_exec_prefix`) instead. Use :c:func:"
 "`PyConfig_Get(\"exec_prefix\") <PyConfig_Get>` (:data:`sys.exec_prefix`) if :"
 "ref:`virtual environments <venv-def>` need to be handled."
 msgstr ""
 
 msgid ""
-":c:func:`Py_GetProgramFullPath`: Use :c:func:`PyConfig_Get(\"executable\") "
+":c:func:`!Py_GetProgramFullPath`: Use :c:func:`PyConfig_Get(\"executable\") "
 "<PyConfig_Get>` (:data:`sys.executable`) instead."
 msgstr ""
 
 msgid ""
-":c:func:`Py_GetProgramName`: Use :c:func:`PyConfig_Get(\"executable\") "
+":c:func:`!Py_GetProgramName`: Use :c:func:`PyConfig_Get(\"executable\") "
 "<PyConfig_Get>` (:data:`sys.executable`) instead."
 msgstr ""
 
 msgid ""
-":c:func:`Py_GetPythonHome`: Use :c:func:`PyConfig_Get(\"home\") "
+":c:func:`!Py_GetPythonHome`: Use :c:func:`PyConfig_Get(\"home\") "
 "<PyConfig_Get>` or the :envvar:`PYTHONHOME` environment variable instead."
 msgstr ""
 
@@ -3932,7 +4698,7 @@ msgid ":c:func:`!Py_SetPythonHome()`: Set :c:member:`PyConfig.home` instead."
 msgstr ""
 
 msgid ""
-":c:func:`PySys_ResetWarnOptions`: Clear :data:`sys.warnoptions` and :data:`!"
+":c:func:`!PySys_ResetWarnOptions`: Clear :data:`sys.warnoptions` and :data:`!"
 "warnings.filters` instead."
 msgstr ""
 
@@ -4145,32 +4911,50 @@ msgstr ""
 msgid "Legacy Unicode APIs have been removed. See :pep:`623` for detail."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:macro:`!PyUnicode_WCHAR_KIND`"
-msgstr ""
+msgstr ":c:macro:`!PyUnicode_WCHAR_KIND`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`!PyUnicode_AS_UNICODE`"
-msgstr ""
+msgstr ":c:func:`!PyUnicode_AS_UNICODE`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`!PyUnicode_AsUnicode`"
-msgstr ""
+msgstr ":c:func:`!PyUnicode_AsUnicode`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`!PyUnicode_AsUnicodeAndSize`"
-msgstr ""
+msgstr ":c:func:`!PyUnicode_AsUnicodeAndSize`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`!PyUnicode_AS_DATA`"
-msgstr ""
+msgstr ":c:func:`!PyUnicode_AS_DATA`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`!PyUnicode_FromUnicode`"
-msgstr ""
+msgstr ":c:func:`!PyUnicode_FromUnicode`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`!PyUnicode_GET_SIZE`"
-msgstr ""
+msgstr ":c:func:`!PyUnicode_GET_SIZE`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`!PyUnicode_GetSize`"
-msgstr ""
+msgstr ":c:func:`!PyUnicode_GetSize`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`!PyUnicode_GET_DATA_SIZE`"
-msgstr ""
+msgstr ":c:func:`!PyUnicode_GET_DATA_SIZE`"
 
 msgid ""
 "Remove the ``PyUnicode_InternImmortal()`` function macro. (Contributed by "

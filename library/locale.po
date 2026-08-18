@@ -5,22 +5,23 @@
 #
 # Translators:
 # python-doc bot, 2025
+# Nguyen Duc Tam, 2026
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-17 14:50+0000\n"
-"PO-Revision-Date: 2025-09-16 00:01+0000\n"
-"Last-Translator: python-doc bot, 2025\n"
-"Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
-"vi/)\n"
+"POT-Creation-Date: 2026-05-08 18:34+0000\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: pydocvi 0.1.2\n"
 
 msgid ":mod:`!locale` --- Internationalization services"
 msgstr ""
@@ -61,8 +62,8 @@ msgstr ""
 msgid ""
 "If *locale* is a pair, it is converted to a locale name using the locale "
 "aliasing engine. The language code has the same format as a :ref:`locale "
-"name <locale_name>`, but without encoding and ``@``-modifier. The language "
-"code and encoding can be ``None``."
+"name <locale_name>`, but without encoding. The language code and encoding "
+"can be ``None``."
 msgstr ""
 
 msgid ""
@@ -73,6 +74,8 @@ msgstr ""
 msgid "Example::"
 msgstr "Ví dụ::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import locale\n"
 ">>> loc = locale.setlocale(locale.LC_ALL)  # get current locale\n"
@@ -84,16 +87,29 @@ msgid ""
 ">>> locale.setlocale(locale.LC_ALL, 'C')  # use default (C) locale\n"
 ">>> locale.setlocale(locale.LC_ALL, loc)  # restore saved locale"
 msgstr ""
+">>> import locale\n"
+">>> loc = locale.setlocale(locale.LC_ALL)  # get current locale\n"
+"# use German locale; name and availability varies with platform\n"
+">>> locale.setlocale(locale.LC_ALL, 'de_DE.UTF-8')\n"
+">>> locale.strcoll('f\\xe4n', 'foo')  # compare a string containing an "
+"umlaut\n"
+">>> locale.setlocale(locale.LC_ALL, '')   # use user's preferred locale\n"
+">>> locale.setlocale(locale.LC_ALL, 'C')  # use default (C) locale\n"
+">>> locale.setlocale(locale.LC_ALL, loc)  # restore saved locale"
 
 msgid ""
 ":func:`setlocale` is not thread-safe on most systems. Applications typically "
 "start with a call of::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import locale\n"
 "locale.setlocale(locale.LC_ALL, '')"
 msgstr ""
+"import locale\n"
+"locale.setlocale(locale.LC_ALL, '')"
 
 msgid ""
 "This sets the locale for all categories to the user's default setting "
@@ -102,31 +118,44 @@ msgid ""
 "problems."
 msgstr ""
 
+msgid "Support language codes with ``@``-modifiers."
+msgstr ""
+
 msgid ""
 "Returns the database of the local conventions as a dictionary. This "
 "dictionary has the following strings as keys:"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Category"
-msgstr ""
+msgstr "Category"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Key"
-msgstr ""
+msgstr "Key"
 
 msgid "Meaning"
-msgstr ""
+msgstr "Ý nghĩa"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":const:`LC_NUMERIC`"
-msgstr ""
+msgstr ":const:`LC_NUMERIC`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'decimal_point'``"
-msgstr ""
+msgstr "``'decimal_point'``"
 
 msgid "Decimal point character."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'grouping'``"
-msgstr ""
+msgstr "``'grouping'``"
 
 msgid ""
 "Sequence of numbers specifying which relative positions the "
@@ -135,90 +164,118 @@ msgid ""
 "with a ``0``,  the last group size is repeatedly used."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'thousands_sep'``"
-msgstr ""
+msgstr "``'thousands_sep'``"
 
 msgid "Character used between groups."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":const:`LC_MONETARY`"
-msgstr ""
+msgstr ":const:`LC_MONETARY`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'int_curr_symbol'``"
-msgstr ""
+msgstr "``'int_curr_symbol'``"
 
 msgid "International currency symbol."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'currency_symbol'``"
-msgstr ""
+msgstr "``'currency_symbol'``"
 
 msgid "Local currency symbol."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'p_cs_precedes/n_cs_precedes'``"
-msgstr ""
+msgstr "``'p_cs_precedes/n_cs_precedes'``"
 
 msgid ""
 "Whether the currency symbol precedes the value (for positive resp. negative "
 "values)."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'p_sep_by_space/n_sep_by_space'``"
-msgstr ""
+msgstr "``'p_sep_by_space/n_sep_by_space'``"
 
 msgid ""
 "Whether the currency symbol is separated from the value  by a space (for "
 "positive resp. negative values)."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'mon_decimal_point'``"
-msgstr ""
+msgstr "``'mon_decimal_point'``"
 
 msgid "Decimal point used for monetary values."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'frac_digits'``"
-msgstr ""
+msgstr "``'frac_digits'``"
 
 msgid ""
 "Number of fractional digits used in local formatting of monetary values."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'int_frac_digits'``"
-msgstr ""
+msgstr "``'int_frac_digits'``"
 
 msgid ""
 "Number of fractional digits used in international formatting of monetary "
 "values."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'mon_thousands_sep'``"
-msgstr ""
+msgstr "``'mon_thousands_sep'``"
 
 msgid "Group separator used for monetary values."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'mon_grouping'``"
-msgstr ""
+msgstr "``'mon_grouping'``"
 
 msgid "Equivalent to ``'grouping'``, used for monetary values."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'positive_sign'``"
-msgstr ""
+msgstr "``'positive_sign'``"
 
 msgid "Symbol used to annotate a positive monetary value."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'negative_sign'``"
-msgstr ""
+msgstr "``'negative_sign'``"
 
 msgid "Symbol used to annotate a negative monetary value."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'p_sign_posn/n_sign_posn'``"
-msgstr ""
+msgstr "``'p_sign_posn/n_sign_posn'``"
 
 msgid ""
 "The position of the sign (for positive resp. negative values), see below."
@@ -234,44 +291,60 @@ msgid ""
 "below."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Value"
-msgstr ""
+msgstr "Value"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Explanation"
-msgstr ""
+msgstr "Explanation"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``0``"
-msgstr ""
+msgstr "``0``"
 
 msgid "Currency and value are surrounded by parentheses."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``1``"
-msgstr ""
+msgstr "``1``"
 
 msgid "The sign should precede the value and currency symbol."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``2``"
-msgstr ""
+msgstr "``2``"
 
 msgid "The sign should follow the value and currency symbol."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``3``"
-msgstr ""
+msgstr "``3``"
 
 msgid "The sign should immediately precede the value."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``4``"
-msgstr ""
+msgstr "``4``"
 
 msgid "The sign should immediately follow the value."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``CHAR_MAX``"
-msgstr ""
+msgstr "``CHAR_MAX``"
 
 msgid "Nothing is specified in this locale."
 msgstr ""
@@ -457,6 +530,18 @@ msgid ""
 "containing the language code and encoding. *category* may be one of the :"
 "const:`!LC_\\*` values except :const:`LC_ALL`.  It defaults to :const:"
 "`LC_CTYPE`."
+msgstr ""
+
+msgid ""
+"The language code has the same format as a :ref:`locale name <locale_name>`, "
+"but without encoding. The language code and encoding may be ``None`` if "
+"their values cannot be determined. The \"C\" locale is represented as "
+"``(None, None)``."
+msgstr ""
+
+msgid ""
+"``@``-modifier are no longer silently removed, but included in the language "
+"code."
 msgstr ""
 
 msgid ""
@@ -815,7 +900,9 @@ msgid ""
 msgstr ""
 
 msgid "module"
-msgstr ""
+msgstr "module"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "_locale"
-msgstr ""
+msgstr "_locale"

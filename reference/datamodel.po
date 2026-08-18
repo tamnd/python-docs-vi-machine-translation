@@ -9,18 +9,18 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-19 14:37+0000\n"
-"PO-Revision-Date: 2025-09-16 00:02+0000\n"
-"Last-Translator: Nguyen Duc Tam, 2026\n"
-"Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
-"vi/)\n"
+"POT-Creation-Date: 2026-05-08 18:34+0000\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: pydocvi 0.1.2\n"
 
 msgid "Data model"
 msgstr ""
@@ -149,8 +149,10 @@ msgid ""
 "future."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "None"
-msgstr ""
+msgstr "None"
 
 msgid ""
 "This type has a single value.  There is a single object with this value. "
@@ -159,8 +161,10 @@ msgid ""
 "functions that don't explicitly return anything. Its truth value is false."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "NotImplemented"
-msgstr ""
+msgstr "NotImplemented"
 
 msgid ""
 "This type has a single value.  There is a single object with this value. "
@@ -183,8 +187,10 @@ msgid ""
 "`DeprecationWarning` since Python 3.9."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Ellipsis"
-msgstr ""
+msgstr "Ellipsis"
 
 msgid ""
 "This type has a single value.  There is a single object with this value. "
@@ -192,8 +198,10 @@ msgid ""
 "``Ellipsis``.  Its truth value is true."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`numbers.Number`"
-msgstr ""
+msgstr ":class:`numbers.Number`"
 
 msgid ""
 "These are created by numeric literals and returned as results by arithmetic "
@@ -235,8 +243,10 @@ msgid ""
 "numbers:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`numbers.Integral`"
-msgstr ""
+msgstr ":class:`numbers.Integral`"
 
 msgid ""
 "These represent elements from the mathematical set of integers (positive and "
@@ -275,8 +285,10 @@ msgid ""
 "``\"True\"`` are returned, respectively."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`numbers.Real` (:class:`float`)"
-msgstr ""
+msgstr ":class:`numbers.Real` (:class:`float`)"
 
 msgid ""
 "These represent machine-level double precision floating-point numbers. You "
@@ -288,8 +300,10 @@ msgid ""
 "complicate the language with two kinds of floating-point numbers."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`numbers.Complex` (:class:`complex`)"
-msgstr ""
+msgstr ":class:`numbers.Complex` (:class:`complex`)"
 
 msgid ""
 "These represent complex numbers as a pair of machine-level double precision "
@@ -298,8 +312,10 @@ msgid ""
 "retrieved through the read-only attributes ``z.real`` and ``z.imag``."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Sequences"
-msgstr ""
+msgstr "Sequences"
 
 msgid ""
 "These represent finite ordered sets indexed by non-negative numbers. The "
@@ -353,8 +369,10 @@ msgstr ""
 msgid "The following types are immutable sequences:"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Strings"
-msgstr ""
+msgstr "Strings"
 
 msgid ""
 "A string (:class:`str`) is a sequence of values that represent :dfn:"
@@ -376,8 +394,10 @@ msgid ""
 "used to achieve the opposite."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Tuples"
-msgstr ""
+msgstr "Tuples"
 
 msgid ""
 "The items of a :class:`tuple` are arbitrary Python objects. Tuples of two or "
@@ -388,8 +408,10 @@ msgid ""
 "empty pair of parentheses."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Bytes"
-msgstr ""
+msgstr "Bytes"
 
 msgid ""
 "A :class:`bytes` object is an immutable array.  The items are 8-bit bytes, "
@@ -457,8 +479,10 @@ msgstr ""
 msgid "There are currently two intrinsic set types:"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Sets"
-msgstr ""
+msgstr "Sets"
 
 msgid ""
 "These represent a mutable set. They are created by the built-in :func:`set` "
@@ -475,8 +499,10 @@ msgid ""
 "it can be used again as an element of another set, or as a dictionary key."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Mappings"
-msgstr ""
+msgstr "Mappings"
 
 msgid ""
 "These represent finite sets of objects indexed by arbitrary index sets. The "
@@ -489,8 +515,10 @@ msgstr ""
 msgid "There is currently a single intrinsic mapping type:"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Dictionaries"
-msgstr ""
+msgstr "Dictionaries"
 
 msgid ""
 "These represent finite sets of objects indexed by nearly arbitrary values.  "
@@ -546,11 +574,13 @@ msgstr ""
 msgid "Special read-only attributes"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Attribute"
-msgstr ""
+msgstr "Attribute"
 
 msgid "Meaning"
-msgstr ""
+msgstr "Ý nghĩa"
 
 msgid ""
 "A reference to the :class:`dictionary <dict>` that holds the function's "
@@ -830,8 +860,10 @@ msgid ""
 "__self__>`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Classes"
-msgstr ""
+msgstr "Classes"
 
 msgid ""
 "Classes are callable.  These objects normally act as factories for new "
@@ -849,8 +881,10 @@ msgid ""
 "`~object.__call__` method in their class."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Modules"
-msgstr ""
+msgstr "Modules"
 
 msgid ""
 "Modules are a basic organizational unit of Python code, and are created by "
@@ -900,6 +934,8 @@ msgid ""
 "corresponding attribute on the module itself:"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import typing\n"
 ">>> typing.__name__, typing.__spec__.name\n"
@@ -911,6 +947,15 @@ msgid ""
 ">>> typing.__name__, typing.__spec__.name\n"
 "('keyboard_smashing', 'spelling')"
 msgstr ""
+">>> import typing\n"
+">>> typing.__name__, typing.__spec__.name\n"
+"('typing', 'typing')\n"
+">>> typing.__spec__.name = 'spelling'\n"
+">>> typing.__name__, typing.__spec__.name\n"
+"('typing', 'spelling')\n"
+">>> typing.__name__ = 'keyboard_smashing'\n"
+">>> typing.__name__, typing.__spec__.name\n"
+"('keyboard_smashing', 'spelling')"
 
 msgid ""
 "The name used to uniquely identify the module in the import system. For a "
@@ -1030,49 +1075,27 @@ msgid ""
 msgstr ""
 
 msgid ""
-":attr:`!__file__` and :attr:`!__cached__` are both optional attributes that "
-"may or may not be set. Both attributes should be a :class:`str` when they "
-"are available."
+":attr:`!__file__` is an optional attribute that may or may not be set. Both "
+"attributes should be a :class:`str` when they are available."
 msgstr ""
 
 msgid ""
-":attr:`!__file__` indicates the pathname of the file from which the module "
-"was loaded (if loaded from a file), or the pathname of the shared library "
-"file for extension modules loaded dynamically from a shared library. It "
-"might be missing for certain types of modules, such as C modules that are "
-"statically linked into the interpreter, and the :ref:`import system "
-"<importsystem>` may opt to leave it unset if it has no semantic meaning (for "
-"example, a module loaded from a database)."
+"An optional attribute, :attr:`!__file__` indicates the pathname of the file "
+"from which the module was loaded (if loaded from a file), or the pathname of "
+"the shared library file for extension modules loaded dynamically from a "
+"shared library. It might be missing for certain types of modules, such as C "
+"modules that are statically linked into the interpreter, and the :ref:"
+"`import system <importsystem>` may opt to leave it unset if it has no "
+"semantic meaning (for example, a module loaded from a database)."
 msgstr ""
 
 msgid ""
-"If :attr:`!__file__` is set then the :attr:`!__cached__` attribute might "
-"also be set,  which is the path to any compiled version of the code (for "
-"example, a byte-compiled file). The file does not need to exist to set this "
-"attribute; the path can simply point to where the compiled file *would* "
-"exist (see :pep:`3147`)."
+"Setting ``__cached__`` on a module while failing to set :attr:`!__spec__."
+"cached` is deprecated. In Python 3.15, ``__cached__`` will cease to be set "
+"or taken into consideration by the import system or standard library."
 msgstr ""
 
-msgid ""
-"Note that :attr:`!__cached__` may be set even if :attr:`!__file__` is not "
-"set.  However, that scenario is quite atypical.  Ultimately, the :term:"
-"`loader` is what makes use of the module spec provided by the :term:`finder` "
-"(from which :attr:`!__file__` and :attr:`!__cached__` are derived).  So if a "
-"loader can load from a cached module but otherwise does not load from a "
-"file, that atypical scenario may be appropriate."
-msgstr ""
-
-msgid ""
-"It is **strongly** recommended that you use :attr:`module.__spec__.cached "
-"<importlib.machinery.ModuleSpec.cached>` instead of :attr:`!module."
-"__cached__`."
-msgstr ""
-
-msgid ""
-"Setting :attr:`!__cached__` on a module while failing to set :attr:`!"
-"__spec__.cached` is deprecated. In Python 3.15, :attr:`!__cached__` will "
-"cease to be set or taken into consideration by the import system or standard "
-"library."
+msgid "``__cached__`` is no longer set."
 msgstr ""
 
 msgid "Other writable attributes on module objects"
@@ -1097,6 +1120,19 @@ msgstr ""
 msgid ""
 "The :term:`annotate function` for this module, or ``None`` if the module has "
 "no annotations. See also: :attr:`~object.__annotate__` attributes."
+msgstr ""
+
+msgid ""
+"A container (an object implementing :meth:`~object.__contains__`) of fully "
+"qualified module name strings.  When defined at module scope, any regular :"
+"keyword:`import` statement in that module whose target module name appears "
+"in this container is treated as a :ref:`lazy import <lazy-imports>`, as if "
+"the :keyword:`lazy` keyword had been used.  Imports inside functions, class "
+"bodies, or :keyword:`try`/:keyword:`except`/:keyword:`finally` blocks are "
+"unaffected."
+msgstr ""
+
+msgid "See :ref:`lazy-modules-compat` for details and examples."
 msgstr ""
 
 msgid "Module dictionaries"
@@ -1266,12 +1302,18 @@ msgid ""
 "definition order. Example:"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> class A: pass\n"
 ">>> class B(A): pass\n"
 ">>> A.__subclasses__()\n"
 "[<class 'B'>]"
 msgstr ""
+">>> class A: pass\n"
+">>> class B(A): pass\n"
+">>> A.__subclasses__()\n"
+"[<class 'B'>]"
 
 msgid "Class instances"
 msgstr ""
@@ -1436,16 +1478,6 @@ msgid "The name of the file from which the code was compiled"
 msgstr ""
 
 msgid "The line number of the first line of the function"
-msgstr ""
-
-msgid ""
-"A string encoding the mapping from :term:`bytecode` offsets to line numbers. "
-"For details, see the source code of the interpreter."
-msgstr ""
-
-msgid ""
-"This attribute of code objects is deprecated, and may be removed in Python "
-"3.15."
 msgstr ""
 
 msgid "The required stack size of the code object"
@@ -1761,6 +1793,12 @@ msgstr ""
 msgid ""
 "Slice objects are used to represent slices for :meth:`~object.__getitem__` "
 "methods.  They are also created by the built-in :func:`slice` function."
+msgstr ""
+
+msgid ""
+"The :func:`slice` type now supports :ref:`subscription <subscriptions>`. For "
+"example, ``slice[float]`` may be used in type annotations to indicate a "
+"slice containing :type:`float` objects."
 msgstr ""
 
 msgid ""
@@ -2106,10 +2144,14 @@ msgid ""
 "into a tuple and hashing the tuple. Example::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def __hash__(self):\n"
 "    return hash((self.name, self.nick, self.color))"
 msgstr ""
+"def __hash__(self):\n"
+"    return hash((self.name, self.nick, self.color))"
 
 msgid ""
 ":func:`hash` truncates the value returned from an object's custom :meth:"
@@ -2310,6 +2352,8 @@ msgid ""
 "module object to a subclass of :class:`types.ModuleType`. For example::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import sys\n"
 "from types import ModuleType\n"
@@ -2324,6 +2368,18 @@ msgid ""
 "\n"
 "sys.modules[__name__].__class__ = VerboseModule"
 msgstr ""
+"import sys\n"
+"from types import ModuleType\n"
+"\n"
+"class VerboseModule(ModuleType):\n"
+"    def __repr__(self):\n"
+"        return f'Verbose {self.__name__}'\n"
+"\n"
+"    def __setattr__(self, attr, value):\n"
+"        print(f'Setting {attr}...')\n"
+"        super().__setattr__(attr, value)\n"
+"\n"
+"sys.modules[__name__].__class__ = VerboseModule"
 
 msgid ""
 "Defining module ``__getattr__`` and setting module ``__class__`` only affect "
@@ -2502,8 +2558,10 @@ msgid ""
 "Accordingly, instances cannot override the behavior of a property."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "__slots__"
-msgstr ""
+msgstr "__slots__"
 
 msgid ""
 "*__slots__* allow us to explicitly declare data members (like properties) "
@@ -2571,10 +2629,10 @@ msgid ""
 msgstr ""
 
 msgid ""
-":exc:`TypeError` will be raised if nonempty *__slots__* are defined for a "
-"class derived from a :c:member:`\"variable-length\" built-in type "
-"<PyTypeObject.tp_itemsize>` such as :class:`int`, :class:`bytes`, and :class:"
-"`tuple`."
+":exc:`TypeError` will be raised if *__slots__* other than *__dict__* and "
+"*__weakref__* are defined for a class derived from a :c:member:`\"variable-"
+"length\" built-in type <PyTypeObject.tp_itemsize>` such as :class:`int`, :"
+"class:`bytes`, and :class:`type`, except :class:`tuple`."
 msgstr ""
 
 msgid "Any non-string :term:`iterable` may be assigned to *__slots__*."
@@ -2593,16 +2651,21 @@ msgid ""
 msgstr ""
 
 msgid ""
-":ref:`Multiple inheritance <tut-multiple>` with multiple slotted parent "
-"classes can be used, but only one parent is allowed to have attributes "
-"created by slots (the other bases must have empty slot layouts) - violations "
-"raise :exc:`TypeError`."
+":ref:`Multiple inheritance <multiple-inheritance>` with multiple slotted "
+"parent classes can be used, but only one parent is allowed to have "
+"attributes created by slots (the other bases must have empty slot layouts) - "
+"violations raise :exc:`TypeError`."
 msgstr ""
 
 msgid ""
 "If an :term:`iterator` is used for *__slots__* then a :term:`descriptor` is "
 "created for each of the iterator's values. However, the *__slots__* "
 "attribute will be an empty iterator."
+msgstr ""
+
+msgid ""
+"Allowed defining the *__dict__* and *__weakref__* *__slots__* for any class. "
+"Allowed defining any *__slots__* for a class derived from :class:`tuple`."
 msgstr ""
 
 msgid "Customizing class creation"
@@ -2630,6 +2693,8 @@ msgid ""
 "pass the others over to the base class, as in::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "class Philosopher:\n"
 "    def __init_subclass__(cls, /, default_name, **kwargs):\n"
@@ -2639,6 +2704,13 @@ msgid ""
 "class AustralianPhilosopher(Philosopher, default_name=\"Bruce\"):\n"
 "    pass"
 msgstr ""
+"class Philosopher:\n"
+"    def __init_subclass__(cls, /, default_name, **kwargs):\n"
+"        super().__init_subclass__(**kwargs)\n"
+"        cls.default_name = default_name\n"
+"\n"
+"class AustralianPhilosopher(Philosopher, default_name=\"Bruce\"):\n"
+"    pass"
 
 msgid ""
 "The default implementation ``object.__init_subclass__`` does nothing, but "
@@ -2662,10 +2734,14 @@ msgid ""
 "object has been assigned to *name* in that class::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "class A:\n"
 "    x = C()  # Automatically calls: x.__set_name__(A, 'x')"
 msgstr ""
+"class A:\n"
+"    x = C()  # Automatically calls: x.__set_name__(A, 'x')"
 
 msgid ""
 "If the class variable is assigned after the class is created, :meth:"
@@ -2673,6 +2749,8 @@ msgid ""
 "`__set_name__` can be called directly::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "class A:\n"
 "   pass\n"
@@ -2681,12 +2759,20 @@ msgid ""
 "A.x = c                  # The hook is not called\n"
 "c.__set_name__(A, 'x')   # Manually invoke the hook"
 msgstr ""
+"class A:\n"
+"   pass\n"
+"\n"
+"c = C()\n"
+"A.x = c                  # The hook is not called\n"
+"c.__set_name__(A, 'x')   # Manually invoke the hook"
 
 msgid "See :ref:`class-object-creation` for more details."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Metaclasses"
-msgstr ""
+msgstr "Metaclasses"
 
 msgid ""
 "By default, classes are constructed using :func:`type`. The class body is "
@@ -2701,6 +2787,8 @@ msgid ""
 "both ``MyClass`` and ``MySubclass`` are instances of ``Meta``::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "class Meta(type):\n"
 "    pass\n"
@@ -2711,6 +2799,14 @@ msgid ""
 "class MySubclass(MyClass):\n"
 "    pass"
 msgstr ""
+"class Meta(type):\n"
+"    pass\n"
+"\n"
+"class MyClass(metaclass=Meta):\n"
+"    pass\n"
+"\n"
+"class MySubclass(MyClass):\n"
+"    pass"
 
 msgid ""
 "Any other keyword arguments that are specified in the class definition are "
@@ -2749,22 +2845,28 @@ msgid ""
 "is ignored."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`types.resolve_bases`"
-msgstr ""
+msgstr ":func:`types.resolve_bases`"
 
 msgid "Dynamically resolve bases that are not instances of :class:`type`."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`types.get_original_bases`"
-msgstr ""
+msgstr ":func:`types.get_original_bases`"
 
 msgid ""
 "Retrieve a class's \"original bases\" prior to modifications by :meth:"
 "`~object.__mro_entries__`."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":pep:`560`"
-msgstr ""
+msgstr ":pep:`560`"
 
 msgid "Core support for typing module and generic types."
 msgstr ""
@@ -2981,8 +3083,10 @@ msgstr ""
 msgid "Introducing Python's framework for type annotations"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":ref:`Generic Alias Types<types-genericalias>`"
-msgstr ""
+msgstr ":ref:`Generic Alias Types<types-genericalias>`"
 
 msgid "Documentation for objects representing parameterized generic classes"
 msgstr ""
@@ -3055,6 +3159,8 @@ msgid ""
 "`~object.__getitem__` or :meth:`~object.__class_getitem__` should be called::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "from inspect import isclass\n"
 "\n"
@@ -3079,6 +3185,28 @@ msgid ""
 "            f\"'{class_of_obj.__name__}' object is not subscriptable\"\n"
 "        )"
 msgstr ""
+"from inspect import isclass\n"
+"\n"
+"def subscribe(obj, x):\n"
+"    \"\"\"Return the result of the expression 'obj[x]'\"\"\"\n"
+"\n"
+"    class_of_obj = type(obj)\n"
+"\n"
+"    # If the class of obj defines __getitem__,\n"
+"    # call class_of_obj.__getitem__(obj, x)\n"
+"    if hasattr(class_of_obj, '__getitem__'):\n"
+"        return class_of_obj.__getitem__(obj, x)\n"
+"\n"
+"    # Else, if obj is a class and defines __class_getitem__,\n"
+"    # call obj.__class_getitem__(x)\n"
+"    elif isclass(obj) and hasattr(obj, '__class_getitem__'):\n"
+"        return obj.__class_getitem__(x)\n"
+"\n"
+"    # Else, raise an exception\n"
+"    else:\n"
+"        raise TypeError(\n"
+"            f\"'{class_of_obj.__name__}' object is not subscriptable\"\n"
+"        )"
 
 msgid ""
 "In Python, all classes are themselves instances of other classes. The class "
@@ -3089,6 +3217,8 @@ msgid ""
 "__class_getitem__` being called::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> # list has class \"type\" as its metaclass, like most classes:\n"
 ">>> type(list)\n"
@@ -3102,6 +3232,17 @@ msgid ""
 ">>> type(list[int])\n"
 "<class 'types.GenericAlias'>"
 msgstr ""
+">>> # list has class \"type\" as its metaclass, like most classes:\n"
+">>> type(list)\n"
+"<class 'type'>\n"
+">>> type(dict) == type(list) == type(tuple) == type(str) == type(bytes)\n"
+"True\n"
+">>> # \"list[int]\" calls \"list.__class_getitem__(int)\"\n"
+">>> list[int]\n"
+"list[int]\n"
+">>> # list.__class_getitem__ returns a GenericAlias object:\n"
+">>> type(list[int])\n"
+"<class 'types.GenericAlias'>"
 
 msgid ""
 "However, if a class has a custom metaclass that defines :meth:`~object."
@@ -3109,6 +3250,8 @@ msgid ""
 "example of this can be found in the :mod:`enum` module::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> from enum import Enum\n"
 ">>> class Menu(Enum):\n"
@@ -3127,6 +3270,22 @@ msgid ""
 ">>> type(Menu['SPAM'])\n"
 "<enum 'Menu'>"
 msgstr ""
+">>> from enum import Enum\n"
+">>> class Menu(Enum):\n"
+"...     \"\"\"A breakfast menu\"\"\"\n"
+"...     SPAM = 'spam'\n"
+"...     BACON = 'bacon'\n"
+"...\n"
+">>> # Enum classes have a custom metaclass:\n"
+">>> type(Menu)\n"
+"<class 'enum.EnumMeta'>\n"
+">>> # EnumMeta defines __getitem__,\n"
+">>> # so __class_getitem__ is not called,\n"
+">>> # and the result is not a GenericAlias object:\n"
+">>> Menu['SPAM']\n"
+"<Menu.SPAM: 'spam'>\n"
+">>> type(Menu['SPAM'])\n"
+"<enum 'Menu'>"
 
 msgid ":pep:`560` - Core Support for typing module and generic types"
 msgstr ""
@@ -3251,8 +3410,10 @@ msgid ""
 "and :meth:`~object.__delitem__`. A call like ::"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "a[1:2] = b"
-msgstr ""
+msgstr "a[1:2] = b"
 
 msgid "is translated to ::"
 msgstr ""
@@ -3450,6 +3611,7 @@ msgstr ""
 msgid ""
 ":func:`int` no longer delegates to the :meth:`~object.__trunc__` method."
 msgstr ""
+":func:`int` không còn ủy quyền cho phương thức :meth:`~object.__trunc__` nữa."
 
 msgid "With Statement Context Managers"
 msgstr ""
@@ -3598,14 +3760,18 @@ msgid ""
 "Introduces the Python ``__buffer__`` and ``__release_buffer__`` methods."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`collections.abc.Buffer`"
-msgstr ""
+msgstr ":class:`collections.abc.Buffer`"
 
 msgid "ABC for buffer types."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Annotations"
-msgstr ""
+msgstr "Annotations"
 
 msgid ""
 "Functions, classes, and modules may contain :term:`annotations "
@@ -3670,6 +3836,8 @@ msgid ""
 "following code raises an exception::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> class C:\n"
 "...     pass\n"
@@ -3681,6 +3849,15 @@ msgid ""
 "  File \"<stdin>\", line 1, in <module>\n"
 "TypeError: object of type 'C' has no len()"
 msgstr ""
+">>> class C:\n"
+"...     pass\n"
+"...\n"
+">>> c = C()\n"
+">>> c.__len__ = lambda: 5\n"
+">>> len(c)\n"
+"Traceback (most recent call last):\n"
+"  File \"<stdin>\", line 1, in <module>\n"
+"TypeError: object of type 'C' has no len()"
 
 msgid ""
 "The rationale behind this behaviour lies with a number of special methods "
@@ -3690,6 +3867,8 @@ msgid ""
 "invoked on the type object itself::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> 1 .__hash__() == hash(1)\n"
 "True\n"
@@ -3698,6 +3877,12 @@ msgid ""
 "  File \"<stdin>\", line 1, in <module>\n"
 "TypeError: descriptor '__hash__' of 'int' object needs an argument"
 msgstr ""
+">>> 1 .__hash__() == hash(1)\n"
+"True\n"
+">>> int.__hash__() == hash(int)\n"
+"Traceback (most recent call last):\n"
+"  File \"<stdin>\", line 1, in <module>\n"
+"TypeError: descriptor '__hash__' of 'int' object needs an argument"
 
 msgid ""
 "Incorrectly attempting to invoke an unbound method of a class in this way is "
@@ -3705,12 +3890,18 @@ msgid ""
 "the instance when looking up special methods::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> type(1).__hash__(1) == hash(1)\n"
 "True\n"
 ">>> type(int).__hash__(int) == hash(int)\n"
 "True"
 msgstr ""
+">>> type(1).__hash__(1) == hash(1)\n"
+"True\n"
+">>> type(int).__hash__(int) == hash(int)\n"
+"True"
 
 msgid ""
 "In addition to bypassing any instance attributes in the interest of "
@@ -3718,6 +3909,8 @@ msgid ""
 "meth:`~object.__getattribute__` method even of the object's metaclass::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> class Meta(type):\n"
 "...     def __getattribute__(*args):\n"
@@ -3741,6 +3934,27 @@ msgid ""
 ">>> len(c)                      # Implicit lookup\n"
 "10"
 msgstr ""
+">>> class Meta(type):\n"
+"...     def __getattribute__(*args):\n"
+"...         print(\"Metaclass getattribute invoked\")\n"
+"...         return type.__getattribute__(*args)\n"
+"...\n"
+">>> class C(object, metaclass=Meta):\n"
+"...     def __len__(self):\n"
+"...         return 10\n"
+"...     def __getattribute__(*args):\n"
+"...         print(\"Class getattribute invoked\")\n"
+"...         return object.__getattribute__(*args)\n"
+"...\n"
+">>> c = C()\n"
+">>> c.__len__()                 # Explicit lookup via instance\n"
+"Class getattribute invoked\n"
+"10\n"
+">>> type(c).__len__(c)          # Explicit lookup via type\n"
+"Metaclass getattribute invoked\n"
+"10\n"
+">>> len(c)                      # Implicit lookup\n"
+"10"
 
 msgid ""
 "Bypassing the :meth:`~object.__getattribute__` machinery in this fashion "
@@ -3750,8 +3964,10 @@ msgid ""
 "consistently invoked by the interpreter)."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Coroutines"
-msgstr ""
+msgstr "Coroutines"
 
 msgid "Awaitable Objects"
 msgstr ""
@@ -3872,6 +4088,8 @@ msgstr ""
 msgid "An example of an asynchronous iterable object::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "class Reader:\n"
 "    async def readline(self):\n"
@@ -3886,6 +4104,18 @@ msgid ""
 "            raise StopAsyncIteration\n"
 "        return val"
 msgstr ""
+"class Reader:\n"
+"    async def readline(self):\n"
+"        ...\n"
+"\n"
+"    def __aiter__(self):\n"
+"        return self\n"
+"\n"
+"    async def __anext__(self):\n"
+"        val = await self.readline()\n"
+"        if val == b'':\n"
+"            raise StopAsyncIteration\n"
+"        return val"
 
 msgid ""
 "Prior to Python 3.7, :meth:`~object.__aiter__` could return an *awaitable* "
@@ -3925,6 +4155,8 @@ msgstr ""
 msgid "An example of an asynchronous context manager class::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "class AsyncContextManager:\n"
 "    async def __aenter__(self):\n"
@@ -3933,6 +4165,12 @@ msgid ""
 "    async def __aexit__(self, exc_type, exc, tb):\n"
 "        await log('exiting context')"
 msgstr ""
+"class AsyncContextManager:\n"
+"    async def __aenter__(self):\n"
+"        await log('entering context')\n"
+"\n"
+"    async def __aexit__(self, exc_type, exc, tb):\n"
+"        await log('exiting context')"
 
 msgid "Footnotes"
 msgstr " Chú thích"
@@ -3971,19 +4209,23 @@ msgid ""
 msgstr ""
 
 msgid "object"
-msgstr ""
+msgstr "object"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "data"
-msgstr ""
+msgstr "data"
 
 msgid "built-in function"
-msgstr ""
+msgstr "hàm tích hợp sẵn"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "id"
-msgstr ""
+msgstr "id"
 
 msgid "type"
-msgstr ""
+msgstr "type"
 
 msgid "identity of an object"
 msgstr ""
@@ -4009,74 +4251,114 @@ msgstr ""
 msgid "unreachable object"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "container"
-msgstr ""
+msgstr "container"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "hierarchy"
-msgstr ""
+msgstr "hierarchy"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "extension"
-msgstr ""
+msgstr "extension"
 
 msgid "module"
-msgstr ""
+msgstr "module"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "C"
-msgstr ""
+msgstr "C"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "language"
-msgstr ""
+msgstr "language"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "attribute"
-msgstr ""
+msgstr "attribute"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "special"
-msgstr ""
+msgstr "special"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "generic"
-msgstr ""
+msgstr "generic"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "..."
-msgstr ""
+msgstr "..."
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=d132b9201f27 run=2026-08-17T16:43Z
+#, fuzzy
 msgid "ellipsis literal"
-msgstr ""
+msgstr "chuỗi ký tự ellipsis"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "numeric"
-msgstr ""
+msgstr "numeric"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "integer"
-msgstr ""
+msgstr "integer"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "representation"
-msgstr ""
+msgstr "representation"
 
 msgid "Boolean"
-msgstr ""
+msgstr "Boolean"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "False"
-msgstr ""
+msgstr "False"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "True"
-msgstr ""
+msgstr "True"
 
 msgid "floating-point"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "number"
-msgstr ""
+msgstr "number"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Java"
-msgstr ""
+msgstr "Java"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "complex"
-msgstr ""
+msgstr "complex"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "len"
-msgstr ""
+msgstr "len"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "sequence"
-msgstr ""
+msgstr "sequence"
 
 msgid "index operation"
 msgstr ""
@@ -4084,11 +4366,15 @@ msgstr ""
 msgid "item selection"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "subscription"
-msgstr ""
+msgstr "subscription"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "slicing"
-msgstr ""
+msgstr "slicing"
 
 msgid "start (slice object attribute)"
 msgstr ""
@@ -4102,104 +4388,160 @@ msgstr ""
 msgid "immutable sequence"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "immutable"
-msgstr ""
+msgstr "immutable"
 
 msgid "string"
-msgstr ""
+msgstr "chuỗi"
 
 msgid "immutable sequences"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "chr"
-msgstr ""
+msgstr "chr"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "ord"
-msgstr ""
+msgstr "ord"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "character"
-msgstr ""
+msgstr "character"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "item"
-msgstr ""
+msgstr "item"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Unicode"
-msgstr ""
+msgstr "Unicode"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "tuple"
-msgstr ""
+msgstr "tuple"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "singleton"
-msgstr ""
+msgstr "singleton"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "empty"
-msgstr ""
+msgstr "empty"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "bytes"
-msgstr ""
+msgstr "bytes"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "byte"
-msgstr ""
+msgstr "byte"
 
 msgid "mutable sequence"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "mutable"
-msgstr ""
+msgstr "mutable"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "assignment"
-msgstr ""
+msgstr "assignment"
 
 msgid "statement"
-msgstr ""
+msgstr "câu lệnh"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "array"
-msgstr ""
+msgstr "array"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "collections"
-msgstr ""
+msgstr "collections"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "list"
-msgstr ""
+msgstr "list"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "bytearray"
-msgstr ""
+msgstr "bytearray"
 
 msgid "set type"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "set"
-msgstr ""
+msgstr "set"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "frozenset"
-msgstr ""
+msgstr "frozenset"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "mapping"
-msgstr ""
+msgstr "mapping"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "dictionary"
-msgstr ""
+msgstr "dictionary"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "dbm.ndbm"
-msgstr ""
+msgstr "dbm.ndbm"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "dbm.gnu"
-msgstr ""
+msgstr "dbm.gnu"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "callable"
-msgstr ""
+msgstr "callable"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "function"
-msgstr ""
+msgstr "function"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "call"
-msgstr ""
+msgstr "call"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "invocation"
-msgstr ""
+msgstr "invocation"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "argument"
-msgstr ""
+msgstr "argument"
 
 msgid "user-defined"
 msgstr ""
@@ -4216,11 +4558,15 @@ msgstr ""
 msgid "__globals__ (function attribute)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "global"
-msgstr ""
+msgstr "global"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "namespace"
-msgstr ""
+msgstr "namespace"
 
 msgid "__doc__ (function attribute)"
 msgstr ""
@@ -4252,8 +4598,10 @@ msgstr ""
 msgid "__type_params__ (function attribute)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "method"
-msgstr ""
+msgstr "method"
 
 msgid "user-defined method"
 msgstr ""
@@ -4273,14 +4621,20 @@ msgstr ""
 msgid "__module__ (method attribute)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "generator"
-msgstr ""
+msgstr "generator"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "iterator"
-msgstr ""
+msgstr "iterator"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "coroutine"
-msgstr ""
+msgstr "coroutine"
 
 msgid "asynchronous generator"
 msgstr ""
@@ -4295,7 +4649,7 @@ msgid "built-in"
 msgstr ""
 
 msgid "import"
-msgstr ""
+msgstr "import"
 
 msgid "__name__ (module attribute)"
 msgstr ""
@@ -4315,9 +4669,6 @@ msgstr ""
 msgid "__file__ (module attribute)"
 msgstr ""
 
-msgid "__cached__ (module attribute)"
-msgstr ""
-
 msgid "__doc__ (module attribute)"
 msgstr ""
 
@@ -4327,17 +4678,24 @@ msgstr ""
 msgid "__annotate__ (module attribute)"
 msgstr ""
 
+msgid "__lazy_modules__ (module attribute)"
+msgstr ""
+
 msgid "__dict__ (module attribute)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "class"
-msgstr ""
+msgstr "class"
 
 msgid "class instance"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "instance"
-msgstr ""
+msgstr "instance"
 
 msgid "class object"
 msgstr ""
@@ -4381,11 +4739,15 @@ msgstr ""
 msgid "__class__ (instance attribute)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "open"
-msgstr ""
+msgstr "open"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "io"
-msgstr ""
+msgstr "io"
 
 msgid "popen() (in module os)"
 msgstr ""
@@ -4393,17 +4755,25 @@ msgstr ""
 msgid "makefile() (socket method)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "sys.stdin"
-msgstr ""
+msgstr "sys.stdin"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "sys.stdout"
-msgstr ""
+msgstr "sys.stdout"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "sys.stderr"
-msgstr ""
+msgstr "sys.stderr"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "stdio"
-msgstr ""
+msgstr "stdio"
 
 msgid "stdin (in module sys)"
 msgstr ""
@@ -4420,11 +4790,15 @@ msgstr ""
 msgid "types, internal"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "bytecode"
-msgstr ""
+msgstr "bytecode"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "code"
-msgstr ""
+msgstr "code"
 
 msgid "code object"
 msgstr ""
@@ -4451,9 +4825,6 @@ msgid "co_firstlineno (code object attribute)"
 msgstr ""
 
 msgid "co_flags (code object attribute)"
-msgstr ""
-
-msgid "co_lnotab (code object attribute)"
 msgstr ""
 
 msgid "co_name (code object attribute)"
@@ -4483,8 +4854,10 @@ msgstr ""
 msgid "documentation string"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "frame"
-msgstr ""
+msgstr "frame"
 
 msgid "f_back (frame attribute)"
 msgstr ""
@@ -4519,23 +4892,35 @@ msgstr ""
 msgid "f_lineno (frame attribute)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "traceback"
-msgstr ""
+msgstr "traceback"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "stack"
-msgstr ""
+msgstr "stack"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "trace"
-msgstr ""
+msgstr "trace"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "exception"
-msgstr ""
+msgstr "exception"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "handler"
-msgstr ""
+msgstr "handler"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "execution"
-msgstr ""
+msgstr "execution"
 
 msgid "exc_info (in module sys)"
 msgstr ""
@@ -4543,14 +4928,20 @@ msgstr ""
 msgid "last_traceback (in module sys)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "sys.exc_info"
-msgstr ""
+msgstr "sys.exc_info"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "sys.exception"
-msgstr ""
+msgstr "sys.exception"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "sys.last_traceback"
-msgstr ""
+msgstr "sys.last_traceback"
 
 msgid "tb_frame (traceback attribute)"
 msgstr ""
@@ -4561,41 +4952,59 @@ msgstr ""
 msgid "tb_lasti (traceback attribute)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "try"
-msgstr ""
+msgstr "try"
 
 msgid "tb_next (traceback attribute)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "slice"
-msgstr ""
+msgstr "slice"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "operator"
-msgstr ""
+msgstr "operator"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "overloading"
-msgstr ""
+msgstr "overloading"
 
 msgid "__getitem__() (mapping object method)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "subclassing"
-msgstr ""
+msgstr "subclassing"
 
 msgid "immutable types"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "constructor"
-msgstr ""
+msgstr "constructor"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "destructor"
-msgstr ""
+msgstr "destructor"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "finalizer"
-msgstr ""
+msgstr "finalizer"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "del"
-msgstr ""
+msgstr "del"
 
 msgid "repr() (built-in function)"
 msgstr ""
@@ -4607,7 +5016,7 @@ msgid "__str__() (object method)"
 msgstr ""
 
 msgid "format() (built-in function)"
-msgstr ""
+msgstr "format() (hàm tích hợp sẵn)"
 
 msgid "print() (built-in function)"
 msgstr ""
@@ -4615,17 +5024,25 @@ msgstr ""
 msgid "__format__() (object method)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "conversion"
-msgstr ""
+msgstr "conversion"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "print"
-msgstr ""
+msgstr "print"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "comparisons"
-msgstr ""
+msgstr "comparisons"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "hash"
-msgstr ""
+msgstr "hash"
 
 msgid "__len__() (mapping object method)"
 msgstr ""
@@ -4639,8 +5056,10 @@ msgstr ""
 msgid "__class__ (module attribute)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "metaclass"
-msgstr ""
+msgstr "metaclass"
 
 msgid "= (equals)"
 msgstr ""
@@ -4654,8 +5073,10 @@ msgstr ""
 msgid "__prepare__ (metaclass method)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "body"
-msgstr ""
+msgstr "body"
 
 msgid "__class__ (method cell)"
 msgstr ""
@@ -4666,26 +5087,40 @@ msgstr ""
 msgid "__bool__() (object method)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "divmod"
-msgstr ""
+msgstr "divmod"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "pow"
-msgstr ""
+msgstr "pow"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "abs"
-msgstr ""
+msgstr "abs"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "int"
-msgstr ""
+msgstr "int"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "float"
-msgstr ""
+msgstr "float"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "round"
-msgstr ""
+msgstr "round"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "with"
-msgstr ""
+msgstr "with"
 
 msgid "context manager"
 msgstr ""

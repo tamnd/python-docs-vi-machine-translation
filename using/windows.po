@@ -9,18 +9,18 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-21 15:07+0000\n"
-"PO-Revision-Date: 2025-09-16 00:02+0000\n"
-"Last-Translator: Nguyen Duc Tam, 2026\n"
-"Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
-"vi/)\n"
+"POT-Creation-Date: 2026-05-08 18:34+0000\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: pydocvi 0.1.2\n"
 
 msgid "Using Python on Windows"
 msgstr ""
@@ -86,8 +86,10 @@ msgstr ""
 msgid "Python install manager"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Installation"
-msgstr ""
+msgstr "Installation"
 
 msgid ""
 "The Python install manager can be installed from the `Microsoft Store app`_ "
@@ -482,8 +484,10 @@ msgid ""
 "with ``--purge`` before uninstalling the Python install manager."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Configuration"
-msgstr ""
+msgstr "Configuration"
 
 msgid ""
 "Python install manager is configured with a hierarchy of configuration "
@@ -525,22 +529,30 @@ msgstr ""
 msgid "Environment Variable"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Description"
-msgstr ""
+msgstr "Description"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``default_tag``"
-msgstr ""
+msgstr "``default_tag``"
 
 msgid ""
 "The preferred default version to launch or install. By default, this is "
 "interpreted as the most recent non-prerelease version from the CPython team."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``default_platform``"
-msgstr ""
+msgstr "``default_platform``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``PYTHON_MANAGER_DEFAULT_PLATFORM``"
-msgstr ""
+msgstr "``PYTHON_MANAGER_DEFAULT_PLATFORM``"
 
 msgid ""
 "The preferred default platform to launch or install. This is treated as a "
@@ -549,17 +561,23 @@ msgid ""
 "but will use ``3.14`` if no tagged install exists."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``logs_dir``"
-msgstr ""
+msgstr "``logs_dir``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``PYTHON_MANAGER_LOGS``"
-msgstr ""
+msgstr "``PYTHON_MANAGER_LOGS``"
 
 msgid "The location where log files are written. By default, :file:`%TEMP%`."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``automatic_install``"
-msgstr ""
+msgstr "``automatic_install``"
 
 msgid ""
 "True to allow automatic installs when using ``py exec`` to launch (or ``py`` "
@@ -567,33 +585,45 @@ msgid ""
 "install, regardless of this setting. By default, true."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``include_unmanaged``"
-msgstr ""
+msgstr "``include_unmanaged``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``PYTHON_MANAGER_INCLUDE_UNMANAGED``"
-msgstr ""
+msgstr "``PYTHON_MANAGER_INCLUDE_UNMANAGED``"
 
 msgid ""
 "True to allow listing and launching runtimes that were not installed by the "
 "Python install manager, or false to exclude them. By default, true."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``shebang_can_run_anything``"
-msgstr ""
+msgstr "``shebang_can_run_anything``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``PYTHON_MANAGER_SHEBANG_CAN_RUN_ANYTHING``"
-msgstr ""
+msgstr "``PYTHON_MANAGER_SHEBANG_CAN_RUN_ANYTHING``"
 
 msgid ""
 "True to allow shebangs in ``.py`` files to launch applications other than "
 "Python runtimes, or false to prevent it. By default, true."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``log_level``"
-msgstr ""
+msgstr "``log_level``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``PYMANAGER_VERBOSE``, ``PYMANAGER_DEBUG``"
-msgstr ""
+msgstr "``PYMANAGER_VERBOSE``, ``PYMANAGER_DEBUG``"
 
 msgid ""
 "Set the default level of output (0-50). By default, 20. Lower values produce "
@@ -602,28 +632,38 @@ msgid ""
 "configuration."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``confirm``"
-msgstr ""
+msgstr "``confirm``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``PYTHON_MANAGER_CONFIRM``"
-msgstr ""
+msgstr "``PYTHON_MANAGER_CONFIRM``"
 
 msgid ""
 "True to confirm certain actions before taking them (such as uninstall), or "
 "false to skip the confirmation. By default, true."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``install.source``"
-msgstr ""
+msgstr "``install.source``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``PYTHON_MANAGER_SOURCE_URL``"
-msgstr ""
+msgstr "``PYTHON_MANAGER_SOURCE_URL``"
 
 msgid "Override the index feed to obtain new installs from."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``install.enable_entrypoints``"
-msgstr ""
+msgstr "``install.enable_entrypoints``"
 
 msgid "(none)"
 msgstr ""
@@ -635,19 +675,25 @@ msgid ""
 "should run ``py install --refresh`` after changing this setting."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``list.format``"
-msgstr ""
+msgstr "``list.format``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``PYTHON_MANAGER_LIST_FORMAT``"
-msgstr ""
+msgstr "``PYTHON_MANAGER_LIST_FORMAT``"
 
 msgid ""
 "Specify the default format used by the ``py list`` command. By default, "
 "``table``."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``install_dir``"
-msgstr ""
+msgstr "``install_dir``"
 
 msgid ""
 "Specify the root directory that runtimes will be installed into. If you "
@@ -655,8 +701,10 @@ msgid ""
 "you move them to the new location."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``global_dir``"
-msgstr ""
+msgstr "``global_dir``"
 
 msgid ""
 "Specify the directory where global commands (such as ``python3.14.exe`` and "
@@ -664,8 +712,10 @@ msgid ""
 "`PATH` to make the commands available from your terminal."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``download_dir``"
-msgstr ""
+msgstr "``download_dir``"
 
 msgid ""
 "Specify the directory where downloaded files are stored. This directory is a "
@@ -694,26 +744,38 @@ msgid ""
 "interpreter to use.  The supported virtual commands are:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``/usr/bin/env <ALIAS>``"
-msgstr ""
+msgstr "``/usr/bin/env <ALIAS>``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``/usr/bin/env -S <ALIAS>``"
-msgstr ""
+msgstr "``/usr/bin/env -S <ALIAS>``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``/usr/bin/<ALIAS>``"
-msgstr ""
+msgstr "``/usr/bin/<ALIAS>``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``/usr/local/bin/<ALIAS>``"
-msgstr ""
+msgstr "``/usr/local/bin/<ALIAS>``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``<ALIAS>``"
-msgstr ""
+msgstr "``<ALIAS>``"
 
 msgid "For example, if the first line of your script starts with"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "#! /usr/bin/python"
-msgstr ""
+msgstr "#! /usr/bin/python"
 
 msgid ""
 "The default Python or an active virtual environment will be located and "
@@ -818,6 +880,8 @@ msgid ""
 "WinGet, which is included with all supported versions of Windows:"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "$> winget install 9NQ7512CXL7T -e --accept-package-agreements --disable-"
 "interactivity\n"
@@ -825,6 +889,11 @@ msgid ""
 "# Optionally run the configuration checker and accept all changes\n"
 "$> py install --configure -y"
 msgstr ""
+"$> winget install 9NQ7512CXL7T -e --accept-package-agreements --disable-"
+"interactivity\n"
+"\n"
+"# Optionally run the configuration checker and accept all changes\n"
+"$> py install --configure -y"
 
 msgid ""
 "To download the Python install manager and install on another machine, the "
@@ -931,57 +1000,73 @@ msgstr ""
 msgid "Administrative configuration options"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``base_config``"
-msgstr ""
+msgstr "``base_config``"
 
 msgid ""
 "The highest priority configuration file to read. Note that only the built-in "
 "configuration file and the registry can modify this setting."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``user_config``"
-msgstr ""
+msgstr "``user_config``"
 
 msgid "The second configuration file to read."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``additional_config``"
-msgstr ""
+msgstr "``additional_config``"
 
 msgid "The third configuration file to read."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``registry_override_key``"
-msgstr ""
+msgstr "``registry_override_key``"
 
 msgid ""
 "Registry location to check for overrides. Note that only the built-in "
 "configuration file can modify this setting."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``bundled_dir``"
-msgstr ""
+msgstr "``bundled_dir``"
 
 msgid "Read-only directory containing locally cached files."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``install.fallback_source``"
-msgstr ""
+msgstr "``install.fallback_source``"
 
 msgid ""
 "Path or URL to an index to consult when the main index cannot be accessed."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``install.enable_shortcut_kinds``"
-msgstr ""
+msgstr "``install.enable_shortcut_kinds``"
 
 msgid ""
 "Comma-separated list of shortcut kinds to allow (e.g. ``\"pep514,start\"``). "
 "Enabled shortcuts may still be disabled by ``disable_shortcut_kinds``."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``install.disable_shortcut_kinds``"
-msgstr ""
+msgstr "``install.disable_shortcut_kinds``"
 
 msgid ""
 "Comma-separated list of shortcut kinds to exclude (e.g. ``\"pep514,"
@@ -989,8 +1074,10 @@ msgid ""
 "``enable_shortcut_kinds``."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``install.hard_link_entrypoints``"
-msgstr ""
+msgstr "``install.hard_link_entrypoints``"
 
 msgid ""
 "True to use hard links for global shortcuts to save disk space. If false, "
@@ -1000,40 +1087,50 @@ msgid ""
 "systems that have issues with file links."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``pep514_root``"
-msgstr ""
+msgstr "``pep514_root``"
 
 msgid ""
 "Registry location to read and write PEP 514 entries into. By default, :file:"
 "`HKEY_CURRENT_USER\\\\Software\\\\Python`."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``start_folder``"
-msgstr ""
+msgstr "``start_folder``"
 
 msgid ""
 "Start menu folder to write shortcuts into. By default, ``Python``. This path "
 "is relative to the user's Programs folder."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``virtual_env``"
-msgstr ""
+msgstr "``virtual_env``"
 
 msgid ""
 "Path to the active virtual environment. By default, this is "
 "``%VIRTUAL_ENV%``, but may be set empty to disable venv detection."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``shebang_can_run_anything_silently``"
-msgstr ""
+msgstr "``shebang_can_run_anything_silently``"
 
 msgid ""
 "True to suppress visible warnings when a shebang launches an application "
 "other than a Python runtime."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``source_settings``"
-msgstr ""
+msgstr "``source_settings``"
 
 msgid ""
 "A mapping from source URL to settings specific to that index. When multiple "
@@ -1112,6 +1209,8 @@ msgid ""
 "python.org/ftp/python/index-windows.json.cat``."
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "{\n"
 "  \"source_settings\": {\n"
@@ -1126,6 +1225,18 @@ msgid ""
 "  }\n"
 "}"
 msgstr ""
+"{\n"
+"  \"source_settings\": {\n"
+"    \"https://www.python.org/ftp/python/index-windows.json\": {\n"
+"      \"requires_signature\": true,\n"
+"      \"required_root_subject\": \"CN=Microsoft Identity Verification Root "
+"Certificate Authority 2020\",\n"
+"      \"required_publisher_subject\": \"CN=Python Software Foundation\",\n"
+"      \"required_publisher_eku\": "
+"\"1.3.6.1.4.1.311.97.608394634.79987812.305991749.578777327\"\n"
+"    }\n"
+"  }\n"
+"}"
 
 msgid ""
 "The same settings could be specified in the ``index.json`` file instead. In "
@@ -1134,6 +1245,8 @@ msgid ""
 "other checks are used."
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "{\n"
 "  \"requires_signature\": true,\n"
@@ -1143,6 +1256,13 @@ msgid ""
 "  ]\n"
 "}"
 msgstr ""
+"{\n"
+"  \"requires_signature\": true,\n"
+"  \"required_publisher_subject\": \"CN=Python Software Foundation\",\n"
+"  \"versions\": [\n"
+"    // ...\n"
+"  ]\n"
+"}"
 
 msgid ""
 "When settings from inside a feed are used, the user is notified and the "
@@ -1167,6 +1287,8 @@ msgid ""
 "disables signature checking for that feed."
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "\"source_settings\": {\n"
 "  \"https://www.example.com/feed-with-invalid-signature.json\": {\n"
@@ -1174,9 +1296,16 @@ msgid ""
 "  }\n"
 "}"
 msgstr ""
+"\"source_settings\": {\n"
+"  \"https://www.example.com/feed-with-invalid-signature.json\": {\n"
+"    \"requires_signature\": false\n"
+"  }\n"
+"}"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Troubleshooting"
-msgstr ""
+msgstr "Troubleshooting"
 
 msgid ""
 "If your Python install manager does not seem to be working correctly, please "
@@ -1186,8 +1315,10 @@ msgid ""
 "by default)."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Symptom"
-msgstr ""
+msgstr "Symptom"
 
 msgid "Things to try"
 msgstr ""
@@ -1487,6 +1618,8 @@ msgid ""
 "directory that contains the Python installation:"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "# Without -ExcludeVersion\n"
 "> .\\python.3.5.2\\tools\\python.exe -V\n"
@@ -1496,6 +1629,13 @@ msgid ""
 "> .\\python\\tools\\python.exe -V\n"
 "Python 3.5.2"
 msgstr ""
+"# Without -ExcludeVersion\n"
+"> .\\python.3.5.2\\tools\\python.exe -V\n"
+"Python 3.5.2\n"
+"\n"
+"# With -ExcludeVersion\n"
+"> .\\python\\tools\\python.exe -V\n"
+"Python 3.5.2"
 
 msgid ""
 "In general, nuget packages are not upgradeable, and newer versions should be "
@@ -1622,6 +1762,9 @@ msgstr ""
 msgid "UTF-8 mode"
 msgstr ""
 
+msgid "Python UTF-8 mode is now enabled by default (:pep:`686`)."
+msgstr ""
+
 msgid ""
 "Windows still uses legacy encodings for the system encoding (the ANSI Code "
 "Page).  Python uses it for the default encoding of text files (e.g. :func:"
@@ -1634,24 +1777,25 @@ msgid ""
 msgstr ""
 
 msgid ""
-"You can use the :ref:`Python UTF-8 Mode <utf8-mode>` to change the default "
-"text encoding to UTF-8. You can enable the :ref:`Python UTF-8 Mode <utf8-"
-"mode>` via the ``-X utf8`` command line option, or the ``PYTHONUTF8=1`` "
-"environment variable.  See :envvar:`PYTHONUTF8` for enabling UTF-8 mode, "
-"and :ref:`setting-envvars` for how to modify environment variables."
+"The :ref:`Python UTF-8 Mode <utf8-mode>`, enabled by default, can help by "
+"changing the default text encoding to UTF-8. When the :ref:`UTF-8 mode <utf8-"
+"mode>` is enabled, you can still use the system encoding (the ANSI Code "
+"Page) via the \"mbcs\" codec."
 msgstr ""
 
 msgid ""
-"When the :ref:`Python UTF-8 Mode <utf8-mode>` is enabled, you can still use "
-"the system encoding (the ANSI Code Page) via the \"mbcs\" codec."
+"You can disable the :ref:`Python UTF-8 Mode <utf8-mode>` via the ``-X "
+"utf8=0`` command line option, or the ``PYTHONUTF8=0`` environment variable.  "
+"See :envvar:`PYTHONUTF8` for disabling UTF-8 mode, and :ref:`setting-"
+"envvars` for how to modify environment variables."
 msgstr ""
 
 msgid ""
-"Note that adding ``PYTHONUTF8=1`` to the default environment variables will "
-"affect all Python 3.7+ applications on your system. If you have any Python "
-"3.7+ applications which rely on the legacy system encoding, it is "
-"recommended to set the environment variable temporarily or use the ``-X "
-"utf8`` command line option."
+"Adding ``PYTHONUTF8={0,1}`` to the default environment variables will affect "
+"all Python 3.7+ applications on your system. If you have any Python 3.7+ "
+"applications which rely on the legacy system encoding, it is recommended to "
+"set the environment variable temporarily or use the ``-X utf8`` command line "
+"option."
 msgstr ""
 
 msgid ""
@@ -1822,8 +1966,10 @@ msgid ""
 "services`."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "PyWin32"
-msgstr ""
+msgstr "PyWin32"
 
 msgid ""
 "The :pypi:`PyWin32` module by Mark Hammond is a collection of modules for "
@@ -1838,8 +1984,10 @@ msgstr ""
 msgid "Win32 API calls"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Registry"
-msgstr ""
+msgstr "Registry"
 
 msgid "Event log"
 msgstr ""
@@ -1868,8 +2016,10 @@ msgstr ""
 msgid "by David and Paul Boddie"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "cx_Freeze"
-msgstr ""
+msgstr "cx_Freeze"
 
 msgid ""
 "`cx_Freeze <https://cx-freeze.readthedocs.io/en/latest/>`_ wraps Python "
@@ -2014,8 +2164,10 @@ msgid ""
 "passed into the installer:"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 msgid "/passive"
 msgstr ""
@@ -2059,20 +2211,28 @@ msgid ""
 "list of available options is shown below."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Default"
-msgstr ""
+msgstr "Default"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "InstallAllUsers"
-msgstr ""
+msgstr "InstallAllUsers"
 
 msgid "Perform a system-wide installation."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "0"
-msgstr ""
+msgstr "0"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "TargetDir"
-msgstr ""
+msgstr "TargetDir"
 
 msgid "The installation directory"
 msgstr ""
@@ -2080,8 +2240,10 @@ msgstr ""
 msgid "Selected based on InstallAllUsers"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "DefaultAllUsersTargetDir"
-msgstr ""
+msgstr "DefaultAllUsersTargetDir"
 
 msgid "The default installation directory for all-user installs"
 msgstr ""
@@ -2091,8 +2253,10 @@ msgid ""
 "\\ Python X.Y`"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "DefaultJustForMeTargetDir"
-msgstr ""
+msgstr "DefaultJustForMeTargetDir"
 
 msgid "The default install directory for just-for-me installs"
 msgstr ""
@@ -2103,8 +2267,10 @@ msgid ""
 "`%LocalAppData%\\\\\\ Programs\\\\Python\\\\\\ PythonXY-64`"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "DefaultCustomTargetDir"
-msgstr ""
+msgstr "DefaultCustomTargetDir"
 
 msgid "The default custom install directory displayed in the UI"
 msgstr ""
@@ -2112,138 +2278,180 @@ msgstr ""
 msgid "(empty)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "AssociateFiles"
-msgstr ""
+msgstr "AssociateFiles"
 
 msgid "Create file associations if the launcher is also installed."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "1"
-msgstr ""
+msgstr "1"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "CompileAll"
-msgstr ""
+msgstr "CompileAll"
 
 msgid "Compile all ``.py`` files to ``.pyc``."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "PrependPath"
-msgstr ""
+msgstr "PrependPath"
 
 msgid ""
 "Prepend install and Scripts directories  to :envvar:`PATH` and add ``.PY`` "
 "to :envvar:`PATHEXT`"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "AppendPath"
-msgstr ""
+msgstr "AppendPath"
 
 msgid ""
 "Append install and Scripts directories  to :envvar:`PATH` and add ``.PY`` "
 "to :envvar:`PATHEXT`"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Shortcuts"
-msgstr ""
+msgstr "Shortcuts"
 
 msgid ""
 "Create shortcuts for the interpreter, documentation and IDLE if installed."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Include_doc"
-msgstr ""
+msgstr "Include_doc"
 
 msgid "Install Python manual"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Include_debug"
-msgstr ""
+msgstr "Include_debug"
 
 msgid "Install debug binaries"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Include_dev"
-msgstr ""
+msgstr "Include_dev"
 
 msgid ""
 "Install developer headers and libraries. Omitting this may lead to an "
 "unusable installation."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Include_exe"
-msgstr ""
+msgstr "Include_exe"
 
 msgid ""
 "Install :file:`python.exe` and related files. Omitting this may lead to an "
 "unusable installation."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Include_launcher"
-msgstr ""
+msgstr "Include_launcher"
 
 msgid "Install :ref:`launcher`."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "InstallLauncherAllUsers"
-msgstr ""
+msgstr "InstallLauncherAllUsers"
 
 msgid ""
 "Installs the launcher for all users. Also requires ``Include_launcher`` to "
 "be set to 1"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Include_lib"
-msgstr ""
+msgstr "Include_lib"
 
 msgid ""
 "Install standard library and extension modules. Omitting this may lead to an "
 "unusable installation."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Include_pip"
-msgstr ""
+msgstr "Include_pip"
 
 msgid "Install bundled pip and setuptools"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Include_symbols"
-msgstr ""
+msgstr "Include_symbols"
 
 msgid "Install debugging symbols (``*.pdb``)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Include_tcltk"
-msgstr ""
+msgstr "Include_tcltk"
 
 msgid "Install Tcl/Tk support and IDLE"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Include_test"
-msgstr ""
+msgstr "Include_test"
 
 msgid "Install standard library test suite"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Include_tools"
-msgstr ""
+msgstr "Include_tools"
 
 msgid "Install utility scripts"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "LauncherOnly"
-msgstr ""
+msgstr "LauncherOnly"
 
 msgid "Only installs the launcher. This will override most other options."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "SimpleInstall"
-msgstr ""
+msgstr "SimpleInstall"
 
 msgid "Disable most install UI"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "SimpleInstallDescription"
-msgstr ""
+msgstr "SimpleInstallDescription"
 
 msgid "A custom message to display when the simplified install UI is used."
 msgstr ""
@@ -2253,8 +2461,10 @@ msgid ""
 "you could use the following command (from an elevated command prompt)::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "python-3.9.0.exe /quiet InstallAllUsers=1 PrependPath=1 Include_test=0"
-msgstr ""
+msgstr "python-3.9.0.exe /quiet InstallAllUsers=1 PrependPath=1 Include_test=0"
 
 msgid ""
 "To allow users to easily install a personal copy of Python without the test "
@@ -2262,10 +2472,14 @@ msgid ""
 "display a simplified initial page and disallow customization::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "python-3.9.0.exe InstallAllUsers=0 Include_launcher=0 Include_test=0\n"
 "    SimpleInstall=1 SimpleInstallDescription=\"Just for me, no test suite.\""
 msgstr ""
+"python-3.9.0.exe InstallAllUsers=0 Include_launcher=0 Include_test=0\n"
+"    SimpleInstall=1 SimpleInstallDescription=\"Just for me, no test suite.\""
 
 msgid ""
 "(Note that omitting the launcher also omits file associations, and is only "
@@ -2281,16 +2495,26 @@ msgid ""
 "strings. This example file sets the same options as the previous example:"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "<Options>\n"
 "    <Option Name=\"InstallAllUsers\" Value=\"no\" />\n"
 "    <Option Name=\"Include_launcher\" Value=\"0\" />\n"
 "    <Option Name=\"Include_test\" Value=\"no\" />\n"
 "    <Option Name=\"SimpleInstall\" Value=\"yes\" />\n"
-"    <Option Name=\"SimpleInstallDescription\">Just for me, no test suite</"
-"Option>\n"
+"    <Option Name=\"SimpleInstallDescription\">Just for me, no test "
+"suite</Option>\n"
 "</Options>"
 msgstr ""
+"<Options>\n"
+"    <Option Name=\"InstallAllUsers\" Value=\"no\" />\n"
+"    <Option Name=\"Include_launcher\" Value=\"0\" />\n"
+"    <Option Name=\"Include_test\" Value=\"no\" />\n"
+"    <Option Name=\"SimpleInstall\" Value=\"yes\" />\n"
+"    <Option Name=\"SimpleInstallDescription\">Just for me, no test "
+"suite</Option>\n"
+"</Options>"
 
 msgid "Installing without downloading"
 msgstr ""
@@ -2312,8 +2536,10 @@ msgid ""
 "avoid collisions between files with the same name."
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "python-3.9.0.exe /layout [optional target directory]"
-msgstr ""
+msgstr "python-3.9.0.exe /layout [optional target directory]"
 
 msgid ""
 "You may also specify the ``/quiet`` option to hide the progress display."
@@ -2422,8 +2648,10 @@ msgid ""
 "the launcher is available, execute the following command in Command Prompt::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "py"
-msgstr ""
+msgstr "py"
 
 msgid ""
 "You should find that the latest version of Python you have installed is "
@@ -2437,16 +2665,20 @@ msgid ""
 "3.7, try the command::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "py -3.7"
-msgstr ""
+msgstr "py -3.7"
 
 msgid ""
 "If you want the latest version of Python 2 you have installed, try the "
 "command::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "py -2"
-msgstr ""
+msgstr "py -2"
 
 msgid ""
 "If you see the following error, you do not have the launcher installed::"
@@ -2460,8 +2692,10 @@ msgstr ""
 msgid "The command::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "py --list"
-msgstr ""
+msgstr "py --list"
 
 msgid "displays the currently installed version(s) of Python."
 msgstr ""
@@ -2480,6 +2714,8 @@ msgid ""
 "from all providers. Note that omitting the slash implies a tag::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "# Select any '3.*' tagged runtime\n"
 "py -V:3\n"
@@ -2490,6 +2726,14 @@ msgid ""
 "# Select PythonCore's latest Python 3 runtime\n"
 "py -V:PythonCore/3"
 msgstr ""
+"# Select any '3.*' tagged runtime\n"
+"py -V:3\n"
+"\n"
+"# Select any 'PythonCore' released runtime\n"
+"py -V:PythonCore/\n"
+"\n"
+"# Select PythonCore's latest Python 3 runtime\n"
+"py -V:PythonCore/3"
 
 msgid ""
 "The short form of the argument (``-3``) only ever selects from core Python "
@@ -2534,16 +2778,20 @@ msgstr ""
 msgid "From the directory in which hello.py lives, execute the command::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "py hello.py"
-msgstr ""
+msgstr "py hello.py"
 
 msgid ""
 "You should notice the version number of your latest Python 2.x installation "
 "is printed.  Now try changing the first line to be:"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "#! python3"
-msgstr ""
+msgstr "#! python3"
 
 msgid ""
 "Re-executing the command should now print the latest Python 3.x information. "
@@ -2591,17 +2839,25 @@ msgid ""
 "which interpreter to use.  The supported virtual commands are:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``/usr/bin/env``"
-msgstr ""
+msgstr "``/usr/bin/env``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``/usr/bin/python``"
-msgstr ""
+msgstr "``/usr/bin/python``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``/usr/local/bin/python``"
-msgstr ""
+msgstr "``/usr/local/bin/python``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``python``"
-msgstr ""
+msgstr "``python``"
 
 msgid ""
 "Any of the above virtual commands can be suffixed with an explicit version "
@@ -2677,14 +2933,18 @@ msgid ""
 "Python interpreter.  For example, if you have a shebang line:"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "#! /usr/bin/python -v"
-msgstr ""
+msgstr "#! /usr/bin/python -v"
 
 msgid "Then Python will be started with the ``-v`` option"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Customization"
-msgstr ""
+msgstr "Customization"
 
 msgid "Customization via INI files"
 msgstr ""
@@ -2799,24 +3059,35 @@ msgstr ""
 msgid "Setting ``PY_PYTHON=3.7`` is equivalent to the INI file containing:"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "[defaults]\n"
 "python=3.7"
 msgstr ""
+"[defaults]\n"
+"python=3.7"
 
 msgid ""
 "Setting ``PY_PYTHON=3`` and ``PY_PYTHON3=3.7`` is equivalent to the INI file "
 "containing:"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "[defaults]\n"
 "python=3\n"
 "python3=3.7"
 msgstr ""
+"[defaults]\n"
+"python=3\n"
+"python3=3.7"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Diagnostics"
-msgstr ""
+msgstr "Diagnostics"
 
 msgid ""
 "If an environment variable :envvar:`!PYLAUNCHER_DEBUG` is set (to any "
@@ -2873,70 +3144,100 @@ msgid ""
 "Entries are listed in alphabetical order of names."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Value"
-msgstr ""
+msgstr "Value"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "RC_BAD_VENV_CFG"
-msgstr ""
+msgstr "RC_BAD_VENV_CFG"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "107"
-msgstr ""
+msgstr "107"
 
 msgid "A :file:`pyvenv.cfg` was found but is corrupt."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "RC_CREATE_PROCESS"
-msgstr ""
+msgstr "RC_CREATE_PROCESS"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "101"
-msgstr ""
+msgstr "101"
 
 msgid "Failed to launch Python."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "RC_INSTALLING"
-msgstr ""
+msgstr "RC_INSTALLING"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "111"
-msgstr ""
+msgstr "111"
 
 msgid ""
 "An install was started, but the command will need to be re-run after it "
 "completes."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "RC_INTERNAL_ERROR"
-msgstr ""
+msgstr "RC_INTERNAL_ERROR"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "109"
-msgstr ""
+msgstr "109"
 
 msgid "Unexpected error. Please report a bug."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "RC_NO_COMMANDLINE"
-msgstr ""
+msgstr "RC_NO_COMMANDLINE"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "108"
-msgstr ""
+msgstr "108"
 
 msgid "Unable to obtain command line from the operating system."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "RC_NO_PYTHON"
-msgstr ""
+msgstr "RC_NO_PYTHON"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "103"
-msgstr ""
+msgstr "103"
 
 msgid "Unable to locate the requested version."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "RC_NO_VENV_CFG"
-msgstr ""
+msgstr "RC_NO_VENV_CFG"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "106"
-msgstr ""
+msgstr "106"
 
 msgid "A :file:`pyvenv.cfg` was required but not found."
 msgstr ""

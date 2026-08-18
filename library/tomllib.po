@@ -5,22 +5,23 @@
 #
 # Translators:
 # python-doc bot, 2025
+# Nguyen Duc Tam, 2026
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-15 15:01+0000\n"
-"PO-Revision-Date: 2025-09-16 00:01+0000\n"
-"Last-Translator: python-doc bot, 2025\n"
-"Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
-"vi/)\n"
+"POT-Creation-Date: 2026-05-08 18:34+0000\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: pydocvi 0.1.2\n"
 
 msgid ":mod:`!tomllib` --- Parse TOML files"
 msgstr ""
@@ -29,9 +30,23 @@ msgid "**Source code:** :source:`Lib/tomllib`"
 msgstr ""
 
 msgid ""
-"This module provides an interface for parsing TOML 1.0.0 (Tom's Obvious "
+"This module provides an interface for parsing TOML 1.1.0 (Tom's Obvious "
 "Minimal Language, `https://toml.io <https://toml.io/en/>`_). This module "
 "does not support writing TOML."
+msgstr ""
+
+msgid "The module was added with support for TOML 1.0.0."
+msgstr ""
+
+msgid ""
+"Added TOML 1.1.0 support. See the :ref:`What's New <whatsnew315-"
+"tomllib-1-1-0>` for details."
+msgstr ""
+
+msgid ""
+"Be cautious when parsing data from untrusted sources. A malicious TOML "
+"string may cause the decoder to consume considerable CPU and memory "
+"resources. Limiting the size of data to be parsed is recommended."
 msgstr ""
 
 msgid ""
@@ -107,12 +122,18 @@ msgstr "Ví dụ"
 msgid "Parsing a TOML file::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import tomllib\n"
 "\n"
 "with open(\"pyproject.toml\", \"rb\") as f:\n"
 "    data = tomllib.load(f)"
 msgstr ""
+"import tomllib\n"
+"\n"
+"with open(\"pyproject.toml\", \"rb\") as f:\n"
+"    data = tomllib.load(f)"
 
 msgid "Parsing a TOML string::"
 msgstr ""
@@ -131,41 +152,59 @@ msgstr ""
 msgid "Conversion Table"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "TOML"
-msgstr ""
+msgstr "TOML"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Python"
-msgstr ""
+msgstr "Python"
 
 msgid "TOML document"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "dict"
-msgstr ""
+msgstr "dict"
 
 msgid "string"
-msgstr ""
+msgstr "chuỗi"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "str"
-msgstr ""
+msgstr "str"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "integer"
-msgstr ""
+msgstr "integer"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "int"
-msgstr ""
+msgstr "int"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "float"
-msgstr ""
+msgstr "float"
 
 msgid "float (configurable with *parse_float*)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "boolean"
-msgstr ""
+msgstr "boolean"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "bool"
-msgstr ""
+msgstr "bool"
 
 msgid "offset date-time"
 msgstr ""
@@ -184,23 +223,33 @@ msgstr ""
 msgid "local date"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "datetime.date"
-msgstr ""
+msgstr "datetime.date"
 
 msgid "local time"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "datetime.time"
-msgstr ""
+msgstr "datetime.time"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "array"
-msgstr ""
+msgstr "array"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "list"
-msgstr ""
+msgstr "list"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "table"
-msgstr ""
+msgstr "table"
 
 msgid "inline table"
 msgstr ""

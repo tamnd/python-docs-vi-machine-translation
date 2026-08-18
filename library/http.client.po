@@ -5,22 +5,23 @@
 #
 # Translators:
 # python-doc bot, 2025
+# Nguyen Duc Tam, 2026
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-17 14:50+0000\n"
-"PO-Revision-Date: 2025-09-16 00:01+0000\n"
-"Last-Translator: python-doc bot, 2025\n"
-"Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
-"vi/)\n"
+"POT-Creation-Date: 2026-05-08 18:34+0000\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: pydocvi 0.1.2\n"
 
 msgid ":mod:`!http.client` --- HTTP protocol client"
 msgstr ""
@@ -44,8 +45,10 @@ msgid ""
 "(through the :mod:`ssl` module)."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Availability"
-msgstr ""
+msgstr "Availability"
 
 msgid ""
 "This module does not work or is not available on WebAssembly. See :ref:`wasm-"
@@ -65,7 +68,10 @@ msgid ""
 "not given, the global default timeout setting is used). The optional "
 "*source_address* parameter may be a tuple of a (host, port) to use as the "
 "source address the HTTP connection is made from. The optional *blocksize* "
-"parameter sets the buffer size in bytes for sending a file-like message body."
+"parameter sets the buffer size in bytes for sending a file-like message "
+"body. The optional *max_response_headers* parameter sets the maximum number "
+"of allowed response headers to help prevent denial-of-service attacks, "
+"otherwise the default value (100) is used."
 msgstr ""
 
 msgid ""
@@ -73,12 +79,18 @@ msgid ""
 "server at the same host and port::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> h1 = http.client.HTTPConnection('www.python.org')\n"
 ">>> h2 = http.client.HTTPConnection('www.python.org:80')\n"
 ">>> h3 = http.client.HTTPConnection('www.python.org', 80)\n"
 ">>> h4 = http.client.HTTPConnection('www.python.org', 80, timeout=10)"
 msgstr ""
+">>> h1 = http.client.HTTPConnection('www.python.org')\n"
+">>> h2 = http.client.HTTPConnection('www.python.org:80')\n"
+">>> h3 = http.client.HTTPConnection('www.python.org', 80)\n"
+">>> h4 = http.client.HTTPConnection('www.python.org', 80, timeout=10)"
 
 msgid "*source_address* was added."
 msgstr ""
@@ -89,6 +101,9 @@ msgid ""
 msgstr ""
 
 msgid "*blocksize* parameter was added."
+msgstr ""
+
+msgid "*max_response_headers* parameter was added."
 msgstr ""
 
 msgid ""
@@ -289,6 +304,8 @@ msgid ""
 "For example, to perform a ``GET`` request to ``https://docs.python.org/3/``::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import http.client\n"
 ">>> host = \"docs.python.org\"\n"
@@ -298,6 +315,13 @@ msgid ""
 ">>> print(response.status, response.reason)\n"
 "200 OK"
 msgstr ""
+">>> import http.client\n"
+">>> host = \"docs.python.org\"\n"
+">>> conn = http.client.HTTPSConnection(host)\n"
+">>> conn.request(\"GET\", \"/3/\", headers={\"Host\": host})\n"
+">>> response = conn.getresponse()\n"
+">>> print(response.status, response.reason)\n"
+"200 OK"
 
 msgid ""
 "Chunked transfer encoding has been added to the HTTP protocol version 1.1.  "
@@ -378,12 +402,18 @@ msgid ""
 "the :meth:`~HTTPConnection.set_tunnel` method::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import http.client\n"
 ">>> conn = http.client.HTTPSConnection(\"localhost\", 8080)\n"
 ">>> conn.set_tunnel(\"www.python.org\")\n"
 ">>> conn.request(\"HEAD\",\"/index.html\")"
 msgstr ""
+">>> import http.client\n"
+">>> conn = http.client.HTTPSConnection(\"localhost\", 8080)\n"
+">>> conn.set_tunnel(\"www.python.org\")\n"
+">>> conn.request(\"HEAD\",\"/index.html\")"
 
 msgid ""
 "HTTP CONNECT tunnelling requests use protocol HTTP/1.1, upgraded from "
@@ -415,6 +445,12 @@ msgid "Close the connection to the server."
 msgstr ""
 
 msgid "Buffer size in bytes for sending a file-like message body."
+msgstr ""
+
+msgid ""
+"The maximum number of allowed response headers to help prevent denial-of-"
+"service attacks. By default, the maximum number of allowed headers is set to "
+"100."
 msgstr ""
 
 msgid ""
@@ -561,6 +597,8 @@ msgstr "Ví dụ"
 msgid "Here is an example session that uses the ``GET`` method::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import http.client\n"
 ">>> conn = http.client.HTTPSConnection(\"www.python.org\")\n"
@@ -585,12 +623,36 @@ msgid ""
 ">>> data2 = r2.read()\n"
 ">>> conn.close()"
 msgstr ""
+">>> import http.client\n"
+">>> conn = http.client.HTTPSConnection(\"www.python.org\")\n"
+">>> conn.request(\"GET\", \"/\")\n"
+">>> r1 = conn.getresponse()\n"
+">>> print(r1.status, r1.reason)\n"
+"200 OK\n"
+">>> data1 = r1.read()  # This will return entire content.\n"
+">>> # The following example demonstrates reading data in chunks.\n"
+">>> conn.request(\"GET\", \"/\")\n"
+">>> r1 = conn.getresponse()\n"
+">>> while chunk := r1.read(200):\n"
+"...     print(repr(chunk))\n"
+"b'<!doctype html>\\n<!--[if\"...\n"
+"...\n"
+">>> # Example of an invalid request\n"
+">>> conn = http.client.HTTPSConnection(\"docs.python.org\")\n"
+">>> conn.request(\"GET\", \"/parrot.spam\")\n"
+">>> r2 = conn.getresponse()\n"
+">>> print(r2.status, r2.reason)\n"
+"404 Not Found\n"
+">>> data2 = r2.read()\n"
+">>> conn.close()"
 
 msgid ""
 "Here is an example session that uses the ``HEAD`` method.  Note that the "
 "``HEAD`` method never returns any data. ::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import http.client\n"
 ">>> conn = http.client.HTTPSConnection(\"www.python.org\")\n"
@@ -604,10 +666,23 @@ msgid ""
 ">>> data == b''\n"
 "True"
 msgstr ""
+">>> import http.client\n"
+">>> conn = http.client.HTTPSConnection(\"www.python.org\")\n"
+">>> conn.request(\"HEAD\", \"/\")\n"
+">>> res = conn.getresponse()\n"
+">>> print(res.status, res.reason)\n"
+"200 OK\n"
+">>> data = res.read()\n"
+">>> print(len(data))\n"
+"0\n"
+">>> data == b''\n"
+"True"
 
 msgid "Here is an example session that uses the ``POST`` method::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import http.client, urllib.parse\n"
 ">>> params = urllib.parse.urlencode({'@number': 12524, '@type': 'issue', "
@@ -625,6 +700,21 @@ msgid ""
 "python.org/issue12524</a>'\n"
 ">>> conn.close()"
 msgstr ""
+">>> import http.client, urllib.parse\n"
+">>> params = urllib.parse.urlencode({'@number': 12524, '@type': 'issue', "
+"'@action': 'show'})\n"
+">>> headers = {\"Content-type\": \"application/x-www-form-urlencoded\",\n"
+"...            \"Accept\": \"text/plain\"}\n"
+">>> conn = http.client.HTTPConnection(\"bugs.python.org\")\n"
+">>> conn.request(\"POST\", \"\", params, headers)\n"
+">>> response = conn.getresponse()\n"
+">>> print(response.status, response.reason)\n"
+"302 Found\n"
+">>> data = response.read()\n"
+">>> data\n"
+"b'Redirecting to <a href=\"https://bugs.python.org/issue12524\">https://bugs."
+"python.org/issue12524</a>'\n"
+">>> conn.close()"
 
 msgid ""
 "Client side HTTP ``PUT`` requests are very similar to ``POST`` requests. The "
@@ -635,6 +725,8 @@ msgid ""
 "``PUT`` method::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> # This creates an HTTP request\n"
 ">>> # with the content of BODY as the enclosed representation\n"
@@ -648,6 +740,17 @@ msgid ""
 ">>> print(response.status, response.reason)\n"
 "200, OK"
 msgstr ""
+">>> # This creates an HTTP request\n"
+">>> # with the content of BODY as the enclosed representation\n"
+">>> # for the resource http://localhost:8080/file\n"
+"...\n"
+">>> import http.client\n"
+">>> BODY = \"***filecontents***\"\n"
+">>> conn = http.client.HTTPConnection(\"localhost\", 8080)\n"
+">>> conn.request(\"PUT\", \"/file\", BODY)\n"
+">>> response = conn.getresponse()\n"
+">>> print(response.status, response.reason)\n"
+"200, OK"
 
 msgid "HTTPMessage Objects"
 msgstr ""
@@ -657,17 +760,23 @@ msgid ""
 "response.  It is implemented using the :class:`email.message.Message` class."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "HTTP"
-msgstr ""
+msgstr "HTTP"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "protocol"
-msgstr ""
+msgstr "protocol"
 
 msgid "http.client (standard module)"
 msgstr ""
 
 msgid "module"
-msgstr ""
+msgstr "module"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "urllib.request"
-msgstr ""
+msgstr "urllib.request"

@@ -1,0 +1,184 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2001 Python Software Foundation
+# This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python 3.15\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-08 18:34+0000\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: vi\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"X-Generator: pydocvi 0.1.2\n"
+
+msgid "Pending removal in Python 3.20"
+msgstr ""
+
+msgid ""
+"Calling the ``__new__()`` method of :class:`struct.Struct` without the "
+"*format* argument is deprecated and will be removed in Python 3.20.  "
+"Calling :meth:`~object.__init__` method on initialized :class:`~struct."
+"Struct` objects is deprecated and will be removed in Python 3.20."
+msgstr ""
+
+msgid ""
+"(Contributed by Sergey B Kirpichev and Serhiy Storchaka in :gh:`143715`.)"
+msgstr ""
+
+msgid ""
+"The ``__version__``, ``version`` and ``VERSION`` attributes have been "
+"deprecated in these standard library modules and will be removed in Python "
+"3.20. Use :py:data:`sys.version_info` instead."
+msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":mod:`argparse`"
+msgstr ":mod:`argparse`"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":mod:`csv`"
+msgstr ":mod:`csv`"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":mod:`ctypes`"
+msgstr ":mod:`ctypes`"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":mod:`!ctypes.macholib`"
+msgstr ":mod:`!ctypes.macholib`"
+
+msgid ":mod:`decimal` (use :data:`decimal.SPEC_VERSION` instead)"
+msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":mod:`http.server`"
+msgstr ":mod:`http.server`"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":mod:`imaplib`"
+msgstr ":mod:`imaplib`"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":mod:`ipaddress`"
+msgstr ":mod:`ipaddress`"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":mod:`json`"
+msgstr ":mod:`json`"
+
+msgid ":mod:`logging` (``__date__`` also deprecated)"
+msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":mod:`optparse`"
+msgstr ":mod:`optparse`"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":mod:`pickle`"
+msgstr ":mod:`pickle`"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":mod:`platform`"
+msgstr ":mod:`platform`"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":mod:`re`"
+msgstr ":mod:`re`"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":mod:`socketserver`"
+msgstr ":mod:`socketserver`"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":mod:`tabnanny`"
+msgstr ":mod:`tabnanny`"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":mod:`tarfile`"
+msgstr ":mod:`tarfile`"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":mod:`tkinter.font`"
+msgstr ":mod:`tkinter.font`"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":mod:`tkinter.ttk`"
+msgstr ":mod:`tkinter.ttk`"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":mod:`wsgiref.simple_server`"
+msgstr ":mod:`wsgiref.simple_server`"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":mod:`xml.etree.ElementTree`"
+msgstr ":mod:`xml.etree.ElementTree`"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":mod:`!xml.sax.expatreader`"
+msgstr ":mod:`!xml.sax.expatreader`"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":mod:`xml.sax.handler`"
+msgstr ":mod:`xml.sax.handler`"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":mod:`zlib`"
+msgstr ":mod:`zlib`"
+
+msgid "(Contributed by Hugo van Kemenade and Stan Ulbrych in :gh:`76007`.)"
+msgstr ""
+
+msgid "Deprecations defined by :pep:`829`:"
+msgstr ""
+
+msgid ""
+"Warnings are produced for ``import`` lines found in :file:`{name}.pth` files."
+msgstr ""
+
+msgid ""
+":file:`{name}.pth` files are no longer decoded in the locale encoding by "
+"default.  They **MUST** be encoded in ``utf-8-sig``."
+msgstr ""
+
+msgid "(Contributed by Barry Warsaw in :gh:`148641`.)"
+msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":mod:`ast`:"
+msgstr ":mod:`ast`:"
+
+msgid ""
+"Creating instances of abstract AST nodes (such as :class:`ast.AST` or :class:"
+"`!ast.expr`) is deprecated and will raise an error in Python 3.20."
+msgstr ""

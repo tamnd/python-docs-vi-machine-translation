@@ -9,18 +9,18 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-17 14:50+0000\n"
-"PO-Revision-Date: 2025-09-16 00:00+0000\n"
-"Last-Translator: python-doc bot, 2025\n"
-"Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
-"vi/)\n"
+"POT-Creation-Date: 2026-04-23 15:47+0000\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: pydocvi 0.1.2\n"
 
 msgid "Monitoring C API"
 msgstr ""
@@ -179,65 +179,103 @@ msgstr ""
 msgid "The macros for *event_types* are:"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Macro"
-msgstr ""
+msgstr "Macro"
 
 msgid "Event"
 msgstr "Sự kiện"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":monitoring-event:`BRANCH_LEFT`"
-msgstr ""
+msgstr ":monitoring-event:`BRANCH_LEFT`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":monitoring-event:`BRANCH_RIGHT`"
-msgstr ""
+msgstr ":monitoring-event:`BRANCH_RIGHT`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":monitoring-event:`CALL`"
-msgstr ""
+msgstr ":monitoring-event:`CALL`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":monitoring-event:`C_RAISE`"
-msgstr ""
+msgstr ":monitoring-event:`C_RAISE`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":monitoring-event:`C_RETURN`"
-msgstr ""
+msgstr ":monitoring-event:`C_RETURN`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":monitoring-event:`EXCEPTION_HANDLED`"
-msgstr ""
+msgstr ":monitoring-event:`EXCEPTION_HANDLED`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":monitoring-event:`INSTRUCTION`"
-msgstr ""
+msgstr ":monitoring-event:`INSTRUCTION`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":monitoring-event:`JUMP`"
-msgstr ""
+msgstr ":monitoring-event:`JUMP`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":monitoring-event:`LINE`"
-msgstr ""
+msgstr ":monitoring-event:`LINE`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":monitoring-event:`PY_RESUME`"
-msgstr ""
+msgstr ":monitoring-event:`PY_RESUME`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":monitoring-event:`PY_RETURN`"
-msgstr ""
+msgstr ":monitoring-event:`PY_RETURN`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":monitoring-event:`PY_START`"
-msgstr ""
+msgstr ":monitoring-event:`PY_START`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":monitoring-event:`PY_THROW`"
-msgstr ""
+msgstr ":monitoring-event:`PY_THROW`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":monitoring-event:`PY_UNWIND`"
-msgstr ""
+msgstr ":monitoring-event:`PY_UNWIND`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":monitoring-event:`PY_YIELD`"
-msgstr ""
+msgstr ":monitoring-event:`PY_YIELD`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":monitoring-event:`RAISE`"
-msgstr ""
+msgstr ":monitoring-event:`RAISE`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":monitoring-event:`RERAISE`"
-msgstr ""
+msgstr ":monitoring-event:`RERAISE`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":monitoring-event:`STOP_ITERATION`"
-msgstr ""
+msgstr ":monitoring-event:`STOP_ITERATION`"
 
 msgid ""
 "Exit the last scope that was entered with :c:func:`!PyMonitoring_EnterScope`."
@@ -246,7 +284,4 @@ msgstr ""
 msgid ""
 "Return true if the event corresponding to the event ID *ev* is a :ref:`local "
 "event <monitoring-event-local>`."
-msgstr ""
-
-msgid "This function is :term:`soft deprecated`."
 msgstr ""

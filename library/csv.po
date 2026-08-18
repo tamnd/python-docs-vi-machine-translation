@@ -10,18 +10,18 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-17 14:50+0000\n"
-"PO-Revision-Date: 2025-09-16 00:01+0000\n"
-"Last-Translator: Nguyen Duc Tam, 2026\n"
-"Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
-"vi/)\n"
+"POT-Creation-Date: 2026-05-08 18:34+0000\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: pydocvi 0.1.2\n"
 
 msgid ":mod:`!csv` --- CSV File Reading and Writing"
 msgstr ""
@@ -93,6 +93,8 @@ msgstr ""
 msgid "A short usage example::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import csv\n"
 ">>> with open('eggs.csv', newline='') as csvfile:\n"
@@ -102,6 +104,13 @@ msgid ""
 "Spam, Spam, Spam, Spam, Spam, Baked Beans\n"
 "Spam, Lovely Spam, Wonderful Spam"
 msgstr ""
+">>> import csv\n"
+">>> with open('eggs.csv', newline='') as csvfile:\n"
+"...     spamreader = csv.reader(csvfile, delimiter=' ', quotechar='|')\n"
+"...     for row in spamreader:\n"
+"...         print(', '.join(row))\n"
+"Spam, Spam, Spam, Spam, Spam, Baked Beans\n"
+"Spam, Lovely Spam, Wonderful Spam"
 
 msgid ""
 "Return a writer object responsible for converting the user's data into "
@@ -122,6 +131,8 @@ msgid ""
 "other non-string data are stringified with :func:`str` before being written."
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import csv\n"
 "with open('eggs.csv', 'w', newline='') as csvfile:\n"
@@ -130,6 +141,12 @@ msgid ""
 "    spamwriter.writerow(['Spam'] * 5 + ['Baked Beans'])\n"
 "    spamwriter.writerow(['Spam', 'Lovely Spam', 'Wonderful Spam'])"
 msgstr ""
+"import csv\n"
+"with open('eggs.csv', 'w', newline='') as csvfile:\n"
+"    spamwriter = csv.writer(csvfile, delimiter=' ',\n"
+"                            quotechar='|', quoting=csv.QUOTE_MINIMAL)\n"
+"    spamwriter.writerow(['Spam'] * 5 + ['Baked Beans'])\n"
+"    spamwriter.writerow(['Spam', 'Lovely Spam', 'Wonderful Spam'])"
 
 msgid ""
 "Associate *dialect* with *name*.  *name* must be a string. The dialect can "
@@ -200,6 +217,8 @@ msgstr ""
 msgid "Returned rows are now of type :class:`dict`."
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import csv\n"
 ">>> with open('names.csv', newline='') as csvfile:\n"
@@ -213,6 +232,17 @@ msgid ""
 ">>> print(row)\n"
 "{'first_name': 'John', 'last_name': 'Cleese'}"
 msgstr ""
+">>> import csv\n"
+">>> with open('names.csv', newline='') as csvfile:\n"
+"...     reader = csv.DictReader(csvfile)\n"
+"...     for row in reader:\n"
+"...         print(row['first_name'], row['last_name'])\n"
+"...\n"
+"Eric Idle\n"
+"John Cleese\n"
+"\n"
+">>> print(row)\n"
+"{'first_name': 'John', 'last_name': 'Cleese'}"
 
 msgid ""
 "Create an object which operates like a regular writer but maps dictionaries "
@@ -234,6 +264,8 @@ msgid ""
 "of the :class:`DictWriter` class is not optional."
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import csv\n"
 "\n"
@@ -246,6 +278,16 @@ msgid ""
 "    writer.writerow({'first_name': 'Lovely', 'last_name': 'Spam'})\n"
 "    writer.writerow({'first_name': 'Wonderful', 'last_name': 'Spam'})"
 msgstr ""
+"import csv\n"
+"\n"
+"with open('names.csv', 'w', newline='') as csvfile:\n"
+"    fieldnames = ['first_name', 'last_name']\n"
+"    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)\n"
+"\n"
+"    writer.writeheader()\n"
+"    writer.writerow({'first_name': 'Baked', 'last_name': 'Beans'})\n"
+"    writer.writerow({'first_name': 'Lovely', 'last_name': 'Spam'})\n"
+"    writer.writerow({'first_name': 'Wonderful', 'last_name': 'Spam'})"
 
 msgid ""
 "The :class:`Dialect` class is a container class whose attributes contain "
@@ -261,12 +303,18 @@ msgid ""
 "classes through their initializer (``__init__``) functions like this::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import csv\n"
 "\n"
 "with open('students.csv', 'w', newline='') as csvfile:\n"
 "    writer = csv.writer(csvfile, dialect='unix')"
 msgstr ""
+"import csv\n"
+"\n"
+"with open('students.csv', 'w', newline='') as csvfile:\n"
+"    writer = csv.writer(csvfile, dialect='unix')"
 
 msgid ""
 "The :class:`excel` class defines the usual properties of an Excel-generated "
@@ -325,6 +373,8 @@ msgstr ""
 msgid "An example for :class:`Sniffer` use::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "with open('example.csv', newline='') as csvfile:\n"
 "    dialect = csv.Sniffer().sniff(csvfile.read(1024))\n"
@@ -332,6 +382,11 @@ msgid ""
 "    reader = csv.reader(csvfile, dialect)\n"
 "    # ... process CSV file contents here ..."
 msgstr ""
+"with open('example.csv', newline='') as csvfile:\n"
+"    dialect = csv.Sniffer().sniff(csvfile.read(1024))\n"
+"    csvfile.seek(0)\n"
+"    reader = csv.reader(csvfile, dialect)\n"
+"    # ... process CSV file contents here ..."
 
 msgid "The :mod:`!csv` module defines the following constants:"
 msgstr ""
@@ -590,6 +645,8 @@ msgstr "Ví dụ"
 msgid "The simplest example of reading a CSV file::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import csv\n"
 "with open('some.csv', newline='') as f:\n"
@@ -597,10 +654,17 @@ msgid ""
 "    for row in reader:\n"
 "        print(row)"
 msgstr ""
+"import csv\n"
+"with open('some.csv', newline='') as f:\n"
+"    reader = csv.reader(f)\n"
+"    for row in reader:\n"
+"        print(row)"
 
 msgid "Reading a file with an alternate format::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import csv\n"
 "with open('passwd', newline='') as f:\n"
@@ -608,16 +672,27 @@ msgid ""
 "    for row in reader:\n"
 "        print(row)"
 msgstr ""
+"import csv\n"
+"with open('passwd', newline='') as f:\n"
+"    reader = csv.reader(f, delimiter=':', quoting=csv.QUOTE_NONE)\n"
+"    for row in reader:\n"
+"        print(row)"
 
 msgid "The corresponding simplest possible writing example is::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import csv\n"
 "with open('some.csv', 'w', newline='') as f:\n"
 "    writer = csv.writer(f)\n"
 "    writer.writerows(someiterable)"
 msgstr ""
+"import csv\n"
+"with open('some.csv', 'w', newline='') as f:\n"
+"    writer = csv.writer(f)\n"
+"    writer.writerows(someiterable)"
 
 msgid ""
 "Since :func:`open` is used to open a CSV file for reading, the file will by "
@@ -626,6 +701,8 @@ msgid ""
 "``encoding`` argument of open::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import csv\n"
 "with open('some.csv', newline='', encoding='utf-8') as f:\n"
@@ -633,6 +710,11 @@ msgid ""
 "    for row in reader:\n"
 "        print(row)"
 msgstr ""
+"import csv\n"
+"with open('some.csv', newline='', encoding='utf-8') as f:\n"
+"    reader = csv.reader(f)\n"
+"    for row in reader:\n"
+"        print(row)"
 
 msgid ""
 "The same applies to writing in something other than the system default "
@@ -642,18 +724,26 @@ msgstr ""
 msgid "Registering a new dialect::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import csv\n"
 "csv.register_dialect('unixpwd', delimiter=':', quoting=csv.QUOTE_NONE)\n"
 "with open('passwd', newline='') as f:\n"
 "    reader = csv.reader(f, 'unixpwd')"
 msgstr ""
+"import csv\n"
+"csv.register_dialect('unixpwd', delimiter=':', quoting=csv.QUOTE_NONE)\n"
+"with open('passwd', newline='') as f:\n"
+"    reader = csv.reader(f, 'unixpwd')"
 
 msgid ""
 "A slightly more advanced use of the reader --- catching and reporting "
 "errors::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import csv, sys\n"
 "filename = 'some.csv'\n"
@@ -665,17 +755,31 @@ msgid ""
 "    except csv.Error as e:\n"
 "        sys.exit(f'file {filename}, line {reader.line_num}: {e}')"
 msgstr ""
+"import csv, sys\n"
+"filename = 'some.csv'\n"
+"with open(filename, newline='') as f:\n"
+"    reader = csv.reader(f)\n"
+"    try:\n"
+"        for row in reader:\n"
+"            print(row)\n"
+"    except csv.Error as e:\n"
+"        sys.exit(f'file {filename}, line {reader.line_num}: {e}')"
 
 msgid ""
 "And while the module doesn't directly support parsing strings, it can easily "
 "be done::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import csv\n"
 "for row in csv.reader(['one,two,three']):\n"
 "    print(row)"
 msgstr ""
+"import csv\n"
+"for row in csv.reader(['one,two,three']):\n"
+"    print(row)"
 
 msgid "Footnotes"
 msgstr " Chú thích"
@@ -688,17 +792,23 @@ msgid ""
 "`universal <universal newlines>`) newline handling."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "csv"
-msgstr ""
+msgstr "csv"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "data"
-msgstr ""
+msgstr "data"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "tabular"
-msgstr ""
+msgstr "tabular"
 
 msgid "universal newlines"
-msgstr ""
+msgstr "ký tự xuống dòng phổ quát"
 
 msgid "csv.reader function"
 msgstr ""

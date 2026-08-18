@@ -1,50 +1,55 @@
-# Vietnamese translation of Brief Tour of the Standard Library Part II.
+# SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2001 Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# Duc-Tam Nguyen <tamnd@liteio.dev>, 2026.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-18 10:29+0700\n"
-"PO-Revision-Date: 2026-04-19 12:00+0700\n"
-"Last-Translator: Duc-Tam Nguyen <tamnd@liteio.dev>\n"
-"Language-Team: vi <tamnd@liteio.dev>\n"
-"Language: vi\n"
+"POT-Creation-Date: 2026-05-08 18:34+0000\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"Generated-By: Babel 2.18.0\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"X-Generator: pydocvi 0.1.2\n"
 
-#: ../../tutorial/stdlib2.rst:5
-msgid "Brief Tour of the Standard Library --- Part II"
-msgstr "Lướt qua thư viện chuẩn --- Phần II"
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=a899e7fdc638 run=2026-08-17T16:43Z
+#, fuzzy
+msgid "Brief tour of the standard library --- part II"
+msgstr "Chuyến tham quan ngắn về thư viện chuẩn --- phần II"
 
-#: ../../tutorial/stdlib2.rst:7
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=a899e7fdc638 run=2026-08-17T16:43Z
+#, fuzzy
 msgid ""
 "This second tour covers more advanced modules that support professional "
 "programming needs.  These modules rarely occur in small scripts."
 msgstr ""
-"Phần hai này giới thiệu các module nâng cao hơn, phục vụ nhu cầu lập "
-"trình chuyên nghiệp. Các module này hiếm khi xuất hiện trong các script "
-"nhỏ."
+"Chuyến tham quan thứ hai này bao gồm các module nâng cao hơn hỗ trợ nhu cầu "
+"lập trình chuyên nghiệp. Những module này hiếm khi xuất hiện trong các script"
+" nhỏ."
 
-#: ../../tutorial/stdlib2.rst:14
-msgid "Output Formatting"
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=a899e7fdc638 run=2026-08-17T16:43Z
+#, fuzzy
+msgid "Output formatting"
 msgstr "Định dạng đầu ra"
 
-#: ../../tutorial/stdlib2.rst:16
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=a899e7fdc638 run=2026-08-17T16:43Z
+#, fuzzy
 msgid ""
 "The :mod:`reprlib` module provides a version of :func:`repr` customized for "
 "abbreviated displays of large or deeply nested containers::"
 msgstr ""
-"Module :mod:`reprlib` cung cấp một phiên bản :func:`repr` được tuỳ biến "
-"để hiển thị rút gọn các container lớn hoặc lồng sâu::"
+"Module :mod:`reprlib` cung cấp một phiên bản của :func:`repr` được tùy chỉnh "
+"để hiển thị rút gọn các container lớn hoặc lồng nhau sâu::"
 
-#: ../../tutorial/stdlib2.rst:19
-#, python-brace-format
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import reprlib\n"
 ">>> reprlib.repr(set('supercalifragilisticexpialidocious'))\n"
@@ -54,55 +59,81 @@ msgstr ""
 ">>> reprlib.repr(set('supercalifragilisticexpialidocious'))\n"
 "\"{'a', 'c', 'd', 'e', 'f', 'g', ...}\""
 
-#: ../../tutorial/stdlib2.rst:23
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=a899e7fdc638 run=2026-08-17T16:43Z
+#, fuzzy
 msgid ""
-"The :mod:`pprint` module offers more sophisticated control over printing "
-"both built-in and user defined objects in a way that is readable by the "
-"interpreter. When the result is longer than one line, the \"pretty printer\""
-" adds line breaks and indentation to more clearly reveal data structure::"
+"The :mod:`pprint` module offers more sophisticated control over printing both"
+" built-in and user defined objects in a way that is readable by the "
+"interpreter. When the result is longer than one line, the \"pretty printer\" "
+"adds line breaks and indentation to more clearly reveal data structure::"
 msgstr ""
-"Module :mod:`pprint` cho phép kiểm soát tinh vi hơn khi in cả đối tượng "
-"tích hợp sẵn lẫn đối tượng do người dùng định nghĩa theo cách mà trình "
-"thông dịch có thể đọc được. Khi kết quả dài hơn một dòng, \"pretty "
-"printer\" sẽ thêm ngắt dòng và thụt lề để thể hiện cấu trúc dữ liệu rõ "
-"hơn::"
+"Module :mod:`pprint` cung cấp khả năng kiểm soát tinh vi hơn việc in cả các "
+"đối tượng dựng sẵn và do người dùng định nghĩa theo cách có thể đọc được bởi "
+"trình thông dịch. Khi kết quả dài hơn một dòng, \"trình in đẹp\" thêm ngắt "
+"dòng và thụt lề để thể hiện rõ hơn cấu trúc dữ liệu::"
 
-#: ../../tutorial/stdlib2.rst:28
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import pprint\n"
 ">>> t = [[[['black', 'cyan'], 'white', ['green', 'red']], [['magenta',\n"
 "...     'yellow'], 'blue']]]\n"
 "...\n"
 ">>> pprint.pprint(t, width=30)\n"
-"[[[['black', 'cyan'],\n"
-"   'white',\n"
-"   ['green', 'red']],\n"
-"  [['magenta', 'yellow'],\n"
-"   'blue']]]"
+"[\n"
+"    [\n"
+"        [\n"
+"            ['black', 'cyan'],\n"
+"            'white',\n"
+"            ['green', 'red'],\n"
+"        ],\n"
+"        [\n"
+"            [\n"
+"                'magenta',\n"
+"                'yellow',\n"
+"            ],\n"
+"            'blue',\n"
+"        ],\n"
+"    ],\n"
+"]"
 msgstr ""
 ">>> import pprint\n"
 ">>> t = [[[['black', 'cyan'], 'white', ['green', 'red']], [['magenta',\n"
 "...     'yellow'], 'blue']]]\n"
 "...\n"
 ">>> pprint.pprint(t, width=30)\n"
-"[[[['black', 'cyan'],\n"
-"   'white',\n"
-"   ['green', 'red']],\n"
-"  [['magenta', 'yellow'],\n"
-"   'blue']]]"
+"[\n"
+"    [\n"
+"        [\n"
+"            ['black', 'cyan'],\n"
+"            'white',\n"
+"            ['green', 'red'],\n"
+"        ],\n"
+"        [\n"
+"            [\n"
+"                'magenta',\n"
+"                'yellow',\n"
+"            ],\n"
+"            'blue',\n"
+"        ],\n"
+"    ],\n"
+"]"
 
-#: ../../tutorial/stdlib2.rst:39
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=a899e7fdc638 run=2026-08-17T16:43Z
+#, fuzzy
 msgid ""
 "The :mod:`textwrap` module formats paragraphs of text to fit a given screen "
 "width::"
 msgstr ""
-"Module :mod:`textwrap` định dạng các đoạn văn bản để vừa với chiều rộng "
-"màn hình nhất định::"
+"Module :mod:`textwrap` định dạng các đoạn văn bản để vừa với độ rộng màn hình"
+" đã cho::"
 
-#: ../../tutorial/stdlib2.rst:42
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import textwrap\n"
-">>> doc = \"\"\"The wrap() method is just like fill() except that it returns\n"
+">>> doc = \"\"\"The wrap() method is just like fill() except that it "
+"returns\n"
 "... a list of strings instead of one big string with newlines to separate\n"
 "... the wrapped lines.\"\"\"\n"
 "...\n"
@@ -113,7 +144,8 @@ msgid ""
 "to separate the wrapped lines."
 msgstr ""
 ">>> import textwrap\n"
-">>> doc = \"\"\"The wrap() method is just like fill() except that it returns\n"
+">>> doc = \"\"\"The wrap() method is just like fill() except that it "
+"returns\n"
 "... a list of strings instead of one big string with newlines to separate\n"
 "... the wrapped lines.\"\"\"\n"
 "...\n"
@@ -123,18 +155,19 @@ msgstr ""
 "instead of one big string with newlines\n"
 "to separate the wrapped lines."
 
-#: ../../tutorial/stdlib2.rst:53
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=a899e7fdc638 run=2026-08-17T16:43Z
+#, fuzzy
 msgid ""
 "The :mod:`locale` module accesses a database of culture specific data "
-"formats. The grouping attribute of locale's format function provides a "
-"direct way of formatting numbers with group separators::"
+"formats. The grouping attribute of locale's format function provides a direct"
+" way of formatting numbers with group separators::"
 msgstr ""
-"Module :mod:`locale` truy cập cơ sở dữ liệu về các định dạng dữ liệu đặc "
-"thù theo văn hoá. Attribute grouping của hàm định dạng trong locale cung "
-"cấp cách trực tiếp để định dạng số với dấu phân cách nhóm::"
+"Module :mod:`locale` truy cập cơ sở dữ liệu về các định dạng dữ liệu đặc thù "
+"theo văn hóa. Thuộc tính grouping của hàm format của locale cung cấp cách "
+"trực tiếp để định dạng số với dấu phân cách nhóm::"
 
-#: ../../tutorial/stdlib2.rst:57
-#, python-format
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import locale\n"
 ">>> locale.setlocale(locale.LC_ALL, 'English_United States.1252')\n"
@@ -150,7 +183,7 @@ msgstr ""
 ">>> import locale\n"
 ">>> locale.setlocale(locale.LC_ALL, 'English_United States.1252')\n"
 "'English_United States.1252'\n"
-">>> conv = locale.localeconv()          # lấy ánh xạ các quy ước\n"
+">>> conv = locale.localeconv()          # get a mapping of conventions\n"
 ">>> x = 1234567.8\n"
 ">>> locale.format_string(\"%d\", x, grouping=True)\n"
 "'1,234,567'\n"
@@ -158,37 +191,40 @@ msgstr ""
 "...                      conv['frac_digits'], x), grouping=True)\n"
 "'$1,234,567.80'"
 
-#: ../../tutorial/stdlib2.rst:72
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Templating"
-msgstr "Tạo mẫu"
+msgstr "Templating"
 
-#: ../../tutorial/stdlib2.rst:74
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=a899e7fdc638 run=2026-08-17T16:43Z
+#, fuzzy
 msgid ""
-"The :mod:`string` module includes a versatile :class:`~string.Template` "
-"class with a simplified syntax suitable for editing by end-users.  This "
-"allows users to customize their applications without having to alter the "
+"The :mod:`string` module includes a versatile :class:`~string.Template` class"
+" with a simplified syntax suitable for editing by end-users.  This allows "
+"users to customize their applications without having to alter the "
 "application."
 msgstr ""
-"Module :mod:`string` có một class :class:`~string.Template` linh hoạt với "
-"cú pháp đơn giản, phù hợp để người dùng cuối chỉnh sửa. Điều này cho "
-"phép người dùng tuỳ biến ứng dụng mà không cần sửa đổi bản thân ứng "
+"Module :mod:`string` bao gồm một lớp :class:`~string.Template` linh hoạt với "
+"cú pháp đơn giản hóa phù hợp cho việc chỉnh sửa bởi người dùng cuối. Điều này"
+" cho phép người dùng tùy chỉnh ứng dụng của họ mà không cần thay đổi ứng "
 "dụng."
 
-#: ../../tutorial/stdlib2.rst:78
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=a899e7fdc638 run=2026-08-17T16:43Z
+#, fuzzy
 msgid ""
 "The format uses placeholder names formed by ``$`` with valid Python "
 "identifiers (alphanumeric characters and underscores).  Surrounding the "
-"placeholder with braces allows it to be followed by more alphanumeric "
-"letters with no intervening spaces.  Writing ``$$`` creates a single escaped"
-" ``$``::"
+"placeholder with braces allows it to be followed by more alphanumeric letters"
+" with no intervening spaces.  Writing ``$$`` creates a single escaped ``$``::"
 msgstr ""
-"Định dạng dùng tên placeholder được tạo bởi ``$`` kèm một định danh Python "
-"hợp lệ (ký tự chữ-số và dấu gạch dưới). Bao placeholder trong dấu ngoặc "
-"nhọn cho phép nó được theo sau bởi thêm ký tự chữ-số mà không có khoảng "
-"trắng chen vào. Viết ``$$`` tạo ra một ``$`` được thoát::"
+"Định dạng sử dụng các tên placeholder được tạo bởi ``$`` với các định danh "
+"Python hợp lệ (ký tự chữ và số cùng dấu gạch dưới). Bao quanh placeholder "
+"bằng dấu ngoặc nhọn cho phép nó được theo sau bởi nhiều chữ cái và số hơn mà "
+"không có khoảng trắng xen giữa. Viết ``$$`` tạo ra một ``$`` được escape đơn "
+"lẻ::"
 
-#: ../../tutorial/stdlib2.rst:83
-#, python-brace-format
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> from string import Template\n"
 ">>> t = Template('${village}folk send $$10 to $cause.')\n"
@@ -200,22 +236,23 @@ msgstr ""
 ">>> t.substitute(village='Nottingham', cause='the ditch fund')\n"
 "'Nottinghamfolk send $10 to the ditch fund.'"
 
-#: ../../tutorial/stdlib2.rst:88
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=a899e7fdc638 run=2026-08-17T16:43Z
+#, fuzzy
 msgid ""
-"The :meth:`~string.Template.substitute` method raises a :exc:`KeyError` when"
-" a placeholder is not supplied in a dictionary or a keyword argument.  For "
+"The :meth:`~string.Template.substitute` method raises a :exc:`KeyError` when "
+"a placeholder is not supplied in a dictionary or a keyword argument.  For "
 "mail-merge style applications, user supplied data may be incomplete and the "
 ":meth:`~string.Template.safe_substitute` method may be more appropriate --- "
 "it will leave placeholders unchanged if data is missing::"
 msgstr ""
-"Method :meth:`~string.Template.substitute` phát sinh :exc:`KeyError` khi "
-"một placeholder không được cung cấp trong dictionary hay đối số từ khoá. "
-"Với các ứng dụng kiểu mail-merge, dữ liệu người dùng cung cấp có thể "
-"không đầy đủ và method "
-":meth:`~string.Template.safe_substitute` có thể phù hợp hơn --- nó sẽ "
-"giữ nguyên placeholder nếu dữ liệu bị thiếu::"
+"Phương thức :meth:`~string.Template.substitute` đưa ra một :exc:`KeyError` "
+"khi một placeholder không được cung cấp trong một từ điển hoặc một đối số từ "
+"khóa. Với các ứng dụng kiểu trộn thư, dữ liệu do người dùng cung cấp có thể "
+"không đầy đủ và phương thức :meth:`~string.Template.safe_substitute` có thể "
+"phù hợp hơn --- nó sẽ giữ nguyên các placeholder nếu thiếu dữ liệu::"
 
-#: ../../tutorial/stdlib2.rst:94
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> t = Template('Return the $item to $owner.')\n"
 ">>> d = dict(item='unladen swallow')\n"
@@ -235,20 +272,21 @@ msgstr ""
 ">>> t.safe_substitute(d)\n"
 "'Return the unladen swallow to $owner.'"
 
-#: ../../tutorial/stdlib2.rst:103
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=a899e7fdc638 run=2026-08-17T16:43Z
+#, fuzzy
 msgid ""
 "Template subclasses can specify a custom delimiter.  For example, a batch "
 "renaming utility for a photo browser may elect to use percent signs for "
 "placeholders such as the current date, image sequence number, or file "
 "format::"
 msgstr ""
-"Các lớp con của Template có thể chỉ định dấu phân cách tuỳ chỉnh. Ví dụ, "
-"một tiện ích đổi tên hàng loạt cho trình duyệt ảnh có thể dùng ký hiệu "
-"phần trăm cho các placeholder như ngày hiện tại, số thứ tự ảnh, hay định "
-"dạng tập tin::"
+"Các lớp con Template có thể chỉ định một dấu phân cách tùy chỉnh. Ví dụ, một "
+"tiện ích đổi tên hàng loạt cho trình duyệt ảnh có thể chọn sử dụng dấu phần "
+"trăm cho các placeholder như ngày hiện tại, số thứ tự ảnh trong dãy, hoặc "
+"định dạng tệp::"
 
-#: ../../tutorial/stdlib2.rst:107
-#, python-brace-format, python-format
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import time, os.path\n"
 ">>> photofiles = ['img_1074.jpg', 'img_1076.jpg', 'img_1077.jpg']\n"
@@ -288,21 +326,24 @@ msgstr ""
 "img_1076.jpg --> Ashley_1.jpg\n"
 "img_1077.jpg --> Ashley_2.jpg"
 
-#: ../../tutorial/stdlib2.rst:126
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=a899e7fdc638 run=2026-08-17T16:43Z
+#, fuzzy
 msgid ""
 "Another application for templating is separating program logic from the "
 "details of multiple output formats.  This makes it possible to substitute "
 "custom templates for XML files, plain text reports, and HTML web reports."
 msgstr ""
-"Một ứng dụng khác của tạo mẫu là tách logic chương trình khỏi chi tiết "
-"của nhiều định dạng đầu ra. Điều này giúp thay thế template tuỳ chỉnh "
-"cho tập tin XML, báo cáo văn bản thuần, và báo cáo web HTML."
+"Một ứng dụng khác của templating là tách logic chương trình khỏi chi tiết của"
+" nhiều định dạng đầu ra. Điều này giúp có thể thay thế các template tùy chỉnh"
+" cho tệp XML, báo cáo văn bản thuần túy và báo cáo web HTML."
 
-#: ../../tutorial/stdlib2.rst:134
-msgid "Working with Binary Data Record Layouts"
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=a899e7fdc638 run=2026-08-17T16:43Z
+#, fuzzy
+msgid "Working with binary data record layouts"
 msgstr "Làm việc với bố cục bản ghi dữ liệu nhị phân"
 
-#: ../../tutorial/stdlib2.rst:136
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=a899e7fdc638 run=2026-08-17T16:43Z
+#, fuzzy
 msgid ""
 "The :mod:`struct` module provides :func:`~struct.pack` and "
 ":func:`~struct.unpack` functions for working with variable length binary "
@@ -313,14 +354,15 @@ msgid ""
 "little-endian byte order::"
 msgstr ""
 "Module :mod:`struct` cung cấp các hàm :func:`~struct.pack` và "
-":func:`~struct.unpack` để làm việc với các định dạng bản ghi nhị phân có "
-"độ dài thay đổi. Ví dụ dưới đây cho thấy cách duyệt qua thông tin tiêu "
-"đề trong một tập tin ZIP mà không dùng module :mod:`zipfile`. Mã pack "
-"``\"H\"`` và ``\"I\"`` đại diện lần lượt cho số nguyên không dấu hai byte "
-"và bốn byte. ``\"<\"`` chỉ ra rằng chúng có kích thước chuẩn và theo thứ "
-"tự byte little-endian::"
+":func:`~struct.unpack` để làm việc với các định dạng bản ghi nhị phân có độ "
+"dài thay đổi. Ví dụ sau đây cho thấy cách lặp qua thông tin tiêu đề trong một"
+" tệp ZIP mà không sử dụng module :mod:`zipfile`. Các mã đóng gói ``\"H\"`` và"
+" ``\"I\"`` lần lượt biểu diễn các số không dấu có độ dài hai và bốn byte. "
+"``\"<\"`` chỉ ra rằng chúng có kích thước chuẩn và sử dụng thứ tự byte "
+"little-endian::"
 
-#: ../../tutorial/stdlib2.rst:144
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import struct\n"
 "\n"
@@ -347,7 +389,7 @@ msgstr ""
 "    data = f.read()\n"
 "\n"
 "start = 0\n"
-"for i in range(3):                      # hiển thị 3 tiêu đề tập tin đầu tiên\n"
+"for i in range(3):                      # show the first 3 file headers\n"
 "    start += 14\n"
 "    fields = struct.unpack('<IIIHH', data[start:start+16])\n"
 "    crc32, comp_size, uncomp_size, filenamesize, extra_size = fields\n"
@@ -358,48 +400,49 @@ msgstr ""
 "    extra = data[start:start+extra_size]\n"
 "    print(filename, hex(crc32), comp_size, uncomp_size)\n"
 "\n"
-"    start += extra_size + comp_size     # bỏ qua tới tiêu đề kế tiếp"
+"    start += extra_size + comp_size     # skip to the next header"
 
-#: ../../tutorial/stdlib2.rst:167
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=a899e7fdc638 run=2026-08-17T16:43Z
+#, fuzzy
 msgid "Multi-threading"
 msgstr "Đa luồng"
 
-#: ../../tutorial/stdlib2.rst:169
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=a899e7fdc638 run=2026-08-17T16:43Z
+#, fuzzy
 msgid ""
 "Threading is a technique for decoupling tasks which are not sequentially "
-"dependent.  Threads can be used to improve the responsiveness of "
-"applications that accept user input while other tasks run in the background."
-"  A related use case is running I/O in parallel with computations in another"
-" thread."
+"dependent.  Threads can be used to improve the responsiveness of applications"
+" that accept user input while other tasks run in the background.  A related "
+"use case is running I/O in parallel with computations in another thread."
 msgstr ""
-"Threading là kỹ thuật tách rời các tác vụ không phụ thuộc tuần tự nhau. "
-"Thread có thể được dùng để cải thiện khả năng phản hồi của ứng dụng chấp "
-"nhận đầu vào người dùng trong khi các tác vụ khác chạy ở nền. Một trường "
-"hợp dùng liên quan là chạy I/O song song với tính toán trong một thread "
-"khác."
+"Luồng là một kỹ thuật để tách rời các tác vụ không phụ thuộc tuần tự. Các "
+"thread có thể được dùng để cải thiện khả năng phản hồi của các ứng dụng nhận "
+"đầu vào người dùng trong khi các tác vụ khác chạy ở nền. Một trường hợp sử "
+"dụng liên quan là chạy I/O song song với các phép tính trong một thread khác."
 
-#: ../../tutorial/stdlib2.rst:174
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=a899e7fdc638 run=2026-08-17T16:43Z
+#, fuzzy
 msgid ""
 "The following code shows how the high level :mod:`threading` module can run "
 "tasks in background while the main program continues to run::"
 msgstr ""
-"Đoạn mã sau cho thấy module bậc cao :mod:`threading` có thể chạy các tác "
-"vụ ở nền như thế nào trong khi chương trình chính tiếp tục thực thi::"
+"Đoạn mã sau cho thấy cách module cấp cao :mod:`threading` có thể chạy các tác"
+" vụ ở nền trong khi chương trình chính tiếp tục chạy::"
 
-#: ../../tutorial/stdlib2.rst:177
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import threading, zipfile\n"
 "\n"
 "class AsyncZip(threading.Thread):\n"
 "    def __init__(self, infile, outfile):\n"
-"        threading.Thread.__init__(self)\n"
+"        super().__init__()\n"
 "        self.infile = infile\n"
 "        self.outfile = outfile\n"
 "\n"
 "    def run(self):\n"
-"        f = zipfile.ZipFile(self.outfile, 'w', zipfile.ZIP_DEFLATED)\n"
-"        f.write(self.infile)\n"
-"        f.close()\n"
+"        with zipfile.ZipFile(self.outfile, 'w', zipfile.ZIP_DEFLATED) as f:\n"
+"            f.write(self.infile)\n"
 "        print('Finished background zip of:', self.infile)\n"
 "\n"
 "background = AsyncZip('mydata.txt', 'myarchive.zip')\n"
@@ -413,36 +456,37 @@ msgstr ""
 "\n"
 "class AsyncZip(threading.Thread):\n"
 "    def __init__(self, infile, outfile):\n"
-"        threading.Thread.__init__(self)\n"
+"        super().__init__()\n"
 "        self.infile = infile\n"
 "        self.outfile = outfile\n"
 "\n"
 "    def run(self):\n"
-"        f = zipfile.ZipFile(self.outfile, 'w', zipfile.ZIP_DEFLATED)\n"
-"        f.write(self.infile)\n"
-"        f.close()\n"
+"        with zipfile.ZipFile(self.outfile, 'w', zipfile.ZIP_DEFLATED) as f:\n"
+"            f.write(self.infile)\n"
 "        print('Finished background zip of:', self.infile)\n"
 "\n"
 "background = AsyncZip('mydata.txt', 'myarchive.zip')\n"
 "background.start()\n"
 "print('The main program continues to run in foreground.')\n"
 "\n"
-"background.join()    # Chờ tác vụ nền hoàn thành\n"
+"background.join()    # Wait for the background task to finish\n"
 "print('Main program waited until background was done.')"
 
-#: ../../tutorial/stdlib2.rst:198
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=a899e7fdc638 run=2026-08-17T16:43Z
+#, fuzzy
 msgid ""
 "The principal challenge of multi-threaded applications is coordinating "
 "threads that share data or other resources.  To that end, the threading "
 "module provides a number of synchronization primitives including locks, "
 "events, condition variables, and semaphores."
 msgstr ""
-"Thách thức chính của ứng dụng đa luồng là phối hợp các thread chia sẻ dữ "
-"liệu hay tài nguyên khác. Để đạt mục đích đó, module threading cung cấp "
-"một số nguyên thuỷ đồng bộ hoá bao gồm lock, event, biến điều kiện và "
+"Thách thức chính của các ứng dụng đa luồng là điều phối các thread chia sẻ dữ"
+" liệu hoặc tài nguyên khác. Để đạt được điều đó, module threading cung cấp "
+"một số nguyên thủy đồng bộ hóa bao gồm khóa, sự kiện, biến điều kiện và "
 "semaphore."
 
-#: ../../tutorial/stdlib2.rst:203
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=a899e7fdc638 run=2026-08-17T16:43Z
+#, fuzzy
 msgid ""
 "While those tools are powerful, minor design errors can result in problems "
 "that are difficult to reproduce.  So, the preferred approach to task "
@@ -452,30 +496,31 @@ msgid ""
 "thread communication and coordination are easier to design, more readable, "
 "and more reliable."
 msgstr ""
-"Dù những công cụ đó rất mạnh mẽ, một lỗi thiết kế nhỏ có thể dẫn đến "
-"các vấn đề khó tái hiện. Vì vậy, cách tiếp cận được ưa chuộng để phối "
-"hợp tác vụ là tập trung toàn bộ quyền truy cập vào một tài nguyên trong "
-"một thread duy nhất, rồi dùng module :mod:`queue` để cấp các yêu cầu từ "
-"các thread khác cho thread đó. Các ứng dụng dùng đối tượng "
-":class:`~queue.Queue` để giao tiếp và phối hợp giữa các thread sẽ dễ "
-"thiết kế hơn, dễ đọc hơn và đáng tin cậy hơn."
+"Mặc dù các công cụ đó mạnh mẽ, các lỗi thiết kế nhỏ có thể dẫn đến những vấn "
+"đề khó tái tạo. Vì vậy, cách tiếp cận được ưu tiên để điều phối tác vụ là tập"
+" trung toàn bộ quyền truy cập vào một tài nguyên trong một thread duy nhất "
+"rồi sử dụng module :mod:`queue` để cung cấp các yêu cầu từ các thread khác "
+"cho thread đó. Các ứng dụng sử dụng các đối tượng :class:`~queue.Queue` để "
+"giao tiếp và điều phối giữa các thread dễ thiết kế hơn, dễ đọc hơn và đáng "
+"tin cậy hơn."
 
-#: ../../tutorial/stdlib2.rst:214
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Logging"
-msgstr "Ghi log"
+msgstr "Logging"
 
-#: ../../tutorial/stdlib2.rst:216
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=a899e7fdc638 run=2026-08-17T16:43Z
+#, fuzzy
 msgid ""
-"The :mod:`logging` module offers a full featured and flexible logging "
-"system. At its simplest, log messages are sent to a file or to "
+"The :mod:`logging` module offers a full featured and flexible logging system."
+" At its simplest, log messages are sent to a file or to ``sys.stderr``::"
+msgstr ""
+"Module :mod:`logging` cung cấp một hệ thống ghi log đầy đủ tính năng và linh "
+"hoạt. Ở dạng đơn giản nhất, các thông điệp log được gửi đến một tệp hoặc đến "
 "``sys.stderr``::"
-msgstr ""
-"Module :mod:`logging` cung cấp hệ thống ghi log linh hoạt và đầy đủ tính "
-"năng. Ở dạng đơn giản nhất, các thông điệp log được gửi tới một tập tin "
-"hoặc tới ``sys.stderr``::"
 
-#: ../../tutorial/stdlib2.rst:219
-#, python-format
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=a000845f44be run=2026-08-17T16:43Z
+#, fuzzy
 msgid ""
 "import logging\n"
 "logging.debug('Debugging information')\n"
@@ -485,27 +530,30 @@ msgid ""
 "logging.critical('Critical error -- shutting down')"
 msgstr ""
 "import logging\n"
-"logging.debug('Debugging information')\n"
-"logging.info('Informational message')\n"
-"logging.warning('Warning:config file %s not found', 'server.conf')\n"
-"logging.error('Error occurred')\n"
-"logging.critical('Critical error -- shutting down')"
+"logging.debug('Thông tin gỡ lỗi')\n"
+"logging.info('Thông báo thông tin')\n"
+"logging.warning('Cảnh báo: không tìm thấy tệp cấu hình %s', 'server.conf')\n"
+"logging.error('Đã xảy ra lỗi')\n"
+"logging.critical('Lỗi nghiêm trọng -- đang tắt hệ thống')"
 
-#: ../../tutorial/stdlib2.rst:226
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=a899e7fdc638 run=2026-08-17T16:43Z
+#, fuzzy
 msgid "This produces the following output:"
-msgstr "Đoạn mã này tạo ra đầu ra sau:"
+msgstr "Điều này tạo ra đầu ra sau:"
 
-#: ../../tutorial/stdlib2.rst:228
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=a000845f44be run=2026-08-17T16:43Z
+#, fuzzy
 msgid ""
 "WARNING:root:Warning:config file server.conf not found\n"
 "ERROR:root:Error occurred\n"
 "CRITICAL:root:Critical error -- shutting down"
 msgstr ""
-"WARNING:root:Warning:config file server.conf not found\n"
-"ERROR:root:Error occurred\n"
-"CRITICAL:root:Critical error -- shutting down"
+"CẢNH BÁO:root:Cảnh báo: không tìm thấy tệp cấu hình server.conf\n"
+"LỖI:root:Đã xảy ra lỗi\n"
+"NGHIÊM TRỌNG:root:Lỗi nghiêm trọng -- đang tắt hệ thống"
 
-#: ../../tutorial/stdlib2.rst:234
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=a899e7fdc638 run=2026-08-17T16:43Z
+#, fuzzy
 msgid ""
 "By default, informational and debugging messages are suppressed and the "
 "output is sent to standard error.  Other output options include routing "
@@ -514,58 +562,63 @@ msgid ""
 ":const:`~logging.DEBUG`, :const:`~logging.INFO`, :const:`~logging.WARNING`, "
 ":const:`~logging.ERROR`, and :const:`~logging.CRITICAL`."
 msgstr ""
-"Theo mặc định, các thông điệp thông tin và gỡ lỗi bị chặn và đầu ra "
-"được gửi tới stderr. Các tuỳ chọn đầu ra khác bao gồm định tuyến thông "
-"điệp qua email, datagram, socket, hay tới máy chủ HTTP. Bộ lọc mới có "
-"thể chọn định tuyến khác nhau dựa trên mức ưu tiên của thông điệp: "
+"Theo mặc định, các thông điệp thông tin và gỡ lỗi bị loại bỏ và đầu ra được "
+"gửi đến lỗi tiêu chuẩn. Các tùy chọn đầu ra khác bao gồm định tuyến thông "
+"điệp qua email, datagram, socket hoặc đến một HTTP Server. Các bộ lọc mới có "
+"thể chọn định tuyến khác nhau dựa trên mức độ ưu tiên của thông điệp: "
 ":const:`~logging.DEBUG`, :const:`~logging.INFO`, :const:`~logging.WARNING`, "
 ":const:`~logging.ERROR` và :const:`~logging.CRITICAL`."
 
-#: ../../tutorial/stdlib2.rst:241
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=a899e7fdc638 run=2026-08-17T16:43Z
+#, fuzzy
 msgid ""
 "The logging system can be configured directly from Python or can be loaded "
 "from a user editable configuration file for customized logging without "
 "altering the application."
 msgstr ""
-"Hệ thống logging có thể được cấu hình trực tiếp từ Python hoặc tải từ "
-"tập tin cấu hình mà người dùng có thể chỉnh sửa, để tuỳ chỉnh việc ghi "
-"log mà không làm thay đổi ứng dụng."
+"Hệ thống ghi log có thể được cấu hình trực tiếp từ Python hoặc có thể được "
+"tải từ một tệp cấu hình có thể chỉnh sửa bởi người dùng để tùy chỉnh việc ghi"
+" log mà không cần thay đổi ứng dụng."
 
-#: ../../tutorial/stdlib2.rst:249
-msgid "Weak References"
-msgstr "Tham chiếu yếu"
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=a899e7fdc638 run=2026-08-17T16:43Z
+#, fuzzy
+msgid "Weak references"
+msgstr "Các tham chiếu yếu"
 
-#: ../../tutorial/stdlib2.rst:251
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=a899e7fdc638 run=2026-08-17T16:43Z
+#, fuzzy
 msgid ""
-"Python does automatic memory management (reference counting for most objects"
-" and :term:`garbage collection` to eliminate cycles).  The memory is freed "
+"Python does automatic memory management (reference counting for most objects "
+"and :term:`garbage collection` to eliminate cycles).  The memory is freed "
 "shortly after the last reference to it has been eliminated."
 msgstr ""
-"Python thực hiện quản lý bộ nhớ tự động (đếm tham chiếu cho hầu hết các "
-"đối tượng và :term:`garbage collection` để loại bỏ chu kỳ). Bộ nhớ được "
-"giải phóng ngay sau khi tham chiếu cuối cùng tới nó bị loại bỏ."
+"Python thực hiện quản lý bộ nhớ tự động (đếm tham chiếu cho hầu hết đối tượng"
+" và :term:`garbage collection` để loại bỏ các chu kỳ). Bộ nhớ được giải phóng"
+" ngay sau khi tham chiếu cuối cùng đến nó bị loại bỏ."
 
-#: ../../tutorial/stdlib2.rst:255
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=a899e7fdc638 run=2026-08-17T16:43Z
+#, fuzzy
 msgid ""
 "This approach works fine for most applications but occasionally there is a "
-"need to track objects only as long as they are being used by something else."
-" Unfortunately, just tracking them creates a reference that makes them "
+"need to track objects only as long as they are being used by something else. "
+"Unfortunately, just tracking them creates a reference that makes them "
 "permanent. The :mod:`weakref` module provides tools for tracking objects "
 "without creating a reference.  When the object is no longer needed, it is "
 "automatically removed from a weakref table and a callback is triggered for "
 "weakref objects.  Typical applications include caching objects that are "
 "expensive to create::"
 msgstr ""
-"Cách tiếp cận này hoạt động tốt với hầu hết ứng dụng, nhưng đôi khi cần "
-"theo dõi đối tượng chỉ khi chúng còn đang được sử dụng bởi thứ khác. "
-"Đáng tiếc, chỉ cần theo dõi chúng là đã tạo ra một tham chiếu khiến "
-"chúng tồn tại mãi. Module :mod:`weakref` cung cấp công cụ theo dõi đối "
-"tượng mà không tạo tham chiếu. Khi đối tượng không còn cần nữa, nó tự "
-"động bị xoá khỏi bảng weakref và một callback được kích hoạt cho các đối "
-"tượng weakref. Ứng dụng điển hình bao gồm cache các đối tượng tốn nhiều "
-"chi phí khởi tạo::"
+"Cách tiếp cận này hoạt động tốt với hầu hết ứng dụng nhưng đôi khi cần theo "
+"dõi các đối tượng chỉ trong thời gian chúng đang được một thứ khác sử dụng. "
+"Đáng tiếc là chỉ việc theo dõi chúng cũng tạo ra một tham chiếu khiến chúng "
+"tồn tại vĩnh viễn. Module :mod:`weakref` cung cấp các công cụ để theo dõi đối"
+" tượng mà không tạo ra tham chiếu. Khi đối tượng không còn cần thiết, nó tự "
+"động được loại bỏ khỏi bảng weakref và một hàm callback được kích hoạt cho "
+"các đối tượng weakref. Các ứng dụng điển hình bao gồm lưu đệm các đối tượng "
+"tốn kém để tạo ra::"
 
-#: ../../tutorial/stdlib2.rst:263
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import weakref, gc\n"
 ">>> class A:\n"
@@ -586,7 +639,7 @@ msgid ""
 "Traceback (most recent call last):\n"
 "  File \"<stdin>\", line 1, in <module>\n"
 "    d['primary']                # entry was automatically removed\n"
-"  File \"C:/python314/lib/weakref.py\", line 46, in __getitem__\n"
+"  File \"C:/python315/lib/weakref.py\", line 46, in __getitem__\n"
 "    o = self.data[key]()\n"
 "KeyError: 'primary'"
 msgstr ""
@@ -597,51 +650,55 @@ msgstr ""
 "...     def __repr__(self):\n"
 "...         return str(self.value)\n"
 "...\n"
-">>> a = A(10)                   # tạo một tham chiếu\n"
+">>> a = A(10)                   # create a reference\n"
 ">>> d = weakref.WeakValueDictionary()\n"
-">>> d['primary'] = a            # không tạo tham chiếu\n"
-">>> d['primary']                # lấy đối tượng nếu nó còn sống\n"
+">>> d['primary'] = a            # does not create a reference\n"
+">>> d['primary']                # fetch the object if it is still alive\n"
 "10\n"
-">>> del a                       # xoá tham chiếu duy nhất\n"
-">>> gc.collect()                # chạy garbage collection ngay\n"
+">>> del a                       # remove the one reference\n"
+">>> gc.collect()                # run garbage collection right away\n"
 "0\n"
-">>> d['primary']                # mục đã tự động bị xoá\n"
+">>> d['primary']                # entry was automatically removed\n"
 "Traceback (most recent call last):\n"
 "  File \"<stdin>\", line 1, in <module>\n"
-"    d['primary']                # mục đã tự động bị xoá\n"
-"  File \"C:/python314/lib/weakref.py\", line 46, in __getitem__\n"
+"    d['primary']                # entry was automatically removed\n"
+"  File \"C:/python315/lib/weakref.py\", line 46, in __getitem__\n"
 "    o = self.data[key]()\n"
 "KeyError: 'primary'"
 
-#: ../../tutorial/stdlib2.rst:290
-msgid "Tools for Working with Lists"
-msgstr "Công cụ làm việc với list"
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=a899e7fdc638 run=2026-08-17T16:43Z
+#, fuzzy
+msgid "Tools for working with lists"
+msgstr "Các công cụ làm việc với list"
 
-#: ../../tutorial/stdlib2.rst:292
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=a899e7fdc638 run=2026-08-17T16:43Z
+#, fuzzy
 msgid ""
 "Many data structure needs can be met with the built-in list type. However, "
 "sometimes there is a need for alternative implementations with different "
 "performance trade-offs."
 msgstr ""
-"Nhiều nhu cầu về cấu trúc dữ liệu có thể được đáp ứng bằng kiểu list "
-"tích hợp sẵn. Tuy nhiên, đôi khi cần các hiện thực thay thế với đánh đổi "
+"Nhiều nhu cầu về cấu trúc dữ liệu có thể được đáp ứng bằng type list dựng "
+"sẵn. Tuy nhiên, đôi khi cần các triển khai thay thế với những sự đánh đổi "
 "hiệu năng khác nhau."
 
-#: ../../tutorial/stdlib2.rst:296
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=a1947e59918c run=2026-08-17T16:43Z
+#, fuzzy
 msgid ""
-"The :mod:`array` module provides an :class:`~array.array` object that is "
-"like a list that stores only homogeneous data and stores it more compactly."
-"  The following example shows an array of numbers stored as two byte "
-"unsigned binary numbers (typecode ``\"H\"``) rather than the usual 16 bytes "
-"per entry for regular lists of Python int objects::"
+"The :mod:`array` module provides an :class:`~array.array` object that is like"
+" a list that stores only homogeneous data and stores it more compactly.  The "
+"following example shows an array of numbers stored as two byte unsigned "
+"binary numbers (typecode ``\"H\"``) rather than the usual 16 bytes per entry "
+"for regular lists of Python int objects::"
 msgstr ""
-"Module :mod:`array` cung cấp đối tượng :class:`~array.array` giống như "
-"một list nhưng chỉ lưu dữ liệu đồng nhất và lưu nó gọn hơn. Ví dụ dưới "
-"đây cho thấy một mảng số được lưu dưới dạng số nhị phân không dấu hai "
-"byte (typecode ``\"H\"``), thay vì 16 byte thông thường mỗi phần tử của "
-"list Python int thông thường::"
+"Mô-đun :mod:`array` cung cấp một đối tượng :class:`~array.array` giống như "
+"một list chỉ lưu trữ dữ liệu đồng nhất và lưu trữ dữ liệu đó nhỏ gọn hơn. Ví "
+"dụ sau đây cho thấy một mảng các số được lưu trữ dưới dạng số nhị phân không "
+"dấu hai byte (typecode ``\"H\"``) thay vì 16 byte thông thường cho mỗi mục "
+"trong các list thông thường của đối tượng int Python::"
 
-#: ../../tutorial/stdlib2.rst:302
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> from array import array\n"
 ">>> a = array('H', [4000, 10, 700, 22222])\n"
@@ -657,19 +714,21 @@ msgstr ""
 ">>> a[1:3]\n"
 "array('H', [10, 700])"
 
-#: ../../tutorial/stdlib2.rst:309
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=a1947e59918c run=2026-08-17T16:43Z
+#, fuzzy
 msgid ""
 "The :mod:`collections` module provides a :class:`~collections.deque` object "
 "that is like a list with faster appends and pops from the left side but "
-"slower lookups in the middle. These objects are well suited for implementing"
-" queues and breadth first tree searches::"
+"slower lookups in the middle. These objects are well suited for implementing "
+"queues and breadth first tree searches::"
 msgstr ""
-"Module :mod:`collections` cung cấp đối tượng :class:`~collections.deque` "
-"giống như một list nhưng append và pop từ phía bên trái nhanh hơn, tuy "
-"nhiên tra cứu ở giữa chậm hơn. Các đối tượng này rất phù hợp để hiện "
-"thực hàng đợi và tìm kiếm cây theo chiều rộng::"
+"Mô-đun :mod:`collections` cung cấp một đối tượng :class:`~collections.deque` "
+"giống như một list với thao tác thêm vào và lấy ra ở phía bên trái nhanh hơn "
+"nhưng tra cứu ở giữa chậm hơn. Các đối tượng này rất phù hợp để triển khai "
+"hàng đợi và tìm kiếm cây theo chiều rộng::"
 
-#: ../../tutorial/stdlib2.rst:314
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> from collections import deque\n"
 ">>> d = deque([\"task1\", \"task2\", \"task3\"])\n"
@@ -683,7 +742,8 @@ msgstr ""
 ">>> print(\"Handling\", d.popleft())\n"
 "Handling task1"
 
-#: ../../tutorial/stdlib2.rst:322
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "unsearched = deque([starting_node])\n"
 "def breadth_first_search(unsearched):\n"
@@ -701,17 +761,19 @@ msgstr ""
 "            return m\n"
 "        unsearched.append(m)"
 
-#: ../../tutorial/stdlib2.rst:330
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=a1947e59918c run=2026-08-17T16:43Z
+#, fuzzy
 msgid ""
 "In addition to alternative list implementations, the library also offers "
-"other tools such as the :mod:`bisect` module with functions for manipulating"
-" sorted lists::"
+"other tools such as the :mod:`bisect` module with functions for manipulating "
+"sorted lists::"
 msgstr ""
-"Ngoài các hiện thực list thay thế, thư viện còn cung cấp các công cụ "
-"khác như module :mod:`bisect` với các hàm thao tác trên list đã sắp "
+"Ngoài các cách triển khai list thay thế, thư viện còn cung cấp các công cụ "
+"khác như mô-đun :mod:`bisect` với các hàm để thao tác với các list đã sắp "
 "xếp::"
 
-#: ../../tutorial/stdlib2.rst:334
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import bisect\n"
 ">>> scores = [(100, 'perl'), (200, 'tcl'), (400, 'lua'), (500, 'python')]\n"
@@ -725,19 +787,21 @@ msgstr ""
 ">>> scores\n"
 "[(100, 'perl'), (200, 'tcl'), (300, 'ruby'), (400, 'lua'), (500, 'python')]"
 
-#: ../../tutorial/stdlib2.rst:340
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=a1947e59918c run=2026-08-17T16:43Z
+#, fuzzy
 msgid ""
 "The :mod:`heapq` module provides functions for implementing heaps based on "
 "regular lists.  The lowest valued entry is always kept at position zero.  "
-"This is useful for applications which repeatedly access the smallest element"
-" but do not want to run a full list sort::"
+"This is useful for applications which repeatedly access the smallest element "
+"but do not want to run a full list sort::"
 msgstr ""
-"Module :mod:`heapq` cung cấp các hàm để hiện thực heap dựa trên list "
-"thông thường. Phần tử có giá trị thấp nhất luôn được giữ ở vị trí 0. "
-"Điều này hữu ích cho các ứng dụng liên tục truy cập phần tử nhỏ nhất mà "
-"không muốn sắp xếp toàn bộ list::"
+"Mô-đun :mod:`heapq` cung cấp các hàm để triển khai heap dựa trên các list "
+"thông thường. Mục có giá trị nhỏ nhất luôn được giữ ở vị trí số không. Điều "
+"này hữu ích cho các ứng dụng liên tục truy cập phần tử nhỏ nhất nhưng không "
+"muốn thực hiện việc sắp xếp toàn bộ list::"
 
-#: ../../tutorial/stdlib2.rst:345
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> from heapq import heapify, heappop, heappush\n"
 ">>> data = [1, 3, 5, 7, 9, 2, 4, 6, 8, 0]\n"
@@ -748,63 +812,73 @@ msgid ""
 msgstr ""
 ">>> from heapq import heapify, heappop, heappush\n"
 ">>> data = [1, 3, 5, 7, 9, 2, 4, 6, 8, 0]\n"
-">>> heapify(data)                      # sắp xếp lại list theo thứ tự heap\n"
-">>> heappush(data, -5)                 # thêm một phần tử mới\n"
-">>> [heappop(data) for i in range(3)]  # lấy ba phần tử nhỏ nhất\n"
+">>> heapify(data)                      # rearrange the list into heap order\n"
+">>> heappush(data, -5)                 # add a new entry\n"
+">>> [heappop(data) for i in range(3)]  # fetch the three smallest entries\n"
 "[-5, 0, 1]"
 
-#: ../../tutorial/stdlib2.rst:356
-msgid "Decimal Floating-Point Arithmetic"
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=a1947e59918c run=2026-08-17T16:43Z
+#, fuzzy
+msgid "Decimal floating-point arithmetic"
 msgstr "Số học dấu phẩy động thập phân"
 
-#: ../../tutorial/stdlib2.rst:358
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=a1947e59918c run=2026-08-17T16:43Z
+#, fuzzy
 msgid ""
 "The :mod:`decimal` module offers a :class:`~decimal.Decimal` datatype for "
 "decimal floating-point arithmetic.  Compared to the built-in :class:`float` "
 "implementation of binary floating point, the class is especially helpful for"
 msgstr ""
-"Module :mod:`decimal` cung cấp kiểu dữ liệu :class:`~decimal.Decimal` "
-"cho số học dấu phẩy động thập phân. So với hiện thực dấu phẩy động nhị "
-"phân tích hợp sẵn của :class:`float`, class này đặc biệt hữu ích cho"
+"Mô-đun :mod:`decimal` cung cấp một kiểu dữ liệu :class:`~decimal.Decimal` cho"
+" số học dấu phẩy động thập phân. So với triển khai :class:`float` có sẵn của "
+"dấu phẩy động nhị phân, lớp này đặc biệt hữu ích cho"
 
-#: ../../tutorial/stdlib2.rst:362
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=a1947e59918c run=2026-08-17T16:43Z
+#, fuzzy
 msgid ""
 "financial applications and other uses which require exact decimal "
 "representation,"
 msgstr ""
-"các ứng dụng tài chính và các mục đích khác yêu cầu biểu diễn thập phân "
-"chính xác,"
+"các ứng dụng tài chính và những mục đích sử dụng khác yêu cầu biểu diễn thập "
+"phân chính xác,"
 
-#: ../../tutorial/stdlib2.rst:364
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=a1947e59918c run=2026-08-17T16:43Z
+#, fuzzy
 msgid "control over precision,"
 msgstr "kiểm soát độ chính xác,"
 
-#: ../../tutorial/stdlib2.rst:365
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=a1947e59918c run=2026-08-17T16:43Z
+#, fuzzy
 msgid "control over rounding to meet legal or regulatory requirements,"
-msgstr "kiểm soát làm tròn để đáp ứng yêu cầu pháp lý hay quy định,"
+msgstr "kiểm soát việc làm tròn để đáp ứng các yêu cầu pháp lý hoặc quy định,"
 
-#: ../../tutorial/stdlib2.rst:366
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=a1947e59918c run=2026-08-17T16:43Z
+#, fuzzy
 msgid "tracking of significant decimal places, or"
-msgstr "theo dõi các vị trí thập phân có nghĩa, hoặc"
+msgstr "theo dõi các chữ số thập phân có nghĩa, hoặc"
 
-#: ../../tutorial/stdlib2.rst:367
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=a1947e59918c run=2026-08-17T16:43Z
+#, fuzzy
 msgid ""
-"applications where the user expects the results to match calculations done "
-"by hand."
+"applications where the user expects the results to match calculations done by"
+" hand."
 msgstr ""
-"các ứng dụng mà người dùng mong kết quả khớp với phép tính thực hiện bằng tay."
+"các ứng dụng mà người dùng mong đợi kết quả khớp với các phép tính thực hiện "
+"bằng tay."
 
-#: ../../tutorial/stdlib2.rst:370
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=a1947e59918c run=2026-08-17T16:43Z
+#, fuzzy
 msgid ""
 "For example, calculating a 5% tax on a 70 cent phone charge gives different "
 "results in decimal floating point and binary floating point. The difference "
 "becomes significant if the results are rounded to the nearest cent::"
 msgstr ""
-"Ví dụ, tính thuế 5% trên khoản phí điện thoại 70 xu cho kết quả khác "
-"nhau trong dấu phẩy động thập phân và dấu phẩy động nhị phân. Sự khác "
-"biệt trở nên đáng kể nếu kết quả được làm tròn tới xu gần nhất::"
+"Ví dụ, việc tính thuế 5% trên một khoản phí điện thoại 70 cent cho các kết "
+"quả khác nhau trong dấu phẩy động thập phân và dấu phẩy động nhị phân. Sự "
+"khác biệt trở nên đáng kể nếu các kết quả được làm tròn đến cent gần nhất::"
 
-#: ../../tutorial/stdlib2.rst:374
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> from decimal import *\n"
 ">>> round(Decimal('0.70') * Decimal('1.05'), 2)\n"
@@ -818,7 +892,8 @@ msgstr ""
 ">>> round(.70 * 1.05, 2)\n"
 "0.73"
 
-#: ../../tutorial/stdlib2.rst:380
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=a1947e59918c run=2026-08-17T16:43Z
+#, fuzzy
 msgid ""
 "The :class:`~decimal.Decimal` result keeps a trailing zero, automatically "
 "inferring four place significance from multiplicands with two place "
@@ -826,22 +901,25 @@ msgid ""
 "issues that can arise when binary floating point cannot exactly represent "
 "decimal quantities."
 msgstr ""
-"Kết quả :class:`~decimal.Decimal` giữ số 0 ở cuối, tự động suy ra 4 vị "
-"trí có nghĩa từ các thừa số có 2 vị trí có nghĩa. Decimal tái hiện toán "
-"học thực hiện bằng tay và tránh các vấn đề có thể phát sinh khi dấu phẩy "
-"động nhị phân không thể biểu diễn chính xác các đại lượng thập phân."
+"Kết quả :class:`~decimal.Decimal` giữ lại số 0 ở cuối, tự động suy ra độ có "
+"nghĩa bốn chữ số thập phân từ các số nhân có độ có nghĩa hai chữ số thập "
+"phân. Decimal tái hiện phép toán như khi thực hiện bằng tay và tránh các vấn "
+"đề có thể phát sinh khi dấu phẩy động nhị phân không thể biểu diễn chính xác "
+"các đại lượng thập phân."
 
-#: ../../tutorial/stdlib2.rst:386
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=a1947e59918c run=2026-08-17T16:43Z
+#, fuzzy
 msgid ""
 "Exact representation enables the :class:`~decimal.Decimal` class to perform "
 "modulo calculations and equality tests that are unsuitable for binary "
 "floating point::"
 msgstr ""
-"Biểu diễn chính xác cho phép class :class:`~decimal.Decimal` thực hiện "
-"các phép tính modulo và kiểm tra đẳng thức không phù hợp với dấu phẩy "
-"động nhị phân::"
+"Biểu diễn chính xác cho phép lớp :class:`~decimal.Decimal` thực hiện các phép"
+" tính modulo và kiểm tra bằng nhau vốn không phù hợp với dấu phẩy động nhị "
+"phân::"
 
-#: ../../tutorial/stdlib2.rst:390
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> Decimal('1.00') % Decimal('.10')\n"
 "Decimal('0.00')\n"
@@ -863,14 +941,16 @@ msgstr ""
 ">>> 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 == 1.0\n"
 "False"
 
-#: ../../tutorial/stdlib2.rst:400
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=54d0f94f5b05 run=2026-08-17T16:43Z
+#, fuzzy
 msgid ""
 "The :mod:`decimal` module provides arithmetic with as much precision as "
 "needed::"
 msgstr ""
-"Module :mod:`decimal` cung cấp số học với độ chính xác tùy ý theo nhu cầu::"
+"Mô-đun :mod:`decimal` cung cấp phép tính số học với độ chính xác cần thiết::"
 
-#: ../../tutorial/stdlib2.rst:402
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> getcontext().prec = 36\n"
 ">>> Decimal(1) / Decimal(7)\n"

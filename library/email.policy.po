@@ -9,18 +9,18 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-17 14:50+0000\n"
-"PO-Revision-Date: 2025-09-16 00:01+0000\n"
-"Last-Translator: Nguyen Duc Tam, 2026\n"
-"Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
-"vi/)\n"
+"POT-Creation-Date: 2026-05-08 18:34+0000\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: pydocvi 0.1.2\n"
 
 msgid ":mod:`!email.policy`: Policy Objects"
 msgstr ""
@@ -114,6 +114,8 @@ msgid ""
 "system:"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> from email import message_from_binary_file\n"
 ">>> from email.generator import BytesGenerator\n"
@@ -128,6 +130,18 @@ msgid ""
 ">>> p.stdin.close()\n"
 ">>> rc = p.wait()"
 msgstr ""
+">>> from email import message_from_binary_file\n"
+">>> from email.generator import BytesGenerator\n"
+">>> from email import policy\n"
+">>> from subprocess import Popen, PIPE\n"
+">>> with open('mymsg.txt', 'rb') as f:\n"
+"...     msg = message_from_binary_file(f, policy=policy.default)\n"
+"...\n"
+">>> p = Popen(['sendmail', msg['To'].addresses[0]], stdin=PIPE)\n"
+">>> g = BytesGenerator(p.stdin, policy=msg.policy.clone(linesep='\\r\\n'))\n"
+">>> g.flatten(msg)\n"
+">>> p.stdin.close()\n"
+">>> rc = p.wait()"
 
 msgid ""
 "Here we are telling :class:`~email.generator.BytesGenerator` to use the RFC "
@@ -144,12 +158,18 @@ msgid ""
 "line separators for the platform on which it is running::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import os\n"
 ">>> with open('converted.txt', 'wb') as f:\n"
 "...     f.write(msg.as_bytes(policy=msg.policy.clone(linesep=os.linesep)))\n"
 "17"
 msgstr ""
+">>> import os\n"
+">>> with open('converted.txt', 'wb') as f:\n"
+"...     f.write(msg.as_bytes(policy=msg.policy.clone(linesep=os.linesep)))\n"
+"17"
 
 msgid ""
 "Policy objects can also be combined using the addition operator, producing a "
@@ -157,17 +177,24 @@ msgid ""
 "the summed objects::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> compat_SMTP = policy.compat32.clone(linesep='\\r\\n')\n"
 ">>> compat_strict = policy.compat32.clone(raise_on_defect=True)\n"
 ">>> compat_strict_SMTP = compat_SMTP + compat_strict"
 msgstr ""
+">>> compat_SMTP = policy.compat32.clone(linesep='\\r\\n')\n"
+">>> compat_strict = policy.compat32.clone(raise_on_defect=True)\n"
+">>> compat_strict_SMTP = compat_SMTP + compat_strict"
 
 msgid ""
 "This operation is not commutative; that is, the order in which the objects "
 "are added matters.  To illustrate::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> policy100 = policy.compat32.clone(max_line_length=100)\n"
 ">>> policy80 = policy.compat32.clone(max_line_length=80)\n"
@@ -178,6 +205,14 @@ msgid ""
 ">>> apolicy.max_line_length\n"
 "100"
 msgstr ""
+">>> policy100 = policy.compat32.clone(max_line_length=100)\n"
+">>> policy80 = policy.compat32.clone(max_line_length=80)\n"
+">>> apolicy = policy100 + policy80\n"
+">>> apolicy.max_line_length\n"
+"80\n"
+">>> apolicy = policy80 + policy100\n"
+">>> apolicy.max_line_length\n"
+"100"
 
 msgid ""
 "This is the :term:`abstract base class` for all policy classes.  It provides "
@@ -216,8 +251,10 @@ msgid ""
 "to be used.  The possible values are:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``7bit``"
-msgstr ""
+msgstr "``7bit``"
 
 msgid ""
 "all data must be \"7 bit clean\" (ASCII-only).  This means that where "
@@ -225,8 +262,10 @@ msgid ""
 "encoding."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``8bit``"
-msgstr ""
+msgstr "``8bit``"
 
 msgid ""
 "data is not constrained to be 7 bit clean.  Data in headers is still "
@@ -437,14 +476,35 @@ msgid ""
 "policies, this policy adds the following additional attributes:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "[1]_"
-msgstr ""
+msgstr "[1]_"
 
 msgid ""
 "If ``False``, follow :rfc:`5322`, supporting non-ASCII characters in headers "
-"by encoding them as \"encoded words\".  If ``True``, follow :rfc:`6532` and "
-"use ``utf-8`` encoding for headers.  Messages formatted in this way may be "
-"passed to SMTP servers that support the ``SMTPUTF8`` extension (:rfc:`6531`)."
+"by encoding them as :rfc:`2047` \"encoded words\".  If ``True``, follow :rfc:"
+"`6532` and use ``utf-8`` encoding for headers.  Messages formatted in this "
+"way may be passed to SMTP servers that support the ``SMTPUTF8`` extension (:"
+"rfc:`6531`)."
+msgstr ""
+
+msgid ""
+"When ``False``, the generator will raise :exc:`~email.errors."
+"HeaderWriteError` if any header includes non-ASCII characters in a context "
+"where :rfc:`2047` does not permit encoded words. This particularly applies "
+"to mailboxes (\"addr-spec\") with non-ASCII characters, which can be created "
+"via :class:`~email.headerregistry.Address`. To use a mailbox with a non-"
+"ASCII domain name with ``utf8=False``, first encode the domain using the "
+"third-party :pypi:`idna` or :pypi:`uts46` module or with :mod:`encodings."
+"idna`. It is not possible to use a non-ASCII username (\"local-part\") in a "
+"mailbox when ``utf8=False``."
+msgstr ""
+
+msgid ""
+"Can trigger the raising of :exc:`~email.errors.HeaderWriteError`. (Earlier "
+"versions incorrectly applied :rfc:`2047` in certain contexts, mostly notably "
+"in addr-specs.)"
 msgstr ""
 
 msgid ""
@@ -454,22 +514,32 @@ msgid ""
 "transforming the message back into serialized form.  The possible values are:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``none``"
-msgstr ""
+msgstr "``none``"
 
 msgid "all source values use original folding"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``long``"
-msgstr ""
+msgstr "``long``"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
-"source values that have any line that is longer than ``max_line_length`` "
-"will be refolded"
+"source values that have any line that is longer than ``max_line_length`` will"
+" be refolded"
 msgstr ""
+"source values that have any line that is longer than ``max_line_length`` will"
+" be refolded"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``all``"
-msgstr ""
+msgstr "``all``"
 
 msgid "all values are refolded."
 msgstr ""

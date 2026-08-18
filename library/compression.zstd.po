@@ -9,18 +9,18 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-17 14:50+0000\n"
-"PO-Revision-Date: 2025-09-16 00:01+0000\n"
-"Last-Translator: python-doc bot, 2025\n"
-"Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
-"vi/)\n"
+"POT-Creation-Date: 2026-05-08 18:34+0000\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: pydocvi 0.1.2\n"
 
 msgid ""
 ":mod:`!compression.zstd` --- Compression compatible with the Zstandard format"
@@ -75,8 +75,10 @@ msgid ""
 "module-requirements`."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Exceptions"
-msgstr ""
+msgstr "Exceptions"
 
 msgid ""
 "This exception is raised when an error occurs during compression or "
@@ -372,10 +374,22 @@ msgstr ""
 msgid ""
 "If *max_length* is non-negative, the method returns at most *max_length* "
 "bytes of decompressed data. If this limit is reached and further output can "
-"be produced, the :attr:`~.needs_input` attribute will be set to ``False``. "
-"In this case, the next call to :meth:`~.decompress` may provide *data* as "
-"``b''`` to obtain more of the output."
+"be produced (or EOF is reached), the :attr:`~.needs_input` attribute will be "
+"set to ``False``. In this case, the next call to :meth:`~.decompress` may "
+"provide *data* as ``b''`` to obtain more of the output. The full content can "
+"thus be read like::"
 msgstr ""
+
+# pydocvi: passthrough=literal_block
+#, fuzzy
+msgid ""
+"process_output(d.decompress(data, max_length))\n"
+"while not d.eof and not d.needs_input:\n"
+"    process_output(d.decompress(b\"\", max_length))"
+msgstr ""
+"process_output(d.decompress(data, max_length))\n"
+"while not d.eof and not d.needs_input:\n"
+"    process_output(d.decompress(b\"\", max_length))"
 
 msgid ""
 "If all of the input data was decompressed and returned (either because this "
@@ -511,8 +525,10 @@ msgid ""
 "``ldm_hash_rate_log``, and some non-public parameters."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "None"
-msgstr ""
+msgstr "None"
 
 msgid ":class:`!ZstdDict` internally caches the dictionary"
 msgstr ""
@@ -585,8 +601,10 @@ msgid ""
 "Example getting the lower and upper bound of :attr:`~.compression_level`::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "lower, upper = CompressionParameter.compression_level.bounds()"
-msgstr ""
+msgstr "lower, upper = CompressionParameter.compression_level.bounds()"
 
 msgid "Example setting the :attr:`~.window_log` to the maximum size::"
 msgstr ""
@@ -685,8 +703,10 @@ msgid ""
 "compression."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`Strategy`"
-msgstr ""
+msgstr ":class:`Strategy`"
 
 msgid ""
 "Long distance matching can be used to improve compression for large inputs "
@@ -831,6 +851,8 @@ msgstr ""
 msgid "Example setting the :attr:`~.window_log_max` to the maximum size::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "data = compress(b'Some very long buffer of bytes...')\n"
 "\n"
@@ -839,6 +861,12 @@ msgid ""
 "options = {DecompressionParameter.window_log_max: upper}\n"
 "decompress(data, options=options)"
 msgstr ""
+"data = compress(b'Some very long buffer of bytes...')\n"
+"\n"
+"_lower, upper = DecompressionParameter.window_log_max.bounds()\n"
+"\n"
+"options = {DecompressionParameter.window_log_max: upper}\n"
+"decompress(data, options=options)"
 
 msgid ""
 "Return the tuple of int bounds, ``(lower, upper)``, of a decompression "
@@ -867,8 +895,10 @@ msgstr ""
 msgid "The following strategies are available:"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Miscellaneous"
-msgstr ""
+msgstr "Miscellaneous"
 
 msgid ""
 "Retrieve a :class:`FrameInfo` object containing metadata about a Zstandard "
@@ -902,16 +932,24 @@ msgstr "Ví dụ"
 msgid "Reading in a compressed file:"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "from compression import zstd\n"
 "\n"
 "with zstd.open(\"file.zst\") as f:\n"
 "    file_content = f.read()"
 msgstr ""
+"from compression import zstd\n"
+"\n"
+"with zstd.open(\"file.zst\") as f:\n"
+"    file_content = f.read()"
 
 msgid "Creating a compressed file:"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "from compression import zstd\n"
 "\n"
@@ -919,20 +957,33 @@ msgid ""
 "with zstd.open(\"file.zst\", \"w\") as f:\n"
 "    f.write(data)"
 msgstr ""
+"from compression import zstd\n"
+"\n"
+"data = b\"Insert Data Here\"\n"
+"with zstd.open(\"file.zst\", \"w\") as f:\n"
+"    f.write(data)"
 
 msgid "Compressing data in memory:"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "from compression import zstd\n"
 "\n"
 "data_in = b\"Insert Data Here\"\n"
 "data_out = zstd.compress(data_in)"
 msgstr ""
+"from compression import zstd\n"
+"\n"
+"data_in = b\"Insert Data Here\"\n"
+"data_out = zstd.compress(data_in)"
 
 msgid "Incremental compression:"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "from compression import zstd\n"
 "\n"
@@ -944,10 +995,21 @@ msgid ""
 "# Concatenate all the partial results:\n"
 "result = b\"\".join([out1, out2, out3, out4])"
 msgstr ""
+"from compression import zstd\n"
+"\n"
+"comp = zstd.ZstdCompressor()\n"
+"out1 = comp.compress(b\"Some data\\n\")\n"
+"out2 = comp.compress(b\"Another piece of data\\n\")\n"
+"out3 = comp.compress(b\"Even more data\\n\")\n"
+"out4 = comp.flush()\n"
+"# Concatenate all the partial results:\n"
+"result = b\"\".join([out1, out2, out3, out4])"
 
 msgid "Writing compressed data to an already-open file:"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "from compression import zstd\n"
 "\n"
@@ -957,10 +1019,19 @@ msgid ""
 "        zstf.write(b\"This *will* be compressed\\n\")\n"
 "    f.write(b\"Not compressed\\n\")"
 msgstr ""
+"from compression import zstd\n"
+"\n"
+"with open(\"myfile\", \"wb\") as f:\n"
+"    f.write(b\"This data will not be compressed\\n\")\n"
+"    with zstd.open(f, \"w\") as zstf:\n"
+"        zstf.write(b\"This *will* be compressed\\n\")\n"
+"    f.write(b\"Not compressed\\n\")"
 
 msgid "Creating a compressed file using compression parameters:"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "from compression import zstd\n"
 "\n"
@@ -970,3 +1041,10 @@ msgid ""
 "with zstd.open(\"file.zst\", \"w\", options=options) as f:\n"
 "    f.write(b\"Mind if I squeeze in?\")"
 msgstr ""
+"from compression import zstd\n"
+"\n"
+"options = {\n"
+"   zstd.CompressionParameter.checksum_flag: 1\n"
+"}\n"
+"with zstd.open(\"file.zst\", \"w\", options=options) as f:\n"
+"    f.write(b\"Mind if I squeeze in?\")"

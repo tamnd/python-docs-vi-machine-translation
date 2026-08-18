@@ -5,22 +5,23 @@
 #
 # Translators:
 # python-doc bot, 2025
+# Nguyen Duc Tam, 2026
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-17 14:50+0000\n"
-"PO-Revision-Date: 2025-09-16 00:01+0000\n"
-"Last-Translator: python-doc bot, 2025\n"
-"Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
-"vi/)\n"
+"POT-Creation-Date: 2026-05-08 18:34+0000\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: pydocvi 0.1.2\n"
 
 msgid ":mod:`!mailbox` --- Manipulate mailboxes in various formats"
 msgstr ""
@@ -100,6 +101,16 @@ msgid ""
 "*before* reading any messages in the file or making any changes by adding or "
 "deleting a message.  Failing to lock the mailbox runs the risk of losing "
 "messages or corrupting the entire mailbox."
+msgstr ""
+
+msgid ""
+"The :class:`!Mailbox` class supports the :keyword:`with` statement.  When "
+"used as a context manager, :class:`!Mailbox` calls :meth:`lock` when the "
+"context is entered, returns the mailbox object as the context object, and at "
+"context end calls :meth:`close`, thereby releasing the lock."
+msgstr ""
+
+msgid "Support for the :keyword:`with` statement was added."
 msgstr ""
 
 msgid ":class:`!Mailbox` instances have the following methods:"
@@ -355,10 +366,14 @@ msgid ""
 "exclamation point (``'!'``) is a popular choice. For example::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import mailbox\n"
 "mailbox.Maildir.colon = '!'"
 msgstr ""
+"import mailbox\n"
+"mailbox.Maildir.colon = '!'"
 
 msgid "The :attr:`!colon` attribute may also be set on a per-instance basis."
 msgstr ""
@@ -418,11 +433,16 @@ msgid ""
 "similar to ::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "one_message = some_mailbox.get_message(key)\n"
 "one_message.set_flags(flags)\n"
 "some_mailbox[key] = one_message"
 msgstr ""
+"one_message = some_mailbox.get_message(key)\n"
+"one_message.set_flags(flags)\n"
+"some_mailbox[key] = one_message"
 
 msgid "but faster, because it does not open the message file."
 msgstr ""
@@ -477,11 +497,16 @@ msgid ""
 "``some_mailbox.set_info(key, flags)`` is similar to ::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "one_message = some_mailbox.get_message(key)\n"
 "one_message.set_info(info)\n"
 "some_mailbox[key] = one_message"
 msgstr ""
+"one_message = some_mailbox.get_message(key)\n"
+"one_message.set_info(info)\n"
+"some_mailbox[key] = one_message"
 
 msgid ""
 "If you do have a :class:`MaildirMessage` object, use its :meth:"
@@ -924,65 +949,95 @@ msgid ""
 "flags for Maildir messages are as follows:"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Flag"
-msgstr ""
+msgstr "Flag"
 
 msgid "Meaning"
-msgstr ""
+msgstr "Ý nghĩa"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Explanation"
-msgstr ""
+msgstr "Explanation"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "D"
-msgstr ""
+msgstr "D"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Draft"
-msgstr ""
+msgstr "Draft"
 
 msgid "Under composition"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "F"
-msgstr ""
+msgstr "F"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Flagged"
-msgstr ""
+msgstr "Flagged"
 
 msgid "Marked as important"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "P"
-msgstr ""
+msgstr "P"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Passed"
-msgstr ""
+msgstr "Passed"
 
 msgid "Forwarded, resent, or bounced"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "R"
-msgstr ""
+msgstr "R"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Replied"
-msgstr ""
+msgstr "Replied"
 
 msgid "Replied to"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "S"
-msgstr ""
+msgstr "S"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Seen"
-msgstr ""
+msgstr "Seen"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Read"
-msgstr ""
+msgstr "Read"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "T"
-msgstr ""
+msgstr "T"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Trashed"
-msgstr ""
+msgstr "Trashed"
 
 msgid "Marked for subsequent deletion"
 msgstr ""
@@ -1158,23 +1213,33 @@ msgstr ""
 msgid "Conventional flags for mbox messages are as follows:"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "O"
-msgstr ""
+msgstr "O"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Old"
-msgstr ""
+msgstr "Old"
 
 msgid "Previously detected by MUA"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Deleted"
-msgstr ""
+msgstr "Deleted"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "A"
-msgstr ""
+msgstr "A"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Answered"
-msgstr ""
+msgstr "Answered"
 
 msgid ""
 "The \"R\" and \"O\" flags are stored in the :mailheader:`Status` header, and "
@@ -1273,20 +1338,28 @@ msgid ""
 "formats, as follows:"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Sequence"
-msgstr ""
+msgstr "Sequence"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "unseen"
-msgstr ""
+msgstr "unseen"
 
 msgid "Not read, but previously detected by MUA"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "replied"
-msgstr ""
+msgstr "replied"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "flagged"
-msgstr ""
+msgstr "flagged"
 
 msgid ":class:`!MHMessage` instances offer the following methods:"
 msgstr ""
@@ -1339,38 +1412,56 @@ msgid ""
 "to have special meanings. The attributes are as follows:"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Label"
-msgstr ""
+msgstr "Label"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "deleted"
-msgstr ""
+msgstr "deleted"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "filed"
-msgstr ""
+msgstr "filed"
 
 msgid "Copied to another file or mailbox"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "answered"
-msgstr ""
+msgstr "answered"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "forwarded"
-msgstr ""
+msgstr "forwarded"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Forwarded"
-msgstr ""
+msgstr "Forwarded"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "edited"
-msgstr ""
+msgstr "edited"
 
 msgid "Modified by the user"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "resent"
-msgstr ""
+msgstr "resent"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Resent"
-msgstr ""
+msgstr "Resent"
 
 msgid ""
 "By default, Rmail displays only visible headers. The :class:`!BabylMessage` "
@@ -1488,8 +1579,10 @@ msgstr ""
 msgid ":class:`mboxMessage` state"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Exceptions"
-msgstr ""
+msgstr "Exceptions"
 
 msgid ""
 "The following exception classes are defined in the :mod:`!mailbox` module:"
@@ -1530,6 +1623,8 @@ msgid ""
 "seem interesting::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import mailbox\n"
 "for message in mailbox.mbox('~/mbox'):\n"
@@ -1537,12 +1632,19 @@ msgid ""
 "    if subject and 'python' in subject.lower():\n"
 "        print(subject)"
 msgstr ""
+"import mailbox\n"
+"for message in mailbox.mbox('~/mbox'):\n"
+"    subject = message['subject']       # Could possibly be None.\n"
+"    if subject and 'python' in subject.lower():\n"
+"        print(subject)"
 
 msgid ""
 "To copy all mail from a Babyl mailbox to an MH mailbox, converting all of "
 "the format-specific information that can be converted::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import mailbox\n"
 "destination = mailbox.MH('~/Mail')\n"
@@ -1552,6 +1654,13 @@ msgid ""
 "destination.flush()\n"
 "destination.unlock()"
 msgstr ""
+"import mailbox\n"
+"destination = mailbox.MH('~/Mail')\n"
+"destination.lock()\n"
+"for message in mailbox.Babyl('~/RMAIL'):\n"
+"    destination.add(mailbox.MHMessage(message))\n"
+"destination.flush()\n"
+"destination.unlock()"
 
 msgid ""
 "This example sorts mail from several mailing lists into different mailboxes, "
@@ -1560,6 +1669,8 @@ msgid ""
 "termination due to malformed messages in the mailbox::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import mailbox\n"
 "import email.errors\n"
@@ -1599,3 +1710,40 @@ msgid ""
 "for box in boxes.itervalues():\n"
 "    box.close()"
 msgstr ""
+"import mailbox\n"
+"import email.errors\n"
+"\n"
+"list_names = ('python-list', 'python-dev', 'python-bugs')\n"
+"\n"
+"boxes = {name: mailbox.mbox('~/email/%s' % name) for name in list_names}\n"
+"inbox = mailbox.Maildir('~/Maildir', factory=None)\n"
+"\n"
+"for key in inbox.iterkeys():\n"
+"    try:\n"
+"        message = inbox[key]\n"
+"    except email.errors.MessageParseError:\n"
+"        continue                # The message is malformed. Just leave it.\n"
+"\n"
+"    for name in list_names:\n"
+"        list_id = message['list-id']\n"
+"        if list_id and name in list_id:\n"
+"            # Get mailbox to use\n"
+"            box = boxes[name]\n"
+"\n"
+"            # Write copy to disk before removing original.\n"
+"            # If there's a crash, you might duplicate a message, but\n"
+"            # that's better than losing a message completely.\n"
+"            box.lock()\n"
+"            box.add(message)\n"
+"            box.flush()\n"
+"            box.unlock()\n"
+"\n"
+"            # Remove original message\n"
+"            inbox.lock()\n"
+"            inbox.discard(key)\n"
+"            inbox.flush()\n"
+"            inbox.unlock()\n"
+"            break               # Found destination, so stop looking.\n"
+"\n"
+"for box in boxes.itervalues():\n"
+"    box.close()"

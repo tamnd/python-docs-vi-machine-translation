@@ -5,24 +5,25 @@
 #
 # Translators:
 # python-doc bot, 2025
+# Nguyen Duc Tam, 2026
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-13 15:10+0000\n"
-"PO-Revision-Date: 2025-09-16 00:00+0000\n"
-"Last-Translator: python-doc bot, 2025\n"
-"Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
-"vi/)\n"
+"POT-Creation-Date: 2026-04-23 15:47+0000\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: pydocvi 0.1.2\n"
 
-msgid "File Objects"
+msgid "File objects"
 msgstr ""
 
 msgid ""
@@ -152,13 +153,12 @@ msgid ""
 "failure; the appropriate exception will be set."
 msgstr ""
 
-msgid "Deprecated API"
+msgid "Soft-deprecated API"
 msgstr ""
 
 msgid ""
-"These are :term:`soft deprecated` APIs that were included in Python's C API "
-"by mistake. They are documented solely for completeness; use other "
-"``PyFile*`` APIs instead."
+"These are APIs that were included in Python's C API by mistake. They are "
+"documented solely for completeness; use other ``PyFile*`` APIs instead."
 msgstr ""
 
 msgid ""
@@ -173,7 +173,7 @@ msgid ""
 msgstr ""
 
 msgid "object"
-msgstr ""
+msgstr "object"
 
 msgid "file"
 msgstr "tệp tin"

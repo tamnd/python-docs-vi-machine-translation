@@ -9,18 +9,18 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-09 15:16+0000\n"
-"PO-Revision-Date: 2025-09-16 00:01+0000\n"
-"Last-Translator: python-doc bot, 2025\n"
-"Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
-"vi/)\n"
+"POT-Creation-Date: 2026-05-08 18:34+0000\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: pydocvi 0.1.2\n"
 
 msgid ":mod:`!glob` --- Unix style pathname pattern expansion"
 msgstr ""
@@ -141,7 +141,8 @@ msgstr ""
 
 msgid ""
 "Convert the given path specification to a regular expression for use with :"
-"func:`re.match`. The path specification can contain shell-style wildcards."
+"func:`re.prefixmatch`. The path specification can contain shell-style "
+"wildcards."
 msgstr ""
 
 msgid "For example:"
@@ -183,6 +184,8 @@ msgid ""
 "Notice how any leading components of the path are preserved. ::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import glob\n"
 ">>> glob.glob('./[0-9].*')\n"
@@ -196,6 +199,17 @@ msgid ""
 ">>> glob.glob('./**/', recursive=True)\n"
 "['./', './sub/']"
 msgstr ""
+">>> import glob\n"
+">>> glob.glob('./[0-9].*')\n"
+"['./1.gif', './2.txt']\n"
+">>> glob.glob('*.gif')\n"
+"['1.gif', 'card.gif']\n"
+">>> glob.glob('?.gif')\n"
+"['1.gif']\n"
+">>> glob.glob('**/*.txt', recursive=True)\n"
+"['2.txt', 'sub/3.txt']\n"
+">>> glob.glob('./**/', recursive=True)\n"
+"['./', './sub/']"
 
 msgid ""
 "If the directory contains files starting with ``.`` they won't be matched by "
@@ -203,6 +217,8 @@ msgid ""
 "file:`.card.gif`::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import glob\n"
 ">>> glob.glob('*.gif')\n"
@@ -210,6 +226,11 @@ msgid ""
 ">>> glob.glob('.c*')\n"
 "['.card.gif']"
 msgstr ""
+">>> import glob\n"
+">>> glob.glob('*.gif')\n"
+"['card.gif']\n"
+">>> glob.glob('.c*')\n"
+"['.card.gif']"
 
 msgid ""
 "The :mod:`fnmatch` module offers shell-style filename (not path) expansion."
@@ -218,14 +239,18 @@ msgstr ""
 msgid "The :mod:`pathlib` module offers high-level path objects."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "filenames"
-msgstr ""
+msgstr "filenames"
 
 msgid "pathname expansion"
 msgstr ""
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=d132b9201f27 run=2026-08-17T16:43Z
+#, fuzzy
 msgid "* (asterisk)"
-msgstr ""
+msgstr "* (dấu sao)"
 
 msgid "in glob-style wildcards"
 msgstr ""
@@ -245,5 +270,7 @@ msgstr ""
 msgid ". (dot)"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "**"
-msgstr ""
+msgstr "**"

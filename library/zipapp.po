@@ -9,18 +9,18 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-09 15:16+0000\n"
-"PO-Revision-Date: 2025-09-16 00:02+0000\n"
-"Last-Translator: python-doc bot, 2025\n"
-"Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
-"vi/)\n"
+"POT-Creation-Date: 2026-04-29 15:53+0000\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: pydocvi 0.1.2\n"
 
 msgid ":mod:`!zipapp` --- Manage executable Python zip archives"
 msgstr ""
@@ -45,11 +45,16 @@ msgid ""
 "module ``myapp`` in the archive."
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "$ python -m zipapp myapp -m \"myapp:main\"\n"
 "$ python myapp.pyz\n"
 "<output from myapp>"
 msgstr ""
+"$ python -m zipapp myapp -m \"myapp:main\"\n"
+"$ python myapp.pyz\n"
+"<output from myapp>"
 
 msgid "Command-Line Interface"
 msgstr ""
@@ -58,8 +63,10 @@ msgid ""
 "When called as a program from the command line, the following form is used:"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "$ python -m zipapp source [options]"
-msgstr ""
+msgstr "$ python -m zipapp source [options]"
 
 msgid ""
 "If *source* is a directory, this will create an archive from the contents of "
@@ -228,41 +235,60 @@ msgstr "Ví dụ"
 msgid "Pack up a directory into an archive, and run it."
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "$ python -m zipapp myapp\n"
 "$ python myapp.pyz\n"
 "<output from myapp>"
 msgstr ""
+"$ python -m zipapp myapp\n"
+"$ python myapp.pyz\n"
+"<output from myapp>"
 
 msgid "The same can be done using the :func:`create_archive` function::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import zipapp\n"
 ">>> zipapp.create_archive('myapp', 'myapp.pyz')"
 msgstr ""
+">>> import zipapp\n"
+">>> zipapp.create_archive('myapp', 'myapp.pyz')"
 
 msgid ""
 "To make the application directly executable on POSIX, specify an interpreter "
 "to use."
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "$ python -m zipapp myapp -p \"/usr/bin/env python\"\n"
 "$ ./myapp.pyz\n"
 "<output from myapp>"
 msgstr ""
+"$ python -m zipapp myapp -p \"/usr/bin/env python\"\n"
+"$ ./myapp.pyz\n"
+"<output from myapp>"
 
 msgid ""
 "To replace the shebang line on an existing archive, create a modified "
 "archive using the :func:`create_archive` function::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import zipapp\n"
-">>> zipapp.create_archive('old_archive.pyz', 'new_archive.pyz', '/usr/bin/"
-"python3')"
+">>> zipapp.create_archive('old_archive.pyz', 'new_archive.pyz', "
+"'/usr/bin/python3')"
 msgstr ""
+">>> import zipapp\n"
+">>> zipapp.create_archive('old_archive.pyz', 'new_archive.pyz', "
+"'/usr/bin/python3')"
 
 msgid ""
 "To update the file in place, do the replacement in memory using a :class:"
@@ -273,6 +299,8 @@ msgid ""
 "if the archive fits in memory::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import zipapp\n"
 ">>> import io\n"
@@ -281,6 +309,12 @@ msgid ""
 ">>> with open('myapp.pyz', 'wb') as f:\n"
 ">>>     f.write(temp.getvalue())"
 msgstr ""
+">>> import zipapp\n"
+">>> import io\n"
+">>> temp = io.BytesIO()\n"
+">>> zipapp.create_archive('myapp.pyz', temp, '/usr/bin/python2')\n"
+">>> with open('myapp.pyz', 'wb') as f:\n"
+">>>     f.write(temp.getvalue())"
 
 msgid "Specifying the Interpreter"
 msgstr ""
@@ -341,8 +375,10 @@ msgid ""
 "using pip:"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "$ python -m pip install -r requirements.txt --target myapp"
-msgstr ""
+msgstr "$ python -m pip install -r requirements.txt --target myapp"
 
 msgid ""
 "(this assumes you have your project requirements in a ``requirements.txt`` "
@@ -353,8 +389,10 @@ msgstr ""
 msgid "Package the application using:"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "$ python -m zipapp -p \"interpreter\" myapp"
-msgstr ""
+msgstr "$ python -m zipapp -p \"interpreter\" myapp"
 
 msgid ""
 "This will produce a standalone executable, which can be run on any machine "
@@ -370,8 +408,10 @@ msgid ""
 "extensions when installed."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Caveats"
-msgstr ""
+msgstr "Caveats"
 
 msgid ""
 "If your application depends on a package that includes a C extension, that "

@@ -9,86 +9,139 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-19 14:37+0000\n"
-"PO-Revision-Date: 2025-09-16 00:02+0000\n"
-"Last-Translator: Nguyen Duc Tam, 2026\n"
-"Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
-"vi/)\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: pydocvi 0.1.2\n"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Appendix"
-msgstr ""
+msgstr "Appendix"
 
 msgid "Interactive Mode"
 msgstr "Chế độ tương tác"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=21ec5aea4a73 run=2026-08-17T16:43Z
+#, fuzzy
 msgid ""
 "There are two variants of the interactive :term:`REPL`.  The classic basic "
 "interpreter is supported on all platforms with minimal line control "
 "capabilities."
 msgstr ""
+"Có hai biến thể của :term:`REPL` tương tác. Trình thông dịch cơ bản cổ điển "
+"được hỗ trợ trên tất cả nền tảng với khả năng điều khiển dòng tối thiểu."
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=21ec5aea4a73 run=2026-08-17T16:43Z
+#, fuzzy
 msgid ""
 "Since Python 3.13, a new interactive shell is used by default. This one "
 "supports color, multiline editing, history browsing, and paste mode.  To "
 "disable color, see :ref:`using-on-controlling-color` for details.  Function "
 "keys provide some additional functionality. :kbd:`F1` enters the interactive "
-"help browser :mod:`pydoc`. :kbd:`F2` allows for browsing command-line "
-"history with neither output nor the :term:`>>>` and :term:`...` prompts. :"
-"kbd:`F3` enters \"paste mode\", which makes pasting larger blocks of code "
-"easier. Press :kbd:`F3` to return to the regular prompt."
+"help browser :mod:`pydoc`. :kbd:`F2` allows for browsing command-line history"
+" with neither output nor the :term:`>>>` and :term:`...` prompts. :kbd:`F3` "
+"enters \"paste mode\", which makes pasting larger blocks of code easier. "
+"Press :kbd:`F3` to return to the regular prompt."
 msgstr ""
+"Kể từ Python 3.13, một shell tương tác mới được sử dụng theo mặc định. Shell "
+"này hỗ trợ màu, chỉnh sửa nhiều dòng, duyệt lịch sử và chế độ dán. Để tắt "
+"màu, xem :ref:`using-on-controlling-color` để biết chi tiết. Các phím chức "
+"năng cung cấp một số chức năng bổ sung. :kbd:`F1` mở trình duyệt trợ giúp "
+"tương tác :mod:`pydoc`. :kbd:`F2` cho phép duyệt lịch sử dòng lệnh mà không "
+"có đầu ra cũng như các dấu nhắc :term:`>>>` và :term:`...`. :kbd:`F3` mở "
+"\"chế độ dán\", giúp việc dán các khối mã lớn dễ dàng hơn. Nhấn :kbd:`F3` để "
+"quay lại dấu nhắc thông thường."
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=21ec5aea4a73 run=2026-08-17T16:43Z
+#, fuzzy
 msgid ""
-"When using the new interactive shell, exit the shell by typing :kbd:`exit` "
-"or :kbd:`quit`. Adding call parentheses after those commands is not required."
+"When using the new interactive shell, exit the shell by typing :kbd:`exit` or"
+" :kbd:`quit`. Adding call parentheses after those commands is not required."
 msgstr ""
+"Khi sử dụng shell tương tác mới, thoát khỏi shell bằng cách nhập :kbd:`exit` "
+"hoặc :kbd:`quit`. Không cần thêm dấu ngoặc gọi hàm sau các lệnh đó."
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=21ec5aea4a73 run=2026-08-17T16:43Z
+#, fuzzy
 msgid ""
-"If the new interactive shell is not desired, it can be disabled via the :"
-"envvar:`PYTHON_BASIC_REPL` environment variable."
+"If the new interactive shell is not desired, it can be disabled via the "
+":envvar:`PYTHON_BASIC_REPL` environment variable."
 msgstr ""
+"Nếu không muốn sử dụng shell tương tác mới, có thể vô hiệu hóa nó thông qua "
+"biến môi trường :envvar:`PYTHON_BASIC_REPL`."
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=21ec5aea4a73 run=2026-08-17T16:43Z
+#, fuzzy
 msgid "Error Handling"
-msgstr ""
+msgstr "Xử lý lỗi"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=21ec5aea4a73 run=2026-08-17T16:43Z
+#, fuzzy
 msgid ""
 "When an error occurs, the interpreter prints an error message and a stack "
-"trace. In interactive mode, it then returns to the primary prompt; when "
-"input came from a file, it exits with a nonzero exit status after printing "
-"the stack trace. (Exceptions handled by an :keyword:`except` clause in a :"
-"keyword:`try` statement are not errors in this context.)  Some errors are "
+"trace. In interactive mode, it then returns to the primary prompt; when input"
+" came from a file, it exits with a nonzero exit status after printing the "
+"stack trace. (Exceptions handled by an :keyword:`except` clause in a "
+":keyword:`try` statement are not errors in this context.)  Some errors are "
 "unconditionally fatal and cause an exit with a nonzero exit status; this "
-"applies to internal inconsistencies and some cases of running out of "
-"memory.  All error messages are written to the standard error stream; normal "
-"output from executed commands is written to standard output."
+"applies to internal inconsistencies and some cases of running out of memory."
+"  All error messages are written to the standard error stream; normal output "
+"from executed commands is written to standard output."
 msgstr ""
+"Khi xảy ra lỗi, trình thông dịch in ra một thông báo lỗi và dấu vết ngăn xếp."
+" Trong chế độ tương tác, sau đó nó quay lại dấu nhắc chính; khi đầu vào đến "
+"từ một tệp, nó thoát với trạng thái thoát khác không sau khi in dấu vết ngăn "
+"xếp. (Các ngoại lệ được xử lý bởi mệnh đề :keyword:`except` trong câu lệnh "
+":keyword:`try` không phải là lỗi trong ngữ cảnh này.) Một số lỗi chắc chắn "
+"gây nghiêm trọng và khiến việc thoát xảy ra với trạng thái thoát khác không; "
+"điều này áp dụng cho các mâu thuẫn nội bộ và một số trường hợp hết bộ nhớ. "
+"Tất cả thông báo lỗi được ghi vào luồng lỗi tiêu chuẩn; đầu ra bình thường từ"
+" các lệnh đã thực thi được ghi vào đầu ra tiêu chuẩn."
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=21ec5aea4a73 run=2026-08-17T16:43Z
+#, fuzzy
 msgid ""
-"Typing the interrupt character (usually :kbd:`Control-C` or :kbd:`Delete`) "
-"to the primary or secondary prompt cancels the input and returns to the "
-"primary prompt. [#]_ Typing an interrupt while a command is executing raises "
-"the :exc:`KeyboardInterrupt` exception, which may be handled by a :keyword:"
-"`try` statement."
+"Typing the interrupt character (usually :kbd:`Control-C` or :kbd:`Delete`) to"
+" the primary or secondary prompt cancels the input and returns to the primary"
+" prompt. [#]_ Typing an interrupt while a command is executing raises the "
+":exc:`KeyboardInterrupt` exception, which may be handled by a :keyword:`try` "
+"statement."
 msgstr ""
+"Nhập ký tự ngắt (thường là :kbd:`Control-C` hoặc :kbd:`Delete`) vào dấu nhắc "
+"chính hoặc phụ sẽ hủy đầu vào và quay lại dấu nhắc chính. [#]_ Nhập ký tự "
+"ngắt trong khi một lệnh đang thực thi sẽ tạo ra ngoại lệ "
+":exc:`KeyboardInterrupt`, có thể được xử lý bởi một câu lệnh :keyword:`try`."
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=21ec5aea4a73 run=2026-08-17T16:43Z
+#, fuzzy
 msgid "Executable Python Scripts"
-msgstr ""
+msgstr "Các tập lệnh Python có thể thực thi"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=21ec5aea4a73 run=2026-08-17T16:43Z
+#, fuzzy
 msgid ""
-"On BSD'ish Unix systems, Python scripts can be made directly executable, "
-"like shell scripts, by putting the line ::"
+"On BSD'ish Unix systems, Python scripts can be made directly executable, like"
+" shell scripts, by putting the line ::"
 msgstr ""
+"Trên các hệ thống Unix kiểu BSD, các tập lệnh Python có thể được làm cho thực"
+" thi trực tiếp, giống như các tập lệnh shell, bằng cách đặt dòng ::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "#!/usr/bin/env python3"
-msgstr ""
+msgstr "#!/usr/bin/env python3"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=21ec5aea4a73 run=2026-08-17T16:43Z
+#, fuzzy
 msgid ""
 "(assuming that the interpreter is on the user's :envvar:`PATH`) at the "
 "beginning of the script and giving the file an executable mode.  The ``#!`` "
@@ -97,34 +150,64 @@ msgid ""
 "(``'\\r\\n'``) line ending.  Note that the hash, or pound, character, "
 "``'#'``, is used to start a comment in Python."
 msgstr ""
+"(giả sử trình thông dịch nằm trong :envvar:`PATH` của người dùng) ở đầu tập "
+"lệnh và cấp chế độ thực thi cho tệp. ``#!`` phải là hai ký tự đầu tiên của "
+"tệp. Trên một số nền tảng, dòng đầu tiên này phải kết thúc bằng ký tự kết "
+"thúc dòng kiểu Unix (``'\\n'``), không phải ký tự kết thúc dòng Windows "
+"(``'\\r\\n'``). Lưu ý rằng ký tự thăng, hay ký tự pound, ``'#'``, được dùng "
+"để bắt đầu một chú thích trong Python."
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=21ec5aea4a73 run=2026-08-17T16:43Z
+#, fuzzy
 msgid ""
-"The script can be given an executable mode, or permission, using the :"
-"program:`chmod` command."
+"The script can be given an executable mode, or permission, using the "
+":program:`chmod` command."
 msgstr ""
+"Tập lệnh có thể được cấp chế độ thực thi, hoặc quyền thực thi, bằng cách sử "
+"dụng lệnh :program:`chmod`."
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "$ chmod +x myscript.py"
-msgstr ""
+msgstr "$ chmod +x myscript.py"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=21ec5aea4a73 run=2026-08-17T16:43Z
+#, fuzzy
 msgid ""
-"On Windows systems, there is no notion of an \"executable mode\".  The "
-"Python installer automatically associates ``.py`` files with ``python.exe`` "
-"so that a double-click on a Python file will run it as a script.  The "
-"extension can also be ``.pyw``, in that case, the console window that "
-"normally appears is suppressed."
+"On Windows systems, there is no notion of an \"executable mode\".  The Python"
+" installer automatically associates ``.py`` files with ``python.exe`` so that"
+" a double-click on a Python file will run it as a script.  The extension can "
+"also be ``.pyw``, in that case, the console window that normally appears is "
+"suppressed."
 msgstr ""
+"Trên các hệ thống Windows, không có khái niệm về \"chế độ thực thi\". Trình "
+"cài đặt Python tự động liên kết các tệp ``.py`` với ``python.exe`` để việc "
+"nhấp đúp vào tệp Python sẽ chạy nó dưới dạng một tập lệnh. Phần mở rộng cũng "
+"có thể được ``.pyw``, trong trường hợp đó cửa sổ console thường xuất hiện sẽ "
+"bị ẩn."
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=21ec5aea4a73 run=2026-08-17T16:43Z
+#, fuzzy
 msgid "The Interactive Startup File"
-msgstr ""
+msgstr "Tệp khởi động tương tác"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=21ec5aea4a73 run=2026-08-17T16:43Z
+#, fuzzy
 msgid ""
 "When you use Python interactively, it is frequently handy to have some "
-"standard commands executed every time the interpreter is started.  You can "
-"do this by setting an environment variable named :envvar:`PYTHONSTARTUP` to "
-"the name of a file containing your start-up commands.  This is similar to "
-"the :file:`.profile` feature of the Unix shells."
+"standard commands executed every time the interpreter is started.  You can do"
+" this by setting an environment variable named :envvar:`PYTHONSTARTUP` to the"
+" name of a file containing your start-up commands.  This is similar to the "
+":file:`.profile` feature of the Unix shells."
 msgstr ""
+"Khi sử dụng Python ở chế độ tương tác, thường rất tiện lợi khi có một số lệnh"
+" tiêu chuẩn được thực thi mỗi lần trình thông dịch khởi động. Có thể thực "
+"hiện điều này bằng cách đặt một biến môi trường có tên "
+":envvar:`PYTHONSTARTUP` thành tên của một tệp chứa các lệnh khởi động. Điều "
+"này tương tự với tính năng :file:`.profile` của các shell Unix."
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=21ec5aea4a73 run=2026-08-17T16:43Z
+#, fuzzy
 msgid ""
 "This file is only read in interactive sessions, not when Python reads "
 "commands from a script, and not when :file:`/dev/tty` is given as the "
@@ -134,15 +217,31 @@ msgid ""
 "qualification in the interactive session. You can also change the prompts "
 "``sys.ps1`` and ``sys.ps2`` in this file."
 msgstr ""
+"Tệp này chỉ được đọc trong các phiên tương tác, không phải khi Python đọc "
+"lệnh từ một tập lệnh, và cũng không phải khi :file:`/dev/tty` được cung cấp "
+"làm nguồn lệnh rõ ràng (vốn hoạt động giống như một phiên tương tác). Nó được"
+" thực thi trong cùng không gian tên nơi các lệnh tương tác được thực thi, vì "
+"vậy các đối tượng mà nó định nghĩa hoặc nhập vào có thể được sử dụng mà không"
+" cần chỉ định đầy đủ trong phiên tương tác. Cũng có thể thay đổi các dấu nhắc"
+" ``sys.ps1`` và ``sys.ps2`` trong tệp này."
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=21ec5aea4a73 run=2026-08-17T16:43Z
+#, fuzzy
 msgid ""
 "If you want to read an additional start-up file from the current directory, "
-"you can program this in the global start-up file using code like ``if os."
-"path.isfile('.pythonrc.py'): exec(open('.pythonrc.py').read())``. If you "
+"you can program this in the global start-up file using code like ``if "
+"os.path.isfile('.pythonrc.py'): exec(open('.pythonrc.py').read())``. If you "
 "want to use the startup file in a script, you must do this explicitly in the "
 "script::"
 msgstr ""
+"Nếu muốn đọc một tệp khởi động bổ sung từ thư mục hiện tại, có thể lập trình "
+"điều này trong tệp khởi động toàn cục bằng mã như ``if "
+"os.path.isfile('.pythonrc.py'): exec(open('.pythonrc.py').read())``. Nếu muốn"
+" sử dụng tệp khởi động trong một tập lệnh, phải thực hiện điều này một cách "
+"rõ ràng trong tập lệnh::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import os\n"
 "filename = os.environ.get('PYTHONSTARTUP')\n"
@@ -151,39 +250,73 @@ msgid ""
 "        startup_file = fobj.read()\n"
 "    exec(startup_file)"
 msgstr ""
+"import os\n"
+"filename = os.environ.get('PYTHONSTARTUP')\n"
+"if filename and os.path.isfile(filename):\n"
+"    with open(filename) as fobj:\n"
+"        startup_file = fobj.read()\n"
+"    exec(startup_file)"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=21ec5aea4a73 run=2026-08-17T16:43Z
+#, fuzzy
 msgid "The Customization Modules"
-msgstr ""
+msgstr "Các mô-đun tùy chỉnh"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=21ec5aea4a73 run=2026-08-17T16:43Z
+#, fuzzy
 msgid ""
-"Python provides two hooks to let you customize it: :index:`sitecustomize` "
-"and :index:`usercustomize`.  To see how it works, you need first to find the "
+"Python provides two hooks to let you customize it: :index:`sitecustomize` and"
+" :index:`usercustomize`.  To see how it works, you need first to find the "
 "location of your user site-packages directory.  Start Python and run this "
 "code::"
 msgstr ""
+"Python cung cấp hai hook để cho phép tùy chỉnh nó: :index:`sitecustomize` và "
+":index:`usercustomize`. Để xem cách hoạt động, trước tiên cần tìm vị trí của "
+"thư mục site-packages của người dùng. Khởi động Python và chạy đoạn mã này::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import site\n"
 ">>> site.getusersitepackages()\n"
 "'/home/user/.local/lib/python3.x/site-packages'"
 msgstr ""
+">>> import site\n"
+">>> site.getusersitepackages()\n"
+"'/home/user/.local/lib/python3.x/site-packages'"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=21ec5aea4a73 run=2026-08-17T16:43Z
+#, fuzzy
 msgid ""
 "Now you can create a file named :file:`usercustomize.py` in that directory "
 "and put anything you want in it.  It will affect every invocation of Python, "
 "unless it is started with the :option:`-s` option to disable the automatic "
 "import."
 msgstr ""
+"Bây giờ có thể tạo một tệp có tên :file:`usercustomize.py` trong thư mục đó "
+"và đặt bất cứ thứ gì mong muốn vào đó. Nó sẽ ảnh hưởng đến mọi lần gọi "
+"Python, trừ khi Python được khởi động với tùy chọn :option:`-s` để vô hiệu "
+"hóa việc nhập tự động."
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=21ec5aea4a73 run=2026-08-17T16:43Z
+#, fuzzy
 msgid ""
 ":index:`sitecustomize` works in the same way, but is typically created by an "
 "administrator of the computer in the global site-packages directory, and is "
-"imported before :index:`usercustomize`.  See the documentation of the :mod:"
-"`site` module for more details."
+"imported before :index:`usercustomize`.  See the documentation of the "
+":mod:`site` module for more details."
 msgstr ""
+":index:`sitecustomize` hoạt động theo cùng cách, nhưng thường được tạo bởi "
+"quản trị viên máy tính trong thư mục site-packages toàn cục và được nhập "
+"trước :index:`usercustomize`. Xem tài liệu của mô-đun :mod:`site` để biết "
+"thêm chi tiết."
 
 msgid "Footnotes"
 msgstr "Chú thích"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=21ec5aea4a73 run=2026-08-17T16:43Z
+#, fuzzy
 msgid "A problem with the GNU Readline package may prevent this."
 msgstr ""
+"Sự cố với gói GNU Readline có thể ngăn điều này.\n"
+"24 Sự cố với gói GNU Readline có thể ngăn điều này."

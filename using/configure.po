@@ -9,18 +9,18 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-17 14:50+0000\n"
-"PO-Revision-Date: 2025-09-16 00:02+0000\n"
-"Last-Translator: Nguyen Duc Tam, 2026\n"
-"Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
-"vi/)\n"
+"POT-Creation-Date: 2026-05-08 18:34+0000\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: pydocvi 0.1.2\n"
 
 msgid "Configure Python"
 msgstr ""
@@ -95,8 +95,10 @@ msgstr ""
 msgid "Dependencies to build optional modules are:"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Dependency"
-msgstr ""
+msgstr "Dependency"
 
 msgid "Minimum version"
 msgstr ""
@@ -107,8 +109,10 @@ msgstr ""
 msgid "`libbz2 <https://sourceware.org/bzip2/>`_"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`bz2`"
-msgstr ""
+msgstr ":mod:`bz2`"
 
 msgid "`libffi <https://sourceware.org/libffi/>`_"
 msgstr ""
@@ -116,43 +120,57 @@ msgstr ""
 msgid "3.3.0 recommended"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`ctypes`"
-msgstr ""
+msgstr ":mod:`ctypes`"
 
 msgid "`liblzma <https://tukaani.org/xz/>`_"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`lzma`"
-msgstr ""
+msgstr ":mod:`lzma`"
 
 msgid "`libmpdec <https://www.bytereef.org/mpdecimal/doc/libmpdec/>`_"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "2.5.0"
-msgstr ""
+msgstr "2.5.0"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`decimal` [1]_"
-msgstr ""
+msgstr ":mod:`decimal` [1]_"
 
 msgid ""
 "`libreadline <https://tiswww.case.edu/php/chet/readline/rltop.html>`_ or "
 "`libedit <https://www.thrysoee.dk/editline/>`_ [2]_"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`readline`"
-msgstr ""
+msgstr ":mod:`readline`"
 
 msgid "`libuuid <https://linux.die.net/man/3/libuuid>`_"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``_uuid`` [3]_"
-msgstr ""
+msgstr "``_uuid`` [3]_"
 
 msgid "`ncurses <https://gnu.org/software/ncurses/ncurses.html>`_ [4]_"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`curses`"
-msgstr ""
+msgstr ":mod:`curses`"
 
 msgid "`OpenSSL <https://openssl-library.org/>`_"
 msgstr ""
@@ -163,44 +181,62 @@ msgstr ""
 msgid "(1.1.1 minimum)"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`ssl`, :mod:`hashlib` [5]_"
-msgstr ""
+msgstr ":mod:`ssl`, :mod:`hashlib` [5]_"
 
 msgid "`SQLite <https://sqlite.org/>`_"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "3.15.2"
-msgstr ""
+msgstr "3.15.2"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`sqlite3`"
-msgstr ""
+msgstr ":mod:`sqlite3`"
 
 msgid "`Tcl/Tk <https://www.tcl-lang.org/>`_"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "8.5.12"
-msgstr ""
+msgstr "8.5.12"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`tkinter`, :ref:`IDLE <idle>`, :mod:`turtle`"
-msgstr ""
+msgstr ":mod:`tkinter`, :ref:`IDLE <idle>`, :mod:`turtle`"
 
 msgid "`zlib <https://www.zlib.net>`_"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "1.2.2.1"
-msgstr ""
+msgstr "1.2.2.1"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`zlib`, :mod:`gzip`, :mod:`ensurepip`"
-msgstr ""
+msgstr ":mod:`zlib`, :mod:`gzip`, :mod:`ensurepip`"
 
 msgid "`zstd <https://facebook.github.io/zstd/>`_"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "1.4.5"
-msgstr ""
+msgstr "1.4.5"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`compression.zstd`"
-msgstr ""
+msgstr ":mod:`compression.zstd`"
 
 msgid ""
 "If *libmpdec* is not available, the :mod:`decimal` module will use a pure-"
@@ -246,8 +282,10 @@ msgid ""
 "<https://libexpat.github.io/>`_ library."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":ref:`configure-options-for-dependencies`"
-msgstr ""
+msgstr ":ref:`configure-options-for-dependencies`"
 
 msgid "Tcl/Tk version 8.3.1 is now required for :mod:`tkinter`."
 msgstr ""
@@ -277,12 +315,18 @@ msgid ""
 "files. Commands to regenerate all generated files::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "make regen-all\n"
 "make regen-stdlib-module-names\n"
 "make regen-limited-abi\n"
 "make regen-configure"
 msgstr ""
+"make regen-all\n"
+"make regen-stdlib-module-names\n"
+"make regen-limited-abi\n"
+"make regen-configure"
 
 msgid ""
 "The ``Makefile.pre.in`` file documents generated files, their inputs, and "
@@ -409,14 +453,20 @@ msgid ""
 "A valid value is a colon (``:``) separated string with the backend names:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``ndbm``;"
-msgstr ""
+msgstr "``ndbm``;"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``gdbm``;"
-msgstr ""
+msgstr "``gdbm``;"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``bdb``."
-msgstr ""
+msgstr "``bdb``."
 
 msgid "Disable C locale coercion to a UTF-8 based locale (enabled by default)."
 msgstr ""
@@ -461,6 +511,42 @@ msgstr ""
 
 msgid "``no``: configure does not use :program:`pkg-config` even when present"
 msgstr ""
+
+msgid ""
+"Path to a `JSON <https://www.json.org/json-en.html>`_ configuration file "
+"containing custom error messages for missing :term:`standard library` "
+"modules."
+msgstr ""
+
+msgid ""
+"This option is intended for Python distributors who wish to provide "
+"distribution-specific guidance when users encounter standard library modules "
+"that are missing or packaged separately."
+msgstr ""
+
+msgid ""
+"The JSON file should map missing module names to custom error message "
+"strings. For example, if your distribution packages :mod:`tkinter` and :mod:"
+"`_tkinter` separately and excludes :mod:`!_gdbm` for legal reasons, the "
+"configuration could contain:"
+msgstr ""
+
+# pydocvi: passthrough=literal_block
+#, fuzzy
+msgid ""
+"{\n"
+"    \"_gdbm\": \"The '_gdbm' module is not available in this "
+"distribution\",\n"
+"    \"tkinter\": \"Install the python-tk package to use tkinter\",\n"
+"    \"_tkinter\": \"Install the python-tk package to use tkinter\",\n"
+"}"
+msgstr ""
+"{\n"
+"    \"_gdbm\": \"The '_gdbm' module is not available in this "
+"distribution\",\n"
+"    \"tkinter\": \"Install the python-tk package to use tkinter\",\n"
+"    \"_tkinter\": \"Install the python-tk package to use tkinter\",\n"
+"}"
 
 msgid "Turn on internal Python performance statistics gathering."
 msgstr ""
@@ -646,6 +732,14 @@ msgid "Path to ``pkg-config`` utility."
 msgstr ""
 
 msgid "``pkg-config`` options."
+msgstr ""
+
+msgid ""
+"Build without ``epoll``, meaning that :py:func:`select.epoll` will not be "
+"present even if the system provides an :manpage:`epoll_create "
+"<epoll_create(2)>` function. This may be used on systems where :manpage:`!"
+"epoll_create` or :manpage:`epoll_create1 <epoll_create1(2)>` is available "
+"but incompatible with Linux semantics."
 msgstr ""
 
 msgid "C compiler options"
@@ -922,6 +1016,46 @@ msgid ""
 "feature."
 msgstr ""
 
+msgid "Disable frame pointers, which are enabled by default (see :pep:`831`)."
+msgstr ""
+
+msgid ""
+"By default, the build appends flags to generate frame or backchain pointers "
+"to ``BASECFLAGS``:"
+msgstr ""
+
+msgid ""
+"``-fno-omit-frame-pointer`` and/or ``-mno-omit-leaf-frame-pointer`` are "
+"added when the compiler supports them."
+msgstr ""
+
+msgid "``-marm`` and/or ``-mno-thumb`` is added on 32-bit ARM when supported,"
+msgstr ""
+
+msgid ""
+"on s390x platforms, when supported, ``-mbackchain`` is added *instead*. of "
+"the above frame pointer flags."
+msgstr ""
+
+msgid ""
+"on ppc64le platforms, no compiler flags is needed since the power ABI "
+"requires that compilers maintain a back chain by default."
+msgstr ""
+
+msgid ""
+"Frame pointers enable profilers, debuggers, and system tracing tools "
+"(``perf``, ``eBPF``, ``dtrace``, ``gdb``) to walk the C call stack without "
+"DWARF metadata. The flags propagate to third-party C extensions through :mod:"
+"`sysconfig`. On compilers that do not understand them, the build silently "
+"skips them."
+msgstr ""
+
+msgid ""
+"Downstream packagers and authors of native libraries built with custom build "
+"systems should set the same flags so the unwind chain stays unbroken across "
+"all native frames."
+msgstr ""
+
 msgid ""
 "Disable the fast :ref:`mimalloc <mimalloc>` allocator (enabled by default)."
 msgstr ""
@@ -937,6 +1071,44 @@ msgstr ""
 msgid ""
 "Disable the specialized Python memory allocator :ref:`pymalloc <pymalloc>` "
 "(enabled by default)."
+msgstr ""
+
+msgid ""
+"Enable huge page support for :ref:`pymalloc <pymalloc>` arenas (disabled by "
+"default). When enabled, the arena size on 64-bit platforms is increased to 2 "
+"MiB and arena allocation uses ``MAP_HUGETLB`` (Linux) or ``MEM_LARGE_PAGES`` "
+"(Windows) with automatic fallback to regular pages."
+msgstr ""
+
+msgid ""
+"Even when compiled with this option, huge pages are **not** used at runtime "
+"unless the :envvar:`PYTHON_PYMALLOC_HUGEPAGES` environment variable is set "
+"to ``1``. This opt-in is required because huge pages"
+msgstr ""
+
+msgid ""
+"carry risks on Linux: if the huge-page pool is exhausted, page faults "
+"(including copy-on-write faults after :func:`os.fork`) deliver ``SIGBUS`` "
+"and kill the process."
+msgstr ""
+
+msgid ""
+"need a special privilege on Windows. See the `Windows documentation for "
+"large pages <https://learn.microsoft.com/windows/win32/memory/large-page-"
+"support>`_ for details. Python will fail on startup if the required "
+"privilege `SeLockMemoryPrivilege <https://learn.microsoft.com/previous-"
+"versions/windows/it-pro/windows-10/security/threat-protection/security-"
+"policy-settings/lock-pages-in-memory>`_ is not held by the user."
+msgstr ""
+
+msgid ""
+"The configure script checks that the platform supports ``MAP_HUGETLB`` and "
+"emits a warning if it is not available."
+msgstr ""
+
+msgid ""
+"On Windows, use the ``--pymalloc-hugepages`` flag with ``build.bat`` or set "
+"the ``UsePymallocHugepages`` MSBuild property."
 msgstr ""
 
 msgid ""
@@ -1151,6 +1323,21 @@ msgid ""
 "(built and enabled by default)."
 msgstr ""
 
+msgid ""
+"Do not link the Python interpreter binary (``python3``) against the shared "
+"Python library; instead, statically link the interpreter against "
+"``libpython`` as if ``--enable-shared`` had not been used, but continue to "
+"build the shared ``libpython`` (for use by other programs)."
+msgstr ""
+
+msgid "This option does nothing if ``--enable-shared`` is not used."
+msgstr ""
+
+msgid ""
+"The default (when ``-enable-shared`` is used) is to link the Python "
+"interpreter against the built shared library."
+msgstr ""
+
 msgid "Libraries options"
 msgstr ""
 
@@ -1232,11 +1419,15 @@ msgstr ""
 msgid "``siphash13`` (default);"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``siphash24``;"
-msgstr ""
+msgstr "``siphash24``;"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``fnv``."
-msgstr ""
+msgstr "``fnv``."
 
 msgid "``siphash13`` is added and it is the new default."
 msgstr ""
@@ -1244,23 +1435,33 @@ msgstr ""
 msgid "Built-in hash modules:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``md5``;"
-msgstr ""
+msgstr "``md5``;"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``sha1``;"
-msgstr ""
+msgstr "``sha1``;"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``sha256``;"
-msgstr ""
+msgstr "``sha256``;"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``sha512``;"
-msgstr ""
+msgstr "``sha512``;"
 
 msgid "``sha3`` (with shake);"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``blake2``."
-msgstr ""
+msgstr "``blake2``."
 
 msgid "Override the OpenSSL default cipher suites string:"
 msgstr ""
@@ -1361,11 +1562,15 @@ msgstr ""
 msgid "``intel`` (i386 and x86-64);"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``intel-32`` (i386);"
-msgstr ""
+msgstr "``intel-32`` (i386);"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``intel-64`` (x86-64);"
-msgstr ""
+msgstr "``intel-64`` (x86-64);"
 
 msgid "``all``  (PPC, i386, PPC64 and x86-64)."
 msgstr ""
@@ -1431,12 +1636,18 @@ msgstr ""
 msgid "Example *config.site* file:"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "# config.site-aarch64\n"
 "ac_cv_buggy_getaddrinfo=no\n"
 "ac_cv_file__dev_ptmx=yes\n"
 "ac_cv_file__dev_ptc=no"
 msgstr ""
+"# config.site-aarch64\n"
+"ac_cv_buggy_getaddrinfo=no\n"
+"ac_cv_file__dev_ptmx=yes\n"
+"ac_cv_file__dev_ptc=no"
 
 msgid "Program to run CPython for the host platform for cross-compilation."
 msgstr ""
@@ -1444,12 +1655,18 @@ msgstr ""
 msgid "Cross compiling example::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "CONFIG_SITE=config.site-aarch64 ../configure \\\n"
 "    --build=x86_64-pc-linux-gnu \\\n"
 "    --host=aarch64-unknown-linux-gnu \\\n"
 "    --with-build-python=../x86_64/python"
 msgstr ""
+"CONFIG_SITE=config.site-aarch64 ../configure \\\n"
+"    --build=x86_64-pc-linux-gnu \\\n"
+"    --host=aarch64-unknown-linux-gnu \\\n"
+"    --with-build-python=../x86_64/python"
 
 msgid "Python Build System"
 msgstr ""
@@ -1457,8 +1674,10 @@ msgstr ""
 msgid "Main files of the build system"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":file:`configure.ac` => :file:`configure`;"
-msgstr ""
+msgstr ":file:`configure.ac` => :file:`configure`;"
 
 msgid ""
 ":file:`Makefile.pre.in` => :file:`Makefile` (created by :file:`configure`);"
@@ -1492,8 +1711,10 @@ msgstr ""
 msgid "Main Makefile targets"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "make"
-msgstr ""
+msgstr "make"
 
 msgid ""
 "For the most part, when rebuilding after editing some code or refreshing "
@@ -1529,8 +1750,10 @@ msgid ""
 "problems, at the expense of longer build times."
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "make platform"
-msgstr ""
+msgstr "make platform"
 
 msgid ""
 "Build the ``python`` program, but don't build the standard library extension "
@@ -1539,8 +1762,10 @@ msgid ""
 "arm64-3.12`` or ``linux-x86_64-3.13``."
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "make profile-opt"
-msgstr ""
+msgstr "make profile-opt"
 
 msgid ""
 "Build Python using profile-guided optimization (PGO).  You can use the "
@@ -1548,14 +1773,18 @@ msgid ""
 "target of the ``make`` command (``make all`` or just ``make``)."
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "make clean"
-msgstr ""
+msgstr "make clean"
 
 msgid "Remove built files."
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "make distclean"
-msgstr ""
+msgstr "make distclean"
 
 msgid ""
 "In addition to the work done by ``make clean``, remove files created by the "
@@ -1563,14 +1792,18 @@ msgid ""
 "[#]_"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "make install"
-msgstr ""
+msgstr "make install"
 
 msgid "Build the ``all`` target and install Python."
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "make test"
-msgstr ""
+msgstr "make test"
 
 msgid ""
 "Build the ``all`` target and run the Python test suite with the ``--fast-"
@@ -1586,24 +1819,30 @@ msgstr ""
 msgid "``TESTTIMEOUT``: timeout in seconds (default: 10 minutes)."
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "make ci"
-msgstr ""
+msgstr "make ci"
 
 msgid ""
 "This is similar to ``make test``, but uses the ``-ugui`` to also run GUI "
 "tests."
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "make buildbottest"
-msgstr ""
+msgstr "make buildbottest"
 
 msgid ""
 "This is similar to ``make test``, but uses the ``--slow-ci`` option and "
 "default timeout of 20 minutes, instead of ``--fast-ci`` option."
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "make regen-all"
-msgstr ""
+msgstr "make regen-all"
 
 msgid ""
 "Regenerate (almost) all generated files. These include (but are not limited "
@@ -1621,6 +1860,8 @@ msgid ""
 "modules have no ``__file__`` attribute:"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import sys\n"
 ">>> sys\n"
@@ -1630,6 +1871,13 @@ msgid ""
 "  File \"<stdin>\", line 1, in <module>\n"
 "AttributeError: module 'sys' has no attribute '__file__'"
 msgstr ""
+">>> import sys\n"
+">>> sys\n"
+"<module 'sys' (built-in)>\n"
+">>> sys.__file__\n"
+"Traceback (most recent call last):\n"
+"  File \"<stdin>\", line 1, in <module>\n"
+"AttributeError: module 'sys' has no attribute '__file__'"
 
 msgid ""
 "Other C extensions are built as dynamic libraries, like the ``_asyncio`` "
@@ -1637,14 +1885,22 @@ msgid ""
 "Example on Linux x86-64:"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import _asyncio\n"
 ">>> _asyncio\n"
-"<module '_asyncio' from '/usr/lib64/python3.9/lib-dynload/_asyncio."
-"cpython-39-x86_64-linux-gnu.so'>\n"
+"<module '_asyncio' from '/usr/lib64/python3.9/lib-"
+"dynload/_asyncio.cpython-39-x86_64-linux-gnu.so'>\n"
 ">>> _asyncio.__file__\n"
 "'/usr/lib64/python3.9/lib-dynload/_asyncio.cpython-39-x86_64-linux-gnu.so'"
 msgstr ""
+">>> import _asyncio\n"
+">>> _asyncio\n"
+"<module '_asyncio' from '/usr/lib64/python3.9/lib-"
+"dynload/_asyncio.cpython-39-x86_64-linux-gnu.so'>\n"
+">>> _asyncio.__file__\n"
+"'/usr/lib64/python3.9/lib-dynload/_asyncio.cpython-39-x86_64-linux-gnu.so'"
 
 msgid ""
 ":file:`Modules/Setup` is used to generate Makefile targets to build C "
@@ -1862,6 +2118,11 @@ msgid ""
 msgstr ""
 
 msgid ""
+"Please consider using ``EXE_LDFLAGS`` if the supplied linker flags are "
+"executable specific, e.g. GCC's ``-pie`` flag."
+msgstr ""
+
+msgid ""
 "Linker flags to pass libraries to the linker when linking the Python "
 "executable."
 msgstr ""
@@ -1888,6 +2149,22 @@ msgid "Default: ``$(CONFIGURE_LDFLAGS_NODIST) $(LDFLAGS_NODIST)``."
 msgstr ""
 
 msgid "Linker flags used for building the interpreter object files."
+msgstr ""
+
+msgid ""
+"Linker flags used for building executable targets such as the interpreter. "
+"If supplied, :envvar:`PY_CORE_EXE_LDFLAGS` will be used in replacement of :"
+"envvar:`PY_CORE_LDFLAGS`."
+msgstr ""
+
+msgid ""
+"Value of :envvar:`EXE_LDFLAGS` variable passed to the ``./configure`` script."
+msgstr ""
+
+msgid "Linker flags used for building the interpreter and executable targets."
+msgstr ""
+
+msgid "Default: ``$(PY_CORE_LDFLAGS)``"
 msgstr ""
 
 msgid "Footnotes"
