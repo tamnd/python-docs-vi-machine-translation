@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 04:23+0000\n"
+"PO-Revision-Date: 2026-08-18 04:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.3\n"
+"X-Generator: pydocvi 0.1.4\n"
 
 msgid ":mod:`!ast` --- Abstract syntax trees"
 msgstr ""
@@ -711,10 +711,8 @@ msgstr ""
 "        value=Name(id='List'),\n"
 "        slice=Name(id='int')))"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Literals"
-msgstr "Literals"
+msgstr ""
 
 msgid ""
 "A constant value. The ``value`` attribute of the ``Constant`` literal "
@@ -1009,10 +1007,8 @@ msgstr ""
 "            Constant(value=1),\n"
 "            Name(id='d')]))"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Variables"
-msgstr "Variables"
+msgstr ""
 
 msgid ""
 "A variable name. ``id`` holds the name as a string, and ``ctx`` is one of "
@@ -1107,10 +1103,8 @@ msgstr ""
 "                    ctx=Store())],\n"
 "            value=Name(id='it'))])"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Expressions"
-msgstr "Expressions"
+msgstr ""
 
 msgid ""
 "When an expression, such as a function call, appears as a statement by "
@@ -1379,10 +1373,8 @@ msgstr ""
 "        target=Name(id='x', ctx=Store()),\n"
 "        value=Constant(value=4)))"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Subscripting"
-msgstr "Subscripting"
+msgstr ""
 
 msgid ""
 "A subscript, such as ``l[1]``. ``value`` is the subscripted object (usually "
@@ -1441,10 +1433,8 @@ msgstr ""
 "            lower=Constant(value=1),\n"
 "            upper=Constant(value=2))))"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Comprehensions"
-msgstr "Comprehensions"
+msgstr ""
 
 msgid ""
 "List and set comprehensions, generator expressions, and dictionary "
@@ -1671,10 +1661,8 @@ msgstr ""
 "                iter=Name(id='soc'),\n"
 "                is_async=1)]))"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Statements"
-msgstr "Statements"
+msgstr ""
 
 msgid ""
 "An assignment. ``targets`` is a list of nodes, and ``value`` is a single "
@@ -1983,10 +1971,8 @@ msgid ""
 "described in other sections."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Imports"
-msgstr "Imports"
+msgstr ""
 
 msgid "An import statement. ``names`` is a list of :class:`alias` nodes."
 msgstr ""

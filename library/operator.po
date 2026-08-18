@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 04:23+0000\n"
+"PO-Revision-Date: 2026-08-18 04:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.3\n"
+"X-Generator: pydocvi 0.1.4\n"
 
 msgid ":mod:`!operator` --- Standard operators as functions"
 msgstr ""
@@ -341,25 +341,17 @@ msgid ""
 "the Python syntax and the functions in the :mod:`!operator` module."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Operation"
-msgstr "Operation"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Syntax"
-msgstr "Syntax"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Function"
-msgstr "Function"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Addition"
-msgstr "Addition"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -371,10 +363,8 @@ msgstr "``a + b``"
 msgid "``add(a, b)``"
 msgstr "``add(a, b)``"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Concatenation"
-msgstr "Concatenation"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -399,10 +389,8 @@ msgstr "``obj in seq``"
 msgid "``contains(seq, obj)``"
 msgstr "``contains(seq, obj)``"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Division"
-msgstr "Division"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -476,10 +464,8 @@ msgstr "``a | b``"
 msgid "``or_(a, b)``"
 msgstr "``or_(a, b)``"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Exponentiation"
-msgstr "Exponentiation"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -491,10 +477,8 @@ msgstr "``a ** b``"
 msgid "``pow(a, b)``"
 msgstr "``pow(a, b)``"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Identity"
-msgstr "Identity"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -562,10 +546,8 @@ msgstr "``del obj[k]``"
 msgid "``delitem(obj, k)``"
 msgstr "``delitem(obj, k)``"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Indexing"
-msgstr "Indexing"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -590,10 +572,8 @@ msgstr "``a << b``"
 msgid "``lshift(a, b)``"
 msgstr "``lshift(a, b)``"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Modulo"
-msgstr "Modulo"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -605,10 +585,8 @@ msgstr "``a % b``"
 msgid "``mod(a, b)``"
 msgstr "``mod(a, b)``"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Multiplication"
-msgstr "Multiplication"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -659,10 +637,8 @@ msgstr "``not a``"
 msgid "``not_(a)``"
 msgstr "``not_(a)``"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Positive"
-msgstr "Positive"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -713,10 +689,8 @@ msgstr "``del seq[i:j]``"
 msgid "``delitem(seq, slice(i, j))``"
 msgstr "``delitem(seq, slice(i, j))``"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Slicing"
-msgstr "Slicing"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -741,10 +715,8 @@ msgstr "``s % obj``"
 msgid "``mod(s, obj)``"
 msgstr "``mod(s, obj)``"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Subtraction"
-msgstr "Subtraction"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -769,10 +741,8 @@ msgstr "``obj``"
 msgid "``truth(obj)``"
 msgstr "``truth(obj)``"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Ordering"
-msgstr "Ordering"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -794,10 +764,8 @@ msgstr "``a <= b``"
 msgid "``le(a, b)``"
 msgstr "``le(a, b)``"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Equality"
-msgstr "Equality"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -809,10 +777,8 @@ msgstr "``a == b``"
 msgid "``eq(a, b)``"
 msgstr "``eq(a, b)``"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Difference"
-msgstr "Difference"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy

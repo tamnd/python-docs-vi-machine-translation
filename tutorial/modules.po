@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-23 15:47+0000\n"
-"PO-Revision-Date: 2026-08-18 04:23+0000\n"
+"PO-Revision-Date: 2026-08-18 04:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -20,12 +20,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.3\n"
+"X-Generator: pydocvi 0.1.4\n"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Modules"
-msgstr "Modules"
+msgstr ""
 
 # pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=60800e02afb8 run=2026-08-17T16:43Z
 #, fuzzy
@@ -914,10 +912,8 @@ msgstr ""
 " 'sorted', 'staticmethod', 'str', 'sum', 'super', 'tuple', 'type', 'vars',\n"
 " 'zip']"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Packages"
-msgstr "Packages"
+msgstr ""
 
 # pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=723495c45e5f run=2026-08-17T16:43Z
 #, fuzzy
@@ -1414,15 +1410,11 @@ msgstr ""
 msgid "module"
 msgstr "module"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "search"
-msgstr "search"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "path"
-msgstr "path"
+msgstr ""
 
 msgid "sys"
 msgstr "sys"

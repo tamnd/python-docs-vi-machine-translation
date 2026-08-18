@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 04:23+0000\n"
+"PO-Revision-Date: 2026-08-18 04:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.3\n"
+"X-Generator: pydocvi 0.1.4\n"
 
 msgid ""
 ":mod:`!argparse` --- Parser for command-line options, arguments and "
@@ -42,10 +42,8 @@ msgid ""
 "another defined option)."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Tutorial"
-msgstr "Tutorial"
+msgstr ""
 
 msgid ""
 "This page contains the API reference information. For a more gentle "
@@ -217,10 +215,8 @@ msgstr ""
 msgid "The following sections describe how each of these are used."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "prog"
-msgstr "prog"
+msgstr ""
 
 msgid ""
 "By default, :class:`ArgumentParser` calculates the name of the program to "
@@ -298,10 +294,8 @@ msgid ""
 "executed, rather than always being ``os.path.basename(sys.argv[0])``."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "usage"
-msgstr "usage"
+msgstr ""
 
 msgid ""
 "By default, :class:`ArgumentParser` calculates the usage message from the "
@@ -353,10 +347,8 @@ msgid ""
 "usage information across subparsers."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "description"
-msgstr "description"
+msgstr ""
 
 msgid ""
 "Most calls to the :class:`ArgumentParser` constructor will use the "
@@ -371,10 +363,8 @@ msgid ""
 "given space.  To change this behavior, see the formatter_class_ argument."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "epilog"
-msgstr "epilog"
+msgstr ""
 
 msgid ""
 "Some programs like to display additional description of the program after "
@@ -417,10 +407,8 @@ msgid ""
 "argument to :class:`ArgumentParser`."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "parents"
-msgstr "parents"
+msgstr ""
 
 msgid ""
 "Sometimes, several parsers share a common set of arguments. Rather than "
@@ -1050,10 +1038,8 @@ msgid ""
 "Changed default value of ``suggest_on_error`` from ``False`` to ``True``."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "color"
-msgstr "color"
+msgstr ""
 
 msgid ""
 "By default, the help message is printed in color using `ANSI escape "
@@ -1270,10 +1256,8 @@ msgstr ""
 " -h, --help  show this help message and exit\n"
 " --foo-bar FOO-BAR"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "action"
-msgstr "action"
+msgstr ""
 
 msgid ""
 ":class:`ArgumentParser` objects associate command-line arguments with "
@@ -1516,10 +1500,8 @@ msgstr ""
 msgid "For more details, see :class:`Action`."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "nargs"
-msgstr "nargs"
+msgstr ""
 
 msgid ""
 ":class:`ArgumentParser` objects usually associate a single command-line "
@@ -1671,10 +1653,8 @@ msgid ""
 "``'store_const'``) set ``nargs=0``."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "const"
-msgstr "const"
+msgstr ""
 
 msgid ""
 "The ``const`` argument of :meth:`~ArgumentParser.add_argument` is used to "
@@ -1706,10 +1686,8 @@ msgid ""
 "``action='store_const'``."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "default"
-msgstr "default"
+msgstr ""
 
 msgid ""
 "All optional arguments and some positional arguments may be omitted at the "
@@ -1951,10 +1929,8 @@ msgid ""
 "using the choices_ keyword instead."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "choices"
-msgstr "choices"
+msgstr ""
 
 msgid ""
 "Some command-line arguments should be selected from a restricted set of "
@@ -2014,10 +1990,8 @@ msgid ""
 "are many choices), just specify an explicit metavar_."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "required"
-msgstr "required"
+msgstr ""
 
 msgid ""
 "In general, the :mod:`!argparse` module assumes that flags like ``-f`` and "
@@ -2056,10 +2030,8 @@ msgid ""
 "*options* to be *optional*, and thus they should be avoided when possible."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "help"
-msgstr "help"
+msgstr ""
 
 msgid ""
 "The ``help`` value is a string containing a brief description of the "
@@ -2132,10 +2104,8 @@ msgstr ""
 "options:\n"
 "  -h, --help  show this help message and exit"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "metavar"
-msgstr "metavar"
+msgstr ""
 
 msgid ""
 "When :class:`ArgumentParser` generates help messages, it needs some way to "
@@ -2254,10 +2224,8 @@ msgstr ""
 " -x X X\n"
 " --foo bar baz"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "dest"
-msgstr "dest"
+msgstr ""
 
 msgid ""
 "Most :class:`ArgumentParser` actions add some value as an attribute of the "
@@ -2334,10 +2302,8 @@ msgstr ""
 msgid "Single-dash long option now takes precedence over short options."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "deprecated"
-msgstr "deprecated"
+msgstr ""
 
 msgid ""
 "During a project's lifetime, some arguments may need to be removed from the "
@@ -2859,10 +2825,8 @@ msgstr ""
 msgid "Other utilities"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Subcommands"
-msgstr "Subcommands"
+msgstr ""
 
 msgid ""
 "Many programs split up their functionality into a number of subcommands, for "
@@ -3862,10 +3826,8 @@ msgstr ""
 "usage: PROG [-h] [--foo FOO]\n"
 "PROG: error: argument --foo: invalid 'hexadecimal integer' value: '1.2'"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Exceptions"
-msgstr "Exceptions"
+msgstr ""
 
 msgid "An error from creating or using an argument (optional or positional)."
 msgstr ""

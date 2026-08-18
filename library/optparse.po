@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 04:23+0000\n"
+"PO-Revision-Date: 2026-08-18 04:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.3\n"
+"X-Generator: pydocvi 0.1.4\n"
 
 msgid ":mod:`!optparse` --- Parser for command line options"
 msgstr ""
@@ -212,10 +212,8 @@ msgid ""
 "integrate with static checking of Python type annotations."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Introduction"
-msgstr "Introduction"
+msgstr ""
 
 msgid ""
 ":mod:`!optparse` is a more convenient, flexible, and powerful library for "
@@ -316,10 +314,8 @@ msgid ""
 "``sys.argv[0]``)."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Background"
-msgstr "Background"
+msgstr ""
 
 msgid ""
 ":mod:`!optparse` was explicitly designed to encourage the creation of "
@@ -331,15 +327,11 @@ msgid ""
 "to acquaint yourself with them."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Terminology"
-msgstr "Terminology"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "argument"
-msgstr "argument"
+msgstr ""
 
 msgid ""
 "a string entered on the command-line, and passed by the shell to ``execl()`` "
@@ -355,10 +347,8 @@ msgid ""
 "argv[1:]``\"."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "option"
-msgstr "option"
+msgstr ""
 
 msgid ""
 "an argument used to supply extra information to guide or customize the "
@@ -539,10 +529,8 @@ msgid ""
 "make your code much harder to maintain."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Tutorial"
-msgstr "Tutorial"
+msgstr ""
 
 msgid ""
 "While :mod:`!optparse` is quite flexible and powerful, it's also "
@@ -1063,10 +1051,8 @@ msgstr ""
 msgid "An option group is obtained using the class :class:`OptionGroup`:"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "where"
-msgstr "where"
+msgstr ""
 
 msgid ""
 "parser is the :class:`OptionParser` instance the group will be inserted in to"
@@ -2496,10 +2482,8 @@ msgstr ""
 "  -n, --noisy   be noisy\n"
 "  --dry-run     new dry-run option"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Cleanup"
-msgstr "Cleanup"
+msgstr ""
 
 msgid ""
 "OptionParser instances have several cyclic references.  This should not be a "
@@ -3358,10 +3342,8 @@ msgid ""
 "meth:`ensure_value` will take care of getting it right when it's needed."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Exceptions"
-msgstr "Exceptions"
+msgstr ""
 
 msgid ""
 "Raised if an :class:`Option` instance is created with invalid or "

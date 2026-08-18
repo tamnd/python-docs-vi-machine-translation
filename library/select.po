@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 04:23+0000\n"
+"PO-Revision-Date: 2026-08-18 04:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.3\n"
+"X-Generator: pydocvi 0.1.4\n"
 
 msgid ":mod:`!select` --- Waiting for I/O completion"
 msgstr ""
@@ -42,10 +42,8 @@ msgid ""
 "precise control over the OS-level primitives used."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Availability"
-msgstr "Availability"
+msgstr ""
 
 msgid ""
 "This module does not work or is not available on WebAssembly. See :ref:`wasm-"
@@ -295,10 +293,8 @@ msgstr "https://linux.die.net/man/4/epoll"
 msgid "*eventmask*"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Constant"
-msgstr "Constant"
+msgstr ""
 
 msgid "Meaning"
 msgstr "Ý nghĩa"
@@ -417,10 +413,8 @@ msgstr ""
 msgid ":const:`EPOLLMSG`"
 msgstr ":const:`EPOLLMSG`"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Ignored."
-msgstr "Ignored."
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -950,7 +944,5 @@ msgstr ""
 msgid "popen() (in module os)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "WinSock"
-msgstr "WinSock"
+msgstr ""

@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 04:23+0000\n"
+"PO-Revision-Date: 2026-08-18 04:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.3\n"
+"X-Generator: pydocvi 0.1.4\n"
 
 msgid ":mod:`!time` --- Time access and conversions"
 msgstr ""
@@ -120,20 +120,14 @@ msgstr ""
 msgid "Use the following functions to convert between time representations:"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "From"
-msgstr "From"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "To"
-msgstr "To"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Use"
-msgstr "Use"
+msgstr ""
 
 msgid "seconds since the epoch"
 msgstr ""
@@ -164,10 +158,8 @@ msgstr ":func:`calendar.timegm`"
 msgid ":func:`mktime`"
 msgstr ":func:`mktime`"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Functions"
-msgstr "Functions"
+msgstr ""
 
 msgid ""
 "Convert a tuple or :class:`struct_time` representing a time as returned by :"
@@ -202,10 +194,8 @@ msgid ""
 "such as segmentation fault."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Availability"
-msgstr "Availability"
+msgstr ""
 
 msgid ""
 "See the man page for :manpage:`pthread_getcpuclockid(3)` for further "
@@ -521,18 +511,14 @@ msgid ""
 "replaced by the indicated characters in the :func:`strftime` result:"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Directive"
-msgstr "Directive"
+msgstr ""
 
 msgid "Meaning"
 msgstr "Ý nghĩa"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Notes"
-msgstr "Notes"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -887,20 +873,14 @@ msgid ""
 "The following values are present:"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Index"
-msgstr "Index"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Attribute"
-msgstr "Attribute"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Values"
-msgstr "Values"
+msgstr ""
 
 # pydocvi: passthrough=version_marker
 #, fuzzy
@@ -1373,10 +1353,8 @@ msgid ""
 "by :rfc:`2822`, with :rfc:`5322` continuing this requirement."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "epoch"
-msgstr "epoch"
+msgstr ""
 
 msgid "Year 2038"
 msgstr ""
@@ -1384,10 +1362,8 @@ msgstr ""
 msgid "2-digit years"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "UTC"
-msgstr "UTC"
+msgstr ""
 
 msgid "Coordinated Universal Time"
 msgstr ""
@@ -1398,10 +1374,8 @@ msgstr ""
 msgid "Daylight Saving Time"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "benchmarking"
-msgstr "benchmarking"
+msgstr ""
 
 msgid "CPU time"
 msgstr ""

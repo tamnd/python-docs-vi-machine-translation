@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 04:23+0000\n"
+"PO-Revision-Date: 2026-08-18 04:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.3\n"
+"X-Generator: pydocvi 0.1.4\n"
 
 msgid ":mod:`!curses` --- Terminal handling for character-cell displays"
 msgstr ""
@@ -40,10 +40,8 @@ msgid ""
 "curses library hosted on Linux and the BSD variants of Unix."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Availability"
-msgstr "Availability"
+msgstr ""
 
 msgid ""
 "This module is not supported on :ref:`mobile platforms <mobile-"
@@ -99,10 +97,8 @@ msgid ""
 "Raymond."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Functions"
-msgstr "Functions"
+msgstr ""
 
 msgid "The module :mod:`!curses` defines the following exception:"
 msgstr ""
@@ -788,15 +784,11 @@ msgid ""
 "listed in this table:"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Parameter"
-msgstr "Parameter"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Description"
-msgstr "Description"
+msgstr ""
 
 msgid "Default value"
 msgstr ""
@@ -821,10 +813,8 @@ msgstr ""
 msgid "*ts*"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Top"
-msgstr "Top"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -834,10 +824,8 @@ msgstr ":const:`ACS_HLINE`"
 msgid "*bs*"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Bottom"
-msgstr "Bottom"
+msgstr ""
 
 msgid "*tl*"
 msgstr ""
@@ -1289,10 +1277,8 @@ msgid ""
 "the character *ch* with attributes *attr*."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Constants"
-msgstr "Constants"
+msgstr ""
 
 msgid "The :mod:`!curses` module defines the following data members:"
 msgstr ""
@@ -1347,10 +1333,8 @@ msgid ""
 "constants available are system dependent."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Attribute"
-msgstr "Attribute"
+msgstr ""
 
 msgid "Meaning"
 msgstr "Ý nghĩa"
@@ -1434,10 +1418,8 @@ msgstr ""
 msgid "Key constant"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Key"
-msgstr "Key"
+msgstr ""
 
 msgid "Minimum key value"
 msgstr ""
@@ -1523,10 +1505,8 @@ msgstr ""
 msgid "Reset or hard reset (unreliable)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Print"
-msgstr "Print"
+msgstr ""
 
 msgid "Home down or bottom (lower left)"
 msgstr ""
@@ -1552,114 +1532,74 @@ msgstr ""
 msgid "Beg (beginning)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Cancel"
-msgstr "Cancel"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Close"
-msgstr "Close"
+msgstr ""
 
 msgid "Cmd (command)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Copy"
-msgstr "Copy"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Create"
-msgstr "Create"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "End"
-msgstr "End"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Exit"
-msgstr "Exit"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Find"
-msgstr "Find"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Help"
-msgstr "Help"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Mark"
-msgstr "Mark"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Message"
-msgstr "Message"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Move"
-msgstr "Move"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Next"
-msgstr "Next"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Open"
-msgstr "Open"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Options"
-msgstr "Options"
+msgstr ""
 
 msgid "Prev (previous)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Redo"
-msgstr "Redo"
+msgstr ""
 
 msgid "Ref (reference)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Refresh"
-msgstr "Refresh"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Replace"
-msgstr "Replace"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Restart"
-msgstr "Restart"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Resume"
-msgstr "Resume"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Save"
-msgstr "Save"
+msgstr ""
 
 msgid "Shifted Beg (beginning)"
 msgstr ""
@@ -1682,10 +1622,8 @@ msgstr ""
 msgid "Shifted Delete line"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Select"
-msgstr "Select"
+msgstr ""
 
 msgid "Shifted End"
 msgstr ""
@@ -1750,15 +1688,11 @@ msgstr ""
 msgid "Shifted Undo"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Suspend"
-msgstr "Suspend"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Undo"
-msgstr "Undo"
+msgstr ""
 
 msgid "Mouse event has occurred"
 msgstr ""
@@ -1780,15 +1714,11 @@ msgid ""
 "keypad mappings are standard:"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Keycap"
-msgstr "Keycap"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Constant"
-msgstr "Constant"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -1884,10 +1814,8 @@ msgstr ""
 msgid "bottom tee"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "bullet"
-msgstr "bullet"
+msgstr ""
 
 msgid "checker board (stipple)"
 msgstr ""
@@ -1898,10 +1826,8 @@ msgstr ""
 msgid "degree symbol"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "diamond"
-msgstr "diamond"
+msgstr ""
 
 msgid "greater-than-or-equal-to"
 msgstr ""
@@ -2027,46 +1953,32 @@ msgstr ""
 msgid "The following table lists the predefined colors:"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Color"
-msgstr "Color"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Black"
-msgstr "Black"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Blue"
-msgstr "Blue"
+msgstr ""
 
 msgid "Cyan (light greenish blue)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Green"
-msgstr "Green"
+msgstr ""
 
 msgid "Magenta (purplish red)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Red"
-msgstr "Red"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "White"
-msgstr "White"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Yellow"
-msgstr "Yellow"
+msgstr ""
 
 msgid ":mod:`!curses.textpad` --- Text input widget for curses programs"
 msgstr ""
@@ -2126,15 +2038,11 @@ msgid ""
 "keystrokes:"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Keystroke"
-msgstr "Keystroke"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Action"
-msgstr "Action"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy

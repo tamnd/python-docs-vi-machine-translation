@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 04:23+0000\n"
+"PO-Revision-Date: 2026-08-18 04:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.3\n"
+"X-Generator: pydocvi 0.1.4\n"
 
 msgid ":mod:`!logging.handlers` --- Logging handlers"
 msgstr ""
@@ -54,10 +54,8 @@ msgid ""
 "have been documented here along with the other handlers."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "StreamHandler"
-msgstr "StreamHandler"
+msgstr ""
 
 msgid ""
 "The :class:`StreamHandler` class, located in the core :mod:`logging` "
@@ -115,10 +113,8 @@ msgstr ""
 msgid "In earlier versions, the terminator was hardcoded as ``'\\n'``."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "FileHandler"
-msgstr "FileHandler"
+msgstr ""
 
 msgid ""
 "The :class:`FileHandler` class, located in the core :mod:`logging` package, "
@@ -155,10 +151,8 @@ msgid ""
 "file mode is 'w', the record will not be emitted (see :issue:`42378`)."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "NullHandler"
-msgstr "NullHandler"
+msgstr ""
 
 msgid ""
 "The :class:`NullHandler` class, located in the core :mod:`logging` package, "
@@ -182,10 +176,8 @@ msgid ""
 "`NullHandler`."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "WatchedFileHandler"
-msgstr "WatchedFileHandler"
+msgstr ""
 
 msgid ""
 "The :class:`WatchedFileHandler` class, located in the :mod:`!logging."
@@ -232,10 +224,8 @@ msgid ""
 "reopen the file if it has changed."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "BaseRotatingHandler"
-msgstr "BaseRotatingHandler"
+msgstr ""
 
 msgid ""
 "The :class:`BaseRotatingHandler` class, located in the :mod:`!logging."
@@ -334,10 +324,8 @@ msgstr ""
 msgid "For an example, see :ref:`cookbook-rotator-namer`."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "RotatingFileHandler"
-msgstr "RotatingFileHandler"
+msgstr ""
 
 msgid ""
 "The :class:`RotatingFileHandler` class, located in the :mod:`!logging."
@@ -384,10 +372,8 @@ msgid ""
 "size limit."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "TimedRotatingFileHandler"
-msgstr "TimedRotatingFileHandler"
+msgstr ""
 
 msgid ""
 "The :class:`TimedRotatingFileHandler` class, located in the :mod:`!logging."
@@ -407,10 +393,8 @@ msgid ""
 "possible values is below.  Note that they are not case sensitive."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Value"
-msgstr "Value"
+msgstr ""
 
 msgid "Type of interval"
 msgstr ""
@@ -423,45 +407,35 @@ msgstr ""
 msgid "``'S'``"
 msgstr "``'S'``"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Seconds"
-msgstr "Seconds"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Ignored"
-msgstr "Ignored"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
 msgid "``'M'``"
 msgstr "``'M'``"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Minutes"
-msgstr "Minutes"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
 msgid "``'H'``"
 msgstr "``'H'``"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Hours"
-msgstr "Hours"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
 msgid "``'D'``"
 msgstr "``'D'``"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Days"
-msgstr "Days"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -564,10 +538,8 @@ msgid ""
 "the next rollover time."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "SocketHandler"
-msgstr "SocketHandler"
+msgstr ""
 
 msgid ""
 "The :class:`SocketHandler` class, located in the :mod:`!logging.handlers` "
@@ -669,10 +641,8 @@ msgid ""
 "during the delay period)."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "DatagramHandler"
-msgstr "DatagramHandler"
+msgstr ""
 
 msgid ""
 "The :class:`DatagramHandler` class, located in the :mod:`!logging.handlers` "
@@ -717,10 +687,8 @@ msgid ""
 "is as described in the documentation for :meth:`SocketHandler.makePickle`."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "SysLogHandler"
-msgstr "SysLogHandler"
+msgstr ""
 
 msgid ""
 "The :class:`SysLogHandler` class, located in the :mod:`!logging.handlers` "
@@ -1118,10 +1086,8 @@ msgid ""
 "all other level names to 'warning'."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "NTEventLogHandler"
-msgstr "NTEventLogHandler"
+msgstr ""
 
 msgid ""
 "The :class:`NTEventLogHandler` class, located in the :mod:`!logging."
@@ -1181,10 +1147,8 @@ msgid ""
 "message ID in :file:`win32service.pyd`."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "SMTPHandler"
-msgstr "SMTPHandler"
+msgstr ""
 
 msgid ""
 "The :class:`SMTPHandler` class, located in the :mod:`!logging.handlers` "
@@ -1226,10 +1190,8 @@ msgid ""
 "this method."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "MemoryHandler"
-msgstr "MemoryHandler"
+msgstr ""
 
 msgid ""
 "The :class:`MemoryHandler` class, located in the :mod:`!logging.handlers` "
@@ -1297,10 +1259,8 @@ msgstr ""
 msgid "Checks for buffer full or a record at the *flushLevel* or higher."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "HTTPHandler"
-msgstr "HTTPHandler"
+msgstr ""
 
 msgid ""
 "The :class:`HTTPHandler` class, located in the :mod:`!logging.handlers` "
@@ -1347,10 +1307,8 @@ msgid ""
 "the dictionary in a form suitable for sending to a web server."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "QueueHandler"
-msgstr "QueueHandler"
+msgstr ""
 
 msgid ""
 "The :class:`QueueHandler` class, located in the :mod:`!logging.handlers` "
@@ -1446,10 +1404,8 @@ msgid ""
 "this handler. Otherwise, it will be ``None``."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "QueueListener"
-msgstr "QueueListener"
+msgstr ""
 
 msgid ""
 "The :class:`QueueListener` class, located in the :mod:`!logging.handlers` "

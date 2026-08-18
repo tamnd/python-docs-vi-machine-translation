@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 04:23+0000\n"
+"PO-Revision-Date: 2026-08-18 04:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.3\n"
+"X-Generator: pydocvi 0.1.4\n"
 
 msgid ":mod:`!email.headerregistry`: Custom Header Objects"
 msgstr ""
@@ -362,93 +362,65 @@ msgstr ""
 msgid "The default mappings are:"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "subject"
-msgstr "subject"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "UniqueUnstructuredHeader"
-msgstr "UniqueUnstructuredHeader"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "date"
-msgstr "date"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "UniqueDateHeader"
-msgstr "UniqueDateHeader"
+msgstr ""
 
 msgid "resent-date"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "DateHeader"
-msgstr "DateHeader"
+msgstr ""
 
 msgid "orig-date"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "sender"
-msgstr "sender"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "UniqueSingleAddressHeader"
-msgstr "UniqueSingleAddressHeader"
+msgstr ""
 
 msgid "resent-sender"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "SingleAddressHeader"
-msgstr "SingleAddressHeader"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "to"
-msgstr "to"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "UniqueAddressHeader"
-msgstr "UniqueAddressHeader"
+msgstr ""
 
 msgid "resent-to"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "AddressHeader"
-msgstr "AddressHeader"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "cc"
-msgstr "cc"
+msgstr ""
 
 msgid "resent-cc"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "bcc"
-msgstr "bcc"
+msgstr ""
 
 msgid "resent-bcc"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "from"
-msgstr "from"
+msgstr ""
 
 msgid "resent-from"
 msgstr ""
@@ -459,42 +431,32 @@ msgstr ""
 msgid "mime-version"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "MIMEVersionHeader"
-msgstr "MIMEVersionHeader"
+msgstr ""
 
 msgid "content-type"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "ContentTypeHeader"
-msgstr "ContentTypeHeader"
+msgstr ""
 
 msgid "content-disposition"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "ContentDispositionHeader"
-msgstr "ContentDispositionHeader"
+msgstr ""
 
 msgid "content-transfer-encoding"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "ContentTransferEncodingHeader"
-msgstr "ContentTransferEncodingHeader"
+msgstr ""
 
 msgid "message-id"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "MessageIDHeader"
-msgstr "MessageIDHeader"
+msgstr ""
 
 msgid "``HeaderRegistry`` has the following methods:"
 msgstr ""

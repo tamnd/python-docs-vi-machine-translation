@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-17 14:50+0000\n"
-"PO-Revision-Date: 2026-08-18 04:23+0000\n"
+"PO-Revision-Date: 2026-08-18 04:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.3\n"
+"X-Generator: pydocvi 0.1.4\n"
 
 msgid "Low-level API Index"
 msgstr ""
@@ -79,10 +79,8 @@ msgid ""
 "methods`."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Lifecycle"
-msgstr "Lifecycle"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -140,10 +138,8 @@ msgstr "``await`` :meth:`loop.shutdown_asyncgens`"
 msgid "Close asynchronous generators."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Debugging"
-msgstr "Debugging"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -256,10 +252,8 @@ msgid ""
 "<Task>`."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "DNS"
-msgstr "DNS"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -360,10 +354,8 @@ msgstr "``await`` :meth:`loop.connect_write_pipe`"
 msgid "Wrap a write end of a pipe into a ``(transport, protocol)`` pair."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Sockets"
-msgstr "Sockets"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -488,10 +480,8 @@ msgstr ":meth:`loop.remove_signal_handler`"
 msgid "Remove a handler for a :mod:`signal`."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Subprocesses"
-msgstr "Subprocesses"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -590,10 +580,8 @@ msgid ":ref:`Using loop.subprocess_exec() <asyncio_example_subprocess_proto>`."
 msgstr ""
 ":ref:`Using loop.subprocess_exec() <asyncio_example_subprocess_proto>`."
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Transports"
-msgstr "Transports"
+msgstr ""
 
 msgid "All transports implement the following methods:"
 msgstr ""
@@ -846,10 +834,8 @@ msgstr ":meth:`transport.close() <SubprocessTransport.close>`"
 msgid "Kill the subprocess and close all pipes."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Protocols"
-msgstr "Protocols"
+msgstr ""
 
 msgid "Protocol classes can implement the following **callback methods**:"
 msgstr ""

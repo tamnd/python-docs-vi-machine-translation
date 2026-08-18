@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 04:23+0000\n"
+"PO-Revision-Date: 2026-08-18 04:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.3\n"
+"X-Generator: pydocvi 0.1.4\n"
 
 msgid "Exception Handling"
 msgstr ""
@@ -233,10 +233,8 @@ msgid ""
 "``NULL``."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Availability"
-msgstr "Availability"
+msgstr ""
 
 msgid ""
 "Similar to :c:func:`PyErr_SetFromWindowsErr`, with an additional parameter "
@@ -1374,10 +1372,8 @@ msgstr ""
 msgid "These aliases used to be separate exception types."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Notes"
-msgstr "Notes"
+msgstr ""
 
 msgid "[win]_"
 msgstr ""
@@ -1463,10 +1459,8 @@ msgstr ":c:data:`PyExc_ResourceWarning`."
 msgid ":c:data:`PyExc_EncodingWarning`."
 msgstr ":c:data:`PyExc_EncodingWarning`."
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Tracebacks"
-msgstr "Tracebacks"
+msgstr ""
 
 msgid ""
 "Type object for traceback objects. This is available as :class:`types."
@@ -1579,10 +1573,8 @@ msgstr ""
 msgid "module"
 msgstr "module"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "signal"
-msgstr "signal"
+msgstr ""
 
 msgid "SIGINT (C macro)"
 msgstr ""

@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 04:23+0000\n"
+"PO-Revision-Date: 2026-08-18 04:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.3\n"
+"X-Generator: pydocvi 0.1.4\n"
 
 msgid ":mod:`!fnmatch` --- Unix filename pattern matching"
 msgstr ""
@@ -34,10 +34,8 @@ msgid ""
 "module).  The special characters used in shell-style wildcards are:"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Pattern"
-msgstr "Pattern"
+msgstr ""
 
 msgid "Meaning"
 msgstr "Ý nghĩa"
@@ -165,10 +163,8 @@ msgstr ""
 msgid "Unix shell-style path expansion."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "filenames"
-msgstr "filenames"
+msgstr ""
 
 msgid "wildcard expansion"
 msgstr ""
@@ -176,10 +172,8 @@ msgstr ""
 msgid "module"
 msgstr "module"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "re"
-msgstr "re"
+msgstr ""
 
 # pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=d132b9201f27 run=2026-08-17T16:43Z
 #, fuzzy
@@ -201,7 +195,5 @@ msgstr ""
 msgid "- (minus)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "glob"
-msgstr "glob"
+msgstr ""

@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 04:23+0000\n"
+"PO-Revision-Date: 2026-08-18 04:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -20,12 +20,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.3\n"
+"X-Generator: pydocvi 0.1.4\n"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Changelog"
-msgstr "Changelog"
+msgstr ""
 
 msgid "Python next"
 msgstr ""
@@ -48,10 +46,8 @@ msgstr ""
 msgid "*Release date: 2026-05-07*"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Security"
-msgstr "Security"
+msgstr ""
 
 msgid ":gh:`149254`: Update Android and iOS installer to use OpenSSL 3.5.6."
 msgstr ""
@@ -424,10 +420,8 @@ msgid ""
 "tier 2 optimizer so that follow-up type guards can be eliminated."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Library"
-msgstr "Library"
+msgstr ""
 
 msgid ""
 ":gh:`148823`: Defer the import of ``_colorize`` in ``argparse`` until needed "
@@ -1094,10 +1088,8 @@ msgid ""
 "activators (``activate.bat`` and ``deactivate.bat``) of :mod:`venv`."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Documentation"
-msgstr "Documentation"
+msgstr ""
 
 msgid ""
 ":gh:`148663`: Document that :class:`calendar.IllegalMonthError` is a "
@@ -1110,10 +1102,8 @@ msgid ""
 "`OSError` exceptions raised from scanning the filesystem."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Tests"
-msgstr "Tests"
+msgstr ""
 
 msgid ""
 ":gh:`149425`: Increase time delta in ``test.test_zipfile.test_core."
@@ -1123,10 +1113,8 @@ msgstr ""
 msgid ":gh:`148600`: Add OpenSSL 4.0.0 support to test configurations."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Build"
-msgstr "Build"
+msgstr ""
 
 msgid ""
 ":gh:`149353`: Avoid unnecessary JIT-related rebuilds during ``make install`` "
@@ -1201,10 +1189,8 @@ msgid ""
 "library but also get a shared library for use by other programs."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Windows"
-msgstr "Windows"
+msgstr ""
 
 msgid ":gh:`149254`: Updated bundled version of OpenSSL to 3.5.6."
 msgstr ""
@@ -1220,10 +1206,8 @@ msgid ""
 "resize on Windows."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "macOS"
-msgstr "macOS"
+msgstr ""
 
 msgid ""
 ":gh:`142295`: For Python macOS framework builds, update Info.plist files to "
@@ -1234,10 +1218,8 @@ msgstr ""
 msgid ":gh:`149254`: Update macOS installer to use OpenSSL 3.5.6."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "IDLE"
-msgstr "IDLE"
+msgstr ""
 
 msgid ""
 ":gh:`94523`: Detect file if modified at local disk and prompt to ask "
@@ -33048,10 +33030,8 @@ msgstr ""
 msgid "``It is deprecated to return a value!=None``"
 msgstr "``It is deprecated to return a value!=None``"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "to"
-msgstr "to"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy

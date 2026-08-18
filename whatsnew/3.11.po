@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 04:23+0000\n"
+"PO-Revision-Date: 2026-08-18 04:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -20,15 +20,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.3\n"
+"X-Generator: pydocvi 0.1.4\n"
 
 msgid "What's New In Python 3.11"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Editor"
-msgstr "Editor"
+msgstr ""
 
 msgid "Pablo Galindo Salgado"
 msgstr ""
@@ -757,10 +755,8 @@ msgstr ""
 msgid "Improved Modules"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "asyncio"
-msgstr "asyncio"
+msgstr ""
 
 msgid ""
 "Added the :class:`~asyncio.TaskGroup` class, an :ref:`asynchronous context "
@@ -814,10 +810,8 @@ msgid ""
 "use, notably by :class:`~asyncio.TaskGroup`."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "contextlib"
-msgstr "contextlib"
+msgstr ""
 
 msgid ""
 "Added non parallel-safe :func:`~contextlib.chdir` context manager to change "
@@ -825,10 +819,8 @@ msgid ""
 "around :func:`~os.chdir`. (Contributed by Filipe Laíns in :issue:`25625`)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "dataclasses"
-msgstr "dataclasses"
+msgstr ""
 
 msgid ""
 "Change field default mutability check, allowing only defaults which are :"
@@ -837,10 +829,8 @@ msgid ""
 "issue:`44674`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "datetime"
-msgstr "datetime"
+msgstr ""
 
 msgid ""
 "Add :const:`datetime.UTC`, a convenience alias for :attr:`datetime.timezone."
@@ -854,10 +844,8 @@ msgid ""
 "minutes). (Contributed by Paul Ganssle in :gh:`80010`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "enum"
-msgstr "enum"
+msgstr ""
 
 msgid ""
 "Renamed :class:`!EnumMeta` to :class:`~enum.EnumType` (:class:`!EnumMeta` "
@@ -933,10 +921,8 @@ msgid ""
 "aliases; inverted flags are coerced to their positive equivalent."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "fcntl"
-msgstr "fcntl"
+msgstr ""
 
 msgid ""
 "On FreeBSD, the :data:`!F_DUP2FD` and :data:`!F_DUP2FD_CLOEXEC` flags "
@@ -944,10 +930,8 @@ msgid ""
 "latter set the ``FD_CLOEXEC`` flag in addition."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "fractions"
-msgstr "fractions"
+msgstr ""
 
 msgid ""
 "Support :PEP:`515`-style initialization of :class:`~fractions.Fraction` from "
@@ -960,10 +944,8 @@ msgid ""
 "(Contributed by Mark Dickinson in :issue:`44547`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "functools"
-msgstr "functools"
+msgstr ""
 
 msgid ""
 ":func:`functools.singledispatch` now supports :class:`types.UnionType` and :"
@@ -1020,10 +1002,8 @@ msgstr ""
 msgid "(Contributed by Yurii Karabas in :issue:`46014`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "gzip"
-msgstr "gzip"
+msgstr ""
 
 msgid ""
 "The :func:`gzip.compress` function is now faster when used with the "
@@ -1036,10 +1016,8 @@ msgid ""
 "was linked against. (See :gh:`112346` for details on the side effect.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "hashlib"
-msgstr "hashlib"
+msgstr ""
 
 msgid ""
 ":func:`hashlib.blake2b` and :func:`hashlib.blake2s` now prefer `libb2`_ over "
@@ -1072,10 +1050,8 @@ msgid ""
 "Terry Jan Reedy in :gh:`95191`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "inspect"
-msgstr "inspect"
+msgstr ""
 
 msgid ""
 "Add :func:`~inspect.getmembers_static` to return all members without "
@@ -1125,10 +1101,8 @@ msgstr ":func:`inspect.trace`"
 msgid "(Contributed by Pablo Galindo in :gh:`88116`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "locale"
-msgstr "locale"
+msgstr ""
 
 msgid ""
 "Add :func:`locale.getencoding` to get the current locale encoding. It is "
@@ -1136,10 +1110,8 @@ msgid ""
 "`Python UTF-8 Mode <utf8-mode>`."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "logging"
-msgstr "logging"
+msgstr ""
 
 msgid ""
 "Added :func:`~logging.getLevelNamesMapping` to return a mapping from logging "
@@ -1156,10 +1128,8 @@ msgid ""
 "there is no active socket. (Contributed by Kirill Pinchuk in :gh:`88457`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "math"
-msgstr "math"
+msgstr ""
 
 msgid ""
 "Add :func:`math.exp2`: return 2 raised to the power of x. (Contributed by "
@@ -1184,10 +1154,8 @@ msgid ""
 "Stinner in :issue:`46917`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "operator"
-msgstr "operator"
+msgstr ""
 
 msgid ""
 "A new function ``operator.call`` has been added, such that ``operator."
@@ -1195,10 +1163,8 @@ msgid ""
 "Lee in :issue:`44019`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "os"
-msgstr "os"
+msgstr ""
 
 msgid ""
 "On Windows, :func:`os.urandom` now uses ``BCryptGenRandom()``, instead of "
@@ -1206,10 +1172,8 @@ msgid ""
 "issue:`44611`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "pathlib"
-msgstr "pathlib"
+msgstr ""
 
 msgid ""
 ":meth:`~pathlib.Path.glob` and :meth:`~pathlib.Path.rglob` return only "
@@ -1218,10 +1182,8 @@ msgid ""
 "`22276` and :issue:`33392`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "re"
-msgstr "re"
+msgstr ""
 
 msgid ""
 "Atomic grouping (``(?>...)``) and possessive quantifiers (``*+``, ``++``, ``?"
@@ -1229,20 +1191,16 @@ msgid ""
 "Jeffrey C. Jacobs and Serhiy Storchaka in :issue:`433030`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "shutil"
-msgstr "shutil"
+msgstr ""
 
 msgid ""
 "Add optional parameter *dir_fd* in :func:`shutil.rmtree`. (Contributed by "
 "Serhiy Storchaka in :issue:`46245`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "socket"
-msgstr "socket"
+msgstr ""
 
 msgid ""
 "Add CAN Socket support for NetBSD. (Contributed by Thomas Klausner in :issue:"
@@ -1357,10 +1315,8 @@ msgid ""
 "Stinner in :gh:`57684`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "sysconfig"
-msgstr "sysconfig"
+msgstr ""
 
 msgid ""
 "Three new :ref:`installation schemes <installation_paths>` (*posix_venv*, "
@@ -1375,10 +1331,8 @@ msgid ""
 "(Contributed by Miro Hrončok in :issue:`45413`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "tempfile"
-msgstr "tempfile"
+msgstr ""
 
 msgid ""
 ":class:`~tempfile.SpooledTemporaryFile` objects now fully implement the "
@@ -1388,10 +1342,8 @@ msgid ""
 "`70363`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "threading"
-msgstr "threading"
+msgstr ""
 
 msgid ""
 "On Unix, if the ``sem_clockwait()`` function is available in the C library "
@@ -1402,10 +1354,8 @@ msgid ""
 "`41710`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "time"
-msgstr "time"
+msgstr ""
 
 msgid ""
 "On Unix, :func:`time.sleep` now uses the ``clock_nanosleep()`` or "
@@ -1425,10 +1375,8 @@ msgid ""
 "`45429`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "tkinter"
-msgstr "tkinter"
+msgstr ""
 
 msgid ""
 "Added method ``info_patchlevel()`` which returns the exact version of the "
@@ -1436,10 +1384,8 @@ msgid ""
 "(Contributed by Serhiy Storchaka in :gh:`91827`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "traceback"
-msgstr "traceback"
+msgstr ""
 
 msgid ""
 "Add :func:`traceback.StackSummary.format_frame_summary` to allow users to "
@@ -1453,10 +1399,8 @@ msgid ""
 "Katriel in :issue:`33809`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "typing"
-msgstr "typing"
+msgstr ""
 
 msgid "For major changes, see :ref:`new-feat-related-type-hints-311`."
 msgstr ""
@@ -1550,20 +1494,16 @@ msgid ""
 "checked. (Contributed by Nikita Sobolev in :gh:`90729`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "unicodedata"
-msgstr "unicodedata"
+msgstr ""
 
 msgid ""
 "The Unicode database has been updated to version 14.0.0. (Contributed by "
 "Benjamin Peterson in :issue:`45190`)."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "unittest"
-msgstr "unittest"
+msgstr ""
 
 msgid ""
 "Added methods :meth:`~unittest.TestCase.enterContext` and :meth:`~unittest."
@@ -1573,10 +1513,8 @@ msgid ""
 "enterModuleContext`. (Contributed by Serhiy Storchaka in :issue:`45046`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "venv"
-msgstr "venv"
+msgstr ""
 
 msgid ""
 "When new Python virtual environments are created, the *venv* :ref:`sysconfig "
@@ -1589,10 +1527,8 @@ msgid ""
 "`45413`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "warnings"
-msgstr "warnings"
+msgstr ""
 
 msgid ""
 ":func:`warnings.catch_warnings` now accepts arguments for :func:`warnings."
@@ -1601,10 +1537,8 @@ msgid ""
 "`47074`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "zipfile"
-msgstr "zipfile"
+msgstr ""
 
 msgid ""
 "Added support for specifying member name encoding for reading metadata in a :"
@@ -1623,10 +1557,8 @@ msgid ""
 "Brito in :gh:`88261`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Optimizations"
-msgstr "Optimizations"
+msgstr ""
 
 msgid ""
 "This section covers specific optimizations independent of the :ref:"
@@ -1844,20 +1776,14 @@ msgid ""
 "Bucher, with additional help from Irit Katriel and Dennis Sweeney.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Operation"
-msgstr "Operation"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Form"
-msgstr "Form"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Specialization"
-msgstr "Specialization"
+msgstr ""
 
 msgid "Operation speedup (up to)"
 msgstr ""
@@ -1899,10 +1825,8 @@ msgstr "10%"
 msgid "Mark Shannon, Donghee Na, Brandt Bucher, Dennis Sweeney"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Subscript"
-msgstr "Subscript"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -1941,10 +1865,8 @@ msgstr ""
 msgid "Dennis Sweeney"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Calls"
-msgstr "Calls"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -2078,10 +2000,8 @@ msgid ""
 "`45947`."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Misc"
-msgstr "Misc"
+msgstr ""
 
 msgid ""
 "Objects now require less memory due to lazily created object namespaces. "
@@ -2110,10 +2030,8 @@ msgid ""
 "Bucher in :gh:`91404`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "FAQ"
-msgstr "FAQ"
+msgstr ""
 
 msgid "How should I write my code to utilize these speedups?"
 msgstr ""
@@ -2155,10 +2073,8 @@ msgstr ""
 msgid "No. We're still exploring other optimizations."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "About"
-msgstr "About"
+msgstr ""
 
 msgid ""
 "Faster CPython explores optimizations for :term:`CPython`. The main team is "
@@ -2223,10 +2139,8 @@ msgstr ""
 msgid "New Opcode(s)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Notes"
-msgstr "Notes"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -2420,10 +2334,8 @@ msgid ""
 "POP_BLOCK`, :opcode:`!SETUP_FINALLY` and :opcode:`!YIELD_FROM`."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Deprecated"
-msgstr "Deprecated"
+msgstr ""
 
 msgid ""
 "This section lists Python APIs that have been deprecated in Python 3.11."
@@ -2463,10 +2375,8 @@ msgid ""
 "`44977`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Modules"
-msgstr "Modules"
+msgstr ""
 
 msgid ""
 ":pep:`594` led to the deprecations of the following modules slated for "
@@ -3070,10 +2980,8 @@ msgstr ":meth:`.assertNotRegex`"
 msgid "3.5"
 msgstr "3.5"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Removed"
-msgstr "Removed"
+msgstr ""
 
 msgid "This section lists Python APIs that have been removed in Python 3.11."
 msgstr ""
@@ -4406,10 +4314,8 @@ msgstr ""
 msgid "Notable changes in 3.11.4"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "tarfile"
-msgstr "tarfile"
+msgstr ""
 
 msgid ""
 "The extraction methods in :mod:`tarfile`, and :func:`shutil.unpack_archive`, "
@@ -4424,10 +4330,8 @@ msgstr ""
 msgid "Notable changes in 3.11.5"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "OpenSSL"
-msgstr "OpenSSL"
+msgstr ""
 
 msgid ""
 "Windows builds and macOS installers from python.org now use OpenSSL 3.0."

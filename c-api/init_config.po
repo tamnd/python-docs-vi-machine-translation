@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 04:23+0000\n"
+"PO-Revision-Date: 2026-08-18 04:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.3\n"
+"X-Generator: pydocvi 0.1.4\n"
 
 msgid "Python Initialization Configuration"
 msgstr ""
@@ -43,10 +43,8 @@ msgstr ""
 msgid ":pep:`741` \"Python Configuration C API\"."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Example"
-msgstr "Example"
+msgstr ""
 
 msgid ""
 "Example of customized Python always running with the :ref:`Python "
@@ -271,10 +269,8 @@ msgid ""
 "UTF-8 encoded strings. The string list is copied."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Module"
-msgstr "Module"
+msgstr ""
 
 msgid "Add a built-in extension module to the table of built-in modules."
 msgstr ""
@@ -308,23 +304,17 @@ msgstr ""
 msgid "Configuration Options"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Option"
-msgstr "Option"
+msgstr ""
 
 msgid "PyConfig/PyPreConfig member"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Type"
-msgstr "Type"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Visibility"
-msgstr "Visibility"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -359,10 +349,8 @@ msgstr ":c:member:`argv <PyConfig.argv>`"
 msgid "``list[str]``"
 msgstr "``list[str]``"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Public"
-msgstr "Public"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -1227,10 +1215,8 @@ msgstr ""
 "    Py_ExitStatusException(status);\n"
 "}"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "PyWideStringList"
-msgstr "PyWideStringList"
+msgstr ""
 
 msgid "List of ``wchar_t*`` strings."
 msgstr ""
@@ -1269,10 +1255,8 @@ msgstr ""
 msgid "List items."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "PyStatus"
-msgstr "PyStatus"
+msgstr ""
 
 msgid ""
 "Structure to store an initialization function status: success, error or exit."
@@ -1293,10 +1277,8 @@ msgstr ""
 msgid "Functions to create a status:"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Success."
-msgstr "Success."
+msgstr ""
 
 msgid "Initialization error with a message."
 msgstr ""
@@ -1381,10 +1363,8 @@ msgstr ""
 "    return 0;\n"
 "}"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "PyPreConfig"
-msgstr "PyPreConfig"
+msgstr ""
 
 msgid "Structure used to preinitialize Python."
 msgstr ""
@@ -1677,10 +1657,8 @@ msgstr ""
 "/* ... use Python API here ... */\n"
 "Py_Finalize();"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "PyConfig"
-msgstr "PyConfig"
+msgstr ""
 
 msgid "Structure containing most parameters to configure Python."
 msgstr ""
@@ -3229,10 +3207,8 @@ msgstr ""
 msgid "Import the :mod:`site` module;"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "etc."
-msgstr "etc."
+msgstr ""
 
 msgid "Private provisional API:"
 msgstr ""

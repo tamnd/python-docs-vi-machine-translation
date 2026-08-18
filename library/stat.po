@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 04:23+0000\n"
+"PO-Revision-Date: 2026-08-18 04:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.3\n"
+"X-Generator: pydocvi 0.1.4\n"
 
 msgid ":mod:`!stat` --- Interpreting :func:`~os.stat` results"
 msgstr ""
@@ -226,10 +226,8 @@ msgid ""
 "flags:"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Socket."
-msgstr "Socket."
+msgstr ""
 
 msgid "Symbolic link."
 msgstr ""
@@ -240,31 +238,23 @@ msgstr ""
 msgid "Block device."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Directory."
-msgstr "Directory."
+msgstr ""
 
 msgid "Character device."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "FIFO."
-msgstr "FIFO."
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Door."
-msgstr "Door."
+msgstr ""
 
 msgid "Event port."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Whiteout."
-msgstr "Whiteout."
+msgstr ""
 
 msgid ""
 ":data:`S_IFDOOR`, :data:`S_IFPORT` or :data:`S_IFWHT` are defined as 0 when "
@@ -387,10 +377,8 @@ msgstr ""
 msgid "All super-user supported flags"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Availability"
-msgstr "Availability"
+msgstr ""
 
 msgid "All super-user read-only synthetic flags"
 msgstr ""

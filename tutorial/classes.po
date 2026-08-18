@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 04:23+0000\n"
+"PO-Revision-Date: 2026-08-18 04:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -20,12 +20,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.3\n"
+"X-Generator: pydocvi 0.1.4\n"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Classes"
-msgstr "Classes"
+msgstr ""
 
 # pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=31a462e6c136 run=2026-08-17T16:43Z
 #, fuzzy
@@ -1306,10 +1304,8 @@ msgstr ""
 "Mỗi giá trị là một đối tượng, và do đó có một *class* (còn được gọi là "
 "*type*). Nó được lưu trữ dưới dạng ``object.__class__``."
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Inheritance"
-msgstr "Inheritance"
+msgstr ""
 
 # pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=54ee1fef6d63 run=2026-08-17T16:43Z
 #, fuzzy
@@ -1775,10 +1771,8 @@ msgstr ""
 ":meth:`!m`, và :attr:`m.__func__ <method.__func__>` là :ref:`function object "
 "<user-defined-funcs>` tương ứng với phương thức."
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Iterators"
-msgstr "Iterators"
+msgstr ""
 
 # pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=297a621f1359 run=2026-08-17T16:43Z
 #, fuzzy
@@ -1945,10 +1939,8 @@ msgstr ""
 "p\n"
 "s"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Generators"
-msgstr "Generators"
+msgstr ""
 
 # pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=297a621f1359 run=2026-08-17T16:43Z
 #, fuzzy
@@ -2173,17 +2165,11 @@ msgstr ""
 msgid "object"
 msgstr "object"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "method"
-msgstr "method"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "name"
-msgstr "name"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "mangling"
-msgstr "mangling"
+msgstr ""

@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-17 14:50+0000\n"
-"PO-Revision-Date: 2026-08-18 04:23+0000\n"
+"PO-Revision-Date: 2026-08-18 04:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -20,12 +20,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.3\n"
+"X-Generator: pydocvi 0.1.4\n"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Streams"
-msgstr "Streams"
+msgstr ""
 
 msgid "**Source code:** :source:`Lib/asyncio/streams.py`"
 msgstr ""
@@ -173,10 +171,8 @@ msgstr ""
 msgid "See also the documentation of :meth:`loop.create_unix_connection`."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Availability"
-msgstr "Availability"
+msgstr ""
 
 msgid ""
 "Added the *ssl_handshake_timeout* parameter. The *path* parameter can now be "
@@ -206,10 +202,8 @@ msgstr ""
 msgid "Added the *cleanup_socket* parameter."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "StreamReader"
-msgstr "StreamReader"
+msgstr ""
 
 msgid ""
 "Represents a reader object that provides APIs to read data from the IO "
@@ -300,10 +294,8 @@ msgstr ""
 msgid "Return ``True`` if the buffer is empty and :meth:`feed_eof` was called."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "StreamWriter"
-msgstr "StreamWriter"
+msgstr ""
 
 msgid ""
 "Represents a writer object that provides APIs to write data to the IO stream."

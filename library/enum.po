@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 04:23+0000\n"
+"PO-Revision-Date: 2026-08-18 04:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.3\n"
+"X-Generator: pydocvi 0.1.4\n"
 
 msgid ":mod:`!enum` --- Support for enumerations"
 msgstr ""
@@ -101,10 +101,8 @@ msgid ""
 "differences>` for more details."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Nomenclature"
-msgstr "Nomenclature"
+msgstr ""
 
 msgid "The class :class:`!Color` is an *enumeration* (or *enum*)"
 msgstr ""
@@ -352,18 +350,14 @@ msgstr ""
 msgid "to look up an existing member:"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "cls"
-msgstr "cls"
+msgstr ""
 
 msgid "The enum class being called."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "value"
-msgstr "value"
+msgstr ""
 
 msgid "The value to lookup."
 msgstr ""
@@ -376,10 +370,8 @@ msgstr ""
 msgid "The name of the new Enum to create."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "names"
-msgstr "names"
+msgstr ""
 
 msgid "The names/values of the members for the new Enum."
 msgstr ""
@@ -390,10 +382,8 @@ msgstr "module"
 msgid "The name of the module the new Enum is created in."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "qualname"
-msgstr "qualname"
+msgstr ""
 
 msgid "The actual location in the module where this Enum can be found."
 msgstr ""
@@ -404,18 +394,14 @@ msgstr "type"
 msgid "A mix-in type for the new Enum."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "start"
-msgstr "start"
+msgstr ""
 
 msgid "The first integer value for the Enum (used by :class:`auto`)."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "boundary"
-msgstr "boundary"
+msgstr ""
 
 msgid ""
 "How to handle out-of-range values from bit operations (:class:`Flag` only)."
@@ -662,10 +648,8 @@ msgstr ""
 "['__class__', '__doc__', '__eq__', '__hash__', '__module__', 'name', 'today',"
 " 'value']"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "name"
-msgstr "name"
+msgstr ""
 
 msgid "The name of the member being defined (e.g. 'RED')."
 msgstr ""
@@ -673,10 +657,8 @@ msgstr ""
 msgid "The start value for the Enum; the default is 1."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "count"
-msgstr "count"
+msgstr ""
 
 msgid "The number of members currently defined, not including this one."
 msgstr ""
@@ -1660,10 +1642,8 @@ msgstr ""
 msgid "Return a list of all power-of-two integers contained in a flag *value*."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Notes"
-msgstr "Notes"
+msgstr ""
 
 msgid ":class:`IntEnum`, :class:`StrEnum`, and :class:`IntFlag`"
 msgstr ""

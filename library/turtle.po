@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 04:23+0000\n"
+"PO-Revision-Date: 2026-08-18 04:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.3\n"
+"X-Generator: pydocvi 0.1.4\n"
 
 msgid ":mod:`!turtle` --- Turtle graphics"
 msgstr ""
@@ -28,10 +28,8 @@ msgstr ""
 msgid "**Source code:** :source:`Lib/turtle.py`"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Introduction"
-msgstr "Introduction"
+msgstr ""
 
 msgid ""
 "Turtle graphics is an implementation of `the popular geometric drawing tools "
@@ -80,10 +78,8 @@ msgid ""
 "introducing more complex or external libraries into their work."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Tutorial"
-msgstr "Tutorial"
+msgstr ""
 
 msgid ""
 "New users should start here. In this tutorial we'll explore some of the "
@@ -692,10 +688,8 @@ msgstr ":func:`pencolor`"
 msgid ":func:`fillcolor`"
 msgstr ":func:`fillcolor`"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Filling"
-msgstr "Filling"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -738,10 +732,8 @@ msgstr ":func:`write`"
 msgid "Turtle state"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Visibility"
-msgstr "Visibility"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -758,10 +750,8 @@ msgstr ":func:`hideturtle` | :func:`ht`"
 msgid ":func:`isvisible`"
 msgstr ":func:`isvisible`"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Appearance"
-msgstr "Appearance"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -3218,10 +3208,8 @@ msgid ""
 "if ``x/y`` unit-ratio doesn't equal 1."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Mode"
-msgstr "Mode"
+msgstr ""
 
 msgid "Initial turtle heading"
 msgstr ""
@@ -3235,10 +3223,8 @@ msgstr ""
 msgid "to the right (east)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "counterclockwise"
-msgstr "counterclockwise"
+msgstr ""
 
 msgid "\"logo\""
 msgstr ""
@@ -3246,10 +3232,8 @@ msgstr ""
 msgid "upward    (north)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "clockwise"
-msgstr "clockwise"
+msgstr ""
 
 # pydocvi: passthrough=doctest
 #, fuzzy
@@ -3633,10 +3617,8 @@ msgstr ""
 msgid "``a.rotate(angle)`` rotation"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Explanation"
-msgstr "Explanation"
+msgstr ""
 
 msgid ""
 "A turtle object draws on a screen object, and there a number of key classes "
@@ -4039,20 +4021,14 @@ msgstr ""
 msgid "The demo scripts are:"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Name"
-msgstr "Name"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Description"
-msgstr "Description"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Features"
-msgstr "Features"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -4107,10 +4083,8 @@ msgstr "``forest``"
 msgid "3 breadth-first trees"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "randomization"
-msgstr "randomization"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -4120,10 +4094,8 @@ msgstr "``fractalcurves``"
 msgid "Hilbert & Koch curves"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "recursion"
-msgstr "recursion"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -4172,10 +4144,8 @@ msgstr ""
 msgid "``peace``"
 msgstr "``peace``"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "elementary"
-msgstr "elementary"
+msgstr ""
 
 msgid "turtle: appearance and animation"
 msgstr ""

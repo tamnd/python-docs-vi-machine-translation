@@ -15,11 +15,11 @@ No translation run on record. Refusal rates come from the run that produced the 
 
 ## Glossary adherence
 
-639 terms against 1,562 translated entries. 272 misses over 88 terms.
+639 terms against 1,900 translated entries. 277 misses over 91 terms.
 
 | Written by | Entries | Misses | Misses per entry | Terms |
 | --- | ---: | ---: | ---: | ---: |
-| human | 830 | 241 | 0.29 | 82 |
+| human | 1,168 | 246 | 0.21 | 85 |
 | machine | 732 | 31 | 0.04 | 18 |
 
 | Term | Misses |

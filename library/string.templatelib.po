@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-21 15:07+0000\n"
-"PO-Revision-Date: 2026-08-18 04:23+0000\n"
+"PO-Revision-Date: 2026-08-18 04:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.3\n"
+"X-Generator: pydocvi 0.1.4\n"
 
 msgid ":mod:`!string.templatelib` --- Support for template string literals"
 msgstr ""
@@ -74,10 +74,8 @@ msgstr ""
 "   interpolations=(Interpolation(3.14, 'pi', 's', ''),)\n"
 ")"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Types"
-msgstr "Types"
+msgstr ""
 
 msgid ""
 "The :class:`!Template` class describes the contents of a template string. It "
@@ -108,10 +106,8 @@ msgid ""
 "template.values:   (                   'Camembert',    )"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Attributes"
-msgstr "Attributes"
+msgstr ""
 
 msgid "A :class:`tuple` of the static strings in the template."
 msgstr ""
@@ -141,10 +137,8 @@ msgid ""
 "interpolations)``."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Methods"
-msgstr "Methods"
+msgstr ""
 
 msgid ""
 "While literal syntax is the most common way to create a :class:`!Template`, "

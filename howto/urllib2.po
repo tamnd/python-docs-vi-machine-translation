@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-19 14:37+0000\n"
-"PO-Revision-Date: 2026-08-18 04:23+0000\n"
+"PO-Revision-Date: 2026-08-18 04:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -20,23 +20,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.3\n"
+"X-Generator: pydocvi 0.1.4\n"
 
 msgid "HOWTO Fetch Internet Resources Using The urllib Package"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Author"
-msgstr "Author"
+msgstr ""
 
 msgid "`Michael Foord <https://agileabstractions.com/>`_"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Introduction"
-msgstr "Introduction"
+msgstr ""
 
 msgid ""
 "You may also find useful the following article on fetching web resources "
@@ -177,10 +173,8 @@ msgid ""
 "\"headers\".  Let's look at each of these in turn."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Data"
-msgstr "Data"
+msgstr ""
 
 msgid ""
 "Sometimes you want to send data to a URL (often the URL will refer to a CGI "
@@ -280,10 +274,8 @@ msgid ""
 "by the encoded values."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Headers"
-msgstr "Headers"
+msgstr ""
 
 msgid ""
 "We'll discuss here one particular HTTP header, to illustrate how to add "
@@ -362,10 +354,8 @@ msgstr ""
 msgid "The exception classes are exported from the :mod:`urllib.error` module."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "URLError"
-msgstr "URLError"
+msgstr ""
 
 msgid ""
 "Often, URLError is raised because there is no network connection (no route "
@@ -396,10 +386,8 @@ msgstr ""
 "...\n"
 "(4, 'getaddrinfo failed')"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "HTTPError"
-msgstr "HTTPError"
+msgstr ""
 
 msgid ""
 "Every HTTP response from the server contains a numeric \"status code\". "
@@ -705,7 +693,7 @@ msgid ""
 "Authenticate: SCHEME realm=\"REALM\"``."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
+# pydocvi: passthrough=noop
 #, fuzzy
 msgid "e.g."
 msgstr "e.g."
@@ -799,10 +787,8 @@ msgid ""
 "example ``\"joe:password@example.com\"`` is not correct."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Proxies"
-msgstr "Proxies"
+msgstr ""
 
 msgid ""
 "**urllib** will auto-detect your proxy settings and use those. This is "

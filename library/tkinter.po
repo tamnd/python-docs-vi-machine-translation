@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 04:23+0000\n"
+"PO-Revision-Date: 2026-08-18 04:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.3\n"
+"X-Generator: pydocvi 0.1.4\n"
 
 msgid ":mod:`!tkinter` --- Python interface to Tcl/Tk"
 msgstr ""
@@ -140,10 +140,8 @@ msgid ""
 "Tkinter. (ISBN 978-0321336330)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Architecture"
-msgstr "Architecture"
+msgstr ""
 
 msgid ""
 "Tcl/Tk is not a single library but rather consists of a few distinct "
@@ -152,10 +150,8 @@ msgid ""
 "with it."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Tcl"
-msgstr "Tcl"
+msgstr ""
 
 msgid ""
 "Tcl is a dynamic interpreted programming language, just like Python. Though "
@@ -170,10 +166,8 @@ msgid ""
 "difference (see `Threading model`_ for details)."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Tk"
-msgstr "Tk"
+msgstr ""
 
 msgid ""
 "Tk is a `Tcl package <https://wiki.tcl-lang.org/37432>`_ implemented in C "
@@ -183,10 +177,8 @@ msgid ""
 "appearance. Tk uses Tcl's event queue to generate and process GUI events."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Ttk"
-msgstr "Ttk"
+msgstr ""
 
 msgid ""
 "Themed Tk (Ttk) is a newer family of Tk widgets that provide a much better "
@@ -538,10 +530,8 @@ msgstr ""
 msgid "Even this simple program illustrates the following key Tk concepts:"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "widgets"
-msgstr "widgets"
+msgstr ""
 
 msgid ""
 "A Tkinter user interface is made up of individual *widgets*. Each widget is "
@@ -932,18 +922,14 @@ msgid ""
 "option (such as ``('bg', 'background')``)."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Index"
-msgstr "Index"
+msgstr ""
 
 msgid "Meaning"
 msgstr "Ý nghĩa"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Example"
-msgstr "Example"
+msgstr ""
 
 # pydocvi: passthrough=version_marker
 #, fuzzy
@@ -1072,28 +1058,22 @@ msgid ""
 "take, see the man pages and page 183 of John Ousterhout's book."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "anchor"
-msgstr "anchor"
+msgstr ""
 
 msgid ""
 "Anchor type.  Denotes where the packer is to place each content in its "
 "parcel."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "expand"
-msgstr "expand"
+msgstr ""
 
 msgid "Boolean, ``0`` or ``1``."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "fill"
-msgstr "fill"
+msgstr ""
 
 msgid "Legal values: ``'x'``, ``'y'``, ``'both'``, ``'none'``."
 msgstr ""
@@ -1110,10 +1090,8 @@ msgstr ""
 msgid "A distance - designating external padding on each side of the content."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "side"
-msgstr "side"
+msgstr ""
 
 msgid "Legal values are: ``'left'``, ``'right'``, ``'top'``, ``'bottom'``."
 msgstr ""
@@ -1290,10 +1268,8 @@ msgid ""
 "``\"center\"``."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "bitmap"
-msgstr "bitmap"
+msgstr ""
 
 msgid ""
 "There are eight built-in, named bitmaps: ``'error'``, ``'gray25'``, "
@@ -1302,18 +1278,14 @@ msgid ""
 "file, preceded with an ``@``, as in ``\"@/usr/contrib/bitmap/gumby.bit\"``."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "boolean"
-msgstr "boolean"
+msgstr ""
 
 msgid "You can pass integers 0 or 1 or the strings ``\"yes\"`` or ``\"no\"``."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "callback"
-msgstr "callback"
+msgstr ""
 
 msgid "This is any Python function that takes no arguments.  For example::"
 msgstr ""
@@ -1329,10 +1301,8 @@ msgstr ""
 "    print(\"hi there\")\n"
 "fred[\"command\"] = print_it"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "color"
-msgstr "color"
+msgstr ""
 
 msgid ""
 "Colors can be given as the names of X colors in the rgb.txt file, or as "
@@ -1342,10 +1312,8 @@ msgid ""
 "digit.  See page 160 of Ousterhout's book for details."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "cursor"
-msgstr "cursor"
+msgstr ""
 
 msgid ""
 "The standard X cursor names from :file:`cursorfont.h` can be used, without "
@@ -1354,10 +1322,8 @@ msgid ""
 "of your own. See page 179 of Ousterhout's book."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "distance"
-msgstr "distance"
+msgstr ""
 
 msgid ""
 "Screen distances can be specified in either pixels or absolute distances. "
@@ -1367,10 +1333,8 @@ msgid ""
 "is expressed as ``\"3.5i\"``."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "font"
-msgstr "font"
+msgstr ""
 
 msgid ""
 "Tk uses a list font name format, such as ``{courier 10 bold}``. Font sizes "
@@ -1378,10 +1342,8 @@ msgid ""
 "are measured in pixels."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "geometry"
-msgstr "geometry"
+msgstr ""
 
 msgid ""
 "This is a string of the form ``widthxheight``, where width and height are "
@@ -1389,20 +1351,16 @@ msgid ""
 "text). For example: ``fred[\"geometry\"] = \"200x100\"``."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "justify"
-msgstr "justify"
+msgstr ""
 
 msgid ""
 "Legal values are the strings: ``\"left\"``, ``\"center\"``, and "
 "``\"right\"``."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "region"
-msgstr "region"
+msgstr ""
 
 msgid ""
 "This is a string with four space-delimited elements, each of which is a "
@@ -1410,10 +1368,8 @@ msgid ""
 "2i\"`` and ``\"3c 2c 4c 10.43c\"``  are all legal regions."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "relief"
-msgstr "relief"
+msgstr ""
 
 msgid ""
 "Determines what the border style of a widget will be.  Legal values are: "
@@ -1421,20 +1377,16 @@ msgid ""
 "``\"ridge\"``."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "scrollcommand"
-msgstr "scrollcommand"
+msgstr ""
 
 msgid ""
 "This is almost always the :meth:`!set` method of some scrollbar widget, but "
 "can be any widget method that takes a single argument."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "wrap"
-msgstr "wrap"
+msgstr ""
 
 msgid "Must be one of: ``\"none\"``, ``\"char\"``, or ``\"word\"``."
 msgstr ""
@@ -1454,10 +1406,8 @@ msgstr ""
 msgid "where:"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "sequence"
-msgstr "sequence"
+msgstr ""
 
 msgid ""
 "is a string that denotes the target kind of event.  (See the :manpage:"
@@ -1465,10 +1415,8 @@ msgid ""
 "reference:`Tcl and the Tk Toolkit (2nd edition)`, for details)."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "func"
-msgstr "func"
+msgstr ""
 
 msgid ""
 "is a Python function, taking one argument, to be invoked when the event "
@@ -1476,10 +1424,8 @@ msgid ""
 "deployed this way are commonly known as *callbacks*.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "add"
-msgstr "add"
+msgstr ""
 
 msgid ""
 "is optional, either ``''`` or ``'+'``.  Passing an empty string denotes that "
@@ -1517,30 +1463,24 @@ msgstr ""
 msgid "%f"
 msgstr "%f"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "focus"
-msgstr "focus"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
 msgid "%A"
 msgstr "%A"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "char"
-msgstr "char"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
 msgid "%h"
 msgstr "%h"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "height"
-msgstr "height"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -1557,30 +1497,24 @@ msgstr "send_event"
 msgid "%k"
 msgstr "%k"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "keycode"
-msgstr "keycode"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
 msgid "%K"
 msgstr "%K"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "keysym"
-msgstr "keysym"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
 msgid "%s"
 msgstr "%s"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "state"
-msgstr "state"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -1597,10 +1531,8 @@ msgstr "keysym_num"
 msgid "%t"
 msgstr "%t"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "time"
-msgstr "time"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -1615,27 +1547,23 @@ msgstr "type"
 msgid "%w"
 msgstr "%w"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "width"
-msgstr "width"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
 msgid "%W"
 msgstr "%W"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "widget"
-msgstr "widget"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
 msgid "%x"
 msgstr "%x"
 
-# pydocvi: passthrough=version_marker
+# pydocvi: passthrough=noop
 #, fuzzy
 msgid "x"
 msgstr "x"
@@ -1655,7 +1583,7 @@ msgstr "x_root"
 msgid "%y"
 msgstr "%y"
 
-# pydocvi: passthrough=version_marker
+# pydocvi: passthrough=noop
 #, fuzzy
 msgid "y"
 msgstr "y"
@@ -1735,10 +1663,8 @@ msgid ""
 "above literals, instead."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Images"
-msgstr "Images"
+msgstr ""
 
 msgid ""
 "Images of different formats can be created through the corresponding "

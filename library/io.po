@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 04:23+0000\n"
+"PO-Revision-Date: 2026-08-18 04:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.3\n"
+"X-Generator: pydocvi 0.1.4\n"
 
 msgid ":mod:`!io` --- Core tools for working with streams"
 msgstr ""
@@ -28,10 +28,8 @@ msgstr ""
 msgid "**Source code:** :source:`Lib/io.py`"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Overview"
-msgstr "Overview"
+msgstr ""
 
 msgid ""
 "The :mod:`!io` module provides Python's main facilities for dealing with "
@@ -388,15 +386,11 @@ msgid ""
 "The following table summarizes the ABCs provided by the :mod:`!io` module:"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "ABC"
-msgstr "ABC"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Inherits"
-msgstr "Inherits"
+msgstr ""
 
 msgid "Stub Methods"
 msgstr ""
@@ -1476,10 +1470,8 @@ msgid ""
 "used for static type checking."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Performance"
-msgstr "Performance"
+msgstr ""
 
 msgid ""
 "This section discusses the performance of the provided concrete I/O "
@@ -1533,10 +1525,8 @@ msgstr ""
 msgid ":class:`TextIOWrapper` objects are not thread-safe."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Reentrancy"
-msgstr "Reentrancy"
+msgstr ""
 
 msgid ""
 "Binary buffered objects (instances of :class:`BufferedReader`, :class:"

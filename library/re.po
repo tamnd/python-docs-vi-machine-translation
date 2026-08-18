@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 04:23+0000\n"
+"PO-Revision-Date: 2026-08-18 04:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.3\n"
+"X-Generator: pydocvi 0.1.4\n"
 
 msgid ":mod:`!re` --- Regular expression operations"
 msgstr ""
@@ -955,10 +955,8 @@ msgid ""
 "compiled form."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Flags"
-msgstr "Flags"
+msgstr ""
 
 msgid ""
 "Flag constants are now instances of :class:`RegexFlag`, which is a subclass "
@@ -1124,10 +1122,8 @@ msgstr ""
 msgid "Corresponds to the inline flag ``(?x)``."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Functions"
-msgstr "Functions"
+msgstr ""
 
 msgid ""
 "Compile a regular expression pattern into a :ref:`regular expression object "
@@ -1507,10 +1503,8 @@ msgstr ""
 msgid "Clear the regular expression cache."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Exceptions"
-msgstr "Exceptions"
+msgstr ""
 
 msgid ""
 "Exception raised when a string passed to one of the functions here is not a "

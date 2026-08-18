@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 04:23+0000\n"
+"PO-Revision-Date: 2026-08-18 04:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -21,15 +21,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.3\n"
+"X-Generator: pydocvi 0.1.4\n"
 
 msgid "Memory Management"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Overview"
-msgstr "Overview"
+msgstr ""
 
 msgid ""
 "Memory management in Python involves a private heap containing all Python "
@@ -499,15 +497,11 @@ msgstr ""
 msgid "Default memory allocators:"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Configuration"
-msgstr "Configuration"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Name"
-msgstr "Name"
+msgstr ""
 
 # pydocvi: passthrough=version_marker
 #, fuzzy
@@ -633,10 +627,8 @@ msgid ""
 "following fields:"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Field"
-msgstr "Field"
+msgstr ""
 
 msgid "Meaning"
 msgstr "Ý nghĩa"
