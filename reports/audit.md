@@ -1,6 +1,6 @@
 # Audit
 
-Fail. 41 checks, 13 failing, 1,492 findings.
+Fail. 41 checks, 11 failing, 1,459 findings.
 
 ## Structure
 
@@ -19,13 +19,13 @@ Fail. 41 checks, 13 failing, 1,492 findings.
 
 | Check | Hard | Findings | What it checks |
 | --- | --- | --- | --- |
-| `P01` | yes | 27 | protected spans survive |
+| `P01` | yes | 26 | protected spans survive |
 | `P02` | yes | 0 | no placeholder marker survives |
 | `P03` | yes | 27 | role targets unchanged |
 | `P04` | yes | 0 | surrounding whitespace matches |
-| `P05` | yes | 1 | format specifiers match |
+| `P05` | yes | 0 | format specifiers match |
 | `P06` | yes | 0 | link targets unchanged |
-| `P07` | yes | 31 | code entries copied exactly |
+| `P07` | yes | 0 | code entries copied exactly |
 | `P08` | yes | 0 | no fence or horizontal rule |
 
 ## Glossary
@@ -79,77 +79,49 @@ Fail. 41 checks, 13 failing, 1,492 findings.
 
 - bugs.po:38  ':ref:`contribute <contributing-to-python>`' appears 0 time(s), the source has 1
 - bugs.po:220  ' <https://bugzilla.mozilla.org/page.cgi?id=bug-writing.html>`_' appears 0 time(s), the source has 1
-- library/functions.po:439  ':ref:`truth testing procedure <truth>`' appears 0 time(s), the source has 1
-- library/functions.po:784  ':ref:`filter <warning-filter>`' appears 0 time(s), the source has 1
-- library/functions.po:1343  ':term:`free (closure) variables <closure variable>`' appears 0 time(s), the source has 1
-- library/functions.po:1817  ':ref:`integer literal in code <integers>`' appears 0 time(s), the source has 1
-- library/functions.po:1866  ':ref:`integer string conversion length limitation <int_max_str_digits>`' appears 0 time(s), the source has 1
-- library/functions.po:1887  ':term:`virtual <abstract base class>`' appears 0 time(s), the source has 1
-- library/functions.po:1912  ':term:`virtual <abstract base class>`' appears 0 time(s), the source has 1
-- library/functions.po:2511  ':ref:`non-inheritable <fd_inheritance>`' appears 0 time(s), the source has 1
-- library/functions.po:2575  ':ref:`auditing event <auditing>`' appears 0 time(s), the source has 1
-- library/functions.po:3086  ':ref:`private name mangling <private-name-mangling>`' appears 0 time(s), the source has 1
-- library/functions.po:3209  ':ref:`slicing syntax <slicings>`' appears 0 time(s), the source has 1
-- library/functions.po:3281  ':ref:`rich comparisons <comparisons>`' appears 0 time(s), the source has 1
-- library/functions.po:3455  ':term:`method resolution order`' appears 0 time(s), the source has 1
-- library/functions.po:3606  ':mod:`pickleable <pickle>`' appears 0 time(s), the source has 1
-- library/functions.po:3606  ':mod:`copyable <copy>`' appears 0 time(s), the source has 1
-- library/functions.po:3659  ':ref:`Documentation on attributes and methods on classes <class-attrs-and-methods>`' appears 0 time(s), the source has 1
+- library/functions.po:443  ':ref:`truth testing procedure <truth>`' appears 0 time(s), the source has 1
+- library/functions.po:790  ':ref:`filter <warning-filter>`' appears 0 time(s), the source has 1
+- library/functions.po:1353  ':term:`free (closure) variables <closure variable>`' appears 0 time(s), the source has 1
+- library/functions.po:1833  ':ref:`integer literal in code <integers>`' appears 0 time(s), the source has 1
+- library/functions.po:1882  ':ref:`integer string conversion length limitation <int_max_str_digits>`' appears 0 time(s), the source has 1
+- library/functions.po:1903  ':term:`virtual <abstract base class>`' appears 0 time(s), the source has 1
+- library/functions.po:1928  ':term:`virtual <abstract base class>`' appears 0 time(s), the source has 1
+- library/functions.po:2529  ':ref:`non-inheritable <fd_inheritance>`' appears 0 time(s), the source has 1
+- library/functions.po:2595  ':ref:`auditing event <auditing>`' appears 0 time(s), the source has 1
+- library/functions.po:3116  ':ref:`private name mangling <private-name-mangling>`' appears 0 time(s), the source has 1
+- library/functions.po:3245  ':ref:`slicing syntax <slicings>`' appears 0 time(s), the source has 1
+- library/functions.po:3317  ':ref:`rich comparisons <comparisons>`' appears 0 time(s), the source has 1
+- library/functions.po:3495  ':term:`method resolution order`' appears 0 time(s), the source has 1
+- library/functions.po:3648  ':mod:`pickleable <pickle>`' appears 0 time(s), the source has 1
+- library/functions.po:3648  ':mod:`copyable <copy>`' appears 0 time(s), the source has 1
+- library/functions.po:3701  ':ref:`Documentation on attributes and methods on classes <class-attrs-and-methods>`' appears 0 time(s), the source has 1
 - library/io.po:862  ':ref:`non-inheritable <fd_inheritance>`' appears 0 time(s), the source has 1
 - library/os.po:1167  ':ref:`auditing event <auditing>`' appears 0 time(s), the source has 1
-- and 7 more, not printed
+- and 6 more, not printed
 
 ### `P03` role targets unchanged
 
 - bugs.po:38  :ref:`contribute <contributing-to-python>` is not in the translation
-- library/functions.po:439  :ref:`truth testing procedure <truth>` is not in the translation
-- library/functions.po:678  :attr:`~function.__annotations__` is not in the translation
-- library/functions.po:784  :ref:`filter <warning-filter>` is not in the translation
-- library/functions.po:1343  :term:`free (closure) variables <closure variable>` is not in the translation
-- library/functions.po:1535  :class:`frozenset` is not in the translation
-- library/functions.po:1817  :ref:`integer literal in code <integers>` is not in the translation
-- library/functions.po:1866  :ref:`integer string conversion length limitation <int_max_str_digits>` is not in the translation
-- library/functions.po:1887  :term:`virtual <abstract base class>` is not in the translation
-- library/functions.po:1912  :term:`virtual <abstract base class>` is not in the translation
-- library/functions.po:2511  :ref:`non-inheritable <fd_inheritance>` is not in the translation
-- library/functions.po:2575  :ref:`auditing event <auditing>` is not in the translation
-- library/functions.po:3086  :ref:`private name mangling <private-name-mangling>` is not in the translation
-- library/functions.po:3209  :ref:`slicing syntax <slicings>` is not in the translation
-- library/functions.po:3281  :ref:`rich comparisons <comparisons>` is not in the translation
-- library/functions.po:3455  :term:`method resolution order` is not in the translation
-- library/functions.po:3606  :mod:`copyable <copy>` is not in the translation
-- library/functions.po:3606  :mod:`pickleable <pickle>` is not in the translation
-- library/functions.po:3659  :ref:`Documentation on attributes and methods on classes <class-attrs-and-methods>` is not in the translation
+- library/functions.po:443  :ref:`truth testing procedure <truth>` is not in the translation
+- library/functions.po:684  :attr:`~function.__annotations__` is not in the translation
+- library/functions.po:790  :ref:`filter <warning-filter>` is not in the translation
+- library/functions.po:1353  :term:`free (closure) variables <closure variable>` is not in the translation
+- library/functions.po:1547  :class:`frozenset` is not in the translation
+- library/functions.po:1833  :ref:`integer literal in code <integers>` is not in the translation
+- library/functions.po:1882  :ref:`integer string conversion length limitation <int_max_str_digits>` is not in the translation
+- library/functions.po:1903  :term:`virtual <abstract base class>` is not in the translation
+- library/functions.po:1928  :term:`virtual <abstract base class>` is not in the translation
+- library/functions.po:2529  :ref:`non-inheritable <fd_inheritance>` is not in the translation
+- library/functions.po:2595  :ref:`auditing event <auditing>` is not in the translation
+- library/functions.po:3116  :ref:`private name mangling <private-name-mangling>` is not in the translation
+- library/functions.po:3245  :ref:`slicing syntax <slicings>` is not in the translation
+- library/functions.po:3317  :ref:`rich comparisons <comparisons>` is not in the translation
+- library/functions.po:3495  :term:`method resolution order` is not in the translation
+- library/functions.po:3648  :mod:`copyable <copy>` is not in the translation
+- library/functions.po:3648  :mod:`pickleable <pickle>` is not in the translation
+- library/functions.po:3701  :ref:`Documentation on attributes and methods on classes <class-attrs-and-methods>` is not in the translation
 - library/io.po:862  :ref:`non-inheritable <fd_inheritance>` is not in the translation
 - and 7 more, not printed
-
-### `P05` format specifiers match
-
-- tutorial/introduction.po:146  source has ['% o'], translation has []
-
-### `P07` code entries copied exactly
-
-- tutorial/errors.po:755  literal_block entry differs from its source
-- tutorial/interpreter.po:198  literal_block entry differs from its source
-- tutorial/interpreter.po:222  doctest entry differs from its source
-- tutorial/introduction.po:73  literal_block entry differs from its source
-- tutorial/introduction.po:109  doctest entry differs from its source
-- tutorial/introduction.po:146  doctest entry differs from its source
-- tutorial/introduction.po:172  doctest entry differs from its source
-- tutorial/introduction.po:208  doctest entry differs from its source
-- tutorial/introduction.po:298  doctest entry differs from its source
-- tutorial/introduction.po:320  doctest entry differs from its source
-- tutorial/introduction.po:354  doctest entry differs from its source
-- tutorial/introduction.po:381  doctest entry differs from its source
-- tutorial/introduction.po:417  doctest entry differs from its source
-- tutorial/introduction.po:447  doctest entry differs from its source
-- tutorial/introduction.po:474  doctest entry differs from its source
-- tutorial/introduction.po:491  doctest entry differs from its source
-- tutorial/introduction.po:538  doctest entry differs from its source
-- tutorial/introduction.po:555  doctest entry differs from its source
-- tutorial/introduction.po:582  doctest entry differs from its source
-- tutorial/introduction.po:601  doctest entry differs from its source
-- and 11 more, not printed
 
 ### `G02` glossary renderings are used
 
@@ -157,22 +129,22 @@ Fail. 41 checks, 13 failing, 1,492 findings.
 - bugs.po:175  'comment' should render as 'chú thích'
 - bugs.po:186  'comment' should render as 'chú thích'
 - library/functions.po:312  'floating-point number' should render as 'số dấu phẩy động'
-- library/functions.po:439  'argument' should render as 'đối số'
-- library/functions.po:502  'sequence' should render as 'dãy'
-- library/functions.po:502  'mutable' should render as 'có thể thay đổi'
-- library/functions.po:521  'encoding' should render as 'mã hóa'
-- library/functions.po:558  'immutable' should render as 'bất biến'
-- library/functions.po:558  'sequence' should render as 'dãy'
-- library/functions.po:575  'bytes objects' should render as 'các đối tượng bytes'
-- library/functions.po:626  'instance method' should render as 'phương thức thể hiện'
-- library/functions.po:718  'sequence' should render as 'dãy'
-- library/functions.po:798  'python code' should render as 'mã Python'
-- library/functions.po:814  'newline' should render as 'ký tự xuống dòng'
-- library/functions.po:834  'newline' should render as 'ký tự xuống dòng'
-- library/functions.po:904  'trailing whitespace' should render as 'khoảng trắng ở cuối'
-- library/functions.po:1058  'different types' should render as 'các kiểu khác nhau'
-- library/functions.po:1073  'class object' should render as 'đối tượng lớp'
-- library/functions.po:1092  'metaclass' should render as 'siêu lớp'
+- library/functions.po:443  'argument' should render as 'đối số'
+- library/functions.po:506  'sequence' should render as 'dãy'
+- library/functions.po:506  'mutable' should render as 'có thể thay đổi'
+- library/functions.po:525  'encoding' should render as 'mã hóa'
+- library/functions.po:562  'immutable' should render as 'bất biến'
+- library/functions.po:562  'sequence' should render as 'dãy'
+- library/functions.po:579  'bytes objects' should render as 'các đối tượng bytes'
+- library/functions.po:630  'instance method' should render as 'phương thức thể hiện'
+- library/functions.po:724  'sequence' should render as 'dãy'
+- library/functions.po:804  'python code' should render as 'mã Python'
+- library/functions.po:820  'newline' should render as 'ký tự xuống dòng'
+- library/functions.po:840  'newline' should render as 'ký tự xuống dòng'
+- library/functions.po:912  'trailing whitespace' should render as 'khoảng trắng ở cuối'
+- library/functions.po:1066  'different types' should render as 'các kiểu khác nhau'
+- library/functions.po:1081  'class object' should render as 'đối tượng lớp'
+- library/functions.po:1100  'metaclass' should render as 'siêu lớp'
 - and 176 more, not printed
 
 ### `G03` kept terms stayed in English
@@ -181,46 +153,46 @@ Fail. 41 checks, 13 failing, 1,492 findings.
 - bugs.po:120  'list' is kept in English and did not survive
 - bugs.po:158  'list' is kept in English and did not survive
 - library/asyncio-sync.po:80  'Lock' is kept in English and did not survive
-- library/functions.po:457  'type' is kept in English and did not survive
-- library/functions.po:502  'type' is kept in English and did not survive
-- library/functions.po:584  'callable' is kept in English and did not survive
-- library/functions.po:944  'type' is kept in English and did not survive
-- library/functions.po:971  'type' is kept in English and did not survive
-- library/functions.po:1023  'list' is kept in English and did not survive
-- library/functions.po:1032  'list' is kept in English and did not survive
-- library/functions.po:1045  'list' is kept in English and did not survive
-- library/functions.po:1066  'list' is kept in English and did not survive
-- library/functions.po:1073  'list' is kept in English and did not survive
-- library/functions.po:1073  'type' is kept in English and did not survive
-- library/functions.po:1080  'list' is kept in English and did not survive
-- library/functions.po:1089  'list' is kept in English and did not survive
-- library/functions.po:1092  'list' is kept in English and did not survive
-- library/functions.po:1485  'type' is kept in English and did not survive
-- library/functions.po:1495  'type' is kept in English and did not survive
+- library/functions.po:461  'type' is kept in English and did not survive
+- library/functions.po:506  'type' is kept in English and did not survive
+- library/functions.po:588  'callable' is kept in English and did not survive
+- library/functions.po:952  'type' is kept in English and did not survive
+- library/functions.po:979  'type' is kept in English and did not survive
+- library/functions.po:1031  'list' is kept in English and did not survive
+- library/functions.po:1040  'list' is kept in English and did not survive
+- library/functions.po:1053  'list' is kept in English and did not survive
+- library/functions.po:1074  'list' is kept in English and did not survive
+- library/functions.po:1081  'list' is kept in English and did not survive
+- library/functions.po:1081  'type' is kept in English and did not survive
+- library/functions.po:1088  'list' is kept in English and did not survive
+- library/functions.po:1097  'list' is kept in English and did not survive
+- library/functions.po:1100  'list' is kept in English and did not survive
+- library/functions.po:1497  'type' is kept in English and did not survive
+- library/functions.po:1507  'type' is kept in English and did not survive
 - and 61 more, not printed
 
 ### `G04` no untranslated glossary term
 
 - bugs.po:175  'comment' is still in English, and renders as 'chú thích'
 - bugs.po:186  'comment' is still in English, and renders as 'chú thích'
-- library/functions.po:521  'encoding' is still in English, and renders as 'mã hóa'
-- library/functions.po:1092  'metaclass' is still in English, and renders as 'siêu lớp'
-- library/functions.po:1159  'namespace' is still in English, and renders as 'không gian tên'
-- library/functions.po:1162  'namespace' is still in English, and renders as 'không gian tên'
-- library/functions.po:1184  'Condition' is still in English, and renders as 'Điều kiện'
-- library/functions.po:1184  'namespace' is still in English, and renders as 'không gian tên'
-- library/functions.po:1269  'namespace' is still in English, and renders as 'không gian tên'
-- library/functions.po:1354  'namespace' is still in English, and renders as 'không gian tên'
-- library/functions.po:1363  'namespace' is still in English, and renders as 'không gian tên'
-- library/functions.po:1375  'function' is still in English, and renders as 'hàm'
-- library/functions.po:1387  'generator' is still in English, and renders as 'trình sinh'
-- library/functions.po:1387  'function' is still in English, and renders as 'hàm'
-- library/functions.po:1398  'function' is still in English, and renders as 'hàm'
-- library/functions.po:1580  'namespace' is still in English, and renders as 'không gian tên'
-- library/functions.po:1649  'namespace' is still in English, and renders as 'không gian tên'
-- library/functions.po:1927  'iterator' is still in English, and renders as 'trình lặp'
-- library/functions.po:1927  'sequence' is still in English, and renders as 'dãy'
-- library/functions.po:1978  'dictionary' is still in English, and renders as 'từ điển'
+- library/functions.po:525  'encoding' is still in English, and renders as 'mã hóa'
+- library/functions.po:1100  'metaclass' is still in English, and renders as 'siêu lớp'
+- library/functions.po:1169  'namespace' is still in English, and renders as 'không gian tên'
+- library/functions.po:1172  'namespace' is still in English, and renders as 'không gian tên'
+- library/functions.po:1194  'Condition' is still in English, and renders as 'Điều kiện'
+- library/functions.po:1194  'namespace' is still in English, and renders as 'không gian tên'
+- library/functions.po:1279  'namespace' is still in English, and renders as 'không gian tên'
+- library/functions.po:1364  'namespace' is still in English, and renders as 'không gian tên'
+- library/functions.po:1373  'namespace' is still in English, and renders as 'không gian tên'
+- library/functions.po:1385  'function' is still in English, and renders as 'hàm'
+- library/functions.po:1397  'generator' is still in English, and renders as 'trình sinh'
+- library/functions.po:1397  'function' is still in English, and renders as 'hàm'
+- library/functions.po:1408  'function' is still in English, and renders as 'hàm'
+- library/functions.po:1592  'namespace' is still in English, and renders as 'không gian tên'
+- library/functions.po:1661  'namespace' is still in English, and renders as 'không gian tên'
+- library/functions.po:1943  'iterator' is still in English, and renders as 'trình lặp'
+- library/functions.po:1943  'sequence' is still in English, and renders as 'dãy'
+- library/functions.po:1996  'dictionary' is still in English, and renders as 'từ điển'
 - and 128 more, not printed
 
 ### `L01` the translation is in Vietnamese
@@ -228,12 +200,12 @@ Fail. 41 checks, 13 failing, 1,492 findings.
 - copyright.po:34  49 characters of prose with no Vietnamese diacritic
 - copyright.po:37  89 characters of prose with no Vietnamese diacritic
 - copyright.po:44  74 characters of prose with no Vietnamese diacritic
-- tutorial/controlflow.po:873  46 characters of prose with no Vietnamese diacritic
-- tutorial/controlflow.po:1348  463 characters of prose with no Vietnamese diacritic
-- tutorial/controlflow.po:1366  258 characters of prose with no Vietnamese diacritic
-- tutorial/controlflow.po:1465  245 characters of prose with no Vietnamese diacritic
-- tutorial/controlflow.po:1799  48 characters of prose with no Vietnamese diacritic
-- whatsnew/3.10.po:1072  46 characters of prose with no Vietnamese diacritic
+- tutorial/controlflow.po:915  46 characters of prose with no Vietnamese diacritic
+- tutorial/controlflow.po:1412  463 characters of prose with no Vietnamese diacritic
+- tutorial/controlflow.po:1430  258 characters of prose with no Vietnamese diacritic
+- tutorial/controlflow.po:1535  245 characters of prose with no Vietnamese diacritic
+- tutorial/controlflow.po:1891  48 characters of prose with no Vietnamese diacritic
+- whatsnew/3.10.po:1080  46 characters of prose with no Vietnamese diacritic
 
 ### `L02` no entry is the English verbatim
 
@@ -291,11 +263,11 @@ Fail. 41 checks, 13 failing, 1,492 findings.
 
 ### `L08` sentence counts are close
 
-- tutorial/controlflow.po:1377  the English has 6 sentences, the translation has 4
+- tutorial/controlflow.po:1441  the English has 6 sentences, the translation has 4
 - tutorial/datastructures.po:959  the English has 2 sentences, the translation has 4
 - tutorial/datastructures.po:1001  the English has 3 sentences, the translation has 6
 - tutorial/datastructures.po:1058  the English has 3 sentences, the translation has 6
-- tutorial/introduction.po:128  the English has 4 sentences, the translation has 2
+- tutorial/introduction.po:132  the English has 4 sentences, the translation has 2
 
 ### `A04` dead entries per file below a ceiling
 

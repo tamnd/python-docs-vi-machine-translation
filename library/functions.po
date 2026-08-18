@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 07:19+0000\n"
+"PO-Revision-Date: 2026-08-18 07:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.4\n"
+"X-Generator: pydocvi 0.1.6\n"
 
 msgid "Built-in Functions"
 msgstr "Các hàm tích hợp sẵn"
@@ -338,6 +338,8 @@ msgstr ""
 "Trả về ``True`` nếu tất cả các phần tử của *iterable* đều đúng (hoặc nếu "
 "iterable trống). Tương đương với::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def all(iterable):\n"
 "    for element in iterable:\n"
@@ -384,6 +386,8 @@ msgstr ""
 "Trả về ``True`` nếu bất kỳ phần tử nào của *iterable* là true. Nếu iterable "
 "trống, trả về ``False``. Tương đương với::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def any(iterable):\n"
 "    for element in iterable:\n"
@@ -632,6 +636,8 @@ msgstr ""
 "như cách một phương thức thực thể nhận thực thể đó. Để khai báo một phương "
 "thức lớp, hãy sử dụng cấu trúc sau::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "class C:\n"
 "    @classmethod\n"
@@ -866,6 +872,8 @@ msgstr ""
 msgid "Examples:"
 msgstr "Ví dụ:"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> complex('+1.23')\n"
 "(1.23+0j)\n"
@@ -1137,6 +1145,8 @@ msgstr ""
 msgid "Equivalent to::"
 msgstr "Tương đương với::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def enumerate(iterable, start=0):\n"
 "    n = start\n"
@@ -1405,6 +1415,8 @@ msgstr ""
 msgid "Return a floating-point number constructed from a number or a string."
 msgstr "Trả về một số dấu phẩy động được tạo từ một số hoặc một chuỗi."
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> float('+1.23')\n"
 "1.23\n"
@@ -1723,6 +1735,8 @@ msgstr ""
 " được ký tự kết thúc tệp EOF, ngoại lệ :exc:`EOFError` sẽ được kích hoạt. Ví"
 " dụ::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> s = input('--> ')\n"
 "--> Monty Python's Flying Circus\n"
@@ -1762,6 +1776,8 @@ msgstr ""
 "Trả về một đối tượng số nguyên được tạo từ một số hoặc một chuỗi, hoặc trả "
 "về ``0`` nếu không có đối số nào được cung cấp."
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> int(123.45)\n"
 "123\n"
@@ -1964,6 +1980,8 @@ msgstr ""
 "block-reader. Ví dụ, đọc các khối có độ rộng cố định từ tệp cơ sở dữ liệu "
 "nhị phân cho đến khi đạt đến cuối tệp::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "from functools import partial\n"
 "with open('mydata.db', 'rb') as f:\n"
@@ -2518,6 +2536,8 @@ msgstr ""
 "Ví dụ sau sử dụng tham số :ref:`dir_fd <dir_fd>` của hàm :func:`os.open` để "
 "mở một tệp tương đối so với một thư mục đã cho::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import os\n"
 ">>> dir_fd = os.open('somedir', os.O_RDONLY)\n"
@@ -2705,6 +2725,8 @@ msgstr ""
 msgid "Here's an example of computing an inverse for ``38`` modulo ``97``::"
 msgstr "Dưới đây là ví dụ tính nghịch đảo của ``38`` theo modulo ``97``::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> pow(38, -1, mod=97)\n"
 "23\n"
@@ -2787,6 +2809,8 @@ msgstr ""
 msgid "A typical use is to define a managed attribute ``x``::"
 msgstr "Một cách dùng phổ biến là định nghĩa thuộc tính được quản lý ``x``::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "class C:\n"
 "    def __init__(self):\n"
@@ -2836,6 +2860,8 @@ msgstr ""
 "tạo các property chỉ đọc dễ dàng bằng cách dùng :func:`property` làm "
 ":term:`decorator`::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "class Parrot:\n"
 "    def __init__(self):\n"
@@ -2875,6 +2901,8 @@ msgstr ""
 "tương ứng được đặt thành hàm được trang trí. Điều này được giải thích rõ "
 "nhất qua một ví dụ:"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "class C:\n"
 "    def __init__(self):\n"
@@ -2965,6 +2993,8 @@ msgstr ""
 msgid "This class has a custom representation that can be evaluated::"
 msgstr "Lớp này có biểu diễn tùy chỉnh có thể được định lượng::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "class Person:\n"
 "   def __init__(self, name, age):\n"
@@ -3099,6 +3129,8 @@ msgstr ""
 "Trả về một đối tượng lính canh duy nhất mới. name phải là một :class:`str`, "
 "và được dùng làm đại diện cho đối tượng được trả về::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> MISSING = sentinel(\"MISSING\")\n"
 ">>> MISSING\n"
@@ -3132,6 +3164,8 @@ msgstr ""
 " canh được định nghĩa theo cách này có thể được sử dụng trong :term:`type "
 "hints <type hint>`::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "MISSING = sentinel(\"MISSING\")\n"
 "\n"
@@ -3165,6 +3199,8 @@ msgstr ""
 "những lính canh được định nghĩa trong phạm vi hàm, không thể thực hiện  đóng"
 " gói. Danh tính của lính canh được bảo toàn sau khi đóng gói::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import pickle\n"
 "\n"
@@ -3313,6 +3349,8 @@ msgstr ""
 "Một phương thức tĩnh không nhận đối số đầu tiên ngầm định. Để khai báo "
 "phương thức tĩnh, hãy dùng cú pháp sau::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "class C:\n"
 "    @staticmethod\n"
@@ -3362,6 +3400,8 @@ msgstr ""
 "việc tự động chuyển đổi thành phương thức thể hiện. Đối với những trường hợp"
 " này, hãy dùng cú pháp sau::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def regular_function():\n"
 "    ...\n"
@@ -3543,6 +3583,8 @@ msgstr ""
 "Với cả hai trường hợp sử dụng, một lời gọi superclass điển hình trông như "
 "sau::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "class C(B):\n"
 "    def method(self, arg):\n"
@@ -3736,6 +3778,8 @@ msgstr ""
 msgid "Example::"
 msgstr "Ví dụ::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> for item in zip([1, 2, 3], ['sugar', 'spice', 'everything nice']):\n"
 "...     print(item)\n"
@@ -3796,6 +3840,8 @@ msgstr ""
 "bỏ qua các phần tử còn lại trong các iterable dài hơn, cắt bớt kết quả đến "
 "độ dài của iterable ngắn nhất::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> list(zip(range(3), ['fee', 'fi', 'fo', 'fum']))\n"
 "[(0, 'fee'), (1, 'fi'), (2, 'fo')]"
@@ -3812,6 +3858,8 @@ msgstr ""
 "định có độ dài bằng nhau. Trong những trường hợp như vậy, khuyến nghị dùng "
 "tùy chọn ``strict=True``. Đầu ra của nó giống như :func:`zip` thông thường::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> list(zip(('a', 'b', 'c'), (1, 2, 3), strict=True))\n"
 "[('a', 1), ('b', 2), ('c', 3)]"
@@ -3875,6 +3923,8 @@ msgstr ""
 ":func:`zip` kết hợp với toán tử ``*`` có thể được dùng để giải nén một danh "
 "sách::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> x = [1, 2, 3]\n"
 ">>> y = [4, 5, 6]\n"
@@ -3963,12 +4013,16 @@ msgid ""
 "the following code::"
 msgstr "Ví dụ, câu lệnh ``import spam`` dẫn đến bytecode giống đoạn mã sau::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "spam = __import__('spam', globals(), locals(), [], 0)"
 msgstr "spam = __import__('spam', globals(), locals(), [], 0)"
 
 msgid "The statement ``import spam.ham`` results in this call::"
 msgstr "Câu lệnh ``import spam.ham`` dẫn đến lời gọi này::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "spam = __import__('spam.ham', globals(), locals(), [], 0)"
 msgstr "spam = __import__('spam.ham', globals(), locals(), [], 0)"
 
@@ -3985,6 +4039,8 @@ msgid ""
 msgstr ""
 "Mặt khác, câu lệnh ``from spam.ham import eggs, sausage as saus`` dẫn đến::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "_temp = __import__('spam.ham', globals(), locals(), ['eggs', 'sausage'], 0)\n"
 "eggs = _temp.eggs\n"

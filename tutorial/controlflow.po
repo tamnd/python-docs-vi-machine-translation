@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 07:19+0000\n"
+"PO-Revision-Date: 2026-08-18 07:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.4\n"
+"X-Generator: pydocvi 0.1.6\n"
 
 msgid "More Control Flow Tools"
 msgstr "Thêm các công cụ điều khiển luồng"
@@ -42,6 +42,8 @@ msgstr ""
 "Kiểu câu lệnh được biết đến nhiều nhất có lẽ là câu lệnh :keyword:`if`. Ví "
 "dụ::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> x = int(input(\"Please enter an integer: \"))\n"
 "Please enter an integer: 42\n"
@@ -112,6 +114,8 @@ msgstr ""
 "của bất kỳ sequence nào (list hoặc chuỗi), theo thứ tự chúng xuất hiện trong"
 " sequence. Ví dụ (không cố tình chơi chữ):"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> # Measure some strings:\n"
 ">>> words = ['cat', 'window', 'defenestrate']\n"
@@ -140,6 +144,8 @@ msgstr ""
 " khó xử lý đúng. Thay vào đó, thường đơn giản hơn khi lặp qua bản sao của "
 "collection hoặc tạo ra một collection mới::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "# Create a sample collection\n"
 "users = {'Hans': 'active', 'Éléonore': 'inactive', '景太郎': 'active'}\n"
@@ -179,6 +185,8 @@ msgstr ""
 "Khi cần lặp qua một dãy số, hàm tích hợp sẵn :func:`range` rất hữu dụng. Nó "
 "sinh ra các dãy số học::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> for i in range(5):\n"
 "...     print(i)\n"
@@ -209,6 +217,8 @@ msgstr ""
 "sequence có độ dài 10. Có thể để range bắt đầu từ một số khác, hoặc chỉ định"
 " bước tăng khác (kể cả số âm; đôi khi bước tăng này được gọi là 'step')::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> list(range(5, 10))\n"
 "[5, 6, 7, 8, 9]\n"
@@ -235,6 +245,8 @@ msgstr ""
 "Để lặp qua các chỉ số của một sequence, có thể kết hợp :func:`range` và "
 ":func:`len` như sau::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> a = ['Mary', 'had', 'a', 'little', 'lamb']\n"
 ">>> for i in range(len(a)):\n"
@@ -266,6 +278,8 @@ msgstr ""
 msgid "A strange thing happens if you just print a range::"
 msgstr "Một điều kỳ lạ xảy ra nếu chỉ in một range::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> range(10)\n"
 "range(0, 10)"
@@ -296,6 +310,8 @@ msgstr ""
 "tiếp cho đến khi hết. Câu lệnh :keyword:`for` là một cấu trúc như vậy, còn "
 "ví dụ về hàm nhận iterable là :func:`sum`::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> sum(range(4))  # 0 + 1 + 2 + 3\n"
 "6"
@@ -322,6 +338,8 @@ msgstr ""
 "Câu lệnh :keyword:`break` thoát ra khỏi vòng lặp :keyword:`for` hoặc "
 ":keyword:`while` trong cùng::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> for n in range(2, 10):\n"
 "...     for x in range(2, n):\n"
@@ -351,6 +369,8 @@ msgid ""
 msgstr ""
 "Câu lệnh :keyword:`continue` chuyển sang lần lặp tiếp theo của vòng lặp::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> for num in range(2, 10):\n"
 "...     if num % 2 == 0:\n"
@@ -428,6 +448,8 @@ msgstr ""
 "Điều này được minh họa trong vòng lặp :keyword:`!for` sau đây, dùng để tìm "
 "số nguyên tố::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> for n in range(2, 10):\n"
 "...     for x in range(2, n):\n"
@@ -510,6 +532,8 @@ msgstr ""
 "yêu cầu một câu lệnh nhưng chương trình không cần thực hiện hành động nào. "
 "Ví dụ::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> while True:\n"
 "...     pass  # Busy-wait for keyboard interrupt (Ctrl+C)\n"
@@ -522,6 +546,8 @@ msgstr ""
 msgid "This is commonly used for creating minimal classes::"
 msgstr "Điều này thường được dùng để tạo ra các class tối giản::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> class MyEmptyClass:\n"
 "...     pass\n"
@@ -541,6 +567,8 @@ msgstr ""
 "hay điều kiện khi đang làm việc với mã mới, cho phép tiếp tục suy nghĩ ở mức"
 " trừu tượng hơn. :keyword:`!pass` sẽ bị bỏ qua một cách lặng lẽ::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> def initlog(*args):\n"
 "...     pass   # Remember to implement this!\n"
@@ -589,6 +617,8 @@ msgid ""
 msgstr ""
 "Dạng đơn giản nhất so sánh một giá trị chủ thể với một hoặc nhiều literal::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def http_error(status):\n"
 "    match status:\n"
@@ -624,6 +654,8 @@ msgid ""
 msgstr ""
 "Có thể kết hợp nhiều literal trong một mẫu bằng cách dùng ``|`` (\"or\")::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "case 401 | 403 | 404:\n"
 "    return \"Not allowed\""
@@ -638,6 +670,8 @@ msgstr ""
 "Các mẫu có thể trông giống như phép gán giải nén, và có thể được dùng để gán"
 " biến::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "# point is an (x, y) tuple\n"
 "match point:\n"
@@ -688,6 +722,8 @@ msgstr ""
 "danh sách đối số giống như constructor, nhưng với khả năng bắt attribute vào"
 " biến::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "class Point:\n"
 "    def __init__(self, x, y):\n"
@@ -740,6 +776,8 @@ msgstr ""
 "sau đây đều tương đương (và tất cả đều gán attribute ``y`` cho biến "
 "``var``)::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "Point(1, var)\n"
 "Point(1, y=var)\n"
@@ -774,6 +812,8 @@ msgstr ""
 "Các mẫu có thể được lồng nhau tùy ý. Ví dụ, nếu có một list ngắn các Point "
 "với ``__match_args__`` được thêm vào, có thể khớp như sau::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "class Point:\n"
 "    __match_args__ = ('x', 'y')\n"
@@ -820,6 +860,8 @@ msgstr ""
 "false, ``match`` tiếp tục thử khối case tiếp theo. Lưu ý rằng việc bắt giá "
 "trị xảy ra trước khi guard được đánh giá::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "match point:\n"
 "    case Point(x, y) if x == y:\n"
@@ -894,6 +936,8 @@ msgstr ""
 "Các mẫu có thể dùng các hằng được đặt tên. Chúng phải là tên có dấu chấm để "
 "tránh bị hiểu là biến bắt giá trị::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "from enum import Enum\n"
 "class Color(Enum):\n"
@@ -942,6 +986,8 @@ msgid ""
 "boundary::"
 msgstr "Có thể tạo một hàm ghi dãy Fibonacci đến một giới hạn tùy ý::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> def fib(n):    # write Fibonacci series less than n\n"
 "...     \"\"\"Print a Fibonacci series less than n.\"\"\"\n"
@@ -1041,6 +1087,8 @@ msgstr ""
 " định nghĩa. Các tên khác cũng có thể trỏ đến cùng object hàm đó và cũng có "
 "thể dùng để truy cập hàm::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> fib\n"
 "<function fib at 10042ed0>\n"
@@ -1070,6 +1118,8 @@ msgstr ""
 "``None`` thường bị trình thông dịch ẩn đi nếu đó là giá trị duy nhất được in"
 " ra. Có thể thấy nó bằng cách dùng :func:`print`::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> fib(0)\n"
 ">>> print(fib(0))\n"
@@ -1086,6 +1136,8 @@ msgstr ""
 "Có thể dễ dàng viết một hàm trả về list các số trong dãy Fibonacci thay vì "
 "in ra::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> def fib2(n):  # return Fibonacci series up to n\n"
 "...     \"\"\"Return a list containing the Fibonacci series up to n.\"\"\"\n"
@@ -1171,6 +1223,8 @@ msgstr ""
 "Điều này tạo ra một hàm có thể được gọi với ít đối số hơn so với định nghĩa "
 "cho phép. Ví dụ::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def ask_ok(prompt, retries=4, reminder='Please try again!'):\n"
 "    while True:\n"
@@ -1232,6 +1286,8 @@ msgstr ""
 "Các giá trị mặc định được đánh giá tại thời điểm định nghĩa hàm trong phạm "
 "vi *định nghĩa*, vì vậy::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "i = 5\n"
 "\n"
@@ -1263,6 +1319,8 @@ msgstr ""
 "như list, dict hoặc instance của hầu hết các class. Ví dụ, hàm sau tích lũy "
 "các đối số được truyền vào trong các lời gọi tiếp theo::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def f(a, L=[]):\n"
 "    L.append(a)\n"
@@ -1283,6 +1341,8 @@ msgstr ""
 msgid "This will print ::"
 msgstr "Lệnh này sẽ in ra ::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "[1]\n"
 "[1, 2]\n"
@@ -1299,6 +1359,8 @@ msgstr ""
 "Nếu không muốn giá trị mặc định được chia sẻ giữa các lời gọi tiếp theo, có "
 "thể viết hàm như sau::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def f(a, L=None):\n"
 "    if L is None:\n"
@@ -1323,6 +1385,8 @@ msgstr ""
 "Hàm cũng có thể được gọi bằng :term:`keyword arguments <keyword argument>` "
 "có dạng ``kwarg=value``. Chẳng hạn, hàm sau::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def parrot(voltage, state='a stiff', action='voom', type='Norwegian Blue'):\n"
 "    print(\"-- This parrot wouldn't\", action, end=' ')\n"
@@ -1391,6 +1455,8 @@ msgstr ""
 "nào được nhận giá trị nhiều hơn một lần. Đây là ví dụ thất bại do ràng buộc "
 "này::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> def function(a):\n"
 "...     pass\n"
@@ -1424,6 +1490,8 @@ msgstr ""
 "<tut-tuples>` chứa các đối số vị trí ngoài danh sách tham số hình thức. "
 "(``*name`` phải đứng trước ``**name``.) Ví dụ, nếu định nghĩa hàm như sau::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def cheeseshop(kind, *arguments, **keywords):\n"
 "    print(\"-- Do you have any\", kind, \"?\")\n"
@@ -1446,6 +1514,8 @@ msgstr ""
 msgid "It could be called like this::"
 msgstr "Nó có thể được gọi như sau::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "cheeseshop(\"Limburger\", \"It's very runny, sir.\",\n"
 "           \"It's really very, VERY runny, sir.\",\n"
@@ -1507,6 +1577,8 @@ msgstr ""
 msgid "A function definition may look like:"
 msgstr "Định nghĩa hàm có thể trông như sau:"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2):\n"
 "      -----------    ----------     ----------\n"
@@ -1590,6 +1662,8 @@ msgstr ""
 "Xem xét các định nghĩa hàm ví dụ sau đây, chú ý kỹ đến các ký hiệu ``/`` và "
 "``*``::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> def standard_arg(arg):\n"
 "...     print(arg)\n"
@@ -1624,6 +1698,8 @@ msgstr ""
 "đặt ràng buộc nào lên cách gọi và đối số có thể được truyền theo vị trí hoặc"
 " từ khóa::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> standard_arg(2)\n"
 "2\n"
@@ -1644,6 +1720,8 @@ msgstr ""
 "Hàm thứ hai ``pos_only_arg`` bị giới hạn chỉ dùng tham số vị trí vì có dấu "
 "``/`` trong định nghĩa hàm::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> pos_only_arg(1)\n"
 "1\n"
@@ -1651,7 +1729,8 @@ msgid ""
 ">>> pos_only_arg(arg=1)\n"
 "Traceback (most recent call last):\n"
 "  File \"<stdin>\", line 1, in <module>\n"
-"TypeError: pos_only_arg() got some positional-only arguments passed as keyword arguments: 'arg'"
+"TypeError: pos_only_arg() got some positional-only arguments passed as "
+"keyword arguments: 'arg'"
 msgstr ""
 ">>> pos_only_arg(1)\n"
 "1\n"
@@ -1659,7 +1738,8 @@ msgstr ""
 ">>> pos_only_arg(arg=1)\n"
 "Traceback (most recent call last):\n"
 "  File \"<stdin>\", line 1, in <module>\n"
-"TypeError: pos_only_arg() got some positional-only arguments passed as keyword arguments: 'arg'"
+"TypeError: pos_only_arg() got some positional-only arguments passed as "
+"keyword arguments: 'arg'"
 
 msgid ""
 "The third function ``kwd_only_arg`` only allows keyword arguments as "
@@ -1668,6 +1748,8 @@ msgstr ""
 "Hàm thứ ba ``kwd_only_arg`` chỉ cho phép đối số từ khóa như được chỉ ra bởi "
 "dấu ``*`` trong định nghĩa hàm::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> kwd_only_arg(3)\n"
 "Traceback (most recent call last):\n"
@@ -1690,6 +1772,8 @@ msgid ""
 "definition::"
 msgstr "Và hàm cuối sử dụng cả ba quy ước gọi trong cùng một định nghĩa hàm::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> combined_example(1, 2, 3)\n"
 "Traceback (most recent call last):\n"
@@ -1705,7 +1789,8 @@ msgid ""
 ">>> combined_example(pos_only=1, standard=2, kwd_only=3)\n"
 "Traceback (most recent call last):\n"
 "  File \"<stdin>\", line 1, in <module>\n"
-"TypeError: combined_example() got some positional-only arguments passed as keyword arguments: 'pos_only'"
+"TypeError: combined_example() got some positional-only arguments passed as "
+"keyword arguments: 'pos_only'"
 msgstr ""
 ">>> combined_example(1, 2, 3)\n"
 "Traceback (most recent call last):\n"
@@ -1721,7 +1806,8 @@ msgstr ""
 ">>> combined_example(pos_only=1, standard=2, kwd_only=3)\n"
 "Traceback (most recent call last):\n"
 "  File \"<stdin>\", line 1, in <module>\n"
-"TypeError: combined_example() got some positional-only arguments passed as keyword arguments: 'pos_only'"
+"TypeError: combined_example() got some positional-only arguments passed as "
+"keyword arguments: 'pos_only'"
 
 msgid ""
 "Finally, consider this function definition which has a potential collision "
@@ -1731,6 +1817,8 @@ msgstr ""
 "Cuối cùng, xem xét định nghĩa hàm này có khả năng xung đột giữa đối số vị "
 "trí ``name`` và ``**kwds`` vốn có ``name`` là một key::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def foo(name, **kwds):\n"
 "    return 'name' in kwds"
@@ -1745,6 +1833,8 @@ msgstr ""
 "Không có lời gọi nào có thể khiến nó trả về ``True`` vì từ khóa ``'name'`` "
 "luôn gắn với tham số đầu tiên. Ví dụ::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> foo(1, **{'name': 2})\n"
 "Traceback (most recent call last):\n"
@@ -1767,6 +1857,8 @@ msgstr ""
 "nó cho phép ``name`` là đối số vị trí và ``'name'`` là key trong đối số từ "
 "khóa::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> def foo(name, /, **kwds):\n"
 "...     return 'name' in kwds\n"
@@ -1844,6 +1936,8 @@ msgstr ""
 ":ref:`tut-tuples`). Trước số lượng biến đổi đối số, có thể có không hoặc "
 "nhiều đối số thông thường. ::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def write_multiple_items(file, separator, *args):\n"
 "    file.write(separator.join(args))"
@@ -1864,6 +1958,8 @@ msgstr ""
 " đối số 'chỉ từ khóa', nghĩa là chúng chỉ có thể được dùng như từ khóa thay "
 "vì đối số vị trí. ::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> def concat(*args, sep=\"/\"):\n"
 "...     return sep.join(args)\n"
@@ -1898,17 +1994,21 @@ msgstr ""
 "và *stop* riêng biệt. Nếu chúng không có sẵn riêng biệt, hãy viết lời gọi "
 "hàm với toán tử ``*``\\ để giải nén đối số từ list hoặc tuple::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> list(range(3, 6))            # normal call with separate arguments\n"
 "[3, 4, 5]\n"
 ">>> args = [3, 6]\n"
-">>> list(range(*args))            # call with arguments unpacked from a list\n"
+">>> list(range(*args))            # call with arguments unpacked from a "
+"list\n"
 "[3, 4, 5]"
 msgstr ""
 ">>> list(range(3, 6))            # normal call with separate arguments\n"
 "[3, 4, 5]\n"
 ">>> args = [3, 6]\n"
-">>> list(range(*args))            # call with arguments unpacked from a list\n"
+">>> list(range(*args))            # call with arguments unpacked from a "
+"list\n"
 "[3, 4, 5]"
 
 msgid ""
@@ -1916,24 +2016,30 @@ msgid ""
 "``**``\\ -operator::"
 msgstr "Tương tự, dict có thể cung cấp đối số từ khóa bằng toán tử ``**``\\ ::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> def parrot(voltage, state='a stiff', action='voom'):\n"
 "...     print(\"-- This parrot wouldn't\", action, end=' ')\n"
 "...     print(\"if you put\", voltage, \"volts through it.\", end=' ')\n"
 "...     print(\"E's\", state, \"!\")\n"
 "...\n"
-">>> d = {\"voltage\": \"four million\", \"state\": \"bleedin' demised\", \"action\": \"VOOM\"}\n"
+">>> d = {\"voltage\": \"four million\", \"state\": \"bleedin' demised\", "
+"\"action\": \"VOOM\"}\n"
 ">>> parrot(**d)\n"
-"-- This parrot wouldn't VOOM if you put four million volts through it. E's bleedin' demised !"
+"-- This parrot wouldn't VOOM if you put four million volts through it. E's "
+"bleedin' demised !"
 msgstr ""
 ">>> def parrot(voltage, state='a stiff', action='voom'):\n"
 "...     print(\"-- This parrot wouldn't\", action, end=' ')\n"
 "...     print(\"if you put\", voltage, \"volts through it.\", end=' ')\n"
 "...     print(\"E's\", state, \"!\")\n"
 "...\n"
-">>> d = {\"voltage\": \"four million\", \"state\": \"bleedin' demised\", \"action\": \"VOOM\"}\n"
+">>> d = {\"voltage\": \"four million\", \"state\": \"bleedin' demised\", "
+"\"action\": \"VOOM\"}\n"
 ">>> parrot(**d)\n"
-"-- This parrot wouldn't VOOM if you put four million volts through it. E's bleedin' demised !"
+"-- This parrot wouldn't VOOM if you put four million volts through it. E's "
+"bleedin' demised !"
 
 msgid "Lambda Expressions"
 msgstr "Biểu thức lambda"
@@ -1954,6 +2060,8 @@ msgstr ""
 "nghĩa hàm thông thường. Giống như định nghĩa hàm lồng nhau, hàm lambda có "
 "thể tham chiếu biến từ phạm vi chứa::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> def make_incrementor(n):\n"
 "...     return lambda x: x + n\n"
@@ -1983,6 +2091,8 @@ msgstr ""
 " một hàm nhỏ làm đối số. Chẳng hạn, :meth:`list.sort` nhận hàm khóa sắp xếp "
 "*key* có thể là hàm lambda::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> pairs = [(1, 'one'), (2, 'two'), (3, 'three'), (4, 'four')]\n"
 ">>> pairs.sort(key=lambda pair: pair[1])\n"
@@ -2037,6 +2147,8 @@ msgstr ""
 msgid "Here is an example of a multi-line docstring::"
 msgstr "Đây là ví dụ về docstring nhiều dòng::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> def my_function():\n"
 "...     \"\"\"Do nothing, but document it.\n"
@@ -2106,6 +2218,8 @@ msgstr ""
 "thị kết thúc câu lệnh :keyword:`def`. Ví dụ sau có một đối số bắt buộc, một "
 "đối số tùy chọn và giá trị trả về được chú thích::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> def f(ham: str, eggs: str = 'eggs') -> str:\n"
 "...     print(\"Annotations:\", f.__annotations__)\n"
@@ -2113,7 +2227,8 @@ msgid ""
 "...     return ham + ' and ' + eggs\n"
 "...\n"
 ">>> f('spam')\n"
-"Annotations: {'ham': <class 'str'>, 'return': <class 'str'>, 'eggs': <class 'str'>}\n"
+"Annotations: {'ham': <class 'str'>, 'return': <class 'str'>, 'eggs': <class "
+"'str'>}\n"
 "Arguments: spam eggs\n"
 "'spam and eggs'"
 msgstr ""
@@ -2123,7 +2238,8 @@ msgstr ""
 "...     return ham + ' and ' + eggs\n"
 "...\n"
 ">>> f('spam')\n"
-"Annotations: {'ham': <class 'str'>, 'return': <class 'str'>, 'eggs': <class 'str'>}\n"
+"Annotations: {'ham': <class 'str'>, 'return': <class 'str'>, 'eggs': <class "
+"'str'>}\n"
 "Arguments: spam eggs\n"
 "'spam and eggs'"
 

@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 07:19+0000\n"
+"PO-Revision-Date: 2026-08-18 07:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.4\n"
+"X-Generator: pydocvi 0.1.6\n"
 
 # pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=ade2545b0bab run=2026-08-17T16:43Z
 #, fuzzy
@@ -157,14 +157,14 @@ msgstr ""
 "này được lưu trong thuộc tính *argv* của mô-đun :mod:`sys` dưới dạng một "
 "list. Ví dụ, hãy xem tệp :file:`demo.py` sau::"
 
-# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=2ddbd9c30bee run=2026-08-17T16:43Z
+# pydocvi: passthrough=literal_block
 #, fuzzy
 msgid ""
 "# File demo.py\n"
 "import sys\n"
 "print(sys.argv)"
 msgstr ""
-"Tệp demo.py\n"
+"# File demo.py\n"
 "import sys\n"
 "print(sys.argv)"
 
