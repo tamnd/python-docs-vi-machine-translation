@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 04:47+0000\n"
+"PO-Revision-Date: 2026-08-18 05:15+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -465,8 +465,10 @@ msgstr ""
 msgid "There are currently two intrinsic set types:"
 msgstr ""
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=01b711b516dd run=2026-08-18T04:53Z
+#, fuzzy
 msgid "Sets"
-msgstr ""
+msgstr "Tập hợp"
 
 msgid ""
 "These represent a mutable set. They are created by the built-in :func:`set` "
@@ -497,8 +499,10 @@ msgstr ""
 msgid "There is currently a single intrinsic mapping type:"
 msgstr ""
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=01b711b516dd run=2026-08-18T04:53Z
+#, fuzzy
 msgid "Dictionaries"
-msgstr ""
+msgstr "Từ điển"
 
 msgid ""
 "These represent finite sets of objects indexed by nearly arbitrary values.  "
@@ -838,8 +842,10 @@ msgid ""
 "__self__>`.)"
 msgstr ""
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=bae4b26e4b0d run=2026-08-18T04:53Z
+#, fuzzy
 msgid "Classes"
-msgstr ""
+msgstr "Các lớp"
 
 msgid ""
 "Classes are callable.  These objects normally act as factories for new "
@@ -857,8 +863,10 @@ msgid ""
 "`~object.__call__` method in their class."
 msgstr ""
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=ea0c35ce78c8 run=2026-08-18T04:53Z
+#, fuzzy
 msgid "Modules"
-msgstr ""
+msgstr "Mô-đun"
 
 msgid ""
 "Modules are a basic organizational unit of Python code, and are created by "
@@ -4405,8 +4413,10 @@ msgstr "dbm.gnu"
 msgid "callable"
 msgstr ""
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=a5a4871c332d run=2026-08-18T04:53Z
+#, fuzzy
 msgid "function"
-msgstr ""
+msgstr "hàm"
 
 msgid "call"
 msgstr ""
@@ -4468,8 +4478,10 @@ msgstr ""
 msgid "__type_params__ (function attribute)"
 msgstr ""
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=cae42d21846f run=2026-08-18T04:53Z
+#, fuzzy
 msgid "method"
-msgstr ""
+msgstr "phương thức"
 
 msgid "user-defined method"
 msgstr ""
@@ -4597,8 +4609,10 @@ msgstr ""
 msgid "__class__ (instance attribute)"
 msgstr ""
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=1f9f334a06bb run=2026-08-18T04:53Z
+#, fuzzy
 msgid "open"
-msgstr ""
+msgstr "mở"
 
 msgid "io"
 msgstr ""

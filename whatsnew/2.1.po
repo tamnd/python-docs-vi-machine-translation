@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-17 14:50+0000\n"
-"PO-Revision-Date: 2026-08-18 04:47+0000\n"
+"PO-Revision-Date: 2026-08-18 05:15+0000\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -28,8 +28,10 @@ msgstr ""
 msgid "A.M. Kuchling"
 msgstr ""
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=118148d50dd5 run=2026-08-18T04:53Z
+#, fuzzy
 msgid "Introduction"
-msgstr ""
+msgstr "Giới thiệu"
 
 msgid ""
 "This article explains the new features in Python 2.1.  While there aren't as "

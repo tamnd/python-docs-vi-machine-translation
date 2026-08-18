@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 04:47+0000\n"
+"PO-Revision-Date: 2026-08-18 05:15+0000\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -192,8 +192,10 @@ msgid ""
 "for more details."
 msgstr ""
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=b70cb9ce10c6 run=2026-08-18T04:53Z
+#, fuzzy
 msgid "Logging"
-msgstr ""
+msgstr "Ghi nhật ký"
 
 msgid ""
 "asyncio uses the :mod:`logging` module and all logging is performed via the "

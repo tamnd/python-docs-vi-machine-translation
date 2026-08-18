@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 04:47+0000\n"
+"PO-Revision-Date: 2026-08-18 05:15+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -8395,8 +8395,10 @@ msgid ""
 "support only one or two operations."
 msgstr ""
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=ea0c35ce78c8 run=2026-08-18T04:53Z
+#, fuzzy
 msgid "Modules"
-msgstr ""
+msgstr "Mô-đun"
 
 msgid ""
 "The only special operation on a module is attribute access: ``m.name``, "
@@ -9514,8 +9516,10 @@ msgstr ""
 msgid "union"
 msgstr ""
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=cae42d21846f run=2026-08-18T04:53Z
+#, fuzzy
 msgid "method"
-msgstr ""
+msgstr "phương thức"
 
 msgid "code"
 msgstr ""

@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 04:47+0000\n"
+"PO-Revision-Date: 2026-08-18 05:15+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -22,8 +22,10 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: pydocvi 0.1.4\n"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=bae4b26e4b0d run=2026-08-18T04:53Z
+#, fuzzy
 msgid "Classes"
-msgstr ""
+msgstr "Các lớp"
 
 # pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=31a462e6c136 run=2026-08-17T16:43Z
 #, fuzzy
@@ -1304,8 +1306,10 @@ msgstr ""
 "Mỗi giá trị là một đối tượng, và do đó có một *class* (còn được gọi là "
 "*type*). Nó được lưu trữ dưới dạng ``object.__class__``."
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=0edd52604a75 run=2026-08-18T04:53Z
+#, fuzzy
 msgid "Inheritance"
-msgstr ""
+msgstr "Kế thừa"
 
 # pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=54ee1fef6d63 run=2026-08-17T16:43Z
 #, fuzzy
@@ -1771,8 +1775,10 @@ msgstr ""
 ":meth:`!m`, và :attr:`m.__func__ <method.__func__>` là :ref:`function object "
 "<user-defined-funcs>` tương ứng với phương thức."
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=6c6f030603f0 run=2026-08-18T04:53Z
+#, fuzzy
 msgid "Iterators"
-msgstr ""
+msgstr "Trình lặp"
 
 # pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=297a621f1359 run=2026-08-17T16:43Z
 #, fuzzy
@@ -1939,8 +1945,10 @@ msgstr ""
 "p\n"
 "s"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=6c6f030603f0 run=2026-08-18T04:53Z
+#, fuzzy
 msgid "Generators"
-msgstr ""
+msgstr "Trình sinh"
 
 # pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=297a621f1359 run=2026-08-17T16:43Z
 #, fuzzy
@@ -2165,11 +2173,17 @@ msgstr ""
 msgid "object"
 msgstr "object"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=cae42d21846f run=2026-08-18T04:53Z
+#, fuzzy
 msgid "method"
-msgstr ""
+msgstr "phương thức"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=cae42d21846f run=2026-08-18T04:53Z
+#, fuzzy
 msgid "name"
-msgstr ""
+msgstr "tên"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=cae42d21846f run=2026-08-18T04:53Z
+#, fuzzy
 msgid "mangling"
-msgstr ""
+msgstr "làm rối tên"

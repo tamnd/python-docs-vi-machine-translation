@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 04:47+0000\n"
+"PO-Revision-Date: 2026-08-18 05:15+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -435,8 +435,10 @@ msgstr ""
 msgid "The module :mod:`!socket` exports the following elements."
 msgstr ""
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=775f4a94807d run=2026-08-18T04:53Z
+#, fuzzy
 msgid "Exceptions"
-msgstr ""
+msgstr "Ngoại lệ"
 
 msgid "A deprecated alias of :exc:`OSError`."
 msgstr ""

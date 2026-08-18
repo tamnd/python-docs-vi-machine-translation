@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 04:47+0000\n"
+"PO-Revision-Date: 2026-08-18 05:15+0000\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -44,8 +44,10 @@ msgid ""
 "such as :mod:`itertools` and :mod:`functools`."
 msgstr ""
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=118148d50dd5 run=2026-08-18T04:53Z
+#, fuzzy
 msgid "Introduction"
-msgstr ""
+msgstr "Giới thiệu"
 
 msgid ""
 "This section explains the basic concept of functional programming; if you're "
@@ -254,8 +256,10 @@ msgid ""
 "and writing a few functions specialized for the current task."
 msgstr ""
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=6c6f030603f0 run=2026-08-18T04:53Z
+#, fuzzy
 msgid "Iterators"
-msgstr ""
+msgstr "Trình lặp"
 
 msgid ""
 "I'll start by looking at a Python language feature that's an important "
@@ -633,8 +637,10 @@ msgstr ""
 "# Correct\n"
 "[(x, y) for x in seq1 for y in seq2]"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=6c6f030603f0 run=2026-08-18T04:53Z
+#, fuzzy
 msgid "Generators"
-msgstr ""
+msgstr "Trình sinh"
 
 msgid ""
 "Generators are a special class of functions that simplify the task of "

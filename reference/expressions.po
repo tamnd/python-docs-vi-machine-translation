@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 04:47+0000\n"
+"PO-Revision-Date: 2026-08-18 05:15+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -2620,8 +2620,10 @@ msgstr ""
 msgid "atom"
 msgstr ""
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=cae42d21846f run=2026-08-18T04:53Z
+#, fuzzy
 msgid "name"
-msgstr ""
+msgstr "tên"
 
 msgid "identifier"
 msgstr ""
@@ -2632,8 +2634,10 @@ msgstr ""
 msgid "NameError"
 msgstr ""
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=cae42d21846f run=2026-08-18T04:53Z
+#, fuzzy
 msgid "mangling"
-msgstr ""
+msgstr "làm rối tên"
 
 msgid "private"
 msgstr ""
@@ -2680,8 +2684,10 @@ msgstr ""
 msgid "comprehensions"
 msgstr ""
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=a5a4871c332d run=2026-08-18T04:53Z
+#, fuzzy
 msgid "for"
-msgstr ""
+msgstr "cho"
 
 msgid "in comprehensions"
 msgstr ""
@@ -2771,8 +2777,10 @@ msgstr ""
 msgid "from"
 msgstr ""
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=a5a4871c332d run=2026-08-18T04:53Z
+#, fuzzy
 msgid "function"
-msgstr ""
+msgstr "hàm"
 
 msgid "coroutine"
 msgstr ""
@@ -2877,8 +2885,10 @@ msgstr ""
 msgid "built-in function"
 msgstr "hàm tích hợp sẵn"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=cae42d21846f run=2026-08-18T04:53Z
+#, fuzzy
 msgid "method"
-msgstr ""
+msgstr "phương thức"
 
 msgid "built-in method"
 msgstr ""
