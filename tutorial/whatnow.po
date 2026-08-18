@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-17 14:50+0000\n"
-"PO-Revision-Date: 2026-08-18 05:15+0000\n"
+"PO-Revision-Date: 2026-08-18 07:19+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -189,7 +189,7 @@ msgstr ""
 "xuyên xuất hiện và có thể đã chứa giải pháp cho vấn đề."
 
 msgid "Footnotes"
-msgstr " Chú thích"
+msgstr "Chú thích"
 
 # pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=84e0dd078ce7 run=2026-08-17T16:43Z
 #, fuzzy
