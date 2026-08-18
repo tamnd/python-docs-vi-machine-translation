@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 07:19+0000\n"
+"PO-Revision-Date: 2026-08-18 07:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.4\n"
+"X-Generator: pydocvi 0.1.6\n"
 
 msgid "Using the Python Interpreter"
 msgstr "Sử dụng trình thông dịch Python"
@@ -195,7 +195,7 @@ msgstr ""
 "dịch sẽ in một thông điệp chào mừng cho biết số phiên bản và thông báo bản "
 "quyền trước khi in dấu nhắc đầu tiên:"
 
-# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=c6117f98c468 run=2026-08-17T16:43Z
+# pydocvi: passthrough=literal_block
 #, fuzzy
 msgid ""
 "$ python3.15\n"
@@ -206,10 +206,10 @@ msgid ""
 ">>>"
 msgstr ""
 "$ python3.15\n"
-"Python 3.15 (mặc định, May 7 2025, 15:46:04)\n"
-"[GCC 10.2.0] trên linux\n"
-"Gõ \"help\", \"copyright\", \"credits\" hoặc \"license\" để biết thêm thông "
-"tin.\n"
+"Python 3.15 (default, May 7 2025, 15:46:04)\n"
+"[GCC 10.2.0] on linux\n"
+"Type \"help\", \"copyright\", \"credits\" or \"license\" for more "
+"information.\n"
 ">>>"
 
 msgid ""
@@ -219,6 +219,8 @@ msgstr ""
 "Các dòng tiếp nối là cần thiết khi nhập một cấu trúc nhiều dòng. Ví dụ, hãy "
 "xem câu lệnh :keyword:`if` này::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> the_world_is_flat = True\n"
 ">>> if the_world_is_flat:\n"
@@ -228,9 +230,9 @@ msgid ""
 msgstr ""
 ">>> the_world_is_flat = True\n"
 ">>> if the_world_is_flat:\n"
-"...     print(\"Hãy cẩn thận kẻo ngã!\")\n"
-"...\\\n"
-"Hãy cẩn thận kẻo ngã!"
+"...     print(\"Be careful not to fall off!\")\n"
+"...\n"
+"Be careful not to fall off!"
 
 msgid "For more on interactive mode, see :ref:`tut-interac`."
 msgstr "Để biết thêm về chế độ tương tác, hãy xem :ref:`tut-interac`."
@@ -266,6 +268,8 @@ msgstr ""
 "Để khai báo một kiểu mã hóa khác với mặc định, một dòng chú thích đặc biệt "
 "nên được thêm vào làm *dòng đầu tiên* của tệp. Cú pháp như sau::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "# -*- coding: encoding -*-"
 msgstr "# -*- coding: encoding -*-"
 
@@ -280,6 +284,8 @@ msgstr ""
 "Ví dụ, để khai báo rằng mã hóa Windows-1252 sẽ được sử dụng, dòng đầu tiên "
 "trong tệp mã nguồn của bạn phải là::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "# -*- coding: cp1252 -*-"
 msgstr "# -*- coding: cp1252 -*-"
 
@@ -292,6 +298,8 @@ msgstr ""
 "một :ref:`dòng \"shebang\" UNIX <tut-scripts>`. Trong trường hợp này, khai "
 "báo mã hóa nên được thêm vào dòng thứ hai của tệp. Ví dụ::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "#!/usr/bin/env python3\n"
 "# -*- coding: cp1252 -*-"

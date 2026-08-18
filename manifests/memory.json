@@ -2,12 +2,6 @@
  "version": 1,
  "segments": [
   {
-   "id": "001001cc9379a006",
-   "msgid": "def ask_ok(prompt, retries=4, reminder='Please try again!'):\n    while True:\n        reply = input(prompt)\n        if reply in {'y', 'ye', 'yes'}:\n            return True\n        if reply in {'n', 'no', 'nop', 'nope'}:\n            return False\n        retries = retries - 1\n        if retries < 0:\n            raise ValueError('invalid user response')\n        print(reminder)",
-   "msgstr": "def ask_ok(prompt, retries=4, reminder='Please try again!'):\n    while True:\n        reply = input(prompt)\n        if reply in {'y', 'ye', 'yes'}:\n            return True\n        if reply in {'n', 'no', 'nop', 'nope'}:\n            return False\n        retries = retries - 1\n        if retries < 0:\n            raise ValueError('invalid user response')\n        print(reminder)",
-   "source": "human"
-  },
-  {
    "id": "00268b93d686cb8a",
    "msgid": "Return the string representing a character with the specified Unicode code point. For example, ``chr(97)`` returns the string ``'a'``, while ``chr(8364)`` returns the string ``'€'``. This is the inverse of :func:`ord`.",
    "msgstr": "Trả về chuỗi đại diện cho một ký tự với mã Unicode được chỉ định. Ví dụ, ``chr(97)`` trả về chuỗi ``'a'``, trong khi ``chr(8364)`` trả về chuỗi ``'€'``. Đây là hàm nghịch đảo của :func:`ord`.",
@@ -238,12 +232,6 @@
    "id": "0331d914a30b8ada",
    "msgid": "and of course it would print:",
    "msgstr": "và tất nhiên nó sẽ in ra:",
-   "source": "human"
-  },
-  {
-   "id": "03326bd3fc8504d7",
-   "msgid": "from functools import partial\nwith open('mydata.db', 'rb') as f:\n    for block in iter(partial(f.read, 64), b''):\n        process_block(block)",
-   "msgstr": "from functools import partial\nwith open('mydata.db', 'rb') as f:\n    for block in iter(partial(f.read, 64), b''):\n        process_block(block)",
    "source": "human"
   },
   {
@@ -479,12 +467,6 @@
    "run": "2026-08-17T16:43Z"
   },
   {
-   "id": "07669f3291aa87a2",
-   "msgid": "spam = __import__('spam', globals(), locals(), [], 0)",
-   "msgstr": "spam = __import__('spam', globals(), locals(), [], 0)",
-   "source": "human"
-  },
-  {
    "id": "07821f4ef3b9c06f",
    "msgid": "Python enables programs to be written compactly and readably.  Programs written in Python are typically much shorter than equivalent C,  C++, or Java programs, for several reasons:",
    "msgstr": "Python cho phép các chương trình được viết một cách gọn gàng và dễ đọc. Các chương trình viết bằng Python thường ngắn hơn nhiều so với các chương trình C, C++ hoặc Java tương đương, vì một vài lý do sau:",
@@ -517,12 +499,6 @@
    "id": "08d29e323f863d59",
    "msgid": "Recap",
    "msgstr": "Tóm lại",
-   "source": "human"
-  },
-  {
-   "id": "08f35cf1804ea5ef",
-   "msgid": "class C:\n    def __init__(self):\n        self._x = None\n\n    @property\n    def x(self):\n        \"\"\"I'm the 'x' property.\"\"\"\n        return self._x\n\n    @x.setter\n    def x(self, value):\n        self._x = value\n\n    @x.deleter\n    def x(self):\n        del self._x",
-   "msgstr": "class C:\n    def __init__(self):\n        self._x = None\n\n    @property\n    def x(self):\n        \"\"\"I'm the 'x' property.\"\"\"\n        return self._x\n\n    @x.setter\n    def x(self, value):\n        self._x = value\n\n    @x.deleter\n    def x(self):\n        del self._x",
    "source": "human"
   },
   {
@@ -662,21 +638,9 @@
    "source": "human"
   },
   {
-   "id": "0bccd8ac31ad0939",
-   "msgid": ">>> the_world_is_flat = True\n>>> if the_world_is_flat:\n...     print(\"Be careful not to fall off!\")\n...\nBe careful not to fall off!",
-   "msgstr": ">>> the_world_is_flat = True\n>>> if the_world_is_flat:\n...     print(\"Hãy cẩn thận kẻo ngã!\")\n...\\\nHãy cẩn thận kẻo ngã!",
-   "source": "human"
-  },
-  {
    "id": "0bd90e0694f0f56d",
    "msgid": ":func:`type`",
    "msgstr": ":func:`type`",
-   "source": "human"
-  },
-  {
-   "id": "0bde411e101dc055",
-   "msgid": ">>> def parrot(voltage, state='a stiff', action='voom'):\n...     print(\"-- This parrot wouldn't\", action, end=' ')\n...     print(\"if you put\", voltage, \"volts through it.\", end=' ')\n...     print(\"E's\", state, \"!\")\n...\n>>> d = {\"voltage\": \"four million\", \"state\": \"bleedin' demised\", \"action\": \"VOOM\"}\n>>> parrot(**d)\n-- This parrot wouldn't VOOM if you put four million volts through it. E's bleedin' demised !",
-   "msgstr": ">>> def parrot(voltage, state='a stiff', action='voom'):\n...     print(\"-- This parrot wouldn't\", action, end=' ')\n...     print(\"if you put\", voltage, \"volts through it.\", end=' ')\n...     print(\"E's\", state, \"!\")\n...\n>>> d = {\"voltage\": \"four million\", \"state\": \"bleedin' demised\", \"action\": \"VOOM\"}\n>>> parrot(**d)\n-- This parrot wouldn't VOOM if you put four million volts through it. E's bleedin' demised !",
    "source": "human"
   },
   {
@@ -769,12 +733,6 @@
    "id": "0db754312a19234f",
    "msgid": "Here is an example of a multi-line docstring::",
    "msgstr": "Đây là ví dụ về docstring nhiều dòng::",
-   "source": "human"
-  },
-  {
-   "id": "0dc782c17617ba4c",
-   "msgid": "spam = __import__('spam.ham', globals(), locals(), [], 0)",
-   "msgstr": "spam = __import__('spam.ham', globals(), locals(), [], 0)",
    "source": "human"
   },
   {
@@ -892,12 +850,6 @@
    "source": "human"
   },
   {
-   "id": "107dbbab6107a767",
-   "msgid": ">>> text = ('Put several strings within parentheses '\n...         'to have them joined together.')\n>>> text\n'Put several strings within parentheses to have them joined together.'",
-   "msgstr": ">>> text = ('Đặt nhiều chuỗi trong dấu ngoặc đơn '\n... 'để chúng được nối lại với nhau.')\n>>> text\n'Đặt nhiều chuỗi trong dấu ngoặc đơn để chúng được nối lại với nhau.'",
-   "source": "human"
-  },
-  {
    "id": "1094e9d72e8bf79d",
    "msgid": "It is also possible to define functions with a variable number of arguments. There are three forms, which can be combined.",
    "msgstr": "Cũng có thể định nghĩa hàm với số lượng đối số biến đổi. Có ba dạng, có thể kết hợp với nhau.",
@@ -913,12 +865,6 @@
    "glossary": 1,
    "batch": "44417db9632c",
    "run": "2026-08-17T16:43Z"
-  },
-  {
-   "id": "10e63a7ad94b1de3",
-   "msgid": ">>> 'doesn\\'t'  # use \\' to escape the single quote...\n\"doesn't\"\n>>> \"doesn't\"  # ...or use double quotes instead\n\"doesn't\"\n>>> '\"Yes,\" they said.'\n'\"Yes,\" they said.'\n>>> \"\\\"Yes,\\\" they said.\"\n'\"Yes,\" they said.'\n>>> '\"Isn\\'t,\" they said.'\n'\"Isn\\'t,\" they said.'",
-   "msgstr": ">>> 'doesn\\'t' # sử dụng \\' để thoát dấu ngoặc đơn...\n\"doesn't\"\n>>> \"doesn't\" # ...hoặc sử dụng dấu ngoặc kép để thay thế\n\"doesn't\"\n>>> '\"Yes,\" they said.'\n'\"Yes,\" they said.'\n>>> \"\\\"Yes,\\\" they said.\"\n'\"Yes,\" they said.'\n>>> '\"Isn\\'t,\" they said.'\n'\"Isn\\'t,\" they said.'",
-   "source": "human"
   },
   {
    "id": "11376ed997c7c7a7",
@@ -958,12 +904,6 @@
    "id": "1183ecd5546f5ca4",
    "msgid": "The default values are evaluated at the point of function definition in the *defining* scope, so that ::",
    "msgstr": "Các giá trị mặc định được đánh giá tại thời điểm định nghĩa hàm trong phạm vi *định nghĩa*, vì vậy::",
-   "source": "human"
-  },
-  {
-   "id": "11bfca77a5fd4a5a",
-   "msgid": ">>> list(range(5, 10))\n[5, 6, 7, 8, 9]\n\n>>> list(range(0, 10, 3))\n[0, 3, 6, 9]\n\n>>> list(range(-10, -100, -30))\n[-10, -40, -70]",
-   "msgstr": ">>> list(range(5, 10))\n[5, 6, 7, 8, 9]\n\n>>> list(range(0, 10, 3))\n[0, 3, 6, 9]\n\n>>> list(range(-10, -100, -30))\n[-10, -40, -70]",
    "source": "human"
   },
   {
@@ -1224,12 +1164,6 @@
    "run": "2026-08-17T16:43Z"
   },
   {
-   "id": "16b5d283faab471b",
-   "msgid": ">>> x = [1, 2, 3]\n>>> y = [4, 5, 6]\n>>> list(zip(x, y))\n[(1, 4), (2, 5), (3, 6)]\n>>> x2, y2 = zip(*zip(x, y))\n>>> x == list(x2) and y == list(y2)\nTrue",
-   "msgstr": ">>> x = [1, 2, 3]\n>>> y = [4, 5, 6]\n>>> list(zip(x, y))\n[(1, 4), (2, 5), (3, 6)]\n>>> x2, y2 = zip(*zip(x, y))\n>>> x == list(x2) and y == list(y2)\nTrue",
-   "source": "human"
-  },
-  {
    "id": "16c23fb5c5133673",
    "msgid": "When an exception is created in order to be raised, it is usually initialized with information that describes the error that has occurred. There are cases where it is useful to add information after the exception was caught. For this purpose, exceptions have a method ``add_note(note)`` that accepts a string and adds it to the exception's notes list. The standard traceback rendering includes all notes, in the order they were added, after the exception. ::",
    "msgstr": "Khi một ngoại lệ được tạo để đưa ra, nó thường được khởi tạo với thông tin mô tả lỗi đã xảy ra. Có những trường hợp hữu ích khi thêm thông tin sau khi ngoại lệ đã được bắt. Vì mục đích này, ngoại lệ có một phương thức ``add_note(note)`` nhận một chuỗi và thêm nó vào list ghi chú của ngoại lệ. Việc kết xuất traceback tiêu chuẩn bao gồm tất cả ghi chú, theo thứ tự chúng được thêm vào, sau ngoại lệ. ::",
@@ -1239,12 +1173,6 @@
    "glossary": 1,
    "batch": "c96219f4accc",
    "run": "2026-08-17T16:43Z"
-  },
-  {
-   "id": "16c3833dd08b897a",
-   "msgid": ">>> while True:\n...     pass  # Busy-wait for keyboard interrupt (Ctrl+C)\n...",
-   "msgstr": ">>> while True:\n...     pass  # Busy-wait for keyboard interrupt (Ctrl+C)\n...",
-   "source": "human"
   },
   {
    "id": "16cbe993c0cb4606",
@@ -1343,21 +1271,9 @@
    "run": "2026-08-17T16:43Z"
   },
   {
-   "id": "18c57bdad4e14aa4",
-   "msgid": ">>> def concat(*args, sep=\"/\"):\n...     return sep.join(args)\n...\n>>> concat(\"earth\", \"mars\", \"venus\")\n'earth/mars/venus'\n>>> concat(\"earth\", \"mars\", \"venus\", sep=\".\")\n'earth.mars.venus'",
-   "msgstr": ">>> def concat(*args, sep=\"/\"):\n...     return sep.join(args)\n...\n>>> concat(\"earth\", \"mars\", \"venus\")\n'earth/mars/venus'\n>>> concat(\"earth\", \"mars\", \"venus\", sep=\".\")\n'earth.mars.venus'",
-   "source": "human"
-  },
-  {
    "id": "19dfd2da1e90b0b4",
    "msgid": "Sums *start* and the items of an *iterable* from left to right and returns the total.  The *iterable*'s items are normally numbers, and the start value is not allowed to be a string.",
    "msgstr": "Cộng *start* và các phần tử của *iterable* từ trái sang phải và trả về tổng. Các phần tử của *iterable* thường là số, và giá trị start không được phép là chuỗi.",
-   "source": "human"
-  },
-  {
-   "id": "19f7d0355cea73dd",
-   "msgid": ">>> float('+1.23')\n1.23\n>>> float('   -12345\\n')\n-12345.0\n>>> float('1e-003')\n0.001\n>>> float('+1E6')\n1000000.0\n>>> float('-Infinity')\n-inf",
-   "msgstr": ">>> float('+1.23')\n1.23\n>>> float('   -12345\\n')\n-12345.0\n>>> float('1e-003')\n0.001\n>>> float('+1E6')\n1000000.0\n>>> float('-Infinity')\n-inf",
    "source": "human"
   },
   {
@@ -1552,12 +1468,6 @@
    "glossary": 1,
    "batch": "a9d03541538c",
    "run": "2026-08-17T16:43Z"
-  },
-  {
-   "id": "1e47616fd8cd9007",
-   "msgid": ">>> sum(range(4))  # 0 + 1 + 2 + 3\n6",
-   "msgstr": ">>> sum(range(4))  # 0 + 1 + 2 + 3\n6",
-   "source": "human"
   },
   {
    "id": "1e6507a2110103f2",
@@ -1872,12 +1782,6 @@
    "run": "2026-08-17T16:43Z"
   },
   {
-   "id": "2582edf651c601c6",
-   "msgid": ">>> fib\n<function fib at 10042ed0>\n>>> f = fib\n>>> f(100)\n0 1 1 2 3 5 8 13 21 34 55 89",
-   "msgstr": ">>> fib\n<function fib at 10042ed0>\n>>> f = fib\n>>> f(100)\n0 1 1 2 3 5 8 13 21 34 55 89",
-   "source": "human"
-  },
-  {
    "id": "2590a8ba17c4e109",
    "msgid": ":func:`ord`",
    "msgstr": ":func:`ord`",
@@ -1971,12 +1875,6 @@
    "source": "human"
   },
   {
-   "id": "26c4cf78fa6216c8",
-   "msgid": ">>> i = 256*256\n>>> print('The value of i is', i)\nThe value of i is 65536",
-   "msgstr": ">>> i = 256*256\n>>> print('Giá trị của i là', i)\nGiá trị của i là 65536",
-   "source": "human"
-  },
-  {
    "id": "2742731696a132d3",
    "msgid": "Return an iterator that applies *function* to every item of *iterable*, yielding the results.  If additional *iterables* arguments are passed, *function* must take that many arguments and is applied to the items from all iterables in parallel.  With multiple iterables, the iterator stops when the shortest iterable is exhausted.  If *strict* is ``True`` and one of the iterables is exhausted before the others, a :exc:`ValueError` is raised. For cases where the function inputs are already arranged into argument tuples, see :func:`itertools.starmap`.",
    "msgstr": "Trả về một trình lặp áp dụng *function* cho mọi mục của *iterable*, tạo ra các kết quả. Nếu các đối số *iterables* bổ sung được truyền vào, *function* phải nhận bấy nhiêu đối số và được áp dụng đồng thời cho các mục từ tất cả các iterable. Với nhiều iterable, trình lặp sẽ dừng lại khi iterable ngắn nhất cạn kiệt. Nếu *strict* là ``True`` và một trong các iterable bị cạn kiệt trước những cái khác, một :exc:`ValueError` sẽ được đưa ra. Đối với các trường hợp mà đầu vào hàm đã được sắp xếp thành các tuple đối số, hãy xem :func:`itertools.starmap`.",
@@ -2027,12 +1925,6 @@
    "glossary": 1,
    "batch": "f265350a1ea9",
    "run": "2026-08-17T16:43Z"
-  },
-  {
-   "id": "28ba8b6eff46ad95",
-   "msgid": ">>> letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g']\n>>> letters\n['a', 'b', 'c', 'd', 'e', 'f', 'g']\n>>> # replace some values\n>>> letters[2:5] = ['C', 'D', 'E']\n>>> letters\n['a', 'b', 'C', 'D', 'E', 'f', 'g']\n>>> # now remove them\n>>> letters[2:5] = []\n>>> letters\n['a', 'b', 'f', 'g']\n>>> # clear the list by replacing all the elements with an empty list\n>>> letters[:] = []\n>>> letters\n[]",
-   "msgstr": ">>> letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g']\n>>> letters\n['a', 'b', 'c', 'd', 'e', 'f', 'g']\n>>> # thay thế một số giá trị\n>>> letters[2:5] = ['C', 'D', 'E']\n>>> letters\n['a', 'b', 'C', 'D', 'E', 'f', 'g']\n>>> # bây giờ loại bỏ chúng\n>>> letters[2:5] = []\n>>> letters\n['a', 'b', 'f', 'g']\n>>> # xóa sạch danh sách bằng cách thay thế tất cả các phần tử bằng một danh sách trống\n>>> letters[:] = []\n>>> letters\n[]",
-   "source": "human"
   },
   {
    "id": "292ca97185e3724b",
@@ -2095,12 +1987,6 @@
    "glossary": 1,
    "batch": "10da7e8a3566",
    "run": "2026-08-17T16:43Z"
-  },
-  {
-   "id": "29ff32e88b98f6e4",
-   "msgid": ">>> rgb = [\"Red\", \"Green\", \"Blue\"]\n>>> rgba = rgb\n>>> id(rgb) == id(rgba)  # they reference the same object\nTrue\n>>> rgba.append(\"Alph\")\n>>> rgb\n[\"Red\", \"Green\", \"Blue\", \"Alph\"]",
-   "msgstr": ">>> rgb = [\"Red\", \"Green\", \"Blue\"]\n>>> rgba = rgb\n>>> id(rgb) == id(rgba) # chúng tham chiếu đến cùng một đối tượng\nTrue\n>>> rgba.append(\"Alph\")\n>>> rgb\n[\"Red\", \"Green\", \"Blue\", \"Alph\"]",
-   "source": "human"
   },
   {
    "id": "2a09d3ac670637ee",
@@ -2197,12 +2083,6 @@
    "glossary": 1,
    "batch": "ade2545b0bab",
    "run": "2026-08-17T16:43Z"
-  },
-  {
-   "id": "2b2c2d92476accaf",
-   "msgid": ">>> pow(38, -1, mod=97)\n23\n>>> 23 * 38 % 97 == 1\nTrue",
-   "msgstr": ">>> pow(38, -1, mod=97)\n23\n>>> 23 * 38 % 97 == 1\nTrue",
-   "source": "human"
   },
   {
    "id": "2b4e80c519cc6f10",
@@ -2314,12 +2194,6 @@
    "id": "2db810ecd5074cdb",
    "msgid": "You can use positional parameters with some builtin classes that provide an ordering for their attributes (e.g. dataclasses). You can also define a specific position for attributes in patterns by setting the ``__match_args__`` special attribute in your classes. If it's set to (\"x\", \"y\"), the following patterns are all equivalent (and all bind the ``y`` attribute to the ``var`` variable)::",
    "msgstr": "Có thể dùng tham số vị trí với một số class tích hợp sẵn cung cấp thứ tự cho attribute của chúng (ví dụ: dataclasses). Cũng có thể định nghĩa vị trí cụ thể cho attribute trong các mẫu bằng cách đặt attribute đặc biệt ``__match_args__`` trong class. Nếu được đặt thành (\"x\", \"y\"), các mẫu sau đây đều tương đương (và tất cả đều gán attribute ``y`` cho biến ``var``)::",
-   "source": "human"
-  },
-  {
-   "id": "2e059a279ec6b7d6",
-   "msgid": ">>> def make_incrementor(n):\n...     return lambda x: x + n\n...\n>>> f = make_incrementor(42)\n>>> f(0)\n42\n>>> f(1)\n43",
-   "msgstr": ">>> def make_incrementor(n):\n...     return lambda x: x + n\n...\n>>> f = make_incrementor(42)\n>>> f(0)\n42\n>>> f(1)\n43",
    "source": "human"
   },
   {
@@ -2574,12 +2448,6 @@
    "source": "human"
   },
   {
-   "id": "31a56bd191259cd7",
-   "msgid": "from enum import Enum\nclass Color(Enum):\n    RED = 'red'\n    GREEN = 'green'\n    BLUE = 'blue'\n\ncolor = Color(input(\"Enter your choice of 'red', 'blue' or 'green': \"))\n\nmatch color:\n    case Color.RED:\n        print(\"I see red!\")\n    case Color.GREEN:\n        print(\"Grass is green\")\n    case Color.BLUE:\n        print(\"I'm feeling the blues :(\")",
-   "msgstr": "from enum import Enum\nclass Color(Enum):\n    RED = 'red'\n    GREEN = 'green'\n    BLUE = 'blue'\n\ncolor = Color(input(\"Enter your choice of 'red', 'blue' or 'green': \"))\n\nmatch color:\n    case Color.RED:\n        print(\"I see red!\")\n    case Color.GREEN:\n        print(\"Grass is green\")\n    case Color.BLUE:\n        print(\"I'm feeling the blues :(\")",
-   "source": "human"
-  },
-  {
    "id": "31d97a97f3af0bfa",
    "msgid": "It is good practice to use the :keyword:`with` keyword when dealing with file objects.  The advantage is that the file is properly closed after its suite finishes, even if an exception is raised at some point.  Using :keyword:`!with` is also much shorter than writing equivalent :keyword:`try`\\ -\\ :keyword:`finally` blocks::",
    "msgstr": "Nên sử dụng từ khóa :keyword:`with` khi làm việc với các đối tượng tệp. Ưu điểm là tệp được đóng đúng cách sau khi phần thân của nó kết thúc, ngay cả khi có ngoại lệ được phát sinh tại một thời điểm nào đó. Sử dụng :keyword:`!with` cũng ngắn hơn nhiều so với việc viết các khối :keyword:`try`\\ -\\ :keyword:`finally` tương đương::",
@@ -2622,18 +2490,6 @@
    "glossary": 1,
    "batch": "86fed3dcf0f6",
    "run": "2026-08-17T16:43Z"
-  },
-  {
-   "id": "326dfa58d552dcdd",
-   "msgid": "class Point:\n    def __init__(self, x, y):\n        self.x = x\n        self.y = y\n\ndef where_is(point):\n    match point:\n        case Point(x=0, y=0):\n            print(\"Origin\")\n        case Point(x=0, y=y):\n            print(f\"Y={y}\")\n        case Point(x=x, y=0):\n            print(f\"X={x}\")\n        case Point():\n            print(\"Somewhere else\")\n        case _:\n            print(\"Not a point\")",
-   "msgstr": "class Point:\n    def __init__(self, x, y):\n        self.x = x\n        self.y = y\n\ndef where_is(point):\n    match point:\n        case Point(x=0, y=0):\n            print(\"Origin\")\n        case Point(x=0, y=y):\n            print(f\"Y={y}\")\n        case Point(x=x, y=0):\n            print(f\"X={x}\")\n        case Point():\n            print(\"Somewhere else\")\n        case _:\n            print(\"Not a point\")",
-   "source": "human"
-  },
-  {
-   "id": "327a13ace0d2f043",
-   "msgid": ">>> 2 + 2\n4\n>>> 50 - 5*6\n20\n>>> (50 - 5*6) / 4\n5.0\n>>> 8 / 5  # division always returns a floating-point number\n1.6",
-   "msgstr": ">>> 2 + 2\n4\n>>> 50 - 5*6\n20\n>>> (50 - 5*6) / 4\n5.0\n>>> 8 / 5 # phép chia luôn trả về một số dấu phẩy động\n1.6",
-   "source": "human"
   },
   {
    "id": "327bae97d8deea5c",
@@ -2702,12 +2558,6 @@
    "glossary": 1,
    "batch": "44417db9632c",
    "run": "2026-08-17T16:43Z"
-  },
-  {
-   "id": "334cb7a5423946b1",
-   "msgid": "def f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2):\n      -----------    ----------     ----------\n        |             |                  |\n        |        Positional or keyword   |\n        |                                - Keyword only\n         -- Positional only",
-   "msgstr": "def f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2):\n      -----------    ----------     ----------\n        |             |                  |\n        |        Positional or keyword   |\n        |                                - Keyword only\n         -- Positional only",
-   "source": "human"
   },
   {
    "id": "33539d9e13f92dc6",
@@ -3117,24 +2967,6 @@
    "run": "2026-08-17T16:43Z"
   },
   {
-   "id": "3adbebc3fafdd95c",
-   "msgid": ">>> a = ['a', 'b', 'c']\n>>> n = [1, 2, 3]\n>>> x = [a, n]\n>>> x\n[['a', 'b', 'c'], [1, 2, 3]]\n>>> x[0]\n['a', 'b', 'c']\n>>> x[0][1]\n'b'",
-   "msgstr": ">>> a = ['a', 'b', 'c']\n>>> n = [1, 2, 3]\n>>> x = [a, n]\n>>> x\n[['a', 'b', 'c'], [1, 2, 3]]\n>>> x[0]\n['a', 'b', 'c']\n>>> x[0][1]\n'b'",
-   "source": "human"
-  },
-  {
-   "id": "3b383ae83ad16aae",
-   "msgid": ">>> 'J' + word[1:]\n'Jython'\n>>> word[:2] + 'py'\n'Pypy'",
-   "msgstr": ">>> 'J' + word[1:]\n'Jython'\n>>> word[:2] + 'py'\n'Pypy'",
-   "source": "human"
-  },
-  {
-   "id": "3b6abebfd5beefe1",
-   "msgid": "[1]\n[1, 2]\n[1, 2, 3]",
-   "msgstr": "[1]\n[1, 2]\n[1, 2, 3]",
-   "source": "human"
-  },
-  {
    "id": "3b728a48f2a14239",
    "msgid": "Error output redirection and program termination",
    "msgstr": "Chuyển hướng đầu ra lỗi và kết thúc chương trình",
@@ -3172,12 +3004,6 @@
    "glossary": 1,
    "batch": "60800e02afb8",
    "run": "2026-08-17T16:43Z"
-  },
-  {
-   "id": "3c87e5fa5f38be9c",
-   "msgid": "# point is an (x, y) tuple\nmatch point:\n    case (0, 0):\n        print(\"Origin\")\n    case (0, y):\n        print(f\"Y={y}\")\n    case (x, 0):\n        print(f\"X={x}\")\n    case (x, y):\n        print(f\"X={x}, Y={y}\")\n    case _:\n        raise ValueError(\"Not a point\")",
-   "msgstr": "# point is an (x, y) tuple\nmatch point:\n    case (0, 0):\n        print(\"Origin\")\n    case (0, y):\n        print(f\"Y={y}\")\n    case (x, 0):\n        print(f\"X={x}\")\n    case (x, y):\n        print(f\"X={x}, Y={y}\")\n    case _:\n        raise ValueError(\"Not a point\")",
-   "source": "human"
   },
   {
    "id": "3cbd5f84d404c30b",
@@ -3218,18 +3044,6 @@
    "id": "3d975695fe935afe",
    "msgid": "Functions can also be called using :term:`keyword arguments <keyword argument>` of the form ``kwarg=value``.  For instance, the following function::",
    "msgstr": "Hàm cũng có thể được gọi bằng :term:`keyword arguments <keyword argument>` có dạng ``kwarg=value``. Chẳng hạn, hàm sau::",
-   "source": "human"
-  },
-  {
-   "id": "3dac65b5a6e00be6",
-   "msgid": ">>> list(range(3, 6))            # normal call with separate arguments\n[3, 4, 5]\n>>> args = [3, 6]\n>>> list(range(*args))            # call with arguments unpacked from a list\n[3, 4, 5]",
-   "msgstr": ">>> list(range(3, 6))            # normal call with separate arguments\n[3, 4, 5]\n>>> args = [3, 6]\n>>> list(range(*args))            # call with arguments unpacked from a list\n[3, 4, 5]",
-   "source": "human"
-  },
-  {
-   "id": "3db2d6d4166d8582",
-   "msgid": "_temp = __import__('spam.ham', globals(), locals(), ['eggs', 'sausage'], 0)\neggs = _temp.eggs\nsaus = _temp.sausage",
-   "msgstr": "_temp = __import__('spam.ham', globals(), locals(), ['eggs', 'sausage'], 0)\neggs = _temp.eggs\nsaus = _temp.sausage",
    "source": "human"
   },
   {
@@ -3489,12 +3303,6 @@
    "run": "2026-08-17T16:43Z"
   },
   {
-   "id": "4543e688be4e2d23",
-   "msgid": ">>> squares[0]  # indexing returns the item\n1\n>>> squares[-1]\n25\n>>> squares[-3:]  # slicing returns a new list\n[9, 16, 25]",
-   "msgstr": ">>> squares[0] # đánh chỉ số trả về phần tử\n1\n>>> squares[-1]\n25\n>>> squares[-3:] # cắt lát trả về một danh sách mới\n[9, 16, 25]",
-   "source": "human"
-  },
-  {
    "id": "458618ada0b3eb4c",
    "msgid": "There are two optional keyword-only arguments. The *key* argument specifies a one-argument ordering function like that used for :meth:`list.sort`. The *default* argument specifies an object to return if the provided iterable is empty. If the iterable is empty and *default* is not provided, a :exc:`ValueError` is raised.",
    "msgstr": "Có hai đối số chỉ khóa tùy chọn. Đối số *key* chỉ định một hàm sắp xếp một đối số tương tự như hàm được sử dụng cho :meth:`list.sort`. Đối số *default* chỉ định một đối tượng sẽ được trả về nếu iterable được cung cấp là trống. Nếu iterable trống và *default* không được cung cấp, một :exc:`ValueError` sẽ được trả về.",
@@ -3717,12 +3525,6 @@
    "source": "human"
   },
   {
-   "id": "49ea0ca09e83fa0d",
-   "msgid": ">>> import os\n>>> dir_fd = os.open('somedir', os.O_RDONLY)\n>>> def opener(path, flags):\n...     return os.open(path, flags, dir_fd=dir_fd)\n...\n>>> with open('spamspam.txt', 'w', opener=opener) as f:\n...     print('This will be written to somedir/spamspam.txt', file=f)\n...\n>>> os.close(dir_fd)  # don't leak a file descriptor",
-   "msgstr": ">>> import os\n>>> dir_fd = os.open('somedir', os.O_RDONLY)\n>>> def opener(path, flags):\n...     return os.open(path, flags, dir_fd=dir_fd)\n...\n>>> with open('spamspam.txt', 'w', opener=opener) as f:\n...     print('This will be written to somedir/spamspam.txt', file=f)\n...\n>>> os.close(dir_fd)  # don't leak a file descriptor",
-   "source": "human"
-  },
-  {
    "id": "49eeba466759fdd7",
    "msgid": "This helps users with small displays and makes it possible to have several code files side-by-side on larger displays.",
    "msgstr": "Điều này giúp người dùng có màn hình nhỏ và cho phép xem nhiều tệp mã cạnh nhau trên màn hình lớn hơn.",
@@ -3761,12 +3563,6 @@
    "id": "4b1bd5c345699783",
    "msgid": "If you do need to iterate over a sequence of numbers, the built-in function :func:`range` comes in handy.  It generates arithmetic progressions::",
    "msgstr": "Nếu bạn thực sự cần lặp qua một dãy số, hàm tích hợp :func:`range` sẽ rất hữu ích. Nó tạo ra các cấp số cộng::",
-   "source": "human"
-  },
-  {
-   "id": "4b44b422c8944655",
-   "msgid": ">>> def f(ham: str, eggs: str = 'eggs') -> str:\n...     print(\"Annotations:\", f.__annotations__)\n...     print(\"Arguments:\", ham, eggs)\n...     return ham + ' and ' + eggs\n...\n>>> f('spam')\nAnnotations: {'ham': <class 'str'>, 'return': <class 'str'>, 'eggs': <class 'str'>}\nArguments: spam eggs\n'spam and eggs'",
-   "msgstr": ">>> def f(ham: str, eggs: str = 'eggs') -> str:\n...     print(\"Annotations:\", f.__annotations__)\n...     print(\"Arguments:\", ham, eggs)\n...     return ham + ' and ' + eggs\n...\n>>> f('spam')\nAnnotations: {'ham': <class 'str'>, 'return': <class 'str'>, 'eggs': <class 'str'>}\nArguments: spam eggs\n'spam and eggs'",
    "source": "human"
   },
   {
@@ -3955,12 +3751,6 @@
    "id": "4d4cb99b0b013ac5",
    "msgid": ":ref:`formatstrings`",
    "msgstr": ":ref:`formatstrings`",
-   "source": "human"
-  },
-  {
-   "id": "4d4dcc9e7d21f9a0",
-   "msgid": ">>> complex('+1.23')\n(1.23+0j)\n>>> complex('-4.5j')\n-4.5j\n>>> complex('-1.23+4.5j')\n(-1.23+4.5j)\n>>> complex('\\t( -1.23+4.5J )\\n')\n(-1.23+4.5j)\n>>> complex('-Infinity+NaNj')\n(-inf+nanj)\n>>> complex(1.23)\n(1.23+0j)\n>>> complex(imag=-4.5)\n-4.5j\n>>> complex(-1.23, 4.5)\n(-1.23+4.5j)",
-   "msgstr": ">>> complex('+1.23')\n(1.23+0j)\n>>> complex('-4.5j')\n-4.5j\n>>> complex('-1.23+4.5j')\n(-1.23+4.5j)\n>>> complex('\\t( -1.23+4.5J )\\n')\n(-1.23+4.5j)\n>>> complex('-Infinity+NaNj')\n(-inf+nanj)\n>>> complex(1.23)\n(1.23+0j)\n>>> complex(imag=-4.5)\n-4.5j\n>>> complex(-1.23, 4.5)\n(-1.23+4.5j)",
    "source": "human"
   },
   {
@@ -4165,12 +3955,6 @@
    "source": "human"
   },
   {
-   "id": "50c7abad58a78860",
-   "msgid": "def all(iterable):\n    for element in iterable:\n        if not element:\n            return False\n    return True",
-   "msgstr": "def all(iterable):\n    for element in iterable:\n        if not element:\n            return False\n    return True",
-   "source": "human"
-  },
-  {
    "id": "50e8aaa0101acbc4",
    "msgid": "Note that if the *except clauses* were reversed (with ``except B`` first), it would have printed B, B, B --- the first matching *except clause* is triggered.",
    "msgstr": "Lưu ý rằng nếu các *mệnh đề except* bị đảo ngược (với ``except B`` trước tiên), nó sẽ in B, B, B --- *mệnh đề except* khớp đầu tiên sẽ được kích hoạt.",
@@ -4245,27 +4029,9 @@
    "source": "human"
   },
   {
-   "id": "5322ab2c0ea704b7",
-   "msgid": ">>> 4 * 3.75 - 1\n14.0",
-   "msgstr": ">>> 4 * 3.75 - 1\n14.0",
-   "source": "human"
-  },
-  {
    "id": "533b643416788819",
    "msgid": "On Windows, opening a console buffer may return a subclass of :class:`io.RawIOBase` other than :class:`io.FileIO`.",
    "msgstr": "Trên Windows, việc mở bộ đệm console có thể trả về một lớp con của :class:`io.RawIOBase` khác với :class:`io.FileIO`.",
-   "source": "human"
-  },
-  {
-   "id": "53975d736f0ac961",
-   "msgid": "class Person:\n   def __init__(self, name, age):\n      self.name = name\n      self.age = age\n\n   def __repr__(self):\n      return f\"Person({self.name!r}, {self.age!r})\"",
-   "msgstr": "class Person:\n   def __init__(self, name, age):\n      self.name = name\n      self.age = age\n\n   def __repr__(self):\n      return f\"Person({self.name!r}, {self.age!r})\"",
-   "source": "human"
-  },
-  {
-   "id": "53ba12ce64e15605",
-   "msgid": "match point:\n    case Point(x, y) if x == y:\n        print(f\"Y=X at {x}\")\n    case Point(x, y):\n        print(f\"Not on the diagonal\")",
-   "msgstr": "match point:\n    case Point(x, y) if x == y:\n        print(f\"Y=X at {x}\")\n    case Point(x, y):\n        print(f\"Not on the diagonal\")",
    "source": "human"
   },
   {
@@ -4278,12 +4044,6 @@
    "id": "53dddb23e31374e2",
    "msgid": "sys",
    "msgstr": "sys",
-   "source": "human"
-  },
-  {
-   "id": "53e732d419cea206",
-   "msgid": ">>> def standard_arg(arg):\n...     print(arg)\n...\n>>> def pos_only_arg(arg, /):\n...     print(arg)\n...\n>>> def kwd_only_arg(*, arg):\n...     print(arg)\n...\n>>> def combined_example(pos_only, /, standard, *, kwd_only):\n...     print(pos_only, standard, kwd_only)",
-   "msgstr": ">>> def standard_arg(arg):\n...     print(arg)\n...\n>>> def pos_only_arg(arg, /):\n...     print(arg)\n...\n>>> def kwd_only_arg(*, arg):\n...     print(arg)\n...\n>>> def combined_example(pos_only, /, standard, *, kwd_only):\n...     print(pos_only, standard, kwd_only)",
    "source": "human"
   },
   {
@@ -4302,18 +4062,6 @@
    "glossary": 1,
    "batch": "21ec5aea4a73",
    "run": "2026-08-17T16:43Z"
-  },
-  {
-   "id": "54112b455ef0844e",
-   "msgid": "import pickle\n\nPICKLABLE = sentinel(\"PICKLABLE\")\n\nassert pickle.loads(pickle.dumps(PICKLABLE)) is PICKLABLE\n\nclass Cls:\n    PICKLABLE = sentinel(\"Cls.PICKLABLE\")\n\nassert pickle.loads(pickle.dumps(Cls.PICKLABLE)) is Cls.PICKLABLE",
-   "msgstr": "import pickle\n\nPICKLABLE = sentinel(\"PICKLABLE\")\n\nassert pickle.loads(pickle.dumps(PICKLABLE)) is PICKLABLE\n\nclass Cls:\n    PICKLABLE = sentinel(\"Cls.PICKLABLE\")\n\nassert pickle.loads(pickle.dumps(Cls.PICKLABLE)) is Cls.PICKLABLE",
-   "source": "human"
-  },
-  {
-   "id": "5420da911f53c18d",
-   "msgid": "cheeseshop(\"Limburger\", \"It's very runny, sir.\",\n           \"It's really very, VERY runny, sir.\",\n           shopkeeper=\"Michael Palin\",\n           client=\"John Cleese\",\n           sketch=\"Cheese Shop Sketch\")",
-   "msgstr": "cheeseshop(\"Limburger\", \"It's very runny, sir.\",\n           \"It's really very, VERY runny, sir.\",\n           shopkeeper=\"Michael Palin\",\n           client=\"John Cleese\",\n           sketch=\"Cheese Shop Sketch\")",
-   "source": "human"
   },
   {
    "id": "545a9aefbe6bee98",
@@ -4350,12 +4098,6 @@
    "source": "human"
   },
   {
-   "id": "55115e31e9271b7c",
-   "msgid": ">>> pairs = [(1, 'one'), (2, 'two'), (3, 'three'), (4, 'four')]\n>>> pairs.sort(key=lambda pair: pair[1])\n>>> pairs\n[(4, 'four'), (1, 'one'), (3, 'three'), (2, 'two')]",
-   "msgstr": ">>> pairs = [(1, 'one'), (2, 'two'), (3, 'three'), (4, 'four')]\n>>> pairs.sort(key=lambda pair: pair[1])\n>>> pairs\n[(4, 'four'), (1, 'one'), (3, 'three'), (2, 'two')]",
-   "source": "human"
-  },
-  {
    "id": "555220b031aab2c9",
    "msgid": "Introduction",
    "msgstr": "Giới thiệu",
@@ -4376,12 +4118,6 @@
    "glossary": 1,
    "batch": "a899e7fdc638",
    "run": "2026-08-17T16:43Z"
-  },
-  {
-   "id": "557c8398a1b5de16",
-   "msgid": "i = 5\n\ndef f(arg=i):\n    print(arg)\n\ni = 6\nf()",
-   "msgstr": "i = 5\n\ndef f(arg=i):\n    print(arg)\n\ni = 6\nf()",
-   "source": "human"
   },
   {
    "id": "55852268ac2eb1d7",
@@ -4492,12 +4228,6 @@
    "source": "human"
   },
   {
-   "id": "56e013dff2141570",
-   "msgid": "def http_error(status):\n    match status:\n        case 400:\n            return \"Bad request\"\n        case 404:\n            return \"Not found\"\n        case 418:\n            return \"I'm a teapot\"\n        case _:\n            return \"Something's wrong with the internet\"",
-   "msgstr": "def http_error(status):\n    match status:\n        case 400:\n            return \"Bad request\"\n        case 404:\n            return \"Not found\"\n        case 418:\n            return \"I'm a teapot\"\n        case _:\n            return \"Something's wrong with the internet\"",
-   "source": "human"
-  },
-  {
    "id": "56e2affe7e0cdadc",
    "msgid": "Python allows you to split your program into modules that can be reused in other Python programs.  It comes with a large collection of standard modules that you can use as the basis of your programs --- or as examples to start learning to program in Python.  Some of these modules provide things like file I/O, system calls, sockets, and even interfaces to graphical user interface toolkits like Tk.",
    "msgstr": "Python cho phép bạn chia chương trình của mình thành các mô-đun có thể tái sử dụng trong các chương trình Python khác. Nó đi kèm với một tập hợp lớn các mô-đun tiêu chuẩn mà bạn có thể sử dụng làm nền tảng cho các chương trình của mình --- hoặc làm ví dụ để bắt đầu học lập trình Python. Một số mô-đun này cung cấp những thứ như file I/O, system calls, socket, và thậm chí cả giao diện cho các bộ công cụ giao diện người dùng đồ họa như Tk.",
@@ -4532,21 +4262,9 @@
    "run": "2026-08-17T16:43Z"
   },
   {
-   "id": "577dfe865bdcdc39",
-   "msgid": ">>> 5 ** 2  # 5 squared\n25\n>>> 2 ** 7  # 2 to the power of 7\n128",
-   "msgstr": ">>> 5 ** 2 # 5 bình phương\n25\n>>> 2 ** 7 # 2 lũy thừa 7\n128",
-   "source": "human"
-  },
-  {
    "id": "5789bd60aff51060",
    "msgid": "For Python, :pep:`8` has emerged as the style guide that most projects adhere to; it promotes a very readable and eye-pleasing coding style.  Every Python developer should read it at some point; here are the most important points extracted for you:",
    "msgstr": "Với Python, :pep:`8` đã nổi lên như hướng dẫn phong cách mà hầu hết các dự án tuân theo; nó thúc đẩy phong cách viết mã rất dễ đọc và đẹp mắt. Mọi lập trình viên Python đều nên đọc nó vào lúc nào đó; đây là những điểm quan trọng nhất:",
-   "source": "human"
-  },
-  {
-   "id": "578bffe238c0d19f",
-   "msgid": ">>> combined_example(1, 2, 3)\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nTypeError: combined_example() takes 2 positional arguments but 3 were given\n\n>>> combined_example(1, 2, kwd_only=3)\n1 2 3\n\n>>> combined_example(1, standard=2, kwd_only=3)\n1 2 3\n\n>>> combined_example(pos_only=1, standard=2, kwd_only=3)\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nTypeError: combined_example() got some positional-only arguments passed as keyword arguments: 'pos_only'",
-   "msgstr": ">>> combined_example(1, 2, 3)\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nTypeError: combined_example() takes 2 positional arguments but 3 were given\n\n>>> combined_example(1, 2, kwd_only=3)\n1 2 3\n\n>>> combined_example(1, standard=2, kwd_only=3)\n1 2 3\n\n>>> combined_example(pos_only=1, standard=2, kwd_only=3)\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nTypeError: combined_example() got some positional-only arguments passed as keyword arguments: 'pos_only'",
    "source": "human"
   },
   {
@@ -4760,12 +4478,6 @@
    "run": "2026-08-17T16:43Z"
   },
   {
-   "id": "5adac6516c1b7f9a",
-   "msgid": ">>> def fib2(n):  # return Fibonacci series up to n\n...     \"\"\"Return a list containing the Fibonacci series up to n.\"\"\"\n...     result = []\n...     a, b = 0, 1\n...     while a < n:\n...         result.append(a)    # see below\n...         a, b = b, a+b\n...     return result\n...\n>>> f100 = fib2(100)    # call it\n>>> f100                # write the result\n[0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]",
-   "msgstr": ">>> def fib2(n):  # return Fibonacci series up to n\n...     \"\"\"Return a list containing the Fibonacci series up to n.\"\"\"\n...     result = []\n...     a, b = 0, 1\n...     while a < n:\n...         result.append(a)    # see below\n...         a, b = b, a+b\n...     return result\n...\n>>> f100 = fib2(100)    # call it\n>>> f100                # write the result\n[0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]",
-   "source": "human"
-  },
-  {
    "id": "5afa52444727c771",
    "msgid": "If the *prompt* argument is present, it is written to standard output without a trailing newline.  The function then reads a line from input, converts it to a string (stripping a trailing newline), and returns that.  When EOF is read, :exc:`EOFError` is raised.  Example::",
    "msgstr": "Nếu đối số *prompt* hiện diện, nó sẽ được ghi ra đầu ra tiêu chuẩn mà không có ký tự dòng mới ở cuối. Sau đó, hàm đọc một dòng từ đầu vào, chuyển đổi nó thành một chuỗi (loại bỏ ký tự dòng mới ở cuối) và trả về chuỗi đó. Khi đọc được ký tự kết thúc tệp EOF, ngoại lệ :exc:`EOFError` sẽ được kích hoạt. Ví dụ::",
@@ -4826,12 +4538,6 @@
    "glossary": 1,
    "batch": "86fed3dcf0f6",
    "run": "2026-08-17T16:43Z"
-  },
-  {
-   "id": "5bd67a66fa231db9",
-   "msgid": ">>> s = 'supercalifragilisticexpialidocious'\n>>> len(s)\n34",
-   "msgstr": ">>> s = 'supercalifragilisticexpialidocious'\n>>> len(s)\n34",
-   "source": "human"
   },
   {
    "id": "5c0eaed26082f543",
@@ -4950,27 +4656,9 @@
    "source": "human"
   },
   {
-   "id": "5de8ec780209de97",
-   "msgid": ">>> cubes.append(216)  # add the cube of 6\n>>> cubes.append(7 ** 3)  # and the cube of 7\n>>> cubes\n[1, 8, 27, 64, 125, 216, 343]",
-   "msgstr": ">>> cubes.append(216) # thêm lập phương của 6\n>>> cubes.append(7 ** 3) # và lập phương của 7\n>>> cubes\n[1, 8, 27, 64, 125, 216, 343]",
-   "source": "human"
-  },
-  {
-   "id": "5e7e0ff8999964d2",
-   "msgid": ">>> MISSING = sentinel(\"MISSING\")\n>>> MISSING\nMISSING",
-   "msgstr": ">>> MISSING = sentinel(\"MISSING\")\n>>> MISSING\nMISSING",
-   "source": "human"
-  },
-  {
    "id": "5e85394c7f020506",
    "msgid": "Looking at this in a bit more detail, it is possible to mark certain parameters as *positional-only*. If *positional-only*, the parameters' order matters, and the parameters cannot be passed by keyword. Positional-only parameters are placed before a ``/`` (forward-slash). The ``/`` is used to logically separate the positional-only parameters from the rest of the parameters. If there is no ``/`` in the function definition, there are no positional-only parameters.",
    "msgstr": "Nhìn chi tiết hơn, có thể đánh dấu một số tham số là *chỉ vị trí*. Nếu là *chỉ vị trí*, thứ tự tham số có ý nghĩa quan trọng và các tham số không thể được truyền theo từ khóa. Tham số chỉ vị trí được đặt trước dấu ``/`` (gạch chéo xuôi). Dấu ``/`` được dùng để phân tách logic các tham số chỉ vị trí với phần còn lại của tham số. Nếu không có ``/`` trong định nghĩa hàm, không có tham số chỉ vị trí nào.",
-   "source": "human"
-  },
-  {
-   "id": "5e87930894d0fa03",
-   "msgid": "class C(B):\n    def method(self, arg):\n        super().method(arg)    # This does the same thing as:\n                               # super(C, self).method(arg)",
-   "msgstr": "class C(B):\n    def method(self, arg):\n        super().method(arg)    # This does the same thing as:\n                               # super(C, self).method(arg)",
    "source": "human"
   },
   {
@@ -5022,12 +4710,6 @@
    "glossary": 1,
    "batch": "86fed3dcf0f6",
    "run": "2026-08-17T16:43Z"
-  },
-  {
-   "id": "5eab6f64acfe7b83",
-   "msgid": ">>> for num in range(2, 10):\n...     if num % 2 == 0:\n...         print(f\"Found an even number {num}\")\n...         continue\n...     print(f\"Found an odd number {num}\")\n...\nFound an even number 2\nFound an odd number 3\nFound an even number 4\nFound an odd number 5\nFound an even number 6\nFound an odd number 7\nFound an even number 8\nFound an odd number 9",
-   "msgstr": ">>> for num in range(2, 10):\n... if num % 2 == 0:\n... print(f\"Tìm thấy một số chẵn {num}\")\n... continue\n... print(f\"Tìm thấy một số lẻ {num}\")\n...\nTìm thấy một số chẵn 2\nTìm thấy một số lẻ 3\nTìm thấy một số chẵn 4\nTìm thấy một số lẻ 5\nTìm thấy một số chẵn 6\nTìm thấy một số lẻ 7\nTìm thấy một số chẵn 8\nTìm thấy một số lẻ 9",
-   "source": "human"
   },
   {
    "id": "5ece03b87b0d04a5",
@@ -5092,12 +4774,6 @@
    "source": "human"
   },
   {
-   "id": "60155de4c9718329",
-   "msgid": "Point(1, var)\nPoint(1, y=var)\nPoint(x=1, y=var)\nPoint(y=var, x=1)",
-   "msgstr": "Point(1, var)\nPoint(1, y=var)\nPoint(x=1, y=var)\nPoint(y=var, x=1)",
-   "source": "human"
-  },
-  {
    "id": "60d233590cf9d6ea",
    "msgid": "The statement ``import spam.ham`` results in this call::",
    "msgstr": "Câu lệnh ``import spam.ham`` dẫn đến lời gọi này::",
@@ -5119,12 +4795,6 @@
    "id": "61d9a90443e68a67",
    "msgid": "*mode* is an optional string that specifies the mode in which the file is opened.  It defaults to ``'r'`` which means open for reading in text mode. Other common values are ``'w'`` for writing (truncating the file if it already exists), ``'x'`` for exclusive creation, and ``'a'`` for appending (which on *some* Unix systems, means that *all* writes append to the end of the file regardless of the current seek position).  In text mode, if *encoding* is not specified the encoding used is platform-dependent: :func:`locale.getencoding` is called to get the current locale encoding. (For reading and writing raw bytes use binary mode and leave *encoding* unspecified.)  The available modes are:",
    "msgstr": "*mode* là một chuỗi tùy chọn chỉ định chế độ mà tệp được mở. Mặc định là ``'r'`` có nghĩa là mở để đọc ở chế độ văn bản. Các giá trị phổ biến khác là ``'w'`` để ghi (cắt bớt tệp nếu đã tồn tại), ``'x'`` để tạo độc quyền, và ``'a'`` để thêm vào (trên *một số* hệ thống Unix, có nghĩa là *tất cả* các lần ghi đều thêm vào cuối tệp bất kể vị trí seek hiện tại). Ở chế độ văn bản, nếu *encoding* không được chỉ định, mã hóa được dùng phụ thuộc vào nền tảng: :func:`locale.getencoding` được gọi để lấy mã hóa locale hiện tại. (Để đọc và ghi byte thô, hãy dùng chế độ nhị phân và để *encoding* không được chỉ định.) Các chế độ có sẵn là:",
-   "source": "human"
-  },
-  {
-   "id": "620231a908785e88",
-   "msgid": "def parrot(voltage, state='a stiff', action='voom', type='Norwegian Blue'):\n    print(\"-- This parrot wouldn't\", action, end=' ')\n    print(\"if you put\", voltage, \"volts through it.\")\n    print(\"-- Lovely plumage, the\", type)\n    print(\"-- It's\", state, \"!\")",
-   "msgstr": "def parrot(voltage, state='a stiff', action='voom', type='Norwegian Blue'):\n    print(\"-- This parrot wouldn't\", action, end=' ')\n    print(\"if you put\", voltage, \"volts through it.\")\n    print(\"-- Lovely plumage, the\", type)\n    print(\"-- It's\", state, \"!\")",
    "source": "human"
   },
   {
@@ -5250,12 +4920,6 @@
    "glossary": 1,
    "batch": "a9d03541538c",
    "run": "2026-08-17T16:43Z"
-  },
-  {
-   "id": "633d81ae2c5030fa",
-   "msgid": "# -*- coding: cp1252 -*-",
-   "msgstr": "# -*- coding: cp1252 -*-",
-   "source": "human"
   },
   {
    "id": "635edc58ff88910d",
@@ -5394,12 +5058,6 @@
    "source": "human"
   },
   {
-   "id": "65f50d34d211c8c1",
-   "msgid": "#!/usr/bin/env python3\n# -*- coding: cp1252 -*-",
-   "msgstr": "#!/usr/bin/env python3\n# -*- coding: cp1252 -*-",
-   "source": "human"
-  },
-  {
    "id": "6625defe17d45ff1",
    "msgid": "If multiple items are maximal, the function returns the first one encountered.  This is consistent with other sort-stability preserving tools such as ``sorted(iterable, key=keyfunc, reverse=True)[0]`` and ``heapq.nlargest(1, iterable, key=keyfunc)``.",
    "msgstr": "Nếu có nhiều mục cùng đạt giá trị cực đại, hàm sẽ trả về mục đầu tiên được tìm thấy. Điều này nhất quán với các công cụ bảo toàn tính ổn định khi sắp xếp khác như ``sorted(iterable, key=keyfunc, reverse=True)[0]`` và ``heapq.nlargest(1, iterable, key=keyfunc)``.",
@@ -5480,12 +5138,6 @@
    "source": "human"
   },
   {
-   "id": "67221aff3411d1ff",
-   "msgid": "class C:\n    @staticmethod\n    def f(arg1, arg2, argN): ...",
-   "msgstr": "class C:\n    @staticmethod\n    def f(arg1, arg2, argN): ...",
-   "source": "human"
-  },
-  {
    "id": "67624fe637f11a0b",
    "msgid": "The *opener* parameter was added.",
    "msgstr": "Đã thêm tham số *opener*.",
@@ -5495,12 +5147,6 @@
    "id": "679d85fca03b3605",
    "msgid": ":func:`delattr`",
    "msgstr": ":func:`delattr`",
-   "source": "human"
-  },
-  {
-   "id": "67eb4ec0e1c35744",
-   "msgid": ">>> word[42]  # the word only has 6 characters\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nIndexError: string index out of range",
-   "msgstr": ">>> word[42] # từ này chỉ có 6 ký tự\nTraceback (most recent call last):\nFile \"<stdin>\", line 1, in <module>\nIndexError: string index out of range",
    "source": "human"
   },
   {
@@ -5530,12 +5176,6 @@
    "id": "680924285a538725",
    "msgid": "There is one subtle aspect to raw strings: a raw string may not end in an odd number of ``\\`` characters; see :ref:`the FAQ entry <faq-programming-raw-string-backslash>` for more information and workarounds.",
    "msgstr": "Có một khía cạnh tế nhị đối với chuỗi thô: một chuỗi thô không được kết thúc bằng một số lẻ các ký tự ``\\``; xem :ref:`mục câu hỏi thường gặp <faq-programming-raw-string-backslash>` để biết thêm thông tin và các cách xử lý.",
-   "source": "human"
-  },
-  {
-   "id": "680ec21cc6e76251",
-   "msgid": "class Point:\n    __match_args__ = ('x', 'y')\n    def __init__(self, x, y):\n        self.x = x\n        self.y = y\n\nmatch points:\n    case []:\n        print(\"No points\")\n    case [Point(0, 0)]:\n        print(\"The origin\")\n    case [Point(x, y)]:\n        print(f\"Single point {x}, {y}\")\n    case [Point(0, y1), Point(0, y2)]:\n        print(f\"Two on the Y axis at {y1}, {y2}\")\n    case _:\n        print(\"Something else\")",
-   "msgstr": "class Point:\n    __match_args__ = ('x', 'y')\n    def __init__(self, x, y):\n        self.x = x\n        self.y = y\n\nmatch points:\n    case []:\n        print(\"No points\")\n    case [Point(0, 0)]:\n        print(\"The origin\")\n    case [Point(x, y)]:\n        print(f\"Single point {x}, {y}\")\n    case [Point(0, y1), Point(0, y2)]:\n        print(f\"Two on the Y axis at {y1}, {y2}\")\n    case _:\n        print(\"Something else\")",
    "source": "human"
   },
   {
@@ -6134,12 +5774,6 @@
    "run": "2026-08-17T16:43Z"
   },
   {
-   "id": "72a672b3a7996321",
-   "msgid": ">>> def foo(name, /, **kwds):\n...     return 'name' in kwds\n...\n>>> foo(1, **{'name': 2})\nTrue",
-   "msgstr": ">>> def foo(name, /, **kwds):\n...     return 'name' in kwds\n...\n>>> foo(1, **{'name': 2})\nTrue",
-   "source": "human"
-  },
-  {
    "id": "72bff07999671448",
    "msgid": "coding",
    "msgstr": "tài liệu mã hóa",
@@ -6379,12 +6013,6 @@
    "source": "human"
   },
   {
-   "id": "77d0eb36fc057954",
-   "msgid": ">>> list(zip(range(3), ['fee', 'fi', 'fo', 'fum']))\n[(0, 'fee'), (1, 'fi'), (2, 'fo')]",
-   "msgstr": ">>> list(zip(range(3), ['fee', 'fi', 'fo', 'fum']))\n[(0, 'fee'), (1, 'fi'), (2, 'fo')]",
-   "source": "human"
-  },
-  {
    "id": "77f1016efea5425e",
    "msgid": "For Python-related questions and problem reports, you can post to the newsgroup :newsgroup:`comp.lang.python`, or send them to the mailing list at python-list@python.org.  The newsgroup and mailing list are gatewayed, so messages posted to one will automatically be forwarded to the other.  There are hundreds of postings a day, asking (and answering) questions, suggesting new features, and announcing new modules. Mailing list archives are available at https://mail.python.org/pipermail/.",
    "msgstr": "Đối với các câu hỏi liên quan đến Python và báo cáo sự cố, có thể đăng lên nhóm tin :newsgroup:`comp.lang.python` hoặc gửi đến danh sách thư tại python-list@python.org. Nhóm tin và danh sách thư được kết nối với nhau, vì vậy thư gửi đến một nơi sẽ tự động được chuyển tiếp sang nơi còn lại. Có hàng trăm bài đăng mỗi ngày, đặt câu hỏi (và trả lời câu hỏi), đề xuất tính năng mới và thông báo các mô-đun mới. Kho lưu trữ của danh sách thư có tại https://mail.python.org/pipermail/.",
@@ -6399,12 +6027,6 @@
    "id": "78091b2d05d4f70f",
    "msgid": "The type of :term:`file object` returned by the :func:`open` function depends on the mode.  When :func:`open` is used to open a file in a text mode (``'w'``, ``'r'``, ``'wt'``, ``'rt'``, etc.), it returns a subclass of :class:`io.TextIOBase` (specifically :class:`io.TextIOWrapper`).  When used to open a file in a binary mode with buffering, the returned class is a subclass of :class:`io.BufferedIOBase`.  The exact class varies: in read binary mode, it returns an :class:`io.BufferedReader`; in write binary and append binary modes, it returns an :class:`io.BufferedWriter`, and in read/write mode, it returns an :class:`io.BufferedRandom`.  When buffering is disabled, the raw stream, a subclass of :class:`io.RawIOBase`, :class:`io.FileIO`, is returned.",
    "msgstr": "Kiểu :term:`file object` trả về bởi hàm :func:`open` phụ thuộc vào chế độ. Khi :func:`open` được dùng để mở tệp ở chế độ văn bản (``'w'``, ``'r'``, ``'wt'``, ``'rt'``, v.v.), nó trả về một lớp con của :class:`io.TextIOBase` (cụ thể là :class:`io.TextIOWrapper`). Khi dùng để mở tệp ở chế độ nhị phân có đệm, lớp trả về là lớp con của :class:`io.BufferedIOBase`. Lớp chính xác thay đổi: ở chế độ đọc nhị phân, nó trả về :class:`io.BufferedReader`; ở chế độ ghi nhị phân và thêm nhị phân, nó trả về :class:`io.BufferedWriter`, và ở chế độ đọc/ghi, nó trả về :class:`io.BufferedRandom`. Khi đệm bị vô hiệu hóa, luồng thô, lớp con của :class:`io.RawIOBase`, :class:`io.FileIO`, được trả về.",
-   "source": "human"
-  },
-  {
-   "id": "7822d9cbea1dfa30",
-   "msgid": ">>> print('C:\\this\\name')  # here \\t means tab, \\n means newline\nC:      his\name\n>>> print(r'C:\\this\\name')  # note the r before the quote\nC:\\this\\name",
-   "msgstr": ">>> print('C:\\this\\name') # ở đây \\t có nghĩa là tab, \\n có nghĩa là dòng mới\nC: his\name\n>>> print(r'C:\\this\\name') # lưu ý chữ r trước dấu ngoặc\nC:\\this\\name",
    "source": "human"
   },
   {
@@ -6481,12 +6103,6 @@
    "glossary": 1,
    "batch": "86fed3dcf0f6",
    "run": "2026-08-17T16:43Z"
-  },
-  {
-   "id": "79b6404be27aaa05",
-   "msgid": "# Create a sample collection\nusers = {'Hans': 'active', 'Éléonore': 'inactive', '景太郎': 'active'}\n\n# Strategy:  Iterate over a copy\nfor user, status in users.copy().items():\n    if status == 'inactive':\n        del users[user]\n\n# Strategy:  Create a new collection\nactive_users = {}\nfor user, status in users.items():\n    if status == 'active':\n        active_users[user] = status",
-   "msgstr": " # Tạo một tập hợp mẫu\nusers = {'Hans': 'active', 'Éléonore': 'inactive', '景太郎': 'active'}\n\n# Strategy:  Iterate over a copy\nfor user, status in users.copy().items():\n    if status == 'inactive':\n        del users[user]\n\n# Chiến lược: Tạo một tập hợp mới\nactive_users = {}\nfor user, status in users.items():\n    if status == 'active':\n        active_users[user] = status",
-   "source": "human"
   },
   {
    "id": "7a09b65997885e9d",
@@ -6598,12 +6214,6 @@
    "glossary": 1,
    "batch": "723495c45e5f",
    "run": "2026-08-17T16:43Z"
-  },
-  {
-   "id": "7bb82212f36ec2d0",
-   "msgid": ">>> for n in range(2, 10):\n...     for x in range(2, n):\n...         if n % x == 0:\n...             print(n, 'equals', x, '*', n//x)\n...             break\n...     else:\n...         # loop fell through without finding a factor\n...         print(n, 'is a prime number')\n...\n2 is a prime number\n3 is a prime number\n4 equals 2 * 2\n5 is a prime number\n6 equals 2 * 3\n7 is a prime number\n8 equals 2 * 4\n9 equals 3 * 3",
-   "msgstr": ">>> for n in range(2, 10):\n...     for x in range(2, n):\n...         if n % x == 0:\n...             print(n, 'equals', x, '*', n//x)\n...             break\n...     else:\n...         # loop fell through without finding a factor\n...         print(n, 'is a prime number')\n...\n2 is a prime number\n3 is a prime number\n4 equals 2 * 2\n5 is a prime number\n6 equals 2 * 3\n7 is a prime number\n8 equals 2 * 4\n9 equals 3 * 3",
-   "source": "human"
   },
   {
    "id": "7bc7296123d5cf08",
@@ -7083,12 +6693,6 @@
    "run": "2026-08-17T16:43Z"
   },
   {
-   "id": "855eecbb3f488ac5",
-   "msgid": ">>> correct_rgba = rgba[:]\n>>> correct_rgba[-1] = \"Alpha\"\n>>> correct_rgba\n[\"Red\", \"Green\", \"Blue\", \"Alpha\"]\n>>> rgba\n[\"Red\", \"Green\", \"Blue\", \"Alph\"]",
-   "msgstr": ">>> correct_rgba = rgba[:]\n>>> correct_rgba[-1] = \"Alpha\"\n>>> correct_rgba\n[\"Red\", \"Green\", \"Blue\", \"Alpha\"]\n>>> rgba\n[\"Red\", \"Green\", \"Blue\", \"Alph\"]",
-   "source": "human"
-  },
-  {
    "id": "85e86ca94aac57e5",
    "msgid": "There are two typical use cases for *super*.  In a class hierarchy with single inheritance, *super* can be used to refer to parent classes without naming them explicitly, thus making the code more maintainable.  This use closely parallels the use of *super* in other programming languages.",
    "msgstr": "Có hai trường hợp sử dụng điển hình cho *super*. Trong một cấu trúc lớp với thừa kế đơn, *super* có thể được dùng để tham chiếu đến các lớp cha mà không cần đặt tên chúng một cách rõ ràng, do đó làm cho mã dễ bảo trì hơn. Cách dùng này song song chặt chẽ với cách dùng *super* trong các ngôn ngữ lập trình khác.",
@@ -7109,12 +6713,6 @@
    "id": "869f10e12989ece6",
    "msgid": "**L**",
    "msgstr": "**L**",
-   "source": "human"
-  },
-  {
-   "id": "86bc974013f3a811",
-   "msgid": "class Parrot:\n    def __init__(self):\n        self._voltage = 100000\n\n    @property\n    def voltage(self):\n        \"\"\"Get the current voltage.\"\"\"\n        return self._voltage",
-   "msgstr": "class Parrot:\n    def __init__(self):\n        self._voltage = 100000\n\n    @property\n    def voltage(self):\n        \"\"\"Get the current voltage.\"\"\"\n        return self._voltage",
    "source": "human"
   },
   {
@@ -7160,18 +6758,6 @@
    "id": "884e1ddabbf34c3a",
    "msgid": "If the prefix \"0b\" is desired or not, you can use either of the following ways.",
    "msgstr": "Nếu muốn có hoặc không có tiền tố \"0b\", bạn có thể sử dụng một trong các cách sau đây.",
-   "source": "human"
-  },
-  {
-   "id": "8869e241717ed46a",
-   "msgid": ">>> int(123.45)\n123\n>>> int('123')\n123\n>>> int('   -12_345\\n')\n-12345\n>>> int('FACE', 16)\n64206\n>>> int('0xface', 0)\n64206\n>>> int('01110011', base=2)\n115",
-   "msgstr": ">>> int(123.45)\n123\n>>> int('123')\n123\n>>> int('   -12_345\\n')\n-12345\n>>> int('FACE', 16)\n64206\n>>> int('0xface', 0)\n64206\n>>> int('01110011', base=2)\n115",
-   "source": "human"
-  },
-  {
-   "id": "88c04e4d4922b8c4",
-   "msgid": ">>> a, b = 0, 1\n>>> while a < 1000:\n...     print(a, end=',')\n...     a, b = b, a+b\n...\n0,1,1,2,3,5,8,13,21,34,55,89,144,233,377,610,987,",
-   "msgstr": ">>> a, b = 0, 1\n>>> while a < 1000:\n...     print(a, end=',')\n...     a, b = b, a+b\n...\n0,1,1,2,3,5,8,13,21,34,55,89,144,233,377,610,987,",
    "source": "human"
   },
   {
@@ -7269,12 +6855,6 @@
    "glossary": 1,
    "batch": "44417db9632c",
    "run": "2026-08-17T16:43Z"
-  },
-  {
-   "id": "89c55df9b0c19a5f",
-   "msgid": ">>> tax = 12.5 / 100\n>>> price = 100.50\n>>> price * tax\n12.5625\n>>> price + _\n113.0625\n>>> round(_, 2)\n113.06",
-   "msgstr": ">>> tax = 12.5 / 100\n>>> price = 100.50\n>>> price * tax\n12.5625\n>>> price + _\n113.0625\n>>> round(_, 2)\n113.06",
-   "source": "human"
   },
   {
    "id": "89e8ba70498aaebf",
@@ -7383,12 +6963,6 @@
    "glossary": 1,
    "batch": "60800e02afb8",
    "run": "2026-08-17T16:43Z"
-  },
-  {
-   "id": "8bec47f10790dce0",
-   "msgid": ">>> s = 'First line.\\nSecond line.'  # \\n means newline\n>>> s  # without print(), special characters are included in the string\n'First line.\\nSecond line.'\n>>> print(s)  # with print(), special characters are interpreted, so \\n produces new line\nFirst line.\nSecond line.",
-   "msgstr": ">>> s = 'First line.\\nSecond line.' # \\n có nghĩa là dòng mới\n>>> s # nếu không có print(), các ký tự đặc biệt sẽ được bao gồm trong chuỗi\n'First line.\\nSecond line.'\n>>> print(s) # với print(), các ký tự đặc biệt được thông dịch, nên \\n tạo ra dòng mới\nFirst line.\nSecond line.",
-   "source": "human"
   },
   {
    "id": "8c3193c486527389",
@@ -7550,12 +7124,6 @@
    "source": "human"
   },
   {
-   "id": "8f7efb09864ebd6a",
-   "msgid": ">>> cubes = [1, 8, 27, 65, 125]  # something's wrong here\n>>> 4 ** 3  # the cube of 4 is 64, not 65!\n64\n>>> cubes[3] = 64  # replace the wrong value\n>>> cubes\n[1, 8, 27, 64, 125]",
-   "msgstr": ">>> cubes = [1, 8, 27, 65, 125] # có gì đó sai ở đây\n>>> 4 ** 3 # lập phương của 4 là 64, không phải 65!\n64\n>>> cubes[3] = 64 # thay thế giá trị sai\n>>> cubes\n[1, 8, 27, 64, 125]",
-   "source": "human"
-  },
-  {
    "id": "8f9557d21d0e850a",
    "msgid": "If you intend to use a function often you can assign it to a local name::",
    "msgstr": "Nếu dự định sử dụng một hàm thường xuyên, có thể gán nó cho một tên cục bộ::",
@@ -7612,12 +7180,6 @@
    "glossary": 1,
    "batch": "36b6449c9aef",
    "run": "2026-08-17T16:43Z"
-  },
-  {
-   "id": "90ffc69bca939c6a",
-   "msgid": "# this is the first comment\nspam = 1  # and this is the second comment\n          # ... and now a third!\ntext = \"# This is not a comment because it's inside quotes.\"",
-   "msgstr": "# đây là chú thích đầu tiên\nspam = 1 # và đây là chú thích thứ hai\n# ... và bây giờ là chú thích thứ ba!\ntext = \"# Đây không phải là chú thích vì nó nằm trong dấu ngoặc kép.\"",
-   "source": "human"
   },
   {
    "id": "91690a9c5b14952d",
@@ -7746,12 +7308,6 @@
    "run": "2026-08-17T16:43Z"
   },
   {
-   "id": "93ae23024869a896",
-   "msgid": ">>> for i in range(5):\n...     print(i)\n...\n0\n1\n2\n3\n4",
-   "msgstr": ">>> for i in range(5):\n...     print(i)\n...\n0\n1\n2\n3\n4",
-   "source": "human"
-  },
-  {
    "id": "93c50d2f0b6e616a",
    "msgid": "For the \"Title\" field, enter a *very* short description of the problem; fewer than ten words is good.",
    "msgstr": "Tại trường \"Title\", hãy nhập một mô tả *rất ngắn gọn* về vấn đề; ít hơn mười từ là tốt nhất.",
@@ -7836,12 +7392,6 @@
    "glossary": 1,
    "batch": "314de8ab9d19",
    "run": "2026-08-17T16:43Z"
-  },
-  {
-   "id": "9611ac1d6b4fecd5",
-   "msgid": ">>> def my_function():\n...     \"\"\"Do nothing, but document it.\n...\n...     No, really, it doesn't do anything:\n...\n...         >>> my_function()\n...         >>>\n...     \"\"\"\n...     pass\n...\n>>> print(my_function.__doc__)\nDo nothing, but document it.\n\nNo, really, it doesn't do anything:\n\n    >>> my_function()\n    >>>",
-   "msgstr": ">>> def my_function():\n...     \"\"\"Do nothing, but document it.\n...\n...     No, really, it doesn't do anything:\n...\n...         >>> my_function()\n...         >>>\n...     \"\"\"\n...     pass\n...\n>>> print(my_function.__doc__)\nDo nothing, but document it.\n\nNo, really, it doesn't do anything:\n\n    >>> my_function()\n    >>>",
-   "source": "human"
   },
   {
    "id": "96285103cb8484f1",
@@ -7962,18 +7512,6 @@
    "glossary": 1,
    "batch": "f265350a1ea9",
    "run": "2026-08-17T16:43Z"
-  },
-  {
-   "id": "99e8a5dbc64e6f94",
-   "msgid": "def any(iterable):\n    for element in iterable:\n        if element:\n            return True\n    return False",
-   "msgstr": "def any(iterable):\n    for element in iterable:\n        if element:\n            return True\n    return False",
-   "source": "human"
-  },
-  {
-   "id": "9a0488424ec26976",
-   "msgid": "# (hash)",
-   "msgstr": "# (hash)",
-   "source": "human"
   },
   {
    "id": "9a061c9a120d6558",
@@ -8213,12 +7751,6 @@
    "source": "human"
   },
   {
-   "id": "9eb3f5085a6bb46c",
-   "msgid": ">>> a = ['Mary', 'had', 'a', 'little', 'lamb']\n>>> for i in range(len(a)):\n...     print(i, a[i])\n...\n0 Mary\n1 had\n2 a\n3 little\n4 lamb",
-   "msgstr": ">>> a = ['Mary', 'had', 'a', 'little', 'lamb']\n>>> for i in range(len(a)):\n...     print(i, a[i])\n...\n0 Mary\n1 had\n2 a\n3 little\n4 lamb",
-   "source": "human"
-  },
-  {
    "id": "9ed8854ecd98d84a",
    "msgid": "The module used to create and manage virtual environments is called :mod:`venv`.  :mod:`venv` will install the Python version from which the command was run (as reported by the :option:`--version` option). For instance, executing the command with ``python3.12`` will install version 3.12.",
    "msgstr": "Module được sử dụng để tạo và quản lý môi trường ảo có tên là :mod:`venv`. :mod:`venv` sẽ cài đặt phiên bản Python mà lệnh được chạy từ đó (như được báo cáo bởi tùy chọn :option:`--version`). Ví dụ, thực thi lệnh với ``python3.12`` sẽ cài đặt phiên bản 3.12.",
@@ -8228,12 +7760,6 @@
    "glossary": 1,
    "batch": "d110ccf74f93",
    "run": "2026-08-17T16:43Z"
-  },
-  {
-   "id": "9ee9c31e26962044",
-   "msgid": ">>> range(10)\nrange(0, 10)",
-   "msgstr": ">>> range(10)\nrange(0, 10)",
-   "source": "human"
   },
   {
    "id": "9f0b3e144df87f11",
@@ -8401,12 +7927,6 @@
    "source": "human"
   },
   {
-   "id": "a2b942dfde30d3f1",
-   "msgid": "case 401 | 403 | 404:\n    return \"Not allowed\"",
-   "msgstr": "case 401 | 403 | 404:\n    return \"Not allowed\"",
-   "source": "human"
-  },
-  {
    "id": "a2e5827aa4ebe709",
    "msgid": "This is particularly useful in combination with the built-in function :func:`vars`, which returns a dictionary containing all local variables::",
    "msgstr": "Điều này đặc biệt hữu ích khi kết hợp với hàm tích hợp sẵn :func:`vars`, hàm này trả về một từ điển chứa tất cả các biến cục bộ::",
@@ -8495,12 +8015,6 @@
    "glossary": 1,
    "batch": "83b4bf9bcc60",
    "run": "2026-08-17T16:43Z"
-  },
-  {
-   "id": "a44521b2102bc326",
-   "msgid": ">>> 'Py' 'thon'\n'Python'",
-   "msgstr": ">>> 'Py' 'thon'\n'Python'",
-   "source": "human"
   },
   {
    "id": "a44631b42b615c90",
@@ -8880,12 +8394,6 @@
    "run": "2026-08-17T16:43Z"
   },
   {
-   "id": "abf9b3b48c9a6736",
-   "msgid": ">>> standard_arg(2)\n2\n\n>>> standard_arg(arg=2)\n2",
-   "msgstr": ">>> standard_arg(2)\n2\n\n>>> standard_arg(arg=2)\n2",
-   "source": "human"
-  },
-  {
    "id": "abfee58c6b9615a5",
    "msgid": "Python provides tools that may help on those rare occasions when you really *do* want to know the exact value of a float.  The :meth:`float.as_integer_ratio` method expresses the value of a float as a fraction:",
    "msgstr": "Python cung cấp các công cụ có thể hữu ích trong những trường hợp hiếm hoi khi thực sự *muốn* biết giá trị chính xác của một float. Phương thức :meth:`float.as_integer_ratio` biểu diễn giá trị của một float dưới dạng phân số:",
@@ -8900,12 +8408,6 @@
    "id": "ac379d7a8f1641dc",
    "msgid": "*errors* is an optional string that specifies how encoding and decoding errors are to be handled—this cannot be used in binary mode. A variety of standard error handlers are available, though any error handling name that has been registered with :func:`codecs.register_error` is also valid.  The standard names can be found in :ref:`error-handlers`.",
    "msgstr": "*errors* là một chuỗi tùy chọn chỉ định cách xử lý các lỗi mã hóa và giải mã—tham số này không thể được sử dụng trong chế độ nhị phân. Có sẵn nhiều trình xử lý lỗi tiêu chuẩn, tuy nhiên bất kỳ tên xử lý lỗi nào đã được đăng ký với :func:`codecs.register_error` cũng đều hợp lệ. Các tên tiêu chuẩn có thể được tìm thấy tại :ref:`error-handlers`.",
-   "source": "human"
-  },
-  {
-   "id": "ac39681d41319965",
-   "msgid": "def foo(name, **kwds):\n    return 'name' in kwds",
-   "msgstr": "def foo(name, **kwds):\n    return 'name' in kwds",
    "source": "human"
   },
   {
@@ -9108,24 +8610,6 @@
    "run": "2026-08-17T16:43Z"
   },
   {
-   "id": "aef64d287367d1a3",
-   "msgid": ">>> for n in range(2, 10):\n...     for x in range(2, n):\n...         if n % x == 0:\n...             print(f\"{n} equals {x} * {n//x}\")\n...             break\n...\n4 equals 2 * 2\n6 equals 2 * 3\n8 equals 2 * 4\n9 equals 3 * 3",
-   "msgstr": ">>> for n in range(2, 10):\n...     for x in range(2, n):\n...         if n % x == 0:\n...             print(f\"{n} equals {x} * {n//x}\")\n...             break\n...\n4 equals 2 * 2\n6 equals 2 * 3\n8 equals 2 * 4\n9 equals 3 * 3",
-   "source": "human"
-  },
-  {
-   "id": "af35c98277611aed",
-   "msgid": "MISSING = sentinel(\"MISSING\")\n\ndef next_value(default: int | MISSING = MISSING):\n    ...",
-   "msgstr": "MISSING = sentinel(\"MISSING\")\n\ndef next_value(default: int | MISSING = MISSING):\n    ...",
-   "source": "human"
-  },
-  {
-   "id": "af3b83c0250ca95c",
-   "msgid": ">>> 17 / 3  # classic division returns a float\n5.666666666666667\n>>>\n>>> 17 // 3  # floor division discards the fractional part\n5\n>>> 17 % 3  # the % operator returns the remainder of the division\n2\n>>> 5 * 3 + 2  # floored quotient * divisor + remainder\n17",
-   "msgstr": ">>> 17 / 3 # phép chia thông thường trả về một số thực\n5.666666666666667\n>>>\n>>> 17 // 3 # phép chia lấy phần nguyên loại bỏ phần thập phân\n5\n>>> 17 % 3 # toán tử % trả về số dư của phép chia\n2\n>>> 5 * 3 + 2 # thương nguyên * số chia + số dư\n17",
-   "source": "human"
-  },
-  {
    "id": "af465603b490de6e",
    "msgid": "To deactivate a virtual environment, type::",
    "msgstr": "Để hủy kích hoạt một môi trường ảo, nhập::",
@@ -9263,18 +8747,6 @@
    "run": "2026-08-17T16:43Z"
   },
   {
-   "id": "b14c15236df92363",
-   "msgid": ">>> word[4:42]\n'on'\n>>> word[42:]\n''",
-   "msgstr": ">>> word[4:42]\n'on'\n>>> word[42:]\n''",
-   "source": "human"
-  },
-  {
-   "id": "b17b123ace2e3af4",
-   "msgid": "class C:\n    @classmethod\n    def f(cls, arg1, arg2): ...",
-   "msgstr": "class C:\n    @classmethod\n    def f(cls, arg1, arg2): ...",
-   "source": "human"
-  },
-  {
    "id": "b1df73b566c22ac2",
    "msgid": "Return the dictionary implementing the current module namespace. For code within functions, this is set when the function is defined and remains the same regardless of where the function is called.",
    "msgstr": "Trả về từ điển triển khai namespace của mô-đun hiện tại. Đối với mã nằm trong các hàm, từ điển này được thiết lập khi hàm được định nghĩa và giữ nguyên không đổi bất kể hàm đó được gọi ở đâu.",
@@ -9382,18 +8854,6 @@
    "source": "human"
   },
   {
-   "id": "b46e0fb48709127b",
-   "msgid": "class C:\n    def __init__(self):\n        self._x = None\n\n    def getx(self):\n        return self._x\n\n    def setx(self, value):\n        self._x = value\n\n    def delx(self):\n        del self._x\n\n    x = property(getx, setx, delx, \"I'm the 'x' property.\")",
-   "msgstr": "class C:\n    def __init__(self):\n        self._x = None\n\n    def getx(self):\n        return self._x\n\n    def setx(self, value):\n        self._x = value\n\n    def delx(self):\n        del self._x\n\n    x = property(getx, setx, delx, \"I'm the 'x' property.\")",
-   "source": "human"
-  },
-  {
-   "id": "b487a2cb3991196f",
-   "msgid": "def cheeseshop(kind, *arguments, **keywords):\n    print(\"-- Do you have any\", kind, \"?\")\n    print(\"-- I'm sorry, we're all out of\", kind)\n    for arg in arguments:\n        print(arg)\n    print(\"-\" * 40)\n    for kw in keywords:\n        print(kw, \":\", keywords[kw])",
-   "msgstr": "def cheeseshop(kind, *arguments, **keywords):\n    print(\"-- Do you have any\", kind, \"?\")\n    print(\"-- I'm sorry, we're all out of\", kind)\n    for arg in arguments:\n        print(arg)\n    print(\"-\" * 40)\n    for kw in keywords:\n        print(kw, \":\", keywords[kw])",
-   "source": "human"
-  },
-  {
    "id": "b4a85e17ddaaf4cf",
    "msgid": ":func:`super`",
    "msgstr": ":func:`super`",
@@ -9438,12 +8898,6 @@
    "id": "b55292053148eef0",
    "msgid": "Note that this is not guaranteed if :func:`sys.breakpointhook` has been replaced.",
    "msgstr": "Lưu ý rằng điều này không được đảm bảo nếu :func:`sys.breakpointhook` đã bị thay thế.",
-   "source": "human"
-  },
-  {
-   "id": "b56c7f97e1d247d1",
-   "msgid": ">>> word[0] = 'J'\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nTypeError: 'str' object does not support item assignment\n>>> word[2:] = 'py'\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nTypeError: 'str' object does not support item assignment",
-   "msgstr": ">>> word[0] = 'J'\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nTypeError: 'str' object does not support item assignment\n>>> word[2:] = 'py'\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nTypeError: 'str' object does not support item assignment",
    "source": "human"
   },
   {
@@ -9537,12 +8991,6 @@
    "source": "human"
   },
   {
-   "id": "b694e7aa85fa4a43",
-   "msgid": "def regular_function():\n    ...\n\nclass C:\n    method = staticmethod(regular_function)",
-   "msgstr": "def regular_function():\n    ...\n\nclass C:\n    method = staticmethod(regular_function)",
-   "source": "human"
-  },
-  {
    "id": "b7033a03ccdea6da",
    "msgid": "Note that this is in the very nature of binary floating point: this is not a bug in Python, and it is not a bug in your code either.  You'll see the same kind of thing in all languages that support your hardware's floating-point arithmetic (although some languages may not *display* the difference by default, or in all output modes).",
    "msgstr": "Lưu ý rằng đây là bản chất của dấu phẩy động nhị phân: đây không phải là lỗi trong Python, và cũng không phải là lỗi trong mã của bạn. Điều tương tự sẽ xảy ra trong mọi ngôn ngữ hỗ trợ phép toán dấu phẩy động của phần cứng (mặc dù một số ngôn ngữ có thể không *hiển thị* sự khác biệt này theo mặc định, hoặc trong mọi chế độ xuất).",
@@ -9594,12 +9042,6 @@
    "source": "human"
   },
   {
-   "id": "b78c8112ef97cfba",
-   "msgid": ">>> word[:2] + word[2:]\n'Python'\n>>> word[:4] + word[4:]\n'Python'",
-   "msgstr": ">>> word[:2] + word[2:]\n'Python'\n>>> word[:4] + word[4:]\n'Python'",
-   "source": "human"
-  },
-  {
    "id": "b7e9442e0afd3665",
    "msgid": "Raises an :ref:`auditing event <auditing>` ``builtins.input`` with argument ``prompt`` before reading input",
    "msgstr": "Kích hoạt một :ref:`auditing event <auditing>` ``builtins.input`` với đối số ``prompt`` trước khi đọc dữ liệu nhập vào.",
@@ -9609,12 +9051,6 @@
    "id": "b8b5188312cf0cb9",
    "msgid": "See :func:`itertools.islice` for an alternate version that returns an :term:`iterator`.",
    "msgstr": "Xem :func:`itertools.islice` để biết phiên bản thay thế trả về một :term:`iterator`.",
-   "source": "human"
-  },
-  {
-   "id": "b8d470e56f4c1388",
-   "msgid": ">>> word[:2]   # character from the beginning to position 2 (excluded)\n'Py'\n>>> word[4:]   # characters from position 4 (included) to the end\n'on'\n>>> word[-2:]  # characters from the second-last (included) to the end\n'on'",
-   "msgstr": ">>> word[:2] # ký tự từ đầu đến vị trí 2 (loại trừ)\n'Py'\n>>> word[4:] # ký tự từ vị trí 4 (bao gồm) đến hết\n'on'\n>>> word[-2:] # ký tự từ vị trí áp chót (bao gồm) đến hết\n'on'",
    "source": "human"
   },
   {
@@ -9749,12 +9185,6 @@
    "run": "2026-08-17T16:43Z"
   },
   {
-   "id": "bc94d89506b6fcef",
-   "msgid": "def enumerate(iterable, start=0):\n    n = start\n    for elem in iterable:\n        yield n, elem\n        n += 1",
-   "msgstr": "def enumerate(iterable, start=0):\n    n = start\n    for elem in iterable:\n        yield n, elem\n        n += 1",
-   "source": "human"
-  },
-  {
    "id": "bcab3925a3083795",
    "msgid": "Sentinels are conventionally assigned to a variable with a matching name. Sentinels defined in this way can be used in :term:`type hints <type hint>`::",
    "msgstr": "Các lính canh theo quy ước được gán cho một biến có tên trùng khớp. Các lính canh được định nghĩa theo cách này có thể được sử dụng trong :term:`type hints <type hint>`::",
@@ -9813,12 +9243,6 @@
    "source": "human"
   },
   {
-   "id": "bdee79a351d46241",
-   "msgid": ">>> kwd_only_arg(3)\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nTypeError: kwd_only_arg() takes 0 positional arguments but 1 was given\n\n>>> kwd_only_arg(arg=3)\n3",
-   "msgstr": ">>> kwd_only_arg(3)\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nTypeError: kwd_only_arg() takes 0 positional arguments but 1 was given\n\n>>> kwd_only_arg(arg=3)\n3",
-   "source": "human"
-  },
-  {
    "id": "be402278c5da3a08",
    "msgid": "Information about writing a good bug report.  Some of this is specific to the Mozilla project, but describes general good practices.",
    "msgstr": "Thông tin về cách viết một báo cáo lỗi tốt. Một số nội dung trong này dành riêng cho dự án Mozilla, nhưng có mô tả các quy tắc chung hữu ích.",
@@ -9834,12 +9258,6 @@
    "glossary": 1,
    "batch": "ade2545b0bab",
    "run": "2026-08-17T16:43Z"
-  },
-  {
-   "id": "be82239ba30ab011",
-   "msgid": "def f(a, L=[]):\n    L.append(a)\n    return L\n\nprint(f(1))\nprint(f(2))\nprint(f(3))",
-   "msgstr": "def f(a, L=[]):\n    L.append(a)\n    return L\n\nprint(f(1))\nprint(f(2))\nprint(f(3))",
-   "source": "human"
   },
   {
    "id": "bf4162c57f977786",
@@ -9949,18 +9367,6 @@
    "run": "2026-08-17T16:43Z"
   },
   {
-   "id": "c0c224a083fa2917",
-   "msgid": ">>> # Measure some strings:\n>>> words = ['cat', 'window', 'defenestrate']\n>>> for w in words:\n...     print(w, len(w))\n...\ncat 3\nwindow 6\ndefenestrate 12",
-   "msgstr": ">>> # Đo chiều dài một số chuỗi:\n>>> words = ['cat', 'window', 'defenestrate']\n>>> for w in words:\n... print(w, len(w))\n...\ncat 3\nwindow 6\ndefenestrate 12",
-   "source": "human"
-  },
-  {
-   "id": "c0cb50e1b268999a",
-   "msgid": ">>> prefix + 'thon'\n'Python'",
-   "msgstr": ">>> prefix + 'thon'\n'Python'",
-   "source": "human"
-  },
-  {
    "id": "c0d841c92925f009",
    "msgid": "Note how the order of the :keyword:`for` and :keyword:`if` statements is the same in both these snippets.",
    "msgstr": "Lưu ý rằng thứ tự của các câu lệnh :keyword:`for` và :keyword:`if` giống nhau trong cả hai đoạn mã này.",
@@ -10034,12 +9440,6 @@
    "glossary": 1,
    "batch": "a9d03541538c",
    "run": "2026-08-17T16:43Z"
-  },
-  {
-   "id": "c1f47e3bf23b30a1",
-   "msgid": ">>> pos_only_arg(1)\n1\n\n>>> pos_only_arg(arg=1)\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nTypeError: pos_only_arg() got some positional-only arguments passed as keyword arguments: 'arg'",
-   "msgstr": ">>> pos_only_arg(1)\n1\n\n>>> pos_only_arg(arg=1)\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nTypeError: pos_only_arg() got some positional-only arguments passed as keyword arguments: 'arg'",
-   "source": "human"
   },
   {
    "id": "c227491d33292159",
@@ -10718,12 +10118,6 @@
    "run": "2026-08-17T16:43Z"
   },
   {
-   "id": "d0109ec3d7f8622b",
-   "msgid": ">>> foo(1, **{'name': 2})\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nTypeError: foo() got multiple values for argument 'name'\n>>>",
-   "msgstr": ">>> foo(1, **{'name': 2})\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nTypeError: foo() got multiple values for argument 'name'\n>>>",
-   "source": "human"
-  },
-  {
    "id": "d01a37b0a26f288c",
    "msgid": "Except for one thing.  Module objects have a secret read-only attribute called :attr:`~object.__dict__` which returns the dictionary used to implement the module's namespace; the name ``__dict__`` is an attribute but not a global name. Obviously, using this violates the abstraction of namespace implementation, and should be restricted to things like post-mortem debuggers.",
    "msgstr": "Ngoại trừ một điều. Các đối tượng module có một thuộc tính chỉ đọc bí mật gọi là :attr:`~object.__dict__`, thuộc tính này trả về từ điển được dùng để triển khai không gian tên của module; tên ``__dict__`` là một thuộc tính nhưng không phải là tên toàn cục. Rõ ràng, việc sử dụng điều này vi phạm tính trừu tượng của việc triển khai không gian tên, và nên được giới hạn cho những thứ như trình gỡ lỗi sau sự cố.",
@@ -10741,12 +10135,6 @@
    "source": "human"
   },
   {
-   "id": "d0ca0b2f43f12517",
-   "msgid": ">>> fib(0)\n>>> print(fib(0))\nNone",
-   "msgstr": ">>> fib(0)\n>>> print(fib(0))\nNone",
-   "source": "human"
-  },
-  {
    "id": "d0e0098aa5b7ca2a",
    "msgid": "tracking of significant decimal places, or",
    "msgstr": "theo dõi các chữ số thập phân có nghĩa, hoặc",
@@ -10756,12 +10144,6 @@
    "glossary": 1,
    "batch": "a1947e59918c",
    "run": "2026-08-17T16:43Z"
-  },
-  {
-   "id": "d0e35ba5937de956",
-   "msgid": ">>> word[0:2]  # characters from position 0 (included) to 2 (excluded)\n'Py'\n>>> word[2:5]  # characters from position 2 (included) to 5 (excluded)\n'tho'",
-   "msgstr": ">>> word[0:2] # các ký tự từ vị trí 0 (bao gồm) đến 2 (loại trừ)\n'Py'\n>>> word[2:5] # các ký tự từ vị trí 2 (bao gồm) đến 5 (loại trừ)\n'tho'",
-   "source": "human"
   },
   {
    "id": "d0f50381be277d55",
@@ -10813,12 +10195,6 @@
    "id": "d16e10426102d733",
    "msgid": ":func:`globals`",
    "msgstr": ":func:`globals`",
-   "source": "human"
-  },
-  {
-   "id": "d190b8d303a241f5",
-   "msgid": ">>> squares + [36, 49, 64, 81, 100]\n[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]",
-   "msgstr": ">>> squares + [36, 49, 64, 81, 100]\n[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]",
    "source": "human"
   },
   {
@@ -10884,12 +10260,6 @@
    "run": "2026-08-17T16:43Z"
   },
   {
-   "id": "d2f9b58a92060c1f",
-   "msgid": ">>> word = 'Python'\n>>> word[0]  # character in position 0\n'P'\n>>> word[5]  # character in position 5\n'n'",
-   "msgstr": ">>> word = 'Python'\n>>> word[0] # ký tự ở vị trí 0\n'P'\n>>> word[5] # ký tự ở vị trí 5\n'n'",
-   "source": "human"
-  },
-  {
    "id": "d3164483324c9a22",
    "msgid": "Exact representation enables the :class:`~decimal.Decimal` class to perform modulo calculations and equality tests that are unsuitable for binary floating point::",
    "msgstr": "Biểu diễn chính xác cho phép lớp :class:`~decimal.Decimal` thực hiện các phép tính modulo và kiểm tra bằng nhau vốn không phù hợp với dấu phẩy động nhị phân::",
@@ -10910,12 +10280,6 @@
    "glossary": 1,
    "batch": "a000845f44be",
    "run": "2026-08-17T16:43Z"
-  },
-  {
-   "id": "d35fc4209115fbfe",
-   "msgid": "def f(a, L=None):\n    if L is None:\n        L = []\n    L.append(a)\n    return L",
-   "msgstr": "def f(a, L=None):\n    if L is None:\n        L = []\n    L.append(a)\n    return L",
-   "source": "human"
   },
   {
    "id": "d387cdb1422d8fc5",
@@ -11006,12 +10370,6 @@
    "glossary": 1,
    "batch": "314de8ab9d19",
    "run": "2026-08-17T16:43Z"
-  },
-  {
-   "id": "d5cb1e7c35cf4348",
-   "msgid": ">>> # 3 times 'un', followed by 'ium'\n>>> 3 * 'un' + 'ium'\n'unununium'",
-   "msgstr": ">>> # 3 lần 'un', theo sau là 'ium'\n>>> 3 * 'un' + 'ium'\n'unununium'",
-   "source": "human"
   },
   {
    "id": "d68622cbf96df7e1",
@@ -11137,12 +10495,6 @@
    "source": "human"
   },
   {
-   "id": "d88aa2c67b4b0d87",
-   "msgid": ">>> 'spam eggs'  # single quotes\n'spam eggs'\n>>> \"Paris rabbit got your back :)! Yay!\"  # double quotes\n'Paris rabbit got your back :)! Yay!'\n>>> '1975'  # digits and numerals enclosed in quotes are also strings\n'1975'",
-   "msgstr": ">>> 'spam eggs' # dấu ngoặc đơn\n'spam eggs'\n>>> \"Paris rabbit got your back :)! Yay!\" # dấu ngoặc kép\n'Paris rabbit got your back :)! Yay!'\n>>> '1975' # các chữ số nằm trong dấu ngoặc kép cũng là chuỗi\n'1975'",
-   "source": "human"
-  },
-  {
    "id": "d8b2a4d4961a78ec",
    "msgid": "The variable ``sys.path`` is a list of strings that determines the interpreter's search path for modules. It is initialized to a default path taken from the environment variable :envvar:`PYTHONPATH`, or from a built-in default if :envvar:`PYTHONPATH` is not set.  You can modify it using standard list operations::",
    "msgstr": "Biến ``sys.path`` là một list các chuỗi xác định đường dẫn tìm kiếm mô-đun của trình thông dịch. Nó được khởi tạo bằng một đường dẫn mặc định lấy từ biến môi trường :envvar:`PYTHONPATH`, hoặc từ giá trị mặc định tích hợp sẵn nếu :envvar:`PYTHONPATH` chưa được đặt. Có thể sửa đổi nó bằng các thao tác list chuẩn::",
@@ -11254,12 +10606,6 @@
    "id": "d9c046d24971fa1d",
    "msgid": "line-buffered I/O",
    "msgstr": "I/O có bộ đệm theo dòng",
-   "source": "human"
-  },
-  {
-   "id": "d9f10cc4201b1653",
-   "msgid": ">>> class MyEmptyClass:\n...     pass\n...",
-   "msgstr": ">>> class MyEmptyClass:\n...     pass\n...",
    "source": "human"
   },
   {
@@ -11411,12 +10757,6 @@
    "run": "2026-08-17T16:43Z"
   },
   {
-   "id": "dc5cd8162f783aa4",
-   "msgid": "def write_multiple_items(file, separator, *args):\n    file.write(separator.join(args))",
-   "msgstr": "def write_multiple_items(file, separator, *args):\n    file.write(separator.join(args))",
-   "source": "human"
-  },
-  {
    "id": "dc82519cf5c69875",
    "msgid": "Summation of floats switched to an algorithm that gives higher accuracy and better commutativity on most builds.",
    "msgstr": "Việc cộng các số thực đã chuyển sang thuật toán cho độ chính xác cao hơn và tính giao hoán tốt hơn trên hầu hết các bản dựng.",
@@ -11482,12 +10822,6 @@
    "id": "ddf04ee272da7f3d",
    "msgid": "With Python, it is possible to use the ``**`` operator to calculate powers [#]_::",
    "msgstr": "Với Python, có thể sử dụng toán tử ``**`` để tính lũy thừa [#]_::",
-   "source": "human"
-  },
-  {
-   "id": "de02fb87a0870e7a",
-   "msgid": ">>> x = int(input(\"Please enter an integer: \"))\nPlease enter an integer: 42\n>>> if x < 0:\n...     x = 0\n...     print('Negative changed to zero')\n... elif x == 0:\n...     print('Zero')\n... elif x == 1:\n...     print('Single')\n... else:\n...     print('More')\n...\nMore",
-   "msgstr": ">>> x = int(input(\"Vui lòng nhập một số nguyên: \"))\nVui lòng nhập một số nguyên: 42\n>>> if x < 0:\n... x = 0\n... print('Số âm đã được chuyển thành số không')\n... elif x == 0:\n... print('Số không')\n... elif x == 1:\n... print('Một')\n... else:\n... print('Nhiều hơn')\n...\nNhiều hơn",
    "source": "human"
   },
   {
@@ -11671,12 +11005,6 @@
    "source": "human"
   },
   {
-   "id": "e14539034d9c6379",
-   "msgid": "# -*- coding: encoding -*-",
-   "msgstr": "# -*- coding: encoding -*-",
-   "source": "human"
-  },
-  {
    "id": "e1491b4a7bc0a98d",
    "msgid": "When a final formal parameter of the form ``**name`` is present, it receives a dictionary (see :ref:`typesmapping`) containing all keyword arguments except for those corresponding to a formal parameter.  This may be combined with a formal parameter of the form ``*name`` (described in the next subsection) which receives a :ref:`tuple <tut-tuples>` containing the positional arguments beyond the formal parameter list.  (``*name`` must occur before ``**name``.) For example, if we define a function like this::",
    "msgstr": "Khi có tham số hình thức cuối cùng ở dạng ``**name``, nó nhận một dict (xem :ref:`typesmapping`) chứa tất cả các đối số từ khóa ngoại trừ những đối số tương ứng với tham số hình thức. Có thể kết hợp điều này với tham số hình thức ở dạng ``*name`` (được mô tả trong mục tiếp theo) nhận một :ref:`tuple <tut-tuples>` chứa các đối số vị trí ngoài danh sách tham số hình thức. (``*name`` phải đứng trước ``**name``.) Ví dụ, nếu định nghĩa hàm như sau::",
@@ -11736,12 +11064,6 @@
    "id": "e24841f033592a23",
    "msgid": "The valid range for the argument is from 0 through 1,114,111 (0x10FFFF in base 16).  :exc:`ValueError` will be raised if it is outside that range.",
    "msgstr": "Phạm vi hợp lệ cho đối số là từ 0 đến 1.114.111 (0x10FFFF trong hệ cơ số 16). Ngoại lệ :exc:`ValueError` sẽ được kích hoạt nếu đối số nằm ngoài phạm vi đó.",
-   "source": "human"
-  },
-  {
-   "id": "e25c3c76044e5ed2",
-   "msgid": ">>> prefix = 'Py'\n>>> prefix 'thon'  # can't concatenate a variable and a string literal\n  File \"<stdin>\", line 1\n    prefix 'thon'\n           ^^^^^^\nSyntaxError: invalid syntax\n>>> ('un' * 3) 'ium'\n  File \"<stdin>\", line 1\n    ('un' * 3) 'ium'\n               ^^^^^\nSyntaxError: invalid syntax",
-   "msgstr": ">>> prefix = 'Py'\n>>> prefix 'thon' # không thể nối một biến và một chuỗi ký tự thuần\nFile \"1\", line 1\nprefix 'thon'\n^^^^^^\nSyntaxError: invalid syntax\n>>> ('un' * 3) 'ium'\nFile \"2\", line 1\n('un' * 3) 'ium'\n^^^^^\nSyntaxError: invalid syntax",
    "source": "human"
   },
   {
@@ -11924,12 +11246,6 @@
    "run": "2026-08-17T16:43Z"
   },
   {
-   "id": "e5b2892477d74b0d",
-   "msgid": ">>> def function(a):\n...     pass\n...\n>>> function(0, a=0)\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nTypeError: function() got multiple values for argument 'a'",
-   "msgstr": ">>> def function(a):\n...     pass\n...\n>>> function(0, a=0)\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nTypeError: function() got multiple values for argument 'a'",
-   "source": "human"
-  },
-  {
    "id": "e62813e73426e4e3",
    "msgid": "In this example, the :mod:`!echo` and :mod:`!surround` modules are imported in the current namespace because they are defined in the :mod:`!sound.effects` package when the ``from...import`` statement is executed.  (This also works when ``__all__`` is defined.)",
    "msgstr": "Trong ví dụ này, các mô-đun :mod:`!echo` và :mod:`!surround` được nhập vào không gian tên hiện tại vì chúng được định nghĩa trong gói :mod:`!sound.effects` khi câu lệnh ``from...import`` được thực thi. (Điều này cũng hoạt động khi ``__all__`` được định nghĩa.)",
@@ -12012,12 +11328,6 @@
    "glossary": 1,
    "batch": "10da7e8a3566",
    "run": "2026-08-17T16:43Z"
-  },
-  {
-   "id": "e78d0d23deb83134",
-   "msgid": ">>> n  # try to access an undefined variable\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nNameError: name 'n' is not defined",
-   "msgstr": ">>> n # thử truy cập một biến chưa được định nghĩa\nTraceback (most recent call last):\nFile \"1\", line 1, in 2\nNameError: name 'n' is not defined",
-   "source": "human"
   },
   {
    "id": "e7a0f8d6705ce7cd",
@@ -12172,12 +11482,6 @@
    "glossary": 1,
    "batch": "a9d03541538c",
    "run": "2026-08-17T16:43Z"
-  },
-  {
-   "id": "eb8628e71b200618",
-   "msgid": ">>> for item in zip([1, 2, 3], ['sugar', 'spice', 'everything nice']):\n...     print(item)\n...\n(1, 'sugar')\n(2, 'spice')\n(3, 'everything nice')",
-   "msgstr": ">>> for item in zip([1, 2, 3], ['sugar', 'spice', 'everything nice']):\n...     print(item)\n...\n(1, 'sugar')\n(2, 'spice')\n(3, 'everything nice')",
-   "source": "human"
   },
   {
    "id": "eb877ba53ac5da4d",
@@ -12379,21 +11683,9 @@
    "run": "2026-08-17T16:43Z"
   },
   {
-   "id": "eee4a65f2a47aa07",
-   "msgid": ">>> list(zip(('a', 'b', 'c'), (1, 2, 3), strict=True))\n[('a', 1), ('b', 2), ('c', 3)]",
-   "msgstr": ">>> list(zip(('a', 'b', 'c'), (1, 2, 3), strict=True))\n[('a', 1), ('b', 2), ('c', 3)]",
-   "source": "human"
-  },
-  {
    "id": "eef79605fe800a90",
    "msgid": "*newline* determines how to parse newline characters from the stream. It can be ``None``, ``''``, ``'\\n'``, ``'\\r'``, and ``'\\r\\n'``.  It works as follows:",
    "msgstr": "*newline* xác định cách phân tích cú pháp các ký tự xuống dòng từ luồng. Nó có thể là ``None``, ``''``, ``'\\n'``, ``'\\r'``, và ``'\\r\\n'``. Nó hoạt động như sau:",
-   "source": "human"
-  },
-  {
-   "id": "ef499fb9c5df8755",
-   "msgid": ">>> s = input('--> ')\n--> Monty Python's Flying Circus\n>>> s\n\"Monty Python's Flying Circus\"",
-   "msgstr": ">>> s = input('--> ')\n--> Monty Python's Flying Circus\n>>> s\n\"Monty Python's Flying Circus\"",
    "source": "human"
   },
   {
@@ -12436,12 +11728,6 @@
    "run": "2026-08-17T16:43Z"
   },
   {
-   "id": "effded42b31eca4b",
-   "msgid": ">>> # Fibonacci series:\n>>> # the sum of two elements defines the next\n>>> a, b = 0, 1\n>>> while a < 10:\n...     print(a)\n...     a, b = b, a+b\n...\n0\n1\n1\n2\n3\n5\n8",
-   "msgstr": ">>> # Dãy Fibonacci:\n>>> # tổng của hai phần tử xác định phần tử tiếp theo\n>>> a, b = 0, 1\n>>> while a < 10:\n... print(a)\n... a, b = b, a+b\n...\n0\n1\n1\n2\n3\n5\n8",
-   "source": "human"
-  },
-  {
    "id": "f024be69f8c9cebc",
    "msgid": "Python knows a number of *compound* data types, used to group together other values.  The most versatile is the *list*, which can be written as a list of comma-separated values (items) between square brackets.  Lists might contain items of different types, but usually the items all have the same type. ::",
    "msgstr": "Python hỗ trợ một số kiểu dữ liệu *phức hợp*, được sử dụng để nhóm các giá trị khác lại với nhau. Kiểu linh hoạt nhất là *list*, có thể được viết dưới dạng một danh sách các giá trị (phần tử) ngăn cách bởi dấu phẩy nằm giữa các dấu ngoặc vuông. Danh sách có thể chứa các phần tử thuộc nhiều kiểu khác nhau, nhưng thông thường các phần tử sẽ có cùng một kiểu dữ liệu. ::",
@@ -12463,12 +11749,6 @@
    "glossary": 1,
    "batch": "10da7e8a3566",
    "run": "2026-08-17T16:43Z"
-  },
-  {
-   "id": "f0339eb3a817b97f",
-   "msgid": ">>> squares = [1, 4, 9, 16, 25]\n>>> squares\n[1, 4, 9, 16, 25]",
-   "msgstr": ">>> squares = [1, 4, 9, 16, 25]\n>>> squares\n[1, 4, 9, 16, 25]",
-   "source": "human"
   },
   {
    "id": "f052643d3042c270",
@@ -12694,12 +11974,6 @@
    "source": "human"
   },
   {
-   "id": "f413f0a4a614a8d8",
-   "msgid": ">>> word[-1]  # last character\n'n'\n>>> word[-2]  # second-last character\n'o'\n>>> word[-6]\n'P'",
-   "msgstr": ">>> word[-1] # ký tự cuối cùng\n'n'\n>>> word[-2] # ký tự áp chót\n'o'\n>>> word[-6]\n'P'",
-   "source": "human"
-  },
-  {
    "id": "f43eeca729d76d7b",
    "msgid": "When writing output to the stream, if *newline* is ``None``, any ``'\\n'`` characters written are translated to the system default line separator, :data:`os.linesep`.  If *newline* is ``''`` or ``'\\n'``, no translation takes place.  If *newline* is any of the other legal values, any ``'\\n'`` characters written are translated to the given string.",
    "msgstr": "Khi ghi đầu ra vào luồng, nếu *newline* là ``None``, bất kỳ ký tự ``'\\n'`` nào được ghi đều được dịch thành dấu phân cách dòng mặc định của hệ thống, :data:`os.linesep`. Nếu *newline* là ``''`` hoặc ``'\\n'``, không có dịch thuật nào xảy ra. Nếu *newline* là bất kỳ giá trị hợp lệ nào khác, bất kỳ ký tự ``'\\n'`` nào được ghi đều được dịch thành chuỗi đã cho.",
@@ -12828,12 +12102,6 @@
    "id": "f6d4849b6fefdab2",
    "msgid": "Return a :term:`slice` object representing the set of indices specified by ``range(start, stop, step)``.  The *start* and *step* arguments default to ``None``.",
    "msgstr": "Trả về một đối tượng :term:`slice` đại diện cho tập hợp các chỉ số được chỉ định bởi ``range(start, stop, step)``. Các đối số *start* và *step* mặc định là ``None``.",
-   "source": "human"
-  },
-  {
-   "id": "f6fc174c1fada0e5",
-   "msgid": ">>> def initlog(*args):\n...     pass   # Remember to implement this!\n...",
-   "msgstr": ">>> def initlog(*args):\n...     pass   # Remember to implement this!\n...",
    "source": "human"
   },
   {
@@ -13034,12 +12302,6 @@
    "run": "2026-08-17T16:43Z"
   },
   {
-   "id": "fa7aa61713ffdae8",
-   "msgid": ">>> width = 20\n>>> height = 5 * 9\n>>> width * height\n900",
-   "msgstr": ">>> width = 20\n>>> height = 5 * 9\n>>> width * height\n900",
-   "source": "human"
-  },
-  {
    "id": "fa915680e7022e6a",
    "msgid": "The main operations on a dictionary are storing a value with some key and extracting the value given the key.  It is also possible to delete a key:value pair with ``del``. If you store using a key that is already in use, the old value associated with that key is forgotten.",
    "msgstr": "Các thao tác chính trên một từ điển là lưu trữ một giá trị với một khóa nào đó và lấy giá trị được cung cấp bởi khóa đó. Cũng có thể xóa một cặp khóa:giá trị bằng ``del``. Nếu lưu trữ bằng một khóa đã được sử dụng, giá trị cũ liên kết với khóa đó sẽ bị quên.",
@@ -13089,12 +12351,6 @@
    "id": "fb169ce5bdf67df0",
    "msgid": "If you find a bug in this documentation or would like to propose an improvement, please submit a bug report on the :ref:`issue tracker <using-the-tracker>`.  If you have a suggestion on how to fix it, include that as well.",
    "msgstr": "Nếu bạn tìm thấy lỗi trong tài liệu này hoặc muốn đề xuất cải thiện, vui lòng gửi báo cáo lỗi trên :ref:`issue tracker <using-the-tracker>`. Nếu bạn có gợi ý về cách khắc phục, hãy đính kèm nội dung đó trong báo cáo.",
-   "source": "human"
-  },
-  {
-   "id": "fb1bb43a209966eb",
-   "msgid": ">>> letters = ['a', 'b', 'c', 'd']\n>>> len(letters)\n4",
-   "msgstr": ">>> letters = ['a', 'b', 'c', 'd']\n>>> len(letters)\n4",
    "source": "human"
   },
   {
@@ -13275,12 +12531,6 @@
    "source": "human"
   },
   {
-   "id": "fe1bcc6f7ddd133c",
-   "msgid": ">>> print(\"\"\"\\\n... Usage: thingy [OPTIONS]\n...      -h                        Display this usage message\n...      -H hostname               Hostname to connect to\n... \"\"\")\nUsage: thingy [OPTIONS]\n     -h                        Display this usage message\n     -H hostname               Hostname to connect to\n\n>>>",
-   "msgstr": ">>> print(\"\"\"\\\n... Usage: thingy [OPTIONS]\n... -h Hiển thị thông báo hướng dẫn này\n... -H hostname Tên máy chủ để kết nối tới\n... \"\"\")\nUsage: thingy [OPTIONS]\n-h Hiển thị thông báo hướng dẫn này\n-H hostname Tên máy chủ để kết nối tới\n\n>>>",
-   "source": "human"
-  },
-  {
    "id": "fe22c12e3d4f283b",
    "msgid": "Virtual Environments and Packages",
    "msgstr": "Môi trường ảo và gói",
@@ -13301,12 +12551,6 @@
    "id": "fe5245084f7bf2d9",
    "msgid": "|func-range|_",
    "msgstr": "|func-range|_",
-   "source": "human"
-  },
-  {
-   "id": "fea1fd940d97403b",
-   "msgid": ">>> def fib(n):    # write Fibonacci series less than n\n...     \"\"\"Print a Fibonacci series less than n.\"\"\"\n...     a, b = 0, 1\n...     while a < n:\n...         print(a, end=' ')\n...         a, b = b, a+b\n...     print()\n...\n>>> # Now call the function we just defined:\n>>> fib(2000)\n0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597",
-   "msgstr": ">>> def fib(n):    # write Fibonacci series less than n\n...     \"\"\"Print a Fibonacci series less than n.\"\"\"\n...     a, b = 0, 1\n...     while a < n:\n...         print(a, end=' ')\n...         a, b = b, a+b\n...     print()\n...\n>>> # Now call the function we just defined:\n>>> fib(2000)\n0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597",
    "source": "human"
   },
   {

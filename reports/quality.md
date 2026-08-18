@@ -2,12 +2,12 @@
 
 ## Invariants, recounted
 
-867 machine-written entries in the corpus. Every one of them passed the invariants when it was accepted, so anything below is a rule that was tightened afterwards or an entry something else edited.
+862 machine-written entries in the corpus. Every one of them passed the invariants when it was accepted, so anything below is a rule that was tightened afterwards or an entry something else edited.
 
 | Rule | Failing | Pass rate |
 | --- | ---: | ---: |
-| `P01` | 373 | 56.98% |
-| `P02` | 373 | 56.98% |
+| `P01` | 372 | 56.84% |
+| `P02` | 372 | 56.84% |
 
 ## Refusals
 

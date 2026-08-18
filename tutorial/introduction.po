@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-19 14:37+0000\n"
-"PO-Revision-Date: 2026-08-18 07:19+0000\n"
+"PO-Revision-Date: 2026-08-18 07:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.4\n"
+"X-Generator: pydocvi 0.1.6\n"
 
 msgid "An Informal Introduction to Python"
 msgstr "Giới thiệu sơ lược về Python"
@@ -70,16 +70,18 @@ msgstr ""
 msgid "Some examples::"
 msgstr "Một số ví dụ::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "# this is the first comment\n"
 "spam = 1  # and this is the second comment\n"
 "          # ... and now a third!\n"
 "text = \"# This is not a comment because it's inside quotes.\""
 msgstr ""
-"# đây là chú thích đầu tiên\n"
-"spam = 1 # và đây là chú thích thứ hai\n"
-"# ... và bây giờ là chú thích thứ ba!\n"
-"text = \"# Đây không phải là chú thích vì nó nằm trong dấu ngoặc kép.\""
+"# this is the first comment\n"
+"spam = 1  # and this is the second comment\n"
+"          # ... and now a third!\n"
+"text = \"# This is not a comment because it's inside quotes.\""
 
 msgid "Using Python as a Calculator"
 msgstr "Sử dụng Python như một chiếc máy tính"
@@ -106,6 +108,8 @@ msgstr ""
 "hiện tính toán; dấu ngoặc đơn (``()``) có thể được sử dụng để nhóm các phép "
 "tính. Ví dụ::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> 2 + 2\n"
 "4\n"
@@ -122,7 +126,7 @@ msgstr ""
 "20\n"
 ">>> (50 - 5*6) / 4\n"
 "5.0\n"
-">>> 8 / 5 # phép chia luôn trả về một số dấu phẩy động\n"
+">>> 8 / 5  # division always returns a floating-point number\n"
 "1.6"
 
 msgid ""
@@ -143,6 +147,8 @@ msgstr ""
 "phần nguyên <floor division>` và nhận kết quả là một số nguyên, bạn có thể "
 "sử dụng toán tử ``//``; để tính số dư, bạn có thể sử dụng ``%``::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> 17 / 3  # classic division returns a float\n"
 "5.666666666666667\n"
@@ -154,14 +160,14 @@ msgid ""
 ">>> 5 * 3 + 2  # floored quotient * divisor + remainder\n"
 "17"
 msgstr ""
-">>> 17 / 3 # phép chia thông thường trả về một số thực\n"
+">>> 17 / 3  # classic division returns a float\n"
 "5.666666666666667\n"
 ">>>\n"
-">>> 17 // 3 # phép chia lấy phần nguyên loại bỏ phần thập phân\n"
+">>> 17 // 3  # floor division discards the fractional part\n"
 "5\n"
-">>> 17 % 3 # toán tử % trả về số dư của phép chia\n"
+">>> 17 % 3  # the % operator returns the remainder of the division\n"
 "2\n"
-">>> 5 * 3 + 2 # thương nguyên * số chia + số dư\n"
+">>> 5 * 3 + 2  # floored quotient * divisor + remainder\n"
 "17"
 
 msgid ""
@@ -169,15 +175,17 @@ msgid ""
 "[#]_::"
 msgstr "Với Python, có thể sử dụng toán tử ``**`` để tính lũy thừa [#]_::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> 5 ** 2  # 5 squared\n"
 "25\n"
 ">>> 2 ** 7  # 2 to the power of 7\n"
 "128"
 msgstr ""
-">>> 5 ** 2 # 5 bình phương\n"
+">>> 5 ** 2  # 5 squared\n"
 "25\n"
-">>> 2 ** 7 # 2 lũy thừa 7\n"
+">>> 2 ** 7  # 2 to the power of 7\n"
 "128"
 
 msgid ""
@@ -187,6 +195,8 @@ msgstr ""
 "Dấu bằng (``=``) được dùng để gán một giá trị cho một biến. Sau đó, không có "
 "kết quả nào được hiển thị trước dấu nhắc tương tác tiếp theo::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> width = 20\n"
 ">>> height = 5 * 9\n"
@@ -205,15 +215,17 @@ msgstr ""
 "Nếu một biến chưa được \"định nghĩa\" (được gán một giá trị), việc cố gắng "
 "sử dụng nó sẽ gây ra lỗi::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> n  # try to access an undefined variable\n"
 "Traceback (most recent call last):\n"
 "  File \"<stdin>\", line 1, in <module>\n"
 "NameError: name 'n' is not defined"
 msgstr ""
-">>> n # thử truy cập một biến chưa được định nghĩa\n"
+">>> n  # try to access an undefined variable\n"
 "Traceback (most recent call last):\n"
-"File \"1\", line 1, in 2\n"
+"  File \"<stdin>\", line 1, in <module>\n"
 "NameError: name 'n' is not defined"
 
 msgid ""
@@ -223,6 +235,8 @@ msgstr ""
 "Có sự hỗ trợ đầy đủ cho số dấu phẩy động; các toán tử có các toán hạng thuộc "
 "kiểu hỗn hợp sẽ chuyển đổi toán hạng số nguyên sang số dấu phẩy động::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> 4 * 3.75 - 1\n"
 "14.0"
@@ -239,6 +253,8 @@ msgstr ""
 "``_``. Điều này có nghĩa là khi bạn sử dụng Python như một chiếc máy tính để "
 "bàn, việc tiếp tục các phép tính sẽ dễ dàng hơn phần nào, ví dụ::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> tax = 12.5 / 100\n"
 ">>> price = 100.50\n"
@@ -295,6 +311,8 @@ msgstr ""
 "``\", v.v, \"``Yay! :)``\". Chúng có thể được bao quanh bởi dấu ngoặc đơn "
 "(``'...'``) hoặc dấu ngoặc kép (``\"...\"``) với cùng một kết quả [#]_."
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> 'spam eggs'  # single quotes\n"
 "'spam eggs'\n"
@@ -303,11 +321,11 @@ msgid ""
 ">>> '1975'  # digits and numerals enclosed in quotes are also strings\n"
 "'1975'"
 msgstr ""
-">>> 'spam eggs' # dấu ngoặc đơn\n"
+">>> 'spam eggs'  # single quotes\n"
 "'spam eggs'\n"
-">>> \"Paris rabbit got your back :)! Yay!\" # dấu ngoặc kép\n"
+">>> \"Paris rabbit got your back :)! Yay!\"  # double quotes\n"
 "'Paris rabbit got your back :)! Yay!'\n"
-">>> '1975' # các chữ số nằm trong dấu ngoặc kép cũng là chuỗi\n"
+">>> '1975'  # digits and numerals enclosed in quotes are also strings\n"
 "'1975'"
 
 msgid ""
@@ -317,6 +335,8 @@ msgstr ""
 "Để trích dẫn một dấu ngoặc, chúng ta cần thoát nó bằng cách thêm dấu ``\\`` "
 "phía trước. Ngoài ra, chúng ta có thể sử dụng loại dấu ngoặc kép còn lại::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> 'doesn\\'t'  # use \\' to escape the single quote...\n"
 "\"doesn't\"\n"
@@ -329,9 +349,9 @@ msgid ""
 ">>> '\"Isn\\'t,\" they said.'\n"
 "'\"Isn\\'t,\" they said.'"
 msgstr ""
-">>> 'doesn\\'t' # sử dụng \\' để thoát dấu ngoặc đơn...\n"
+">>> 'doesn\\'t'  # use \\' to escape the single quote...\n"
 "\"doesn't\"\n"
-">>> \"doesn't\" # ...hoặc sử dụng dấu ngoặc kép để thay thế\n"
+">>> \"doesn't\"  # ...or use double quotes instead\n"
 "\"doesn't\"\n"
 ">>> '\"Yes,\" they said.'\n"
 "'\"Yes,\" they said.'\n"
@@ -351,6 +371,8 @@ msgstr ""
 "cách loại bỏ các dấu ngoặc bao quanh và in ra các ký tự đã được thoát và các "
 "ký tự đặc biệt::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> s = 'First line.\\nSecond line.'  # \\n means newline\n"
 ">>> s  # without print(), special characters are included in the string\n"
@@ -360,12 +382,11 @@ msgid ""
 "First line.\n"
 "Second line."
 msgstr ""
-">>> s = 'First line.\\nSecond line.' # \\n có nghĩa là dòng mới\n"
-">>> s # nếu không có print(), các ký tự đặc biệt sẽ được bao gồm trong "
-"chuỗi\n"
+">>> s = 'First line.\\nSecond line.'  # \\n means newline\n"
+">>> s  # without print(), special characters are included in the string\n"
 "'First line.\\nSecond line.'\n"
-">>> print(s) # với print(), các ký tự đặc biệt được thông dịch, nên \\n tạo "
-"ra dòng mới\n"
+">>> print(s)  # with print(), special characters are interpreted, so \\n "
+"produces new line\n"
 "First line.\n"
 "Second line."
 
@@ -378,6 +399,8 @@ msgstr ""
 "tự đặc biệt, bạn có thể sử dụng chuỗi thô bằng cách thêm một chữ ``r`` vào "
 "trước dấu ngoặc đầu tiên::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> print('C:\\this\\name')  # here \\t means tab, \\n means newline\n"
 "C:      his\n"
@@ -385,11 +408,10 @@ msgid ""
 ">>> print(r'C:\\this\\name')  # note the r before the quote\n"
 "C:\\this\\name"
 msgstr ""
-">>> print('C:\\this\\name') # ở đây \\t có nghĩa là tab, \\n có nghĩa là "
-"dòng mới\n"
-"C: his\n"
+">>> print('C:\\this\\name')  # here \\t means tab, \\n means newline\n"
+"C:      his\n"
 "ame\n"
-">>> print(r'C:\\this\\name') # lưu ý chữ r trước dấu ngoặc\n"
+">>> print(r'C:\\this\\name')  # note the r before the quote\n"
 "C:\\this\\name"
 
 msgid ""
@@ -414,6 +436,8 @@ msgstr ""
 "cách thêm một dấu ``\\`` ở cuối dòng. Trong ví dụ sau, ký tự dòng mới đầu "
 "tiên không được bao gồm::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> print(\"\"\"\\\n"
 "... Usage: thingy [OPTIONS]\n"
@@ -428,12 +452,12 @@ msgid ""
 msgstr ""
 ">>> print(\"\"\"\\\n"
 "... Usage: thingy [OPTIONS]\n"
-"... -h Hiển thị thông báo hướng dẫn này\n"
-"... -H hostname Tên máy chủ để kết nối tới\n"
+"...      -h                        Display this usage message\n"
+"...      -H hostname               Hostname to connect to\n"
 "... \"\"\")\n"
 "Usage: thingy [OPTIONS]\n"
-"-h Hiển thị thông báo hướng dẫn này\n"
-"-H hostname Tên máy chủ để kết nối tới\n"
+"     -h                        Display this usage message\n"
+"     -H hostname               Hostname to connect to\n"
 "\n"
 ">>>"
 
@@ -444,12 +468,14 @@ msgstr ""
 "Chuỗi có thể được nối với nhau (dán lại với nhau) bằng toán tử ``+``, và lặp "
 "lại với toán tử ``*``::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> # 3 times 'un', followed by 'ium'\n"
 ">>> 3 * 'un' + 'ium'\n"
 "'unununium'"
 msgstr ""
-">>> # 3 lần 'un', theo sau là 'ium'\n"
+">>> # 3 times 'un', followed by 'ium'\n"
 ">>> 3 * 'un' + 'ium'\n"
 "'unununium'"
 
@@ -460,6 +486,8 @@ msgstr ""
 "Hai hoặc nhiều chuỗi ký tự (tức là những chuỗi nằm trong dấu ngoặc) đặt cạnh "
 "nhau sẽ được tự động nối lại với nhau. ::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> 'Py' 'thon'\n"
 "'Python'"
@@ -471,16 +499,18 @@ msgid ""
 "This feature is particularly useful when you want to break long strings::"
 msgstr "Tính năng này đặc biệt hữu ích khi bạn muốn ngắt các chuỗi dài::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> text = ('Put several strings within parentheses '\n"
 "...         'to have them joined together.')\n"
 ">>> text\n"
 "'Put several strings within parentheses to have them joined together.'"
 msgstr ""
-">>> text = ('Đặt nhiều chuỗi trong dấu ngoặc đơn '\n"
-"... 'để chúng được nối lại với nhau.')\n"
+">>> text = ('Put several strings within parentheses '\n"
+"...         'to have them joined together.')\n"
 ">>> text\n"
-"'Đặt nhiều chuỗi trong dấu ngoặc đơn để chúng được nối lại với nhau.'"
+"'Put several strings within parentheses to have them joined together.'"
 
 msgid ""
 "This only works with two literals though, not with variables or expressions::"
@@ -488,6 +518,8 @@ msgstr ""
 "Tuy nhiên, điều này chỉ hoạt động với hai chuỗi ký tự thuần, không hoạt động "
 "với các biến hoặc biểu thức::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> prefix = 'Py'\n"
 ">>> prefix 'thon'  # can't concatenate a variable and a string literal\n"
@@ -502,15 +534,15 @@ msgid ""
 "SyntaxError: invalid syntax"
 msgstr ""
 ">>> prefix = 'Py'\n"
-">>> prefix 'thon' # không thể nối một biến và một chuỗi ký tự thuần\n"
-"File \"1\", line 1\n"
-"prefix 'thon'\n"
-"^^^^^^\n"
+">>> prefix 'thon'  # can't concatenate a variable and a string literal\n"
+"  File \"<stdin>\", line 1\n"
+"    prefix 'thon'\n"
+"           ^^^^^^\n"
 "SyntaxError: invalid syntax\n"
 ">>> ('un' * 3) 'ium'\n"
-"File \"2\", line 1\n"
-"('un' * 3) 'ium'\n"
-"^^^^^\n"
+"  File \"<stdin>\", line 1\n"
+"    ('un' * 3) 'ium'\n"
+"               ^^^^^\n"
 "SyntaxError: invalid syntax"
 
 msgid ""
@@ -519,6 +551,8 @@ msgstr ""
 "Nếu bạn muốn nối các biến hoặc một biến với một chuỗi ký tự thuần, hãy sử "
 "dụng ``+``::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> prefix + 'thon'\n"
 "'Python'"
@@ -535,6 +569,8 @@ msgstr ""
 "0. Không có kiểu ký tự riêng biệt; một ký tự đơn giản là một chuỗi có kích "
 "thước bằng một::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> word = 'Python'\n"
 ">>> word[0]  # character in position 0\n"
@@ -543,15 +579,17 @@ msgid ""
 "'n'"
 msgstr ""
 ">>> word = 'Python'\n"
-">>> word[0] # ký tự ở vị trí 0\n"
+">>> word[0]  # character in position 0\n"
 "'P'\n"
-">>> word[5] # ký tự ở vị trí 5\n"
+">>> word[5]  # character in position 5\n"
 "'n'"
 
 msgid ""
 "Indices may also be negative numbers, to start counting from the right::"
 msgstr "Chỉ số cũng có thể là số âm, để bắt đầu đếm từ phía bên phải::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> word[-1]  # last character\n"
 "'n'\n"
@@ -560,9 +598,9 @@ msgid ""
 ">>> word[-6]\n"
 "'P'"
 msgstr ""
-">>> word[-1] # ký tự cuối cùng\n"
+">>> word[-1]  # last character\n"
 "'n'\n"
-">>> word[-2] # ký tự áp chót\n"
+">>> word[-2]  # second-last character\n"
 "'o'\n"
 ">>> word[-6]\n"
 "'P'"
@@ -579,15 +617,17 @@ msgstr ""
 "đánh chỉ số được dùng để lấy các ký tự riêng lẻ, cắt chuỗi cho phép bạn lấy "
 "một chuỗi con::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> word[0:2]  # characters from position 0 (included) to 2 (excluded)\n"
 "'Py'\n"
 ">>> word[2:5]  # characters from position 2 (included) to 5 (excluded)\n"
 "'tho'"
 msgstr ""
-">>> word[0:2] # các ký tự từ vị trí 0 (bao gồm) đến 2 (loại trừ)\n"
+">>> word[0:2]  # characters from position 0 (included) to 2 (excluded)\n"
 "'Py'\n"
-">>> word[2:5] # các ký tự từ vị trí 2 (bao gồm) đến 5 (loại trừ)\n"
+">>> word[2:5]  # characters from position 2 (included) to 5 (excluded)\n"
 "'tho'"
 
 msgid ""
@@ -598,6 +638,8 @@ msgstr ""
 "bỏ trống sẽ mặc định là 0, chỉ số thứ hai nếu bị bỏ trống sẽ mặc định là độ "
 "dài của chuỗi đang được cắt. ::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> word[:2]   # character from the beginning to position 2 (excluded)\n"
 "'Py'\n"
@@ -606,11 +648,11 @@ msgid ""
 ">>> word[-2:]  # characters from the second-last (included) to the end\n"
 "'on'"
 msgstr ""
-">>> word[:2] # ký tự từ đầu đến vị trí 2 (loại trừ)\n"
+">>> word[:2]   # character from the beginning to position 2 (excluded)\n"
 "'Py'\n"
-">>> word[4:] # ký tự từ vị trí 4 (bao gồm) đến hết\n"
+">>> word[4:]   # characters from position 4 (included) to the end\n"
 "'on'\n"
-">>> word[-2:] # ký tự từ vị trí áp chót (bao gồm) đến hết\n"
+">>> word[-2:]  # characters from the second-last (included) to the end\n"
 "'on'"
 
 msgid ""
@@ -620,6 +662,8 @@ msgstr ""
 "Lưu ý rằng điểm bắt đầu luôn được bao gồm, và điểm kết thúc luôn bị loại "
 "trừ. Điều này đảm bảo rằng ``s[:i] + s[i:]`` luôn luôn bằng ``s``::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> word[:2] + word[2:]\n"
 "'Python'\n"
@@ -676,15 +720,17 @@ msgstr ""
 msgid "Attempting to use an index that is too large will result in an error::"
 msgstr "Việc cố gắng sử dụng một chỉ số quá lớn sẽ dẫn đến lỗi::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> word[42]  # the word only has 6 characters\n"
 "Traceback (most recent call last):\n"
 "  File \"<stdin>\", line 1, in <module>\n"
 "IndexError: string index out of range"
 msgstr ""
-">>> word[42] # từ này chỉ có 6 ký tự\n"
+">>> word[42]  # the word only has 6 characters\n"
 "Traceback (most recent call last):\n"
-"File \"<stdin>\", line 1, in <module>\n"
+"  File \"<stdin>\", line 1, in <module>\n"
 "IndexError: string index out of range"
 
 msgid ""
@@ -694,6 +740,8 @@ msgstr ""
 "Tuy nhiên, các chỉ số cắt nằm ngoài phạm vi được xử lý một cách linh hoạt "
 "khi được sử dụng để cắt chuỗi::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> word[4:42]\n"
 "'on'\n"
@@ -713,6 +761,8 @@ msgstr ""
 "`immutable`. Do đó, việc gán giá trị vào một vị trí chỉ số trong chuỗi sẽ "
 "dẫn đến lỗi::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> word[0] = 'J'\n"
 "Traceback (most recent call last):\n"
@@ -735,6 +785,8 @@ msgstr ""
 msgid "If you need a different string, you should create a new one::"
 msgstr "Nếu bạn cần một chuỗi khác, bạn nên tạo một chuỗi mới::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> 'J' + word[1:]\n"
 "'Jython'\n"
@@ -749,6 +801,8 @@ msgstr ""
 msgid "The built-in function :func:`len` returns the length of a string::"
 msgstr "Hàm tích hợp sẵn :func:`len` trả về độ dài của một chuỗi::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> s = 'supercalifragilisticexpialidocious'\n"
 ">>> len(s)\n"
@@ -815,6 +869,8 @@ msgstr ""
 "dấu ngoặc vuông. Danh sách có thể chứa các phần tử thuộc nhiều kiểu khác "
 "nhau, nhưng thông thường các phần tử sẽ có cùng một kiểu dữ liệu. ::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> squares = [1, 4, 9, 16, 25]\n"
 ">>> squares\n"
@@ -831,6 +887,8 @@ msgstr ""
 "Giống như chuỗi (và tất cả các kiểu dữ liệu tuần tự :term:`sequence` khác), "
 "danh sách có thể được đánh chỉ số và cắt lát::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> squares[0]  # indexing returns the item\n"
 "1\n"
@@ -839,16 +897,18 @@ msgid ""
 ">>> squares[-3:]  # slicing returns a new list\n"
 "[9, 16, 25]"
 msgstr ""
-">>> squares[0] # đánh chỉ số trả về phần tử\n"
+">>> squares[0]  # indexing returns the item\n"
 "1\n"
 ">>> squares[-1]\n"
 "25\n"
-">>> squares[-3:] # cắt lát trả về một danh sách mới\n"
+">>> squares[-3:]  # slicing returns a new list\n"
 "[9, 16, 25]"
 
 msgid "Lists also support operations like concatenation::"
 msgstr "List cũng hỗ trợ các thao tác như nối chuỗi::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> squares + [36, 49, 64, 81, 100]\n"
 "[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]"
@@ -864,6 +924,8 @@ msgstr ""
 "có thể thay đổi :term:`mutable`, nghĩa là có thể thay đổi nội dung của "
 "chúng::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> cubes = [1, 8, 27, 65, 125]  # something's wrong here\n"
 ">>> 4 ** 3  # the cube of 4 is 64, not 65!\n"
@@ -872,10 +934,10 @@ msgid ""
 ">>> cubes\n"
 "[1, 8, 27, 64, 125]"
 msgstr ""
-">>> cubes = [1, 8, 27, 65, 125] # có gì đó sai ở đây\n"
-">>> 4 ** 3 # lập phương của 4 là 64, không phải 65!\n"
+">>> cubes = [1, 8, 27, 65, 125]  # something's wrong here\n"
+">>> 4 ** 3  # the cube of 4 is 64, not 65!\n"
 "64\n"
-">>> cubes[3] = 64 # thay thế giá trị sai\n"
+">>> cubes[3] = 64  # replace the wrong value\n"
 ">>> cubes\n"
 "[1, 8, 27, 64, 125]"
 
@@ -887,14 +949,16 @@ msgstr ""
 "*phương thức* :meth:`list.append` (chúng ta sẽ tìm hiểu kỹ hơn về các phương "
 "thức sau)::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> cubes.append(216)  # add the cube of 6\n"
 ">>> cubes.append(7 ** 3)  # and the cube of 7\n"
 ">>> cubes\n"
 "[1, 8, 27, 64, 125, 216, 343]"
 msgstr ""
-">>> cubes.append(216) # thêm lập phương của 6\n"
-">>> cubes.append(7 ** 3) # và lập phương của 7\n"
+">>> cubes.append(216)  # add the cube of 6\n"
+">>> cubes.append(7 ** 3)  # and the cube of 7\n"
 ">>> cubes\n"
 "[1, 8, 27, 64, 125, 216, 343]"
 
@@ -909,6 +973,8 @@ msgstr ""
 "Mọi thay đổi bạn thực hiện đối với danh sách thông qua một biến sẽ được nhìn "
 "thấy thông qua tất cả các biến khác tham chiếu đến nó.::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> rgb = [\"Red\", \"Green\", \"Blue\"]\n"
 ">>> rgba = rgb\n"
@@ -920,7 +986,7 @@ msgid ""
 msgstr ""
 ">>> rgb = [\"Red\", \"Green\", \"Blue\"]\n"
 ">>> rgba = rgb\n"
-">>> id(rgb) == id(rgba) # chúng tham chiếu đến cùng một đối tượng\n"
+">>> id(rgb) == id(rgba)  # they reference the same object\n"
 "True\n"
 ">>> rgba.append(\"Alph\")\n"
 ">>> rgb\n"
@@ -935,6 +1001,8 @@ msgstr ""
 "được yêu cầu. Điều này có nghĩa là lát cắt sau đây trả về một :ref:`bản sao "
 "nông <shallow_vs_deep_copy>` của danh sách::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> correct_rgba = rgba[:]\n"
 ">>> correct_rgba[-1] = \"Alpha\"\n"
@@ -957,6 +1025,8 @@ msgstr ""
 "Việc gán cho các lát cắt cũng có thể thực hiện được, và điều này thậm chí có "
 "thể thay đổi kích thước của danh sách hoặc xóa sạch danh sách đó hoàn toàn::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g']\n"
 ">>> letters\n"
@@ -977,16 +1047,15 @@ msgstr ""
 ">>> letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g']\n"
 ">>> letters\n"
 "['a', 'b', 'c', 'd', 'e', 'f', 'g']\n"
-">>> # thay thế một số giá trị\n"
+">>> # replace some values\n"
 ">>> letters[2:5] = ['C', 'D', 'E']\n"
 ">>> letters\n"
 "['a', 'b', 'C', 'D', 'E', 'f', 'g']\n"
-">>> # bây giờ loại bỏ chúng\n"
+">>> # now remove them\n"
 ">>> letters[2:5] = []\n"
 ">>> letters\n"
 "['a', 'b', 'f', 'g']\n"
-">>> # xóa sạch danh sách bằng cách thay thế tất cả các phần tử bằng một danh "
-"sách trống\n"
+">>> # clear the list by replacing all the elements with an empty list\n"
 ">>> letters[:] = []\n"
 ">>> letters\n"
 "[]"
@@ -994,6 +1063,8 @@ msgstr ""
 msgid "The built-in function :func:`len` also applies to lists::"
 msgstr "Hàm tích hợp sẵn :func:`len` cũng áp dụng cho danh sách::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> letters = ['a', 'b', 'c', 'd']\n"
 ">>> len(letters)\n"
@@ -1010,6 +1081,8 @@ msgstr ""
 "Có thể lồng các danh sách vào nhau (tạo các danh sách chứa các danh sách "
 "khác), ví dụ::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> a = ['a', 'b', 'c']\n"
 ">>> n = [1, 2, 3]\n"
@@ -1044,6 +1117,8 @@ msgstr ""
 "chỉ cộng hai với hai. Ví dụ, chúng ta có thể viết một phân đoạn đầu tiên của "
 "`dãy Fibonacci <https://en.wikipedia.org/wiki/Fibonacci_sequence>`_ như sau::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> # Fibonacci series:\n"
 ">>> # the sum of two elements defines the next\n"
@@ -1060,12 +1135,12 @@ msgid ""
 "5\n"
 "8"
 msgstr ""
-">>> # Dãy Fibonacci:\n"
-">>> # tổng của hai phần tử xác định phần tử tiếp theo\n"
+">>> # Fibonacci series:\n"
+">>> # the sum of two elements defines the next\n"
 ">>> a, b = 0, 1\n"
 ">>> while a < 10:\n"
-"... print(a)\n"
-"... a, b = b, a+b\n"
+"...     print(a)\n"
+"...     a, b = b, a+b\n"
 "...\n"
 "0\n"
 "1\n"
@@ -1146,14 +1221,16 @@ msgstr ""
 "khoảng trắng được chèn giữa các phần tử, nhờ đó bạn có thể định dạng mọi thứ "
 "đẹp mắt như thế này::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> i = 256*256\n"
 ">>> print('The value of i is', i)\n"
 "The value of i is 65536"
 msgstr ""
 ">>> i = 256*256\n"
-">>> print('Giá trị của i là', i)\n"
-"Giá trị của i là 65536"
+">>> print('The value of i is', i)\n"
+"The value of i is 65536"
 
 msgid ""
 "The keyword argument *end* can be used to avoid the newline after the "
@@ -1162,6 +1239,8 @@ msgstr ""
 "Đối số từ khóa *end* có thể được sử dụng để tránh xuống dòng sau khi xuất dữ "
 "liệu, hoặc kết thúc kết quả đầu ra bằng một chuỗi khác::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> a, b = 0, 1\n"
 ">>> while a < 1000:\n"
@@ -1200,6 +1279,8 @@ msgstr ""
 "khác biệt duy nhất giữa cả hai là trong dấu ngoặc đơn, bạn không cần phải "
 "dùng ký tự thoát cho ``\"`` (nhưng bạn phải thoát cho ``\\'``) và ngược lại."
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "# (hash)"
 msgstr "# (hash)"
 
