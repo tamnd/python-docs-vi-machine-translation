@@ -28,21 +28,24 @@
 
 ## Glossary adherence
 
-640 terms against 2,024 translated entries. 285 misses over 90 terms.
+642 terms against 2,024 translated entries. 442 misses over 92 terms.
 
 | Written by | Entries | Misses | Misses per entry | Terms |
 | --- | ---: | ---: | ---: | ---: |
-| human | 1,164 | 244 | 0.21 | 84 |
-| machine | 860 | 41 | 0.05 | 19 |
+| human | 1,164 | 276 | 0.24 | 86 |
+| machine | 860 | 166 | 0.19 | 22 |
 
 | Term | Misses |
 | --- | ---: |
-| type | 39 |
-| list | 30 |
+| module | 80 |
+| list | 63 |
+| object | 48 |
+| type | 30 |
 | sequence | 22 |
 | import | 13 |
 | dictionary | 10 |
 | newline | 8 |
+| float | 7 |
 | iterator | 6 |
 | key | 6 |
 | class | 5 |
@@ -54,9 +57,6 @@
 | mapping | 4 |
 | package | 4 |
 | positional arguments | 4 |
-| attribute | 3 |
-| base classes | 3 |
-| data types | 3 |
 
 ## Dead entries
 

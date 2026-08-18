@@ -93,7 +93,7 @@ disagree.
 
 <!-- generated: terms -->
 
-Version 2. 640 terms, 53 of them kept in English.
+Version 3. 642 terms, 51 of them kept in English.
 
 | English | Vietnamese | Notes |
 | --- | --- | --- |
@@ -713,11 +713,13 @@ Version 2. 640 terms, 53 of them kept in English.
 | lambda | `lambda` (kept) |  |
 | loader | trình tải |  |
 | method | phương thức |  |
+| module | `module` (kept) |  |
+| object | đối tượng |  |
 | stdlib | `stdlib` (kept) |  |
 | string | chuỗi |  |
 | Event | Sự kiện |  |
 | class | lớp |  |
-| float | `float` (kept) |  |
+| float | số thực | An entry that is only `float` names the thing and stays English. |
 | index | chỉ số |  |
 | slice | `slice` (kept) |  |
 | token | `token` (kept) |  |
@@ -729,8 +731,8 @@ Version 2. 640 terms, 53 of them kept in English.
 | REPL | `REPL` (kept) |  |
 | exec | `exec` (kept) |  |
 | file | tệp |  |
-| list | `list` (kept) |  |
-| type | `type` (kept) |  |
+| list | danh sách | An entry that is only `list` names the thing and stays English. |
+| type | kiểu | An entry that is only `type` names the thing and stays English. |
 | GIL | `GIL` (kept) |  |
 | MRO | `MRO` (kept) |  |
 | NaN | `NaN` (kept) |  |

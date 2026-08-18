@@ -1,6 +1,6 @@
 # Written by pydocvi glossary. Rows are in match order, longest first.
 # GLOSSARY.md is generated from this file and G05 fails when they disagree.
-version: 3
+version: 2
 terms:
   - en: "asynchronous generator iterator"
     vi: "trình lặp sinh bất đồng bộ"
@@ -1269,11 +1269,6 @@ terms:
     vi: "trình tải"
   - en: "method"
     vi: "phương thức"
-  - en: "module"
-    vi: "module"
-    keep_en: true
-  - en: "object"
-    vi: "đối tượng"
   - en: "stdlib"
     vi: "stdlib"
     keep_en: true
@@ -1284,8 +1279,8 @@ terms:
   - en: "class"
     vi: "lớp"
   - en: "float"
-    vi: "số thực"
-    identifier: true
+    vi: "float"
+    keep_en: true
   - en: "index"
     vi: "chỉ số"
   - en: "slice"
@@ -1318,11 +1313,11 @@ terms:
   - en: "file"
     vi: "tệp"
   - en: "list"
-    vi: "danh sách"
-    identifier: true
+    vi: "list"
+    keep_en: true
   - en: "type"
-    vi: "kiểu"
-    identifier: true
+    vi: "type"
+    keep_en: true
   - en: "GIL"
     vi: "GIL"
     keep_en: true
