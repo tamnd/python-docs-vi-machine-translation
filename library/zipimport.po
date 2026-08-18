@@ -5,22 +5,23 @@
 #
 # Translators:
 # python-doc bot, 2025
+# Nguyen Duc Tam, 2026
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-09 15:16+0000\n"
-"PO-Revision-Date: 2025-09-16 00:02+0000\n"
-"Last-Translator: python-doc bot, 2025\n"
-"Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
-"vi/)\n"
+"POT-Creation-Date: 2026-05-08 18:34+0000\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: pydocvi 0.1.2\n"
 
 msgid ":mod:`!zipimport` --- Import modules from Zip archives"
 msgstr ""
@@ -53,6 +54,9 @@ msgid ""
 "contains :file:`.py` files, Python will not attempt to modify the archive by "
 "adding the corresponding :file:`.pyc` file, meaning that if a ZIP archive "
 "doesn't contain :file:`.pyc` files, importing may be rather slow."
+msgstr ""
+
+msgid "Zstandard (*zstd*) compressed zip file entries are supported."
 msgstr ""
 
 msgid "ZIP64 is supported"
@@ -143,6 +147,7 @@ msgstr ""
 
 msgid ":exc:`IOError` used to be raised, it is now an alias of :exc:`OSError`."
 msgstr ""
+":exc:`IOError` trước đây được kích hoạt, hiện là bí danh của :exc:`OSError`."
 
 msgid ""
 "Return the value ``__file__`` would be set to if the specified module was "
@@ -158,15 +163,6 @@ msgstr ""
 msgid ""
 "Return ``True`` if the module specified by *fullname* is a package. Raise :"
 "exc:`ZipImportError` if the module couldn't be found."
-msgstr ""
-
-msgid ""
-"Load the module specified by *fullname*. *fullname* must be the fully "
-"qualified (dotted) module name. Returns the imported module on success, "
-"raises :exc:`ZipImportError` on failure."
-msgstr ""
-
-msgid "Use :meth:`exec_module` instead."
 msgstr ""
 
 msgid ""
@@ -198,6 +194,8 @@ msgid ""
 "mod:`!zipimport` module is not explicitly used."
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "$ unzip -l example_archive.zip\n"
 "Archive:  example_archive.zip\n"
@@ -207,7 +205,16 @@ msgid ""
 " --------                   -------\n"
 "     8467                   1 file"
 msgstr ""
+"$ unzip -l example_archive.zip\n"
+"Archive:  example_archive.zip\n"
+"  Length     Date   Time    Name\n"
+" --------    ----   ----    ----\n"
+"     8467  01-01-00 12:30   example.py\n"
+" --------                   -------\n"
+"     8467                   1 file"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import sys\n"
 ">>> # Add the archive to the front of the module search path\n"
@@ -216,3 +223,9 @@ msgid ""
 ">>> example.__file__\n"
 "'example_archive.zip/example.py'"
 msgstr ""
+">>> import sys\n"
+">>> # Add the archive to the front of the module search path\n"
+">>> sys.path.insert(0, 'example_archive.zip')\n"
+">>> import example\n"
+">>> example.__file__\n"
+"'example_archive.zip/example.py'"

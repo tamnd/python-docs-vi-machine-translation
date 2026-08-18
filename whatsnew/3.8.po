@@ -5,28 +5,31 @@
 #
 # Translators:
 # python-doc bot, 2025
+# Nguyen Duc Tam, 2026
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-17 14:50+0000\n"
-"PO-Revision-Date: 2025-09-16 00:02+0000\n"
-"Last-Translator: python-doc bot, 2025\n"
-"Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
-"vi/)\n"
+"POT-Creation-Date: 2026-05-08 18:34+0000\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: pydocvi 0.1.2\n"
 
 msgid "What's New In Python 3.8"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Editor"
-msgstr ""
+msgstr "Editor"
 
 msgid "Raymond Hettinger"
 msgstr ""
@@ -58,10 +61,14 @@ msgid ""
 "twice::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "if (n := len(a)) > 10:\n"
 "    print(f\"List is too long ({n} elements, expected <= 10)\")"
 msgstr ""
+"if (n := len(a)) > 10:\n"
+"    print(f\"List is too long ({n} elements, expected <= 10)\")"
 
 msgid ""
 "A similar benefit arises during regular expression matching where match "
@@ -69,11 +76,16 @@ msgid ""
 "to extract a subgroup::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "discount = 0.0\n"
 "if (mo := re.search(r'(\\d+)% discount', advertisement)):\n"
 "    discount = float(mo.group(1)) / 100.0"
 msgstr ""
+"discount = 0.0\n"
+"if (mo := re.search(r'(\\d+)% discount', advertisement)):\n"
+"    discount = float(mo.group(1)) / 100.0"
 
 msgid ""
 "The operator is also useful with while-loops that compute a value to test "
@@ -81,11 +93,16 @@ msgid ""
 "loop::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "# Loop over fixed length blocks\n"
 "while (block := f.read(256)) != '':\n"
 "    process(block)"
 msgstr ""
+"# Loop over fixed length blocks\n"
+"while (block := f.read(256)) != '':\n"
+"    process(block)"
 
 msgid ""
 "Another motivating use case arises in list comprehensions where a value "
@@ -125,16 +142,22 @@ msgid ""
 "keywords::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def f(a, b, /, c, d, *, e, f):\n"
 "    print(a, b, c, d, e, f)"
 msgstr ""
+"def f(a, b, /, c, d, *, e, f):\n"
+"    print(a, b, c, d, e, f)"
 
 msgid "The following is a valid call::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "f(10, 20, 30, d=40, e=50, f=60)"
-msgstr ""
+msgstr "f(10, 20, 30, d=40, e=50, f=60)"
 
 msgid "However, these are invalid calls::"
 msgstr ""
@@ -150,11 +173,16 @@ msgid ""
 "built-in :func:`divmod` function does not accept keyword arguments::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def divmod(a, b, /):\n"
 "    \"Emulate the built in divmod() function\"\n"
 "    return (a // b, a % b)"
 msgstr ""
+"def divmod(a, b, /):\n"
+"    \"Emulate the built in divmod() function\"\n"
+"    return (a // b, a % b)"
 
 msgid ""
 "Another use case is to preclude keyword arguments when the parameter name is "
@@ -173,16 +201,22 @@ msgid ""
 "with the following function specification::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def quantiles(dist, /, *, n=4, method='exclusive')\n"
 "    ..."
 msgstr ""
+"def quantiles(dist, /, *, n=4, method='exclusive')\n"
+"    ..."
 
 msgid ""
 "Since the parameters to the left of ``/`` are not exposed as possible "
 "keywords, the parameters names remain available for use in ``**kwargs``::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> def f(a, b, /, **kwargs):\n"
 "...     print(a, b, kwargs)\n"
@@ -190,6 +224,11 @@ msgid ""
 ">>> f(10, 20, a=1, b=2, c=3)         # a and b are used in two ways\n"
 "10 20 {'a': 1, 'b': 2, 'c': 3}"
 msgstr ""
+">>> def f(a, b, /, **kwargs):\n"
+"...     print(a, b, kwargs)\n"
+"...\n"
+">>> f(10, 20, a=1, b=2, c=3)         # a and b are used in two ways\n"
+"10 20 {'a': 1, 'b': 2, 'c': 3}"
 
 msgid ""
 "This greatly simplifies the implementation of functions and methods that "
@@ -197,12 +236,18 @@ msgid ""
 "from code in the :mod:`collections` module::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "class Counter(dict):\n"
 "\n"
 "    def __init__(self, iterable=None, /, **kwds):\n"
 "        # Note \"iterable\" is a possible keyword argument"
 msgstr ""
+"class Counter(dict):\n"
+"\n"
+"    def __init__(self, iterable=None, /, **kwds):\n"
+"        # Note \"iterable\" is a possible keyword argument"
 
 msgid "See :pep:`570` for a full description."
 msgstr ""
@@ -300,21 +345,30 @@ msgid ""
 "over how the result of the expression is displayed::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> delta = dt.date.today() - member_since\n"
 ">>> f'{user=!s}  {delta.days=:,d}'\n"
 "'user=eric_idle  delta.days=16,075'"
 msgstr ""
+">>> delta = dt.date.today() - member_since\n"
+">>> f'{user=!s}  {delta.days=:,d}'\n"
+"'user=eric_idle  delta.days=16,075'"
 
 msgid ""
 "The ``=`` specifier will display the whole expression so that calculations "
 "can be shown::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> print(f'{theta=}  {cos(radians(theta))=:.3f}')\n"
 "theta=30  cos(radians(theta))=0.866"
 msgstr ""
+">>> print(f'{theta=}  {cos(radians(theta))=:.3f}')\n"
+"theta=30  cos(radians(theta))=0.866"
 
 msgid "(Contributed by Eric V. Smith and Larry Hastings in :issue:`36817`.)"
 msgstr ""
@@ -345,98 +399,158 @@ msgstr ""
 msgid "New structures:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:type:`PyConfig`"
-msgstr ""
+msgstr ":c:type:`PyConfig`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:type:`PyPreConfig`"
-msgstr ""
+msgstr ":c:type:`PyPreConfig`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:type:`PyStatus`"
-msgstr ""
+msgstr ":c:type:`PyStatus`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:type:`PyWideStringList`"
-msgstr ""
+msgstr ":c:type:`PyWideStringList`"
 
 msgid "New functions:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`PyConfig_Clear`"
-msgstr ""
+msgstr ":c:func:`PyConfig_Clear`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`PyConfig_InitIsolatedConfig`"
-msgstr ""
+msgstr ":c:func:`PyConfig_InitIsolatedConfig`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`PyConfig_InitPythonConfig`"
-msgstr ""
+msgstr ":c:func:`PyConfig_InitPythonConfig`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`PyConfig_Read`"
-msgstr ""
+msgstr ":c:func:`PyConfig_Read`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`PyConfig_SetArgv`"
-msgstr ""
+msgstr ":c:func:`PyConfig_SetArgv`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`PyConfig_SetBytesArgv`"
-msgstr ""
+msgstr ":c:func:`PyConfig_SetBytesArgv`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`PyConfig_SetBytesString`"
-msgstr ""
+msgstr ":c:func:`PyConfig_SetBytesString`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`PyConfig_SetString`"
-msgstr ""
+msgstr ":c:func:`PyConfig_SetString`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`PyPreConfig_InitIsolatedConfig`"
-msgstr ""
+msgstr ":c:func:`PyPreConfig_InitIsolatedConfig`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`PyPreConfig_InitPythonConfig`"
-msgstr ""
+msgstr ":c:func:`PyPreConfig_InitPythonConfig`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`PyStatus_Error`"
-msgstr ""
+msgstr ":c:func:`PyStatus_Error`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`PyStatus_Exception`"
-msgstr ""
+msgstr ":c:func:`PyStatus_Exception`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`PyStatus_Exit`"
-msgstr ""
+msgstr ":c:func:`PyStatus_Exit`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`PyStatus_IsError`"
-msgstr ""
+msgstr ":c:func:`PyStatus_IsError`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`PyStatus_IsExit`"
-msgstr ""
+msgstr ":c:func:`PyStatus_IsExit`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`PyStatus_NoMemory`"
-msgstr ""
+msgstr ":c:func:`PyStatus_NoMemory`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`PyStatus_Ok`"
-msgstr ""
+msgstr ":c:func:`PyStatus_Ok`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`PyWideStringList_Append`"
-msgstr ""
+msgstr ":c:func:`PyWideStringList_Append`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`PyWideStringList_Insert`"
-msgstr ""
+msgstr ":c:func:`PyWideStringList_Insert`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`Py_BytesMain`"
-msgstr ""
+msgstr ":c:func:`Py_BytesMain`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`Py_ExitStatusException`"
-msgstr ""
+msgstr ":c:func:`Py_ExitStatusException`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`Py_InitializeFromConfig`"
-msgstr ""
+msgstr ":c:func:`Py_InitializeFromConfig`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`Py_PreInitialize`"
-msgstr ""
+msgstr ":c:func:`Py_PreInitialize`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`Py_PreInitializeFromArgs`"
-msgstr ""
+msgstr ":c:func:`Py_PreInitializeFromArgs`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`Py_PreInitializeFromBytesArgs`"
-msgstr ""
+msgstr ":c:func:`Py_PreInitializeFromBytesArgs`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`Py_RunMain`"
-msgstr ""
+msgstr ":c:func:`Py_RunMain`"
 
 msgid ""
 "This PEP also adds ``_PyRuntimeState.preconfig`` (:c:type:`PyPreConfig` "
@@ -532,12 +646,18 @@ msgid ""
 "expressions <re>`::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> notice = 'Copyright © 2019'\n"
 ">>> copyright_year_pattern = re.compile(r'\\N{copyright sign}\\s*(\\d{4})')\n"
 ">>> int(copyright_year_pattern.search(notice).group(1))\n"
 "2019"
 msgstr ""
+">>> notice = 'Copyright © 2019'\n"
+">>> copyright_year_pattern = re.compile(r'\\N{copyright sign}\\s*(\\d{4})')\n"
+">>> int(copyright_year_pattern.search(notice).group(1))\n"
+"2019"
 
 msgid ""
 "(Contributed by Jonathan Eunice and Serhiy Storchaka in :issue:`30688`.)"
@@ -562,6 +682,8 @@ msgid ""
 "and *return* syntax into better agreement with normal assignment syntax::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> def parse(family):\n"
 "...     lastname, *members = family.split()\n"
@@ -570,6 +692,12 @@ msgid ""
 ">>> parse('simpsons homer marge bart lisa maggie')\n"
 "('SIMPSONS', 'homer', 'marge', 'bart', 'lisa', 'maggie')"
 msgstr ""
+">>> def parse(family):\n"
+"...     lastname, *members = family.split()\n"
+"...     return lastname.upper(), *members\n"
+"...\n"
+">>> parse('simpsons homer marge bart lisa maggie')\n"
+"('SIMPSONS', 'homer', 'marge', 'bart', 'lisa', 'maggie')"
 
 msgid "(Contributed by David Cuthbert and Jordan Chapman in :issue:`32117`.)"
 msgstr ""
@@ -613,6 +741,8 @@ msgid ""
 "prevent the *data* parameter from being used as a keyword argument::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> from statistics import mean\n"
 ">>> mean(data=[10, 20, 90])\n"
@@ -624,6 +754,15 @@ msgid ""
 "TypeError: mean() got some positional-only arguments passed as keyword "
 "arguments: 'data'"
 msgstr ""
+">>> from statistics import mean\n"
+">>> mean(data=[10, 20, 90])\n"
+"40\n"
+">>> mean.__code__ = mean.__code__.replace(co_posonlyargcount=1)\n"
+">>> mean(data=[10, 20, 90])\n"
+"Traceback (most recent call last):\n"
+"  ...\n"
+"TypeError: mean() got some positional-only arguments passed as keyword "
+"arguments: 'data'"
 
 msgid "(Contributed by Victor Stinner in :issue:`37032`.)"
 msgstr ""
@@ -638,12 +777,18 @@ msgid ""
 "38 modulo 137, write::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> pow(38, -1, 137)\n"
 "119\n"
 ">>> 119 * 38 % 137\n"
 "1"
 msgstr ""
+">>> pow(38, -1, 137)\n"
+"119\n"
+">>> 119 * 38 % 137\n"
+"1"
 
 msgid ""
 "Modular inverses arise in the solution of `linear Diophantine equations "
@@ -660,6 +805,8 @@ msgid ""
 "is computed first and the value second::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> # Dict comprehension\n"
 ">>> cast = {input('role? '): input('actor? ') for i in range(2)}\n"
@@ -673,6 +820,17 @@ msgid ""
 "role? Sir Robin\n"
 "actor? Eric Idle"
 msgstr ""
+">>> # Dict comprehension\n"
+">>> cast = {input('role? '): input('actor? ') for i in range(2)}\n"
+"role? King Arthur\n"
+"actor? Chapman\n"
+"role? Black Knight\n"
+"actor? Cleese\n"
+"\n"
+">>> # Dict literal\n"
+">>> cast = {input('role? '): input('actor? ')}\n"
+"role? Sir Robin\n"
+"actor? Eric Idle"
 
 msgid ""
 "The guaranteed execution order is helpful with assignment expressions "
@@ -680,6 +838,8 @@ msgid ""
 "value expression::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> names = ['Martin von Löwis', 'Łukasz Langa', 'Walter Dörwald']\n"
 ">>> {(n := normalize('NFC', name)).casefold() : n for name in names}\n"
@@ -687,6 +847,11 @@ msgid ""
 " 'łukasz langa': 'Łukasz Langa',\n"
 " 'walter dörwald': 'Walter Dörwald'}"
 msgstr ""
+">>> names = ['Martin von Löwis', 'Łukasz Langa', 'Walter Dörwald']\n"
+">>> {(n := normalize('NFC', name)).casefold() : n for name in names}\n"
+"{'martin von löwis': 'Martin von Löwis',\n"
+" 'łukasz langa': 'Łukasz Langa',\n"
+" 'walter dörwald': 'Walter Dörwald'}"
 
 msgid "(Contributed by Jörn Heissler in :issue:`35224`.)"
 msgstr ""
@@ -710,6 +875,8 @@ msgid ""
 "installed package's version number, list of entry points, and more::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> # Note following example requires that the popular \"requests\"\n"
 ">>> # package has been installed.\n"
@@ -726,6 +893,20 @@ msgid ""
 " PackagePath('requests-2.22.0.dist-info/RECORD'),\n"
 " PackagePath('requests-2.22.0.dist-info/WHEEL')]"
 msgstr ""
+">>> # Note following example requires that the popular \"requests\"\n"
+">>> # package has been installed.\n"
+">>>\n"
+">>> from importlib.metadata import version, requires, files\n"
+">>> version('requests')\n"
+"'2.22.0'\n"
+">>> list(requires('requests'))\n"
+"['chardet (<3.1.0,>=3.0.2)']\n"
+">>> list(files('requests'))[:5]\n"
+"[PackagePath('requests-2.22.0.dist-info/INSTALLER'),\n"
+" PackagePath('requests-2.22.0.dist-info/LICENSE'),\n"
+" PackagePath('requests-2.22.0.dist-info/METADATA'),\n"
+" PackagePath('requests-2.22.0.dist-info/RECORD'),\n"
+" PackagePath('requests-2.22.0.dist-info/WHEEL')]"
 
 msgid "(Contributed by Barry Warsaw and Jason R. Coombs in :issue:`34632`.)"
 msgstr ""
@@ -733,8 +914,10 @@ msgstr ""
 msgid "Improved Modules"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "ast"
-msgstr ""
+msgstr "ast"
 
 msgid ""
 "AST nodes now have ``end_lineno`` and ``end_col_offset`` attributes, which "
@@ -772,8 +955,10 @@ msgstr ""
 msgid "(Contributed by Guido van Rossum in :issue:`35766`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "asyncio"
-msgstr ""
+msgstr "asyncio"
 
 msgid ""
 ":func:`asyncio.run` has graduated from the provisional to stable API. This "
@@ -781,6 +966,8 @@ msgid ""
 "while automatically managing the event loop. For example::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import asyncio\n"
 "\n"
@@ -790,10 +977,19 @@ msgid ""
 "\n"
 "asyncio.run(main())"
 msgstr ""
+"import asyncio\n"
+"\n"
+"async def main():\n"
+"    await asyncio.sleep(0)\n"
+"    return 42\n"
+"\n"
+"asyncio.run(main())"
 
 msgid "This is *roughly* equivalent to::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import asyncio\n"
 "\n"
@@ -809,6 +1005,19 @@ msgid ""
 "    asyncio.set_event_loop(None)\n"
 "    loop.close()"
 msgstr ""
+"import asyncio\n"
+"\n"
+"async def main():\n"
+"    await asyncio.sleep(0)\n"
+"    return 42\n"
+"\n"
+"loop = asyncio.new_event_loop()\n"
+"asyncio.set_event_loop(loop)\n"
+"try:\n"
+"    loop.run_until_complete(main())\n"
+"finally:\n"
+"    asyncio.set_event_loop(None)\n"
+"    loop.close()"
 
 msgid ""
 "The actual implementation is significantly more complex. Thus, :func:"
@@ -825,6 +1034,8 @@ msgid ""
 "spawn a new event loop on every invocation:"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "$ python -m asyncio\n"
 "asyncio REPL 3.8.0\n"
@@ -835,6 +1046,14 @@ msgid ""
 ">>> await asyncio.sleep(10, result='hello')\n"
 "hello"
 msgstr ""
+"$ python -m asyncio\n"
+"asyncio REPL 3.8.0\n"
+"Use \"await\" directly instead of \"asyncio.run()\".\n"
+"Type \"help\", \"copyright\", \"credits\" or \"license\" for more "
+"information.\n"
+">>> import asyncio\n"
+">>> await asyncio.sleep(10, result='hello')\n"
+"hello"
 
 msgid "(Contributed by Yury Selivanov in :issue:`37028`.)"
 msgstr ""
@@ -887,7 +1106,7 @@ msgid ""
 msgstr ""
 
 msgid "builtins"
-msgstr ""
+msgstr "builtins"
 
 msgid ""
 "The :func:`compile` built-in has been improved to accept the ``ast."
@@ -898,8 +1117,10 @@ msgid ""
 "(Contributed by Matthias Bussonnier in :issue:`34616`)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "collections"
-msgstr ""
+msgstr "collections"
 
 msgid ""
 "The :meth:`~collections.somenamedtuple._asdict` method for :func:"
@@ -911,14 +1132,18 @@ msgid ""
 "issue:`35864`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "cProfile"
-msgstr ""
+msgstr "cProfile"
 
 msgid ""
 "The :class:`cProfile.Profile <profile.Profile>` class can now be used as a "
 "context manager. Profile a block of code by running::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import cProfile\n"
 "\n"
@@ -926,12 +1151,19 @@ msgid ""
 "      # code to be profiled\n"
 "      ..."
 msgstr ""
+"import cProfile\n"
+"\n"
+"with cProfile.Profile() as profiler:\n"
+"      # code to be profiled\n"
+"      ..."
 
 msgid "(Contributed by Scott Sanderson in :issue:`29235`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "csv"
-msgstr ""
+msgstr "csv"
 
 msgid ""
 "The :class:`csv.DictReader` now returns instances of :class:`dict` instead "
@@ -940,8 +1172,10 @@ msgid ""
 "in :issue:`34003`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "curses"
-msgstr ""
+msgstr "curses"
 
 msgid ""
 "Added a new variable holding structured version information for the "
@@ -949,8 +1183,10 @@ msgid ""
 "Serhiy Storchaka in :issue:`31680`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "ctypes"
-msgstr ""
+msgstr "ctypes"
 
 msgid ""
 "On Windows, :class:`~ctypes.CDLL` and subclasses now accept a *winmode* "
@@ -961,8 +1197,10 @@ msgid ""
 "add_dll_directory`. (Contributed by Steve Dower in :issue:`36085`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "datetime"
-msgstr ""
+msgstr "datetime"
 
 msgid ""
 "Added new alternate constructors :meth:`datetime.date.fromisocalendar` and :"
@@ -972,8 +1210,10 @@ msgid ""
 "``isocalendar`` method. (Contributed by Paul Ganssle in :issue:`36004`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "functools"
-msgstr ""
+msgstr "functools"
 
 msgid ""
 ":func:`functools.lru_cache` can now be used as a straight decorator rather "
@@ -981,6 +1221,8 @@ msgid ""
 "supported::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "@lru_cache\n"
 "def f(x):\n"
@@ -990,6 +1232,13 @@ msgid ""
 "def f(x):\n"
 "    ..."
 msgstr ""
+"@lru_cache\n"
+"def f(x):\n"
+"    ...\n"
+"\n"
+"@lru_cache(maxsize=256)\n"
+"def f(x):\n"
+"    ..."
 
 msgid "(Contributed by Raymond Hettinger in :issue:`36772`.)"
 msgstr ""
@@ -999,6 +1248,8 @@ msgid ""
 "properties cached for the life of the instance. ::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import functools\n"
 "import statistics\n"
@@ -1011,6 +1262,16 @@ msgid ""
 "   def variance(self):\n"
 "      return statistics.variance(self.data)"
 msgstr ""
+"import functools\n"
+"import statistics\n"
+"\n"
+"class Dataset:\n"
+"   def __init__(self, sequence_of_numbers):\n"
+"      self.data = sequence_of_numbers\n"
+"\n"
+"   @functools.cached_property\n"
+"   def variance(self):\n"
+"      return statistics.variance(self.data)"
 
 msgid "(Contributed by Carl Meyer in :issue:`21145`)"
 msgstr ""
@@ -1021,6 +1282,8 @@ msgid ""
 "`single dispatch`::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "from functools import singledispatchmethod\n"
 "from contextlib import suppress\n"
@@ -1040,12 +1303,31 @@ msgid ""
 "        targets = set(tasks)\n"
 "        self.tasks = [x for x in self.tasks if x not in targets]"
 msgstr ""
+"from functools import singledispatchmethod\n"
+"from contextlib import suppress\n"
+"\n"
+"class TaskManager:\n"
+"\n"
+"    def __init__(self, tasks):\n"
+"        self.tasks = list(tasks)\n"
+"\n"
+"    @singledispatchmethod\n"
+"    def discard(self, value):\n"
+"        with suppress(ValueError):\n"
+"            self.tasks.remove(value)\n"
+"\n"
+"    @discard.register(list)\n"
+"    def _(self, tasks):\n"
+"        targets = set(tasks)\n"
+"        self.tasks = [x for x in self.tasks if x not in targets]"
 
 msgid "(Contributed by Ethan Smith in :issue:`32380`)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "gc"
-msgstr ""
+msgstr "gc"
 
 msgid ""
 ":func:`~gc.get_objects` can now receive an optional *generation* parameter "
@@ -1053,16 +1335,20 @@ msgid ""
 "in :issue:`36016`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "gettext"
-msgstr ""
+msgstr "gettext"
 
 msgid ""
 "Added :func:`~gettext.pgettext` and its variants. (Contributed by Franz "
 "Glasner, Éric Araujo, and Cheryl Sabella in :issue:`2504`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "gzip"
-msgstr ""
+msgstr "gzip"
 
 msgid ""
 "Added the *mtime* parameter to :func:`gzip.compress` for reproducible "
@@ -1133,8 +1419,10 @@ msgid ""
 "in :issue:`37765`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "inspect"
-msgstr ""
+msgstr "inspect"
 
 msgid ""
 "The :func:`inspect.getdoc` function can now find docstrings for "
@@ -1143,6 +1431,8 @@ msgid ""
 "have for :func:`property`, :func:`classmethod`, and :func:`staticmethod`::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "class AudioClip:\n"
 "    __slots__ = {'bit_rate': 'expressed in kilohertz to one decimal place',\n"
@@ -1151,12 +1441,20 @@ msgid ""
 "        self.bit_rate = round(bit_rate / 1000.0, 1)\n"
 "        self.duration = ceil(duration)"
 msgstr ""
+"class AudioClip:\n"
+"    __slots__ = {'bit_rate': 'expressed in kilohertz to one decimal place',\n"
+"                 'duration': 'in seconds, rounded up to an integer'}\n"
+"    def __init__(self, bit_rate, duration):\n"
+"        self.bit_rate = round(bit_rate / 1000.0, 1)\n"
+"        self.duration = ceil(duration)"
 
 msgid "(Contributed by Raymond Hettinger in :issue:`36326`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "io"
-msgstr ""
+msgstr "io"
 
 msgid ""
 "In development mode (:option:`-X` ``env``) and in :ref:`debug build <debug-"
@@ -1165,33 +1463,44 @@ msgid ""
 "release build. (Contributed by Victor Stinner in :issue:`18748`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "itertools"
-msgstr ""
+msgstr "itertools"
 
 msgid ""
 "The :func:`itertools.accumulate` function added an option *initial* keyword "
 "argument to specify an initial value::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> from itertools import accumulate\n"
 ">>> list(accumulate([10, 5, 30, 15], initial=1000))\n"
 "[1000, 1010, 1015, 1045, 1060]"
 msgstr ""
+">>> from itertools import accumulate\n"
+">>> list(accumulate([10, 5, 30, 15], initial=1000))\n"
+"[1000, 1010, 1015, 1045, 1060]"
 
 msgid "(Contributed by Lisa Roach in :issue:`34659`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "json.tool"
-msgstr ""
+msgstr "json.tool"
 
 msgid ""
 "Add option ``--json-lines`` to parse every input line as a separate JSON "
 "object. (Contributed by Weipeng Hong in :issue:`31553`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "logging"
-msgstr ""
+msgstr "logging"
 
 msgid ""
 "Added a *force* keyword argument to :func:`logging.basicConfig`. When set to "
@@ -1212,8 +1521,10 @@ msgid ""
 "Vinay Sajip in :issue:`33897`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "math"
-msgstr ""
+msgstr "math"
 
 msgid ""
 "Added new function :func:`math.dist` for computing Euclidean distance "
@@ -1232,12 +1543,18 @@ msgid ""
 "of numbers::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> prior = 0.8\n"
 ">>> likelihoods = [0.625, 0.84, 0.30]\n"
 ">>> math.prod(likelihoods, start=prior)\n"
 "0.126"
 msgstr ""
+">>> prior = 0.8\n"
+">>> likelihoods = [0.625, 0.84, 0.30]\n"
+">>> math.prod(likelihoods, start=prior)\n"
+"0.126"
 
 msgid "(Contributed by Pablo Galindo in :issue:`35606`.)"
 msgstr ""
@@ -1247,12 +1564,18 @@ msgid ""
 "comb`::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> math.perm(10, 3)    # Permutations of 10 things taken 3 at a time\n"
 "720\n"
 ">>> math.comb(10, 3)    # Combinations of 10 things taken 3 at a time\n"
 "120"
 msgstr ""
+">>> math.perm(10, 3)    # Permutations of 10 things taken 3 at a time\n"
+"720\n"
+">>> math.comb(10, 3)    # Combinations of 10 things taken 3 at a time\n"
+"120"
 
 msgid ""
 "(Contributed by Yash Aggarwal, Keller Fuchs, Serhiy Storchaka, and Raymond "
@@ -1266,6 +1589,8 @@ msgid ""
 "but slower than :func:`math.sqrt`::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> r = 650320427\n"
 ">>> s = r ** 2\n"
@@ -1274,6 +1599,12 @@ msgid ""
 ">>> floor(sqrt(s - 1))   # incorrect\n"
 "650320427"
 msgstr ""
+">>> r = 650320427\n"
+">>> s = r ** 2\n"
+">>> isqrt(s - 1)         # correct\n"
+"650320426\n"
+">>> floor(sqrt(s - 1))   # incorrect\n"
+"650320427"
 
 msgid "(Contributed by Mark Dickinson in :issue:`36887`.)"
 msgstr ""
@@ -1283,8 +1614,10 @@ msgid ""
 "int-like. (Contributed by Pablo Galindo in :issue:`33083`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "mmap"
-msgstr ""
+msgstr "mmap"
 
 msgid ""
 "The :class:`mmap.mmap` class now has an :meth:`~mmap.mmap.madvise` method to "
@@ -1292,8 +1625,10 @@ msgid ""
 "issue:`32941`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "multiprocessing"
-msgstr ""
+msgstr "multiprocessing"
 
 msgid ""
 "Added new :mod:`multiprocessing.shared_memory` module. (Contributed by Davin "
@@ -1305,8 +1640,10 @@ msgid ""
 "Victor Stinner in :issue:`33725`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "os"
-msgstr ""
+msgstr "os"
 
 msgid ""
 "Added new function :func:`~os.add_dll_directory` on Windows for providing "
@@ -1344,8 +1681,10 @@ msgstr ""
 msgid "(Contributed by Steve Dower in :issue:`37834`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "os.path"
-msgstr ""
+msgstr "os.path"
 
 msgid ""
 ":mod:`os.path` functions that return a boolean result like :func:`~os.path."
@@ -1374,8 +1713,10 @@ msgid ""
 "symlinks and directory junctions."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "pathlib"
-msgstr ""
+msgstr "pathlib"
 
 msgid ""
 ":mod:`pathlib.Path` methods that return a boolean result like :meth:"
@@ -1396,8 +1737,10 @@ msgid ""
 "existing ``symlink_to`` method."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "pickle"
-msgstr ""
+msgstr "pickle"
 
 msgid ""
 ":mod:`pickle` extensions subclassing the C-optimized :class:`~pickle."
@@ -1406,8 +1749,10 @@ msgid ""
 "(Contributed by Pierre Glaser and Olivier Grisel in :issue:`35900`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "plistlib"
-msgstr ""
+msgstr "plistlib"
 
 msgid ""
 "Added new :class:`plistlib.UID` and enabled support for reading and writing "
@@ -1415,8 +1760,10 @@ msgid ""
 "`26707`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "pprint"
-msgstr ""
+msgstr "pprint"
 
 msgid ""
 "The :mod:`pprint` module added a *sort_dicts* parameter to several "
@@ -1431,10 +1778,12 @@ msgid ""
 "like :func:`pprint.pprint` but with *sort_dicts* defaulting to ``False``::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> from pprint import pprint, pp\n"
-">>> d = dict(source='input.txt', operation='filter', destination='output."
-"txt')\n"
+">>> d = dict(source='input.txt', operation='filter', "
+"destination='output.txt')\n"
 ">>> pp(d, width=40)                  # Original order\n"
 "{'source': 'input.txt',\n"
 " 'operation': 'filter',\n"
@@ -1444,28 +1793,45 @@ msgid ""
 " 'operation': 'filter',\n"
 " 'source': 'input.txt'}"
 msgstr ""
+">>> from pprint import pprint, pp\n"
+">>> d = dict(source='input.txt', operation='filter', "
+"destination='output.txt')\n"
+">>> pp(d, width=40)                  # Original order\n"
+"{'source': 'input.txt',\n"
+" 'operation': 'filter',\n"
+" 'destination': 'output.txt'}\n"
+">>> pprint(d, width=40)              # Keys sorted alphabetically\n"
+"{'destination': 'output.txt',\n"
+" 'operation': 'filter',\n"
+" 'source': 'input.txt'}"
 
 msgid "(Contributed by Rémi Lapeyre in :issue:`30670`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "py_compile"
-msgstr ""
+msgstr "py_compile"
 
 msgid ""
 ":func:`py_compile.compile` now supports silent mode. (Contributed by Joannah "
 "Nanjekye in :issue:`22640`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "shlex"
-msgstr ""
+msgstr "shlex"
 
 msgid ""
 "The new :func:`shlex.join` function acts as the inverse of :func:`shlex."
 "split`. (Contributed by Bo Bayles in :issue:`32102`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "shutil"
-msgstr ""
+msgstr "shutil"
 
 msgid ""
 ":func:`shutil.copytree` now accepts a new ``dirs_exist_ok`` keyword "
@@ -1485,8 +1851,10 @@ msgid ""
 "issue:`37834`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "socket"
-msgstr ""
+msgstr "socket"
 
 msgid ""
 "Added :meth:`~socket.create_server` and :meth:`~socket.has_dualstack_ipv6` "
@@ -1501,8 +1869,10 @@ msgid ""
 "(Contributed by Zackery Spytz in :issue:`37007`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "ssl"
-msgstr ""
+msgstr "ssl"
 
 msgid ""
 "Added :attr:`~ssl.SSLContext.post_handshake_auth` to enable and :meth:`~ssl."
@@ -1510,8 +1880,10 @@ msgid ""
 "authentication. (Contributed by Christian Heimes in :issue:`34670`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "statistics"
-msgstr ""
+msgstr "statistics"
 
 msgid ""
 "Added :func:`statistics.fmean` as a faster, floating-point variant of :func:"
@@ -1541,6 +1913,8 @@ msgid ""
 "in :issue:`36018`.)"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> temperature_feb = NormalDist.from_samples([4, 12, -3, 2, 7, 14])\n"
 ">>> temperature_feb.mean\n"
@@ -1564,9 +1938,30 @@ msgid ""
 ">>> temperature_feb.samples(3)        # Generate random samples\n"
 "[7.672102882379219, 12.000027119750287, 4.647488369766392]"
 msgstr ""
+">>> temperature_feb = NormalDist.from_samples([4, 12, -3, 2, 7, 14])\n"
+">>> temperature_feb.mean\n"
+"6.0\n"
+">>> temperature_feb.stdev\n"
+"6.356099432828281\n"
+"\n"
+">>> temperature_feb.cdf(3)            # Chance of being under 3 degrees\n"
+"0.3184678262814532\n"
+">>> # Relative chance of being 7 degrees versus 10 degrees\n"
+">>> temperature_feb.pdf(7) / temperature_feb.pdf(10)\n"
+"1.2039930378537762\n"
+"\n"
+">>> el_niño = NormalDist(4, 2.5)\n"
+">>> temperature_feb += el_niño        # Add in a climate effect\n"
+">>> temperature_feb\n"
+"NormalDist(mu=10.0, sigma=6.830080526611674)\n"
+"\n"
+">>> temperature_feb * (9/5) + 32      # Convert to Fahrenheit\n"
+"NormalDist(mu=50.0, sigma=12.294144947901014)\n"
+">>> temperature_feb.samples(3)        # Generate random samples\n"
+"[7.672102882379219, 12.000027119750287, 4.647488369766392]"
 
 msgid "sys"
-msgstr ""
+msgstr "sys"
 
 msgid ""
 "Add new :func:`sys.unraisablehook` function which can be overridden to "
@@ -1576,8 +1971,10 @@ msgid ""
 "(:func:`gc.collect`). (Contributed by Victor Stinner in :issue:`36829`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "tarfile"
-msgstr ""
+msgstr "tarfile"
 
 msgid ""
 "The :mod:`tarfile` module now defaults to the modern pax (POSIX.1-2001) "
@@ -1587,8 +1984,10 @@ msgid ""
 "(Contributed by C.A.M. Gerlach in :issue:`36268`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "threading"
-msgstr ""
+msgstr "threading"
 
 msgid ""
 "Add a new :func:`threading.excepthook` function which handles uncaught :meth:"
@@ -1606,8 +2005,10 @@ msgid ""
 "by Jake Tesler in :issue:`36084`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "tokenize"
-msgstr ""
+msgstr "tokenize"
 
 msgid ""
 "The :mod:`tokenize` module now implicitly emits a ``NEWLINE`` token when "
@@ -1616,8 +2017,10 @@ msgid ""
 "Askar in :issue:`33899`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "tkinter"
-msgstr ""
+msgstr "tkinter"
 
 msgid ""
 "Added methods :meth:`!selection_from`, :meth:`!selection_present`, :meth:`!"
@@ -1636,16 +2039,20 @@ msgid ""
 "issue:`25451`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "time"
-msgstr ""
+msgstr "time"
 
 msgid ""
 "Added new clock :const:`~time.CLOCK_UPTIME_RAW` for macOS 10.12. "
 "(Contributed by Joannah Nanjekye in :issue:`35702`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "typing"
-msgstr ""
+msgstr "typing"
 
 msgid "The :mod:`typing` module incorporates several new features:"
 msgstr ""
@@ -1657,12 +2064,18 @@ msgid ""
 "optional::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "class Location(TypedDict, total=False):\n"
 "    lat_long: tuple\n"
 "    grid_square: str\n"
 "    xy_coordinate: tuple"
 msgstr ""
+"class Location(TypedDict, total=False):\n"
+"    lat_long: tuple\n"
+"    grid_square: str\n"
+"    xy_coordinate: tuple"
 
 msgid ""
 "Literal types.  See :pep:`586` and :class:`typing.Literal`. Literal types "
@@ -1670,10 +2083,14 @@ msgid ""
 "specific literal values::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def get_status(port: int) -> Literal['connected', 'disconnected']:\n"
 "    ..."
 msgstr ""
+"def get_status(port: int) -> Literal['connected', 'disconnected']:\n"
+"    ..."
 
 msgid ""
 "\"Final\" variables, functions, methods and classes.  See :pep:`591`, :class:"
@@ -1696,8 +2113,10 @@ msgstr ""
 msgid "New functions :func:`typing.get_origin` and :func:`typing.get_args`."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "unicodedata"
-msgstr ""
+msgstr "unicodedata"
 
 msgid ""
 "The :mod:`unicodedata` module has been upgraded to use the `Unicode 12.1.0 "
@@ -1711,8 +2130,10 @@ msgid ""
 "Greg Price in :issue:`32285` and :issue:`37966`)."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "unittest"
-msgstr ""
+msgstr "unittest"
 
 msgid ""
 "Added :class:`~unittest.mock.AsyncMock` to support an asynchronous version "
@@ -1742,6 +2163,8 @@ msgstr ""
 msgid "Example::"
 msgstr "Ví dụ::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import unittest\n"
 "\n"
@@ -1762,9 +2185,29 @@ msgid ""
 "if __name__ == \"__main__\":\n"
 "    unittest.main()"
 msgstr ""
+"import unittest\n"
+"\n"
+"\n"
+"class TestRequest(unittest.IsolatedAsyncioTestCase):\n"
+"\n"
+"    async def asyncSetUp(self):\n"
+"        self.connection = await AsyncConnection()\n"
+"\n"
+"    async def test_get(self):\n"
+"        response = await self.connection.get(\"https://example.com\")\n"
+"        self.assertEqual(response.status_code, 200)\n"
+"\n"
+"    async def asyncTearDown(self):\n"
+"        await self.connection.close()\n"
+"\n"
+"\n"
+"if __name__ == \"__main__\":\n"
+"    unittest.main()"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "venv"
-msgstr ""
+msgstr "venv"
 
 msgid ""
 ":mod:`venv` now includes an ``Activate.ps1`` script on all platforms for "
@@ -1772,8 +2215,10 @@ msgid ""
 "Brett Cannon in :issue:`32718`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "weakref"
-msgstr ""
+msgstr "weakref"
 
 msgid ""
 "The proxy objects returned by :func:`weakref.proxy` now support the matrix "
@@ -1781,8 +2226,10 @@ msgid ""
 "operators. (Contributed by Mark Dickinson in :issue:`36669`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "xml"
-msgstr ""
+msgstr "xml"
 
 msgid ""
 "As mitigation against DTD and external entity retrieval, the :mod:`xml.dom."
@@ -1812,8 +2259,10 @@ msgid ""
 "by Stefan Behnel in :issue:`36676` and :issue:`36673`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "xmlrpc"
-msgstr ""
+msgstr "xmlrpc"
 
 msgid ""
 ":class:`xmlrpc.client.ServerProxy` now supports an optional *headers* "
@@ -1823,8 +2272,10 @@ msgid ""
 "Cédric Krier in :issue:`35153`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Optimizations"
-msgstr ""
+msgstr "Optimizations"
 
 msgid ""
 "The :mod:`subprocess` module can now use the :func:`os.posix_spawn` function "
@@ -1990,14 +2441,20 @@ msgid ""
 "variables have a local scopes. Examples:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`Py_INCREF`, :c:func:`Py_DECREF`"
-msgstr ""
+msgstr ":c:func:`Py_INCREF`, :c:func:`Py_DECREF`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`Py_XINCREF`, :c:func:`Py_XDECREF`"
-msgstr ""
+msgstr ":c:func:`Py_XINCREF`, :c:func:`Py_XDECREF`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:macro:`!PyObject_INIT`, :c:macro:`!PyObject_INIT_VAR`"
-msgstr ""
+msgstr ":c:macro:`!PyObject_INIT`, :c:macro:`!PyObject_INIT_VAR`"
 
 msgid ""
 "Private functions: :c:func:`!_PyObject_GC_TRACK`, :c:func:`!"
@@ -2072,12 +2529,15 @@ msgstr ""
 
 msgid ""
 ":c:func:`!Py_SetPath` now sets :data:`sys.executable` to the program full "
-"path (:c:func:`Py_GetProgramFullPath`) rather than to the program name (:c:"
-"func:`Py_GetProgramName`). (Contributed by Victor Stinner in :issue:`38234`.)"
+"path (:c:func:`!Py_GetProgramFullPath`) rather than to the program name (:c:"
+"func:`!Py_GetProgramName`). (Contributed by Victor Stinner in :issue:"
+"`38234`.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Deprecated"
-msgstr ""
+msgstr "Deprecated"
 
 msgid ""
 "The distutils ``bdist_wininst`` command is now deprecated, use "
@@ -2622,8 +3082,10 @@ msgid ""
 msgstr ""
 
 msgid "Example:"
-msgstr ""
+msgstr "Ví dụ:"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "static foo_struct *\n"
 "foo_new(PyObject *type) {\n"
@@ -2637,12 +3099,25 @@ msgid ""
 "    return foo;\n"
 "}"
 msgstr ""
+"static foo_struct *\n"
+"foo_new(PyObject *type) {\n"
+"    foo_struct *foo = PyObject_GC_New(foo_struct, (PyTypeObject *) type);\n"
+"    if (foo == NULL)\n"
+"        return NULL;\n"
+"#if PY_VERSION_HEX < 0x03080000\n"
+"    // Workaround for Python issue 35810; no longer necessary in Python 3.8\n"
+"    PY_INCREF(type)\n"
+"#endif\n"
+"    return foo;\n"
+"}"
 
 msgid ""
 "Ensure that all custom ``tp_dealloc`` functions of heap-allocated types "
 "decrease the type's reference count."
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "static void\n"
 "foo_dealloc(foo_struct *instance) {\n"
@@ -2654,6 +3129,15 @@ msgid ""
 "#endif\n"
 "}"
 msgstr ""
+"static void\n"
+"foo_dealloc(foo_struct *instance) {\n"
+"    PyObject *type = Py_TYPE(instance);\n"
+"    PyObject_GC_Del(instance);\n"
+"#if PY_VERSION_HEX >= 0x03080000\n"
+"    // This was not needed before Python 3.8 (Python issue 35810)\n"
+"    Py_DECREF(type);\n"
+"#endif\n"
+"}"
 
 msgid "(Contributed by Eddie Elizondo in :issue:`35810`.)"
 msgstr ""
@@ -2759,6 +3243,8 @@ msgstr ""
 msgid "Here's a summary of performance improvements since Python 3.3:"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "Python version                       3.3     3.4     3.5     3.6     3.7     "
 "3.8\n"
@@ -2833,6 +3319,78 @@ msgid ""
 "    loop_overhead                    0.3     0.5     0.6     0.4     0.3     "
 "0.3"
 msgstr ""
+"Python version                       3.3     3.4     3.5     3.6     3.7     "
+"3.8\n"
+"--------------                       ---     ---     ---     ---     ---     "
+"---\n"
+"\n"
+"Variable and attribute read access:\n"
+"    read_local                       4.0     7.1     7.1     5.4     5.1     "
+"3.9\n"
+"    read_nonlocal                    5.3     7.1     8.1     5.8     5.4     "
+"4.4\n"
+"    read_global                     13.3    15.5    19.0    14.3    13.6     "
+"7.6\n"
+"    read_builtin                    20.0    21.1    21.6    18.5    19.0     "
+"7.5\n"
+"    read_classvar_from_class        20.5    25.6    26.5    20.7    19.5    "
+"18.4\n"
+"    read_classvar_from_instance     18.5    22.8    23.5    18.8    17.1    "
+"16.4\n"
+"    read_instancevar                26.8    32.4    33.1    28.0    26.3    "
+"25.4\n"
+"    read_instancevar_slots          23.7    27.8    31.3    20.8    20.8    "
+"20.2\n"
+"    read_namedtuple                 68.5    73.8    57.5    45.0    46.8    "
+"18.4\n"
+"    read_boundmethod                29.8    37.6    37.9    29.6    26.9    "
+"27.7\n"
+"\n"
+"Variable and attribute write access:\n"
+"    write_local                      4.6     8.7     9.3     5.5     5.3     "
+"4.3\n"
+"    write_nonlocal                   7.3    10.5    11.1     5.6     5.5     "
+"4.7\n"
+"    write_global                    15.9    19.7    21.2    18.0    18.0    "
+"15.8\n"
+"    write_classvar                  81.9    92.9    96.0   104.6   102.1    "
+"39.2\n"
+"    write_instancevar               36.4    44.6    45.8    40.0    38.9    "
+"35.5\n"
+"    write_instancevar_slots         28.7    35.6    36.1    27.3    26.6    "
+"25.7\n"
+"\n"
+"Data structure read access:\n"
+"    read_list                       19.2    24.2    24.5    20.8    20.8    "
+"19.0\n"
+"    read_deque                      19.9    24.7    25.5    20.2    20.6    "
+"19.8\n"
+"    read_dict                       19.7    24.3    25.7    22.3    23.0    "
+"21.0\n"
+"    read_strdict                    17.9    22.6    24.3    19.5    21.2    "
+"18.9\n"
+"\n"
+"Data structure write access:\n"
+"    write_list                      21.2    27.1    28.5    22.5    21.6    "
+"20.0\n"
+"    write_deque                     23.8    28.7    30.1    22.7    21.8    "
+"23.5\n"
+"    write_dict                      25.9    31.4    33.3    29.3    29.2    "
+"24.7\n"
+"    write_strdict                   22.9    28.4    29.9    27.5    25.2    "
+"23.1\n"
+"\n"
+"Stack (or queue) operations:\n"
+"    list_append_pop                144.2    93.4   112.7    75.4    74.2    "
+"50.8\n"
+"    deque_append_pop                30.4    43.5    57.0    49.4    49.2    "
+"42.5\n"
+"    deque_append_popleft            30.8    43.7    57.3    49.7    49.7    "
+"42.8\n"
+"\n"
+"Timing loop:\n"
+"    loop_overhead                    0.3     0.5     0.6     0.4     0.3     "
+"0.3"
 
 msgid ""
 "The benchmarks were measured on an `Intel® Core™ i7-4960HQ processor "
@@ -2922,8 +3480,10 @@ msgid ""
 "Maxime Bélanger and Ned Deily)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "urllib.parse"
-msgstr ""
+msgstr "urllib.parse"
 
 msgid ""
 "The presence of newline or tab characters in parts of a URL allows for some "

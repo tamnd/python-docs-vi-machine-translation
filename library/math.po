@@ -9,18 +9,18 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-21 15:07+0000\n"
-"PO-Revision-Date: 2025-09-16 00:01+0000\n"
-"Last-Translator: Nguyen Duc Tam, 2026\n"
-"Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
-"vi/)\n"
+"POT-Creation-Date: 2026-05-08 18:34+0000\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: pydocvi 0.1.2\n"
 
 msgid ":mod:`!math` --- Mathematical functions"
 msgstr ""
@@ -46,96 +46,85 @@ msgid ""
 "noted otherwise, all return values are floats."
 msgstr ""
 
-msgid "**Number-theoretic functions**"
-msgstr ""
-
-msgid ":func:`comb(n, k) <comb>`"
-msgstr ""
-
-msgid ""
-"Number of ways to choose *k* items from *n* items without repetition and "
-"without order"
-msgstr ""
-
-msgid ":func:`factorial(n) <factorial>`"
-msgstr ""
-
-msgid "*n* factorial"
-msgstr ""
-
-msgid ":func:`gcd(*integers) <gcd>`"
-msgstr ""
-
-msgid "Greatest common divisor of the integer arguments"
-msgstr ""
-
-msgid ":func:`isqrt(n) <isqrt>`"
-msgstr ""
-
-msgid "Integer square root of a nonnegative integer *n*"
-msgstr ""
-
-msgid ":func:`lcm(*integers) <lcm>`"
-msgstr ""
-
-msgid "Least common multiple of the integer arguments"
-msgstr ""
-
-msgid ":func:`perm(n, k) <perm>`"
-msgstr ""
-
-msgid ""
-"Number of ways to choose *k* items from *n* items without repetition and "
-"with order"
-msgstr ""
-
 msgid "**Floating point arithmetic**"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`ceil(x) <ceil>`"
-msgstr ""
+msgstr ":func:`ceil(x) <ceil>`"
 
 msgid "Ceiling of *x*, the smallest integer greater than or equal to *x*"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`fabs(x) <fabs>`"
-msgstr ""
+msgstr ":func:`fabs(x) <fabs>`"
 
 msgid "Absolute value of *x*"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`floor(x)  <floor>`"
-msgstr ""
+msgstr ":func:`floor(x)  <floor>`"
 
 msgid "Floor of *x*, the largest integer less than or equal to *x*"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`fma(x, y, z) <fma>`"
-msgstr ""
+msgstr ":func:`fma(x, y, z) <fma>`"
 
 msgid "Fused multiply-add operation: ``(x * y) + z``"
 msgstr ""
 
-msgid ":func:`fmod(x, y) <fmod>`"
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":func:`fmax(x, y) <fmax>`"
+msgstr ":func:`fmax(x, y) <fmax>`"
+
+msgid "Maximum of two floating-point values"
 msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":func:`fmin(x, y) <fmin>`"
+msgstr ":func:`fmin(x, y) <fmin>`"
+
+msgid "Minimum of two floating-point values"
+msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":func:`fmod(x, y) <fmod>`"
+msgstr ":func:`fmod(x, y) <fmod>`"
 
 msgid "Remainder of division ``x / y``"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`modf(x) <modf>`"
-msgstr ""
+msgstr ":func:`modf(x) <modf>`"
 
 msgid "Fractional and integer parts of *x*"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`remainder(x, y) <remainder>`"
-msgstr ""
+msgstr ":func:`remainder(x, y) <remainder>`"
 
 msgid "Remainder of *x* with respect to *y*"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`trunc(x) <trunc>`"
-msgstr ""
+msgstr ":func:`trunc(x) <trunc>`"
 
 msgid "Integer part of *x*"
 msgstr ""
@@ -143,56 +132,98 @@ msgstr ""
 msgid "**Floating point manipulation functions**"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`copysign(x, y) <copysign>`"
-msgstr ""
+msgstr ":func:`copysign(x, y) <copysign>`"
 
 msgid "Magnitude (absolute value) of *x* with the sign of *y*"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`frexp(x) <frexp>`"
-msgstr ""
+msgstr ":func:`frexp(x) <frexp>`"
 
 msgid "Mantissa and exponent of *x*"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`isclose(a, b, rel_tol, abs_tol) <isclose>`"
-msgstr ""
+msgstr ":func:`isclose(a, b, rel_tol, abs_tol) <isclose>`"
 
 msgid "Check if the values *a* and *b* are close to each other"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`isfinite(x) <isfinite>`"
-msgstr ""
+msgstr ":func:`isfinite(x) <isfinite>`"
 
 msgid "Check if *x* is neither an infinity nor a NaN"
 msgstr ""
 
-msgid ":func:`isinf(x) <isinf>`"
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":func:`isnormal(x) <isnormal>`"
+msgstr ":func:`isnormal(x) <isnormal>`"
+
+msgid "Check if *x* is a normal number"
 msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":func:`issubnormal(x) <issubnormal>`"
+msgstr ":func:`issubnormal(x) <issubnormal>`"
+
+msgid "Check if *x* is a subnormal number"
+msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":func:`isinf(x) <isinf>`"
+msgstr ":func:`isinf(x) <isinf>`"
 
 msgid "Check if *x* is a positive or negative infinity"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`isnan(x) <isnan>`"
-msgstr ""
+msgstr ":func:`isnan(x) <isnan>`"
 
 msgid "Check if *x* is a NaN  (not a number)"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`ldexp(x, i) <ldexp>`"
-msgstr ""
+msgstr ":func:`ldexp(x, i) <ldexp>`"
 
 msgid "``x * (2**i)``, inverse of function :func:`frexp`"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`nextafter(x, y, steps) <nextafter>`"
-msgstr ""
+msgstr ":func:`nextafter(x, y, steps) <nextafter>`"
 
 msgid "Floating-point value *steps* steps after *x* towards *y*"
 msgstr ""
 
-msgid ":func:`ulp(x) <ulp>`"
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":func:`signbit(x) <signbit>`"
+msgstr ":func:`signbit(x) <signbit>`"
+
+msgid "Check if *x* is a negative number"
 msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":func:`ulp(x) <ulp>`"
+msgstr ":func:`ulp(x) <ulp>`"
 
 msgid "Value of the least significant bit of *x*"
 msgstr ""
@@ -200,62 +231,82 @@ msgstr ""
 msgid "**Power, exponential and logarithmic functions**"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`cbrt(x) <cbrt>`"
-msgstr ""
+msgstr ":func:`cbrt(x) <cbrt>`"
 
 msgid "Cube root of *x*"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`exp(x) <exp>`"
-msgstr ""
+msgstr ":func:`exp(x) <exp>`"
 
 msgid "*e* raised to the power *x*"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`exp2(x) <exp2>`"
-msgstr ""
+msgstr ":func:`exp2(x) <exp2>`"
 
 msgid "*2* raised to the power *x*"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`expm1(x) <expm1>`"
-msgstr ""
+msgstr ":func:`expm1(x) <expm1>`"
 
 msgid "*e* raised to the power *x*, minus 1"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`log(x, base) <log>`"
-msgstr ""
+msgstr ":func:`log(x, base) <log>`"
 
 msgid "Logarithm of *x* to the given base (*e* by default)"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`log1p(x) <log1p>`"
-msgstr ""
+msgstr ":func:`log1p(x) <log1p>`"
 
 msgid "Natural logarithm of *1+x* (base *e*)"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`log2(x) <log2>`"
-msgstr ""
+msgstr ":func:`log2(x) <log2>`"
 
 msgid "Base-2 logarithm of *x*"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`log10(x) <log10>`"
-msgstr ""
+msgstr ":func:`log10(x) <log10>`"
 
 msgid "Base-10 logarithm of *x*"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`pow(x, y) <math.pow>`"
-msgstr ""
+msgstr ":func:`pow(x, y) <math.pow>`"
 
 msgid "*x* raised to the power *y*"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`sqrt(x) <sqrt>`"
-msgstr ""
+msgstr ":func:`sqrt(x) <sqrt>`"
 
 msgid "Square root of *x*"
 msgstr ""
@@ -263,34 +314,44 @@ msgstr ""
 msgid "**Summation and product functions**"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`dist(p, q) <dist>`"
-msgstr ""
+msgstr ":func:`dist(p, q) <dist>`"
 
 msgid ""
 "Euclidean distance between two points *p* and *q* given as an iterable of "
 "coordinates"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`fsum(iterable) <fsum>`"
-msgstr ""
+msgstr ":func:`fsum(iterable) <fsum>`"
 
 msgid "Sum of values in the input *iterable*"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`hypot(*coordinates) <hypot>`"
-msgstr ""
+msgstr ":func:`hypot(*coordinates) <hypot>`"
 
 msgid "Euclidean norm of an iterable of coordinates"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`prod(iterable, start) <prod>`"
-msgstr ""
+msgstr ":func:`prod(iterable, start) <prod>`"
 
 msgid "Product of elements in the input *iterable* with a *start* value"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`sumprod(p, q) <sumprod>`"
-msgstr ""
+msgstr ":func:`sumprod(p, q) <sumprod>`"
 
 msgid "Sum of products from two iterables *p* and *q*"
 msgstr ""
@@ -298,14 +359,18 @@ msgstr ""
 msgid "**Angular conversion**"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`degrees(x) <degrees>`"
-msgstr ""
+msgstr ":func:`degrees(x) <degrees>`"
 
 msgid "Convert angle *x* from radians to degrees"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`radians(x) <radians>`"
-msgstr ""
+msgstr ":func:`radians(x) <radians>`"
 
 msgid "Convert angle *x* from degrees to radians"
 msgstr ""
@@ -313,44 +378,60 @@ msgstr ""
 msgid "**Trigonometric functions**"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`acos(x) <acos>`"
-msgstr ""
+msgstr ":func:`acos(x) <acos>`"
 
 msgid "Arc cosine of *x*"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`asin(x) <asin>`"
-msgstr ""
+msgstr ":func:`asin(x) <asin>`"
 
 msgid "Arc sine of *x*"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`atan(x) <atan>`"
-msgstr ""
+msgstr ":func:`atan(x) <atan>`"
 
 msgid "Arc tangent of *x*"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`atan2(y, x) <atan2>`"
-msgstr ""
+msgstr ":func:`atan2(y, x) <atan2>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``atan(y / x)``"
-msgstr ""
+msgstr "``atan(y / x)``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`cos(x) <cos>`"
-msgstr ""
+msgstr ":func:`cos(x) <cos>`"
 
 msgid "Cosine of *x*"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`sin(x) <sin>`"
-msgstr ""
+msgstr ":func:`sin(x) <sin>`"
 
 msgid "Sine of *x*"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`tan(x) <tan>`"
-msgstr ""
+msgstr ":func:`tan(x) <tan>`"
 
 msgid "Tangent of *x*"
 msgstr ""
@@ -358,38 +439,50 @@ msgstr ""
 msgid "**Hyperbolic functions**"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`acosh(x) <acosh>`"
-msgstr ""
+msgstr ":func:`acosh(x) <acosh>`"
 
 msgid "Inverse hyperbolic cosine of *x*"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`asinh(x) <asinh>`"
-msgstr ""
+msgstr ":func:`asinh(x) <asinh>`"
 
 msgid "Inverse hyperbolic sine of *x*"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`atanh(x) <atanh>`"
-msgstr ""
+msgstr ":func:`atanh(x) <atanh>`"
 
 msgid "Inverse hyperbolic tangent of *x*"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`cosh(x) <cosh>`"
-msgstr ""
+msgstr ":func:`cosh(x) <cosh>`"
 
 msgid "Hyperbolic cosine of *x*"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`sinh(x) <sinh>`"
-msgstr ""
+msgstr ":func:`sinh(x) <sinh>`"
 
 msgid "Hyperbolic sine of *x*"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`tanh(x) <tanh>`"
-msgstr ""
+msgstr ":func:`tanh(x) <tanh>`"
 
 msgid "Hyperbolic tangent of *x*"
 msgstr ""
@@ -397,28 +490,36 @@ msgstr ""
 msgid "**Special functions**"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`erf(x) <erf>`"
-msgstr ""
+msgstr ":func:`erf(x) <erf>`"
 
 msgid "`Error function <https://en.wikipedia.org/wiki/Error_function>`_ at *x*"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`erfc(x) <erfc>`"
-msgstr ""
+msgstr ":func:`erfc(x) <erfc>`"
 
 msgid ""
 "`Complementary error function <https://en.wikipedia.org/wiki/"
 "Error_function>`_ at *x*"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`gamma(x) <gamma>`"
-msgstr ""
+msgstr ":func:`gamma(x) <gamma>`"
 
 msgid "`Gamma function <https://en.wikipedia.org/wiki/Gamma_function>`_ at *x*"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`lgamma(x) <lgamma>`"
-msgstr ""
+msgstr ":func:`lgamma(x) <lgamma>`"
 
 msgid ""
 "Natural logarithm of the absolute value of the `Gamma function <https://en."
@@ -428,112 +529,50 @@ msgstr ""
 msgid "**Constants**"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":data:`pi`"
-msgstr ""
+msgstr ":data:`pi`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "*π* = 3.141592..."
-msgstr ""
+msgstr "*π* = 3.141592..."
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":data:`e`"
-msgstr ""
+msgstr ":data:`e`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "*e* = 2.718281..."
-msgstr ""
+msgstr "*e* = 2.718281..."
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":data:`tau`"
-msgstr ""
+msgstr ":data:`tau`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "*τ* = 2\\ *π* = 6.283185..."
-msgstr ""
+msgstr "*τ* = 2\\ *π* = 6.283185..."
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":data:`inf`"
-msgstr ""
+msgstr ":data:`inf`"
 
 msgid "Positive infinity"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":data:`nan`"
-msgstr ""
+msgstr ":data:`nan`"
 
 msgid "\"Not a number\" (NaN)"
-msgstr ""
-
-msgid "Number-theoretic functions"
-msgstr ""
-
-msgid ""
-"Return the number of ways to choose *k* items from *n* items without "
-"repetition and without order."
-msgstr ""
-
-msgid ""
-"Evaluates to ``n! / (k! * (n - k)!)`` when ``k <= n`` and evaluates to zero "
-"when ``k > n``."
-msgstr ""
-
-msgid ""
-"Also called the binomial coefficient because it is equivalent to the "
-"coefficient of k-th term in polynomial expansion of ``(1 + x)ⁿ``."
-msgstr ""
-
-msgid ""
-"Raises :exc:`TypeError` if either of the arguments are not integers. Raises :"
-"exc:`ValueError` if either of the arguments are negative."
-msgstr ""
-
-msgid "Return factorial of the nonnegative integer *n*."
-msgstr ""
-
-msgid "Floats with integral values (like ``5.0``) are no longer accepted."
-msgstr ""
-
-msgid ""
-"Return the greatest common divisor of the specified integer arguments. If "
-"any of the arguments is nonzero, then the returned value is the largest "
-"positive integer that is a divisor of all arguments.  If all arguments are "
-"zero, then the returned value is ``0``.  ``gcd()`` without arguments returns "
-"``0``."
-msgstr ""
-
-msgid ""
-"Added support for an arbitrary number of arguments. Formerly, only two "
-"arguments were supported."
-msgstr ""
-
-msgid ""
-"Return the integer square root of the nonnegative integer *n*. This is the "
-"floor of the exact square root of *n*, or equivalently the greatest integer "
-"*a* such that *a*\\ ² |nbsp| ≤ |nbsp| *n*."
-msgstr ""
-
-msgid ""
-"For some applications, it may be more convenient to have the least integer "
-"*a* such that *n* |nbsp| ≤ |nbsp| *a*\\ ², or in other words the ceiling of "
-"the exact square root of *n*. For positive *n*, this can be computed using "
-"``a = 1 + isqrt(n - 1)``."
-msgstr ""
-
-msgid ""
-"Return the least common multiple of the specified integer arguments. If all "
-"arguments are nonzero, then the returned value is the smallest positive "
-"integer that is a multiple of all arguments.  If any of the arguments is "
-"zero, then the returned value is ``0``.  ``lcm()`` without arguments returns "
-"``1``."
-msgstr ""
-
-msgid ""
-"Return the number of ways to choose *k* items from *n* items without "
-"repetition and with order."
-msgstr ""
-
-msgid ""
-"Evaluates to ``n! / (n - k)!`` when ``k <= n`` and evaluates to zero when "
-"``k > n``."
-msgstr ""
-
-msgid ""
-"If *k* is not specified or is ``None``, then *k* defaults to *n* and the "
-"function returns ``n!``."
 msgstr ""
 
 msgid "Floating point arithmetic"
@@ -567,6 +606,28 @@ msgid ""
 "implementation-defined, namely the result of ``fma(0, inf, nan)`` and "
 "``fma(inf, 0, nan)``. In these cases, ``math.fma`` returns a NaN, and does "
 "not raise any exception."
+msgstr ""
+
+msgid ""
+"Get the larger of two floating-point values, treating NaNs as missing data."
+msgstr ""
+
+msgid ""
+"When both operands are (signed) NaNs or zeroes, return ``nan`` and ``0`` "
+"respectively and the sign of the result is implementation-defined, that is, :"
+"func:`!fmax` is not required to be sensitive to the sign of such operands "
+"(see Annex F of the C11 standard, §F.10.0.3 and §F.10.9.2)."
+msgstr ""
+
+msgid ""
+"Get the smaller of two floating-point values, treating NaNs as missing data."
+msgstr ""
+
+msgid ""
+"When both operands are (signed) NaNs or zeroes, return ``nan`` and ``0`` "
+"respectively and the sign of the result is implementation-defined, that is, :"
+"func:`!fmin` is not required to be sensitive to the sign of such operands "
+"(see Annex F of the C11 standard, §F.10.0.3 and §F.10.9.3)."
 msgstr ""
 
 msgid ""
@@ -700,6 +761,18 @@ msgid ""
 msgstr ""
 
 msgid ""
+"Return ``True`` if *x* is a normal number, that is a finite nonzero number "
+"that is not a subnormal (see :func:`issubnormal`). Return ``False`` "
+"otherwise."
+msgstr ""
+
+msgid ""
+"Return ``True`` if *x* is a subnormal number, that is a finite nonzero "
+"number with a magnitude smaller than :data:`sys.float_info.min`. Return "
+"``False`` otherwise."
+msgstr ""
+
+msgid ""
 "Return ``True`` if *x* is a positive or negative infinity, and ``False`` "
 "otherwise."
 msgstr ""
@@ -738,6 +811,12 @@ msgid "See also :func:`math.ulp`."
 msgstr ""
 
 msgid "Added the *steps* argument."
+msgstr ""
+
+msgid "Return ``True`` if the sign of *x* is negative and ``False`` otherwise."
+msgstr ""
+
+msgid "This is useful to detect the sign bit of zeroes, infinities and NaNs."
 msgstr ""
 
 msgid "Return the value of the least significant bit of the float *x*:"
@@ -864,7 +943,7 @@ msgstr ""
 msgid "Roughly equivalent to::"
 msgstr ""
 
-msgid "sqrt(sum((px - qx) ** 2.0 for px, qx in zip(p, q)))"
+msgid "sqrt(sum((px - qx) ** 2.0 for px, qx in zip(p, q, strict=True)))"
 msgstr ""
 
 msgid ""
@@ -927,8 +1006,10 @@ msgstr ""
 msgid "Raises :exc:`ValueError` if the inputs do not have the same length."
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "sum(map(operator.mul, p, q, strict=True))"
-msgstr ""
+msgstr "sum(map(operator.mul, p, q, strict=True))"
 
 msgid ""
 "For float and mixed int/float inputs, the intermediate products and sums are "
@@ -1021,11 +1102,16 @@ msgid ""
 "wikipedia.org/wiki/Cumulative_distribution_function>`_::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def phi(x):\n"
 "    'Cumulative distribution function for the standard normal distribution'\n"
 "    return (1.0 + erf(x / sqrt(2.0))) / 2.0"
 msgstr ""
+"def phi(x):\n"
+"    'Cumulative distribution function for the standard normal distribution'\n"
+"    return (1.0 + erf(x / sqrt(2.0))) / 2.0"
 
 msgid ""
 "Return the complementary error function at *x*.  The `complementary error "
@@ -1045,8 +1131,92 @@ msgid ""
 "*x*."
 msgstr ""
 
-msgid "Constants"
+msgid "Number-theoretic functions"
 msgstr ""
+
+msgid ""
+"For backward compatibility, the :mod:`!math` module provides also aliases of "
+"the following functions from the :mod:`math.integer` module:"
+msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":func:`comb(n, k) <math.integer.comb>`"
+msgstr ":func:`comb(n, k) <math.integer.comb>`"
+
+msgid ""
+"Number of ways to choose *k* items from *n* items without repetition and "
+"without order"
+msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":func:`factorial(n) <math.integer.factorial>`"
+msgstr ":func:`factorial(n) <math.integer.factorial>`"
+
+msgid "*n* factorial"
+msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":func:`gcd(*integers) <math.integer.gcd>`"
+msgstr ":func:`gcd(*integers) <math.integer.gcd>`"
+
+msgid "Greatest common divisor of the integer arguments"
+msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":func:`isqrt(n) <math.integer.isqrt>`"
+msgstr ":func:`isqrt(n) <math.integer.isqrt>`"
+
+msgid "Integer square root of a nonnegative integer *n*"
+msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":func:`lcm(*integers) <math.integer.lcm>`"
+msgstr ":func:`lcm(*integers) <math.integer.lcm>`"
+
+msgid "Least common multiple of the integer arguments"
+msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":func:`perm(n, k) <math.integer.perm>`"
+msgstr ":func:`perm(n, k) <math.integer.perm>`"
+
+msgid ""
+"Number of ways to choose *k* items from *n* items without repetition and "
+"with order"
+msgstr ""
+
+msgid "The :func:`gcd` function."
+msgstr ""
+
+msgid "The :func:`comb`, :func:`perm` and :func:`isqrt` functions."
+msgstr ""
+
+msgid "The :func:`lcm` function."
+msgstr ""
+
+msgid ""
+"Added support for an arbitrary number of arguments in the :func:`gcd` "
+"function. Formerly, only two arguments were supported."
+msgstr ""
+
+msgid ""
+"Floats with integral values (like ``5.0``) are no longer accepted in the :"
+"func:`factorial` function."
+msgstr ""
+
+msgid "Use the :mod:`math.integer` functions instead of these aliases."
+msgstr ""
+
+# pydocvi: passthrough=version_marker
+#, fuzzy
+msgid "Constants"
+msgstr "Constants"
 
 msgid "The mathematical constant *π* = 3.141592..., to available precision."
 msgstr ""
@@ -1103,4 +1273,10 @@ msgid "Module :mod:`cmath`"
 msgstr ""
 
 msgid "Complex number versions of many of these functions."
+msgstr ""
+
+msgid "Module :mod:`math.integer`"
+msgstr ""
+
+msgid "Integer-specific mathematics functions."
 msgstr ""

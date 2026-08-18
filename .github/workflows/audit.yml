@@ -81,12 +81,20 @@ jobs:
 
       - name: audit
         id: audit
-        # Not blocking yet. The catalogs in this repository are the 2026 Google
-        # output, written before any of these rules existed, and they currently
-        # fail thirteen hard checks with about three thousand findings. Turning
-        # this red on day one would train everybody to ignore it. It flips to
-        # blocking at M5, once pydocvi apply has written the corpus, which is
-        # what fixes the structural and whitespace groups in one pass.
+        # Still not blocking, and the reason has changed. Before apply wrote the
+        # corpus this failed thirteen hard checks on about three thousand
+        # findings, nearly all of them structural. That pass cleared the whole
+        # structure group: S04 and S08 pass, A01 passes, and the total went from
+        # 6 563 findings to 1 270.
+        #
+        # What is left is nine hard checks and 156 findings, and they are real
+        # translation defects rather than formatting: 27 protected spans that did
+        # not survive, 27 role targets that got translated, 47 whitespace
+        # mismatches, 31 code entries that came back edited, 10 entries that are
+        # the English verbatim and 9 that are not in Vietnamese. Every one of
+        # those needs a person or a retranslation, not a tool change, so this
+        # flips to blocking when that count reaches zero and not before. A gate
+        # that has been red since the day it was added is not a gate.
         continue-on-error: true
         run: |
           pydocvi audit --report reports/audit.md | tee "$RUNNER_TEMP/audit.txt"
@@ -109,12 +117,14 @@ jobs:
           echo "the committed reports are what the corpus produces"
 
       - name: apply --check
-        # Not blocking yet either, and for a narrower reason than the audit. The
-        # committed catalogs came from the old scripts/mt.py, so they differ from
-        # what the memory and the upstream render in their headers and their line
-        # wrapping. All 548 files differ today. It flips to blocking with the
-        # audit, at the same commit and for the same reason.
-        continue-on-error: true
+        # Blocking, from this commit. All 548 files differed until apply wrote
+        # them, because the committed catalogs came from the old scripts/mt.py
+        # and disagreed with the memory on their headers and their wrapping. They
+        # now agree byte for byte, and the run that proved it used no flags: the
+        # --refuzzy pass that re-marked the 241 entries that script left unmarked
+        # was needed once, and a plain apply --check has been identical ever
+        # since. So this gate can be held to the strict reading, which is that
+        # nobody can hand-edit a catalog without the memory that explains it.
         run: pydocvi apply --check
 
       - name: summary

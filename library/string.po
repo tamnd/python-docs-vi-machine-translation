@@ -9,18 +9,18 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-19 14:37+0000\n"
-"PO-Revision-Date: 2025-09-16 00:01+0000\n"
-"Last-Translator: Nguyen Duc Tam, 2026\n"
-"Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
-"vi/)\n"
+"POT-Creation-Date: 2026-04-23 15:47+0000\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: pydocvi 0.1.2\n"
 
 msgid ":mod:`!string` --- Common string operations"
 msgstr ""
@@ -369,30 +369,38 @@ msgstr ""
 msgid "The meaning of the various alignment options is as follows:"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Option"
-msgstr ""
+msgstr "Option"
 
 msgid "Meaning"
-msgstr ""
+msgstr "Ý nghĩa"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'<'``"
-msgstr ""
+msgstr "``'<'``"
 
 msgid ""
 "Forces the field to be left-aligned within the available space (this is the "
 "default for most objects)."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'>'``"
-msgstr ""
+msgstr "``'>'``"
 
 msgid ""
 "Forces the field to be right-aligned within the available space (this is the "
 "default for numbers)."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'='``"
-msgstr ""
+msgstr "``'='``"
 
 msgid ""
 "Forces the padding to be placed after the sign (if any) but before the "
@@ -402,8 +410,10 @@ msgid ""
 "the field width."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'^'``"
-msgstr ""
+msgstr "``'^'``"
 
 msgid "Forces the field to be centered within the available space."
 msgstr ""
@@ -420,23 +430,27 @@ msgid ""
 msgstr ""
 
 msgid "``'+'``"
-msgstr ""
+msgstr "``'+'``"
 
 msgid ""
 "Indicates that a sign should be used for both positive as well as negative "
 "numbers."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'-'``"
-msgstr ""
+msgstr "``'-'``"
 
 msgid ""
 "Indicates that a sign should be used only for negative numbers (this is the "
 "default behavior)."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "space"
-msgstr ""
+msgstr "space"
 
 msgid ""
 "Indicates that a leading space should be used on positive numbers, and a "
@@ -499,8 +513,10 @@ msgid ""
 "respectively. It can be one of the following:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``','``"
-msgstr ""
+msgstr "``','``"
 
 msgid ""
 "Inserts a comma every 3 digits for integer presentation type ``'d'`` and "
@@ -508,8 +524,10 @@ msgid ""
 "types, this option is not supported."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'_'``"
-msgstr ""
+msgstr "``'_'``"
 
 msgid ""
 "Inserts an underscore every 3 digits for integer presentation type ``'d'`` "
@@ -538,17 +556,23 @@ msgstr ""
 msgid "The available string presentation types are:"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Type"
-msgstr ""
+msgstr "Type"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'s'``"
-msgstr ""
+msgstr "``'s'``"
 
 msgid "String format. This is the default type for strings and may be omitted."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "None"
-msgstr ""
+msgstr "None"
 
 msgid "The same as ``'s'``."
 msgstr ""
@@ -557,41 +581,49 @@ msgid "The available integer presentation types are:"
 msgstr ""
 
 msgid "``'b'``"
-msgstr ""
+msgstr "``'b'``"
 
 msgid "Binary format. Outputs the number in base 2."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'c'``"
-msgstr ""
+msgstr "``'c'``"
 
 msgid ""
 "Character. Converts the integer to the corresponding unicode character "
 "before printing."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'d'``"
-msgstr ""
+msgstr "``'d'``"
 
 msgid "Decimal Integer. Outputs the number in base 10."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'o'``"
-msgstr ""
+msgstr "``'o'``"
 
 msgid "Octal format. Outputs the number in base 8."
 msgstr ""
 
 msgid "``'x'``"
-msgstr ""
+msgstr "``'x'``"
 
 msgid ""
 "Hex format. Outputs the number in base 16, using lower-case letters for the "
 "digits above 9."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'X'``"
-msgstr ""
+msgstr "``'X'``"
 
 msgid ""
 "Hex format. Outputs the number in base 16, using upper-case letters for the "
@@ -599,8 +631,10 @@ msgid ""
 "upper-cased to ``'0X'`` as well."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'n'``"
-msgstr ""
+msgstr "``'n'``"
 
 msgid ""
 "Number. This is the same as ``'d'``, except that it uses the current locale "
@@ -622,8 +656,10 @@ msgid ""
 "Decimal` values are:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'e'``"
-msgstr ""
+msgstr "``'e'``"
 
 msgid ""
 "Scientific notation. For a given precision ``p``, formats the number in "
@@ -641,16 +677,20 @@ msgid ""
 "zero if the value is zero."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'E'``"
-msgstr ""
+msgstr "``'E'``"
 
 msgid ""
 "Scientific notation. Same as ``'e'`` except it uses an upper case 'E' as the "
 "separator character."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'f'``"
-msgstr ""
+msgstr "``'f'``"
 
 msgid ""
 "Fixed-point notation. For a given precision ``p``, formats the number as a "
@@ -661,16 +701,20 @@ msgid ""
 "point is omitted unless the ``#`` option is used."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'F'``"
-msgstr ""
+msgstr "``'F'``"
 
 msgid ""
 "Fixed-point notation. Same as ``'f'``, but converts ``nan`` to  ``NAN`` and "
 "``inf`` to ``INF``."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'g'``"
-msgstr ""
+msgstr "``'g'``"
 
 msgid ""
 "General format.  For a given precision ``p >= 1``, this rounds the number to "
@@ -706,8 +750,10 @@ msgid ""
 "regardless of the precision."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'G'``"
-msgstr ""
+msgstr "``'G'``"
 
 msgid ""
 "General format. Same as ``'g'`` except switches to ``'E'`` if the number "
@@ -720,8 +766,10 @@ msgid ""
 "part of a number."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'%'``"
-msgstr ""
+msgstr "``'%'``"
 
 msgid ""
 "Percentage. Multiplies the number by 100 and displays in fixed (``'f'``) "
@@ -787,6 +835,8 @@ msgstr ""
 msgid "Accessing arguments by position::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> '{0}, {1}, {2}'.format('a', 'b', 'c')\n"
 "'a, b, c'\n"
@@ -800,10 +850,23 @@ msgid ""
 "repeated\n"
 "'abracadabra'"
 msgstr ""
+">>> '{0}, {1}, {2}'.format('a', 'b', 'c')\n"
+"'a, b, c'\n"
+">>> '{}, {}, {}'.format('a', 'b', 'c')  # 3.1+ only\n"
+"'a, b, c'\n"
+">>> '{2}, {1}, {0}'.format('a', 'b', 'c')\n"
+"'c, b, a'\n"
+">>> '{2}, {1}, {0}'.format(*'abc')      # unpacking argument sequence\n"
+"'c, b, a'\n"
+">>> '{0}{1}{0}'.format('abra', 'cad')   # arguments' indices can be "
+"repeated\n"
+"'abracadabra'"
 
 msgid "Accessing arguments by name::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> 'Coordinates: {latitude}, {longitude}'.format(latitude='37.24N', "
 "longitude='-115.81W')\n"
@@ -812,16 +875,24 @@ msgid ""
 ">>> 'Coordinates: {latitude}, {longitude}'.format(**coord)\n"
 "'Coordinates: 37.24N, -115.81W'"
 msgstr ""
+">>> 'Coordinates: {latitude}, {longitude}'.format(latitude='37.24N', "
+"longitude='-115.81W')\n"
+"'Coordinates: 37.24N, -115.81W'\n"
+">>> coord = {'latitude': '37.24N', 'longitude': '-115.81W'}\n"
+">>> 'Coordinates: {latitude}, {longitude}'.format(**coord)\n"
+"'Coordinates: 37.24N, -115.81W'"
 
 msgid "Accessing arguments' attributes::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> c = 3-5j\n"
 ">>> ('The complex number {0} is formed from the real part {0.real} '\n"
 "...  'and the imaginary part {0.imag}.').format(c)\n"
-"'The complex number (3-5j) is formed from the real part 3.0 and the "
-"imaginary part -5.0.'\n"
+"'The complex number (3-5j) is formed from the real part 3.0 and the imaginary"
+" part -5.0.'\n"
 ">>> class Point:\n"
 "...     def __init__(self, x, y):\n"
 "...         self.x, self.y = x, y\n"
@@ -831,28 +902,53 @@ msgid ""
 ">>> str(Point(4, 2))\n"
 "'Point(4, 2)'"
 msgstr ""
+">>> c = 3-5j\n"
+">>> ('The complex number {0} is formed from the real part {0.real} '\n"
+"...  'and the imaginary part {0.imag}.').format(c)\n"
+"'The complex number (3-5j) is formed from the real part 3.0 and the imaginary"
+" part -5.0.'\n"
+">>> class Point:\n"
+"...     def __init__(self, x, y):\n"
+"...         self.x, self.y = x, y\n"
+"...     def __str__(self):\n"
+"...         return 'Point({self.x}, {self.y})'.format(self=self)\n"
+"...\n"
+">>> str(Point(4, 2))\n"
+"'Point(4, 2)'"
 
 msgid "Accessing arguments' items::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> coord = (3, 5)\n"
 ">>> 'X: {0[0]};  Y: {0[1]}'.format(coord)\n"
 "'X: 3;  Y: 5'"
 msgstr ""
+">>> coord = (3, 5)\n"
+">>> 'X: {0[0]};  Y: {0[1]}'.format(coord)\n"
+"'X: 3;  Y: 5'"
 
 msgid "Replacing ``%s`` and ``%r``::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> \"repr() shows quotes: {!r}; str() doesn't: {!s}\".format('test1', "
 "'test2')\n"
 "\"repr() shows quotes: 'test1'; str() doesn't: test2\""
 msgstr ""
+">>> \"repr() shows quotes: {!r}; str() doesn't: {!s}\".format('test1', "
+"'test2')\n"
+"\"repr() shows quotes: 'test1'; str() doesn't: test2\""
 
 msgid "Aligning the text and specifying a width::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> '{:<30}'.format('left aligned')\n"
 "'left aligned                  '\n"
@@ -863,24 +959,43 @@ msgid ""
 ">>> '{:*^30}'.format('centered')  # use '*' as a fill char\n"
 "'***********centered***********'"
 msgstr ""
+">>> '{:<30}'.format('left aligned')\n"
+"'left aligned                  '\n"
+">>> '{:>30}'.format('right aligned')\n"
+"'                 right aligned'\n"
+">>> '{:^30}'.format('centered')\n"
+"'           centered           '\n"
+">>> '{:*^30}'.format('centered')  # use '*' as a fill char\n"
+"'***********centered***********'"
 
 msgid "Replacing ``%+f``, ``%-f``, and ``% f`` and specifying a sign::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> '{:+f}; {:+f}'.format(3.14, -3.14)  # show it always\n"
 "'+3.140000; -3.140000'\n"
 ">>> '{: f}; {: f}'.format(3.14, -3.14)  # show a space for positive numbers\n"
 "' 3.140000; -3.140000'\n"
-">>> '{:-f}; {:-f}'.format(3.14, -3.14)  # show only the minus -- same as '{:"
-"f}; {:f}'\n"
+">>> '{:-f}; {:-f}'.format(3.14, -3.14)  # show only the minus -- same as "
+"'{:f}; {:f}'\n"
 "'3.140000; -3.140000'"
 msgstr ""
+">>> '{:+f}; {:+f}'.format(3.14, -3.14)  # show it always\n"
+"'+3.140000; -3.140000'\n"
+">>> '{: f}; {: f}'.format(3.14, -3.14)  # show a space for positive numbers\n"
+"' 3.140000; -3.140000'\n"
+">>> '{:-f}; {:-f}'.format(3.14, -3.14)  # show only the minus -- same as "
+"'{:f}; {:f}'\n"
+"'3.140000; -3.140000'"
 
 msgid ""
 "Replacing ``%x`` and ``%o`` and converting the value to different bases::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> # format also supports binary numbers\n"
 ">>> \"int: {0:d};  hex: {0:x};  oct: {0:o};  bin: {0:b}\".format(42)\n"
@@ -889,10 +1004,18 @@ msgid ""
 ">>> \"int: {0:d};  hex: {0:#x};  oct: {0:#o};  bin: {0:#b}\".format(42)\n"
 "'int: 42;  hex: 0x2a;  oct: 0o52;  bin: 0b101010'"
 msgstr ""
+">>> # format also supports binary numbers\n"
+">>> \"int: {0:d};  hex: {0:x};  oct: {0:o};  bin: {0:b}\".format(42)\n"
+"'int: 42;  hex: 2a;  oct: 52;  bin: 101010'\n"
+">>> # with 0x, 0o, or 0b as prefix:\n"
+">>> \"int: {0:d};  hex: {0:#x};  oct: {0:#o};  bin: {0:#b}\".format(42)\n"
+"'int: 42;  hex: 0x2a;  oct: 0o52;  bin: 0b101010'"
 
 msgid "Using the comma or the underscore as a digit group separator::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> '{:,}'.format(1234567890)\n"
 "'1,234,567,890'\n"
@@ -909,30 +1032,58 @@ msgid ""
 ">>> '{:,._}'.format(123456789.123456789)\n"
 "'123,456,789.123_456_79'"
 msgstr ""
+">>> '{:,}'.format(1234567890)\n"
+"'1,234,567,890'\n"
+">>> '{:_}'.format(1234567890)\n"
+"'1_234_567_890'\n"
+">>> '{:_b}'.format(1234567890)\n"
+"'100_1001_1001_0110_0000_0010_1101_0010'\n"
+">>> '{:_x}'.format(1234567890)\n"
+"'4996_02d2'\n"
+">>> '{:_}'.format(123456789.123456789)\n"
+"'123_456_789.12345679'\n"
+">>> '{:.,}'.format(123456789.123456789)\n"
+"'123456789.123,456,79'\n"
+">>> '{:,._}'.format(123456789.123456789)\n"
+"'123,456,789.123_456_79'"
 
 msgid "Expressing a percentage::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> points = 19\n"
 ">>> total = 22\n"
 ">>> 'Correct answers: {:.2%}'.format(points/total)\n"
 "'Correct answers: 86.36%'"
 msgstr ""
+">>> points = 19\n"
+">>> total = 22\n"
+">>> 'Correct answers: {:.2%}'.format(points/total)\n"
+"'Correct answers: 86.36%'"
 
 msgid "Using type-specific formatting::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import datetime as dt\n"
 ">>> d = dt.datetime(2010, 7, 4, 12, 15, 58)\n"
 ">>> '{:%Y-%m-%d %H:%M:%S}'.format(d)\n"
 "'2010-07-04 12:15:58'"
 msgstr ""
+">>> import datetime as dt\n"
+">>> d = dt.datetime(2010, 7, 4, 12, 15, 58)\n"
+">>> '{:%Y-%m-%d %H:%M:%S}'.format(d)\n"
+"'2010-07-04 12:15:58'"
 
 msgid "Nesting arguments and more complex examples::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> for align, text in zip('<^>', ['left', 'center', 'right']):\n"
 "...     '{0:{fill}{align}16}'.format(text, fill=align, align=align)\n"
@@ -962,6 +1113,33 @@ msgid ""
 "   10     A    12  1010\n"
 "   11     B    13  1011"
 msgstr ""
+">>> for align, text in zip('<^>', ['left', 'center', 'right']):\n"
+"...     '{0:{fill}{align}16}'.format(text, fill=align, align=align)\n"
+"...\n"
+"'left<<<<<<<<<<<<'\n"
+"'^^^^^center^^^^^'\n"
+"'>>>>>>>>>>>right'\n"
+">>>\n"
+">>> octets = [192, 168, 0, 1]\n"
+">>> '{:02X}{:02X}{:02X}{:02X}'.format(*octets)\n"
+"'C0A80001'\n"
+">>> int(_, 16)\n"
+"3232235521\n"
+">>>\n"
+">>> width = 5\n"
+">>> for num in range(5,12):\n"
+"...     for base in 'dXob':\n"
+"...         print('{0:{width}{base}}'.format(num, base=base, width=width), "
+"end=' ')\n"
+"...     print()\n"
+"...\n"
+"    5     5     5   101\n"
+"    6     6     6   110\n"
+"    7     7     7   111\n"
+"    8     8    10  1000\n"
+"    9     9    11  1001\n"
+"   10     A    12  1010\n"
+"   11     B    13  1011"
 
 msgid "Template strings ($-strings)"
 msgstr ""
@@ -1070,6 +1248,8 @@ msgstr ""
 msgid "Here is an example of how to use a Template::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> from string import Template\n"
 ">>> s = Template('$who likes $what')\n"
@@ -1087,6 +1267,21 @@ msgid ""
 ">>> Template('$who likes $what').safe_substitute(d)\n"
 "'tim likes $what'"
 msgstr ""
+">>> from string import Template\n"
+">>> s = Template('$who likes $what')\n"
+">>> s.substitute(who='tim', what='kung pao')\n"
+"'tim likes kung pao'\n"
+">>> d = dict(who='tim')\n"
+">>> Template('Give $who $100').substitute(d)\n"
+"Traceback (most recent call last):\n"
+"...\n"
+"ValueError: Invalid placeholder in string: line 1, col 11\n"
+">>> Template('$who likes $what').substitute(d)\n"
+"Traceback (most recent call last):\n"
+"...\n"
+"KeyError: 'what'\n"
+">>> Template('$who likes $what').safe_substitute(d)\n"
+"'tim likes $what'"
 
 msgid ""
 "Advanced usage: you can derive subclasses of :class:`Template` to customize "
@@ -1197,8 +1392,10 @@ msgstr ""
 msgid "! (exclamation)"
 msgstr ""
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=d132b9201f27 run=2026-08-17T16:43Z
+#, fuzzy
 msgid ": (colon)"
-msgstr ""
+msgstr ": (dấu hai chấm)"
 
 msgid "< (less)"
 msgstr ""
@@ -1218,8 +1415,10 @@ msgstr ""
 msgid "- (minus)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "z"
-msgstr ""
+msgstr "z"
 
 msgid "# (hash)"
 msgstr "# (hash)"
@@ -1230,8 +1429,10 @@ msgstr ""
 msgid "_ (underscore)"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "$ (dollar)"
-msgstr ""
+msgstr "$ (dollar)"
 
 msgid "in template strings"
 msgstr ""

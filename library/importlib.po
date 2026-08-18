@@ -5,22 +5,23 @@
 #
 # Translators:
 # python-doc bot, 2025
+# Nguyen Duc Tam, 2026
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-17 14:50+0000\n"
-"PO-Revision-Date: 2025-09-16 00:01+0000\n"
-"Last-Translator: python-doc bot, 2025\n"
-"Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
-"vi/)\n"
+"POT-Creation-Date: 2026-05-08 18:34+0000\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: pydocvi 0.1.2\n"
 
 msgid ":mod:`!importlib` --- The implementation of :keyword:`!import`"
 msgstr ""
@@ -28,8 +29,10 @@ msgstr ""
 msgid "**Source code:** :source:`Lib/importlib/__init__.py`"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Introduction"
-msgstr ""
+msgstr "Introduction"
 
 msgid "The purpose of the :mod:`!importlib` package is three-fold."
 msgstr ""
@@ -65,8 +68,10 @@ msgid ""
 "\"resources\" from Python packages."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":ref:`import`"
-msgstr ""
+msgstr ":ref:`import`"
 
 msgid "The language reference for the :keyword:`import` statement."
 msgstr ""
@@ -87,86 +92,114 @@ msgstr ""
 msgid "The :keyword:`import` statement is syntactic sugar for this function."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":ref:`sys-path-init`"
-msgstr ""
+msgstr ":ref:`sys-path-init`"
 
 msgid "The initialization of :data:`sys.path`."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":pep:`235`"
-msgstr ""
+msgstr ":pep:`235`"
 
 msgid "Import on Case-Insensitive Platforms"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":pep:`263`"
-msgstr ""
+msgstr ":pep:`263`"
 
 msgid "Defining Python Source Code Encodings"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":pep:`302`"
-msgstr ""
+msgstr ":pep:`302`"
 
 msgid "New Import Hooks"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":pep:`328`"
-msgstr ""
+msgstr ":pep:`328`"
 
 msgid "Imports: Multi-Line and Absolute/Relative"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":pep:`366`"
-msgstr ""
+msgstr ":pep:`366`"
 
 msgid "Main module explicit relative imports"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":pep:`420`"
-msgstr ""
+msgstr ":pep:`420`"
 
 msgid "Implicit namespace packages"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":pep:`451`"
-msgstr ""
+msgstr ":pep:`451`"
 
 msgid "A ModuleSpec Type for the Import System"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":pep:`488`"
-msgstr ""
+msgstr ":pep:`488`"
 
 msgid "Elimination of PYO files"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":pep:`489`"
-msgstr ""
+msgstr ":pep:`489`"
 
 msgid "Multi-phase extension module initialization"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":pep:`552`"
-msgstr ""
+msgstr ":pep:`552`"
 
 msgid "Deterministic pycs"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":pep:`3120`"
-msgstr ""
+msgstr ":pep:`3120`"
 
 msgid "Using UTF-8 as the Default Source Encoding"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":pep:`3147`"
-msgstr ""
+msgstr ":pep:`3147`"
 
 msgid "PYC Repository Directories"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Functions"
-msgstr ""
+msgstr "Functions"
 
 msgid "An implementation of the built-in :func:`__import__` function."
 msgstr ""
@@ -199,6 +232,11 @@ msgid ""
 "interpreter began execution (e.g., created a Python source file), you may "
 "need to call :func:`invalidate_caches` in order for the new module to be "
 "noticed by the import system."
+msgstr ""
+
+msgid ""
+"If the module cannot be imported, :func:`import_module` will raise :exc:"
+"`ImportError` or an appropriate subclass like :exc:`ModuleNotFoundError`."
 msgstr ""
 
 msgid "Parent packages are automatically imported."
@@ -267,12 +305,18 @@ msgid ""
 "if desired::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "try:\n"
 "    cache\n"
 "except NameError:\n"
 "    cache = {}"
 msgstr ""
+"try:\n"
+"    cache\n"
+"except NameError:\n"
+"    cache = {}"
 
 msgid ""
 "It is generally not very useful to reload built-in or dynamically loaded "
@@ -323,6 +367,8 @@ msgstr ""
 msgid "ABC hierarchy::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "object\n"
 " +-- MetaPathFinder\n"
@@ -334,6 +380,15 @@ msgid ""
 "                                 +-- FileLoader\n"
 "                                 +-- SourceLoader"
 msgstr ""
+"object\n"
+" +-- MetaPathFinder\n"
+" +-- PathEntryFinder\n"
+" +-- Loader\n"
+"      +-- ResourceLoader --------+\n"
+"      +-- InspectLoader          |\n"
+"           +-- ExecutionLoader --+\n"
+"                                 +-- FileLoader\n"
+"                                 +-- SourceLoader"
 
 msgid "An abstract base class representing a :term:`meta path finder`."
 msgstr ""
@@ -362,6 +417,31 @@ msgid "Returns ``None`` when called instead of :data:`NotImplemented`."
 msgstr ""
 
 msgid ""
+"An optional method which searches for possible specs with given *parent* "
+"module spec. If *parent* is *None*, :meth:`MetaPathFinder.discover` will "
+"search for top-level modules."
+msgstr ""
+
+msgid "Returns an iterable of possible specs."
+msgstr ""
+
+msgid "Raises :exc:`ValueError` if *parent* is not a package module."
+msgstr ""
+
+msgid ""
+"This method can potentially yield a very large number of objects, and it may "
+"carry out IO operations when computing these values."
+msgstr ""
+
+msgid ""
+"Because of this, it will generally be desirable to compute the result values "
+"on-the-fly, as they are needed. As such, the returned object is only "
+"guaranteed to be an :class:`iterable <collections.abc.Iterable>`, instead of "
+"a :class:`list` or other :class:`collection <collections.abc.Collection>` "
+"type."
+msgstr ""
+
+msgid ""
 "An abstract base class representing a :term:`path entry finder`.  Though it "
 "bears some similarities to :class:`MetaPathFinder`, ``PathEntryFinder`` is "
 "meant for use only within the path-based import subsystem provided by :class:"
@@ -385,6 +465,12 @@ msgid ""
 msgstr ""
 
 msgid ""
+"An optional method which searches for possible specs with given *parent* "
+"module spec. If *parent* is *None*, :meth:`PathEntryFinder.discover` will "
+"search for top-level modules."
+msgstr ""
+
+msgid ""
 "An abstract base class for a :term:`loader`. See :pep:`302` for the exact "
 "definition for a loader."
 msgstr ""
@@ -396,6 +482,9 @@ msgid ""
 msgstr ""
 
 msgid "Introduced the optional :meth:`get_resource_reader` method."
+msgstr ""
+
+msgid "Removed the ``load_module()`` method."
 msgstr ""
 
 msgid ""
@@ -415,62 +504,6 @@ msgid ""
 msgstr ""
 
 msgid ":meth:`create_module` must also be defined."
-msgstr ""
-
-msgid ""
-"A legacy method for loading a module.  If the module cannot be loaded, :exc:"
-"`ImportError` is raised, otherwise the loaded module is returned."
-msgstr ""
-
-msgid ""
-"If the requested module already exists in :data:`sys.modules`, that module "
-"should be used and reloaded. Otherwise the loader should create a new module "
-"and insert it into :data:`sys.modules` before any loading begins, to prevent "
-"recursion from the import.  If the loader inserted a module and the load "
-"fails, it must be removed by the loader from :data:`sys.modules`; modules "
-"already in :data:`sys.modules` before the loader began execution should be "
-"left alone."
-msgstr ""
-
-msgid ""
-"The loader should set several attributes on the module (note that some of "
-"these attributes can change when a module is reloaded):"
-msgstr ""
-
-msgid ":attr:`module.__name__`"
-msgstr ""
-
-msgid ":attr:`module.__file__`"
-msgstr ""
-
-msgid ":attr:`module.__cached__` *(deprecated)*"
-msgstr ""
-
-msgid ":attr:`module.__path__`"
-msgstr ""
-
-msgid ":attr:`module.__package__` *(deprecated)*"
-msgstr ""
-
-msgid ":attr:`module.__loader__` *(deprecated)*"
-msgstr ""
-
-msgid ""
-"When :meth:`exec_module` is available then backwards-compatible "
-"functionality is provided."
-msgstr ""
-
-msgid ""
-"Raise :exc:`ImportError` when called instead of :exc:`NotImplementedError`.  "
-"Functionality provided when :meth:`exec_module` is available."
-msgstr ""
-
-msgid ""
-"The recommended API for loading a module is :meth:`exec_module` (and :meth:"
-"`create_module`).  Loaders should implement it instead of :meth:"
-"`load_module`.  The import machinery takes care of all the other "
-"responsibilities of :meth:`load_module` when :meth:`exec_module` is "
-"implemented."
 msgstr ""
 
 msgid "*Superseded by TraversableResources*"
@@ -550,16 +583,18 @@ msgid ""
 "``exec(code, module.__dict__)``."
 msgstr ""
 
+msgid ""
+"The optional argument *fullname* specifies the module name. It is needed to "
+"unambiguous :ref:`filter <warning-filter>` syntax warnings by module name."
+msgstr ""
+
 msgid "Made the method static."
 msgstr ""
 
+msgid "Added the *fullname* parameter."
+msgstr ""
+
 msgid "Implementation of :meth:`Loader.exec_module`."
-msgstr ""
-
-msgid "Implementation of :meth:`Loader.load_module`."
-msgstr ""
-
-msgid "use :meth:`exec_module` instead."
 msgstr ""
 
 msgid ""
@@ -596,12 +631,6 @@ msgstr ""
 msgid "Path to the file of the module."
 msgstr ""
 
-msgid "Calls super's ``load_module()``."
-msgstr ""
-
-msgid "Use :meth:`Loader.exec_module` instead."
-msgstr ""
-
 msgid "Returns :attr:`path`."
 msgstr ""
 
@@ -614,11 +643,15 @@ msgid ""
 "class:`ExecutionLoader`, requiring the implementation of:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`ResourceLoader.get_data`"
-msgstr ""
+msgstr ":meth:`ResourceLoader.get_data`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`ExecutionLoader.get_filename`"
-msgstr ""
+msgstr ":meth:`ExecutionLoader.get_filename`"
 
 msgid ""
 "Should only return the path to the source file; sourceless loading is not "
@@ -686,12 +719,6 @@ msgid "Concrete implementation of :meth:`InspectLoader.get_code`."
 msgstr ""
 
 msgid "Concrete implementation of :meth:`Loader.exec_module`."
-msgstr ""
-
-msgid "Concrete implementation of :meth:`Loader.load_module`."
-msgstr ""
-
-msgid "Use :meth:`exec_module` instead."
 msgstr ""
 
 msgid "Concrete implementation of :meth:`InspectLoader.get_source`."
@@ -879,6 +906,45 @@ msgid ""
 msgstr ""
 
 msgid ""
+"Represents a :term:`namespace package`'s path (:attr:`module.__path__`)."
+msgstr ""
+
+msgid ""
+"When its ``__path__`` value is accessed it will be recomputed if necessary. "
+"This keeps it in-sync with the global state (:attr:`sys.modules`)."
+msgstr ""
+
+msgid "The *name* argument is the name of the namespace module."
+msgstr ""
+
+msgid "The *path* argument is the initial path value."
+msgstr ""
+
+msgid ""
+"The *path_finder* argument is the callable used to recompute the path value. "
+"The callable has the same signature as :meth:`importlib.abc.MetaPathFinder."
+"find_spec`."
+msgstr ""
+
+msgid ""
+"When the parent's :attr:`module.__path__` attribute is updated, the path "
+"value is recomputed."
+msgstr ""
+
+msgid ""
+"If the parent module is missing from :data:`sys.modules`, then :exc:"
+"`ModuleNotFoundError` will be raised."
+msgstr ""
+
+msgid "For top-level modules, the parent module's path is :data:`sys.path`."
+msgstr ""
+
+msgid ""
+":meth:`PathFinder.invalidate_caches` invalidates :class:`NamespacePath`, "
+"forcing the path value to be recomputed next time it is accessed."
+msgstr ""
+
+msgid ""
 "A concrete implementation of :class:`importlib.abc.SourceLoader` by "
 "subclassing :class:`importlib.abc.FileLoader` and providing some concrete "
 "implementations of other methods."
@@ -898,14 +964,6 @@ msgid ""
 msgstr ""
 
 msgid "Concrete implementation of :meth:`importlib.abc.SourceLoader.set_data`."
-msgstr ""
-
-msgid ""
-"Concrete implementation of :meth:`importlib.abc.Loader.load_module` where "
-"specifying the name of the module to load is optional."
-msgstr ""
-
-msgid "Use :meth:`importlib.abc.Loader.exec_module` instead."
 msgstr ""
 
 msgid ""
@@ -985,6 +1043,8 @@ msgid ""
 "public for introspecting the ``__loader__`` attribute on namespace packages::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> from importlib.machinery import NamespaceLoader\n"
 ">>> import my_namespace\n"
@@ -994,6 +1054,13 @@ msgid ""
 ">>> isinstance(my_namespace.__loader__, importlib.abc.Loader)\n"
 "True"
 msgstr ""
+">>> from importlib.machinery import NamespaceLoader\n"
+">>> import my_namespace\n"
+">>> isinstance(my_namespace.__loader__, NamespaceLoader)\n"
+"True\n"
+">>> import importlib.abc\n"
+">>> isinstance(my_namespace.__loader__, importlib.abc.Loader)\n"
+"True"
 
 msgid ""
 "A specification for a module's import-system-related state.  This is "
@@ -1045,9 +1112,9 @@ msgid ""
 msgstr ""
 
 msgid ""
-"The filename of a compiled version of the module's code (see :attr:`module."
-"__cached__`). The :term:`finder` should always set this attribute but it may "
-"be ``None`` for modules that do not need compiled code stored."
+"The filename of a compiled version of the module's code. The :term:`finder` "
+"should always set this attribute but it may be ``None`` for modules that do "
+"not need compiled code stored."
 msgstr ""
 
 msgid ""
@@ -1121,8 +1188,10 @@ msgid ""
 "details on how to construct this build step."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Availability"
-msgstr ""
+msgstr "Availability"
 
 msgid "Path to the ``.fwork`` file for the extension module."
 msgstr ""
@@ -1165,19 +1234,14 @@ msgid ""
 msgstr ""
 
 msgid ""
-"The *debug_override* parameter is deprecated and can be used to override the "
-"system's value for ``__debug__``. A ``True`` value is the equivalent of "
-"setting *optimization* to the empty string. A ``False`` value is the same as "
-"setting *optimization* to ``1``. If both *debug_override* an *optimization* "
-"are not ``None`` then :exc:`TypeError` is raised."
-msgstr ""
-
-msgid ""
 "The *optimization* parameter was added and the *debug_override* parameter "
 "was deprecated."
 msgstr ""
 
 msgid "Accepts a :term:`path-like object`."
+msgstr ""
+
+msgid "The *debug_override* parameter was removed."
 msgstr ""
 
 msgid ""
@@ -1340,12 +1404,18 @@ msgid ""
 "of by instance. ::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "suffixes = importlib.machinery.SOURCE_SUFFIXES\n"
 "loader = importlib.machinery.SourceFileLoader\n"
 "lazy_loader = importlib.util.LazyLoader.factory(loader)\n"
 "finder = importlib.machinery.FileFinder(path, (lazy_loader, suffixes))"
 msgstr ""
+"suffixes = importlib.machinery.SOURCE_SUFFIXES\n"
+"loader = importlib.machinery.SourceFileLoader\n"
+"lazy_loader = importlib.util.LazyLoader.factory(loader)\n"
+"finder = importlib.machinery.FileFinder(path, (lazy_loader, suffixes))"
 
 msgid "Examples"
 msgstr "Ví dụ"
@@ -1357,11 +1427,16 @@ msgid ""
 "To programmatically import a module, use :func:`importlib.import_module`. ::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import importlib\n"
 "\n"
 "itertools = importlib.import_module('itertools')"
 msgstr ""
+"import importlib\n"
+"\n"
+"itertools = importlib.import_module('itertools')"
 
 msgid "Checking if a module can be imported"
 msgstr ""
@@ -1376,6 +1451,8 @@ msgid ""
 "find_spec` will import the parent module. ::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import importlib.util\n"
 "import sys\n"
@@ -1394,6 +1471,22 @@ msgid ""
 "else:\n"
 "    print(f\"can't find the {name!r} module\")"
 msgstr ""
+"import importlib.util\n"
+"import sys\n"
+"\n"
+"# For illustrative purposes.\n"
+"name = 'itertools'\n"
+"\n"
+"if name in sys.modules:\n"
+"    print(f\"{name!r} already in sys.modules\")\n"
+"elif (spec := importlib.util.find_spec(name)) is not None:\n"
+"    # If you chose to perform the actual import ...\n"
+"    module = importlib.util.module_from_spec(spec)\n"
+"    sys.modules[name] = module\n"
+"    spec.loader.exec_module(module)\n"
+"    print(f\"{name!r} has been imported\")\n"
+"else:\n"
+"    print(f\"can't find the {name!r} module\")"
 
 msgid "Importing a source file directly"
 msgstr ""
@@ -1412,6 +1505,8 @@ msgid ""
 "recipe::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import importlib.util\n"
 "import sys\n"
@@ -1433,6 +1528,25 @@ msgid ""
 "# Similar outcome as `import json`.\n"
 "json = import_from_path(module_name, file_path)"
 msgstr ""
+"import importlib.util\n"
+"import sys\n"
+"\n"
+"\n"
+"def import_from_path(module_name, file_path):\n"
+"    spec = importlib.util.spec_from_file_location(module_name, file_path)\n"
+"    module = importlib.util.module_from_spec(spec)\n"
+"    sys.modules[module_name] = module\n"
+"    spec.loader.exec_module(module)\n"
+"    return module\n"
+"\n"
+"\n"
+"# For illustrative purposes only (use of `json` is arbitrary).\n"
+"import json\n"
+"file_path = json.__file__\n"
+"module_name = json.__name__\n"
+"\n"
+"# Similar outcome as `import json`.\n"
+"json = import_from_path(module_name, file_path)"
 
 msgid "Implementing lazy imports"
 msgstr ""
@@ -1440,6 +1554,8 @@ msgstr ""
 msgid "The example below shows how to implement lazy imports::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import importlib.util\n"
 ">>> import sys\n"
@@ -1458,6 +1574,22 @@ msgid ""
 ">>> lazy_typing.TYPE_CHECKING\n"
 "False"
 msgstr ""
+">>> import importlib.util\n"
+">>> import sys\n"
+">>> def lazy_import(name):\n"
+"...     spec = importlib.util.find_spec(name)\n"
+"...     loader = importlib.util.LazyLoader(spec.loader)\n"
+"...     spec.loader = loader\n"
+"...     module = importlib.util.module_from_spec(spec)\n"
+"...     sys.modules[name] = module\n"
+"...     loader.exec_module(module)\n"
+"...     return module\n"
+"...\n"
+">>> lazy_typing = lazy_import(\"typing\")\n"
+">>> #lazy_typing is a real module object,\n"
+">>> #but it is not loaded in memory yet.\n"
+">>> lazy_typing.TYPE_CHECKING\n"
+"False"
 
 msgid "Setting up an importer"
 msgstr ""
@@ -1475,6 +1607,8 @@ msgid ""
 "for the appropriate classes defined within this package)::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import importlib.machinery\n"
 "import sys\n"
@@ -1497,6 +1631,26 @@ msgid ""
 "# of priority.\n"
 "sys.path_hooks.append(SpamPathEntryFinder.path_hook(loader_details))"
 msgstr ""
+"import importlib.machinery\n"
+"import sys\n"
+"\n"
+"# For illustrative purposes only.\n"
+"SpamMetaPathFinder = importlib.machinery.PathFinder\n"
+"SpamPathEntryFinder = importlib.machinery.FileFinder\n"
+"loader_details = (importlib.machinery.SourceFileLoader,\n"
+"                  importlib.machinery.SOURCE_SUFFIXES)\n"
+"\n"
+"# Setting up a meta path finder.\n"
+"# Make sure to put the finder in the proper location in the list in terms "
+"of\n"
+"# priority.\n"
+"sys.meta_path.append(SpamMetaPathFinder)\n"
+"\n"
+"# Setting up a path entry finder.\n"
+"# Make sure to put the path hook in the proper location in the list in "
+"terms\n"
+"# of priority.\n"
+"sys.path_hooks.append(SpamPathEntryFinder.path_hook(loader_details))"
 
 msgid "Approximating :func:`importlib.import_module`"
 msgstr ""
@@ -1508,6 +1662,8 @@ msgid ""
 "approximate implementation of :func:`importlib.import_module`::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import importlib.util\n"
 "import sys\n"
@@ -1539,9 +1695,38 @@ msgid ""
 "        setattr(parent_module, child_name, module)\n"
 "    return module"
 msgstr ""
+"import importlib.util\n"
+"import sys\n"
+"\n"
+"def import_module(name, package=None):\n"
+"    \"\"\"An approximate implementation of import.\"\"\"\n"
+"    absolute_name = importlib.util.resolve_name(name, package)\n"
+"    try:\n"
+"        return sys.modules[absolute_name]\n"
+"    except KeyError:\n"
+"        pass\n"
+"\n"
+"    path = None\n"
+"    if '.' in absolute_name:\n"
+"        parent_name, _, child_name = absolute_name.rpartition('.')\n"
+"        parent_module = import_module(parent_name)\n"
+"        path = parent_module.__spec__.submodule_search_locations\n"
+"    for finder in sys.meta_path:\n"
+"        spec = finder.find_spec(absolute_name, path)\n"
+"        if spec is not None:\n"
+"            break\n"
+"    else:\n"
+"        msg = f'No module named {absolute_name!r}'\n"
+"        raise ModuleNotFoundError(msg, name=absolute_name)\n"
+"    module = importlib.util.module_from_spec(spec)\n"
+"    sys.modules[absolute_name] = module\n"
+"    spec.loader.exec_module(module)\n"
+"    if path is not None:\n"
+"        setattr(parent_module, child_name, module)\n"
+"    return module"
 
 msgid "universal newlines"
-msgstr ""
+msgstr "ký tự xuống dòng phổ quát"
 
 msgid "importlib.abc.InspectLoader.get_source method"
 msgstr ""

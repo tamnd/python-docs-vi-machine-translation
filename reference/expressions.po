@@ -10,21 +10,23 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-17 14:50+0000\n"
-"PO-Revision-Date: 2025-09-16 00:02+0000\n"
-"Last-Translator: Nguyen Duc Tam, 2026\n"
-"Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
-"vi/)\n"
+"POT-Creation-Date: 2026-05-08 18:34+0000\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: pydocvi 0.1.2\n"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Expressions"
-msgstr ""
+msgstr "Expressions"
 
 msgid ""
 "This chapter explains the meaning of the elements of expressions in Python."
@@ -60,8 +62,10 @@ msgid ""
 "must define their own conversion behavior."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Atoms"
-msgstr ""
+msgstr "Atoms"
 
 msgid ""
 "Atoms are the most basic elements of expressions. The simplest atoms are :"
@@ -89,6 +93,8 @@ msgid ""
 "names cannot be reassigned or used as attributes:"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> False = 123\n"
 "  File \"<input>\", line 1\n"
@@ -96,6 +102,11 @@ msgid ""
 "   ^^^^^\n"
 "SyntaxError: cannot assign to False"
 msgstr ""
+">>> False = 123\n"
+"  File \"<input>\", line 1\n"
+"   False = 123\n"
+"   ^^^^^\n"
+"SyntaxError: cannot assign to False"
 
 msgid "Identifiers (Names)"
 msgstr ""
@@ -171,8 +182,10 @@ msgid ""
 "or ``__`` is left as is."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Literals"
-msgstr ""
+msgstr "Literals"
 
 msgid ""
 "A :dfn:`literal` is a textual representation of a value. Python supports "
@@ -227,22 +240,34 @@ msgid ""
 "the same object::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> x = 7\n"
 ">>> y = 7\n"
 ">>> x is y\n"
 "True"
 msgstr ""
+">>> x = 7\n"
+">>> y = 7\n"
+">>> x is y\n"
+"True"
 
 msgid "However, large integers evaluate to different objects::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> x = 123456789\n"
 ">>> y = 123456789\n"
 ">>> x is y\n"
 "False"
 msgstr ""
+">>> x = 123456789\n"
+">>> y = 123456789\n"
+">>> x is y\n"
+"False"
 
 msgid ""
 "This behavior may change in future versions of CPython. In particular, the "
@@ -255,12 +280,18 @@ msgid ""
 "``is``::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> x = 7\n"
 ">>> x is 7\n"
 "<input>:1: SyntaxWarning: \"is\" with 'int' literal. Did you mean \"==\"?\n"
 "True"
 msgstr ""
+">>> x = 7\n"
+">>> x is 7\n"
+"<input>:1: SyntaxWarning: \"is\" with 'int' literal. Did you mean \"==\"?\n"
+"True"
 
 msgid "See :ref:`faq-identity-with-is` for more information."
 msgstr ""
@@ -286,10 +317,14 @@ msgid ""
 "concatenation::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> \"hello\" 'world'\n"
 "\"helloworld\""
 msgstr ""
+">>> \"hello\" 'world'\n"
+"\"helloworld\""
 
 msgid ""
 "This feature is defined at the syntactical level, so it only works with "
@@ -297,6 +332,8 @@ msgid ""
 "may be used::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> greeting = \"Hello\"\n"
 ">>> space = \" \"\n"
@@ -304,16 +341,25 @@ msgid ""
 ">>> print(greeting + space + name)   # not: print(greeting space name)\n"
 "Hello Blaise"
 msgstr ""
+">>> greeting = \"Hello\"\n"
+">>> space = \" \"\n"
+">>> name = \"Blaise\"\n"
+">>> print(greeting + space + name)   # not: print(greeting space name)\n"
+"Hello Blaise"
 
 msgid ""
 "Literal concatenation can freely mix raw strings, triple-quoted strings, and "
 "formatted string literals. For example::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> \"Hello\" r', ' f\"{name}!\"\n"
 "\"Hello, Blaise!\""
 msgstr ""
+">>> \"Hello\" r', ' f\"{name}!\"\n"
+"\"Hello, Blaise!\""
 
 msgid ""
 "This feature can be used to reduce the number of backslashes needed, to "
@@ -321,11 +367,16 @@ msgid ""
 "to parts of strings. For example::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "re.compile(\"[A-Za-z_]\"       # letter or underscore\n"
 "           \"[A-Za-z0-9_]*\"   # letter, digit or underscore\n"
 "          )"
 msgstr ""
+"re.compile(\"[A-Za-z_]\"       # letter or underscore\n"
+"           \"[A-Za-z0-9_]*\"   # letter, digit or underscore\n"
+"          )"
 
 msgid ""
 "However, bytes literals may only be combined with other byte literals; not "
@@ -333,10 +384,14 @@ msgid ""
 "combined with other template string literals::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> t\"Hello\" t\"{name}!\"\n"
 "Template(strings=('Hello', '!'), interpolations=(...))"
 msgstr ""
+">>> t\"Hello\" t\"{name}!\"\n"
+"Template(strings=('Hello', '!'), interpolations=(...))"
 
 msgid "Formally:"
 msgstr ""
@@ -389,10 +444,12 @@ msgstr ""
 msgid ""
 "The comprehension consists of a single expression followed by at least one :"
 "keyword:`!for` clause and zero or more :keyword:`!for` or :keyword:`!if` "
-"clauses. In this case, the elements of the new container are those that "
+"clauses.  In this case, the elements of the new container are those that "
 "would be produced by considering each of the :keyword:`!for` or :keyword:`!"
 "if` clauses a block, nesting from left to right, and evaluating the "
-"expression to produce an element each time the innermost block is reached."
+"expression to produce an element each time the innermost block is reached.  "
+"If the expression is starred, the result will instead be unpacked to produce "
+"zero or more elements."
 msgstr ""
 
 msgid ""
@@ -444,6 +501,9 @@ msgstr ""
 msgid ""
 "Asynchronous comprehensions are now allowed inside comprehensions in "
 "asynchronous functions. Outer comprehensions implicitly become asynchronous."
+msgstr ""
+
+msgid "Unpacking with the ``*`` operator is now allowed in the expression."
 msgstr ""
 
 msgid "List displays"
@@ -515,11 +575,27 @@ msgstr ""
 msgid "Unpacking into dictionary displays, originally proposed by :pep:`448`."
 msgstr ""
 
+msgid "A dict comprehension may take one of two forms:"
+msgstr ""
+
 msgid ""
-"A dict comprehension, in contrast to list and set comprehensions, needs two "
-"expressions separated with a colon followed by the usual \"for\" and \"if\" "
-"clauses. When the comprehension is run, the resulting key and value elements "
-"are inserted in the new dictionary in the order they are produced."
+"The first form  uses two expressions separated with a colon followed by the "
+"usual \"for\" and \"if\" clauses.  When the comprehension is run, the "
+"resulting key and value elements are inserted in the new dictionary in the "
+"order they are produced."
+msgstr ""
+
+msgid ""
+"The second form uses a single expression prefixed by the ``**`` dictionary "
+"unpacking operator followed by the usual \"for\" and \"if\" clauses.  When "
+"the comprehension is evaluated, the expression is evaluated and then "
+"unpacked, inserting zero or more key/value pairs into the new dictionary."
+msgstr ""
+
+msgid ""
+"Both forms of dictionary comprehension retain the property that if the same "
+"key is specified multiple times, the associated value in the resulting "
+"dictionary will be the last one specified."
 msgstr ""
 
 msgid ""
@@ -535,6 +611,11 @@ msgid ""
 "value was not well-defined.  In CPython, the value was evaluated before the "
 "key.  Starting with 3.8, the key is evaluated before the value, as proposed "
 "by :pep:`572`."
+msgstr ""
+
+msgid ""
+"Unpacking with the ``**`` operator is now allowed in dictionary "
+"comprehensions."
 msgstr ""
 
 msgid "Generator expressions"
@@ -603,6 +684,8 @@ msgid ""
 "asynchronous generator function. For example::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def gen():  # defines a generator function\n"
 "    yield 123\n"
@@ -610,6 +693,11 @@ msgid ""
 "async def agen(): # defines an asynchronous generator function\n"
 "    yield 123"
 msgstr ""
+"def gen():  # defines a generator function\n"
+"    yield 123\n"
+"\n"
+"async def agen(): # defines an asynchronous generator function\n"
+"    yield 123"
 
 msgid ""
 "Due to their side effects on the containing scope, ``yield`` expressions are "
@@ -817,10 +905,12 @@ msgid ""
 "generator functions::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> def echo(value=None):\n"
-"...     print(\"Execution starts when 'next()' is called for the first time."
-"\")\n"
+"...     print(\"Execution starts when 'next()' is called for the first "
+"time.\")\n"
 "...     try:\n"
 "...         while True:\n"
 "...             try:\n"
@@ -843,6 +933,30 @@ msgid ""
 ">>> generator.close()\n"
 "Don't forget to clean up when 'close()' is called."
 msgstr ""
+">>> def echo(value=None):\n"
+"...     print(\"Execution starts when 'next()' is called for the first "
+"time.\")\n"
+"...     try:\n"
+"...         while True:\n"
+"...             try:\n"
+"...                 value = (yield value)\n"
+"...             except Exception as e:\n"
+"...                 value = e\n"
+"...     finally:\n"
+"...         print(\"Don't forget to clean up when 'close()' is called.\")\n"
+"...\n"
+">>> generator = echo(1)\n"
+">>> print(next(generator))\n"
+"Execution starts when 'next()' is called for the first time.\n"
+"1\n"
+">>> print(next(generator))\n"
+"None\n"
+">>> print(generator.send(2))\n"
+"2\n"
+">>> generator.throw(TypeError, \"spam\")\n"
+"TypeError('spam',)\n"
+">>> generator.close()\n"
+"Don't forget to clean up when 'close()' is called."
 
 msgid ""
 "For examples using ``yield from``, see :ref:`pep-380` in \"What's New in "
@@ -991,8 +1105,10 @@ msgid ""
 "will return an awaitable that does nothing."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Primaries"
-msgstr ""
+msgstr "Primaries"
 
 msgid ""
 "Primaries represent the most tightly bound operations of the language. Their "
@@ -1034,11 +1150,16 @@ msgid ""
 "class:`dict`::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> digits_by_name = {'one': 1, 'two': 2}\n"
 ">>> digits_by_name['two']  # Subscripting a dictionary using the key 'two'\n"
 "2"
 msgstr ""
+">>> digits_by_name = {'one': 1, 'two': 2}\n"
+">>> digits_by_name['two']  # Subscripting a dictionary using the key 'two'\n"
+"2"
 
 msgid ""
 "In the subscription syntax, the object being subscribed -- a :ref:`primary "
@@ -1053,6 +1174,8 @@ msgid ""
 "Syntactically, these are all equivalent::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> colors = ['red', 'blue', 'green', 'black']\n"
 ">>> colors[3]  # Subscripting a list using the index 3\n"
@@ -1061,6 +1184,12 @@ msgid ""
 ">>> list[str]  # Parameterizing the list type using the type argument str\n"
 "list[str]"
 msgstr ""
+">>> colors = ['red', 'blue', 'green', 'black']\n"
+">>> colors[3]  # Subscripting a list using the index 3\n"
+"'black'\n"
+"\n"
+">>> list[str]  # Parameterizing the list type using the type argument str\n"
+"list[str]"
 
 msgid ""
 "At runtime, the interpreter will evaluate the primary and the subscript, and "
@@ -1076,6 +1205,8 @@ msgid ""
 "subscript::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> class SubscriptionDemo:\n"
 "...     def __getitem__(self, key):\n"
@@ -1087,6 +1218,15 @@ msgid ""
 ">>> demo['a' * 3]\n"
 "subscripted with: 'aaa'"
 msgstr ""
+">>> class SubscriptionDemo:\n"
+"...     def __getitem__(self, key):\n"
+"...         print(f'subscripted with: {key!r}')\n"
+"...\n"
+">>> demo = SubscriptionDemo()\n"
+">>> demo[1]\n"
+"subscripted with: 1\n"
+">>> demo['a' * 3]\n"
+"subscripted with: 'aaa'"
 
 msgid ""
 "See :meth:`~object.__getitem__` documentation for how built-in types handle "
@@ -1101,6 +1241,8 @@ msgid ""
 "__getitem__`."
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> colors = ['red', 'blue', 'green', 'black']\n"
 ">>> colors[3] = 'white'  # Setting item at index\n"
@@ -1110,14 +1252,23 @@ msgid ""
 ">>> colors\n"
 "['red', 'blue', 'green']"
 msgstr ""
+">>> colors = ['red', 'blue', 'green', 'black']\n"
+">>> colors[3] = 'white'  # Setting item at index\n"
+">>> colors\n"
+"['red', 'blue', 'green', 'white']\n"
+">>> del colors[3]  # Deleting item at index 3\n"
+">>> colors\n"
+"['red', 'blue', 'green']"
 
 msgid ""
 "All advanced forms of *subscript* documented in the following sections are "
 "also usable for assignment and deletion."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Slicings"
-msgstr ""
+msgstr "Slicings"
 
 msgid ""
 "A more advanced form of subscription, :dfn:`slicing`, is commonly used to "
@@ -1127,6 +1278,8 @@ msgid ""
 "least one colon::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> number_names = ['zero', 'one', 'two', 'three', 'four', 'five']\n"
 ">>> number_names[1:3]\n"
@@ -1145,6 +1298,22 @@ msgid ""
 ">>> number_names\n"
 "['zero', 'one', 'two', 'three']"
 msgstr ""
+">>> number_names = ['zero', 'one', 'two', 'three', 'four', 'five']\n"
+">>> number_names[1:3]\n"
+"['one', 'two']\n"
+">>> number_names[1:]\n"
+"['one', 'two', 'three', 'four', 'five']\n"
+">>> number_names[:3]\n"
+"['zero', 'one', 'two']\n"
+">>> number_names[:]\n"
+"['zero', 'one', 'two', 'three', 'four', 'five']\n"
+">>> number_names[::2]\n"
+"['zero', 'two', 'four']\n"
+">>> number_names[:-3]\n"
+"['zero', 'one', 'two']\n"
+">>> del number_names[4:]\n"
+">>> number_names\n"
+"['zero', 'one', 'two', 'three']"
 
 msgid ""
 "When a slice is evaluated, the interpreter constructs a :class:`slice` "
@@ -1155,6 +1324,8 @@ msgid ""
 "`~object.__class_getitem__` :term:`special method`, as above. ::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "# continuing with the SubscriptionDemo instance defined above:\n"
 ">>> demo[2:3]\n"
@@ -1162,6 +1333,11 @@ msgid ""
 ">>> demo[::'spam']\n"
 "subscripted with: slice(None, None, 'spam')"
 msgstr ""
+"# continuing with the SubscriptionDemo instance defined above:\n"
+">>> demo[2:3]\n"
+"subscripted with: slice(2, 3, None)\n"
+">>> demo[::'spam']\n"
+"subscripted with: slice(None, None, 'spam')"
 
 msgid "Comma-separated subscripts"
 msgstr ""
@@ -1171,6 +1347,8 @@ msgid ""
 "or slices::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "# continuing with the SubscriptionDemo instance defined above:\n"
 ">>> demo[1, 2, 3]\n"
@@ -1178,6 +1356,11 @@ msgid ""
 ">>> demo[1:2, 3]\n"
 "subscripted with: (slice(1, 2, None), 3)"
 msgstr ""
+"# continuing with the SubscriptionDemo instance defined above:\n"
+">>> demo[1, 2, 3]\n"
+"subscripted with: (1, 2, 3)\n"
+">>> demo[1:2, 3]\n"
+"subscripted with: (slice(1, 2, None), 3)"
 
 msgid ""
 "This form is commonly used with numerical libraries for slicing multi-"
@@ -1192,10 +1375,14 @@ msgid ""
 "a comma, to specify a one-element tuple::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> demo['spam',]\n"
 "subscripted with: ('spam',)"
 msgstr ""
+">>> demo['spam',]\n"
+"subscripted with: ('spam',)"
 
 msgid "\"Starred\" subscriptions"
 msgstr ""
@@ -1209,21 +1396,30 @@ msgid ""
 "`~object.__getitem__` or :meth:`~object.__class_getitem__`::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "# continuing with the SubscriptionDemo instance defined above:\n"
 ">>> demo[*range(10)]\n"
 "subscripted with: (0, 1, 2, 3, 4, 5, 6, 7, 8, 9)"
 msgstr ""
+"# continuing with the SubscriptionDemo instance defined above:\n"
+">>> demo[*range(10)]\n"
+"subscripted with: (0, 1, 2, 3, 4, 5, 6, 7, 8, 9)"
 
 msgid ""
 "Starred expressions may be combined with comma-separated expressions and "
 "slices::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> demo['a', 'b', *range(3), 'c']\n"
 "subscripted with: ('a', 'b', 0, 1, 2, 'c')"
 msgstr ""
+">>> demo['a', 'b', *range(3), 'c']\n"
+"subscripted with: ('a', 'b', 0, 1, 2, 'c')"
 
 msgid "Formal subscription grammar"
 msgstr ""
@@ -1234,8 +1430,10 @@ msgid ""
 "first (:token:`!single_subscript`) has priority."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Calls"
-msgstr ""
+msgstr "Calls"
 
 msgid ""
 "A call calls a callable object (e.g., a :term:`function`) with a possibly "
@@ -1316,6 +1514,8 @@ msgid ""
 "arguments (and any ``**expression`` arguments -- see below).  So::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> def f(a, b):\n"
 "...     print(a, b)\n"
@@ -1329,6 +1529,17 @@ msgid ""
 ">>> f(1, *(2,))\n"
 "1 2"
 msgstr ""
+">>> def f(a, b):\n"
+"...     print(a, b)\n"
+"...\n"
+">>> f(b=1, *(2,))\n"
+"2 1\n"
+">>> f(a=1, *(2,))\n"
+"Traceback (most recent call last):\n"
+"  File \"<stdin>\", line 1, in <module>\n"
+"TypeError: f() got multiple values for keyword argument 'a'\n"
+">>> f(1, *(2,))\n"
+"1 2"
 
 msgid ""
 "It is unusual for both keyword arguments and the ``*expression`` syntax to "
@@ -1661,8 +1872,10 @@ msgid ""
 "`~object.__or__` or :meth:`~object.__ror__` special methods."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Comparisons"
-msgstr ""
+msgstr "Comparisons"
 
 msgid ""
 "Unlike C, all comparison operations in Python have the same priority, which "
@@ -2035,18 +2248,26 @@ msgstr ""
 msgid "One common use case is when handling matched regular expressions:"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "if matching := pattern.search(data):\n"
 "    do_something(matching)"
 msgstr ""
+"if matching := pattern.search(data):\n"
+"    do_something(matching)"
 
 msgid "Or, when processing a file stream in chunks:"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "while chunk := file.read(9000):\n"
 "    process(chunk)"
 msgstr ""
+"while chunk := file.read(9000):\n"
+"    process(chunk)"
 
 msgid ""
 "Assignment expressions must be surrounded by parentheses when used as "
@@ -2078,8 +2299,10 @@ msgstr ""
 msgid "See :pep:`308` for more details about conditional expressions."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Lambdas"
-msgstr ""
+msgstr "Lambdas"
 
 msgid ""
 "Lambda expressions (sometimes called lambda forms) are used to create "
@@ -2088,10 +2311,14 @@ msgid ""
 "defined with:"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def <lambda>(parameters):\n"
 "    return expression"
 msgstr ""
+"def <lambda>(parameters):\n"
+"    return expression"
 
 msgid ""
 "See section :ref:`function` for the syntax of parameter lists.  Note that "
@@ -2171,122 +2398,168 @@ msgid ""
 "the :ref:`comparisons` section."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Operator"
-msgstr ""
+msgstr "Operator"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Description"
-msgstr ""
+msgstr "Description"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``(expressions...)``,"
-msgstr ""
+msgstr "``(expressions...)``,"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``[expressions...]``, ``{key: value...}``, ``{expressions...}``"
-msgstr ""
+msgstr "``[expressions...]``, ``{key: value...}``, ``{expressions...}``"
 
 msgid ""
 "Binding or parenthesized expression, list display, dictionary display, set "
 "display"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``x[index]``, ``x[index:index]`` ``x(arguments...)``, ``x.attribute``"
-msgstr ""
+msgstr "``x[index]``, ``x[index:index]`` ``x(arguments...)``, ``x.attribute``"
 
 msgid "Subscription (including slicing), call, attribute reference"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":keyword:`await x <await>`"
-msgstr ""
+msgstr ":keyword:`await x <await>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``**``"
-msgstr ""
+msgstr "``**``"
 
 msgid "Exponentiation [#]_"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``+x``, ``-x``, ``~x``"
-msgstr ""
+msgstr "``+x``, ``-x``, ``~x``"
 
 msgid "Positive, negative, bitwise NOT"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``*``, ``@``, ``/``, ``//``, ``%``"
-msgstr ""
+msgstr "``*``, ``@``, ``/``, ``//``, ``%``"
 
 msgid ""
 "Multiplication, matrix multiplication, division, floor division, remainder "
 "[#]_"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``+``, ``-``"
-msgstr ""
+msgstr "``+``, ``-``"
 
 msgid "Addition and subtraction"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``<<``, ``>>``"
-msgstr ""
+msgstr "``<<``, ``>>``"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Shifts"
-msgstr ""
+msgstr "Shifts"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``&``"
-msgstr ""
+msgstr "``&``"
 
 msgid "Bitwise AND"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``^``"
-msgstr ""
+msgstr "``^``"
 
 msgid "Bitwise XOR"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``|``"
-msgstr ""
+msgstr "``|``"
 
 msgid "Bitwise OR"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ""
 ":keyword:`in`, :keyword:`not in`, :keyword:`is`, :keyword:`is not`, ``<``, "
 "``<=``, ``>``, ``>=``, ``!=``, ``==``"
 msgstr ""
+":keyword:`in`, :keyword:`not in`, :keyword:`is`, :keyword:`is not`, ``<``, "
+"``<=``, ``>``, ``>=``, ``!=``, ``==``"
 
 msgid "Comparisons, including membership tests and identity tests"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":keyword:`not x <not>`"
-msgstr ""
+msgstr ":keyword:`not x <not>`"
 
 msgid "Boolean NOT"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":keyword:`and`"
-msgstr ""
+msgstr ":keyword:`and`"
 
 msgid "Boolean AND"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":keyword:`or`"
-msgstr ""
+msgstr ":keyword:`or`"
 
 msgid "Boolean OR"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":keyword:`if <if_expr>` -- :keyword:`!else`"
-msgstr ""
+msgstr ":keyword:`if <if_expr>` -- :keyword:`!else`"
 
 msgid "Conditional expression"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":keyword:`lambda`"
-msgstr ""
+msgstr ":keyword:`lambda`"
 
 msgid "Lambda expression"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``:=``"
-msgstr ""
+msgstr "``:=``"
 
 msgid "Assignment expression"
 msgstr ""
@@ -2354,56 +2627,86 @@ msgid ""
 "applies."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "expression"
-msgstr ""
+msgstr "expression"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "BNF"
-msgstr ""
+msgstr "BNF"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "arithmetic"
-msgstr ""
+msgstr "arithmetic"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "conversion"
-msgstr ""
+msgstr "conversion"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "atom"
-msgstr ""
+msgstr "atom"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "name"
-msgstr ""
+msgstr "name"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "identifier"
-msgstr ""
+msgstr "identifier"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "exception"
-msgstr ""
+msgstr "exception"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "NameError"
-msgstr ""
+msgstr "NameError"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "mangling"
-msgstr ""
+msgstr "mangling"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "private"
-msgstr ""
+msgstr "private"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "names"
-msgstr ""
+msgstr "names"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "literal"
-msgstr ""
+msgstr "literal"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "immutable"
-msgstr ""
+msgstr "immutable"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "data"
-msgstr ""
+msgstr "data"
 
 msgid "type"
-msgstr ""
+msgstr "type"
 
 msgid "object"
-msgstr ""
+msgstr "object"
 
 msgid "parenthesized form"
 msgstr ""
@@ -2414,41 +2717,59 @@ msgstr ""
 msgid "tuple display"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "empty"
-msgstr ""
+msgstr "empty"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "tuple"
-msgstr ""
+msgstr "tuple"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "comma"
-msgstr ""
+msgstr "comma"
 
 msgid ", (comma)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "comprehensions"
-msgstr ""
+msgstr "comprehensions"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "for"
-msgstr ""
+msgstr "for"
 
 msgid "in comprehensions"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "if"
-msgstr ""
+msgstr "if"
 
 msgid "async for"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "await"
-msgstr ""
+msgstr "await"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "list"
-msgstr ""
+msgstr "list"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "display"
-msgstr ""
+msgstr "display"
 
 msgid "[] (square brackets)"
 msgstr ""
@@ -2459,8 +2780,10 @@ msgstr ""
 msgid "expression list"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "set"
-msgstr ""
+msgstr "set"
 
 msgid "{} (curly brackets)"
 msgstr ""
@@ -2468,14 +2791,20 @@ msgstr ""
 msgid "set expression"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "dictionary"
-msgstr ""
+msgstr "dictionary"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "key"
-msgstr ""
+msgstr "key"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "value"
-msgstr ""
+msgstr "value"
 
 msgid "key/value pair"
 msgstr ""
@@ -2483,8 +2812,10 @@ msgstr ""
 msgid "dictionary expression"
 msgstr ""
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=d132b9201f27 run=2026-08-17T16:43Z
+#, fuzzy
 msgid ": (colon)"
-msgstr ""
+msgstr ": (dấu hai chấm)"
 
 msgid "in dictionary expressions"
 msgstr ""
@@ -2492,62 +2823,94 @@ msgstr ""
 msgid "in dictionary displays"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "unpacking"
-msgstr ""
+msgstr "unpacking"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "**"
-msgstr ""
+msgstr "**"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "hashable"
-msgstr ""
+msgstr "hashable"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "generator"
-msgstr ""
+msgstr "generator"
 
 msgid "generator expression"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "keyword"
-msgstr ""
+msgstr "keyword"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "yield"
-msgstr ""
+msgstr "yield"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "from"
-msgstr ""
+msgstr "from"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "function"
-msgstr ""
+msgstr "function"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "coroutine"
-msgstr ""
+msgstr "coroutine"
 
 msgid "yield from expression"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "StopIteration"
-msgstr ""
+msgstr "StopIteration"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "GeneratorExit"
-msgstr ""
+msgstr "GeneratorExit"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "examples"
-msgstr ""
+msgstr "examples"
 
 msgid "asynchronous-generator"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "StopAsyncIteration"
-msgstr ""
+msgstr "StopAsyncIteration"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "primary"
-msgstr ""
+msgstr "primary"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "attribute"
-msgstr ""
+msgstr "attribute"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "reference"
-msgstr ""
+msgstr "reference"
 
 msgid ". (dot)"
 msgstr ""
@@ -2555,41 +2918,61 @@ msgstr ""
 msgid "attribute reference"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "AttributeError"
-msgstr ""
+msgstr "AttributeError"
 
 msgid "module"
-msgstr ""
+msgstr "module"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "subscription"
-msgstr ""
+msgstr "subscription"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "sequence"
-msgstr ""
+msgstr "sequence"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "mapping"
-msgstr ""
+msgstr "mapping"
 
 msgid "string"
-msgstr ""
+msgstr "chuỗi"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "item"
-msgstr ""
+msgstr "item"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "slicing"
-msgstr ""
+msgstr "slicing"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "slice"
-msgstr ""
+msgstr "slice"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "callable"
-msgstr ""
+msgstr "callable"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "call"
-msgstr ""
+msgstr "call"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "argument"
-msgstr ""
+msgstr "argument"
 
 msgid "call semantics"
 msgstr ""
@@ -2600,14 +2983,20 @@ msgstr ""
 msgid "= (equals)"
 msgstr ""
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=d132b9201f27 run=2026-08-17T16:43Z
+#, fuzzy
 msgid "in function calls"
-msgstr ""
+msgstr "trong các lời gọi hàm"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "parameter"
-msgstr ""
+msgstr "parameter"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=d132b9201f27 run=2026-08-17T16:43Z
+#, fuzzy
 msgid "* (asterisk)"
-msgstr ""
+msgstr "* (dấu sao)"
 
 msgid "user-defined"
 msgstr ""
@@ -2616,16 +3005,20 @@ msgid "user-defined function"
 msgstr ""
 
 msgid "built-in function"
-msgstr ""
+msgstr "hàm tích hợp sẵn"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "method"
-msgstr ""
+msgstr "method"
 
 msgid "built-in method"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "class"
-msgstr ""
+msgstr "class"
 
 msgid "class object"
 msgstr ""
@@ -2633,32 +3026,48 @@ msgstr ""
 msgid "class instance"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "instance"
-msgstr ""
+msgstr "instance"
 
 msgid "__call__() (object method)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "power"
-msgstr ""
+msgstr "power"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "operation"
-msgstr ""
+msgstr "operation"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "operator"
-msgstr ""
+msgstr "operator"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "unary"
-msgstr ""
+msgstr "unary"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "bitwise"
-msgstr ""
+msgstr "bitwise"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "negation"
-msgstr ""
+msgstr "negation"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "minus"
-msgstr ""
+msgstr "minus"
 
 msgid "- (minus)"
 msgstr ""
@@ -2666,26 +3075,36 @@ msgstr ""
 msgid "unary operator"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "plus"
-msgstr ""
+msgstr "plus"
 
 msgid "+ (plus)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "inversion"
-msgstr ""
+msgstr "inversion"
 
 msgid "~ (tilde)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "TypeError"
-msgstr ""
+msgstr "TypeError"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "binary"
-msgstr ""
+msgstr "binary"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "multiplication"
-msgstr ""
+msgstr "multiplication"
 
 msgid "matrix multiplication"
 msgstr ""
@@ -2693,77 +3112,113 @@ msgstr ""
 msgid "@ (at)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "ZeroDivisionError"
-msgstr ""
+msgstr "ZeroDivisionError"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "division"
-msgstr ""
+msgstr "division"
 
 msgid "/ (slash)"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "//"
-msgstr ""
+msgstr "//"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "modulo"
-msgstr ""
+msgstr "modulo"
 
 msgid "% (percent)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "addition"
-msgstr ""
+msgstr "addition"
 
 msgid "binary operator"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "subtraction"
-msgstr ""
+msgstr "subtraction"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "shifting"
-msgstr ""
+msgstr "shifting"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "<<"
-msgstr ""
+msgstr "<<"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ">>"
-msgstr ""
+msgstr ">>"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "ValueError"
-msgstr ""
+msgstr "ValueError"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "and"
-msgstr ""
+msgstr "and"
 
 msgid "& (ampersand)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "xor"
-msgstr ""
+msgstr "xor"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "exclusive"
-msgstr ""
+msgstr "exclusive"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "or"
-msgstr ""
+msgstr "or"
 
 msgid "^ (caret)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "inclusive"
-msgstr ""
+msgstr "inclusive"
 
 msgid "| (vertical bar)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "comparison"
-msgstr ""
+msgstr "comparison"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "C"
-msgstr ""
+msgstr "C"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "language"
-msgstr ""
+msgstr "language"
 
 msgid "< (less)"
 msgstr ""
@@ -2771,53 +3226,79 @@ msgstr ""
 msgid "> (greater)"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "<="
-msgstr ""
+msgstr "<="
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ">="
-msgstr ""
+msgstr ">="
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "=="
-msgstr ""
+msgstr "=="
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "!="
-msgstr ""
+msgstr "!="
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "chaining"
-msgstr ""
+msgstr "chaining"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "comparisons"
-msgstr ""
+msgstr "comparisons"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "in"
-msgstr ""
+msgstr "in"
 
 msgid "not in"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "membership"
-msgstr ""
+msgstr "membership"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "test"
-msgstr ""
+msgstr "test"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "is"
-msgstr ""
+msgstr "is"
 
 msgid "is not"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "identity"
-msgstr ""
+msgstr "identity"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Conditional"
-msgstr ""
+msgstr "Conditional"
 
 msgid "Boolean"
-msgstr ""
+msgstr "Boolean"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "not"
-msgstr ""
+msgstr "not"
 
 msgid ":= (colon equals)"
 msgstr ""
@@ -2831,47 +3312,71 @@ msgstr ""
 msgid "named expression"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "assignment"
-msgstr ""
+msgstr "assignment"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "conditional"
-msgstr ""
+msgstr "conditional"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "ternary"
-msgstr ""
+msgstr "ternary"
 
 msgid "conditional expression"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "else"
-msgstr ""
+msgstr "else"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "lambda"
-msgstr ""
+msgstr "lambda"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "form"
-msgstr ""
+msgstr "form"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "anonymous"
-msgstr ""
+msgstr "anonymous"
 
 msgid "lambda expression"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "iterable"
-msgstr ""
+msgstr "iterable"
 
 msgid "in expression lists"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "trailing"
-msgstr ""
+msgstr "trailing"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "evaluation"
-msgstr ""
+msgstr "evaluation"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "order"
-msgstr ""
+msgstr "order"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "precedence"
-msgstr ""
+msgstr "precedence"

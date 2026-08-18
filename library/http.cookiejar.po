@@ -5,22 +5,23 @@
 #
 # Translators:
 # python-doc bot, 2025
+# Nguyen Duc Tam, 2026
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-17 14:50+0000\n"
-"PO-Revision-Date: 2025-09-16 00:01+0000\n"
-"Last-Translator: python-doc bot, 2025\n"
-"Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
-"vi/)\n"
+"POT-Creation-Date: 2026-05-08 18:34+0000\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: pydocvi 0.1.2\n"
 
 msgid ":mod:`!http.cookiejar` --- Cookie handling for HTTP clients"
 msgstr ""
@@ -151,8 +152,10 @@ msgid ""
 "http.cookiejar` and :mod:`http.cookies` modules do not depend on each other."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "https://curl.se/rfc/cookie_spec.html"
-msgstr ""
+msgstr "https://curl.se/rfc/cookie_spec.html"
 
 msgid ""
 "The specification of the original Netscape cookie protocol.  Though this is "
@@ -175,8 +178,10 @@ msgid ""
 "in place of :mailheader:`Set-Cookie`.  Not widely used."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "https://kristol.org/cookie/errata.html"
-msgstr ""
+msgstr "https://kristol.org/cookie/errata.html"
 
 msgid "Unfinished errata to :rfc:`2965`."
 msgstr ""
@@ -340,6 +345,7 @@ msgstr ""
 
 msgid ":exc:`IOError` used to be raised, it is now an alias of :exc:`OSError`."
 msgstr ""
+":exc:`IOError` trước đây được kích hoạt, hiện là bí danh của :exc:`OSError`."
 
 msgid "Clear all cookies and reload cookies from a saved file."
 msgstr ""
@@ -510,6 +516,8 @@ msgid ""
 "additional checks::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import http.cookiejar\n"
 "class MyCookiePolicy(http.cookiejar.DefaultCookiePolicy):\n"
@@ -521,6 +529,15 @@ msgid ""
 "            return False\n"
 "        return True"
 msgstr ""
+"import http.cookiejar\n"
+"class MyCookiePolicy(http.cookiejar.DefaultCookiePolicy):\n"
+"    def set_ok(self, cookie, request):\n"
+"        if not http.cookiejar.DefaultCookiePolicy.set_ok(self, cookie, "
+"request):\n"
+"            return False\n"
+"        if i_dont_want_to_store_this_cookie(cookie):\n"
+"            return False\n"
+"        return True"
 
 msgid ""
 "In addition to the features required to implement the :class:`CookiePolicy` "
@@ -785,13 +802,20 @@ msgid ""
 "The first example shows the most common usage of :mod:`!http.cookiejar`::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import http.cookiejar, urllib.request\n"
 "cj = http.cookiejar.CookieJar()\n"
-"opener = urllib.request.build_opener(urllib.request."
-"HTTPCookieProcessor(cj))\n"
+"opener = "
+"urllib.request.build_opener(urllib.request.HTTPCookieProcessor(cj))\n"
 "r = opener.open(\"http://example.com/\")"
 msgstr ""
+"import http.cookiejar, urllib.request\n"
+"cj = http.cookiejar.CookieJar()\n"
+"opener = "
+"urllib.request.build_opener(urllib.request.HTTPCookieProcessor(cj))\n"
+"r = opener.open(\"http://example.com/\")"
 
 msgid ""
 "This example illustrates how to open a URL using your Netscape, Mozilla, or "
@@ -799,15 +823,24 @@ msgid ""
 "file)::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import os, http.cookiejar, urllib.request\n"
 "cj = http.cookiejar.MozillaCookieJar()\n"
-"cj.load(os.path.join(os.path.expanduser(\"~\"), \".netscape\", \"cookies."
-"txt\"))\n"
-"opener = urllib.request.build_opener(urllib.request."
-"HTTPCookieProcessor(cj))\n"
+"cj.load(os.path.join(os.path.expanduser(\"~\"), \".netscape\", "
+"\"cookies.txt\"))\n"
+"opener = "
+"urllib.request.build_opener(urllib.request.HTTPCookieProcessor(cj))\n"
 "r = opener.open(\"http://example.com/\")"
 msgstr ""
+"import os, http.cookiejar, urllib.request\n"
+"cj = http.cookiejar.MozillaCookieJar()\n"
+"cj.load(os.path.join(os.path.expanduser(\"~\"), \".netscape\", "
+"\"cookies.txt\"))\n"
+"opener = "
+"urllib.request.build_opener(urllib.request.HTTPCookieProcessor(cj))\n"
+"r = opener.open(\"http://example.com/\")"
 
 msgid ""
 "The next example illustrates the use of :class:`DefaultCookiePolicy`. Turn "
@@ -816,6 +849,8 @@ msgid ""
 "having them returned::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import urllib.request\n"
 "from http.cookiejar import CookieJar, DefaultCookiePolicy\n"
@@ -823,7 +858,16 @@ msgid ""
 "    rfc2965=True, strict_ns_domain=Policy.DomainStrict,\n"
 "    blocked_domains=[\"ads.net\", \".ads.net\"])\n"
 "cj = CookieJar(policy)\n"
-"opener = urllib.request.build_opener(urllib.request."
-"HTTPCookieProcessor(cj))\n"
+"opener = "
+"urllib.request.build_opener(urllib.request.HTTPCookieProcessor(cj))\n"
 "r = opener.open(\"http://example.com/\")"
 msgstr ""
+"import urllib.request\n"
+"from http.cookiejar import CookieJar, DefaultCookiePolicy\n"
+"policy = DefaultCookiePolicy(\n"
+"    rfc2965=True, strict_ns_domain=Policy.DomainStrict,\n"
+"    blocked_domains=[\"ads.net\", \".ads.net\"])\n"
+"cj = CookieJar(policy)\n"
+"opener = "
+"urllib.request.build_opener(urllib.request.HTTPCookieProcessor(cj))\n"
+"r = opener.open(\"http://example.com/\")"

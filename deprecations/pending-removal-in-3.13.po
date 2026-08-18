@@ -1,153 +1,173 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2001 Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-18 10:29+0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: vi\n"
-"Language-Team: vi <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"POT-Creation-Date: 2026-04-17 14:50+0000\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.18.0\n"
+"Language: vi\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"X-Generator: pydocvi 0.1.2\n"
 
-#: ../../deprecations/pending-removal-in-3.13.rst:2
 msgid "Pending removal in Python 3.13"
 msgstr ""
 
-#: ../../deprecations/pending-removal-in-3.13.rst:4
 msgid "Modules (see :pep:`594`):"
 msgstr ""
 
-#: ../../deprecations/pending-removal-in-3.13.rst:6
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`!aifc`"
-msgstr ""
+msgstr ":mod:`!aifc`"
 
-#: ../../deprecations/pending-removal-in-3.13.rst:7
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`!audioop`"
-msgstr ""
+msgstr ":mod:`!audioop`"
 
-#: ../../deprecations/pending-removal-in-3.13.rst:8
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`!cgi`"
-msgstr ""
+msgstr ":mod:`!cgi`"
 
-#: ../../deprecations/pending-removal-in-3.13.rst:9
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`!cgitb`"
-msgstr ""
+msgstr ":mod:`!cgitb`"
 
-#: ../../deprecations/pending-removal-in-3.13.rst:10
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`!chunk`"
-msgstr ""
+msgstr ":mod:`!chunk`"
 
-#: ../../deprecations/pending-removal-in-3.13.rst:11
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`!crypt`"
-msgstr ""
+msgstr ":mod:`!crypt`"
 
-#: ../../deprecations/pending-removal-in-3.13.rst:12
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`!imghdr`"
-msgstr ""
+msgstr ":mod:`!imghdr`"
 
-#: ../../deprecations/pending-removal-in-3.13.rst:13
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`!mailcap`"
-msgstr ""
+msgstr ":mod:`!mailcap`"
 
-#: ../../deprecations/pending-removal-in-3.13.rst:14
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`!msilib`"
-msgstr ""
+msgstr ":mod:`!msilib`"
 
-#: ../../deprecations/pending-removal-in-3.13.rst:15
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`!nis`"
-msgstr ""
+msgstr ":mod:`!nis`"
 
-#: ../../deprecations/pending-removal-in-3.13.rst:16
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`!nntplib`"
-msgstr ""
+msgstr ":mod:`!nntplib`"
 
-#: ../../deprecations/pending-removal-in-3.13.rst:17
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`!ossaudiodev`"
-msgstr ""
+msgstr ":mod:`!ossaudiodev`"
 
-#: ../../deprecations/pending-removal-in-3.13.rst:18
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`!pipes`"
-msgstr ""
+msgstr ":mod:`!pipes`"
 
-#: ../../deprecations/pending-removal-in-3.13.rst:19
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`!sndhdr`"
-msgstr ""
+msgstr ":mod:`!sndhdr`"
 
-#: ../../deprecations/pending-removal-in-3.13.rst:20
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`!spwd`"
-msgstr ""
+msgstr ":mod:`!spwd`"
 
-#: ../../deprecations/pending-removal-in-3.13.rst:21
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`!sunau`"
-msgstr ""
+msgstr ":mod:`!sunau`"
 
-#: ../../deprecations/pending-removal-in-3.13.rst:22
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`!telnetlib`"
-msgstr ""
+msgstr ":mod:`!telnetlib`"
 
-#: ../../deprecations/pending-removal-in-3.13.rst:23
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`!uu`"
-msgstr ""
+msgstr ":mod:`!uu`"
 
-#: ../../deprecations/pending-removal-in-3.13.rst:24
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`!xdrlib`"
-msgstr ""
+msgstr ":mod:`!xdrlib`"
 
-#: ../../deprecations/pending-removal-in-3.13.rst:26
 msgid "Other modules:"
 msgstr ""
 
-#: ../../deprecations/pending-removal-in-3.13.rst:28
 msgid ":mod:`!lib2to3`, and the :program:`2to3` program (:gh:`84540`)"
 msgstr ""
 
-#: ../../deprecations/pending-removal-in-3.13.rst:30
 msgid "APIs:"
 msgstr ""
 
-#: ../../deprecations/pending-removal-in-3.13.rst:32
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`!configparser.LegacyInterpolation` (:gh:`90765`)"
-msgstr ""
+msgstr ":class:`!configparser.LegacyInterpolation` (:gh:`90765`)"
 
-#: ../../deprecations/pending-removal-in-3.13.rst:33
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``locale.resetlocale()`` (:gh:`90817`)"
-msgstr ""
+msgstr "``locale.resetlocale()`` (:gh:`90817`)"
 
-#: ../../deprecations/pending-removal-in-3.13.rst:34
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`!turtle.RawTurtle.settiltangle` (:gh:`50096`)"
-msgstr ""
+msgstr ":meth:`!turtle.RawTurtle.settiltangle` (:gh:`50096`)"
 
-#: ../../deprecations/pending-removal-in-3.13.rst:35
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`!unittest.findTestCases` (:gh:`50096`)"
-msgstr ""
+msgstr ":func:`!unittest.findTestCases` (:gh:`50096`)"
 
-#: ../../deprecations/pending-removal-in-3.13.rst:36
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`!unittest.getTestCaseNames` (:gh:`50096`)"
-msgstr ""
+msgstr ":func:`!unittest.getTestCaseNames` (:gh:`50096`)"
 
-#: ../../deprecations/pending-removal-in-3.13.rst:37
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`!unittest.makeSuite` (:gh:`50096`)"
-msgstr ""
+msgstr ":func:`!unittest.makeSuite` (:gh:`50096`)"
 
-#: ../../deprecations/pending-removal-in-3.13.rst:38
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`!unittest.TestProgram.usageExit` (:gh:`67048`)"
-msgstr ""
+msgstr ":meth:`!unittest.TestProgram.usageExit` (:gh:`67048`)"
 
-#: ../../deprecations/pending-removal-in-3.13.rst:39
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`!webbrowser.MacOSX` (:gh:`86421`)"
-msgstr ""
+msgstr ":class:`!webbrowser.MacOSX` (:gh:`86421`)"
 
-#: ../../deprecations/pending-removal-in-3.13.rst:40
 msgid ":class:`classmethod` descriptor chaining (:gh:`89519`)"
 msgstr ""
-

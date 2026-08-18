@@ -9,18 +9,18 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-17 14:50+0000\n"
-"PO-Revision-Date: 2025-09-16 00:02+0000\n"
-"Last-Translator: Nguyen Duc Tam, 2026\n"
-"Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
-"vi/)\n"
+"POT-Creation-Date: 2026-05-08 18:34+0000\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: pydocvi 0.1.2\n"
 
 msgid "Compound statements"
 msgstr ""
@@ -152,6 +152,8 @@ msgid ""
 "in the suite of the for-loop::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "for i in range(10):\n"
 "    print(i)\n"
@@ -159,6 +161,11 @@ msgid ""
 "                      # because i will be overwritten with the next\n"
 "                      # index in the range"
 msgstr ""
+"for i in range(10):\n"
+"    print(i)\n"
+"    i = 5             # this will not affect the for-loop\n"
+"                      # because i will be overwritten with the next\n"
+"                      # index in the range"
 
 msgid ""
 "Names in the target list are not deleted when the loop is finished, but if "
@@ -244,14 +251,20 @@ msgid ""
 "the end of the :keyword:`!except` clause.  This is as if ::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "except E as N:\n"
 "    foo"
 msgstr ""
+"except E as N:\n"
+"    foo"
 
 msgid "was translated to ::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "except E as N:\n"
 "    try:\n"
@@ -259,6 +272,11 @@ msgid ""
 "    finally:\n"
 "        del N"
 msgstr ""
+"except E as N:\n"
+"    try:\n"
+"        foo\n"
+"    finally:\n"
+"        del N"
 
 msgid ""
 "This means the exception must be assigned to a different name to be able to "
@@ -276,6 +294,8 @@ msgid ""
 "is reset to its previous value::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> print(sys.exception())\n"
 "None\n"
@@ -295,6 +315,23 @@ msgid ""
 ">>> print(sys.exception())\n"
 "None"
 msgstr ""
+">>> print(sys.exception())\n"
+"None\n"
+">>> try:\n"
+"...     raise TypeError\n"
+"... except:\n"
+"...     print(repr(sys.exception()))\n"
+"...     try:\n"
+"...          raise ValueError\n"
+"...     except:\n"
+"...         print(repr(sys.exception()))\n"
+"...     print(repr(sys.exception()))\n"
+"...\n"
+"TypeError()\n"
+"ValueError()\n"
+"TypeError()\n"
+">>> print(sys.exception())\n"
+"None"
 
 msgid ":keyword:`!except*` clause"
 msgstr ""
@@ -330,6 +367,8 @@ msgid ""
 "on.::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> try:\n"
 "...     raise ExceptionGroup(\"eg\",\n"
@@ -350,6 +389,24 @@ msgid ""
 "    | ValueError: 1\n"
 "    +------------------------------------"
 msgstr ""
+">>> try:\n"
+"...     raise ExceptionGroup(\"eg\",\n"
+"...         [ValueError(1), TypeError(2), OSError(3), OSError(4)])\n"
+"... except* TypeError as e:\n"
+"...     print(f'caught {type(e)} with nested {e.exceptions}')\n"
+"... except* OSError as e:\n"
+"...     print(f'caught {type(e)} with nested {e.exceptions}')\n"
+"...\n"
+"caught <class 'ExceptionGroup'> with nested (TypeError(2),)\n"
+"caught <class 'ExceptionGroup'> with nested (OSError(3), OSError(4))\n"
+"  + Exception Group Traceback (most recent call last):\n"
+"  |   File \"<doctest default[0]>\", line 2, in <module>\n"
+"  |     raise ExceptionGroup(\"eg\",\n"
+"  |         [ValueError(1), TypeError(2), OSError(3), OSError(4)])\n"
+"  | ExceptionGroup: eg (1 sub-exception)\n"
+"  +-+---------------- 1 ----------------\n"
+"    | ValueError: 1\n"
+"    +------------------------------------"
 
 msgid ""
 "If the exception raised from the :keyword:`try` block is not an exception "
@@ -359,6 +416,8 @@ msgid ""
 "`BaseExceptionGroup`::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> try:\n"
 "...     raise BlockingIOError\n"
@@ -367,6 +426,12 @@ msgid ""
 "...\n"
 "ExceptionGroup('', (BlockingIOError(),))"
 msgstr ""
+">>> try:\n"
+"...     raise BlockingIOError\n"
+"... except* BlockingIOError as e:\n"
+"...     print(repr(e))\n"
+"...\n"
+"ExceptionGroup('', (BlockingIOError(),))"
 
 msgid ""
 ":keyword:`break`, :keyword:`continue` and :keyword:`return` cannot appear in "
@@ -400,6 +465,8 @@ msgid ""
 "saved exception is discarded. For example, this function returns 42."
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def f():\n"
 "    try:\n"
@@ -407,6 +474,11 @@ msgid ""
 "    finally:\n"
 "        return 42"
 msgstr ""
+"def f():\n"
+"    try:\n"
+"        1/0\n"
+"    finally:\n"
+"        return 42"
 
 msgid ""
 "The exception information is not available to the program during execution "
@@ -428,6 +500,8 @@ msgid ""
 "'finally'."
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def foo():\n"
 "    try:\n"
@@ -435,6 +509,11 @@ msgid ""
 "    finally:\n"
 "        return 'finally'"
 msgstr ""
+"def foo():\n"
+"    try:\n"
+"        return 'try'\n"
+"    finally:\n"
+"        return 'finally'"
 
 msgid ""
 "Prior to Python 3.8, a :keyword:`continue` statement was illegal in the :"
@@ -516,14 +595,20 @@ msgstr ""
 msgid "The following code::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "with EXPRESSION as TARGET:\n"
 "    SUITE"
 msgstr ""
+"with EXPRESSION as TARGET:\n"
+"    SUITE"
 
 msgid "is semantically equivalent to::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "manager = (EXPRESSION)\n"
 "enter = manager.__enter__\n"
@@ -542,6 +627,22 @@ msgid ""
 "    if not hit_except:\n"
 "        exit(None, None, None)"
 msgstr ""
+"manager = (EXPRESSION)\n"
+"enter = manager.__enter__\n"
+"exit = manager.__exit__\n"
+"value = enter()\n"
+"hit_except = False\n"
+"\n"
+"try:\n"
+"    TARGET = value\n"
+"    SUITE\n"
+"except:\n"
+"    hit_except = True\n"
+"    if not exit(*sys.exc_info()):\n"
+"        raise\n"
+"finally:\n"
+"    if not hit_except:\n"
+"        exit(None, None, None)"
 
 msgid ""
 "except that implicit :ref:`special method lookup <special-lookup>` is used "
@@ -553,22 +654,33 @@ msgid ""
 "keyword:`with` statements were nested::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "with A() as a, B() as b:\n"
 "    SUITE"
 msgstr ""
+"with A() as a, B() as b:\n"
+"    SUITE"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "with A() as a:\n"
 "    with B() as b:\n"
 "        SUITE"
 msgstr ""
+"with A() as a:\n"
+"    with B() as b:\n"
+"        SUITE"
 
 msgid ""
 "You can also write multi-item context managers in multiple lines if the "
 "items are surrounded by parentheses. For example::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "with (\n"
 "    A() as a,\n"
@@ -576,6 +688,11 @@ msgid ""
 "):\n"
 "    SUITE"
 msgstr ""
+"with (\n"
+"    A() as a,\n"
+"    B() as b,\n"
+"):\n"
+"    SUITE"
 
 msgid "Support for multiple context expressions."
 msgstr ""
@@ -628,8 +745,10 @@ msgstr ""
 msgid ":pep:`636` -- Structural Pattern Matching: Tutorial"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Overview"
-msgstr ""
+msgstr "Overview"
 
 msgid "Here's an overview of the logical flow of a match statement:"
 msgstr ""
@@ -682,6 +801,8 @@ msgstr ""
 msgid "A sample match statement::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> flag = False\n"
 ">>> match (100, 200):\n"
@@ -696,14 +817,28 @@ msgid ""
 "...\n"
 "Case 3, y: 200"
 msgstr ""
+">>> flag = False\n"
+">>> match (100, 200):\n"
+"...    case (100, 300):  # Mismatch: 200 != 300\n"
+"...        print('Case 1')\n"
+"...    case (100, 200) if flag:  # Successful match, but guard fails\n"
+"...        print('Case 2')\n"
+"...    case (100, y):  # Matches and binds y to 200\n"
+"...        print(f'Case 3, y: {y}')\n"
+"...    case _:  # Pattern not attempted\n"
+"...        print('Case 4, I match anything!')\n"
+"...\n"
+"Case 3, y: 200"
 
 msgid ""
 "In this case, ``if flag`` is a guard.  Read more about that in the next "
 "section."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Guards"
-msgstr ""
+msgstr "Guards"
 
 msgid ""
 "A ``guard`` (which is part of the ``case``) must succeed for code inside the "
@@ -766,17 +901,23 @@ msgstr ""
 msgid ":ref:`or-patterns` containing at least one irrefutable pattern"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":ref:`capture-patterns`"
-msgstr ""
+msgstr ":ref:`capture-patterns`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":ref:`wildcard-patterns`"
-msgstr ""
+msgstr ":ref:`wildcard-patterns`"
 
 msgid "parenthesized irrefutable patterns"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Patterns"
-msgstr ""
+msgstr "Patterns"
 
 msgid "This section uses grammar notations beyond standard EBNF:"
 msgstr ""
@@ -1049,8 +1190,10 @@ msgstr ""
 msgid "check ``<subject>`` is a sequence"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``len(subject) == <N>``"
-msgstr ""
+msgstr "``len(subject) == <N>``"
 
 msgid ""
 "``P1`` matches ``<subject>[0]`` (note that this match can also bind names)"
@@ -1117,8 +1260,10 @@ msgstr ""
 msgid "check ``<subject>`` is a mapping"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``KEY1 in <subject>``"
-msgstr ""
+msgstr "``KEY1 in <subject>``"
 
 msgid "``P1`` matches ``<subject>[KEY1]``"
 msgstr ""
@@ -1220,8 +1365,10 @@ msgstr ""
 msgid "If there are duplicate keywords, :exc:`TypeError` is raised."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":ref:`class-pattern-matching`"
-msgstr ""
+msgstr ":ref:`class-pattern-matching`"
 
 msgid ""
 "Once all positional patterns have been converted to keyword patterns, the "
@@ -1233,38 +1380,60 @@ msgid ""
 "different:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`bool`"
-msgstr ""
+msgstr ":class:`bool`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`bytearray`"
-msgstr ""
+msgstr ":class:`bytearray`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`bytes`"
-msgstr ""
+msgstr ":class:`bytes`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`dict`"
-msgstr ""
+msgstr ":class:`dict`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`float`"
-msgstr ""
+msgstr ":class:`float`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`frozenset`"
-msgstr ""
+msgstr ":class:`frozenset`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`int`"
-msgstr ""
+msgstr ":class:`int`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`list`"
-msgstr ""
+msgstr ":class:`list`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`set`"
-msgstr ""
+msgstr ":class:`set`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`str`"
-msgstr ""
+msgstr ":class:`str`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`tuple`"
-msgstr ""
+msgstr ":class:`tuple`"
 
 msgid ""
 "These classes accept a single positional argument, and the pattern there is "
@@ -1276,8 +1445,10 @@ msgid ""
 "In simple terms ``CLS(P1, attr=P2)`` matches only if the following happens:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``isinstance(<subject>, CLS)``"
-msgstr ""
+msgstr "``isinstance(<subject>, CLS)``"
 
 msgid "convert ``P1`` to a keyword pattern using ``CLS.__match_args__``"
 msgstr ""
@@ -1285,8 +1456,10 @@ msgstr ""
 msgid "For each keyword argument ``attr=P2``:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``hasattr(<subject>, \"attr\")``"
-msgstr ""
+msgstr "``hasattr(<subject>, \"attr\")``"
 
 msgid "``P2`` matches ``<subject>.attr``"
 msgstr ""
@@ -1384,6 +1557,8 @@ msgid ""
 "the default, and explicitly test for it in the body of the function, e.g.::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def whats_on_the_telly(penguin=None):\n"
 "    if penguin is None:\n"
@@ -1391,6 +1566,11 @@ msgid ""
 "    penguin.append(\"property of the zoo\")\n"
 "    return penguin"
 msgstr ""
+"def whats_on_the_telly(penguin=None):\n"
+"    if penguin is None:\n"
+"        penguin = []\n"
+"    penguin.append(\"property of the zoo\")\n"
+"    return penguin"
 
 msgid ""
 "Function call semantics are described in more detail in section :ref:"
@@ -1498,17 +1678,30 @@ msgid ""
 "default, from the base class :class:`object`; hence, ::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "class Foo:\n"
 "    pass"
 msgstr ""
+"class Foo:\n"
+"    pass"
 
 msgid "is equivalent to ::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "class Foo(object):\n"
 "    pass"
+msgstr ""
+"class Foo(object):\n"
+"    pass"
+
+msgid ""
+"There may be one or more base classes; see :ref:`multiple-inheritance` below "
+"for more information."
 msgstr ""
 
 msgid ""
@@ -1595,8 +1788,203 @@ msgid ""
 "were introduced in :pep:`318`."
 msgstr ""
 
-msgid "Coroutines"
+msgid "Multiple inheritance"
 msgstr ""
+
+msgid ""
+"Python classes may have multiple base classes, a technique known as "
+"*multiple inheritance*.  The base classes are specified in the class "
+"definition by listing them in parentheses after the class name, separated by "
+"commas. For example, the following class definition:"
+msgstr ""
+
+# pydocvi: passthrough=doctest
+#, fuzzy
+msgid ""
+">>> class A: pass\n"
+">>> class B: pass\n"
+">>> class C(A, B): pass"
+msgstr ""
+">>> class A: pass\n"
+">>> class B: pass\n"
+">>> class C(A, B): pass"
+
+msgid "defines a class ``C`` that inherits from classes ``A`` and ``B``."
+msgstr ""
+
+msgid ""
+"The :term:`method resolution order` (MRO) is the order in which base classes "
+"are searched when looking up an attribute on a class. See :ref:"
+"`python_2.3_mro` for a description of how Python determines the MRO for a "
+"class."
+msgstr ""
+
+msgid ""
+"Multiple inheritance is not always allowed. Attempting to define a class "
+"with multiple inheritance will raise an error if one of the bases does not "
+"allow subclassing, if a consistent MRO cannot be created, if no valid "
+"metaclass can be determined, or if there is an instance layout conflict. "
+"We'll discuss each of these in turn."
+msgstr ""
+
+msgid ""
+"First, all base classes must allow subclassing. While most classes allow "
+"subclassing, some built-in classes do not, such as :class:`bool`:"
+msgstr ""
+
+# pydocvi: passthrough=doctest
+#, fuzzy
+msgid ""
+">>> class SubBool(bool):  # TypeError\n"
+"...    pass\n"
+"Traceback (most recent call last):\n"
+"   ...\n"
+"TypeError: type 'bool' is not an acceptable base type"
+msgstr ""
+">>> class SubBool(bool):  # TypeError\n"
+"...    pass\n"
+"Traceback (most recent call last):\n"
+"   ...\n"
+"TypeError: type 'bool' is not an acceptable base type"
+
+msgid ""
+"In the resolved MRO of a class, the class's bases appear in the order they "
+"were specified in the class's bases list. Additionally, the MRO always lists "
+"a child class before any of its bases. A class definition will fail if it is "
+"impossible to resolve a consistent MRO that satisfies these rules from the "
+"list of bases provided:"
+msgstr ""
+
+# pydocvi: passthrough=doctest
+#, fuzzy
+msgid ""
+">>> class Base: pass\n"
+">>> class Child(Base): pass\n"
+">>> class Grandchild(Base, Child): pass  # TypeError\n"
+"Traceback (most recent call last):\n"
+"   ...\n"
+"TypeError: Cannot create a consistent method resolution order (MRO) for bases"
+" Base, Child"
+msgstr ""
+">>> class Base: pass\n"
+">>> class Child(Base): pass\n"
+">>> class Grandchild(Base, Child): pass  # TypeError\n"
+"Traceback (most recent call last):\n"
+"   ...\n"
+"TypeError: Cannot create a consistent method resolution order (MRO) for bases"
+" Base, Child"
+
+msgid ""
+"In the MRO of ``Grandchild``, ``Base`` must appear before ``Child`` because "
+"it is first in the base class list, but it must also appear after ``Child`` "
+"because it is a parent of ``Child``. This is a contradiction, so the class "
+"cannot be defined."
+msgstr ""
+
+msgid ""
+"If some of the bases have a custom :term:`metaclass`, the metaclass of the "
+"resulting class is chosen among the metaclasses of the bases and the "
+"explicitly specified metaclass of the child class. It must be a metaclass "
+"that is a subclass of all other candidate metaclasses. If no such metaclass "
+"exists among the candidates, the class cannot be created, as explained in :"
+"ref:`metaclass-determination`."
+msgstr ""
+
+msgid ""
+"Finally, the instance layouts of the bases must be compatible. This means "
+"that it must be possible to compute a *solid base* for the class. Exactly "
+"which classes are solid bases depends on the Python implementation."
+msgstr ""
+
+msgid ""
+"In CPython, a class is a solid base if it has a nonempty :attr:`~object."
+"__slots__` definition. Many but not all classes defined in C are also solid "
+"bases, including most builtins (such as :class:`int` or :class:"
+"`BaseException`) but excluding most concrete :class:`Exception` classes. "
+"Generally, a C class is a solid base if its underlying struct is different "
+"in size from its base class."
+msgstr ""
+
+msgid ""
+"Every class has a solid base. :class:`object`, the base class, has itself as "
+"its solid base. If there is a single base, the child class's solid base is "
+"that class if it is a solid base, or else the base class's solid base. If "
+"there are multiple bases, we first find the solid base for each base class "
+"to produce a list of candidate solid bases. If there is a unique solid base "
+"that is a subclass of all others, then that class is the solid base. "
+"Otherwise, class creation fails."
+msgstr ""
+
+msgid "Example:"
+msgstr "Ví dụ:"
+
+# pydocvi: passthrough=doctest
+#, fuzzy
+msgid ""
+">>> class Solid1:\n"
+"...    __slots__ = (\"solid1\",)\n"
+">>>\n"
+">>> class Solid2:\n"
+"...    __slots__ = (\"solid2\",)\n"
+">>>\n"
+">>> class SolidChild(Solid1):\n"
+"...    __slots__ = (\"solid_child\",)\n"
+">>>\n"
+">>> class C1:  # solid base is `object`\n"
+"...    pass\n"
+">>>\n"
+">>> # OK: solid bases are `Solid1` and `object`, and `Solid1` is a subclass "
+"of `object`.\n"
+">>> class C2(Solid1, C1):  # solid base is `Solid1`\n"
+"...    pass\n"
+">>>\n"
+">>> # OK: solid bases are `SolidChild` and `Solid1`, and `SolidChild` is a "
+"subclass of `Solid1`.\n"
+">>> class C3(SolidChild, Solid1):  # solid base is `SolidChild`\n"
+"...    pass\n"
+">>>\n"
+">>> # Error: solid bases are `Solid1` and `Solid2`, but neither is a subclass"
+" of the other.\n"
+">>> class C4(Solid1, Solid2):  # error: no single solid base\n"
+"...    pass\n"
+"Traceback (most recent call last):\n"
+"  ...\n"
+"TypeError: multiple bases have instance lay-out conflict"
+msgstr ""
+">>> class Solid1:\n"
+"...    __slots__ = (\"solid1\",)\n"
+">>>\n"
+">>> class Solid2:\n"
+"...    __slots__ = (\"solid2\",)\n"
+">>>\n"
+">>> class SolidChild(Solid1):\n"
+"...    __slots__ = (\"solid_child\",)\n"
+">>>\n"
+">>> class C1:  # solid base is `object`\n"
+"...    pass\n"
+">>>\n"
+">>> # OK: solid bases are `Solid1` and `object`, and `Solid1` is a subclass "
+"of `object`.\n"
+">>> class C2(Solid1, C1):  # solid base is `Solid1`\n"
+"...    pass\n"
+">>>\n"
+">>> # OK: solid bases are `SolidChild` and `Solid1`, and `SolidChild` is a "
+"subclass of `Solid1`.\n"
+">>> class C3(SolidChild, Solid1):  # solid base is `SolidChild`\n"
+"...    pass\n"
+">>>\n"
+">>> # Error: solid bases are `Solid1` and `Solid2`, but neither is a subclass"
+" of the other.\n"
+">>> class C4(Solid1, Solid2):  # error: no single solid base\n"
+"...    pass\n"
+"Traceback (most recent call last):\n"
+"  ...\n"
+"TypeError: multiple bases have instance lay-out conflict"
+
+# pydocvi: passthrough=version_marker
+#, fuzzy
+msgid "Coroutines"
+msgstr "Coroutines"
 
 msgid "Coroutine function definition"
 msgstr ""
@@ -1621,11 +2009,16 @@ msgstr ""
 msgid "An example of a coroutine function::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "async def func(param1, param2):\n"
 "    do_stuff()\n"
 "    await some_coroutine()"
 msgstr ""
+"async def func(param1, param2):\n"
+"    do_stuff()\n"
+"    await some_coroutine()"
 
 msgid ""
 "``await`` and ``async`` are now keywords; previously they were only treated "
@@ -1646,16 +2039,24 @@ msgid ""
 "iterables."
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "async for TARGET in ITER:\n"
 "    SUITE\n"
 "else:\n"
 "    SUITE2"
 msgstr ""
+"async for TARGET in ITER:\n"
+"    SUITE\n"
+"else:\n"
+"    SUITE2"
 
 msgid "Is semantically equivalent to::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "iter = (ITER).__aiter__()\n"
 "running = True\n"
@@ -1670,6 +2071,18 @@ msgid ""
 "else:\n"
 "    SUITE2"
 msgstr ""
+"iter = (ITER).__aiter__()\n"
+"running = True\n"
+"\n"
+"while running:\n"
+"    try:\n"
+"        TARGET = await iter.__anext__()\n"
+"    except StopAsyncIteration:\n"
+"        running = False\n"
+"    else:\n"
+"        SUITE\n"
+"else:\n"
+"    SUITE2"
 
 msgid ""
 "except that implicit :ref:`special method lookup <special-lookup>` is used "
@@ -1689,11 +2102,17 @@ msgid ""
 "able to suspend execution in its *enter* and *exit* methods."
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "async with EXPRESSION as TARGET:\n"
 "    SUITE"
 msgstr ""
+"async with EXPRESSION as TARGET:\n"
+"    SUITE"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "manager = (EXPRESSION)\n"
 "aenter = manager.__aenter__\n"
@@ -1712,6 +2131,22 @@ msgid ""
 "    if not hit_except:\n"
 "        await aexit(None, None, None)"
 msgstr ""
+"manager = (EXPRESSION)\n"
+"aenter = manager.__aenter__\n"
+"aexit = manager.__aexit__\n"
+"value = await aenter()\n"
+"hit_except = False\n"
+"\n"
+"try:\n"
+"    TARGET = value\n"
+"    SUITE\n"
+"except:\n"
+"    hit_except = True\n"
+"    if not await aexit(*sys.exc_info()):\n"
+"        raise\n"
+"finally:\n"
+"    if not hit_except:\n"
+"        await aexit(None, None, None)"
 
 msgid ""
 "except that implicit :ref:`special method lookup <special-lookup>` is used "
@@ -1743,6 +2178,8 @@ msgid ""
 "parameter list::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def max[T](args: list[T]) -> T:\n"
 "    ...\n"
@@ -1759,6 +2196,20 @@ msgid ""
 "\n"
 "type ListOrSet[T] = list[T] | set[T]"
 msgstr ""
+"def max[T](args: list[T]) -> T:\n"
+"    ...\n"
+"\n"
+"async def amax[T](args: list[T]) -> T:\n"
+"    ...\n"
+"\n"
+"class Bag[T]:\n"
+"    def __iter__(self) -> Iterator[T]:\n"
+"        ...\n"
+"\n"
+"    def add(self, arg: T) -> None:\n"
+"        ...\n"
+"\n"
+"type ListOrSet[T] = list[T] | set[T]"
 
 msgid ""
 "Semantically, this indicates that the function, class, or type alias is "
@@ -1844,6 +2295,8 @@ msgid ""
 "declarations::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def overly_generic[\n"
 "   SimpleTypeVar,\n"
@@ -1860,6 +2313,20 @@ msgid ""
 "   *e: SimpleTypeVarTuple,\n"
 "): ..."
 msgstr ""
+"def overly_generic[\n"
+"   SimpleTypeVar,\n"
+"   TypeVarWithDefault = int,\n"
+"   TypeVarWithBound: int,\n"
+"   TypeVarWithConstraints: (str, bytes),\n"
+"   *SimpleTypeVarTuple = (int, float),\n"
+"   **SimpleParamSpec = (str, bytearray),\n"
+"](\n"
+"   a: SimpleTypeVar,\n"
+"   b: TypeVarWithDefault,\n"
+"   c: TypeVarWithBound,\n"
+"   d: Callable[SimpleParamSpec, TypeVarWithConstraints],\n"
+"   *e: SimpleTypeVarTuple,\n"
+"): ..."
 
 msgid "Generic functions"
 msgstr ""
@@ -1873,6 +2340,8 @@ msgstr ""
 msgid "This syntax is equivalent to::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "annotation-def TYPE_PARAMS_OF_func():\n"
 "    T = typing.TypeVar(\"T\")\n"
@@ -1881,6 +2350,12 @@ msgid ""
 "    return func\n"
 "func = TYPE_PARAMS_OF_func()"
 msgstr ""
+"annotation-def TYPE_PARAMS_OF_func():\n"
+"    T = typing.TypeVar(\"T\")\n"
+"    def func(arg: T): ...\n"
+"    func.__type_params__ = (T,)\n"
+"    return func\n"
+"func = TYPE_PARAMS_OF_func()"
 
 msgid ""
 "Here ``annotation-def`` indicates an :ref:`annotation scope <annotation-"
@@ -1901,17 +2376,24 @@ msgid ""
 "as for additional flavors of type parameters::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "@decorator\n"
 "def func[T: int, *Ts, **P](*args: *Ts, arg: Callable[P, T] = some_default):\n"
 "    ..."
 msgstr ""
+"@decorator\n"
+"def func[T: int, *Ts, **P](*args: *Ts, arg: Callable[P, T] = some_default):\n"
+"    ..."
 
 msgid ""
 "Except for the :ref:`lazy evaluation <lazy-evaluation>` of the :class:"
 "`~typing.TypeVar` bound, this is equivalent to::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "DEFAULT_OF_arg = some_default\n"
 "\n"
@@ -1932,6 +2414,24 @@ msgid ""
 "    return func\n"
 "func = decorator(TYPE_PARAMS_OF_func())"
 msgstr ""
+"DEFAULT_OF_arg = some_default\n"
+"\n"
+"annotation-def TYPE_PARAMS_OF_func():\n"
+"\n"
+"    annotation-def BOUND_OF_T():\n"
+"        return int\n"
+"    # In reality, BOUND_OF_T() is evaluated only on demand.\n"
+"    T = typing.TypeVar(\"T\", bound=BOUND_OF_T())\n"
+"\n"
+"    Ts = typing.TypeVarTuple(\"Ts\")\n"
+"    P = typing.ParamSpec(\"P\")\n"
+"\n"
+"    def func(*args: *Ts, arg: Callable[P, T] = DEFAULT_OF_arg):\n"
+"        ...\n"
+"\n"
+"    func.__type_params__ = (T, Ts, P)\n"
+"    return func\n"
+"func = decorator(TYPE_PARAMS_OF_func())"
 
 msgid ""
 "The capitalized names like ``DEFAULT_OF_arg`` are not actually bound at "
@@ -1947,6 +2447,8 @@ msgstr ""
 msgid "class Bag[T]: ..."
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "annotation-def TYPE_PARAMS_OF_Bag():\n"
 "    T = typing.TypeVar(\"T\")\n"
@@ -1956,6 +2458,13 @@ msgid ""
 "    return Bag\n"
 "Bag = TYPE_PARAMS_OF_Bag()"
 msgstr ""
+"annotation-def TYPE_PARAMS_OF_Bag():\n"
+"    T = typing.TypeVar(\"T\")\n"
+"    class Bag(typing.Generic[T]):\n"
+"        __type_params__ = (T,)\n"
+"        ...\n"
+"    return Bag\n"
+"Bag = TYPE_PARAMS_OF_Bag()"
 
 msgid ""
 "Here again ``annotation-def`` (not a real keyword) indicates an :ref:"
@@ -1978,6 +2487,8 @@ msgstr ""
 msgid "This is equivalent to::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "annotation-def TYPE_PARAMS_OF_Bag():\n"
 "    T = typing.TypeVar(\"T\")\n"
@@ -1987,6 +2498,13 @@ msgid ""
 "    return Bag\n"
 "Bag = decorator(TYPE_PARAMS_OF_Bag())"
 msgstr ""
+"annotation-def TYPE_PARAMS_OF_Bag():\n"
+"    T = typing.TypeVar(\"T\")\n"
+"    class Bag(Base[T], typing.Generic[T], arg=T):\n"
+"        __type_params__ = (T,)\n"
+"        ...\n"
+"    return Bag\n"
+"Bag = decorator(TYPE_PARAMS_OF_Bag())"
 
 msgid "Generic type aliases"
 msgstr ""
@@ -2004,6 +2522,8 @@ msgid ""
 "is equivalent to::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "annotation-def TYPE_PARAMS_OF_ListOrSet():\n"
 "    T = typing.TypeVar(\"T\")\n"
@@ -2015,6 +2535,15 @@ msgid ""
 "type_params=(T,))\n"
 "ListOrSet = TYPE_PARAMS_OF_ListOrSet()"
 msgstr ""
+"annotation-def TYPE_PARAMS_OF_ListOrSet():\n"
+"    T = typing.TypeVar(\"T\")\n"
+"\n"
+"    annotation-def VALUE_OF_ListOrSet():\n"
+"        return list[T] | set[T]\n"
+"    # In reality, the value is lazily evaluated\n"
+"    return typing.TypeAliasType(\"ListOrSet\", VALUE_OF_ListOrSet(), "
+"type_params=(T,))\n"
+"ListOrSet = TYPE_PARAMS_OF_ListOrSet()"
 
 msgid ""
 "Here, ``annotation-def`` (not a real keyword) indicates an :ref:`annotation "
@@ -2022,8 +2551,10 @@ msgid ""
 "``TYPE_PARAMS_OF_ListOrSet`` are not actually bound at runtime."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Annotations"
-msgstr ""
+msgstr "Annotations"
 
 msgid "Annotations are now lazily evaluated by default."
 msgstr ""
@@ -2067,12 +2598,18 @@ msgid ""
 "annotations`` is present, all annotations are instead stored as strings::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> from __future__ import annotations\n"
 ">>> def f(param: annotation): ...\n"
 ">>> f.__annotations__\n"
 "{'param': 'annotation'}"
 msgstr ""
+">>> from __future__ import annotations\n"
+">>> def f(param: annotation): ...\n"
+">>> f.__annotations__\n"
+"{'param': 'annotation'}"
 
 msgid ""
 "This future statement will be deprecated and removed in a future version of "
@@ -2111,17 +2648,25 @@ msgstr ""
 msgid "The following standard library classes are sequences:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`array.array`"
-msgstr ""
+msgstr ":class:`array.array`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`collections.deque`"
-msgstr ""
+msgstr ":class:`collections.deque`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`memoryview`"
-msgstr ""
+msgstr ":class:`memoryview`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`range`"
-msgstr ""
+msgstr ":class:`range`"
 
 msgid ""
 "Subject values of type ``str``, ``bytes``, and ``bytearray`` do not match "
@@ -2159,17 +2704,23 @@ msgid ""
 "the class's :term:`docstring`."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "compound"
-msgstr ""
+msgstr "compound"
 
 msgid "statement"
-msgstr ""
+msgstr "câu lệnh"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "clause"
-msgstr ""
+msgstr "clause"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "suite"
-msgstr ""
+msgstr "suite"
 
 msgid "; (semicolon)"
 msgstr ""
@@ -2180,95 +2731,143 @@ msgstr ""
 msgid "DEDENT token"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "dangling"
-msgstr ""
+msgstr "dangling"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "else"
-msgstr ""
+msgstr "else"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "if"
-msgstr ""
+msgstr "if"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "keyword"
-msgstr ""
+msgstr "keyword"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "elif"
-msgstr ""
+msgstr "elif"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=d132b9201f27 run=2026-08-17T16:43Z
+#, fuzzy
 msgid ": (colon)"
-msgstr ""
+msgstr ": (dấu hai chấm)"
 
 msgid "compound statement"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "while"
-msgstr ""
+msgstr "while"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "loop"
-msgstr ""
+msgstr "loop"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "break"
-msgstr ""
+msgstr "break"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "continue"
-msgstr ""
+msgstr "continue"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "for"
-msgstr ""
+msgstr "for"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "in"
-msgstr ""
+msgstr "in"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "target"
-msgstr ""
+msgstr "target"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "list"
-msgstr ""
+msgstr "list"
 
 msgid "object"
-msgstr ""
+msgstr "object"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "sequence"
-msgstr ""
+msgstr "sequence"
 
 msgid "built-in function"
-msgstr ""
+msgstr "hàm tích hợp sẵn"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "range"
-msgstr ""
+msgstr "range"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "try"
-msgstr ""
+msgstr "try"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "except"
-msgstr ""
+msgstr "except"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "finally"
-msgstr ""
+msgstr "finally"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "as"
-msgstr ""
+msgstr "as"
 
 msgid "except clause"
 msgstr ""
 
 msgid "module"
-msgstr ""
+msgstr "module"
 
 msgid "sys"
-msgstr ""
+msgstr "sys"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "traceback"
-msgstr ""
+msgstr "traceback"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "except_star"
-msgstr ""
+msgstr "except_star"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "return"
-msgstr ""
+msgstr "return"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "with"
-msgstr ""
+msgstr "with"
 
 msgid "with statement"
 msgstr ""
@@ -2276,11 +2875,15 @@ msgstr ""
 msgid ", (comma)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "match"
-msgstr ""
+msgstr "match"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "case"
-msgstr ""
+msgstr "case"
 
 msgid "pattern matching"
 msgstr ""
@@ -2288,8 +2891,10 @@ msgstr ""
 msgid "match statement"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "guard"
-msgstr ""
+msgstr "guard"
 
 msgid "irrefutable case block"
 msgstr ""
@@ -2303,26 +2908,38 @@ msgstr ""
 msgid "AS pattern, OR pattern, capture pattern, wildcard pattern"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "parameter"
-msgstr ""
+msgstr "parameter"
 
 msgid "function definition"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "def"
-msgstr ""
+msgstr "def"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "function"
-msgstr ""
+msgstr "function"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "definition"
-msgstr ""
+msgstr "definition"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "name"
-msgstr ""
+msgstr "name"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "binding"
-msgstr ""
+msgstr "binding"
 
 msgid "user-defined function"
 msgstr ""
@@ -2336,14 +2953,20 @@ msgstr ""
 msgid "@ (at)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "default"
-msgstr ""
+msgstr "default"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "value"
-msgstr ""
+msgstr "value"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "argument"
-msgstr ""
+msgstr "argument"
 
 msgid "= (equals)"
 msgstr ""
@@ -2351,41 +2974,65 @@ msgstr ""
 msgid "/ (slash)"
 msgstr ""
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=d132b9201f27 run=2026-08-17T16:43Z
+#, fuzzy
 msgid "* (asterisk)"
-msgstr ""
+msgstr "* (dấu sao)"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "**"
-msgstr ""
+msgstr "**"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "annotations"
-msgstr ""
+msgstr "annotations"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "->"
-msgstr ""
+msgstr "->"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=d132b9201f27 run=2026-08-17T16:43Z
+#, fuzzy
 msgid "function annotations"
-msgstr ""
+msgstr "chú thích hàm"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "lambda"
-msgstr ""
+msgstr "lambda"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "expression"
-msgstr ""
+msgstr "expression"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "class"
-msgstr ""
+msgstr "class"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "execution"
-msgstr ""
+msgstr "execution"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "frame"
-msgstr ""
+msgstr "frame"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "inheritance"
-msgstr ""
+msgstr "inheritance"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "docstring"
-msgstr ""
+msgstr "docstring"
 
 msgid "class definition"
 msgstr ""
@@ -2396,11 +3043,15 @@ msgstr ""
 msgid "async def"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "async"
-msgstr ""
+msgstr "async"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "await"
-msgstr ""
+msgstr "await"
 
 msgid "async for"
 msgstr ""

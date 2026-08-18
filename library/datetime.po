@@ -10,18 +10,18 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-21 15:07+0000\n"
-"PO-Revision-Date: 2025-09-16 00:01+0000\n"
-"Last-Translator: Nguyen Duc Tam, 2026\n"
-"Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
-"vi/)\n"
+"POT-Creation-Date: 2026-05-08 18:34+0000\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: pydocvi 0.1.2\n"
 
 msgid ":mod:`!datetime` --- Basic date and time types"
 msgstr ""
@@ -120,8 +120,10 @@ msgid ""
 "there is no standard suitable for every application aside from UTC."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Constants"
-msgstr ""
+msgstr "Constants"
 
 msgid "The :mod:`!datetime` module exports the following constants:"
 msgstr ""
@@ -282,14 +284,18 @@ msgid ""
 "representation is unique, with"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``0 <= microseconds < 1000000``"
-msgstr ""
+msgstr "``0 <= microseconds < 1000000``"
 
 msgid "``0 <= seconds < 3600*24`` (the number of seconds in one day)"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``-999999999 <= days <= 999999999``"
-msgstr ""
+msgstr "``-999999999 <= days <= 999999999``"
 
 msgid ""
 "The following example illustrates how any arguments besides *days*, "
@@ -297,6 +303,8 @@ msgid ""
 "resulting attributes::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import datetime as dt\n"
 ">>> delta = dt.timedelta(\n"
@@ -312,6 +320,19 @@ msgid ""
 ">>> delta\n"
 "datetime.timedelta(days=64, seconds=29156, microseconds=10)"
 msgstr ""
+">>> import datetime as dt\n"
+">>> delta = dt.timedelta(\n"
+"...     days=50,\n"
+"...     seconds=27,\n"
+"...     microseconds=10,\n"
+"...     milliseconds=29000,\n"
+"...     minutes=5,\n"
+"...     hours=8,\n"
+"...     weeks=2\n"
+"... )\n"
+">>> # Only days, seconds, and microseconds remain\n"
+">>> delta\n"
+"datetime.timedelta(days=64, seconds=29156, microseconds=10)"
 
 msgid ""
 "``import datetime as dt`` instead of ``import datetime`` or ``from datetime "
@@ -338,18 +359,26 @@ msgid ""
 "example::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import datetime as dt\n"
 ">>> d = dt.timedelta(microseconds=-1)\n"
 ">>> (d.days, d.seconds, d.microseconds)\n"
 "(-1, 86399, 999999)"
 msgstr ""
+">>> import datetime as dt\n"
+">>> d = dt.timedelta(microseconds=-1)\n"
+">>> (d.days, d.seconds, d.microseconds)\n"
+"(-1, 86399, 999999)"
 
 msgid ""
 "Since the string representation of :class:`!timedelta` objects can be "
 "confusing, use the following recipe to produce a more readable format:"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> def pretty_timedelta(td):\n"
 "...     if td.days >= 0:\n"
@@ -362,6 +391,16 @@ msgid ""
 ">>> pretty_timedelta(d)\n"
 "'-(1:00:00)'"
 msgstr ""
+">>> def pretty_timedelta(td):\n"
+"...     if td.days >= 0:\n"
+"...         return str(td)\n"
+"...     return f'-({-td!s})'\n"
+"...\n"
+">>> d = timedelta(hours=-1)\n"
+">>> str(d)  # not human-friendly\n"
+"'-1 day, 23:00:00'\n"
+">>> pretty_timedelta(d)\n"
+"'-(1:00:00)'"
 
 msgid "Class attributes:"
 msgstr ""
@@ -400,6 +439,8 @@ msgid ""
 "instead:"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import datetime as dt\n"
 ">>> duration = dt.timedelta(seconds=11235813)\n"
@@ -408,6 +449,12 @@ msgid ""
 ">>> duration.total_seconds()\n"
 "11235813.0"
 msgstr ""
+">>> import datetime as dt\n"
+">>> duration = dt.timedelta(seconds=11235813)\n"
+">>> duration.days, duration.seconds\n"
+"(130, 3813)\n"
+">>> duration.total_seconds()\n"
+"11235813.0"
 
 msgid "Between 0 and 999,999 inclusive."
 msgstr ""
@@ -415,30 +462,40 @@ msgstr ""
 msgid "Supported operations:"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Operation"
-msgstr ""
+msgstr "Operation"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Result"
-msgstr ""
+msgstr "Result"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``t1 = t2 + t3``"
-msgstr ""
+msgstr "``t1 = t2 + t3``"
 
 msgid ""
 "Sum of ``t2`` and ``t3``. Afterwards ``t1 - t2 == t3`` and ``t1 - t3 == t2`` "
 "are true. (1)"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``t1 = t2 - t3``"
-msgstr ""
+msgstr "``t1 = t2 - t3``"
 
 msgid ""
 "Difference of ``t2``  and ``t3``. Afterwards ``t1 == t2 - t3`` and ``t2 == "
 "t1 + t3`` are true. (1)(6)"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``t1 = t2 * i or t1 = i * t2``"
-msgstr ""
+msgstr "``t1 = t2 * i or t1 = i * t2``"
 
 msgid ""
 "Delta multiplied by an integer. Afterwards ``t1 // i == t2`` is true, "
@@ -448,24 +505,30 @@ msgstr ""
 msgid "In general, ``t1  * i == t1 * (i-1) + t1`` is true. (1)"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``t1 = t2 * f or t1 = f * t2``"
-msgstr ""
+msgstr "``t1 = t2 * f or t1 = f * t2``"
 
 msgid ""
 "Delta multiplied by a float. The result is rounded to the nearest multiple "
 "of timedelta.resolution using round-half-to-even."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``f = t2 / t3``"
-msgstr ""
+msgstr "``f = t2 / t3``"
 
 msgid ""
 "Division (3) of overall duration ``t2`` by interval unit ``t3``. Returns a :"
 "class:`float` object."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``t1 = t2 / f or t1 = t2 / i``"
-msgstr ""
+msgstr "``t1 = t2 / f or t1 = t2 / i``"
 
 msgid ""
 "Delta divided by a float or an int. The result is rounded to the nearest "
@@ -480,52 +543,66 @@ msgid ""
 "second case, an integer is returned. (3)"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``t1 = t2 % t3``"
-msgstr ""
+msgstr "``t1 = t2 % t3``"
 
 msgid "The remainder is computed as a :class:`timedelta` object. (3)"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``q, r = divmod(t1, t2)``"
-msgstr ""
+msgstr "``q, r = divmod(t1, t2)``"
 
 msgid ""
 "Computes the quotient and the remainder: ``q = t1 // t2`` (3) and ``r = t1 % "
 "t2``. ``q`` is an integer and ``r`` is a :class:`timedelta` object."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``+t1``"
-msgstr ""
+msgstr "``+t1``"
 
 msgid "Returns a :class:`timedelta` object with the same value. (2)"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``-t1``"
-msgstr ""
+msgstr "``-t1``"
 
 msgid ""
 "Equivalent to ``timedelta(-t1.days, -t1.seconds, -t1.microseconds)``, and to "
 "``t1 * -1``. (1)(4)"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``abs(t)``"
-msgstr ""
+msgstr "``abs(t)``"
 
 msgid ""
 "Equivalent to ``+t`` when ``t.days >= 0``, and to ``-t`` when ``t.days < "
 "0``. (2)"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``str(t)``"
-msgstr ""
+msgstr "``str(t)``"
 
 msgid ""
 "Returns a string in the form ``[D day[s], ][H]H:MM:SS[.UUUUUU]``, where D is "
 "negative for negative ``t``. (5)"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``repr(t)``"
-msgstr ""
+msgstr "``repr(t)``"
 
 msgid ""
 "Returns a string representation of the :class:`timedelta` object as a "
@@ -553,12 +630,18 @@ msgid ""
 "results for negative timedeltas. For example::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> timedelta(hours=-5)\n"
 "datetime.timedelta(days=-1, seconds=68400)\n"
 ">>> print(_)\n"
 "-1 day, 19:00:00"
 msgstr ""
+">>> timedelta(hours=-5)\n"
+"datetime.timedelta(days=-1, seconds=68400)\n"
+">>> print(_)\n"
+"-1 day, 19:00:00"
 
 msgid ""
 "The expression ``t2 - t3`` will always be equal to the expression ``t2 + (-"
@@ -607,6 +690,8 @@ msgstr ""
 msgid "An additional example of normalization::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> # Components of another_year add up to exactly 365 days\n"
 ">>> import datetime as dt\n"
@@ -618,10 +703,21 @@ msgid ""
 ">>> year.total_seconds()\n"
 "31536000.0"
 msgstr ""
+">>> # Components of another_year add up to exactly 365 days\n"
+">>> import datetime as dt\n"
+">>> year = dt.timedelta(days=365)\n"
+">>> another_year = dt.timedelta(weeks=40, days=84, hours=23,\n"
+"...                             minutes=50, seconds=600)\n"
+">>> year == another_year\n"
+"True\n"
+">>> year.total_seconds()\n"
+"31536000.0"
 
 msgid "Examples of :class:`timedelta` arithmetic::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import datetime as dt\n"
 ">>> year = dt.timedelta(days=365)\n"
@@ -637,6 +733,19 @@ msgid ""
 ">>> three_years, three_years.days // 365\n"
 "(datetime.timedelta(days=1095), 3)"
 msgstr ""
+">>> import datetime as dt\n"
+">>> year = dt.timedelta(days=365)\n"
+">>> ten_years = 10 * year\n"
+">>> ten_years\n"
+"datetime.timedelta(days=3650)\n"
+">>> ten_years.days // 365\n"
+"10\n"
+">>> nine_years = ten_years - year\n"
+">>> nine_years\n"
+"datetime.timedelta(days=3285)\n"
+">>> three_years = nine_years // 3\n"
+">>> three_years, three_years.days // 365\n"
+"(datetime.timedelta(days=1095), 3)"
 
 msgid ":class:`!date` objects"
 msgstr ""
@@ -657,14 +766,20 @@ msgid ""
 "ranges:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``MINYEAR <= year <= MAXYEAR``"
-msgstr ""
+msgstr "``MINYEAR <= year <= MAXYEAR``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``1 <= month <= 12``"
-msgstr ""
+msgstr "``1 <= month <= 12``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``1 <= day <= number of days in the given month and year``"
-msgstr ""
+msgstr "``1 <= day <= number of days in the given month and year``"
 
 msgid ""
 "If an argument outside those ranges is given, :exc:`ValueError` is raised."
@@ -700,6 +815,9 @@ msgid ""
 "`localtime` failure."
 msgstr ""
 
+msgid "Accepts any real number as *timestamp*, not only integer or float."
+msgstr ""
+
 msgid ""
 "Return the date corresponding to the proleptic Gregorian *ordinal*, where "
 "January 1 of year 1 has ordinal 1."
@@ -727,9 +845,13 @@ msgstr ""
 msgid "Ordinal dates are not currently supported (``YYYY-OOO``)."
 msgstr ""
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=297a621f1359 run=2026-08-17T16:43Z
+#, fuzzy
 msgid "Examples::"
-msgstr ""
+msgstr "Ví dụ::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import datetime as dt\n"
 ">>> dt.date.fromisoformat('2019-12-04')\n"
@@ -739,6 +861,13 @@ msgid ""
 ">>> dt.date.fromisoformat('2021-W01-1')\n"
 "datetime.date(2021, 1, 4)"
 msgstr ""
+">>> import datetime as dt\n"
+">>> dt.date.fromisoformat('2019-12-04')\n"
+"datetime.date(2019, 12, 4)\n"
+">>> dt.date.fromisoformat('20191204')\n"
+"datetime.date(2019, 12, 4)\n"
+">>> dt.date.fromisoformat('2021-W01-1')\n"
+"datetime.date(2021, 1, 4)"
 
 msgid "Previously, this method only supported the format ``YYYY-MM-DD``."
 msgstr ""
@@ -754,8 +883,10 @@ msgid ""
 "*format*. This is equivalent to::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "date(*(time.strptime(date_string, format)[0:3]))"
-msgstr ""
+msgstr "date(*(time.strptime(date_string, format)[0:3]))"
 
 msgid ""
 ":exc:`ValueError` is raised if the date_string and format can't be parsed "
@@ -764,15 +895,16 @@ msgid ""
 msgstr ""
 
 msgid ""
-"If *format* specifies a day of month without a year a :exc:"
-"`DeprecationWarning` is emitted.  This is to avoid a quadrennial leap year "
-"bug in code seeking to parse only a month and day as the default year used "
-"in absence of one in the format is not a leap year. Such *format* values may "
-"raise an error as of Python 3.15.  The workaround is to always include a "
-"year in your *format*.  If parsing *date_string* values that do not have a "
-"year, explicitly add a year that is a leap year before parsing:"
+"If *format* specifies a day of month (``%d``) without a year, :exc:"
+"`ValueError` is raised.  This is to avoid a quadrennial leap year bug in "
+"code seeking to parse only a month and day as the default year used in "
+"absence of one in the format is not a leap year. The workaround is to always "
+"include a year in your *format*.  If parsing *date_string* values that do "
+"not have a year, explicitly add a year that is a leap year before parsing:"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import datetime as dt\n"
 ">>> date_string = \"02/29\"\n"
@@ -781,6 +913,12 @@ msgid ""
 ">>> when.strftime(\"%B %d\")\n"
 "'February 29'"
 msgstr ""
+">>> import datetime as dt\n"
+">>> date_string = \"02/29\"\n"
+">>> when = dt.date.strptime(f\"{date_string};1984\", \"%m/%d;%Y\")  # Avoids "
+"leap year bug.\n"
+">>> when.strftime(\"%B %d\")\n"
+"'February 29'"
 
 msgid "The earliest representable date, ``date(MINYEAR, 1, 1)``."
 msgstr ""
@@ -802,44 +940,64 @@ msgstr ""
 msgid "Between 1 and the number of days in the given month of the given year."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``date2 = date1 + timedelta``"
-msgstr ""
+msgstr "``date2 = date1 + timedelta``"
 
 msgid "``date2`` will be ``timedelta.days`` days after ``date1``. (1)"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``date2 = date1 - timedelta``"
-msgstr ""
+msgstr "``date2 = date1 - timedelta``"
 
 msgid "Computes ``date2`` such that ``date2 + timedelta == date1``. (2)"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``timedelta = date1 - date2``"
-msgstr ""
+msgstr "``timedelta = date1 - date2``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "\\(3)"
-msgstr ""
+msgstr "\\(3)"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``date1 == date2``"
-msgstr ""
+msgstr "``date1 == date2``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``date1 != date2``"
-msgstr ""
+msgstr "``date1 != date2``"
 
 msgid "Equality comparison. (4)"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``date1 < date2``"
-msgstr ""
+msgstr "``date1 < date2``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``date1 > date2``"
-msgstr ""
+msgstr "``date1 > date2``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``date1 <= date2``"
-msgstr ""
+msgstr "``date1 <= date2``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``date1 >= date2``"
-msgstr ""
+msgstr "``date1 >= date2``"
 
 msgid "Order comparison. (5)"
 msgstr ""
@@ -900,12 +1058,18 @@ msgstr ""
 msgid "Example::"
 msgstr "Ví dụ::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import datetime as dt\n"
 ">>> d = dt.date(2002, 12, 31)\n"
 ">>> d.replace(day=26)\n"
 "datetime.date(2002, 12, 26)"
 msgstr ""
+">>> import datetime as dt\n"
+">>> d = dt.date(2002, 12, 31)\n"
+">>> d.replace(day=26)\n"
+"datetime.date(2002, 12, 26)"
 
 msgid ""
 "The generic function :func:`copy.replace` also supports :class:`date` "
@@ -923,9 +1087,12 @@ msgstr ""
 msgid "``d.timetuple()`` is equivalent to::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "time.struct_time((d.year, d.month, d.day, 0, 0, 0, d.weekday(), yday, -1))"
 msgstr ""
+"time.struct_time((d.year, d.month, d.day, 0, 0, 0, d.weekday(), yday, -1))"
 
 msgid ""
 "where ``yday = d.toordinal() - date(d.year, 1, 1).toordinal() + 1`` is the "
@@ -972,6 +1139,8 @@ msgid ""
 "begins on Monday, 29 Dec 2003 and ends on Sunday, 4 Jan 2004::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import datetime as dt\n"
 ">>> dt.date(2003, 12, 29).isocalendar()\n"
@@ -979,6 +1148,11 @@ msgid ""
 ">>> dt.date(2004, 1, 4).isocalendar()\n"
 "datetime.IsoCalendarDate(year=2004, week=1, weekday=7)"
 msgstr ""
+">>> import datetime as dt\n"
+">>> dt.date(2003, 12, 29).isocalendar()\n"
+"datetime.IsoCalendarDate(year=2004, week=1, weekday=1)\n"
+">>> dt.date(2004, 1, 4).isocalendar()\n"
+"datetime.IsoCalendarDate(year=2004, week=1, weekday=7)"
 
 msgid "Result changed from a tuple to a :term:`named tuple`."
 msgstr ""
@@ -987,11 +1161,16 @@ msgid ""
 "Return a string representing the date in ISO 8601 format, ``YYYY-MM-DD``::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import datetime as dt\n"
 ">>> dt.date(2002, 12, 4).isoformat()\n"
 "'2002-12-04'"
 msgstr ""
+">>> import datetime as dt\n"
+">>> dt.date(2002, 12, 4).isoformat()\n"
+"'2002-12-04'"
 
 msgid "For a date ``d``, ``str(d)`` is equivalent to ``d.isoformat()``."
 msgstr ""
@@ -999,17 +1178,24 @@ msgstr ""
 msgid "Return a string representing the date::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import datetime as dt\n"
 ">>> dt.date(2002, 12, 4).ctime()\n"
 "'Wed Dec  4 00:00:00 2002'"
 msgstr ""
+">>> import datetime as dt\n"
+">>> dt.date(2002, 12, 4).ctime()\n"
+"'Wed Dec  4 00:00:00 2002'"
 
 msgid "``d.ctime()`` is equivalent to::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "time.ctime(time.mktime(d.timetuple()))"
-msgstr ""
+msgstr "time.ctime(time.mktime(d.timetuple()))"
 
 msgid ""
 "on platforms where the native C :c:func:`ctime` function (which :func:`time."
@@ -1037,6 +1223,8 @@ msgstr ""
 msgid "Example of counting days to an event::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import time\n"
 ">>> import datetime as dt\n"
@@ -1055,10 +1243,28 @@ msgid ""
 ">>> time_to_birthday.days\n"
 "202"
 msgstr ""
+">>> import time\n"
+">>> import datetime as dt\n"
+">>> today = dt.date.today()\n"
+">>> today\n"
+"datetime.date(2007, 12, 5)\n"
+">>> today == dt.date.fromtimestamp(time.time())\n"
+"True\n"
+">>> my_birthday = dt.date(today.year, 6, 24)\n"
+">>> if my_birthday < today:\n"
+"...     my_birthday = my_birthday.replace(year=today.year + 1)\n"
+"...\n"
+">>> my_birthday\n"
+"datetime.date(2008, 6, 24)\n"
+">>> time_to_birthday = abs(my_birthday - today)\n"
+">>> time_to_birthday.days\n"
+"202"
 
 msgid "More examples of working with :class:`date`:"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import datetime as dt\n"
 ">>> d = dt.date.fromordinal(730920) # 730920th day after 1. 1. 0001\n"
@@ -1101,6 +1307,46 @@ msgid ""
 ">>> d.replace(year=2005)\n"
 "datetime.date(2005, 3, 11)"
 msgstr ""
+">>> import datetime as dt\n"
+">>> d = dt.date.fromordinal(730920) # 730920th day after 1. 1. 0001\n"
+">>> d\n"
+"datetime.date(2002, 3, 11)\n"
+"\n"
+">>> # Methods related to formatting string output\n"
+">>> d.isoformat()\n"
+"'2002-03-11'\n"
+">>> d.strftime(\"%d/%m/%y\")\n"
+"'11/03/02'\n"
+">>> d.strftime(\"%A %d. %B %Y\")\n"
+"'Monday 11. March 2002'\n"
+">>> d.ctime()\n"
+"'Mon Mar 11 00:00:00 2002'\n"
+">>> 'The {1} is {0:%d}, the {2} is {0:%B}.'.format(d, \"day\", \"month\")\n"
+"'The day is 11, the month is March.'\n"
+"\n"
+">>> # Methods for extracting 'components' under different calendars\n"
+">>> t = d.timetuple()\n"
+">>> for i in t:\n"
+"...     print(i)\n"
+"2002                # year\n"
+"3                   # month\n"
+"11                  # day\n"
+"0\n"
+"0\n"
+"0\n"
+"0                   # weekday (0 = Monday)\n"
+"70                  # 70th day in the year\n"
+"-1\n"
+">>> ic = d.isocalendar()\n"
+">>> for i in ic:\n"
+"...     print(i)\n"
+"2002                # ISO year\n"
+"11                  # ISO week number\n"
+"1                   # ISO day number ( 1 = Monday )\n"
+"\n"
+">>> # A date object is immutable; all operations produce a new object\n"
+">>> d.replace(year=2005)\n"
+"datetime.date(2005, 3, 11)"
 
 msgid ":class:`!datetime` objects"
 msgstr ""
@@ -1126,29 +1372,45 @@ msgid ""
 "arguments must be integers in the following ranges:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``MINYEAR <= year <= MAXYEAR``,"
-msgstr ""
+msgstr "``MINYEAR <= year <= MAXYEAR``,"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``1 <= month <= 12``,"
-msgstr ""
+msgstr "``1 <= month <= 12``,"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``1 <= day <= number of days in the given month and year``,"
-msgstr ""
+msgstr "``1 <= day <= number of days in the given month and year``,"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``0 <= hour < 24``,"
-msgstr ""
+msgstr "``0 <= hour < 24``,"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``0 <= minute < 60``,"
-msgstr ""
+msgstr "``0 <= minute < 60``,"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``0 <= second < 60``,"
-msgstr ""
+msgstr "``0 <= second < 60``,"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``0 <= microsecond < 1000000``,"
-msgstr ""
+msgstr "``0 <= microsecond < 1000000``,"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``fold in [0, 1]``."
-msgstr ""
+msgstr "``fold in [0, 1]``."
 
 msgid "Added the *fold* parameter."
 msgstr ""
@@ -1159,8 +1421,10 @@ msgstr ""
 msgid "Equivalent to::"
 msgstr "Tương đương với::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "datetime.fromtimestamp(time.time())"
-msgstr ""
+msgstr "datetime.fromtimestamp(time.time())"
 
 msgid "See also :meth:`now`, :meth:`fromtimestamp`."
 msgstr ""
@@ -1261,8 +1525,10 @@ msgstr ""
 msgid "To get an aware :class:`.datetime` object, call :meth:`fromtimestamp`::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "datetime.fromtimestamp(timestamp, timezone.utc)"
-msgstr ""
+msgstr "datetime.fromtimestamp(timestamp, timezone.utc)"
 
 msgid ""
 "On the POSIX compliant platforms, it is equivalent to the following "
@@ -1291,9 +1557,6 @@ msgid ""
 "out of the range of values supported by the platform C :c:func:`gmtime` "
 "function. Raise :exc:`OSError` instead of :exc:`ValueError` on :c:func:"
 "`gmtime` failure."
-msgstr ""
-
-msgid "Accepts any real number as *timestamp*, not only integer or float."
 msgstr ""
 
 msgid "Use :meth:`datetime.fromtimestamp` with :const:`UTC` instead."
@@ -1339,6 +1602,8 @@ msgstr ""
 msgid "Fractional hours and minutes are not supported."
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import datetime as dt\n"
 ">>> dt.datetime.fromisoformat('2011-11-04')\n"
@@ -1356,12 +1621,33 @@ msgid ""
 ">>> dt.datetime.fromisoformat('2011-11-04 00:05:23.283')\n"
 "datetime.datetime(2011, 11, 4, 0, 5, 23, 283000)\n"
 ">>> dt.datetime.fromisoformat('2011-11-04 00:05:23.283+00:00')\n"
-"datetime.datetime(2011, 11, 4, 0, 5, 23, 283000, tzinfo=datetime.timezone."
-"utc)\n"
+"datetime.datetime(2011, 11, 4, 0, 5, 23, 283000, "
+"tzinfo=datetime.timezone.utc)\n"
 ">>> dt.datetime.fromisoformat('2011-11-04T00:05:23+04:00')\n"
 "datetime.datetime(2011, 11, 4, 0, 5, 23,\n"
 "    tzinfo=datetime.timezone(datetime.timedelta(seconds=14400)))"
 msgstr ""
+">>> import datetime as dt\n"
+">>> dt.datetime.fromisoformat('2011-11-04')\n"
+"datetime.datetime(2011, 11, 4, 0, 0)\n"
+">>> dt.datetime.fromisoformat('20111104')\n"
+"datetime.datetime(2011, 11, 4, 0, 0)\n"
+">>> dt.datetime.fromisoformat('2011-11-04T00:05:23')\n"
+"datetime.datetime(2011, 11, 4, 0, 5, 23)\n"
+">>> dt.datetime.fromisoformat('2011-11-04T00:05:23Z')\n"
+"datetime.datetime(2011, 11, 4, 0, 5, 23, tzinfo=datetime.timezone.utc)\n"
+">>> dt.datetime.fromisoformat('20111104T000523')\n"
+"datetime.datetime(2011, 11, 4, 0, 5, 23)\n"
+">>> dt.datetime.fromisoformat('2011-W01-2T00:05:23.283')\n"
+"datetime.datetime(2011, 1, 4, 0, 5, 23, 283000)\n"
+">>> dt.datetime.fromisoformat('2011-11-04 00:05:23.283')\n"
+"datetime.datetime(2011, 11, 4, 0, 5, 23, 283000)\n"
+">>> dt.datetime.fromisoformat('2011-11-04 00:05:23.283+00:00')\n"
+"datetime.datetime(2011, 11, 4, 0, 5, 23, 283000, "
+"tzinfo=datetime.timezone.utc)\n"
+">>> dt.datetime.fromisoformat('2011-11-04T00:05:23+04:00')\n"
+"datetime.datetime(2011, 11, 4, 0, 5, 23,\n"
+"    tzinfo=datetime.timezone(datetime.timedelta(seconds=14400)))"
 
 msgid ""
 "Previously, this method only supported formats that could be emitted by :"
@@ -1385,8 +1671,10 @@ msgid ""
 "equivalent to::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "datetime(*(time.strptime(date_string, format)[0:6]))"
-msgstr ""
+msgstr "datetime(*(time.strptime(date_string, format)[0:6]))"
 
 msgid ""
 ":exc:`ValueError` is raised if the date_string and format can't be parsed "
@@ -1395,16 +1683,8 @@ msgid ""
 "fromisoformat`."
 msgstr ""
 
-msgid ""
-"If *format* specifies a day of month without a year a :exc:"
-"`DeprecationWarning` is now emitted.  This is to avoid a quadrennial leap "
-"year bug in code seeking to parse only a month and day as the default year "
-"used in absence of one in the format is not a leap year. Such *format* "
-"values may raise an error as of Python 3.15.  The workaround is to always "
-"include a year in your *format*.  If parsing *date_string* values that do "
-"not have a year, explicitly add a year that is a leap year before parsing:"
-msgstr ""
-
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import datetime as dt\n"
 ">>> date_string = \"02/29\"\n"
@@ -1413,6 +1693,12 @@ msgid ""
 ">>> when.strftime(\"%B %d\")\n"
 "'February 29'"
 msgstr ""
+">>> import datetime as dt\n"
+">>> date_string = \"02/29\"\n"
+">>> when = dt.datetime.strptime(f\"{date_string};1984\", \"%m/%d;%Y\")  # "
+"Avoids leap year bug.\n"
+">>> when.strftime(\"%B %d\")\n"
+"'February 29'"
 
 msgid ""
 "The earliest representable :class:`.datetime`, ``datetime(MINYEAR, 1, 1, "
@@ -1452,38 +1738,60 @@ msgid ""
 "time representation."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``datetime2 = datetime1 + timedelta``"
-msgstr ""
+msgstr "``datetime2 = datetime1 + timedelta``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "\\(1)"
-msgstr ""
+msgstr "\\(1)"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``datetime2 = datetime1 - timedelta``"
-msgstr ""
+msgstr "``datetime2 = datetime1 - timedelta``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "\\(2)"
-msgstr ""
+msgstr "\\(2)"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``timedelta = datetime1 - datetime2``"
-msgstr ""
+msgstr "``timedelta = datetime1 - datetime2``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``datetime1 == datetime2``"
-msgstr ""
+msgstr "``datetime1 == datetime2``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``datetime1 != datetime2``"
-msgstr ""
+msgstr "``datetime1 != datetime2``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``datetime1 < datetime2``"
-msgstr ""
+msgstr "``datetime1 < datetime2``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``datetime1 > datetime2``"
-msgstr ""
+msgstr "``datetime1 > datetime2``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``datetime1 <= datetime2``"
-msgstr ""
+msgstr "``datetime1 <= datetime2``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``datetime1 >= datetime2``"
-msgstr ""
+msgstr "``datetime1 >= datetime2``"
 
 msgid ""
 "``datetime2`` is a duration of ``timedelta`` removed from ``datetime1``, "
@@ -1634,6 +1942,8 @@ msgid ""
 "Ignoring error cases, :meth:`astimezone` acts like::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def astimezone(self, tz):\n"
 "    if self.tzinfo is tz:\n"
@@ -1643,6 +1953,13 @@ msgid ""
 "    # Convert from UTC to tz's local time.\n"
 "    return tz.fromutc(utc)"
 msgstr ""
+"def astimezone(self, tz):\n"
+"    if self.tzinfo is tz:\n"
+"        return self\n"
+"    # Convert self to UTC, and attach the new timezone object.\n"
+"    utc = (self - self.utcoffset()).replace(tzinfo=tz)\n"
+"    # Convert from UTC to tz's local time.\n"
+"    return tz.fromutc(utc)"
 
 msgid "*tz* now can be omitted."
 msgstr ""
@@ -1676,11 +1993,16 @@ msgid ""
 "a string object,"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "time.struct_time((d.year, d.month, d.day,\n"
 "                  d.hour, d.minute, d.second,\n"
 "                  d.weekday(), yday, dst))"
 msgstr ""
+"time.struct_time((d.year, d.month, d.day,\n"
+"                  d.hour, d.minute, d.second,\n"
+"                  d.weekday(), yday, dst))"
 
 msgid ""
 "where ``yday = d.toordinal() - date(d.year, 1, 1).toordinal() + 1`` is the "
@@ -1729,11 +2051,10 @@ msgstr ""
 
 msgid ""
 "Naive :class:`.datetime` instances are assumed to represent local time and "
-"this method relies on the platform C :c:func:`mktime` function to perform "
-"the conversion. Since :class:`!datetime` supports wider range of values "
-"than :c:func:`mktime` on many platforms, this method may raise :exc:"
-"`OverflowError` or :exc:`OSError` for times far in the past or far in the "
-"future."
+"this method relies on platform C functions to perform the conversion. Since :"
+"class:`!datetime` supports a wider range of values than the platform C "
+"functions on many platforms, this method may raise :exc:`OverflowError` or :"
+"exc:`OSError` for times far in the past or far in the future."
 msgstr ""
 
 msgid ""
@@ -1750,18 +2071,27 @@ msgid ""
 "the POSIX timestamp by supplying ``tzinfo=timezone.utc``::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "timestamp = dt.replace(tzinfo=timezone.utc).timestamp()"
-msgstr ""
+msgstr "timestamp = dt.replace(tzinfo=timezone.utc).timestamp()"
 
 msgid "or by calculating the timestamp directly::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "timestamp = (dt - datetime(1970, 1, 1)) / timedelta(seconds=1)"
-msgstr ""
+msgstr "timestamp = (dt - datetime(1970, 1, 1)) / timedelta(seconds=1)"
 
 msgid ""
 "The :meth:`timestamp` method uses the :attr:`.fold` attribute to "
 "disambiguate the times during a repeated interval."
+msgstr ""
+
+msgid ""
+"This method no longer relies on the platform C :c:func:`mktime` function to "
+"perform conversions."
 msgstr ""
 
 msgid ""
@@ -1803,6 +2133,8 @@ msgid ""
 "``YYYY-MM-DDTHH:MM:SS+HH:MM[:SS[.ffffff]]``,  if :attr:`microsecond` is 0"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import datetime as dt\n"
 ">>> dt.datetime(2019, 5, 18, 15, 17, 8, 132263).isoformat()\n"
@@ -1810,12 +2142,19 @@ msgid ""
 ">>> dt.datetime(2019, 5, 18, 15, 17, tzinfo=dt.timezone.utc).isoformat()\n"
 "'2019-05-18T15:17:00+00:00'"
 msgstr ""
+">>> import datetime as dt\n"
+">>> dt.datetime(2019, 5, 18, 15, 17, 8, 132263).isoformat()\n"
+"'2019-05-18T15:17:08.132263'\n"
+">>> dt.datetime(2019, 5, 18, 15, 17, tzinfo=dt.timezone.utc).isoformat()\n"
+"'2019-05-18T15:17:00+00:00'"
 
 msgid ""
 "The optional argument *sep* (default ``'T'``) is a one-character separator, "
 "placed between the date and time portions of the result. For example::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import datetime as dt\n"
 ">>> class TZ(dt.tzinfo):\n"
@@ -1828,6 +2167,16 @@ msgid ""
 ">>> dt.datetime(2009, 11, 27, microsecond=100, tzinfo=TZ()).isoformat()\n"
 "'2009-11-27T00:00:00.000100-06:39'"
 msgstr ""
+">>> import datetime as dt\n"
+">>> class TZ(dt.tzinfo):\n"
+"...     \"\"\"A time zone with an arbitrary, constant -06:39 offset.\"\"\"\n"
+"...     def utcoffset(self, when):\n"
+"...         return dt.timedelta(hours=-6, minutes=-39)\n"
+"...\n"
+">>> dt.datetime(2002, 12, 25, tzinfo=TZ()).isoformat(' ')\n"
+"'2002-12-25 00:00:00-06:39'\n"
+">>> dt.datetime(2009, 11, 27, microsecond=100, tzinfo=TZ()).isoformat()\n"
+"'2009-11-27T00:00:00.000100-06:39'"
 
 msgid ""
 "The optional argument *timespec* specifies the number of additional "
@@ -1866,6 +2215,8 @@ msgstr ""
 msgid ":exc:`ValueError` will be raised on an invalid *timespec* argument::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import datetime as dt\n"
 ">>> dt.datetime.now().isoformat(timespec='minutes')\n"
@@ -1874,6 +2225,12 @@ msgid ""
 ">>> my_datetime.isoformat(timespec='microseconds')\n"
 "'2015-01-01T12:30:59.000000'"
 msgstr ""
+">>> import datetime as dt\n"
+">>> dt.datetime.now().isoformat(timespec='minutes')\n"
+"'2002-12-25T00:00'\n"
+">>> my_datetime = dt.datetime(2015, 1, 1, 12, 30, 59, 0)\n"
+">>> my_datetime.isoformat(timespec='microseconds')\n"
+"'2015-01-01T12:30:59.000000'"
 
 msgid "Added the *timespec* parameter."
 msgstr ""
@@ -1886,11 +2243,16 @@ msgstr ""
 msgid "Return a string representing the date and time::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import datetime as dt\n"
 ">>> dt.datetime(2002, 12, 4, 20, 30, 40).ctime()\n"
 "'Wed Dec  4 20:30:40 2002'"
 msgstr ""
+">>> import datetime as dt\n"
+">>> dt.datetime(2002, 12, 4, 20, 30, 40).ctime()\n"
+"'Wed Dec  4 20:30:40 2002'"
 
 msgid ""
 "The output string will *not* include time zone information, regardless of "
@@ -1922,6 +2284,8 @@ msgstr ""
 msgid "Examples of working with :class:`.datetime` objects:"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import datetime as dt\n"
 "\n"
@@ -1935,12 +2299,12 @@ msgid ""
 ">>> dt.datetime.now()\n"
 "datetime.datetime(2007, 12, 6, 16, 29, 43, 79043)   # GMT +1\n"
 ">>> dt.datetime.now(dt.timezone.utc)\n"
-"datetime.datetime(2007, 12, 6, 15, 29, 43, 79060, tzinfo=datetime.timezone."
-"utc)\n"
+"datetime.datetime(2007, 12, 6, 15, 29, 43, 79060, "
+"tzinfo=datetime.timezone.utc)\n"
 "\n"
 ">>> # Using datetime.strptime()\n"
-">>> my_datetime = dt.datetime.strptime(\"21/11/06 16:30\", \"%d/%m/%y %H:"
-"%M\")\n"
+">>> my_datetime = dt.datetime.strptime(\"21/11/06 16:30\", \"%d/%m/%y "
+"%H:%M\")\n"
 ">>> my_datetime\n"
 "datetime.datetime(2006, 11, 21, 16, 30)\n"
 "\n"
@@ -1971,10 +2335,61 @@ msgid ""
 ">>> # Formatting a datetime\n"
 ">>> my_datetime.strftime(\"%A, %d. %B %Y %I:%M%p\")\n"
 "'Tuesday, 21. November 2006 04:30PM'\n"
-">>> 'The {1} is {0:%d}, the {2} is {0:%B}, the {3} is {0:%I:%M%p}.'."
-"format(my_datetime, \"day\", \"month\", \"time\")\n"
+">>> 'The {1} is {0:%d}, the {2} is {0:%B}, the {3} is "
+"{0:%I:%M%p}.'.format(my_datetime, \"day\", \"month\", \"time\")\n"
 "'The day is 21, the month is November, the time is 04:30PM.'"
 msgstr ""
+">>> import datetime as dt\n"
+"\n"
+">>> # Using datetime.combine()\n"
+">>> d = dt.date(2005, 7, 14)\n"
+">>> t = dt.time(12, 30)\n"
+">>> dt.datetime.combine(d, t)\n"
+"datetime.datetime(2005, 7, 14, 12, 30)\n"
+"\n"
+">>> # Using datetime.now()\n"
+">>> dt.datetime.now()\n"
+"datetime.datetime(2007, 12, 6, 16, 29, 43, 79043)   # GMT +1\n"
+">>> dt.datetime.now(dt.timezone.utc)\n"
+"datetime.datetime(2007, 12, 6, 15, 29, 43, 79060, "
+"tzinfo=datetime.timezone.utc)\n"
+"\n"
+">>> # Using datetime.strptime()\n"
+">>> my_datetime = dt.datetime.strptime(\"21/11/06 16:30\", \"%d/%m/%y "
+"%H:%M\")\n"
+">>> my_datetime\n"
+"datetime.datetime(2006, 11, 21, 16, 30)\n"
+"\n"
+">>> # Using datetime.timetuple() to get tuple of all attributes\n"
+">>> tt = my_datetime.timetuple()\n"
+">>> for it in tt:\n"
+"...     print(it)\n"
+"...\n"
+"2006    # year\n"
+"11      # month\n"
+"21      # day\n"
+"16      # hour\n"
+"30      # minute\n"
+"0       # second\n"
+"1       # weekday (0 = Monday)\n"
+"325     # number of days since 1st January\n"
+"-1      # dst - method tzinfo.dst() returned None\n"
+"\n"
+">>> # Date in ISO format\n"
+">>> ic = my_datetime.isocalendar()\n"
+">>> for it in ic:\n"
+"...     print(it)\n"
+"...\n"
+"2006    # ISO year\n"
+"47      # ISO week\n"
+"2       # ISO weekday\n"
+"\n"
+">>> # Formatting a datetime\n"
+">>> my_datetime.strftime(\"%A, %d. %B %Y %I:%M%p\")\n"
+"'Tuesday, 21. November 2006 04:30PM'\n"
+">>> 'The {1} is {0:%d}, the {2} is {0:%B}, the {3} is "
+"{0:%I:%M%p}.'.format(my_datetime, \"day\", \"month\", \"time\")\n"
+"'The day is 21, the month is November, the time is 04:30PM.'"
 
 msgid ""
 "The example below defines a :class:`tzinfo` subclass capturing time zone "
@@ -1982,6 +2397,8 @@ msgid ""
 "+4:30 UTC thereafter::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import datetime as dt\n"
 "\n"
@@ -2027,10 +2444,55 @@ msgid ""
 "            return \"+04:30\"\n"
 "        return \"+04\""
 msgstr ""
+"import datetime as dt\n"
+"\n"
+"class KabulTz(dt.tzinfo):\n"
+"    # Kabul used +4 until 1945, when they moved to +4:30\n"
+"    UTC_MOVE_DATE = dt.datetime(1944, 12, 31, 20, tzinfo=dt.timezone.utc)\n"
+"\n"
+"    def utcoffset(self, when):\n"
+"        if when.year < 1945:\n"
+"            return dt.timedelta(hours=4)\n"
+"        elif (1945, 1, 1, 0, 0) <= when.timetuple()[:5] < (1945, 1, 1, 0, "
+"30):\n"
+"            # An ambiguous (\"imaginary\") half-hour range representing\n"
+"            # a 'fold' in time due to the shift from +4 to +4:30.\n"
+"            # If when falls in the imaginary range, use fold to decide how\n"
+"            # to resolve. See PEP 495.\n"
+"            return dt.timedelta(hours=4, minutes=(30 if when.fold else 0))\n"
+"        else:\n"
+"            return dt.timedelta(hours=4, minutes=30)\n"
+"\n"
+"    def fromutc(self, when):\n"
+"        # Follow same validations as in datetime.tzinfo\n"
+"        if not isinstance(when, dt.datetime):\n"
+"            raise TypeError(\"fromutc() requires a datetime argument\")\n"
+"        if when.tzinfo is not self:\n"
+"            raise ValueError(\"when.tzinfo is not self\")\n"
+"\n"
+"        # A custom implementation is required for fromutc as\n"
+"        # the input to this function is a datetime with utc values\n"
+"        # but with a tzinfo set to self.\n"
+"        # See datetime.astimezone or fromtimestamp.\n"
+"        if when.replace(tzinfo=dt.timezone.utc) >= self.UTC_MOVE_DATE:\n"
+"            return when + dt.timedelta(hours=4, minutes=30)\n"
+"        else:\n"
+"            return when + dt.timedelta(hours=4)\n"
+"\n"
+"    def dst(self, when):\n"
+"        # Kabul does not observe daylight saving time.\n"
+"        return dt.timedelta(0)\n"
+"\n"
+"    def tzname(self, when):\n"
+"        if when >= self.UTC_MOVE_DATE:\n"
+"            return \"+04:30\"\n"
+"        return \"+04\""
 
 msgid "Usage of ``KabulTz`` from above::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> tz1 = KabulTz()\n"
 "\n"
@@ -2053,6 +2515,26 @@ msgid ""
 ">>> dt2 == dt3\n"
 "True"
 msgstr ""
+">>> tz1 = KabulTz()\n"
+"\n"
+">>> # Datetime before the change\n"
+">>> dt1 = dt.datetime(1900, 11, 21, 16, 30, tzinfo=tz1)\n"
+">>> print(dt1.utcoffset())\n"
+"4:00:00\n"
+"\n"
+">>> # Datetime after the change\n"
+">>> dt2 = dt.datetime(2006, 6, 14, 13, 0, tzinfo=tz1)\n"
+">>> print(dt2.utcoffset())\n"
+"4:30:00\n"
+"\n"
+">>> # Convert datetime to another time zone\n"
+">>> dt3 = dt2.astimezone(dt.timezone.utc)\n"
+">>> dt3\n"
+"datetime.datetime(2006, 6, 14, 8, 30, tzinfo=datetime.timezone.utc)\n"
+">>> dt2\n"
+"datetime.datetime(2006, 6, 14, 13, 0, tzinfo=KabulTz())\n"
+">>> dt2 == dt3\n"
+"True"
 
 msgid ":class:`!time` objects"
 msgstr ""
@@ -2145,6 +2627,8 @@ msgstr ""
 msgid "Examples:"
 msgstr "Ví dụ:"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import datetime as dt\n"
 ">>> dt.time.fromisoformat('04:23:01')\n"
@@ -2158,13 +2642,31 @@ msgid ""
 ">>> dt.time.fromisoformat('04:23:01,000384')\n"
 "datetime.time(4, 23, 1, 384)\n"
 ">>> dt.time.fromisoformat('04:23:01+04:00')\n"
-"datetime.time(4, 23, 1, tzinfo=datetime.timezone(datetime."
-"timedelta(seconds=14400)))\n"
+"datetime.time(4, 23, 1, "
+"tzinfo=datetime.timezone(datetime.timedelta(seconds=14400)))\n"
 ">>> dt.time.fromisoformat('04:23:01Z')\n"
 "datetime.time(4, 23, 1, tzinfo=datetime.timezone.utc)\n"
 ">>> dt.time.fromisoformat('04:23:01+00:00')\n"
 "datetime.time(4, 23, 1, tzinfo=datetime.timezone.utc)"
 msgstr ""
+">>> import datetime as dt\n"
+">>> dt.time.fromisoformat('04:23:01')\n"
+"datetime.time(4, 23, 1)\n"
+">>> dt.time.fromisoformat('T04:23:01')\n"
+"datetime.time(4, 23, 1)\n"
+">>> dt.time.fromisoformat('T042301')\n"
+"datetime.time(4, 23, 1)\n"
+">>> dt.time.fromisoformat('04:23:01.000384')\n"
+"datetime.time(4, 23, 1, 384)\n"
+">>> dt.time.fromisoformat('04:23:01,000384')\n"
+"datetime.time(4, 23, 1, 384)\n"
+">>> dt.time.fromisoformat('04:23:01+04:00')\n"
+"datetime.time(4, 23, 1, "
+"tzinfo=datetime.timezone(datetime.timedelta(seconds=14400)))\n"
+">>> dt.time.fromisoformat('04:23:01Z')\n"
+"datetime.time(4, 23, 1, tzinfo=datetime.timezone.utc)\n"
+">>> dt.time.fromisoformat('04:23:01+00:00')\n"
+"datetime.time(4, 23, 1, tzinfo=datetime.timezone.utc)"
 
 msgid ""
 "Previously, this method only supported formats that could be emitted by :"
@@ -2181,8 +2683,10 @@ msgid ""
 "equivalent to::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "time(*(time.strptime(date_string, format)[3:6]))"
-msgstr ""
+msgstr "time(*(time.strptime(date_string, format)[3:6]))"
 
 msgid ""
 ":exc:`ValueError` is raised if the *date_string* and *format* cannot be "
@@ -2225,10 +2729,12 @@ msgstr ""
 msgid ":exc:`ValueError` will be raised on an invalid *timespec* argument."
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import datetime as dt\n"
-">>> dt.time(hour=12, minute=34, second=56, microsecond=123456)."
-"isoformat(timespec='minutes')\n"
+">>> dt.time(hour=12, minute=34, second=56, "
+"microsecond=123456).isoformat(timespec='minutes')\n"
 "'12:34'\n"
 ">>> my_time = dt.time(hour=12, minute=34, second=56, microsecond=0)\n"
 ">>> my_time.isoformat(timespec='microseconds')\n"
@@ -2236,6 +2742,15 @@ msgid ""
 ">>> my_time.isoformat(timespec='auto')\n"
 "'12:34:56'"
 msgstr ""
+">>> import datetime as dt\n"
+">>> dt.time(hour=12, minute=34, second=56, "
+"microsecond=123456).isoformat(timespec='minutes')\n"
+"'12:34'\n"
+">>> my_time = dt.time(hour=12, minute=34, second=56, microsecond=0)\n"
+">>> my_time.isoformat(timespec='microseconds')\n"
+"'12:34:56.000000'\n"
+">>> my_time.isoformat(timespec='auto')\n"
+"'12:34:56'"
 
 msgid "For a time ``t``, ``str(t)`` is equivalent to ``t.isoformat()``."
 msgstr ""
@@ -2277,6 +2792,8 @@ msgstr ""
 msgid "Examples of working with a :class:`.time` object::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import datetime as dt\n"
 ">>> class TZ1(dt.tzinfo):\n"
@@ -2303,6 +2820,30 @@ msgid ""
 ">>> 'The {} is {:%H:%M}.'.format(\"time\", t)\n"
 "'The time is 12:10.'"
 msgstr ""
+">>> import datetime as dt\n"
+">>> class TZ1(dt.tzinfo):\n"
+"...     def utcoffset(self, when):\n"
+"...         return dt.timedelta(hours=1)\n"
+"...     def dst(self, when):\n"
+"...         return dt.timedelta(0)\n"
+"...     def tzname(self, when):\n"
+"...         return \"+01:00\"\n"
+"...     def  __repr__(self):\n"
+"...         return f\"{self.__class__.__name__}()\"\n"
+"...\n"
+">>> t = dt.time(12, 10, 30, tzinfo=TZ1())\n"
+">>> t\n"
+"datetime.time(12, 10, 30, tzinfo=TZ1())\n"
+">>> t.isoformat()\n"
+"'12:10:30+01:00'\n"
+">>> t.dst()\n"
+"datetime.timedelta(0)\n"
+">>> t.tzname()\n"
+"'+01:00'\n"
+">>> t.strftime(\"%H:%M:%S %Z\")\n"
+"'12:10:30 +01:00'\n"
+">>> 'The {} is {:%H:%M}.'.format(\"time\", t)\n"
+"'The time is 12:10.'"
 
 msgid ":class:`!tzinfo` objects"
 msgstr ""
@@ -2396,8 +2937,10 @@ msgid ""
 "daylight times must be consistent in this sense:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``tz.utcoffset(dt) - tz.dst(dt)``"
-msgstr ""
+msgstr "``tz.utcoffset(dt) - tz.dst(dt)``"
 
 msgid ""
 "must return the same result for every :class:`.datetime` *dt* with ``dt."
@@ -2416,6 +2959,8 @@ msgid ""
 "two::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import datetime as dt\n"
 "\n"
@@ -2423,10 +2968,17 @@ msgid ""
 "    # a fixed-offset class:  doesn't account for DST\n"
 "    return dt.timedelta(0)"
 msgstr ""
+"import datetime as dt\n"
+"\n"
+"def dst(self, when):\n"
+"    # a fixed-offset class:  doesn't account for DST\n"
+"    return dt.timedelta(0)"
 
 msgid "or::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import datetime as dt\n"
 "\n"
@@ -2440,6 +2992,17 @@ msgid ""
 "    else:\n"
 "        return dt.timedelta(0)"
 msgstr ""
+"import datetime as dt\n"
+"\n"
+"def dst(self, when):\n"
+"    # Code to set dston and dstoff to the time zone's DST\n"
+"    # transition times based on the input when.year, and expressed\n"
+"    # in standard local time.\n"
+"\n"
+"    if dston <= when.replace(tzinfo=None) < dstoff:\n"
+"        return dt.timedelta(hours=1)\n"
+"    else:\n"
+"        return dt.timedelta(0)"
 
 msgid ""
 "The default implementation of :meth:`dst` raises :exc:`NotImplementedError`."
@@ -2521,6 +3084,8 @@ msgid ""
 "acts like::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import datetime as dt\n"
 "\n"
@@ -2539,12 +3104,30 @@ msgid ""
 "    else:\n"
 "        return when"
 msgstr ""
+"import datetime as dt\n"
+"\n"
+"def fromutc(self, when):\n"
+"    # raise ValueError error if when.tzinfo is not self\n"
+"    dtoff = when.utcoffset()\n"
+"    dtdst = when.dst()\n"
+"    # raise ValueError if dtoff is None or dtdst is None\n"
+"    delta = dtoff - dtdst  # this is self's standard offset\n"
+"    if delta:\n"
+"        when += delta   # convert to standard local time\n"
+"        dtdst = when.dst()\n"
+"        # raise ValueError if dtdst is None\n"
+"    if dtdst:\n"
+"        return when + dtdst\n"
+"    else:\n"
+"        return when"
 
 msgid ""
 "In the following :download:`tzinfo_examples.py <../includes/tzinfo_examples."
 "py>` file there are some examples of :class:`tzinfo` classes:"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import datetime as dt\n"
 "\n"
@@ -2726,6 +3309,185 @@ msgid ""
 "Mountain = USTimeZone(-7, \"Mountain\", \"MST\", \"MDT\")\n"
 "Pacific  = USTimeZone(-8, \"Pacific\",  \"PST\", \"PDT\")\n"
 msgstr ""
+"import datetime as dt\n"
+"\n"
+"# A class capturing the platform's idea of local time.\n"
+"# (May result in wrong values on historical times in\n"
+"#  timezones where UTC offset and/or the DST rules had\n"
+"#  changed in the past.)\n"
+"import time\n"
+"\n"
+"ZERO = dt.timedelta(0)\n"
+"HOUR = dt.timedelta(hours=1)\n"
+"SECOND = dt.timedelta(seconds=1)\n"
+"\n"
+"STDOFFSET = dt.timedelta(seconds=-time.timezone)\n"
+"if time.daylight:\n"
+"    DSTOFFSET = dt.timedelta(seconds=-time.altzone)\n"
+"else:\n"
+"    DSTOFFSET = STDOFFSET\n"
+"\n"
+"DSTDIFF = DSTOFFSET - STDOFFSET\n"
+"\n"
+"\n"
+"class LocalTimezone(dt.tzinfo):\n"
+"\n"
+"    def fromutc(self, when):\n"
+"        assert when.tzinfo is self\n"
+"        stamp = (when - dt.datetime(1970, 1, 1, tzinfo=self)) // SECOND\n"
+"        args = time.localtime(stamp)[:6]\n"
+"        dst_diff = DSTDIFF // SECOND\n"
+"        # Detect fold\n"
+"        fold = (args == time.localtime(stamp - dst_diff))\n"
+"        return dt.datetime(*args, microsecond=when.microsecond,\n"
+"                           tzinfo=self, fold=fold)\n"
+"\n"
+"    def utcoffset(self, when):\n"
+"        if self._isdst(when):\n"
+"            return DSTOFFSET\n"
+"        else:\n"
+"            return STDOFFSET\n"
+"\n"
+"    def dst(self, when):\n"
+"        if self._isdst(when):\n"
+"            return DSTDIFF\n"
+"        else:\n"
+"            return ZERO\n"
+"\n"
+"    def tzname(self, when):\n"
+"        return time.tzname[self._isdst(when)]\n"
+"\n"
+"    def _isdst(self, when):\n"
+"        tt = (when.year, when.month, when.day,\n"
+"              when.hour, when.minute, when.second,\n"
+"              when.weekday(), 0, 0)\n"
+"        stamp = time.mktime(tt)\n"
+"        tt = time.localtime(stamp)\n"
+"        return tt.tm_isdst > 0\n"
+"\n"
+"\n"
+"Local = LocalTimezone()\n"
+"\n"
+"\n"
+"# A complete implementation of current DST rules for major US time zones.\n"
+"\n"
+"def first_sunday_on_or_after(when):\n"
+"    days_to_go = 6 - when.weekday()\n"
+"    if days_to_go:\n"
+"        when += dt.timedelta(days_to_go)\n"
+"    return when\n"
+"\n"
+"\n"
+"# US DST Rules\n"
+"#\n"
+"# This is a simplified (i.e., wrong for a few cases) set of rules for US\n"
+"# DST start and end times. For a complete and up-to-date set of DST rules\n"
+"# and timezone definitions, visit the Olson Database (or try pytz):\n"
+"# http://www.twinsun.com/tz/tz-link.htm\n"
+"# https://sourceforge.net/projects/pytz/ (might not be up-to-date)\n"
+"#\n"
+"# In the US, since 2007, DST starts at 2am (standard time) on the second\n"
+"# Sunday in March, which is the first Sunday on or after Mar 8.\n"
+"DSTSTART_2007 = dt.datetime(1, 3, 8, 2)\n"
+"# and ends at 2am (DST time) on the first Sunday of Nov.\n"
+"DSTEND_2007 = dt.datetime(1, 11, 1, 2)\n"
+"# From 1987 to 2006, DST used to start at 2am (standard time) on the first\n"
+"# Sunday in April and to end at 2am (DST time) on the last\n"
+"# Sunday of October, which is the first Sunday on or after Oct 25.\n"
+"DSTSTART_1987_2006 = dt.datetime(1, 4, 1, 2)\n"
+"DSTEND_1987_2006 = dt.datetime(1, 10, 25, 2)\n"
+"# From 1967 to 1986, DST used to start at 2am (standard time) on the last\n"
+"# Sunday in April (the one on or after April 24) and to end at 2am (DST "
+"time)\n"
+"# on the last Sunday of October, which is the first Sunday\n"
+"# on or after Oct 25.\n"
+"DSTSTART_1967_1986 = dt.datetime(1, 4, 24, 2)\n"
+"DSTEND_1967_1986 = DSTEND_1987_2006\n"
+"\n"
+"\n"
+"def us_dst_range(year):\n"
+"    # Find start and end times for US DST. For years before 1967, return\n"
+"    # start = end for no DST.\n"
+"    if 2006 < year:\n"
+"        dststart, dstend = DSTSTART_2007, DSTEND_2007\n"
+"    elif 1986 < year < 2007:\n"
+"        dststart, dstend = DSTSTART_1987_2006, DSTEND_1987_2006\n"
+"    elif 1966 < year < 1987:\n"
+"        dststart, dstend = DSTSTART_1967_1986, DSTEND_1967_1986\n"
+"    else:\n"
+"        return (dt.datetime(year, 1, 1), ) * 2\n"
+"\n"
+"    start = first_sunday_on_or_after(dststart.replace(year=year))\n"
+"    end = first_sunday_on_or_after(dstend.replace(year=year))\n"
+"    return start, end\n"
+"\n"
+"\n"
+"class USTimeZone(dt.tzinfo):\n"
+"\n"
+"    def __init__(self, hours, reprname, stdname, dstname):\n"
+"        self.stdoffset = dt.timedelta(hours=hours)\n"
+"        self.reprname = reprname\n"
+"        self.stdname = stdname\n"
+"        self.dstname = dstname\n"
+"\n"
+"    def __repr__(self):\n"
+"        return self.reprname\n"
+"\n"
+"    def tzname(self, when):\n"
+"        if self.dst(when):\n"
+"            return self.dstname\n"
+"        else:\n"
+"            return self.stdname\n"
+"\n"
+"    def utcoffset(self, when):\n"
+"        return self.stdoffset + self.dst(when)\n"
+"\n"
+"    def dst(self, when):\n"
+"        if when is None or when.tzinfo is None:\n"
+"            # An exception may be sensible here, in one or both cases.\n"
+"            # It depends on how you want to treat them.  The default\n"
+"            # fromutc() implementation (called by the default astimezone()\n"
+"            # implementation) passes a datetime with when.tzinfo is self.\n"
+"            return ZERO\n"
+"        assert when.tzinfo is self\n"
+"        start, end = us_dst_range(when.year)\n"
+"        # Can't compare naive to aware objects, so strip the timezone from\n"
+"        # when first.\n"
+"        when = when.replace(tzinfo=None)\n"
+"        if start + HOUR <= when < end - HOUR:\n"
+"            # DST is in effect.\n"
+"            return HOUR\n"
+"        if end - HOUR <= when < end:\n"
+"            # Fold (an ambiguous hour): use when.fold to disambiguate.\n"
+"            return ZERO if when.fold else HOUR\n"
+"        if start <= when < start + HOUR:\n"
+"            # Gap (a non-existent hour): reverse the fold rule.\n"
+"            return HOUR if when.fold else ZERO\n"
+"        # DST is off.\n"
+"        return ZERO\n"
+"\n"
+"    def fromutc(self, when):\n"
+"        assert when.tzinfo is self\n"
+"        start, end = us_dst_range(when.year)\n"
+"        start = start.replace(tzinfo=self)\n"
+"        end = end.replace(tzinfo=self)\n"
+"        std_time = when + self.stdoffset\n"
+"        dst_time = std_time + HOUR\n"
+"        if end <= dst_time < end + HOUR:\n"
+"            # Repeated hour\n"
+"            return std_time.replace(fold=1)\n"
+"        if std_time < start or dst_time >= end:\n"
+"            # Standard time\n"
+"            return std_time\n"
+"        if start <= std_time < end - HOUR:\n"
+"            # Daylight saving time\n"
+"            return dst_time\n"
+"\n"
+"\n"
+"Eastern  = USTimeZone(-5, \"Eastern\",  \"EST\", \"EDT\")\n"
+"Central  = USTimeZone(-6, \"Central\",  \"CST\", \"CDT\")\n"
+"Mountain = USTimeZone(-7, \"Mountain\", \"MST\", \"MDT\")\n"
+"Pacific  = USTimeZone(-8, \"Pacific\",  \"PST\", \"PDT\")\n"
 
 msgid ""
 "Note that there are unavoidable subtleties twice per year in a :class:"
@@ -2735,6 +3497,8 @@ msgid ""
 "ends the minute after 1:59 (EDT) on the first Sunday in November::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "  UTC   3:MM  4:MM  5:MM  6:MM  7:MM  8:MM\n"
 "  EST  22:MM 23:MM  0:MM  1:MM  2:MM  3:MM\n"
@@ -2744,6 +3508,13 @@ msgid ""
 "\n"
 "  end  23:MM  0:MM  1:MM  1:MM  2:MM  3:MM"
 msgstr ""
+"  UTC   3:MM  4:MM  5:MM  6:MM  7:MM  8:MM\n"
+"  EST  22:MM 23:MM  0:MM  1:MM  2:MM  3:MM\n"
+"  EDT  23:MM  0:MM  1:MM  2:MM  3:MM  4:MM\n"
+"\n"
+"start  22:MM 23:MM  0:MM  1:MM  3:MM  4:MM\n"
+"\n"
+"  end  23:MM  0:MM  1:MM  1:MM  2:MM  3:MM"
 
 msgid ""
 "When DST starts (the \"start\" line), the local wall clock leaps from 1:59 "
@@ -2753,6 +3524,8 @@ msgid ""
 "get::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import datetime as dt\n"
 ">>> from tzinfo_examples import HOUR, Eastern\n"
@@ -2767,6 +3540,18 @@ msgid ""
 "07:00:00 UTC = 03:00:00 EDT\n"
 "08:00:00 UTC = 04:00:00 EDT"
 msgstr ""
+">>> import datetime as dt\n"
+">>> from tzinfo_examples import HOUR, Eastern\n"
+">>> u0 = dt.datetime(2016, 3, 13, 5, tzinfo=dt.timezone.utc)\n"
+">>> for i in range(4):\n"
+"...     u = u0 + i*HOUR\n"
+"...     t = u.astimezone(Eastern)\n"
+"...     print(u.time(), 'UTC =', t.time(), t.tzname())\n"
+"...\n"
+"05:00:00 UTC = 00:00:00 EST\n"
+"06:00:00 UTC = 01:00:00 EST\n"
+"07:00:00 UTC = 03:00:00 EDT\n"
+"08:00:00 UTC = 04:00:00 EDT"
 
 msgid ""
 "When DST ends (the \"end\" line), there's a potentially worse problem: "
@@ -2782,6 +3567,8 @@ msgid ""
 "Fall back transition of 2016, we get::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import datetime as dt\n"
 ">>> from tzinfo_examples import HOUR, Eastern\n"
@@ -2796,6 +3583,18 @@ msgid ""
 "06:00:00 UTC = 01:00:00 EST 1\n"
 "07:00:00 UTC = 02:00:00 EST 0"
 msgstr ""
+">>> import datetime as dt\n"
+">>> from tzinfo_examples import HOUR, Eastern\n"
+">>> u0 = dt.datetime(2016, 11, 6, 4, tzinfo=dt.timezone.utc)\n"
+">>> for i in range(4):\n"
+"...     u = u0 + i*HOUR\n"
+"...     t = u.astimezone(Eastern)\n"
+"...     print(u.time(), 'UTC =', t.time(), t.tzname(), t.fold)\n"
+"...\n"
+"04:00:00 UTC = 00:00:00 EDT 0\n"
+"05:00:00 UTC = 01:00:00 EDT 0\n"
+"06:00:00 UTC = 01:00:00 EST 1\n"
+"07:00:00 UTC = 02:00:00 EST 0"
 
 msgid ""
 "Note that the :class:`.datetime` instances that differ only by the value of "
@@ -2811,8 +3610,10 @@ msgid ""
 "offset -4 hours))."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`zoneinfo`"
-msgstr ""
+msgstr ":mod:`zoneinfo`"
 
 msgid ""
 "The :mod:`!datetime` module has a basic :class:`timezone` class (for "
@@ -2916,14 +3717,20 @@ msgid ""
 "strftime` versus :meth:`~.datetime.strptime`:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``strftime``"
-msgstr ""
+msgstr "``strftime``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``strptime``"
-msgstr ""
+msgstr "``strptime``"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Usage"
-msgstr ""
+msgstr "Usage"
 
 msgid "Convert object to a string according to a given format"
 msgstr ""
@@ -2940,14 +3747,20 @@ msgstr ""
 msgid "Class method"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Signature"
-msgstr ""
+msgstr "Signature"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``strftime(format)``"
-msgstr ""
+msgstr "``strftime(format)``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``strptime(date_string, format)``"
-msgstr ""
+msgstr "``strptime(date_string, format)``"
 
 msgid ":meth:`!strftime` and :meth:`!strptime` format codes"
 msgstr ""
@@ -2957,6 +3770,8 @@ msgid ""
 "dates::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import datetime as dt\n"
 ">>> dt.datetime.strptime('31/01/22 23:59:59.999999',\n"
@@ -2965,26 +3780,40 @@ msgid ""
 ">>> _.strftime('%a %d %b %Y, %I:%M%p')\n"
 "'Mon 31 Jan 2022, 11:59PM'"
 msgstr ""
+">>> import datetime as dt\n"
+">>> dt.datetime.strptime('31/01/22 23:59:59.999999',\n"
+"...                      '%d/%m/%y %H:%M:%S.%f')\n"
+"datetime.datetime(2022, 1, 31, 23, 59, 59, 999999)\n"
+">>> _.strftime('%a %d %b %Y, %I:%M%p')\n"
+"'Mon 31 Jan 2022, 11:59PM'"
 
 msgid ""
-"The following is a list of all the format codes that the 1989 C standard "
-"requires, and these work on all platforms with a standard C implementation."
+"The following is a list of all the format codes that the 2011 C standard "
+"requires, and these work on all supported platforms."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Directive"
-msgstr ""
+msgstr "Directive"
 
 msgid "Meaning"
-msgstr ""
+msgstr "Ý nghĩa"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Example"
-msgstr ""
+msgstr "Example"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Notes"
-msgstr ""
+msgstr "Notes"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``%a``"
-msgstr ""
+msgstr "``%a``"
 
 msgid "Weekday as locale's abbreviated name."
 msgstr ""
@@ -2995,8 +3824,10 @@ msgstr ""
 msgid "So, Mo, ..., Sa (de_DE)"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``%A``"
-msgstr ""
+msgstr "``%A``"
 
 msgid "Weekday as locale's full name."
 msgstr ""
@@ -3007,29 +3838,10 @@ msgstr ""
 msgid "Sonntag, Montag, ..., Samstag (de_DE)"
 msgstr ""
 
-msgid "``%w``"
-msgstr ""
-
-msgid "Weekday as a decimal number, where 0 is Sunday and 6 is Saturday."
-msgstr ""
-
-msgid "0, 1, ..., 6"
-msgstr ""
-
-msgid "``%d``"
-msgstr ""
-
-msgid "Day of the month as a zero-padded decimal number."
-msgstr ""
-
-msgid "01, 02, ..., 31"
-msgstr ""
-
-msgid "\\(9)"
-msgstr ""
-
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``%b``"
-msgstr ""
+msgstr "``%b``"
 
 msgid "Month as locale's abbreviated name."
 msgstr ""
@@ -3040,8 +3852,10 @@ msgstr ""
 msgid "Jan, Feb, ..., Dez (de_DE)"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``%B``"
-msgstr ""
+msgstr "``%B``"
 
 msgid "Month as locale's full name."
 msgstr ""
@@ -3052,151 +3866,10 @@ msgstr ""
 msgid "Januar, Februar, ..., Dezember (de_DE)"
 msgstr ""
 
-msgid "``%m``"
-msgstr ""
-
-msgid "Month as a zero-padded decimal number."
-msgstr ""
-
-msgid "01, 02, ..., 12"
-msgstr ""
-
-msgid "``%y``"
-msgstr ""
-
-msgid "Year without century as a zero-padded decimal number."
-msgstr ""
-
-msgid "00, 01, ..., 99"
-msgstr ""
-
-msgid "``%Y``"
-msgstr ""
-
-msgid "Year with century as a decimal number."
-msgstr ""
-
-msgid "0001, 0002, ..., 2013, 2014, ..., 9998, 9999"
-msgstr ""
-
-msgid "``%H``"
-msgstr ""
-
-msgid "Hour (24-hour clock) as a zero-padded decimal number."
-msgstr ""
-
-msgid "00, 01, ..., 23"
-msgstr ""
-
-msgid "``%I``"
-msgstr ""
-
-msgid "Hour (12-hour clock) as a zero-padded decimal number."
-msgstr ""
-
-msgid "``%p``"
-msgstr ""
-
-msgid "Locale's equivalent of either AM or PM."
-msgstr ""
-
-msgid "AM, PM (en_US);"
-msgstr ""
-
-msgid "am, pm (de_DE)"
-msgstr ""
-
-msgid "\\(1), \\(3)"
-msgstr ""
-
-msgid "``%M``"
-msgstr ""
-
-msgid "Minute as a zero-padded decimal number."
-msgstr ""
-
-msgid "00, 01, ..., 59"
-msgstr ""
-
-msgid "``%S``"
-msgstr ""
-
-msgid "Second as a zero-padded decimal number."
-msgstr ""
-
-msgid "\\(4), \\(9)"
-msgstr ""
-
-msgid "``%f``"
-msgstr ""
-
-msgid "Microsecond as a decimal number, zero-padded to 6 digits."
-msgstr ""
-
-msgid "000000, 000001, ..., 999999"
-msgstr ""
-
-msgid "\\(5)"
-msgstr ""
-
-msgid "``%z``"
-msgstr ""
-
-msgid ""
-"UTC offset in the form ``±HHMM[SS[.ffffff]]`` (empty string if the object is "
-"naive)."
-msgstr ""
-
-msgid "(empty), +0000, -0400, +1030, +063415, -030712.345216"
-msgstr ""
-
-msgid "\\(6)"
-msgstr ""
-
-msgid "``%Z``"
-msgstr ""
-
-msgid "Time zone name (empty string if the object is naive)."
-msgstr ""
-
-msgid "(empty), UTC, GMT"
-msgstr ""
-
-msgid "``%j``"
-msgstr ""
-
-msgid "Day of the year as a zero-padded decimal number."
-msgstr ""
-
-msgid "001, 002, ..., 366"
-msgstr ""
-
-msgid "``%U``"
-msgstr ""
-
-msgid ""
-"Week number of the year (Sunday as the first day of the week) as a zero-"
-"padded decimal number. All days in a new year preceding the first Sunday are "
-"considered to be in week 0."
-msgstr ""
-
-msgid "00, 01, ..., 53"
-msgstr ""
-
-msgid "\\(7), \\(9)"
-msgstr ""
-
-msgid "``%W``"
-msgstr ""
-
-msgid ""
-"Week number of the year (Monday as the first day of the week) as a zero-"
-"padded decimal number. All days in a new year preceding the first Monday are "
-"considered to be in week 0."
-msgstr ""
-
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``%c``"
-msgstr ""
+msgstr "``%c``"
 
 msgid "Locale's appropriate date and time representation."
 msgstr ""
@@ -3207,8 +3880,385 @@ msgstr ""
 msgid "Di 16 Aug 21:30:00 1988 (de_DE)"
 msgstr ""
 
-msgid "``%x``"
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "``%C``"
+msgstr "``%C``"
+
+msgid ""
+"The year divided by 100 and truncated to an integer as a zero-padded decimal "
+"number."
 msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "01, 02, ..., 99"
+msgstr "01, 02, ..., 99"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "\\(0)"
+msgstr "\\(0)"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "``%d``"
+msgstr "``%d``"
+
+msgid "Day of the month as a zero-padded decimal number."
+msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "01, 02, ..., 31"
+msgstr "01, 02, ..., 31"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "\\(9), \\(10)"
+msgstr "\\(9), \\(10)"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "``%D``"
+msgstr "``%D``"
+
+msgid "Equivalent to ``%m/%d/%y``."
+msgstr ""
+
+# pydocvi: passthrough=literal_block
+#, fuzzy
+msgid "11/28/25"
+msgstr "11/28/25"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "\\(9)"
+msgstr "\\(9)"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "``%e``"
+msgstr "``%e``"
+
+msgid "The day of the month as a space-padded decimal number."
+msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "␣1, ␣2, ..., 31"
+msgstr "␣1, ␣2, ..., 31"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "\\(10)"
+msgstr "\\(10)"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "``%F``"
+msgstr "``%F``"
+
+msgid "Equivalent to ``%Y-%m-%d``, the ISO 8601 format."
+msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "2025-10-11, 1001-12-30"
+msgstr "2025-10-11, 1001-12-30"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "``%g``"
+msgstr "``%g``"
+
+msgid ""
+"Last 2 digits of ISO 8601 year representing the year that contains the "
+"greater part of the ISO week (``%V``)."
+msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "00, 01, ..., 99"
+msgstr "00, 01, ..., 99"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "``%G``"
+msgstr "``%G``"
+
+msgid ""
+"ISO 8601 year with century representing the year that contains the greater "
+"part of the ISO week (``%V``)."
+msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "0001, 0002, ..., 2013, 2014, ..., 9998, 9999"
+msgstr "0001, 0002, ..., 2013, 2014, ..., 9998, 9999"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "\\(8)"
+msgstr "\\(8)"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "``%h``"
+msgstr "``%h``"
+
+msgid "Equivalent to ``%b``."
+msgstr ""
+
+msgid "See ``%b``."
+msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "``%H``"
+msgstr "``%H``"
+
+msgid "Hour (24-hour clock) as a zero-padded decimal number."
+msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "00, 01, ..., 23"
+msgstr "00, 01, ..., 23"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "``%I``"
+msgstr "``%I``"
+
+msgid "Hour (12-hour clock) as a zero-padded decimal number."
+msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "01, 02, ..., 12"
+msgstr "01, 02, ..., 12"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "``%j``"
+msgstr "``%j``"
+
+msgid "Day of the year as a zero-padded decimal number."
+msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "001, 002, ..., 366"
+msgstr "001, 002, ..., 366"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "``%m``"
+msgstr "``%m``"
+
+msgid "Month as a zero-padded decimal number."
+msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "``%M``"
+msgstr "``%M``"
+
+msgid "Minute as a zero-padded decimal number."
+msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "00, 01, ..., 59"
+msgstr "00, 01, ..., 59"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "``%n``"
+msgstr "``%n``"
+
+msgid ""
+"The newline character (``'\\n'``). For :meth:`!strptime`, zero or more "
+"whitespace."
+msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "``\\n``"
+msgstr "``\\n``"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "``%p``"
+msgstr "``%p``"
+
+msgid "Locale's equivalent of either AM or PM."
+msgstr ""
+
+msgid "AM, PM (en_US);"
+msgstr ""
+
+msgid "am, pm (de_DE)"
+msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "\\(1), \\(3)"
+msgstr "\\(1), \\(3)"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "``%r``"
+msgstr "``%r``"
+
+msgid "Locale's 12-hour clock time."
+msgstr ""
+
+msgid "12:00:00 AM"
+msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "\\(1), \\(0)"
+msgstr "\\(1), \\(0)"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "``%R``"
+msgstr "``%R``"
+
+msgid "Equivalent to ``%H:%M``."
+msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "10:01"
+msgstr "10:01"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "``%S``"
+msgstr "``%S``"
+
+msgid "Second as a zero-padded decimal number."
+msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "\\(4), \\(9)"
+msgstr "\\(4), \\(9)"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "``%t``"
+msgstr "``%t``"
+
+msgid ""
+"The tab character (``'\\t'``). For :meth:`!strptime`, zero or more "
+"whitespace."
+msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "``\\t``"
+msgstr "``\\t``"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "``%T``"
+msgstr "``%T``"
+
+msgid "ISO 8601 time format, equivalent to ``%H:%M:%S``."
+msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "10:01:59"
+msgstr "10:01:59"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "``%u``"
+msgstr "``%u``"
+
+msgid "ISO 8601 weekday as a decimal number where 1 is Monday."
+msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "1, 2, ..., 7"
+msgstr "1, 2, ..., 7"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "``%U``"
+msgstr "``%U``"
+
+msgid ""
+"Week number of the year (Sunday as the first day of the week) as a zero-"
+"padded decimal number. All days in a new year preceding the first Sunday are "
+"considered to be in week 0."
+msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "00, 01, ..., 53"
+msgstr "00, 01, ..., 53"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "\\(7), \\(9)"
+msgstr "\\(7), \\(9)"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "``%V``"
+msgstr "``%V``"
+
+msgid ""
+"ISO 8601 week as a decimal number with Monday as the first day of the week. "
+"Week 01 is the week containing Jan 4."
+msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "01, 02, ..., 53"
+msgstr "01, 02, ..., 53"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "\\(8), \\(9)"
+msgstr "\\(8), \\(9)"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "``%w``"
+msgstr "``%w``"
+
+msgid "Weekday as a decimal number, where 0 is Sunday and 6 is Saturday."
+msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "0, 1, ..., 6"
+msgstr "0, 1, ..., 6"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "``%W``"
+msgstr "``%W``"
+
+msgid ""
+"Week number of the year (Monday as the first day of the week) as a zero-"
+"padded decimal number. All days in a new year preceding the first Monday are "
+"considered to be in week 0."
+msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "``%x``"
+msgstr "``%x``"
 
 msgid "Locale's appropriate date representation."
 msgstr ""
@@ -3222,8 +4272,10 @@ msgstr ""
 msgid "16.08.1988 (de_DE)"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``%X``"
-msgstr ""
+msgstr "``%X``"
 
 msgid "Locale's appropriate time representation."
 msgstr ""
@@ -3234,56 +4286,98 @@ msgstr ""
 msgid "21:30:00 (de_DE)"
 msgstr ""
 
-msgid "``%%``"
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "``%y``"
+msgstr "``%y``"
+
+msgid "Year without century as a zero-padded decimal number."
 msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "``%Y``"
+msgstr "``%Y``"
+
+msgid "Year with century as a decimal number."
+msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "``%z``"
+msgstr "``%z``"
+
+msgid ""
+"UTC offset in the form ``±HHMM[SS[.ffffff]]`` (empty string if the object is "
+"naive)."
+msgstr ""
+
+msgid "(empty), +0000, -0400, +1030, +063415, -030712.345216"
+msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "\\(6)"
+msgstr "\\(6)"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "``%Z``"
+msgstr "``%Z``"
+
+msgid "Time zone name (empty string if the object is naive)."
+msgstr ""
+
+msgid "(empty), UTC, GMT"
+msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "``%%``"
+msgstr "``%%``"
 
 msgid "A literal ``'%'`` character."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "%"
+msgstr "%"
+
+msgid ""
+"The ISO 8601 year and ISO 8601 week directives are not interchangeable with "
+"the year and week number directives above. Calling :meth:`~.datetime."
+"strptime` with incomplete or ambiguous ISO 8601 directives will raise a :exc:"
+"`ValueError`."
 msgstr ""
 
 msgid ""
-"Several additional directives not required by the C89 standard are included "
-"for convenience. These parameters all correspond to ISO 8601 date values."
+"Several additional directives not required by the C11 standard are included "
+"for convenience."
 msgstr ""
 
-msgid "``%G``"
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "``%f``"
+msgstr "``%f``"
+
+msgid "Microsecond as a decimal number, zero-padded to 6 digits."
 msgstr ""
 
-msgid ""
-"ISO 8601 year with century representing the year that contains the greater "
-"part of the ISO week (``%V``)."
-msgstr ""
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "000000, 000001, ..., 999999"
+msgstr "000000, 000001, ..., 999999"
 
-msgid "\\(8)"
-msgstr ""
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "\\(5)"
+msgstr "\\(5)"
 
-msgid "``%u``"
-msgstr ""
-
-msgid "ISO 8601 weekday as a decimal number where 1 is Monday."
-msgstr ""
-
-msgid "1, 2, ..., 7"
-msgstr ""
-
-msgid "``%V``"
-msgstr ""
-
-msgid ""
-"ISO 8601 week as a decimal number with Monday as the first day of the week. "
-"Week 01 is the week containing Jan 4."
-msgstr ""
-
-msgid "01, 02, ..., 53"
-msgstr ""
-
-msgid "\\(8), \\(9)"
-msgstr ""
-
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``%:z``"
-msgstr ""
+msgstr "``%:z``"
 
 msgid ""
 "UTC offset in the form ``±HH:MM[:SS[.ffffff]]`` (empty string if the object "
@@ -3291,14 +4385,6 @@ msgid ""
 msgstr ""
 
 msgid "(empty), +00:00, -04:00, +10:30, +06:34:15, -03:07:12.345216"
-msgstr ""
-
-msgid ""
-"These may not be available on all platforms when used with the :meth:`~."
-"datetime.strftime` method. The ISO 8601 year and ISO 8601 week directives "
-"are not interchangeable with the year and week number directives above. "
-"Calling :meth:`~.datetime.strptime` with incomplete or ambiguous ISO 8601 "
-"directives will raise a :exc:`ValueError`."
 msgstr ""
 
 msgid ""
@@ -3313,7 +4399,12 @@ msgstr ""
 msgid "``%G``, ``%u`` and ``%V`` were added."
 msgstr ""
 
-msgid "``%:z`` was added."
+msgid "``%:z`` was added for :meth:`~.datetime.strftime`."
+msgstr ""
+
+msgid ""
+"``%D``, ``%F``, ``%n``, ``%t``, and ``%:z`` were added for :meth:`~.datetime."
+"strptime`."
 msgstr ""
 
 msgid "Technical detail"
@@ -3345,6 +4436,8 @@ msgid ""
 "year to partial date strings before parsing."
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import datetime as dt\n"
 ">>> value = \"2/29\"\n"
@@ -3355,6 +4448,14 @@ msgid ""
 ">>> dt.datetime.strptime(f\"1904 {value}\", \"%Y %m/%d\")\n"
 "datetime.datetime(1904, 2, 29, 0, 0)"
 msgstr ""
+">>> import datetime as dt\n"
+">>> value = \"2/29\"\n"
+">>> dt.datetime.strptime(value, \"%m/%d\")\n"
+"Traceback (most recent call last):\n"
+"...\n"
+"ValueError: day 29 must be in range 1..28 for month 2 in year 1900\n"
+">>> dt.datetime.strptime(f\"1904 {value}\", \"%Y %m/%d\")\n"
+"datetime.datetime(1904, 2, 29, 0, 0)"
 
 msgid "Using ``datetime.strptime(date_string, format)`` is equivalent to::"
 msgstr ""
@@ -3383,6 +4484,10 @@ msgid ""
 "also platform-dependent. On some platforms such code points are preserved "
 "intact in the output, while on others ``strftime`` may raise :exc:"
 "`UnicodeError` or return an empty string instead."
+msgstr ""
+
+msgid ""
+"This format code is currently unsupported by :meth:`~.datetime.strptime`."
 msgstr ""
 
 msgid ""
@@ -3449,14 +4554,21 @@ msgstr ""
 msgid ""
 "When the ``%z`` directive is provided to the  :meth:`~.datetime.strptime` "
 "method, the UTC offsets can have a colon as a separator between hours, "
-"minutes and seconds. For example, ``'+01:00:00'`` will be parsed as an "
-"offset of one hour. In addition, providing ``'Z'`` is identical to "
-"``'+00:00'``."
+"minutes and seconds. For example, both ``'+010000'`` and ``'+01:00:00'`` "
+"will be parsed as an offset of one hour. In addition, providing ``'Z'`` is "
+"identical to ``'+00:00'``."
 msgstr ""
 
 msgid ""
-"Behaves exactly as ``%z``, but has a colon separator added between hours, "
-"minutes and seconds."
+"When used with :meth:`~.datetime.strftime`, behaves exactly as ``%z``, "
+"except that a colon separator is added between hours, minutes and seconds."
+msgstr ""
+
+msgid ""
+"When used with :meth:`~.datetime.strptime`, the UTC offset is *required* to "
+"have a colon as a separator between hours, minutes and seconds. For example, "
+"``'+01:00:00'`` (but *not* ``'+010000'``) will be parsed as an offset of one "
+"hour. In addition, providing ``'Z'`` is identical to ``'+00:00'``."
 msgstr ""
 
 msgid ""
@@ -3514,18 +4626,25 @@ msgid ""
 "parser (1900) is not a leap year.  Users run into that bug every leap year."
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> month_day = \"02/29\"\n"
-">>> dt.datetime.strptime(f\"{month_day};1984\", \"%m/%d;%Y\")  # No leap "
-"year bug.\n"
+">>> dt.datetime.strptime(f\"{month_day};1984\", \"%m/%d;%Y\")  # No leap year"
+" bug.\n"
 "datetime.datetime(1984, 2, 29, 0, 0)"
+msgstr ""
+">>> month_day = \"02/29\"\n"
+">>> dt.datetime.strptime(f\"{month_day};1984\", \"%m/%d;%Y\")  # No leap year"
+" bug.\n"
+"datetime.datetime(1984, 2, 29, 0, 0)"
+
+msgid "Using ``%d`` without a year now raises :exc:`ValueError`."
 msgstr ""
 
 msgid ""
-":meth:`~.datetime.strptime` calls using a format string containing a day of "
-"month without a year now emit a :exc:`DeprecationWarning`. In 3.15 or later "
-"we may change this into an error or change the default year to a leap year. "
-"See :gh:`70647`."
+":meth:`~.datetime.strptime` calls using a format string containing ``%e`` "
+"without a year now emit a :exc:`DeprecationWarning`."
 msgstr ""
 
 msgid "Footnotes"

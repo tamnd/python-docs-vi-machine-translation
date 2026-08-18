@@ -9,72 +9,82 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-17 14:50+0000\n"
-"PO-Revision-Date: 2025-09-16 00:02+0000\n"
-"Last-Translator: Nguyen Duc Tam, 2026\n"
-"Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/vi/)\n"
-"Language: vi\n"
+"POT-Creation-Date: 2026-05-08 18:34+0000\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: pydocvi 0.1.2\n"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=86fed3dcf0f6 run=2026-08-17T16:43Z
 #, fuzzy
 msgid "Data Structures"
 msgstr "Cấu trúc dữ liệu"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=86fed3dcf0f6 run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
 "This chapter describes some things you've learned about already in more "
 "detail, and adds some new things as well."
 msgstr ""
-"Chương này mô tả chi tiết hơn một số điều bạn đã học và cũng bổ sung thêm "
-"một số điều mới."
+"Chương này mô tả chi tiết hơn một số điều đã được học, đồng thời bổ sung thêm"
+" một số điều mới."
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=86fed3dcf0f6 run=2026-08-17T16:43Z
 #, fuzzy
 msgid "More on Lists"
-msgstr "Thông tin thêm về danh sách"
+msgstr "Thêm về list"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=86fed3dcf0f6 run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
-"The :ref:`list <typesseq-list>` data type has some more methods. Here are "
-"all of the methods of list objects:"
+"The :ref:`list <typesseq-list>` data type has some more methods. Here are all"
+" of the methods of list objects:"
 msgstr ""
-"Kiểu dữ liệu :ref:`list <typesseq-list>` có thêm một số phương thức. Dưới "
-"đây là tất cả các phương thức của đối tượng danh sách:"
+"Kiểu dữ liệu :ref:`list <typesseq-list>` có thêm một số phương thức. Sau đây "
+"là tất cả các phương thức của các đối tượng list:"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=86fed3dcf0f6 run=2026-08-17T16:43Z
 #, fuzzy
 msgid "Add an item to the end of the list.  Similar to ``a[len(a):] = [x]``."
-msgstr "Thêm một mục vào cuối danh sách.  Tương tự với ``a[len(a):] = [x]``"
+msgstr "Thêm một mục vào cuối list. Tương tự như ``a[len(a):] = [x]``."
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=86fed3dcf0f6 run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
 "Extend the list by appending all the items from the iterable.  Similar to "
 "``a[len(a):] = iterable``."
 msgstr ""
-"Mở rộng danh sách bằng cách nối thêm tất cả các mục từ iterable.  Tương tự "
-"với ``a[len(a):] = iterable``"
+"Mở rộng list bằng cách thêm tất cả các mục từ iterable. Tương tự như "
+"``a[len(a):] = iterable``."
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=86fed3dcf0f6 run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
 "Insert an item at a given position.  The first argument is the index of the "
-"element before which to insert, so ``a.insert(0, x)`` inserts at the front "
-"of the list, and ``a.insert(len(a), x)`` is equivalent to ``a.append(x)``."
+"element before which to insert, so ``a.insert(0, x)`` inserts at the front of"
+" the list, and ``a.insert(len(a), x)`` is equivalent to ``a.append(x)``."
 msgstr ""
-"Chèn một mục vào một vị trí nhất định.  Đối số đầu tiên là chỉ mục của phần "
-"tử cần chèn vào trước, do đó, ``a.insert(0, x)`` sẽ chèn vào đầu danh sách "
-"và ``a.insert(len(a), x)`` tương đương với ``a.append(x)``."
+"Chèn một mục vào vị trí đã cho. Đối số đầu tiên là chỉ số của phần tử trước "
+"vị trí cần chèn, vì vậy ``a.insert(0, x)`` chèn vào đầu list, và "
+"``a.insert(len(a), x)`` tương đương với ``a.append(x)``."
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=86fed3dcf0f6 run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
 "Remove the first item from the list whose value is equal to *value*.  It "
 "raises a :exc:`ValueError` if there is no such item."
 msgstr ""
-"Xóa mục đầu tiên trong danh sách có giá trị bằng *value*.  Gây ra "
-":exc:`ValueError` nếu không có phần tử đó."
+"Xóa mục đầu tiên trong list có giá trị bằng *value*. Nó phát sinh một "
+":exc:`ValueError` nếu không có mục nào như vậy."
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=86fed3dcf0f6 run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
 "Remove the item at the given position in the list, and return it.  If no "
@@ -82,62 +92,71 @@ msgid ""
 "list. It raises an :exc:`IndexError` if the list is empty or the index is "
 "outside the list range."
 msgstr ""
-"Xóa mục ở vị trí nhất định trong danh sách và trả lại.  Nếu không có chỉ mục"
-" nào được chỉ định, ``a.pop()`` sẽ xóa và trả về mục cuối cùng trong danh "
-"sách. Gây ra :exc:`IndexError` nếu danh sách trống hoặc chỉ mục nằm ngoài "
-"phạm vi danh sách."
+"Xóa mục tại vị trí đã cho trong list và trả về nó. Nếu không chỉ định chỉ số,"
+" ``a.pop()`` xóa và trả về mục cuối cùng trong list. Nó phát sinh một "
+":exc:`IndexError` nếu list rỗng hoặc chỉ số nằm ngoài phạm vi của list."
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=86fed3dcf0f6 run=2026-08-17T16:43Z
 #, fuzzy
 msgid "Remove all items from the list.  Similar to ``del a[:]``."
-msgstr "Xóa tất cả các mục khỏi danh sách.  Tương tự với ``del a[:]``"
+msgstr "Xóa tất cả các mục khỏi list. Tương tự như ``del a[:]``."
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=86fed3dcf0f6 run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
 "Return zero-based index of the first occurrence of *value* in the list. "
 "Raises a :exc:`ValueError` if there is no such item."
 msgstr ""
-"Trả về chỉ mục dựa trên 0 của lần xuất hiện đầu tiên của *value* trong danh "
-"sách. Gây ra :exc:`ValueError` nếu không có phần tử đó."
+"Trả về chỉ số bắt đầu từ 0 của lần xuất hiện đầu tiên của *value* trong list."
+" Phát sinh một :exc:`ValueError` nếu không có mục nào như vậy."
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=86fed3dcf0f6 run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
 "The optional arguments *start* and *end* are interpreted as in the slice "
-"notation and are used to limit the search to a particular subsequence of the"
-" list.  The returned index is computed relative to the beginning of the full"
-" sequence rather than the *start* argument."
+"notation and are used to limit the search to a particular subsequence of the "
+"list.  The returned index is computed relative to the beginning of the full "
+"sequence rather than the *start* argument."
 msgstr ""
-"Các đối số tùy chọn *start* và *end* được hiểu như trong ký hiệu lát cắt và "
-"được sử dụng để giới hạn tìm kiếm trong một chuỗi con cụ thể của danh sách."
-"  Chỉ số trả về được tính tương ứng với phần đầu của chuỗi đầy đủ thay vì "
-"đối số *start*."
+"Các đối số tùy chọn *start* và *end* được hiểu như trong ký hiệu slice và "
+"được dùng để giới hạn việc tìm kiếm trong một subsequence cụ thể của list. "
+"Chỉ số được trả về được tính tương đối so với đầu của toàn bộ dãy thay vì đối"
+" số *start*."
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=86fed3dcf0f6 run=2026-08-17T16:43Z
 #, fuzzy
 msgid "Return the number of times *value* appears in the list."
-msgstr "Trả về số lần *value* xuất hiện trong danh sách."
+msgstr "Trả về số lần *value* xuất hiện trong list."
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=86fed3dcf0f6 run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
 "Sort the items of the list in place (the arguments can be used for sort "
 "customization, see :func:`sorted` for their explanation)."
 msgstr ""
-"Sắp xếp các mục của danh sách tại chỗ (các đối số có thể được sử dụng để tùy"
-" chỉnh sắp xếp, xem :func:`sorted` để biết phần giải thích)."
+"Sắp xếp các mục của list tại chỗ (các đối số có thể được dùng để tùy chỉnh "
+"việc sắp xếp, xem :func:`sorted` để biết giải thích)."
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=86fed3dcf0f6 run=2026-08-17T16:43Z
 #, fuzzy
 msgid "Reverse the elements of the list in place."
-msgstr "Đảo ngược các phần tử của danh sách tại chỗ."
+msgstr "Đảo ngược các phần tử của list tại chỗ."
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=86fed3dcf0f6 run=2026-08-17T16:43Z
 #, fuzzy
 msgid "Return a shallow copy of the list.  Similar to ``a[:]``."
-msgstr "Trả về một bản sao nông của danh sách.  Tương tự với ``a[:]``."
+msgstr "Trả về một bản sao nông của list. Tương tự như ``a[:]``."
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=86fed3dcf0f6 run=2026-08-17T16:43Z
 #, fuzzy
 msgid "An example that uses most of the list methods::"
-msgstr "Một ví dụ sử dụng hầu hết các phương thức danh sách ::"
+msgstr "Một ví dụ sử dụng hầu hết các phương thức của list::"
 
+# pydocvi: passthrough=doctest
 #, fuzzy
 msgid ""
-">>> fruits = ['orange', 'apple', 'pear', 'banana', 'kiwi', 'apple', 'banana']\n"
+">>> fruits = ['orange', 'apple', 'pear', 'banana', 'kiwi', 'apple', "
+"'banana']\n"
 ">>> fruits.count('apple')\n"
 "2\n"
 ">>> fruits.count('tangerine')\n"
@@ -158,14 +177,15 @@ msgid ""
 ">>> fruits.pop()\n"
 "'pear'"
 msgstr ""
-">>> fruits = ['orange', 'apple', 'pear', 'banana', 'kiwi', 'apple', 'banana']\n"
+">>> fruits = ['orange', 'apple', 'pear', 'banana', 'kiwi', 'apple', "
+"'banana']\n"
 ">>> fruits.count('apple')\n"
 "2\n"
 ">>> fruits.count('tangerine')\n"
 "0\n"
 ">>> fruits.index('banana')\n"
 "3\n"
-">>> fruits.index('banana', 4)  # Tìm quả chuối tiếp theo bắt đầu từ vị trí 4\n"
+">>> fruits.index('banana', 4)  # Find next banana starting at position 4\n"
 "6\n"
 ">>> fruits.reverse()\n"
 ">>> fruits\n"
@@ -179,6 +199,7 @@ msgstr ""
 ">>> fruits.pop()\n"
 "'pear'"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=86fed3dcf0f6 run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
 "You might have noticed that methods like ``insert``, ``remove`` or ``sort`` "
@@ -186,43 +207,47 @@ msgid ""
 "default ``None``. [#]_  This is a design principle for all mutable data "
 "structures in Python."
 msgstr ""
-"Bạn có thể nhận thấy rằng các phương thức như ``insert``, ``remove`` hoặc "
-"``sort`` chỉ sửa đổi danh sách và không in ra giá trị trả về -- chúng trả về"
-" ``None`` mặc định. [#]_ Đây là nguyên tắc thiết kế cho tất cả các cấu trúc "
-"dữ liệu có thể thay đổi trong Python."
+"Có thể đã nhận thấy rằng các phương thức như ``insert``, ``remove`` hoặc "
+"``sort`` chỉ sửa đổi list thì không có giá trị trả về được in ra -- chúng trả"
+" về giá trị mặc định ``None``. [#]_ Đây là một nguyên tắc thiết kế cho tất cả"
+" các cấu trúc dữ liệu có thể thay đổi trong Python."
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=86fed3dcf0f6 run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
 "Another thing you might notice is that not all data can be sorted or "
 "compared.  For instance, ``[None, 'hello', 10]`` doesn't sort because "
-"integers can't be compared to strings and ``None`` can't be compared to "
-"other types.  Also, there are some types that don't have a defined ordering "
+"integers can't be compared to strings and ``None`` can't be compared to other"
+" types.  Also, there are some types that don't have a defined ordering "
 "relation.  For example, ``3+4j < 5+7j`` isn't a valid comparison."
 msgstr ""
-"Một điều khác bạn có thể nhận thấy là không phải tất cả dữ liệu đều có thể "
-"được sắp xếp hoặc so sánh.  Ví dụ: ``[None, 'hello', 10]`` không sắp xếp vì "
-"số nguyên không thể so sánh với chuỗi và ``None`` không thể so sánh với các "
-"loại khác.  Ngoài ra, có một số loại không có mối quan hệ thứ tự xác định.  "
-"Ví dụ: ``3+4j < 5+7j`` không phải là sự so sánh hợp lệ."
+"Một điều khác có thể nhận thấy là không phải tất cả dữ liệu đều có thể được "
+"sắp xếp hoặc so sánh. Ví dụ, ``[None, 'hello', 10]`` không sắp xếp được vì số"
+" nguyên không thể so sánh với chuỗi và ``None`` không thể so sánh với các "
+"kiểu khác. Ngoài ra, có một số kiểu không có quan hệ thứ tự được định nghĩa. "
+"Ví dụ, ``3+4j < 5+7j`` không phải là một phép so sánh hợp lệ."
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=86fed3dcf0f6 run=2026-08-17T16:43Z
 #, fuzzy
 msgid "Using Lists as Stacks"
-msgstr "Sử dụng danh sách làm ngăn xếp"
+msgstr "Sử dụng list làm ngăn xếp"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=86fed3dcf0f6 run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
 "The list methods make it very easy to use a list as a stack, where the last "
 "element added is the first element retrieved (\"last-in, first-out\").  To "
 "add an item to the top of the stack, use :meth:`~list.append`.  To retrieve "
-"an item from the top of the stack, use :meth:`~list.pop` without an explicit"
-" index.  For example::"
+"an item from the top of the stack, use :meth:`~list.pop` without an explicit "
+"index.  For example::"
 msgstr ""
-"Các phương thức danh sách giúp bạn dễ dàng sử dụng danh sách dưới dạng ngăn "
-"xếp, trong đó phần tử cuối cùng được thêm vào là phần tử đầu tiên được truy "
-"xuất (\"vào sau, ra trước\").  Để thêm một mục vào đầu ngăn xếp, hãy sử dụng"
-" :meth:`~list.append`.  Để truy xuất một mục từ đầu ngăn xếp, hãy sử dụng "
-":meth:`~list.pop` mà không có chỉ mục rõ ràng.  Ví dụ::"
+"Các phương thức của list giúp việc sử dụng list làm ngăn xếp trở nên rất dễ "
+"dàng, trong đó phần tử được thêm sau cùng là phần tử được lấy ra đầu tiên "
+"(\"vào sau, ra trước\"). Để thêm một mục vào đỉnh của ngăn xếp, dùng "
+":meth:`~list.append`. Để lấy một mục từ đỉnh của ngăn xếp, dùng "
+":meth:`~list.pop` mà không chỉ định chỉ số rõ ràng. Ví dụ::"
 
+# pydocvi: passthrough=doctest
 #, fuzzy
 msgid ""
 ">>> stack = [3, 4, 5]\n"
@@ -257,33 +282,36 @@ msgstr ""
 ">>> stack\n"
 "[3, 4]"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=86fed3dcf0f6 run=2026-08-17T16:43Z
 #, fuzzy
 msgid "Using Lists as Queues"
-msgstr "Sử dụng danh sách làm hàng đợi"
+msgstr "Sử dụng list làm hàng đợi"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=86fed3dcf0f6 run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
 "It is also possible to use a list as a queue, where the first element added "
-"is the first element retrieved (\"first-in, first-out\"); however, lists are"
-" not efficient for this purpose.  While appends and pops from the end of "
-"list are fast, doing inserts or pops from the beginning of a list is slow "
-"(because all of the other elements have to be shifted by one)."
+"is the first element retrieved (\"first-in, first-out\"); however, lists are "
+"not efficient for this purpose.  While appends and pops from the end of list "
+"are fast, doing inserts or pops from the beginning of a list is slow (because"
+" all of the other elements have to be shifted by one)."
 msgstr ""
-"Cũng có thể sử dụng danh sách làm hàng đợi, trong đó phần tử đầu tiên được "
-"thêm vào là phần tử đầu tiên được truy xuất (\"vào trước, ra trước\"); tuy "
-"nhiên, danh sách không hiệu quả cho mục đích này.  Trong khi việc thêm và "
-"bật lên từ cuối danh sách diễn ra nhanh, thì việc chèn hoặc bật lên từ đầu "
-"danh sách lại chậm (vì tất cả các phần tử khác phải được dịch chuyển bởi một"
-" phần tử)."
+"Cũng có thể sử dụng list làm hàng đợi, trong đó phần tử được thêm đầu tiên là"
+" phần tử được lấy ra đầu tiên (\"vào trước, ra trước\"); tuy nhiên, list "
+"không hiệu quả cho mục đích này. Trong khi việc thêm và lấy ra bằng append từ"
+" cuối list rất nhanh, việc chèn hoặc lấy ra từ đầu list lại chậm (vì tất cả "
+"các phần tử khác phải được dịch chuyển một vị trí)."
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=86fed3dcf0f6 run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
 "To implement a queue, use :class:`collections.deque` which was designed to "
 "have fast appends and pops from both ends.  For example::"
 msgstr ""
-"Để triển khai hàng đợi, hãy sử dụng :class:`collections.deque` được thiết kế"
-" để có thể thêm và bật nhanh từ cả hai đầu.  Ví dụ::"
+"Để triển khai một hàng đợi, dùng :class:`collections.deque` được thiết kế để "
+"có thao tác thêm và lấy ra nhanh từ cả hai đầu. Ví dụ::"
 
+# pydocvi: passthrough=doctest
 #, fuzzy
 msgid ""
 ">>> from collections import deque\n"
@@ -299,19 +327,21 @@ msgid ""
 msgstr ""
 ">>> from collections import deque\n"
 ">>> queue = deque([\"Eric\", \"John\", \"Michael\"])\n"
-">>> queue.append(\"Terry\")           # Terry đến\n"
-">>> queue.append(\"Graham\")          # Graham đến\n"
-">>> queue.popleft()                 # Người đầu tiên đến giờ đã rời đi\n"
+">>> queue.append(\"Terry\")           # Terry arrives\n"
+">>> queue.append(\"Graham\")          # Graham arrives\n"
+">>> queue.popleft()                 # The first to arrive now leaves\n"
 "'Eric'\n"
-">>> queue.popleft()                 # Người thứ hai đến bây giờ đã rời đi\n"
+">>> queue.popleft()                 # The second to arrive now leaves\n"
 "'John'\n"
-">>> queue                           # Hàng đợi còn lại theo thứ tự đến\n"
+">>> queue                           # Remaining queue in order of arrival\n"
 "deque(['Michael', 'Terry', 'Graham'])"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=86fed3dcf0f6 run=2026-08-17T16:43Z
 #, fuzzy
 msgid "List Comprehensions"
-msgstr "List Comprehension"
+msgstr "List comprehensions"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=86fed3dcf0f6 run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
 "List comprehensions provide a concise way to create lists. Common "
@@ -319,16 +349,17 @@ msgid ""
 "operations applied to each member of another sequence or iterable, or to "
 "create a subsequence of those elements that satisfy a certain condition."
 msgstr ""
-"List comprehension cung cấp một cách ngắn gọn để tạo danh sách. Các ứng "
-"dụng phổ biến là tạo các danh sách mới trong đó mỗi phần tử là kết quả của "
-"một số thao tác được áp dụng cho từng thành viên của một chuỗi khác hoặc có "
-"thể lặp lại hoặc để tạo một chuỗi con gồm các phần tử đó thỏa mãn một điều "
-"kiện nhất định."
+"List comprehensions cung cấp một cách ngắn gọn để tạo list. Các ứng dụng phổ "
+"biến là tạo list mới trong đó mỗi phần tử là kết quả của một số thao tác được"
+" áp dụng cho từng thành viên của một dãy hoặc iterable khác, hoặc tạo một dãy"
+" con của những phần tử thỏa mãn một điều kiện nhất định."
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=86fed3dcf0f6 run=2026-08-17T16:43Z
 #, fuzzy
 msgid "For example, assume we want to create a list of squares, like::"
-msgstr "Ví dụ: giả sử chúng ta muốn tạo một danh sách các số bình phương, như::"
+msgstr "Ví dụ, giả sử muốn tạo một list các số bình phương, như sau::"
 
+# pydocvi: passthrough=doctest
 #, fuzzy
 msgid ""
 ">>> squares = []\n"
@@ -345,6 +376,7 @@ msgstr ""
 ">>> squares\n"
 "[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=86fed3dcf0f6 run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
 "Note that this creates (or overwrites) a variable named ``x`` that still "
@@ -352,25 +384,30 @@ msgid ""
 "without any side effects using::"
 msgstr ""
 "Lưu ý rằng điều này tạo ra (hoặc ghi đè) một biến có tên ``x`` vẫn tồn tại "
-"sau khi vòng lặp hoàn thành.  Chúng ta có thể tính danh sách các số bình "
-"phương mà không có tác dụng phụ bằng cách dùng::"
+"sau khi vòng lặp hoàn thành. Có thể tính list các số bình phương mà không có "
+"các tác dụng phụ bằng cách dùng::"
 
+# pydocvi: passthrough=literal_block
 #, fuzzy
 msgid "squares = list(map(lambda x: x**2, range(10)))"
 msgstr "squares = list(map(lambda x: x**2, range(10)))"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=86fed3dcf0f6 run=2026-08-17T16:43Z
 #, fuzzy
 msgid "or, equivalently::"
-msgstr "hoặc, tương đương::"
+msgstr "hoặc tương đương::"
 
+# pydocvi: passthrough=literal_block
 #, fuzzy
 msgid "squares = [x**2 for x in range(10)]"
 msgstr "squares = [x**2 for x in range(10)]"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=86fed3dcf0f6 run=2026-08-17T16:43Z
 #, fuzzy
 msgid "which is more concise and readable."
-msgstr "ngắn gọn và dễ đọc hơn."
+msgstr "cách này ngắn gọn và dễ đọc hơn."
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=86fed3dcf0f6 run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
 "A list comprehension consists of brackets containing an expression followed "
@@ -380,13 +417,14 @@ msgid ""
 ":keyword:`!if` clauses which follow it. For example, this listcomp combines "
 "the elements of two lists if they are not equal::"
 msgstr ""
-"List comprehension bao gồm các dấu ngoặc chứa một biểu thức theo sau là "
-"mệnh đề :keyword:`!for`, sau đó là 0 hoặc nhiều mệnh đề :keyword:`!for` hoặc"
-" :keyword:`!if`.  Kết quả sẽ là một danh sách mới từ việc đánh giá biểu thức"
-" trong ngữ cảnh của các mệnh đề :keyword:`!for` và :keyword:`!if` theo sau "
-"nó. Ví dụ: listcomp này kết hợp các thành phần của hai danh sách nếu chúng "
-"không bằng nhau::"
+"Một list comprehension bao gồm các dấu ngoặc chứa một biểu thức theo sau bởi "
+"mệnh đề :keyword:`!for`, sau đó là không hoặc nhiều mệnh đề :keyword:`!for` "
+"hoặc :keyword:`!if`. Kết quả sẽ là một list mới được tạo ra bằng cách đánh "
+"giá biểu thức trong ngữ cảnh của các mệnh đề :keyword:`!for` và "
+":keyword:`!if` theo sau nó. Ví dụ, listcomp này kết hợp các phần tử của hai "
+"list nếu chúng không bằng nhau::"
 
+# pydocvi: passthrough=doctest
 #, fuzzy
 msgid ""
 ">>> [(x, y) for x in [1,2,3] for y in [3,1,4] if x != y]\n"
@@ -395,10 +433,12 @@ msgstr ""
 ">>> [(x, y) for x in [1,2,3] for y in [3,1,4] if x != y]\n"
 "[(1, 3), (1, 4), (2, 3), (2, 1), (2, 4), (3, 1), (3, 4)]"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=86fed3dcf0f6 run=2026-08-17T16:43Z
 #, fuzzy
 msgid "and it's equivalent to::"
 msgstr "và nó tương đương với::"
 
+# pydocvi: passthrough=doctest
 #, fuzzy
 msgid ""
 ">>> combs = []\n"
@@ -419,22 +459,25 @@ msgstr ""
 ">>> combs\n"
 "[(1, 3), (1, 4), (2, 3), (2, 1), (2, 4), (3, 1), (3, 4)]"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=86fed3dcf0f6 run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
-"Note how the order of the :keyword:`for` and :keyword:`if` statements is the"
-" same in both these snippets."
+"Note how the order of the :keyword:`for` and :keyword:`if` statements is the "
+"same in both these snippets."
 msgstr ""
-"Lưu ý thứ tự của câu lệnh :keyword:`for` và :keyword:`if` giống nhau như thế"
-" nào trong cả hai đoạn mã này."
+"Lưu ý rằng thứ tự của các câu lệnh :keyword:`for` và :keyword:`if` giống nhau"
+" trong cả hai đoạn mã này."
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=86fed3dcf0f6 run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
 "If the expression is a tuple (e.g. the ``(x, y)`` in the previous example), "
 "it must be parenthesized. ::"
 msgstr ""
-"Nếu biểu thức là một bộ dữ liệu (ví dụ: ``(x, y)`` trong ví dụ trước), thì "
-"nó phải được đặt trong ngoặc đơn. ::"
+"Nếu biểu thức là một tuple (ví dụ ``(x, y)`` trong ví dụ trước), nó phải được"
+" đặt trong dấu ngoặc đơn. ::"
 
+# pydocvi: passthrough=doctest
 #, fuzzy
 msgid ""
 ">>> vec = [-4, -2, 0, 2, 4]\n"
@@ -466,39 +509,41 @@ msgid ""
 "[1, 2, 3, 4, 5, 6, 7, 8, 9]"
 msgstr ""
 ">>> vec = [-4, -2, 0, 2, 4]\n"
-">>> # tạo một danh sách mới với giá trị nhân đôi\n"
+">>> # create a new list with the values doubled\n"
 ">>> [x*2 for x in vec]\n"
 "[-8, -4, 0, 4, 8]\n"
-">>> # lọc danh sách để loại trừ số âm\n"
+">>> # filter the list to exclude negative numbers\n"
 ">>> [x for x in vec if x >= 0]\n"
 "[0, 2, 4]\n"
-">>> # áp dụng một hàm cho tất cả các phần tử\n"
+">>> # apply a function to all the elements\n"
 ">>> [abs(x) for x in vec]\n"
 "[4, 2, 0, 2, 4]\n"
-">>> # gọi một phương thức trên mỗi phần tử\n"
+">>> # call a method on each element\n"
 ">>> freshfruit = ['  banana', '  loganberry ', 'passion fruit  ']\n"
 ">>> [weapon.strip() for weapon in freshfruit]\n"
 "['banana', 'loganberry', 'passion fruit']\n"
-">>> # tạo danh sách gồm 2-tuple dạng (số, bình phương)\n"
+">>> # create a list of 2-tuples like (number, square)\n"
 ">>> [(x, x**2) for x in range(6)]\n"
 "[(0, 0), (1, 1), (2, 4), (3, 9), (4, 16), (5, 25)]\n"
-">>> # bộ dữ liệu phải được đặt trong ngoặc đơn, nếu không sẽ xảy ra lỗi\n"
+">>> # the tuple must be parenthesized, otherwise an error is raised\n"
 ">>> [x, x**2 for x in range(6)]\n"
 "  File \"<stdin>\", line 1\n"
 "    [x, x**2 for x in range(6)]\n"
 "     ^^^^^^^\n"
 "SyntaxError: did you forget parentheses around the comprehension target?\n"
-">>> # làm phẳng danh sách bằng cách sử dụng listcomp có hai 'for'\n"
+">>> # flatten a list using a listcomp with two 'for'\n"
 ">>> vec = [[1,2,3], [4,5,6], [7,8,9]]\n"
 ">>> [num for elem in vec for num in elem]\n"
 "[1, 2, 3, 4, 5, 6, 7, 8, 9]"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=86fed3dcf0f6 run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
 "List comprehensions can contain complex expressions and nested functions::"
 msgstr ""
-"List comprehension có thể chứa các biểu thức phức tạp và các hàm lồng nhau::"
+"List comprehensions có thể chứa các biểu thức phức tạp và các hàm lồng nhau::"
 
+# pydocvi: passthrough=doctest
 #, fuzzy
 msgid ""
 ">>> from math import pi\n"
@@ -509,26 +554,32 @@ msgstr ""
 ">>> [str(round(pi, i)) for i in range(1, 6)]\n"
 "['3.1', '3.14', '3.142', '3.1416', '3.14159']"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=86fed3dcf0f6 run=2026-08-17T16:43Z
 #, fuzzy
 msgid "Nested List Comprehensions"
-msgstr "List Comprehension lồng nhau"
+msgstr "List comprehensions lồng nhau"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=86fed3dcf0f6 run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
 "The initial expression in a list comprehension can be any arbitrary "
 "expression, including another list comprehension."
 msgstr ""
-"Biểu thức ban đầu trong một list comprehension có thể là bất kỳ biểu thức "
-"tùy ý nào, kể cả một list comprehension khác."
+"Biểu thức ban đầu trong một list comprehension có thể là bất kỳ biểu thức tùy"
+" ý nào, bao gồm cả một list comprehension khác."
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=86fed3dcf0f6 run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
 "Consider the following example of a 3x4 matrix implemented as a list of 3 "
 "lists of length 4::"
 msgstr ""
-"Hãy xem xét ví dụ sau về ma trận 3x4 được triển khai dưới dạng danh sách gồm"
-" 3 danh sách có độ dài 4 ::"
+"Xét ví dụ sau về một ma trận 3x4 được triển khai dưới dạng một list gồm 3 "
+"list có độ dài 4::\n"
+"40 Xét ví dụ sau về một ma trận 3x4 được triển khai dưới dạng một list gồm 3 "
+"list có độ dài 4::ther list comprehension."
 
+# pydocvi: passthrough=doctest
 #, fuzzy
 msgid ""
 ">>> matrix = [\n"
@@ -543,10 +594,14 @@ msgstr ""
 "...     [9, 10, 11, 12],\n"
 "... ]"
 
+# pydocvi: model=gpt-5-6 prompt=574466d7 glossary=1 batch=37cf939aaf1c run=2026-08-17T16:43Z
 #, fuzzy
 msgid "The following list comprehension will transpose rows and columns::"
-msgstr "List comprehension sau đây sẽ chuyển vị hàng và cột::"
+msgstr ""
+"The following list comprehension will transpose rows and columns::\n"
+"1 list comprehension sau sẽ chuyển vị các hàng và cột::"
 
+# pydocvi: passthrough=doctest
 #, fuzzy
 msgid ""
 ">>> [[row[i] for row in matrix] for i in range(4)]\n"
@@ -555,16 +610,18 @@ msgstr ""
 ">>> [[row[i] for row in matrix] for i in range(4)]\n"
 "[[1, 5, 9], [2, 6, 10], [3, 7, 11], [4, 8, 12]]"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=36b6449c9aef run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
-"As we saw in the previous section, the inner list comprehension is evaluated"
-" in the context of the :keyword:`for` that follows it, so this example is "
+"As we saw in the previous section, the inner list comprehension is evaluated "
+"in the context of the :keyword:`for` that follows it, so this example is "
 "equivalent to::"
 msgstr ""
-"Như chúng ta đã thấy trong phần trước, list comprehension bên trong được đánh "
-"giá trong ngữ cảnh của :keyword:`for` theo sau nó, vì vậy ví dụ này tương "
-"đương với::"
+"Như đã thấy trong phần trước, list comprehension bên trong được đánh giá "
+"trong ngữ cảnh của :keyword:`for` theo sau nó, vì vậy ví dụ này tương đương "
+"với::"
 
+# pydocvi: passthrough=doctest
 #, fuzzy
 msgid ""
 ">>> transposed = []\n"
@@ -581,10 +638,14 @@ msgstr ""
 ">>> transposed\n"
 "[[1, 5, 9], [2, 6, 10], [3, 7, 11], [4, 8, 12]]"
 
+# pydocvi: model=gpt-5-6 prompt=574466d7 glossary=1 batch=37cf939aaf1c run=2026-08-17T16:43Z
 #, fuzzy
 msgid "which, in turn, is the same as::"
-msgstr "đến lượt nó, giống như::"
+msgstr ""
+"which, in turn, is the same as::\n"
+"3 và đến lượt nó, giống với::"
 
+# pydocvi: passthrough=doctest
 #, fuzzy
 msgid ""
 ">>> transposed = []\n"
@@ -600,7 +661,7 @@ msgid ""
 msgstr ""
 ">>> transposed = []\n"
 ">>> for i in range(4):\n"
-"...     # 3 dòng sau triển khai listcomp lồng nhau\n"
+"...     # the following 3 lines implement the nested listcomp\n"
 "...     transposed_row = []\n"
 "...     for row in matrix:\n"
 "...         transposed_row.append(row[i])\n"
@@ -609,16 +670,16 @@ msgstr ""
 ">>> transposed\n"
 "[[1, 5, 9], [2, 6, 10], [3, 7, 11], [4, 8, 12]]"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=36b6449c9aef run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
 "In the real world, you should prefer built-in functions to complex flow "
-"statements. The :func:`zip` function would do a great job for this use "
-"case::"
+"statements. The :func:`zip` function would do a great job for this use case::"
 msgstr ""
-"Trong thế giới thực, bạn nên ưu tiên các hàm dựng sẵn hơn là các câu lệnh "
-"luồng phức tạp. Hàm :func:`zip` sẽ hoạt động rất tốt cho trường hợp sử dụng "
-"này ::"
+"Trong thực tế, nên ưu tiên các hàm dựng sẵn thay vì các câu lệnh luồng phức "
+"tạp. Hàm :func:`zip` sẽ thực hiện rất tốt cho trường hợp sử dụng này::"
 
+# pydocvi: passthrough=doctest
 #, fuzzy
 msgid ""
 ">>> list(zip(*matrix))\n"
@@ -627,33 +688,151 @@ msgstr ""
 ">>> list(zip(*matrix))\n"
 "[(1, 5, 9), (2, 6, 10), (3, 7, 11), (4, 8, 12)]"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=36b6449c9aef run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
 "See :ref:`tut-unpacking-arguments` for details on the asterisk in this line."
 msgstr ""
-"Xem :ref:`tut-unpacking-arguments` để biết chi tiết về dấu hoa thị ở dòng "
-"này."
+"Xem :ref:`tut-unpacking-arguments` để biết chi tiết về dấu hoa thị trong dòng"
+" này."
 
+# pydocvi: model=gpt-5-6 prompt=574466d7 glossary=1 batch=37cf939aaf1c run=2026-08-17T16:43Z
+#, fuzzy
+msgid "Unpacking in Lists and List Comprehensions"
+msgstr ""
+"Unpacking in Lists and List Comprehensions\n"
+"6 Giải nén trong list và list comprehension"
+
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=36b6449c9aef run=2026-08-17T16:43Z
+#, fuzzy
+msgid ""
+"The section on :ref:`tut-unpacking-arguments` describes the use of ``*`` to "
+"\"unpack\" the elements of an iterable object, providing each one separately "
+"as an argument to a function.  Unpacking can also be used in other contexts, "
+"for example, when creating lists.  When specifying elements of a list, "
+"prefixing an expression by a ``*`` will unpack the result of that expression,"
+" adding each of its elements to the list we're creating::"
+msgstr ""
+"Phần về :ref:`tut-unpacking-arguments` mô tả cách sử dụng ``*`` để \"unpack\""
+" các phần tử của một đối tượng iterable, cung cấp từng phần tử riêng biệt làm"
+" đối số cho một hàm. Việc unpack cũng có thể được sử dụng trong các ngữ cảnh "
+"khác, ví dụ khi tạo list. Khi chỉ định các phần tử của một list, thêm tiền tố"
+" ``*`` vào một biểu thức sẽ unpack kết quả của biểu thức đó, thêm từng phần "
+"tử của nó vào list đang được tạo::"
+
+# pydocvi: passthrough=doctest
+#, fuzzy
+msgid ""
+">>> x = [1, 2, 3]\n"
+">>> [0, *x, 4, 5, 6]\n"
+"[0, 1, 2, 3, 4, 5, 6]"
+msgstr ""
+">>> x = [1, 2, 3]\n"
+">>> [0, *x, 4, 5, 6]\n"
+"[0, 1, 2, 3, 4, 5, 6]"
+
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=36b6449c9aef run=2026-08-17T16:43Z
+#, fuzzy
+msgid ""
+"This only works if the expression following the ``*`` evaluates to an "
+"iterable object; trying to unpack a non-iterable object will raise an "
+"exception::"
+msgstr ""
+"Điều này chỉ hoạt động nếu biểu thức theo sau ``*`` được đánh giá thành một "
+"đối tượng iterable; cố gắng unpack một đối tượng không phải iterable sẽ gây "
+"ra một ngoại lệ::"
+
+# pydocvi: passthrough=doctest
+#, fuzzy
+msgid ""
+">>> x = 1\n"
+">>> [0, *x, 2, 3, 4]\n"
+"Traceback (most recent call last):\n"
+"  File \"<python-input-1>\", line 1, in <module>\n"
+"    [0, *x, 2, 3, 4]\n"
+"TypeError: Value after * must be an iterable, not int"
+msgstr ""
+">>> x = 1\n"
+">>> [0, *x, 2, 3, 4]\n"
+"Traceback (most recent call last):\n"
+"  File \"<python-input-1>\", line 1, in <module>\n"
+"    [0, *x, 2, 3, 4]\n"
+"TypeError: Value after * must be an iterable, not int"
+
+# pydocvi: model=gpt-5-6 prompt=574466d7 glossary=1 batch=37cf939aaf1c run=2026-08-17T16:43Z
+#, fuzzy
+msgid ""
+"Unpacking can also be used in list comprehensions, as a way to build a new "
+"list representing the concatenation of an arbitrary number of iterables::"
+msgstr ""
+"Unpacking can also be used in list comprehensions, as a way to build a new "
+"list representing the concatenation of an arbitrary number of iterables::\n"
+"9 Giải nén cũng có thể được sử dụng trong list comprehension, như một cách để"
+" xây dựng một list mới biểu diễn phép nối của một số lượng tùy ý các "
+"iterable::"
+
+# pydocvi: passthrough=doctest
+#, fuzzy
+msgid ""
+">>> x = [[1, 2, 3], [4, 5, 6], [], [7], [8, 9]]\n"
+">>> [*element for element in x]\n"
+"[1, 2, 3, 4, 5, 6, 7, 8, 9]"
+msgstr ""
+">>> x = [[1, 2, 3], [4, 5, 6], [], [7], [8, 9]]\n"
+">>> [*element for element in x]\n"
+"[1, 2, 3, 4, 5, 6, 7, 8, 9]"
+
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=36b6449c9aef run=2026-08-17T16:43Z
+#, fuzzy
+msgid ""
+"Note that the effect is that each element from ``x`` is unpacked.  This works"
+" for arbitrary iterable objects, not just lists::"
+msgstr ""
+"Lưu ý rằng kết quả là mỗi phần tử từ ``x`` được unpack. Điều này hoạt động "
+"với các đối tượng iterable tùy ý, không chỉ list::"
+
+# pydocvi: passthrough=doctest
+#, fuzzy
+msgid ""
+">>> x = [[1, 2, 3], 'cat', {'spam': 'eggs'}]\n"
+">>> [*element for element in x]\n"
+"[1, 2, 3, 'c', 'a', 't', 'spam']"
+msgstr ""
+">>> x = [[1, 2, 3], 'cat', {'spam': 'eggs'}]\n"
+">>> [*element for element in x]\n"
+"[1, 2, 3, 'c', 'a', 't', 'spam']"
+
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=36b6449c9aef run=2026-08-17T16:43Z
+#, fuzzy
+msgid ""
+"But if the objects in ``x`` are not iterable, this expression would again "
+"raise an exception."
+msgstr ""
+"Nhưng nếu các đối tượng trong ``x`` không phải iterable, biểu thức này sẽ lại"
+" gây ra một ngoại lệ."
+
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=36b6449c9aef run=2026-08-17T16:43Z
 #, fuzzy
 msgid "The :keyword:`!del` statement"
 msgstr "Câu lệnh :keyword:`!del`"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=36b6449c9aef run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
 "There is a way to remove an item from a list given its index instead of its "
-"value: the :keyword:`del` statement.  This differs from the "
-":meth:`~list.pop` method which returns a value.  The :keyword:`!del` "
-"statement can also be used to remove slices from a list or clear the entire "
-"list (which we did earlier by assignment of an empty list to the slice).  "
-"For example::"
+"value: the :keyword:`del` statement.  This differs from the :meth:`~list.pop`"
+" method which returns a value.  The :keyword:`!del` statement can also be "
+"used to remove slices from a list or clear the entire list (which we did "
+"earlier by assignment of an empty list to the slice).  For example::"
 msgstr ""
-"Có một cách để xóa một mục khỏi danh sách dựa trên chỉ mục của nó thay vì "
-"giá trị của nó: câu lệnh :keyword:`del`.  Điều này khác với phương thức "
-":meth:`~list.pop` trả về một giá trị.  Câu lệnh :keyword:`!del` cũng có thể "
-"được sử dụng để xóa các lát khỏi danh sách hoặc xóa toàn bộ danh sách (điều "
-"mà chúng ta đã thực hiện trước đó bằng cách gán một danh sách trống cho "
-"lát).  Ví dụ::"
+"Có một cách để xóa một mục khỏi list dựa trên chỉ số của nó thay vì giá trị "
+"của nó: câu lệnh :keyword:`del`. Điều này khác với phương thức "
+":meth:`~list.pop`, phương thức này trả về một giá trị. Câu lệnh "
+":keyword:`!del` cũng có thể được dùng để xóa các slice khỏi một list hoặc xóa"
+" toàn bộ list (điều đã được thực hiện trước đó bằng cách gán một danh sách "
+"rỗng cho slice). Ví dụ::"
 
+# pydocvi: passthrough=doctest
 #, fuzzy
 msgid ""
 ">>> a = [-1, 1, 66.25, 333, 333, 1234.5]\n"
@@ -678,47 +857,57 @@ msgstr ""
 ">>> a\n"
 "[]"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=36b6449c9aef run=2026-08-17T16:43Z
 #, fuzzy
 msgid ":keyword:`del` can also be used to delete entire variables::"
-msgstr ":keyword:`del` cũng có thể được sử dụng để xóa toàn bộ biến ::"
+msgstr ":keyword:`del` cũng có thể được dùng để xóa toàn bộ biến::"
 
+# pydocvi: passthrough=doctest
 #, fuzzy
 msgid ">>> del a"
 msgstr ">>> del a"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=36b6449c9aef run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
 "Referencing the name ``a`` hereafter is an error (at least until another "
 "value is assigned to it).  We'll find other uses for :keyword:`del` later."
 msgstr ""
-"Việc tham chiếu tên ``a`` sau đây là một lỗi (ít nhất là cho đến khi một giá"
-" trị khác được gán cho nó).  Chúng ta sẽ tìm thấy những cách sử dụng khác "
-"của :keyword:`del` sau."
+"Việc tham chiếu đến tên ``a`` sau đó sẽ là một lỗi (ít nhất cho đến khi một "
+"giá trị khác được gán cho nó). Sau này sẽ tìm thấy các cách sử dụng khác của "
+":keyword:`del`."
 
+# pydocvi: model=gpt-5-6 prompt=574466d7 glossary=1 batch=37cf939aaf1c run=2026-08-17T16:43Z
 #, fuzzy
 msgid "Tuples and Sequences"
-msgstr "Tuples và Sequences"
+msgstr ""
+"Tuples and Sequences\n"
+"16 Tuple và dãy"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=36b6449c9aef run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
 "We saw that lists and strings have many common properties, such as indexing "
-"and slicing operations.  They are two examples of *sequence* data types (see"
-" :ref:`typesseq`).  Since Python is an evolving language, other sequence "
-"data types may be added.  There is also another standard sequence data type:"
-" the *tuple*."
+"and slicing operations.  They are two examples of *sequence* data types (see "
+":ref:`typesseq`).  Since Python is an evolving language, other sequence data "
+"types may be added.  There is also another standard sequence data type: the "
+"*tuple*."
 msgstr ""
-"Chúng ta đã thấy rằng danh sách và chuỗi có nhiều thuộc tính chung, chẳng "
-"hạn như các thao tác lập chỉ mục và cắt lát.  Chúng là hai ví dụ về kiểu dữ "
-"liệu *sequence* (xem :ref:`typesseq`).  Vì Python là ngôn ngữ đang phát "
-"triển nên các kiểu dữ liệu chuỗi khác có thể được thêm vào.  Ngoài ra còn có"
-" một kiểu dữ liệu chuỗi tiêu chuẩn khác: *tuple*."
+"Đã thấy rằng list và chuỗi có nhiều thuộc tính chung, chẳng hạn như các thao "
+"tác lập chỉ số và slicing. Chúng là hai ví dụ về các kiểu dữ liệu *sequence* "
+"(xem :ref:`typesseq`). Vì Python là một ngôn ngữ đang phát triển, các kiểu dữ"
+" liệu sequence khác có thể được thêm vào. Ngoài ra còn có một kiểu dữ liệu "
+"sequence chuẩn khác: *tuple*."
 
+# pydocvi: model=gpt-5-6 prompt=574466d7 glossary=1 batch=37cf939aaf1c run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
 "A tuple consists of a number of values separated by commas, for instance::"
 msgstr ""
-"Một bộ dữ liệu bao gồm một số giá trị được phân tách bằng dấu phẩy, ví dụ::"
+"A tuple consists of a number of values separated by commas, for instance::\n"
+"18 Một tuple bao gồm một số giá trị được phân tách bằng dấu phẩy, ví dụ::"
 
+# pydocvi: passthrough=doctest
 #, fuzzy
 msgid ""
 ">>> t = 12345, 54321, 'hello!'\n"
@@ -738,43 +927,59 @@ msgid ""
 ">>> # but they can contain mutable objects:\n"
 ">>> v = ([1, 2, 3], [3, 2, 1])\n"
 ">>> v\n"
-"([1, 2, 3], [3, 2, 1])"
+"([1, 2, 3], [3, 2, 1])\n"
+">>> # they support unpacking just like lists:\n"
+">>> x = [1, 2, 3]\n"
+">>> 0, *x, 4\n"
+"(0, 1, 2, 3, 4)"
 msgstr ""
 ">>> t = 12345, 54321, 'hello!'\n"
 ">>> t[0]\n"
 "12345\n"
 ">>> t\n"
 "(12345, 54321, 'hello!')\n"
-">>> # Các bộ dữ liệu có thể được lồng vào nhau:\n"
+">>> # Tuples may be nested:\n"
 ">>> u = t, (1, 2, 3, 4, 5)\n"
 ">>> u\n"
 "((12345, 54321, 'hello!'), (1, 2, 3, 4, 5))\n"
-">>> # Tuples là bất biến:\n"
+">>> # Tuples are immutable:\n"
 ">>> t[0] = 88888\n"
 "Traceback (most recent call last):\n"
 "  File \"<stdin>\", line 1, in <module>\n"
 "TypeError: 'tuple' object does not support item assignment\n"
-">>> # nhưng chúng có thể chứa các đối tượng có thể thay đổi:\n"
+">>> # but they can contain mutable objects:\n"
 ">>> v = ([1, 2, 3], [3, 2, 1])\n"
 ">>> v\n"
-"([1, 2, 3], [3, 2, 1])"
+"([1, 2, 3], [3, 2, 1])\n"
+">>> # they support unpacking just like lists:\n"
+">>> x = [1, 2, 3]\n"
+">>> 0, *x, 4\n"
+"(0, 1, 2, 3, 4)"
 
+# pydocvi: model=gpt-5-6 prompt=574466d7 glossary=1 batch=37cf939aaf1c run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
 "As you see, on output tuples are always enclosed in parentheses, so that "
 "nested tuples are interpreted correctly; they may be input with or without "
-"surrounding parentheses, although often parentheses are necessary anyway (if"
-" the tuple is part of a larger expression).  It is not possible to assign to"
-" the individual items of a tuple, however it is possible to create tuples "
+"surrounding parentheses, although often parentheses are necessary anyway (if "
+"the tuple is part of a larger expression).  It is not possible to assign to "
+"the individual items of a tuple, however it is possible to create tuples "
 "which contain mutable objects, such as lists."
 msgstr ""
-"Như bạn thấy, trên đầu ra, các bộ dữ liệu luôn được đặt trong dấu ngoặc đơn "
-"để các bộ dữ liệu lồng nhau được diễn giải chính xác; chúng có thể được nhập"
-" vào có hoặc không có dấu ngoặc đơn xung quanh, mặc dù thường thì dấu ngoặc "
-"đơn cũng cần thiết (nếu bộ dữ liệu là một phần của biểu thức lớn hơn).  "
-"Không thể gán cho các mục riêng lẻ của một bộ dữ liệu, tuy nhiên có thể tạo "
-"các bộ dữ liệu chứa các đối tượng có thể thay đổi, chẳng hạn như danh sách."
+"As you see, on output tuples are always enclosed in parentheses, so that "
+"nested tuples are interpreted correctly; they may be input with or without "
+"surrounding parentheses, although often parentheses are necessary anyway (if "
+"the tuple is part of a larger expression).  It is not possible to assign to "
+"the individual items of a tuple, however it is possible to create tuples "
+"which contain mutable objects, such as lists.\n"
+"19 Như đã thấy, khi xuất ra, tuple luôn được bao quanh bởi dấu ngoặc đơn để "
+"các tuple lồng nhau được diễn giải chính xác; chúng có thể được nhập vào có "
+"hoặc không có dấu ngoặc đơn bao quanh, mặc dù thường thì dấu ngoặc đơn vẫn "
+"cần thiết (nếu tuple là một phần của biểu thức lớn hơn). Không thể gán cho "
+"từng mục riêng lẻ của một tuple, tuy nhiên có thể tạo các tuple chứa các đối "
+"tượng có thể thay đổi, chẳng hạn như list."
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=36b6449c9aef run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
 "Though tuples may seem similar to lists, they are often used in different "
@@ -782,32 +987,38 @@ msgid ""
 "usually contain a heterogeneous sequence of elements that are accessed via "
 "unpacking (see later in this section) or indexing (or even by attribute in "
 "the case of :func:`namedtuples <collections.namedtuple>`). Lists are "
-":term:`mutable`, and their elements are usually homogeneous and are accessed"
-" by iterating over the list."
+":term:`mutable`, and their elements are usually homogeneous and are accessed "
+"by iterating over the list."
 msgstr ""
-"Mặc dù các bộ dữ liệu có vẻ giống với danh sách nhưng chúng thường được sử "
-"dụng trong các tình huống khác nhau và cho các mục đích khác nhau. Các bộ dữ"
-" liệu là :term:`immutable` và thường chứa một chuỗi các phần tử không đồng "
-"nhất được truy cập thông qua việc giải nén (xem phần sau trong phần này) "
-"hoặc lập chỉ mục (hoặc thậm chí theo thuộc tính trong trường hợp "
-":func:`namedtuples <collections.namedtuple>`). Danh sách là :term:`mutable` "
-"và các phần tử của chúng thường đồng nhất và được truy cập bằng cách lặp qua"
-" danh sách."
+"Mặc dù tuple có thể có vẻ tương tự như list, chúng thường được sử dụng trong "
+"các tình huống và cho các mục đích khác nhau. Tuple là :term:`immutable`, và "
+"thường chứa một dãy phần tử không đồng nhất được truy cập thông qua unpacking"
+" (xem phần sau trong mục này) hoặc lập chỉ số (hoặc thậm chí thông qua thuộc "
+"tính trong trường hợp của :func:`namedtuples <collections.namedtuple>`). List"
+" là :term:`mutable`, và các phần tử của chúng thường đồng nhất, được truy cập"
+" bằng cách lặp qua list."
 
+# pydocvi: model=gpt-5-6 prompt=574466d7 glossary=1 batch=37cf939aaf1c run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
-"A special problem is the construction of tuples containing 0 or 1 items: the"
-" syntax has some extra quirks to accommodate these.  Empty tuples are "
+"A special problem is the construction of tuples containing 0 or 1 items: the "
+"syntax has some extra quirks to accommodate these.  Empty tuples are "
 "constructed by an empty pair of parentheses; a tuple with one item is "
 "constructed by following a value with a comma (it is not sufficient to "
 "enclose a single value in parentheses). Ugly, but effective.  For example::"
 msgstr ""
-"Một vấn đề đặc biệt là việc xây dựng các bộ dữ liệu chứa 0 hoặc 1 mục: cú "
-"pháp có một số đặc điểm bổ sung để đáp ứng các mục này.  Các bộ dữ liệu "
-"trống được tạo bởi một cặp dấu ngoặc đơn trống; một bộ dữ liệu có một mục "
-"được xây dựng bằng cách theo sau một giá trị bằng dấu phẩy (việc đặt một giá"
-" trị trong ngoặc đơn là không đủ). Xấu xí, nhưng hiệu quả.  Ví dụ::"
+"A special problem is the construction of tuples containing 0 or 1 items: the "
+"syntax has some extra quirks to accommodate these.  Empty tuples are "
+"constructed by an empty pair of parentheses; a tuple with one item is "
+"constructed by following a value with a comma (it is not sufficient to "
+"enclose a single value in parentheses). Ugly, but effective.  For example::\n"
+"21 Một vấn đề đặc biệt là việc tạo các tuple chứa 0 hoặc 1 mục: cú pháp có "
+"một số điểm đặc biệt để hỗ trợ các trường hợp này. Tuple rỗng được tạo bằng "
+"một cặp dấu ngoặc đơn rỗng; tuple có một mục được tạo bằng cách đặt dấu phẩy "
+"sau một giá trị (chỉ bao quanh một giá trị bằng dấu ngoặc đơn là không đủ). "
+"Xấu xí nhưng hiệu quả. Ví dụ::"
 
+# pydocvi: passthrough=doctest
 #, fuzzy
 msgid ""
 ">>> empty = ()\n"
@@ -820,7 +1031,7 @@ msgid ""
 "('hello',)"
 msgstr ""
 ">>> empty = ()\n"
-">>> singleton = 'hello',    # <- lưu ý dấu phẩy ở cuối\n"
+">>> singleton = 'hello',    # <-- note trailing comma\n"
 ">>> len(empty)\n"
 "0\n"
 ">>> len(singleton)\n"
@@ -828,38 +1039,48 @@ msgstr ""
 ">>> singleton\n"
 "('hello',)"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=36b6449c9aef run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
 "The statement ``t = 12345, 54321, 'hello!'`` is an example of *tuple "
 "packing*: the values ``12345``, ``54321`` and ``'hello!'`` are packed "
 "together in a tuple. The reverse operation is also possible::"
 msgstr ""
-"Câu lệnh ``t = 12345, 54321, 'hello!'`` là một ví dụ về *tuple packing*: các"
-" giá trị ``12345``, ``54321`` và ``'hello!'`` được gói cùng nhau trong một "
-"bộ dữ liệu. Hoạt động ngược lại cũng có thể thực hiện được::"
+"Câu lệnh ``t = 12345, 54321, 'hello!'`` là một ví dụ về *tuple packing*: các "
+"giá trị ``12345``, ``54321`` và ``'hello!'`` được đóng gói cùng nhau trong "
+"một tuple. Thao tác ngược lại cũng có thể thực hiện được::"
 
+# pydocvi: passthrough=doctest
 #, fuzzy
 msgid ">>> x, y, z = t"
 msgstr ">>> x, y, z = t"
 
+# pydocvi: model=gpt-5-6 prompt=574466d7 glossary=1 batch=37cf939aaf1c run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
-"This is called, appropriately enough, *sequence unpacking* and works for any"
-" sequence on the right-hand side.  Sequence unpacking requires that there "
-"are as many variables on the left side of the equals sign as there are "
-"elements in the sequence.  Note that multiple assignment is really just a "
-"combination of tuple packing and sequence unpacking."
+"This is called, appropriately enough, *sequence unpacking* and works for any "
+"sequence on the right-hand side.  Sequence unpacking requires that there are "
+"as many variables on the left side of the equals sign as there are elements "
+"in the sequence.  Note that multiple assignment is really just a combination "
+"of tuple packing and sequence unpacking."
 msgstr ""
-"Điều này được gọi một cách thích hợp là *sequence unpacking* và hoạt động "
-"với bất kỳ chuỗi nào ở phía bên phải.  Việc giải nén chuỗi yêu cầu có nhiều "
-"biến ở bên trái dấu bằng bằng số phần tử trong chuỗi.  Lưu ý rằng phép gán "
-"nhiều lần thực chất chỉ là sự kết hợp của việc đóng gói bộ và giải nén theo "
-"trình tự."
+"This is called, appropriately enough, *sequence unpacking* and works for any "
+"sequence on the right-hand side.  Sequence unpacking requires that there are "
+"as many variables on the left side of the equals sign as there are elements "
+"in the sequence.  Note that multiple assignment is really just a combination "
+"of tuple packing and sequence unpacking.\n"
+"23 Điều này được gọi một cách thích hợp là *sequence unpacking* và hoạt động "
+"với bất kỳ dãy nào ở phía bên phải. Sequence unpacking yêu cầu có số lượng "
+"biến ở bên trái dấu bằng bằng với số phần tử trong dãy. Lưu ý rằng phép gán "
+"nhiều biến thực chất chỉ là sự kết hợp của tuple packing và sequence "
+"unpacking."
 
+# pydocvi: passthrough=version_marker
 #, fuzzy
 msgid "Sets"
 msgstr "Sets"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=36b6449c9aef run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
 "Python also includes a data type for :ref:`sets <types-set>`.  A set is an "
@@ -868,12 +1089,13 @@ msgid ""
 "support mathematical operations like union, intersection, difference, and "
 "symmetric difference."
 msgstr ""
-"Python cũng bao gồm một kiểu dữ liệu cho :ref:`sets <types-set>`.  Tập hợp "
-"là một bộ sưu tập không có thứ tự và không có phần tử trùng lặp.  Sử dụng cơ"
-" bản bao gồm kiểm tra tư cách thành viên và loại bỏ các mục trùng lặp.  Các "
-"đối tượng tập hợp cũng hỗ trợ các phép toán như hợp, giao, hiệu và hiệu đối "
-"xứng."
+"Python cũng bao gồm một kiểu dữ liệu cho :ref:`sets <types-set>`. Một set là "
+"một tập hợp không có thứ tự và không có các phần tử trùng lặp. Các cách sử "
+"dụng cơ bản bao gồm kiểm tra thành viên và loại bỏ các mục trùng lặp. Các đối"
+" tượng set cũng hỗ trợ các phép toán toán học như hợp, giao, hiệu và hiệu đối"
+" xứng."
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=36b6449c9aef run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
 "Curly braces or the :func:`set` function can be used to create sets.  Note: "
@@ -881,27 +1103,35 @@ msgid ""
 "creates an empty dictionary, a data structure that we discuss in the next "
 "section."
 msgstr ""
-"Các dấu ngoặc nhọn hoặc hàm :func:`set` có thể được sử dụng để tạo các bộ.  "
-"Lưu ý: để tạo một tập hợp trống bạn phải sử dụng ``set()``, không phải "
-"``{}``; cái sau tạo ra một từ điển trống, một cấu trúc dữ liệu mà chúng ta "
-"sẽ thảo luận trong phần tiếp theo."
+"Dấu ngoặc nhọn hoặc hàm :func:`set` có thể được sử dụng để tạo set. Lưu ý: để"
+" tạo một set rỗng, phải sử dụng ``set()``, không phải ``{}``; cái sau tạo ra "
+"một dictionary rỗng, một cấu trúc dữ liệu được thảo luận trong phần tiếp "
+"theo."
 
+# pydocvi: model=gpt-5-6 prompt=574466d7 glossary=1 batch=37cf939aaf1c run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
-"Because sets are unordered, iterating over them or printing them can produce"
-" the elements in a different order than you expect."
+"Because sets are unordered, iterating over them or printing them can produce "
+"the elements in a different order than you expect."
 msgstr ""
-"Vì các tập hợp không có thứ tự nên việc lặp lại chúng hoặc in chúng có thể "
-"tạo ra các phần tử theo thứ tự khác với thứ bạn mong đợi."
+"Because sets are unordered, iterating over them or printing them can produce "
+"the elements in a different order than you expect.\n"
+"26 Vì set không có thứ tự, việc lặp qua chúng hoặc in chúng có thể tạo ra các"
+" phần tử theo thứ tự khác với mong đợi."
 
+# pydocvi: model=gpt-5-6 prompt=574466d7 glossary=1 batch=37cf939aaf1c run=2026-08-17T16:43Z
 #, fuzzy
 msgid "Here is a brief demonstration::"
-msgstr "Đây là một minh chứng ngắn gọn::"
+msgstr ""
+"Here is a brief demonstration::\n"
+"27 Dưới đây là một minh họa ngắn::"
 
+# pydocvi: passthrough=doctest
 #, fuzzy
 msgid ""
 ">>> basket = {'apple', 'orange', 'apple', 'pear', 'orange', 'banana'}\n"
-">>> print(basket)                      # show that duplicates have been removed\n"
+">>> print(basket)                      # show that duplicates have been "
+"removed\n"
 "{'orange', 'banana', 'pear', 'apple'}\n"
 ">>> 'orange' in basket                 # fast membership testing\n"
 "True\n"
@@ -924,131 +1154,149 @@ msgid ""
 "{'r', 'd', 'b', 'm', 'z', 'l'}"
 msgstr ""
 ">>> basket = {'apple', 'orange', 'apple', 'pear', 'orange', 'banana'}\n"
-">>> print(basket)                      # cho thấy các bản sao đã bị xóa\n"
+">>> print(basket)                      # show that duplicates have been "
+"removed\n"
 "{'orange', 'banana', 'pear', 'apple'}\n"
-">>> 'orange' in basket                 # thử nghiệm thành viên nhanh chóng\n"
+">>> 'orange' in basket                 # fast membership testing\n"
 "True\n"
 ">>> 'crabgrass' in basket\n"
 "False\n"
 "\n"
-">>> # Chứng minh các thao tác tập hợp trên các chữ cái duy nhất từ ​​hai từ\n"
+">>> # Demonstrate set operations on unique letters from two words\n"
 ">>>\n"
 ">>> a = set('abracadabra')\n"
 ">>> b = set('alacazam')\n"
-">>> a                                  # các chữ cái duy nhất trong một\n"
+">>> a                                  # unique letters in a\n"
 "{'a', 'r', 'b', 'c', 'd'}\n"
-">>> a - b                              # chữ cái trong a nhưng không phải trong b\n"
+">>> a - b                              # letters in a but not in b\n"
 "{'r', 'd', 'b'}\n"
-">>> a | b                              # các chữ cái trong a hoặc b hoặc cả hai\n"
+">>> a | b                              # letters in a or b or both\n"
 "{'a', 'c', 'r', 'd', 'b', 'm', 'z', 'l'}\n"
-">>> a & b                              # chữ cái ở cả a và b\n"
+">>> a & b                              # letters in both a and b\n"
 "{'a', 'c'}\n"
-">>> a ^ b                              # các chữ cái trong a hoặc b nhưng không phải cả hai\n"
+">>> a ^ b                              # letters in a or b but not both\n"
 "{'r', 'd', 'b', 'm', 'z', 'l'}"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=36b6449c9aef run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
 "Similarly to :ref:`list comprehensions <tut-listcomps>`, set comprehensions "
-"are also supported::"
+"are also supported, including comprehensions with unpacking::"
 msgstr ""
-"Tương tự như :ref:`list comprehensions <tut-listcomps>`, set comprehension "
-"cũng được hỗ trợ::"
+"Tương tự như :ref:`list comprehensions <tut-listcomps>`, set comprehensions "
+"cũng được hỗ trợ, bao gồm cả các comprehension có unpacking::"
 
+# pydocvi: passthrough=doctest
 #, fuzzy
 msgid ""
 ">>> a = {x for x in 'abracadabra' if x not in 'abc'}\n"
 ">>> a\n"
-"{'r', 'd'}"
+"{'r', 'd'}\n"
+"\n"
+">>> fruits = [{'apple', 'avocado', 'apricot'}, {'banana', 'blueberry'}]\n"
+">>> {*fruit for fruit in fruits}\n"
+"{'blueberry', 'banana', 'avocado', 'apple', 'apricot'}"
 msgstr ""
 ">>> a = {x for x in 'abracadabra' if x not in 'abc'}\n"
 ">>> a\n"
-"{'r', 'd'}"
+"{'r', 'd'}\n"
+"\n"
+">>> fruits = [{'apple', 'avocado', 'apricot'}, {'banana', 'blueberry'}]\n"
+">>> {*fruit for fruit in fruits}\n"
+"{'blueberry', 'banana', 'avocado', 'apple', 'apricot'}"
 
+# pydocvi: passthrough=version_marker
 #, fuzzy
 msgid "Dictionaries"
-msgstr "Từ điển"
+msgstr "Dictionaries"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=36b6449c9aef run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
 "Another useful data type built into Python is the *dictionary* (see "
-":ref:`typesmapping`). Dictionaries are sometimes found in other languages as"
-" \"associative memories\" or \"associative arrays\".  Unlike sequences, "
-"which are indexed by a range of numbers, dictionaries are indexed by *keys*,"
-" which can be any immutable type; strings and numbers can always be keys.  "
-"Tuples can be used as keys if they contain only strings, numbers, or tuples;"
-" if a tuple contains any mutable object either directly or indirectly, it "
-"cannot be used as a key. You can't use lists as keys, since lists can be "
-"modified in place using index assignments, slice assignments, or methods "
-"like :meth:`~list.append` and :meth:`~list.extend`."
+":ref:`typesmapping`). Dictionaries are sometimes found in other languages as "
+"\"associative memories\" or \"associative arrays\".  Unlike sequences, which "
+"are indexed by a range of numbers, dictionaries are indexed by *keys*, which "
+"can be any immutable type; strings and numbers can always be keys.  Tuples "
+"can be used as keys if they contain only strings, numbers, or tuples; if a "
+"tuple contains any mutable object either directly or indirectly, it cannot be"
+" used as a key. You can't use lists as keys, since lists can be modified in "
+"place using index assignments, slice assignments, or methods like "
+":meth:`~list.append` and :meth:`~list.extend`."
 msgstr ""
-"Một kiểu dữ liệu hữu ích khác được tích hợp trong Python là *dictionary* "
-"(xem :ref:`typesmapping`). Từ điển đôi khi được tìm thấy trong các ngôn ngữ "
-"khác dưới dạng \"ký ức liên kết\" hoặc \"mảng liên kết\".  Không giống như "
-"các chuỗi được lập chỉ mục theo một dãy số, từ điển được lập chỉ mục theo "
-"*keys*, có thể là bất kỳ loại bất biến nào; chuỗi và số luôn có thể là khóa."
-"  Các bộ dữ liệu có thể được sử dụng làm khóa nếu chúng chỉ chứa chuỗi, số "
-"hoặc bộ dữ liệu; nếu một tuple chứa bất kỳ đối tượng có thể thay đổi nào "
-"trực tiếp hoặc gián tiếp thì nó không thể được sử dụng làm khóa. Bạn không "
-"thể sử dụng danh sách làm khóa vì danh sách có thể được sửa đổi tại chỗ bằng"
-" cách sử dụng phép gán chỉ mục, phép gán lát hoặc các phương thức như "
-":meth:`~list.append` và :meth:`~list.extend`."
+"Một kiểu dữ liệu hữu ích khác được tích hợp sẵn trong Python là *dictionary* "
+"(xem :ref:`typesmapping`). Dictionary đôi khi được gọi trong các ngôn ngữ "
+"khác là \"bộ nhớ liên kết\" hoặc \"mảng liên kết\". Không giống các dãy, được"
+" lập chỉ số bằng một phạm vi số, dictionary được lập chỉ số bằng *khóa*, có "
+"thể là bất kỳ kiểu dữ liệu bất biến nào; chuỗi và số luôn có thể là khóa. "
+"Tuple có thể được dùng làm khóa nếu chúng chỉ chứa chuỗi, số hoặc tuple; nếu "
+"một tuple chứa bất kỳ đối tượng có thể thay đổi nào, trực tiếp hoặc gián "
+"tiếp, nó không thể được dùng làm khóa. Không thể dùng list làm khóa, vì list "
+"có thể được sửa đổi tại chỗ bằng cách gán chỉ số, gán slice hoặc các phương "
+"thức như :meth:`~list.append` và :meth:`~list.extend`."
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=10da7e8a3566 run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
-"It is best to think of a dictionary as a set of *key: value* pairs, with the"
-" requirement that the keys are unique (within one dictionary). A pair of "
-"braces creates an empty dictionary: ``{}``. Placing a comma-separated list "
-"of key:value pairs within the braces adds initial key:value pairs to the "
+"It is best to think of a dictionary as a set of *key: value* pairs, with the "
+"requirement that the keys are unique (within one dictionary). A pair of "
+"braces creates an empty dictionary: ``{}``. Placing a comma-separated list of"
+" key:value pairs within the braces adds initial key:value pairs to the "
 "dictionary; this is also the way dictionaries are written on output."
 msgstr ""
-"Tốt nhất nên coi từ điển là một tập hợp các cặp *key: value*, với yêu cầu "
-"các khóa là duy nhất (trong một từ điển). Một cặp dấu ngoặc nhọn tạo ra một "
-"từ điển trống: ``{}``. Việc đặt danh sách các cặp khóa:giá trị được phân "
-"tách bằng dấu phẩy trong dấu ngoặc nhọn sẽ thêm các cặp khóa:giá trị ban đầu"
-" vào từ điển; đây cũng là cách từ điển được viết trên đầu ra."
+"Có thể xem từ điển như một tập hợp các cặp *key: value*, với yêu cầu các khóa"
+" là duy nhất (trong một từ điển). Một cặp dấu ngoặc nhọn tạo ra một từ điển "
+"rỗng: ``{}``. Đặt một list các cặp khóa:giá trị được phân tách bằng dấu phẩy "
+"bên trong dấu ngoặc nhọn sẽ thêm các cặp khóa:giá trị ban đầu vào từ điển; "
+"đây cũng là cách các từ điển được viết khi xuất ra."
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=10da7e8a3566 run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
 "The main operations on a dictionary are storing a value with some key and "
 "extracting the value given the key.  It is also possible to delete a "
-"key:value pair with ``del``. If you store using a key that is already in "
-"use, the old value associated with that key is forgotten."
+"key:value pair with ``del``. If you store using a key that is already in use,"
+" the old value associated with that key is forgotten."
 msgstr ""
-"Các thao tác chính trên từ điển là lưu trữ một giá trị bằng một số khóa và "
-"trích xuất giá trị đã cho từ khóa đó.  Cũng có thể xóa cặp khóa:giá trị bằng"
-" ``del``. Nếu bạn lưu trữ bằng khóa đã được sử dụng thì giá trị cũ được liên"
-" kết với khóa đó sẽ bị lãng quên."
+"Các thao tác chính trên một từ điển là lưu trữ một giá trị với một khóa nào "
+"đó và lấy giá trị được cung cấp bởi khóa đó. Cũng có thể xóa một cặp khóa:giá"
+" trị bằng ``del``. Nếu lưu trữ bằng một khóa đã được sử dụng, giá trị cũ liên"
+" kết với khóa đó sẽ bị quên."
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=10da7e8a3566 run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
-"Extracting a value for a non-existent key by subscripting (``d[key]``) "
-"raises a :exc:`KeyError`. To avoid getting this error when trying to access "
-"a possibly non-existent key, use the :meth:`~dict.get` method instead, which"
-" returns ``None`` (or a specified default value) if the key is not in the "
+"Extracting a value for a non-existent key by subscripting (``d[key]``) raises"
+" a :exc:`KeyError`. To avoid getting this error when trying to access a "
+"possibly non-existent key, use the :meth:`~dict.get` method instead, which "
+"returns ``None`` (or a specified default value) if the key is not in the "
 "dictionary."
 msgstr ""
-"Trích xuất một giá trị cho khóa không tồn tại bằng cách đăng ký (``d[key]``)"
-" sẽ tăng :exc:`KeyError`. Để tránh gặp phải lỗi này khi cố gắng truy cập vào"
-" một khóa có thể không tồn tại, hãy sử dụng phương thức :meth:`~dict.get` để"
-" trả về ``None`` (hoặc một giá trị mặc định được chỉ định) nếu khóa đó không"
-" có trong từ điển."
+"Việc lấy giá trị cho một khóa không tồn tại bằng cách truy cập chỉ số "
+"(``d[key]``) sẽ phát sinh một :exc:`KeyError`. Để tránh gặp lỗi này khi cố "
+"truy cập một khóa có thể không tồn tại, hãy sử dụng phương thức "
+":meth:`~dict.get` thay thế, phương thức này trả về ``None`` (hoặc một giá trị"
+" mặc định được chỉ định) nếu khóa không có trong từ điển."
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=10da7e8a3566 run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
-"Performing ``list(d)`` on a dictionary returns a list of all the keys used "
-"in the dictionary, in insertion order (if you want it sorted, just use "
+"Performing ``list(d)`` on a dictionary returns a list of all the keys used in"
+" the dictionary, in insertion order (if you want it sorted, just use "
 "``sorted(d)`` instead). To check whether a single key is in the dictionary, "
 "use the :keyword:`in` keyword."
 msgstr ""
-"Thực hiện ``list(d)`` trên từ điển sẽ trả về danh sách tất cả các khóa được "
-"sử dụng trong từ điển, theo thứ tự chèn (nếu bạn muốn sắp xếp nó, thay vào "
-"đó chỉ cần sử dụng ``sorted(d)``). Để kiểm tra xem một khóa có trong từ điển"
-" hay không, hãy sử dụng từ khóa :keyword:`in`."
+"Thực hiện ``list(d)`` trên một từ điển trả về một list gồm tất cả các khóa "
+"được sử dụng trong từ điển, theo thứ tự chèn (nếu muốn sắp xếp, chỉ cần dùng "
+"``sorted(d)`` thay thế). Để kiểm tra một khóa duy nhất có nằm trong từ điển "
+"hay không, sử dụng từ khóa :keyword:`in`."
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=10da7e8a3566 run=2026-08-17T16:43Z
 #, fuzzy
 msgid "Here is a small example using a dictionary::"
-msgstr "Đây là một ví dụ nhỏ sử dụng từ điển::"
+msgstr "Đây là một ví dụ nhỏ sử dụng một từ điển::"
 
+# pydocvi: passthrough=doctest
 #, fuzzy
 msgid ""
 ">>> tel = {'jack': 4098, 'sape': 4139}\n"
@@ -1101,14 +1349,16 @@ msgstr ""
 ">>> 'jack' not in tel\n"
 "False"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=10da7e8a3566 run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
 "The :func:`dict` constructor builds dictionaries directly from sequences of "
 "key-value pairs::"
 msgstr ""
-"Hàm tạo :func:`dict` xây dựng từ điển trực tiếp từ chuỗi các cặp khóa-giá "
-"trị ::"
+"Hàm khởi tạo :func:`dict` xây dựng các từ điển trực tiếp từ các dãy gồm các "
+"cặp khóa-giá trị::"
 
+# pydocvi: passthrough=doctest
 #, fuzzy
 msgid ""
 ">>> dict([('sape', 4139), ('guido', 4127), ('jack', 4098)])\n"
@@ -1117,14 +1367,16 @@ msgstr ""
 ">>> dict([('sape', 4139), ('guido', 4127), ('jack', 4098)])\n"
 "{'sape': 4139, 'guido': 4127, 'jack': 4098}"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=10da7e8a3566 run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
 "In addition, dict comprehensions can be used to create dictionaries from "
 "arbitrary key and value expressions::"
 msgstr ""
-"Ngoài ra, dict comprehension có thể được dùng để tạo dict từ các biểu thức "
-"khóa và giá trị tùy ý::"
+"Ngoài ra, dict comprehensions có thể được sử dụng để tạo các từ điển từ các "
+"biểu thức khóa và giá trị tùy ý::"
 
+# pydocvi: passthrough=doctest
 #, fuzzy
 msgid ""
 ">>> {x: x**2 for x in (2, 4, 6)}\n"
@@ -1133,14 +1385,46 @@ msgstr ""
 ">>> {x: x**2 for x in (2, 4, 6)}\n"
 "{2: 4, 4: 16, 6: 36}"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=10da7e8a3566 run=2026-08-17T16:43Z
+#, fuzzy
+msgid ""
+"And dictionary unpacking (via ``**``) can be used to merge multiple "
+"dictionaries::"
+msgstr ""
+"Và việc giải nén từ điển (thông qua ``**``) có thể được sử dụng để hợp nhất "
+"nhiều từ điển::"
+
+# pydocvi: passthrough=doctest
+#, fuzzy
+msgid ""
+">>> odds = {i: i**2 for i in (1, 3, 5)}\n"
+">>> evens = {i: i**2 for i in (2, 4, 6)}\n"
+">>> {**odds, **evens}\n"
+"{1: 1, 3: 9, 5: 25, 2: 4, 4: 16, 6: 36}\n"
+"\n"
+">>> all_values = [odds, evens, {0: 0}]\n"
+">>> {**i for i in all_values}\n"
+"{1: 1, 3: 9, 5: 25, 2: 4, 4: 16, 6: 36, 0: 0}"
+msgstr ""
+">>> odds = {i: i**2 for i in (1, 3, 5)}\n"
+">>> evens = {i: i**2 for i in (2, 4, 6)}\n"
+">>> {**odds, **evens}\n"
+"{1: 1, 3: 9, 5: 25, 2: 4, 4: 16, 6: 36}\n"
+"\n"
+">>> all_values = [odds, evens, {0: 0}]\n"
+">>> {**i for i in all_values}\n"
+"{1: 1, 3: 9, 5: 25, 2: 4, 4: 16, 6: 36, 0: 0}"
+
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=10da7e8a3566 run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
 "When the keys are simple strings, it is sometimes easier to specify pairs "
 "using keyword arguments::"
 msgstr ""
-"Khi các khóa là các chuỗi đơn giản, đôi khi việc chỉ định các cặp bằng cách "
-"sử dụng đối số từ khóa sẽ dễ dàng hơn::"
+"Khi các khóa là các chuỗi đơn giản, đôi khi việc chỉ định các cặp bằng các "
+"đối số từ khóa sẽ dễ dàng hơn::"
 
+# pydocvi: passthrough=doctest
 #, fuzzy
 msgid ""
 ">>> dict(sape=4139, guido=4127, jack=4098)\n"
@@ -1149,18 +1433,21 @@ msgstr ""
 ">>> dict(sape=4139, guido=4127, jack=4098)\n"
 "{'sape': 4139, 'guido': 4127, 'jack': 4098}"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=10da7e8a3566 run=2026-08-17T16:43Z
 #, fuzzy
 msgid "Looping Techniques"
 msgstr "Kỹ thuật lặp"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=10da7e8a3566 run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
 "When looping through dictionaries, the key and corresponding value can be "
 "retrieved at the same time using the :meth:`~dict.items` method. ::"
 msgstr ""
-"Khi lặp qua từ điển, khóa và giá trị tương ứng có thể được truy xuất cùng "
-"lúc bằng phương thức :meth:`~dict.items`. ::"
+"Khi lặp qua các từ điển, khóa và giá trị tương ứng có thể được lấy cùng lúc "
+"bằng phương thức :meth:`~dict.items`. ::"
 
+# pydocvi: passthrough=doctest
 #, fuzzy
 msgid ""
 ">>> knights = {'gallahad': 'the pure', 'robin': 'the brave'}\n"
@@ -1177,14 +1464,16 @@ msgstr ""
 "gallahad the pure\n"
 "robin the brave"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=10da7e8a3566 run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
 "When looping through a sequence, the position index and corresponding value "
 "can be retrieved at the same time using the :func:`enumerate` function. ::"
 msgstr ""
-"Khi lặp qua một chuỗi, chỉ số vị trí và giá trị tương ứng có thể được truy "
-"xuất cùng lúc bằng hàm :func:`enumerate`. ::"
+"Khi lặp qua một dãy, chỉ số vị trí và giá trị tương ứng có thể được lấy cùng "
+"lúc bằng hàm :func:`enumerate`. ::"
 
+# pydocvi: passthrough=doctest
 #, fuzzy
 msgid ""
 ">>> for i, v in enumerate(['tic', 'tac', 'toe']):\n"
@@ -1201,14 +1490,16 @@ msgstr ""
 "1 tac\n"
 "2 toe"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=10da7e8a3566 run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
 "To loop over two or more sequences at the same time, the entries can be "
 "paired with the :func:`zip` function. ::"
 msgstr ""
-"Để lặp qua hai hoặc nhiều chuỗi cùng lúc, các mục có thể được ghép nối với "
-"hàm :func:`zip`. ::"
+"Để lặp qua hai hoặc nhiều dãy cùng lúc, các mục có thể được ghép cặp bằng hàm"
+" :func:`zip`. ::"
 
+# pydocvi: passthrough=doctest
 #, fuzzy
 msgid ""
 ">>> questions = ['name', 'quest', 'favorite color']\n"
@@ -1229,14 +1520,16 @@ msgstr ""
 "What is your quest?  It is the holy grail.\n"
 "What is your favorite color?  It is blue."
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=10da7e8a3566 run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
 "To loop over a sequence in reverse, first specify the sequence in a forward "
 "direction and then call the :func:`reversed` function. ::"
 msgstr ""
-"Để lặp lại một chuỗi theo chiều ngược lại, trước tiên hãy chỉ định chuỗi "
-"theo hướng thuận và sau đó gọi hàm :func:`reversed`. ::"
+"Để lặp qua một dãy theo thứ tự ngược, trước tiên chỉ định dãy theo hướng xuôi"
+" rồi gọi hàm :func:`reversed`. ::"
 
+# pydocvi: passthrough=doctest
 #, fuzzy
 msgid ""
 ">>> for i in reversed(range(1, 10, 2)):\n"
@@ -1257,15 +1550,16 @@ msgstr ""
 "3\n"
 "1"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=10da7e8a3566 run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
 "To loop over a sequence in sorted order, use the :func:`sorted` function "
 "which returns a new sorted list while leaving the source unaltered. ::"
 msgstr ""
-"Để lặp lại một chuỗi theo thứ tự đã sắp xếp, hãy sử dụng hàm :func:`sorted` "
-"để trả về một danh sách được sắp xếp mới trong khi nguồn không bị thay đổi. "
-"::"
+"Để lặp qua một dãy theo thứ tự đã sắp xếp, sử dụng hàm :func:`sorted`, hàm "
+"này trả về một list mới đã sắp xếp trong khi giữ nguyên nguồn ban đầu. ::"
 
+# pydocvi: passthrough=doctest
 #, fuzzy
 msgid ""
 ">>> basket = ['apple', 'orange', 'apple', 'pear', 'orange', 'banana']\n"
@@ -1290,6 +1584,7 @@ msgstr ""
 "orange\n"
 "pear"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=10da7e8a3566 run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
 "Using :func:`set` on a sequence eliminates duplicate elements. The use of "
@@ -1297,11 +1592,12 @@ msgid ""
 "idiomatic way to loop over unique elements of the sequence in sorted order. "
 "::"
 msgstr ""
-"Sử dụng :func:`set` trên một chuỗi sẽ loại bỏ các phần tử trùng lặp. Việc sử"
-" dụng :func:`sorted` kết hợp với :func:`set` trên một chuỗi là một cách "
-"thông thường để lặp lại các phần tử duy nhất của chuỗi theo thứ tự được sắp "
-"xếp. ::"
+"Sử dụng :func:`set` trên một dãy sẽ loại bỏ các phần tử trùng lặp. Việc sử "
+"dụng :func:`sorted` kết hợp với :func:`set` trên một dãy là cách thức phù hợp"
+" theo phong cách Python để lặp qua các phần tử duy nhất của dãy theo thứ tự "
+"đã sắp xếp. ::"
 
+# pydocvi: passthrough=doctest
 #, fuzzy
 msgid ""
 ">>> basket = ['apple', 'orange', 'apple', 'pear', 'orange', 'banana']\n"
@@ -1322,14 +1618,16 @@ msgstr ""
 "orange\n"
 "pear"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=10da7e8a3566 run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
 "It is sometimes tempting to change a list while you are looping over it; "
 "however, it is often simpler and safer to create a new list instead. ::"
 msgstr ""
-"Đôi khi bạn muốn thay đổi một danh sách trong khi lặp lại nó; tuy nhiên, "
-"thay vào đó, việc tạo danh sách mới thường đơn giản và an toàn hơn. ::"
+"Đôi khi có thể muốn thay đổi một list trong khi đang lặp qua nó; tuy nhiên, "
+"thường thì việc tạo một list mới sẽ đơn giản và an toàn hơn. ::"
 
+# pydocvi: passthrough=doctest
 #, fuzzy
 msgid ""
 ">>> import math\n"
@@ -1352,81 +1650,89 @@ msgstr ""
 ">>> filtered_data\n"
 "[56.2, 51.7, 55.3, 52.5, 47.8]"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=10da7e8a3566 run=2026-08-17T16:43Z
 #, fuzzy
 msgid "More on Conditions"
 msgstr "Thêm về điều kiện"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=10da7e8a3566 run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
 "The conditions used in ``while`` and ``if`` statements can contain any "
 "operators, not just comparisons."
 msgstr ""
-"Các điều kiện được sử dụng trong câu lệnh ``while`` và ``if`` có thể chứa "
-"bất kỳ toán tử nào, không chỉ các phép so sánh."
+"Các điều kiện được sử dụng trong các câu lệnh ``while`` và ``if`` có thể chứa"
+" bất kỳ toán tử nào, không chỉ các phép so sánh."
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=10da7e8a3566 run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
 "The comparison operators ``in`` and ``not in`` are membership tests that "
 "determine whether a value is in (or not in) a container.  The operators "
-"``is`` and ``is not`` compare whether two objects are really the same "
-"object.  All comparison operators have the same priority, which is lower "
-"than that of all numerical operators."
+"``is`` and ``is not`` compare whether two objects are really the same object."
+"  All comparison operators have the same priority, which is lower than that "
+"of all numerical operators."
 msgstr ""
-"Toán tử so sánh ``in`` và ``not in`` là các phép kiểm tra tư cách thành viên"
-" nhằm xác định xem một giá trị có nằm trong (hoặc không nằm trong) một vùng "
-"chứa hay không.  Các toán tử ``is`` và ``is not`` so sánh xem hai đối tượng "
-"có thực sự là một đối tượng hay không.  Tất cả các toán tử so sánh đều có "
-"cùng mức ưu tiên, thấp hơn mức ưu tiên của tất cả các toán tử số."
+"Các toán tử so sánh ``in`` và ``not in`` là các phép kiểm tra thành viên, xác"
+" định liệu một giá trị có nằm trong (hoặc không nằm trong) một container hay "
+"không. Các toán tử ``is`` và ``is not`` so sánh liệu hai object có thực sự là"
+" cùng một object hay không. Tất cả toán tử so sánh có cùng độ ưu tiên, thấp "
+"hơn độ ưu tiên của tất cả toán tử số học."
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=10da7e8a3566 run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
-"Comparisons can be chained.  For example, ``a < b == c`` tests whether ``a``"
-" is less than ``b`` and moreover ``b`` equals ``c``."
+"Comparisons can be chained.  For example, ``a < b == c`` tests whether ``a`` "
+"is less than ``b`` and moreover ``b`` equals ``c``."
 msgstr ""
-"So sánh có thể được xâu chuỗi.  Ví dụ: ``a < b == c`` kiểm tra xem ``a`` có "
-"nhỏ hơn ``b`` hay không và hơn nữa ``b`` có bằng ``c`` hay không."
+"Các phép so sánh có thể được xâu chuỗi. Ví dụ, ``a < b == c`` kiểm tra liệu "
+"``a`` có nhỏ hơn ``b`` hay không và hơn nữa ``b`` có bằng ``c`` hay không."
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=10da7e8a3566 run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
 "Comparisons may be combined using the Boolean operators ``and`` and ``or``, "
 "and the outcome of a comparison (or of any other Boolean expression) may be "
-"negated with ``not``.  These have lower priorities than comparison "
-"operators; between them, ``not`` has the highest priority and ``or`` the "
-"lowest, so that ``A and not B or C`` is equivalent to ``(A and (not B)) or "
-"C``. As always, parentheses can be used to express the desired composition."
+"negated with ``not``.  These have lower priorities than comparison operators;"
+" between them, ``not`` has the highest priority and ``or`` the lowest, so "
+"that ``A and not B or C`` is equivalent to ``(A and (not B)) or C``. As "
+"always, parentheses can be used to express the desired composition."
 msgstr ""
-"Các phép so sánh có thể được kết hợp bằng cách sử dụng các toán tử Boolean "
-"``and`` và ``or``, và kết quả của phép so sánh (hoặc của bất kỳ biểu thức "
-"Boolean nào khác) có thể bị phủ định bằng ``not``.  Chúng có mức độ ưu tiên "
-"thấp hơn toán tử so sánh; giữa chúng, ``not`` có mức độ ưu tiên cao nhất và "
-"``or`` có mức ưu tiên thấp nhất, do đó ``A and not B or C`` tương đương với "
-"``(A and (not B)) or C``. Như mọi khi, có thể sử dụng dấu ngoặc đơn để thể "
-"hiện bố cục mong muốn."
+"Các phép so sánh có thể được kết hợp bằng các toán tử Boolean ``and`` và "
+"``or``, và kết quả của một phép so sánh (hoặc bất kỳ biểu thức Boolean nào "
+"khác) có thể được phủ định bằng ``not``. Các toán tử này có độ ưu tiên thấp "
+"hơn các toán tử so sánh; giữa chúng, ``not`` có độ ưu tiên cao nhất và ``or``"
+" có độ ưu tiên thấp nhất, vì vậy ``A and not B or C`` tương đương với ``(A "
+"and (not B)) or C``. Như thường lệ, có thể sử dụng dấu ngoặc đơn để biểu diễn"
+" phép kết hợp mong muốn."
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=10da7e8a3566 run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
 "The Boolean operators ``and`` and ``or`` are so-called *short-circuit* "
 "operators: their arguments are evaluated from left to right, and evaluation "
-"stops as soon as the outcome is determined.  For example, if ``A`` and ``C``"
-" are true but ``B`` is false, ``A and B and C`` does not evaluate the "
+"stops as soon as the outcome is determined.  For example, if ``A`` and ``C`` "
+"are true but ``B`` is false, ``A and B and C`` does not evaluate the "
 "expression ``C``.  When used as a general value and not as a Boolean, the "
 "return value of a short-circuit operator is the last evaluated argument."
 msgstr ""
-"Các toán tử Boolean ``and`` và ``or`` còn được gọi là toán tử *short-"
-"circuit*: các đối số của chúng được đánh giá từ trái sang phải và việc đánh "
-"giá sẽ dừng ngay khi kết quả được xác định.  Ví dụ: nếu ``A`` và ``C`` đúng "
-"nhưng ``B`` sai thì ``A and B and C`` không đánh giá biểu thức ``C``.  Khi "
-"được sử dụng làm giá trị chung chứ không phải dưới dạng Boolean, giá trị trả"
-" về của toán tử đoản mạch là đối số được đánh giá cuối cùng."
+"Các toán tử Boolean ``and`` và ``or`` được gọi là các toán tử *short-"
+"circuit*: các đối số của chúng được đánh giá từ trái sang phải, và việc đánh "
+"giá dừng ngay khi kết quả được xác định. Ví dụ, nếu ``A`` và ``C`` là đúng "
+"nhưng ``B`` là sai, ``A and B and C`` không đánh giá biểu thức ``C``. Khi "
+"được sử dụng như một giá trị thông thường chứ không phải Boolean, giá trị trả"
+" về của một toán tử short-circuit là đối số cuối cùng được đánh giá."
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=10da7e8a3566 run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
 "It is possible to assign the result of a comparison or other Boolean "
 "expression to a variable.  For example, ::"
 msgstr ""
-"Có thể gán kết quả so sánh hoặc biểu thức Boolean khác cho một biến.  Ví "
-"dụ:::"
+"Có thể gán kết quả của một phép so sánh hoặc biểu thức Boolean khác cho một "
+"biến. Ví dụ, ::"
 
+# pydocvi: passthrough=doctest
 #, fuzzy
 msgid ""
 ">>> string1, string2, string3 = '', 'Trondheim', 'Hammer Dance'\n"
@@ -1439,51 +1745,52 @@ msgstr ""
 ">>> non_null\n"
 "'Trondheim'"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=10da7e8a3566 run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
 "Note that in Python, unlike C, assignment inside expressions must be done "
 "explicitly with the :ref:`walrus operator <why-can-t-i-use-an-assignment-in-"
-"an-expression>` ``:=``. This avoids a common class of problems encountered "
-"in C programs: typing ``=`` in an expression when ``==`` was intended."
+"an-expression>` ``:=``. This avoids a common class of problems encountered in"
+" C programs: typing ``=`` in an expression when ``==`` was intended."
 msgstr ""
-"Lưu ý rằng trong Python, không giống như C, việc gán bên trong các biểu thức"
-" phải được thực hiện rõ ràng bằng :ref:`walrus operator <why-can-t-i-use-an-"
-"assignment-in-an-expression>` ``:=``. Điều này tránh được một loại vấn đề "
-"thường gặp trong các chương trình C: gõ ``=`` vào một biểu thức khi ``==`` "
-"được dự định."
+"Lưu ý rằng trong Python, không giống C, phép gán bên trong biểu thức phải "
+"được thực hiện rõ ràng bằng :ref:`walrus operator <why-can-t-i-use-an-"
+"assignment-in-an-expression>` ``:=``. Điều này tránh một nhóm lỗi phổ biến "
+"gặp trong các chương trình C: nhập ``=`` trong một biểu thức khi đáng lẽ muốn"
+" dùng ``==``."
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=10da7e8a3566 run=2026-08-17T16:43Z
 #, fuzzy
 msgid "Comparing Sequences and Other Types"
-msgstr "So sánh sequence và các kiểu khác"
+msgstr "So sánh các dãy và các type khác"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=10da7e8a3566 run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
 "Sequence objects typically may be compared to other objects with the same "
 "sequence type. The comparison uses *lexicographical* ordering: first the "
-"first two items are compared, and if they differ this determines the outcome"
-" of the comparison; if they are equal, the next two items are compared, and "
-"so on, until either sequence is exhausted. If two items to be compared are "
+"first two items are compared, and if they differ this determines the outcome "
+"of the comparison; if they are equal, the next two items are compared, and so"
+" on, until either sequence is exhausted. If two items to be compared are "
 "themselves sequences of the same type, the lexicographical comparison is "
 "carried out recursively.  If all items of two sequences compare equal, the "
-"sequences are considered equal. If one sequence is an initial sub-sequence "
-"of the other, the shorter sequence is the smaller (lesser) one.  "
+"sequences are considered equal. If one sequence is an initial sub-sequence of"
+" the other, the shorter sequence is the smaller (lesser) one.  "
 "Lexicographical ordering for strings uses the Unicode code point number to "
 "order individual characters. Some examples of comparisons between sequences "
 "of the same type::"
 msgstr ""
-"Các đối tượng trình tự thường có thể được so sánh với các đối tượng khác có "
-"cùng loại trình tự. Việc so sánh sử dụng thứ tự *lexicographical*: đầu tiên,"
-" hai mục đầu tiên được so sánh và nếu chúng khác nhau thì điều này sẽ xác "
-"định kết quả so sánh; nếu chúng bằng nhau thì hai mục tiếp theo sẽ được so "
-"sánh, v.v., cho đến khi hết một trong hai chuỗi. Nếu hai mục được so sánh là"
-" các chuỗi cùng loại thì việc so sánh từ điển được thực hiện theo cách đệ "
-"quy.  Nếu tất cả các phần tử của hai chuỗi so sánh bằng nhau thì các chuỗi "
-"đó được coi là bằng nhau. Nếu một chuỗi là chuỗi con ban đầu của chuỗi kia "
-"thì chuỗi ngắn hơn sẽ là chuỗi nhỏ hơn (nhỏ hơn).  Thứ tự từ điển cho chuỗi "
-"sử dụng số điểm mã Unicode để sắp xếp các ký tự riêng lẻ. Một số ví dụ về so"
-" sánh giữa các chuỗi cùng loại::"
+"Các object dãy thường có thể được so sánh với các object khác có cùng type "
+"dãy. Phép so sánh sử dụng thứ tự *lexicographical*: trước tiên hai mục đầu "
+"tiên được so sánh, và nếu chúng khác nhau thì điều này quyết định kết quả của"
+" phép so sánh; nếu chúng bằng nhau, hai mục tiếp theo được so sánh, cứ tiếp "
+"tục như vậy cho đến khi một trong hai dãy hết. Nếu hai mục cần so sánh tự "
+"chúng là các dãy cùng type, phép so sánh lexicographical được thực hiện đệ "
+"quy. Nếu tất cả các mục của hai dãy so sánh bằng nhau, các dãy được xem là "
+"bằng nhau. Nếu một dãy là dãy con ban đầu của dãy kia, dãy ngắn hơn là dãy "
+"nhỏ hơn. Thứ tự lexicographical cho chuỗi sử dụng số điểm mã Unicode để sắp "
+"xếp các ký tự riêng lẻ. Một số ví dụ về so sánh giữa các dãy cùng type::"
 
-#, fuzzy
 msgid ""
 "(1, 2, 3)              < (1, 2, 4)\n"
 "[1, 2, 3]              < [1, 2, 4]\n"
@@ -1493,35 +1800,31 @@ msgid ""
 "(1, 2, 3)             == (1.0, 2.0, 3.0)\n"
 "(1, 2, ('aa', 'ab'))   < (1, 2, ('abc', 'a'), 4)"
 msgstr ""
-"(1, 2, 3)              < (1, 2, 4)\n"
-"[1, 2, 3]              < [1, 2, 4]\n"
-"'ABC' < 'C' < 'Pascal' < 'Python'\n"
-"(1, 2, 3, 4)           < (1, 2, 4)\n"
-"(1, 2)                 < (1, 2, -1)\n"
-"(1, 2, 3)             == (1.0, 2.0, 3.0)\n"
-"(1, 2, ('aa', 'ab'))   < (1, 2, ('abc', 'a'), 4)"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=83b4bf9bcc60 run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
 "Note that comparing objects of different types with ``<`` or ``>`` is legal "
-"provided that the objects have appropriate comparison methods.  For example,"
-" mixed numeric types are compared according to their numeric value, so 0 "
-"equals 0.0, etc.  Otherwise, rather than providing an arbitrary ordering, "
-"the interpreter will raise a :exc:`TypeError` exception."
+"provided that the objects have appropriate comparison methods.  For example, "
+"mixed numeric types are compared according to their numeric value, so 0 "
+"equals 0.0, etc.  Otherwise, rather than providing an arbitrary ordering, the"
+" interpreter will raise a :exc:`TypeError` exception."
 msgstr ""
-"Lưu ý rằng việc so sánh các đối tượng thuộc các loại khác nhau với ``<`` "
-"hoặc ``>`` là hợp pháp với điều kiện các đối tượng đó có phương pháp so sánh"
-" phù hợp.  Ví dụ: các loại số hỗn hợp được so sánh theo giá trị số của "
-"chúng, do đó 0 bằng 0,0, v.v. Mặt khác, thay vì cung cấp thứ tự tùy ý, trình"
-" thông dịch sẽ đưa ra ngoại lệ :exc:`TypeError`."
+"Lưu ý rằng việc so sánh các đối tượng thuộc các kiểu khác nhau với ``<`` hoặc"
+" ``>`` là hợp lệ miễn là các đối tượng có các phương thức so sánh phù hợp. Ví"
+" dụ, các kiểu số hỗn hợp được so sánh theo giá trị số của chúng, vì vậy 0 "
+"bằng 0.0, v.v. Nếu không, thay vì cung cấp một thứ tự tùy ý, trình thông dịch"
+" sẽ đưa ra một ngoại lệ :exc:`TypeError`."
 
 msgid "Footnotes"
 msgstr " Chú thích"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=83b4bf9bcc60 run=2026-08-17T16:43Z
 #, fuzzy
 msgid ""
-"Other languages may return the mutated object, which allows method chaining,"
-" such as ``d->insert(\"a\")->remove(\"b\")->sort();``."
+"Other languages may return the mutated object, which allows method chaining, "
+"such as ``d->insert(\"a\")->remove(\"b\")->sort();``."
 msgstr ""
-"Các ngôn ngữ khác có thể trả về đối tượng bị đột biến, cho phép xâu chuỗi "
-"phương thức, chẳng hạn như ``d->insert(\"a\")->remove(\"b\")->sort();``."
+"Các ngôn ngữ khác có thể trả về đối tượng đã bị biến đổi, điều này cho phép "
+"nối chuỗi phương thức, chẳng hạn như "
+"``d->insert(\"a\")->remove(\"b\")->sort();``."

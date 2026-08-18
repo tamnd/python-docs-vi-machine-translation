@@ -9,18 +9,18 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-17 14:50+0000\n"
-"PO-Revision-Date: 2025-09-16 00:02+0000\n"
-"Last-Translator: python-doc bot, 2025\n"
-"Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
-"vi/)\n"
+"POT-Creation-Date: 2026-05-08 18:34+0000\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: pydocvi 0.1.2\n"
 
 msgid ":mod:`!unittest` --- Unit testing framework"
 msgstr ""
@@ -149,6 +149,8 @@ msgstr ""
 msgid "Here is a short script to test three string methods::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import unittest\n"
 "\n"
@@ -171,6 +173,26 @@ msgid ""
 "if __name__ == '__main__':\n"
 "    unittest.main()"
 msgstr ""
+"import unittest\n"
+"\n"
+"class TestStringMethods(unittest.TestCase):\n"
+"\n"
+"    def test_upper(self):\n"
+"        self.assertEqual('foo'.upper(), 'FOO')\n"
+"\n"
+"    def test_isupper(self):\n"
+"        self.assertTrue('FOO'.isupper())\n"
+"        self.assertFalse('Foo'.isupper())\n"
+"\n"
+"    def test_split(self):\n"
+"        s = 'hello world'\n"
+"        self.assertEqual(s.split(), ['hello', 'world'])\n"
+"        # check that s.split fails when the separator is not a string\n"
+"        with self.assertRaises(TypeError):\n"
+"            s.split(2)\n"
+"\n"
+"if __name__ == '__main__':\n"
+"    unittest.main()"
 
 msgid ""
 "A test case is created by subclassing :class:`unittest.TestCase`.  The three "
@@ -245,11 +267,16 @@ msgid ""
 "modules, classes or even individual test methods::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "python -m unittest test_module1 test_module2\n"
 "python -m unittest test_module.TestClass\n"
 "python -m unittest test_module.TestClass.test_method"
 msgstr ""
+"python -m unittest test_module1 test_module2\n"
+"python -m unittest test_module.TestClass\n"
+"python -m unittest test_module.TestClass.test_method"
 
 msgid ""
 "You can pass in a list with any combination of module names, and fully "
@@ -259,8 +286,10 @@ msgstr ""
 msgid "Test modules can be specified by file path as well::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "python -m unittest tests/test_something.py"
-msgstr ""
+msgstr "python -m unittest tests/test_something.py"
 
 msgid ""
 "This allows you to use the shell filename completion to specify the test "
@@ -275,21 +304,27 @@ msgid ""
 "flag::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "python -m unittest -v test_module"
-msgstr ""
+msgstr "python -m unittest -v test_module"
 
 msgid ""
 "When executed without arguments :ref:`unittest-test-discovery` is started::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "python -m unittest"
-msgstr ""
+msgstr "python -m unittest"
 
 msgid "For a list of all the command-line options::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "python -m unittest -h"
-msgstr ""
+msgstr "python -m unittest -h"
 
 msgid ""
 "In earlier versions it was only possible to run individual test methods and "
@@ -388,10 +423,14 @@ msgid ""
 "be used from the command line. The basic command-line usage is::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "cd project_directory\n"
 "python -m unittest discover"
 msgstr ""
+"cd project_directory\n"
+"python -m unittest discover"
 
 msgid ""
 "As a shortcut, ``python -m unittest`` is the equivalent of ``python -m "
@@ -420,10 +459,14 @@ msgid ""
 "equivalent::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "python -m unittest discover -s project_directory -p \"*_test.py\"\n"
 "python -m unittest discover project_directory \"*_test.py\""
 msgstr ""
+"python -m unittest discover -s project_directory -p \"*_test.py\"\n"
+"python -m unittest discover project_directory \"*_test.py\""
 
 msgid ""
 "As well as being a path it is possible to pass a package name, for example "
@@ -500,6 +543,8 @@ msgid ""
 "testing code::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import unittest\n"
 "\n"
@@ -508,6 +553,12 @@ msgid ""
 "        widget = Widget('The widget')\n"
 "        self.assertEqual(widget.size(), (50, 50))"
 msgstr ""
+"import unittest\n"
+"\n"
+"class DefaultWidgetSizeTestCase(unittest.TestCase):\n"
+"    def test_default_widget_size(self):\n"
+"        widget = Widget('The widget')\n"
+"        self.assertEqual(widget.size(), (50, 50))"
 
 msgid ""
 "Note that in order to test something, we use one of the :ref:`assert\\* "
@@ -524,6 +575,8 @@ msgid ""
 "test we run::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import unittest\n"
 "\n"
@@ -540,6 +593,20 @@ msgid ""
 "        self.assertEqual(self.widget.size(), (100,150),\n"
 "                         'wrong size after resize')"
 msgstr ""
+"import unittest\n"
+"\n"
+"class WidgetTestCase(unittest.TestCase):\n"
+"    def setUp(self):\n"
+"        self.widget = Widget('The widget')\n"
+"\n"
+"    def test_default_widget_size(self):\n"
+"        self.assertEqual(self.widget.size(), (50,50),\n"
+"                         'incorrect default size')\n"
+"\n"
+"    def test_widget_resize(self):\n"
+"        self.widget.resize(100,150)\n"
+"        self.assertEqual(self.widget.size(), (100,150),\n"
+"                         'wrong size after resize')"
 
 msgid ""
 "The order in which the various tests will be run is determined by sorting "
@@ -557,6 +624,8 @@ msgid ""
 "after the test method has been run::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import unittest\n"
 "\n"
@@ -567,6 +636,14 @@ msgid ""
 "    def tearDown(self):\n"
 "        self.widget.dispose()"
 msgstr ""
+"import unittest\n"
+"\n"
+"class WidgetTestCase(unittest.TestCase):\n"
+"    def setUp(self):\n"
+"        self.widget = Widget('The widget')\n"
+"\n"
+"    def tearDown(self):\n"
+"        self.widget.dispose()"
 
 msgid ""
 "If :meth:`~TestCase.setUp` succeeded, :meth:`~TestCase.tearDown` will be run "
@@ -595,6 +672,8 @@ msgid ""
 "can do it yourself::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def suite():\n"
 "    suite = unittest.TestSuite()\n"
@@ -606,6 +685,15 @@ msgid ""
 "    runner = unittest.TextTestRunner()\n"
 "    runner.run(suite())"
 msgstr ""
+"def suite():\n"
+"    suite = unittest.TestSuite()\n"
+"    suite.addTest(WidgetTestCase('test_default_widget_size'))\n"
+"    suite.addTest(WidgetTestCase('test_widget_resize'))\n"
+"    return suite\n"
+"\n"
+"if __name__ == '__main__':\n"
+"    runner = unittest.TextTestRunner()\n"
+"    runner.run(suite())"
 
 msgid ""
 "You can place the definitions of test cases and test suites in the same "
@@ -659,23 +747,34 @@ msgstr ""
 msgid "Given the following test function::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def testSomething():\n"
 "    something = makeSomething()\n"
 "    assert something.name is not None\n"
 "    # ..."
 msgstr ""
+"def testSomething():\n"
+"    something = makeSomething()\n"
+"    assert something.name is not None\n"
+"    # ..."
 
 msgid ""
 "one can create an equivalent test case instance as follows, with optional "
 "set-up and tear-down methods::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "testcase = unittest.FunctionTestCase(testSomething,\n"
 "                                     setUp=makeSomethingDB,\n"
 "                                     tearDown=deleteSomethingDB)"
 msgstr ""
+"testcase = unittest.FunctionTestCase(testSomething,\n"
+"                                     setUp=makeSomethingDB,\n"
+"                                     tearDown=deleteSomethingDB)"
 
 msgid ""
 "Even though :class:`FunctionTestCase` can be used to quickly convert an "
@@ -711,6 +810,8 @@ msgstr ""
 msgid "Basic skipping looks like this::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "class MyTestCase(unittest.TestCase):\n"
 "\n"
@@ -736,6 +837,29 @@ msgid ""
 "        # test code that depends on the external resource\n"
 "        pass"
 msgstr ""
+"class MyTestCase(unittest.TestCase):\n"
+"\n"
+"    @unittest.skip(\"demonstrating skipping\")\n"
+"    def test_nothing(self):\n"
+"        self.fail(\"shouldn't happen\")\n"
+"\n"
+"    @unittest.skipIf(mylib.__version__ < (1, 3),\n"
+"                     \"not supported in this library version\")\n"
+"    def test_format(self):\n"
+"        # Tests that work for only a certain version of the library.\n"
+"        pass\n"
+"\n"
+"    @unittest.skipUnless(sys.platform.startswith(\"win\"), \"requires "
+"Windows\")\n"
+"    def test_windows_support(self):\n"
+"        # windows specific testing code\n"
+"        pass\n"
+"\n"
+"    def test_maybe_skipped(self):\n"
+"        if not external_resource_available():\n"
+"            self.skipTest(\"external resource not available\")\n"
+"        # test code that depends on the external resource\n"
+"        pass"
 
 msgid "This is the output of running the example above in verbose mode::"
 msgstr ""
@@ -759,12 +883,18 @@ msgstr ""
 msgid "Classes can be skipped just like methods::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "@unittest.skip(\"showing class skipping\")\n"
 "class MySkippedTestCase(unittest.TestCase):\n"
 "    def test_not_run(self):\n"
 "        pass"
 msgstr ""
+"@unittest.skip(\"showing class skipping\")\n"
+"class MySkippedTestCase(unittest.TestCase):\n"
+"    def test_not_run(self):\n"
+"        pass"
 
 msgid ""
 ":meth:`TestCase.setUp` can also skip the test.  This is useful when a "
@@ -774,12 +904,18 @@ msgstr ""
 msgid "Expected failures use the :func:`expectedFailure` decorator. ::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "class ExpectedFailureTestCase(unittest.TestCase):\n"
 "    @unittest.expectedFailure\n"
 "    def test_fail(self):\n"
 "        self.assertEqual(1, 0, \"broken\")"
 msgstr ""
+"class ExpectedFailureTestCase(unittest.TestCase):\n"
+"    @unittest.expectedFailure\n"
+"    def test_fail(self):\n"
+"        self.assertEqual(1, 0, \"broken\")"
 
 msgid ""
 "It's easy to roll your own skipping decorators by making a decorator that "
@@ -787,12 +923,18 @@ msgid ""
 "decorator skips the test unless the passed object has a certain attribute::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def skipUnlessHasattr(obj, attr):\n"
 "    if hasattr(obj, attr):\n"
 "        return lambda func: func\n"
 "    return unittest.skip(\"{!r} doesn't have {!r}\".format(obj, attr))"
 msgstr ""
+"def skipUnlessHasattr(obj, attr):\n"
+"    if hasattr(obj, attr):\n"
+"        return lambda func: func\n"
+"    return unittest.skip(\"{!r} doesn't have {!r}\".format(obj, attr))"
 
 msgid ""
 "The following decorators and exception implement test skipping and expected "
@@ -844,6 +986,8 @@ msgstr ""
 msgid "For example, the following test::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "class NumbersTest(unittest.TestCase):\n"
 "\n"
@@ -855,10 +999,21 @@ msgid ""
 "            with self.subTest(i=i):\n"
 "                self.assertEqual(i % 2, 0)"
 msgstr ""
+"class NumbersTest(unittest.TestCase):\n"
+"\n"
+"    def test_even(self):\n"
+"        \"\"\"\n"
+"        Test that numbers between 0 and 5 are all even.\n"
+"        \"\"\"\n"
+"        for i in range(0, 6):\n"
+"            with self.subTest(i=i):\n"
+"                self.assertEqual(i % 2, 0)"
 
 msgid "will produce the following output::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "======================================================================\n"
 "FAIL: test_even (__main__.NumbersTest.test_even) (i=1)\n"
@@ -890,6 +1045,35 @@ msgid ""
 "    ^^^^^^^^^^^^^^^^^^^^^^^^^^\n"
 "AssertionError: 1 != 0"
 msgstr ""
+"======================================================================\n"
+"FAIL: test_even (__main__.NumbersTest.test_even) (i=1)\n"
+"Test that numbers between 0 and 5 are all even.\n"
+"----------------------------------------------------------------------\n"
+"Traceback (most recent call last):\n"
+"  File \"subtests.py\", line 11, in test_even\n"
+"    self.assertEqual(i % 2, 0)\n"
+"    ^^^^^^^^^^^^^^^^^^^^^^^^^^\n"
+"AssertionError: 1 != 0\n"
+"\n"
+"======================================================================\n"
+"FAIL: test_even (__main__.NumbersTest.test_even) (i=3)\n"
+"Test that numbers between 0 and 5 are all even.\n"
+"----------------------------------------------------------------------\n"
+"Traceback (most recent call last):\n"
+"  File \"subtests.py\", line 11, in test_even\n"
+"    self.assertEqual(i % 2, 0)\n"
+"    ^^^^^^^^^^^^^^^^^^^^^^^^^^\n"
+"AssertionError: 1 != 0\n"
+"\n"
+"======================================================================\n"
+"FAIL: test_even (__main__.NumbersTest.test_even) (i=5)\n"
+"Test that numbers between 0 and 5 are all even.\n"
+"----------------------------------------------------------------------\n"
+"Traceback (most recent call last):\n"
+"  File \"subtests.py\", line 11, in test_even\n"
+"    self.assertEqual(i % 2, 0)\n"
+"    ^^^^^^^^^^^^^^^^^^^^^^^^^^\n"
+"AssertionError: 1 != 0"
 
 msgid ""
 "Without using a subtest, execution would stop after the first failure, and "
@@ -897,6 +1081,8 @@ msgid ""
 "be displayed::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "======================================================================\n"
 "FAIL: test_even (__main__.NumbersTest.test_even)\n"
@@ -906,6 +1092,13 @@ msgid ""
 "    self.assertEqual(i % 2, 0)\n"
 "AssertionError: 1 != 0"
 msgstr ""
+"======================================================================\n"
+"FAIL: test_even (__main__.NumbersTest.test_even)\n"
+"----------------------------------------------------------------------\n"
+"Traceback (most recent call last):\n"
+"  File \"subtests.py\", line 32, in test_even\n"
+"    self.assertEqual(i % 2, 0)\n"
+"AssertionError: 1 != 0"
 
 msgid "Classes and functions"
 msgstr ""
@@ -972,11 +1165,16 @@ msgid ""
 "decorated as a :func:`classmethod`::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "@classmethod\n"
 "def setUpClass(cls):\n"
 "    ..."
 msgstr ""
+"@classmethod\n"
+"def setUpClass(cls):\n"
+"    ..."
 
 msgid "See `Class and Module Fixtures`_ for more details."
 msgstr ""
@@ -987,11 +1185,16 @@ msgid ""
 "decorated as a :meth:`classmethod`::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "@classmethod\n"
 "def tearDownClass(cls):\n"
 "    ..."
 msgstr ""
+"@classmethod\n"
+"def tearDownClass(cls):\n"
+"    ..."
 
 msgid ""
 "Run the test, collecting the result into the :class:`TestResult` object "
@@ -1040,8 +1243,10 @@ msgid ""
 "(see the tables below for more assert methods):"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Method"
-msgstr ""
+msgstr "Method"
 
 msgid "Checks that"
 msgstr ""
@@ -1049,98 +1254,160 @@ msgstr ""
 msgid "New in"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`assertEqual(a, b) <TestCase.assertEqual>`"
-msgstr ""
+msgstr ":meth:`assertEqual(a, b) <TestCase.assertEqual>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``a == b``"
-msgstr ""
+msgstr "``a == b``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`assertNotEqual(a, b) <TestCase.assertNotEqual>`"
-msgstr ""
+msgstr ":meth:`assertNotEqual(a, b) <TestCase.assertNotEqual>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``a != b``"
-msgstr ""
+msgstr "``a != b``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`assertTrue(x) <TestCase.assertTrue>`"
-msgstr ""
+msgstr ":meth:`assertTrue(x) <TestCase.assertTrue>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``bool(x) is True``"
-msgstr ""
+msgstr "``bool(x) is True``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`assertFalse(x) <TestCase.assertFalse>`"
-msgstr ""
+msgstr ":meth:`assertFalse(x) <TestCase.assertFalse>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``bool(x) is False``"
-msgstr ""
+msgstr "``bool(x) is False``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`assertIs(a, b) <TestCase.assertIs>`"
-msgstr ""
+msgstr ":meth:`assertIs(a, b) <TestCase.assertIs>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``a is b``"
-msgstr ""
+msgstr "``a is b``"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "3.1"
-msgstr ""
+msgstr "3.1"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`assertIsNot(a, b) <TestCase.assertIsNot>`"
-msgstr ""
+msgstr ":meth:`assertIsNot(a, b) <TestCase.assertIsNot>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``a is not b``"
-msgstr ""
+msgstr "``a is not b``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`assertIsNone(x) <TestCase.assertIsNone>`"
-msgstr ""
+msgstr ":meth:`assertIsNone(x) <TestCase.assertIsNone>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``x is None``"
-msgstr ""
+msgstr "``x is None``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`assertIsNotNone(x) <TestCase.assertIsNotNone>`"
-msgstr ""
+msgstr ":meth:`assertIsNotNone(x) <TestCase.assertIsNotNone>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``x is not None``"
-msgstr ""
+msgstr "``x is not None``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`assertIn(a, b) <TestCase.assertIn>`"
-msgstr ""
+msgstr ":meth:`assertIn(a, b) <TestCase.assertIn>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``a in b``"
-msgstr ""
+msgstr "``a in b``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`assertNotIn(a, b) <TestCase.assertNotIn>`"
-msgstr ""
+msgstr ":meth:`assertNotIn(a, b) <TestCase.assertNotIn>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``a not in b``"
-msgstr ""
+msgstr "``a not in b``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`assertIsInstance(a, b) <TestCase.assertIsInstance>`"
-msgstr ""
+msgstr ":meth:`assertIsInstance(a, b) <TestCase.assertIsInstance>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``isinstance(a, b)``"
-msgstr ""
+msgstr "``isinstance(a, b)``"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "3.2"
-msgstr ""
+msgstr "3.2"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`assertNotIsInstance(a, b) <TestCase.assertNotIsInstance>`"
-msgstr ""
+msgstr ":meth:`assertNotIsInstance(a, b) <TestCase.assertNotIsInstance>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``not isinstance(a, b)``"
-msgstr ""
+msgstr "``not isinstance(a, b)``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`assertIsSubclass(a, b) <TestCase.assertIsSubclass>`"
-msgstr ""
+msgstr ":meth:`assertIsSubclass(a, b) <TestCase.assertIsSubclass>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``issubclass(a, b)``"
-msgstr ""
+msgstr "``issubclass(a, b)``"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "3.14"
-msgstr ""
+msgstr "3.14"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`assertNotIsSubclass(a, b) <TestCase.assertNotIsSubclass>`"
-msgstr ""
+msgstr ":meth:`assertNotIsSubclass(a, b) <TestCase.assertNotIsSubclass>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``not issubclass(a, b)``"
-msgstr ""
+msgstr "``not issubclass(a, b)``"
 
 msgid ""
 "All the assert methods accept a *msg* argument that, if specified, is used "
@@ -1214,45 +1481,63 @@ msgid ""
 "messages using the following methods:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`assertRaises(exc, fun, *args, **kwds) <TestCase.assertRaises>`"
-msgstr ""
+msgstr ":meth:`assertRaises(exc, fun, *args, **kwds) <TestCase.assertRaises>`"
 
 msgid "``fun(*args, **kwds)`` raises *exc*"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ""
-":meth:`assertRaisesRegex(exc, r, fun, *args, **kwds) <TestCase."
-"assertRaisesRegex>`"
+":meth:`assertRaisesRegex(exc, r, fun, *args, **kwds) "
+"<TestCase.assertRaisesRegex>`"
 msgstr ""
+":meth:`assertRaisesRegex(exc, r, fun, *args, **kwds) "
+"<TestCase.assertRaisesRegex>`"
 
 msgid "``fun(*args, **kwds)`` raises *exc* and the message matches regex *r*"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`assertWarns(warn, fun, *args, **kwds) <TestCase.assertWarns>`"
-msgstr ""
+msgstr ":meth:`assertWarns(warn, fun, *args, **kwds) <TestCase.assertWarns>`"
 
 msgid "``fun(*args, **kwds)`` raises *warn*"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ""
-":meth:`assertWarnsRegex(warn, r, fun, *args, **kwds) <TestCase."
-"assertWarnsRegex>`"
+":meth:`assertWarnsRegex(warn, r, fun, *args, **kwds) "
+"<TestCase.assertWarnsRegex>`"
 msgstr ""
+":meth:`assertWarnsRegex(warn, r, fun, *args, **kwds) "
+"<TestCase.assertWarnsRegex>`"
 
 msgid "``fun(*args, **kwds)`` raises *warn* and the message matches regex *r*"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`assertLogs(logger, level) <TestCase.assertLogs>`"
-msgstr ""
+msgstr ":meth:`assertLogs(logger, level) <TestCase.assertLogs>`"
 
 msgid "The ``with`` block logs on *logger* with minimum *level*"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "3.4"
-msgstr ""
+msgstr "3.4"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`assertNoLogs(logger, level) <TestCase.assertNoLogs>`"
-msgstr ""
+msgstr ":meth:`assertNoLogs(logger, level) <TestCase.assertNoLogs>`"
 
 msgid "The ``with`` block does not log on"
 msgstr ""
@@ -1260,8 +1545,10 @@ msgstr ""
 msgid "*logger* with minimum *level*"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "3.10"
-msgstr ""
+msgstr "3.10"
 
 msgid ""
 "Test that an exception is raised when *callable* is called with any "
@@ -1278,10 +1565,14 @@ msgid ""
 "than as a function::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "with self.assertRaises(SomeException):\n"
 "    do_something()"
 msgstr ""
+"with self.assertRaises(SomeException):\n"
+"    do_something()"
 
 msgid ""
 "When used as a context manager, :meth:`assertRaises` accepts the additional "
@@ -1294,6 +1585,8 @@ msgid ""
 "additional checks on the exception raised::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "with self.assertRaises(SomeException) as cm:\n"
 "    do_something()\n"
@@ -1301,6 +1594,11 @@ msgid ""
 "the_exception = cm.exception\n"
 "self.assertEqual(the_exception.error_code, 3)"
 msgstr ""
+"with self.assertRaises(SomeException) as cm:\n"
+"    do_something()\n"
+"\n"
+"the_exception = cm.exception\n"
+"self.assertEqual(the_exception.error_code, 3)"
 
 msgid "Added the ability to use :meth:`assertRaises` as a context manager."
 msgstr ""
@@ -1318,18 +1616,26 @@ msgid ""
 "`re.search`.  Examples::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "self.assertRaisesRegex(ValueError, \"invalid literal for.*XYZ'$\",\n"
 "                       int, 'XYZ')"
 msgstr ""
+"self.assertRaisesRegex(ValueError, \"invalid literal for.*XYZ'$\",\n"
+"                       int, 'XYZ')"
 
 msgid "or::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "with self.assertRaisesRegex(ValueError, 'literal'):\n"
 "   int('XYZ')"
 msgstr ""
+"with self.assertRaisesRegex(ValueError, 'literal'):\n"
+"   int('XYZ')"
 
 msgid "Added under the name ``assertRaisesRegexp``."
 msgstr ""
@@ -1351,10 +1657,14 @@ msgid ""
 "than as a function::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "with self.assertWarns(SomeWarning):\n"
 "    do_something()"
 msgstr ""
+"with self.assertWarns(SomeWarning):\n"
+"    do_something()"
 
 msgid ""
 "When used as a context manager, :meth:`assertWarns` accepts the additional "
@@ -1368,6 +1678,8 @@ msgid ""
 "intention is to perform additional checks on the warning caught::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "with self.assertWarns(SomeWarning) as cm:\n"
 "    do_something()\n"
@@ -1375,10 +1687,36 @@ msgid ""
 "self.assertIn('myfile.py', cm.filename)\n"
 "self.assertEqual(320, cm.lineno)"
 msgstr ""
+"with self.assertWarns(SomeWarning) as cm:\n"
+"    do_something()\n"
+"\n"
+"self.assertIn('myfile.py', cm.filename)\n"
+"self.assertEqual(320, cm.lineno)"
+
+msgid ""
+"The context managers can be nested to test that multiple different warnings "
+"are emitted::"
+msgstr ""
+
+# pydocvi: passthrough=literal_block
+#, fuzzy
+msgid ""
+"with (self.assertWarns(SomeWarning),\n"
+"      self.assertWarns(OtherWarning)):\n"
+"    do_something()"
+msgstr ""
+"with (self.assertWarns(SomeWarning),\n"
+"      self.assertWarns(OtherWarning)):\n"
+"    do_something()"
 
 msgid ""
 "This method works regardless of the warning filters in place when it is "
 "called."
+msgstr ""
+
+msgid ""
+"Warnings that do not match the specified category are no longer swallowed. "
+"Nested context managers are now supported."
 msgstr ""
 
 msgid ""
@@ -1388,15 +1726,40 @@ msgid ""
 "search`.  Example::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "self.assertWarnsRegex(DeprecationWarning,\n"
 "                      r'legacy_function\\(\\) is deprecated',\n"
 "                      legacy_function, 'XYZ')"
 msgstr ""
+"self.assertWarnsRegex(DeprecationWarning,\n"
+"                      r'legacy_function\\(\\) is deprecated',\n"
+"                      legacy_function, 'XYZ')"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "with self.assertWarnsRegex(RuntimeWarning, 'unsafe frobnicating'):\n"
 "    frobnicate('/etc/passwd')"
+msgstr ""
+"with self.assertWarnsRegex(RuntimeWarning, 'unsafe frobnicating'):\n"
+"    frobnicate('/etc/passwd')"
+
+# pydocvi: passthrough=literal_block
+#, fuzzy
+msgid ""
+"with (self.assertWarns(SomeWarning, regex1),\n"
+"      self.assertWarns(OtherWarning, regex2)):\n"
+"    do_something()"
+msgstr ""
+"with (self.assertWarns(SomeWarning, regex1),\n"
+"      self.assertWarns(OtherWarning, regex2)):\n"
+"    do_something()"
+
+msgid ""
+"Warnings that do not match the specified category or regex are no longer "
+"swallowed. Nested context managers are now supported."
 msgstr ""
 
 msgid ""
@@ -1415,6 +1778,12 @@ msgid ""
 "If given, *level* should be either a numeric logging level or its string "
 "equivalent (for example either ``\"ERROR\"`` or :const:`logging.ERROR`).  "
 "The default is :const:`logging.INFO`."
+msgstr ""
+
+msgid ""
+"If given, *formatter* should be a :class:`logging.Formatter` object. The "
+"default is a formatter with format string ``\"%(levelname)s:%(name)s:"
+"%(message)s\"``"
 msgstr ""
 
 msgid ""
@@ -1439,12 +1808,22 @@ msgstr ""
 msgid "Example::"
 msgstr "Ví dụ::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "with self.assertLogs('foo', level='INFO') as cm:\n"
 "    logging.getLogger('foo').info('first message')\n"
 "    logging.getLogger('foo.bar').error('second message')\n"
 "self.assertEqual(cm.output, ['INFO:foo:first message',\n"
 "                             'ERROR:foo.bar:second message'])"
+msgstr ""
+"with self.assertLogs('foo', level='INFO') as cm:\n"
+"    logging.getLogger('foo').info('first message')\n"
+"    logging.getLogger('foo.bar').error('second message')\n"
+"self.assertEqual(cm.output, ['INFO:foo:first message',\n"
+"                             'ERROR:foo.bar:second message'])"
+
+msgid "Now accepts a *formatter* to control how messages are formatted."
 msgstr ""
 
 msgid ""
@@ -1466,95 +1845,153 @@ msgid ""
 "There are also other methods used to perform more specific checks, such as:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`assertAlmostEqual(a, b) <TestCase.assertAlmostEqual>`"
-msgstr ""
+msgstr ":meth:`assertAlmostEqual(a, b) <TestCase.assertAlmostEqual>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``round(a-b, 7) == 0``"
-msgstr ""
+msgstr "``round(a-b, 7) == 0``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`assertNotAlmostEqual(a, b) <TestCase.assertNotAlmostEqual>`"
-msgstr ""
+msgstr ":meth:`assertNotAlmostEqual(a, b) <TestCase.assertNotAlmostEqual>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``round(a-b, 7) != 0``"
-msgstr ""
+msgstr "``round(a-b, 7) != 0``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`assertGreater(a, b) <TestCase.assertGreater>`"
-msgstr ""
+msgstr ":meth:`assertGreater(a, b) <TestCase.assertGreater>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``a > b``"
-msgstr ""
+msgstr "``a > b``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`assertGreaterEqual(a, b) <TestCase.assertGreaterEqual>`"
-msgstr ""
+msgstr ":meth:`assertGreaterEqual(a, b) <TestCase.assertGreaterEqual>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``a >= b``"
-msgstr ""
+msgstr "``a >= b``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`assertLess(a, b) <TestCase.assertLess>`"
-msgstr ""
+msgstr ":meth:`assertLess(a, b) <TestCase.assertLess>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``a < b``"
-msgstr ""
+msgstr "``a < b``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`assertLessEqual(a, b) <TestCase.assertLessEqual>`"
-msgstr ""
+msgstr ":meth:`assertLessEqual(a, b) <TestCase.assertLessEqual>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``a <= b``"
-msgstr ""
+msgstr "``a <= b``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`assertRegex(s, r) <TestCase.assertRegex>`"
-msgstr ""
+msgstr ":meth:`assertRegex(s, r) <TestCase.assertRegex>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``r.search(s)``"
-msgstr ""
+msgstr "``r.search(s)``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`assertNotRegex(s, r) <TestCase.assertNotRegex>`"
-msgstr ""
+msgstr ":meth:`assertNotRegex(s, r) <TestCase.assertNotRegex>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``not r.search(s)``"
-msgstr ""
+msgstr "``not r.search(s)``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`assertCountEqual(a, b) <TestCase.assertCountEqual>`"
-msgstr ""
+msgstr ":meth:`assertCountEqual(a, b) <TestCase.assertCountEqual>`"
 
 msgid "*a* contains the same elements as *b*, regardless of their order."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`assertStartsWith(a, b) <TestCase.assertStartsWith>`"
-msgstr ""
+msgstr ":meth:`assertStartsWith(a, b) <TestCase.assertStartsWith>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``a.startswith(b)``"
-msgstr ""
+msgstr "``a.startswith(b)``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`assertNotStartsWith(a, b) <TestCase.assertNotStartsWith>`"
-msgstr ""
+msgstr ":meth:`assertNotStartsWith(a, b) <TestCase.assertNotStartsWith>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``not a.startswith(b)``"
-msgstr ""
+msgstr "``not a.startswith(b)``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`assertEndsWith(a, b) <TestCase.assertEndsWith>`"
-msgstr ""
+msgstr ":meth:`assertEndsWith(a, b) <TestCase.assertEndsWith>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``a.endswith(b)``"
-msgstr ""
+msgstr "``a.endswith(b)``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`assertNotEndsWith(a, b) <TestCase.assertNotEndsWith>`"
-msgstr ""
+msgstr ":meth:`assertNotEndsWith(a, b) <TestCase.assertNotEndsWith>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``not a.endswith(b)``"
-msgstr ""
+msgstr "``not a.endswith(b)``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`assertHasAttr(a, b) <TestCase.assertHasAttr>`"
-msgstr ""
+msgstr ":meth:`assertHasAttr(a, b) <TestCase.assertHasAttr>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``hastattr(a, b)``"
-msgstr ""
+msgstr "``hastattr(a, b)``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`assertNotHasAttr(a, b) <TestCase.assertNotHasAttr>`"
-msgstr ""
+msgstr ":meth:`assertNotHasAttr(a, b) <TestCase.assertNotHasAttr>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``not hastattr(a, b)``"
-msgstr ""
+msgstr "``not hastattr(a, b)``"
 
 msgid ""
 "Test that *first* and *second* are approximately (or not approximately) "
@@ -1583,10 +2020,14 @@ msgid ""
 "the method name.  If not, the test will fail::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> self.assertGreaterEqual(3, 4)\n"
 "AssertionError: \"3\" unexpectedly not greater than or equal to \"4\""
 msgstr ""
+">>> self.assertGreaterEqual(3, 4)\n"
+"AssertionError: \"3\" unexpectedly not greater than or equal to \"4\""
 
 msgid ""
 "Test that a *regex* search matches (or does not match) *text*.  In case of "
@@ -1604,8 +2045,10 @@ msgid ""
 "assertRegex`."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`.assertNotRegex`."
-msgstr ""
+msgstr ":meth:`.assertNotRegex`."
 
 msgid ""
 "Test that sequence *first* contains the same elements as *second*, "
@@ -1659,41 +2102,63 @@ msgstr ""
 msgid "Used to compare"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`assertMultiLineEqual(a, b) <TestCase.assertMultiLineEqual>`"
-msgstr ""
+msgstr ":meth:`assertMultiLineEqual(a, b) <TestCase.assertMultiLineEqual>`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "strings"
-msgstr ""
+msgstr "strings"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`assertSequenceEqual(a, b) <TestCase.assertSequenceEqual>`"
-msgstr ""
+msgstr ":meth:`assertSequenceEqual(a, b) <TestCase.assertSequenceEqual>`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "sequences"
-msgstr ""
+msgstr "sequences"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`assertListEqual(a, b) <TestCase.assertListEqual>`"
-msgstr ""
+msgstr ":meth:`assertListEqual(a, b) <TestCase.assertListEqual>`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "lists"
-msgstr ""
+msgstr "lists"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`assertTupleEqual(a, b) <TestCase.assertTupleEqual>`"
-msgstr ""
+msgstr ":meth:`assertTupleEqual(a, b) <TestCase.assertTupleEqual>`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "tuples"
-msgstr ""
+msgstr "tuples"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`assertSetEqual(a, b) <TestCase.assertSetEqual>`"
-msgstr ""
+msgstr ":meth:`assertSetEqual(a, b) <TestCase.assertSetEqual>`"
 
 msgid "sets or frozensets"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`assertDictEqual(a, b) <TestCase.assertDictEqual>`"
-msgstr ""
+msgstr ":meth:`assertDictEqual(a, b) <TestCase.assertDictEqual>`"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "dicts"
-msgstr ""
+msgstr "dicts"
 
 msgid ""
 "Test that the multiline string *first* is equal to the string *second*. When "
@@ -1948,6 +2413,8 @@ msgstr ""
 msgid "An example illustrating the order::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "from unittest import IsolatedAsyncioTestCase\n"
 "\n"
@@ -1966,8 +2433,8 @@ msgid ""
 "\n"
 "    async def test_response(self):\n"
 "        events.append(\"test_response\")\n"
-"        response = await self._async_connection.get(\"https://example."
-"com\")\n"
+"        response = await "
+"self._async_connection.get(\"https://example.com\")\n"
 "        self.assertEqual(response.status_code, 200)\n"
 "        self.addAsyncCleanup(self.on_cleanup)\n"
 "\n"
@@ -1984,6 +2451,40 @@ msgid ""
 "if __name__ == \"__main__\":\n"
 "    unittest.main()"
 msgstr ""
+"from unittest import IsolatedAsyncioTestCase\n"
+"\n"
+"events = []\n"
+"\n"
+"\n"
+"class Test(IsolatedAsyncioTestCase):\n"
+"\n"
+"\n"
+"    def setUp(self):\n"
+"        events.append(\"setUp\")\n"
+"\n"
+"    async def asyncSetUp(self):\n"
+"        self._async_connection = await AsyncConnection()\n"
+"        events.append(\"asyncSetUp\")\n"
+"\n"
+"    async def test_response(self):\n"
+"        events.append(\"test_response\")\n"
+"        response = await "
+"self._async_connection.get(\"https://example.com\")\n"
+"        self.assertEqual(response.status_code, 200)\n"
+"        self.addAsyncCleanup(self.on_cleanup)\n"
+"\n"
+"    def tearDown(self):\n"
+"        events.append(\"tearDown\")\n"
+"\n"
+"    async def asyncTearDown(self):\n"
+"        await self._async_connection.close()\n"
+"        events.append(\"asyncTearDown\")\n"
+"\n"
+"    async def on_cleanup(self):\n"
+"        events.append(\"cleanup\")\n"
+"\n"
+"if __name__ == \"__main__\":\n"
+"    unittest.main()"
 
 msgid ""
 "After running the test, ``events`` would contain ``[\"setUp\", "
@@ -2603,20 +3104,28 @@ msgid ""
 "of a test script::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "if __name__ == '__main__':\n"
 "    unittest.main()"
 msgstr ""
+"if __name__ == '__main__':\n"
+"    unittest.main()"
 
 msgid ""
 "You can run tests with more detailed information by passing in the verbosity "
 "argument::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "if __name__ == '__main__':\n"
 "    unittest.main(verbosity=2)"
 msgstr ""
+"if __name__ == '__main__':\n"
+"    unittest.main(verbosity=2)"
 
 msgid ""
 "The *defaultTest* argument is either the name of a single test or an "
@@ -2649,10 +3158,14 @@ msgid ""
 "without calling :func:`sys.exit`::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> from unittest import main\n"
 ">>> main(module='test_module', exit=False)"
 msgstr ""
+">>> from unittest import main\n"
+">>> main(module='test_module', exit=False)"
 
 msgid ""
 "The *failfast*, *catchbreak* and *buffer* parameters have the same effect as "
@@ -2699,8 +3212,10 @@ msgid ""
 "`TestLoader.loadTestsFromModule` with the following arguments::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "load_tests(loader, standard_tests, pattern)"
-msgstr ""
+msgstr "load_tests(loader, standard_tests, pattern)"
 
 msgid ""
 "where *pattern* is passed straight through from ``loadTestsFromModule``.  It "
@@ -2723,6 +3238,8 @@ msgid ""
 "class:`TestCase` classes may look like::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "test_cases = (TestCase1, TestCase2, TestCase3)\n"
 "\n"
@@ -2733,6 +3250,14 @@ msgid ""
 "        suite.addTests(tests)\n"
 "    return suite"
 msgstr ""
+"test_cases = (TestCase1, TestCase2, TestCase3)\n"
+"\n"
+"def load_tests(loader, tests, pattern):\n"
+"    suite = TestSuite()\n"
+"    for test_class in test_cases:\n"
+"        tests = loader.loadTestsFromTestCase(test_class)\n"
+"        suite.addTests(tests)\n"
+"    return suite"
 
 msgid ""
 "If discovery is started in a directory containing a package, either from the "
@@ -2755,6 +3280,8 @@ msgid ""
 "``load_tests`` function for a test package would look like::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def load_tests(loader, standard_tests, pattern):\n"
 "    # top level directory cached on loader instance\n"
@@ -2763,6 +3290,12 @@ msgid ""
 "    standard_tests.addTests(package_tests)\n"
 "    return standard_tests"
 msgstr ""
+"def load_tests(loader, standard_tests, pattern):\n"
+"    # top level directory cached on loader instance\n"
+"    this_dir = os.path.dirname(__file__)\n"
+"    package_tests = loader.discover(start_dir=this_dir, pattern=pattern)\n"
+"    standard_tests.addTests(package_tests)\n"
+"    return standard_tests"
 
 msgid ""
 "Discovery no longer checks package names for matching *pattern* due to the "
@@ -2826,6 +3359,8 @@ msgstr ""
 msgid "These must be implemented as class methods::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import unittest\n"
 "\n"
@@ -2838,6 +3373,16 @@ msgid ""
 "    def tearDownClass(cls):\n"
 "        cls._connection.destroy()"
 msgstr ""
+"import unittest\n"
+"\n"
+"class Test(unittest.TestCase):\n"
+"    @classmethod\n"
+"    def setUpClass(cls):\n"
+"        cls._connection = createExpensiveConnectionObject()\n"
+"\n"
+"    @classmethod\n"
+"    def tearDownClass(cls):\n"
+"        cls._connection.destroy()"
 
 msgid ""
 "If you want the ``setUpClass`` and ``tearDownClass`` on base classes called "
@@ -2859,6 +3404,8 @@ msgstr ""
 msgid "These should be implemented as functions::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def setUpModule():\n"
 "    createConnection()\n"
@@ -2866,6 +3413,11 @@ msgid ""
 "def tearDownModule():\n"
 "    closeConnection()"
 msgstr ""
+"def setUpModule():\n"
+"    createConnection()\n"
+"\n"
+"def tearDownModule():\n"
+"    closeConnection()"
 
 msgid ""
 "If an exception is raised in a ``setUpModule`` then none of the tests in the "
@@ -2973,8 +3525,13 @@ msgid ""
 "temporarily remove the handler while the test is being executed::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "@unittest.removeHandler\n"
 "def test_signal_handling(self):\n"
 "    ..."
 msgstr ""
+"@unittest.removeHandler\n"
+"def test_signal_handling(self):\n"
+"    ..."

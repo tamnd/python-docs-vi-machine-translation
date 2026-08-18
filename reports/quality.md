@@ -2,7 +2,12 @@
 
 ## Invariants, recounted
 
-No machine-written entry is in the corpus yet.
+737 machine-written entries in the corpus. Every one of them passed the invariants when it was accepted, so anything below is a rule that was tightened afterwards or an entry something else edited.
+
+| Rule | Failing | Pass rate |
+| --- | ---: | ---: |
+| `P01` | 373 | 49.39% |
+| `P02` | 373 | 49.39% |
 
 ## Refusals
 
@@ -10,30 +15,35 @@ No translation run on record. Refusal rates come from the run that produced the 
 
 ## Glossary adherence
 
-639 terms against 1,626 translated entries. 449 misses over 107 terms.
+639 terms against 1,562 translated entries. 272 misses over 88 terms.
+
+| Written by | Entries | Misses | Misses per entry | Terms |
+| --- | ---: | ---: | ---: | ---: |
+| human | 830 | 241 | 0.29 | 82 |
+| machine | 732 | 31 | 0.04 | 18 |
 
 | Term | Misses |
 | --- | ---: |
-| list | 62 |
-| file | 48 |
-| type | 43 |
-| sequence | 32 |
-| class | 26 |
-| package | 14 |
-| index | 10 |
-| method | 10 |
-| dictionary | 9 |
-| newline | 9 |
-| slice | 8 |
-| key | 7 |
+| type | 39 |
+| list | 30 |
+| sequence | 22 |
+| dictionary | 10 |
+| newline | 8 |
 | iterator | 6 |
-| positional arguments | 6 |
-| different types | 5 |
+| key | 6 |
+| class | 5 |
 | namespace | 5 |
-| argument | 4 |
-| attribute | 4 |
+| positional arguments | 5 |
+| slice | 5 |
 | callable | 4 |
-| directory | 4 |
+| file | 4 |
+| local namespace | 4 |
+| mapping | 4 |
+| package | 4 |
+| attribute | 3 |
+| base classes | 3 |
+| data types | 3 |
+| different types | 3 |
 
 ## Dead entries
 

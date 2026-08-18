@@ -5,25 +5,28 @@
 #
 # Translators:
 # python-doc bot, 2025
+# Nguyen Duc Tam, 2026
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-17 14:50+0000\n"
-"PO-Revision-Date: 2025-09-16 00:00+0000\n"
-"Last-Translator: python-doc bot, 2025\n"
-"Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
-"vi/)\n"
+"POT-Creation-Date: 2026-05-08 18:34+0000\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: pydocvi 0.1.2\n"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Introduction"
-msgstr ""
+msgstr "Introduction"
 
 msgid ""
 "The Application Programmer's Interface to Python gives C and C++ programmers "
@@ -146,6 +149,89 @@ msgid ""
 "result, there is no need to do anything special to use the API from C++."
 msgstr ""
 
+msgid "System includes"
+msgstr ""
+
+msgid ""
+":file:`Python.h` includes several standard header files. C extensions should "
+"include the standard headers that they use, and should not rely on these "
+"implicit includes. The implicit includes are:"
+msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "``<assert.h>``"
+msgstr "``<assert.h>``"
+
+msgid "``<intrin.h>`` (on Windows)"
+msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "``<inttypes.h>``"
+msgstr "``<inttypes.h>``"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "``<limits.h>``"
+msgstr "``<limits.h>``"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "``<math.h>``"
+msgstr "``<math.h>``"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "``<stdarg.h>``"
+msgstr "``<stdarg.h>``"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "``<string.h>``"
+msgstr "``<string.h>``"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "``<wchar.h>``"
+msgstr "``<wchar.h>``"
+
+msgid "``<sys/types.h>`` (if present)"
+msgstr ""
+
+msgid ""
+"The following are included for backwards compatibility, unless using :ref:"
+"`Limited API <limited-c-api>` 3.13 or newer:"
+msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "``<ctype.h>``"
+msgstr "``<ctype.h>``"
+
+msgid "``<unistd.h>`` (on POSIX)"
+msgstr ""
+
+msgid ""
+"The following are included for backwards compatibility, unless using :ref:"
+"`Limited API <limited-c-api>` 3.11 or newer:"
+msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "``<errno.h>``"
+msgstr "``<errno.h>``"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "``<stdio.h>``"
+msgstr "``<stdio.h>``"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "``<stdlib.h>``"
+msgstr "``<stdlib.h>``"
+
 msgid "Useful macros"
 msgstr ""
 
@@ -182,6 +268,8 @@ msgstr ""
 msgid "Example::"
 msgstr "Ví dụ::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "PyDoc_STRVAR(pop_doc, \"Remove and return the rightmost element.\");\n"
 "\n"
@@ -191,6 +279,13 @@ msgid ""
 "    // ...\n"
 "}"
 msgstr ""
+"PyDoc_STRVAR(pop_doc, \"Remove and return the rightmost element.\");\n"
+"\n"
+"static PyMethodDef deque_methods[] = {\n"
+"    // ...\n"
+"    {\"pop\", (PyCFunction)deque_pop, METH_NOARGS, pop_doc},\n"
+"    // ...\n"
+"}"
 
 msgid "Expands to :samp:`PyDoc_VAR({name}) = PyDoc_STR({str})`."
 msgstr ""
@@ -200,6 +295,8 @@ msgid ""
 "disabled (:option:`--without-doc-strings`)."
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "static PyMethodDef pysqlite_row_methods[] = {\n"
 "    {\"keys\", (PyCFunction)pysqlite_row_keys, METH_NOARGS,\n"
@@ -207,20 +304,32 @@ msgid ""
 "    {NULL, NULL}\n"
 "};"
 msgstr ""
+"static PyMethodDef pysqlite_row_methods[] = {\n"
+"    {\"keys\", (PyCFunction)pysqlite_row_keys, METH_NOARGS,\n"
+"        PyDoc_STR(\"Returns the keys of the row.\")},\n"
+"    {NULL, NULL}\n"
+"};"
 
 msgid ""
 "Declares a static character array variable with the given *name*. Expands "
 "to :samp:`static const char {name}[]`"
 msgstr ""
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=9648862cf2b3 run=2026-08-17T16:43Z
+#, fuzzy
 msgid "For example::"
-msgstr ""
+msgstr "Ví dụ::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "PyDoc_VAR(python_doc) = PyDoc_STR(\n"
 "   \"A genus of constricting snakes in the Pythonidae family native \"\n"
 "   \"to the tropics and subtropics of the Eastern Hemisphere.\");"
 msgstr ""
+"PyDoc_VAR(python_doc) = PyDoc_STR(\n"
+"   \"A genus of constricting snakes in the Pythonidae family native \"\n"
+"   \"to the tropics and subtropics of the Eastern Hemisphere.\");"
 
 msgid "General utility macros"
 msgstr ""
@@ -381,10 +490,14 @@ msgid ""
 "at compile time."
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "#define foo_to_char(foo) \\\n"
 "    ((char *)(foo) + Py_BUILD_ASSERT_EXPR(offsetof(struct foo, string) == 0))"
 msgstr ""
+"#define foo_to_char(foo) \\\n"
+"    ((char *)(foo) + Py_BUILD_ASSERT_EXPR(offsetof(struct foo, string) == 0))"
 
 msgid "Type size utilities"
 msgstr ""
@@ -548,14 +661,21 @@ msgid "Outdated macros"
 msgstr ""
 
 msgid ""
-"The following macros have been used to features that have been standardized "
-"in C11."
+"The following :term:`soft deprecated` macros have been used to features that "
+"have been standardized in C11 (or previous standards)."
 msgstr ""
 
-msgid "Specify alignment to *num* bytes on compilers that support it."
+msgid ""
+"On some GCC-like compilers, specify alignment to *num* bytes. This does "
+"nothing on other compilers."
 msgstr ""
 
-msgid "Consider using the C11 standard ``_Alignas`` specifier over this macro."
+msgid "Use the standard ``alignas`` specifier rather than this macro."
+msgstr ""
+
+msgid ""
+"The :c:func:`printf` formatting modifier for :c:type:`size_t`. Use ``\"z\"`` "
+"directly instead."
 msgstr ""
 
 msgid ""
@@ -572,16 +692,44 @@ msgid "Consider using the C99 standard suffixes ``LL`` and ``LLU`` directly."
 msgstr ""
 
 msgid ""
-"This is a :term:`soft deprecated` alias to :c:func:`!memcpy`. Use :c:func:`!"
-"memcpy` directly instead."
-msgstr ""
-
-msgid "The macro is :term:`soft deprecated`."
+"Aliases for the types :c:type:`!long long`, :c:type:`!int32_t`, :c:type:`!"
+"uint32_t`. :c:type:`!int64_t` and :c:type:`!uint64_t`, respectively. "
+"Historically, these types needed compiler-specific extensions."
 msgstr ""
 
 msgid ""
-"This is a :term:`soft deprecated` alias to the C99-standard ``va_copy`` "
-"function."
+"Aliases for the values :c:macro:`!LLONG_MIN`, :c:macro:`!LLONG_MAX`, :c:"
+"macro:`!ULLONG_MAX`, and :c:macro:`!SIZE_MAX`, respectively. Use these "
+"standard names instead."
+msgstr ""
+
+msgid ""
+"The required header, ``<limits.h>``, :ref:`is included <capi-system-"
+"includes>` in ``Python.h``."
+msgstr ""
+
+msgid "This is an alias to :c:func:`!memcpy`."
+msgstr ""
+
+msgid "Use :c:func:`!memcpy` directly instead."
+msgstr ""
+
+msgid ""
+"Size of the :c:type:`!wchar_t` type. Use ``sizeof(wchar_t)`` or "
+"``WCHAR_WIDTH/8`` instead."
+msgstr ""
+
+msgid ""
+"The required header for the latter, ``<limits.h>``, :ref:`is included <capi-"
+"system-includes>` in ``Python.h``."
+msgstr ""
+
+msgid ""
+"Defined if ``wchar_t`` can hold a Unicode character (UCS-4). Use "
+"``sizeof(wchar_t) >= 4`` instead"
+msgstr ""
+
+msgid "This is an alias to the C99-standard ``va_copy`` function."
 msgstr ""
 
 msgid ""
@@ -781,6 +929,8 @@ msgid ""
 "sequence) to a given item::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "int\n"
 "set_all(PyObject *target, PyObject *item)\n"
@@ -803,6 +953,26 @@ msgid ""
 "    return 0;\n"
 "}"
 msgstr ""
+"int\n"
+"set_all(PyObject *target, PyObject *item)\n"
+"{\n"
+"    Py_ssize_t i, n;\n"
+"\n"
+"    n = PyObject_Length(target);\n"
+"    if (n < 0)\n"
+"        return -1;\n"
+"    for (i = 0; i < n; i++) {\n"
+"        PyObject *index = PyLong_FromSsize_t(i);\n"
+"        if (!index)\n"
+"            return -1;\n"
+"        if (PyObject_SetItem(target, index, item) < 0) {\n"
+"            Py_DECREF(index);\n"
+"            return -1;\n"
+"        }\n"
+"        Py_DECREF(index);\n"
+"    }\n"
+"    return 0;\n"
+"}"
 
 msgid ""
 "The situation is slightly different for function return values.   While "
@@ -832,6 +1002,8 @@ msgid ""
 "and once using :c:func:`PySequence_GetItem`. ::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "long\n"
 "sum_list(PyObject *list)\n"
@@ -855,7 +1027,30 @@ msgid ""
 "    return total;\n"
 "}"
 msgstr ""
+"long\n"
+"sum_list(PyObject *list)\n"
+"{\n"
+"    Py_ssize_t i, n;\n"
+"    long total = 0, value;\n"
+"    PyObject *item;\n"
+"\n"
+"    n = PyList_Size(list);\n"
+"    if (n < 0)\n"
+"        return -1; /* Not a list */\n"
+"    for (i = 0; i < n; i++) {\n"
+"        item = PyList_GetItem(list, i); /* Can't fail */\n"
+"        if (!PyLong_Check(item)) continue; /* Skip non-integers */\n"
+"        value = PyLong_AsLong(item);\n"
+"        if (value == -1 && PyErr_Occurred())\n"
+"            /* Integer too big to fit in a C long, bail out */\n"
+"            return -1;\n"
+"        total += value;\n"
+"    }\n"
+"    return total;\n"
+"}"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "long\n"
 "sum_sequence(PyObject *sequence)\n"
@@ -885,9 +1080,38 @@ msgid ""
 "    return total;\n"
 "}"
 msgstr ""
+"long\n"
+"sum_sequence(PyObject *sequence)\n"
+"{\n"
+"    Py_ssize_t i, n;\n"
+"    long total = 0, value;\n"
+"    PyObject *item;\n"
+"    n = PySequence_Length(sequence);\n"
+"    if (n < 0)\n"
+"        return -1; /* Has no length */\n"
+"    for (i = 0; i < n; i++) {\n"
+"        item = PySequence_GetItem(sequence, i);\n"
+"        if (item == NULL)\n"
+"            return -1; /* Not a sequence, or other failure */\n"
+"        if (PyLong_Check(item)) {\n"
+"            value = PyLong_AsLong(item);\n"
+"            Py_DECREF(item);\n"
+"            if (value == -1 && PyErr_Occurred())\n"
+"                /* Integer too big to fit in a C long, bail out */\n"
+"                return -1;\n"
+"            total += value;\n"
+"        }\n"
+"        else {\n"
+"            Py_DECREF(item); /* Discard reference ownership */\n"
+"        }\n"
+"    }\n"
+"    return total;\n"
+"}"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Types"
-msgstr ""
+msgstr "Types"
 
 msgid ""
 "There are few other data types that play a significant role in  the Python/C "
@@ -906,8 +1130,10 @@ msgid ""
 "positive value of type :c:type:`Py_ssize_t`."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Exceptions"
-msgstr ""
+msgstr "Exceptions"
 
 msgid ""
 "The Python programmer only needs to deal with exceptions if specific  error "
@@ -986,6 +1212,8 @@ msgid ""
 "why you like Python, we show the equivalent Python code::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def incr_item(dict, key):\n"
 "    try:\n"
@@ -994,10 +1222,18 @@ msgid ""
 "        item = 0\n"
 "    dict[key] = item + 1"
 msgstr ""
+"def incr_item(dict, key):\n"
+"    try:\n"
+"        item = dict[key]\n"
+"    except KeyError:\n"
+"        item = 0\n"
+"    dict[key] = item + 1"
 
 msgid "Here is the corresponding C code, in all its glory::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "int\n"
 "incr_item(PyObject *dict, PyObject *key)\n"
@@ -1042,6 +1278,48 @@ msgid ""
 "    return rv; /* -1 for error, 0 for success */\n"
 "}"
 msgstr ""
+"int\n"
+"incr_item(PyObject *dict, PyObject *key)\n"
+"{\n"
+"    /* Objects all initialized to NULL for Py_XDECREF */\n"
+"    PyObject *item = NULL, *const_one = NULL, *incremented_item = NULL;\n"
+"    int rv = -1; /* Return value initialized to -1 (failure) */\n"
+"\n"
+"    item = PyObject_GetItem(dict, key);\n"
+"    if (item == NULL) {\n"
+"        /* Handle KeyError only: */\n"
+"        if (!PyErr_ExceptionMatches(PyExc_KeyError))\n"
+"            goto error;\n"
+"\n"
+"        /* Clear the error and use zero: */\n"
+"        PyErr_Clear();\n"
+"        item = PyLong_FromLong(0L);\n"
+"        if (item == NULL)\n"
+"            goto error;\n"
+"    }\n"
+"    const_one = PyLong_FromLong(1L);\n"
+"    if (const_one == NULL)\n"
+"        goto error;\n"
+"\n"
+"    incremented_item = PyNumber_Add(item, const_one);\n"
+"    if (incremented_item == NULL)\n"
+"        goto error;\n"
+"\n"
+"    if (PyObject_SetItem(dict, key, incremented_item) < 0)\n"
+"        goto error;\n"
+"    rv = 0; /* Success */\n"
+"    /* Continue with cleanup code */\n"
+"\n"
+" error:\n"
+"    /* Cleanup code, shared by success and failure path */\n"
+"\n"
+"    /* Use Py_XDECREF() to ignore NULL references */\n"
+"    Py_XDECREF(item);\n"
+"    Py_XDECREF(const_one);\n"
+"    Py_XDECREF(incremented_item);\n"
+"\n"
+"    return rv; /* -1 for error, 0 for success */\n"
+"}"
 
 msgid ""
 "This example represents an endorsed use of the ``goto`` statement  in C! It "
@@ -1104,10 +1382,7 @@ msgid ""
 "The embedding application can steer the search by setting :c:member:"
 "`PyConfig.program_name` *before* calling :c:func:`Py_InitializeFromConfig`. "
 "Note that :envvar:`PYTHONHOME` still overrides this and :envvar:`PYTHONPATH` "
-"is still inserted in front of the standard path.  An application that "
-"requires total control has to provide its own implementation of :c:func:"
-"`Py_GetPath`, :c:func:`Py_GetPrefix`, :c:func:`Py_GetExecPrefix`, and :c:"
-"func:`Py_GetProgramFullPath` (all defined in :file:`Modules/getpath.c`)."
+"is still inserted in front of the standard path."
 msgstr ""
 
 msgid ""
@@ -1144,16 +1419,26 @@ msgstr ""
 msgid ""
 "Compiling the interpreter with the :c:macro:`!Py_DEBUG` macro defined "
 "produces what is generally meant by :ref:`a debug build of Python <debug-"
-"build>`. :c:macro:`!Py_DEBUG` is enabled in the Unix build by adding :option:"
-"`--with-pydebug` to the :file:`./configure` command. It is also implied by "
-"the presence of the not-Python-specific :c:macro:`!_DEBUG` macro.  When :c:"
-"macro:`!Py_DEBUG` is enabled in the Unix build, compiler optimization is "
-"disabled."
+"build>`."
+msgstr ""
+
+msgid ""
+"On Unix, :c:macro:`!Py_DEBUG` can be enabled by adding :option:`--with-"
+"pydebug` to the :file:`./configure` command. This will also disable compiler "
+"optimization."
+msgstr ""
+
+msgid ""
+"On Windows, selecting a debug build (e.g., by passing the :option:`-d` "
+"option to :file:`PCbuild/build.bat`) automatically enables :c:macro:`!"
+"Py_DEBUG`. Additionally, the presence of the not-Python-specific :c:macro:`!"
+"_DEBUG` macro, when defined by the compiler, will also implicitly enable :c:"
+"macro:`!Py_DEBUG`."
 msgstr ""
 
 msgid ""
 "In addition to the reference count debugging described below, extra checks "
-"are performed, see :ref:`Python Debug Build <debug-build>`."
+"are performed. See :ref:`Python Debug Build <debug-build>` for more details."
 msgstr ""
 
 msgid ""
@@ -1231,10 +1516,10 @@ msgid ""
 msgstr ""
 
 msgid "object"
-msgstr ""
+msgstr "object"
 
 msgid "type"
-msgstr ""
+msgstr "type"
 
 msgid "Py_INCREF (C function)"
 msgstr ""
@@ -1248,8 +1533,10 @@ msgstr ""
 msgid "PyTuple_SetItem (C function)"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "set_all()"
-msgstr ""
+msgstr "set_all()"
 
 msgid "PyList_GetItem (C function)"
 msgstr ""
@@ -1257,11 +1544,15 @@ msgstr ""
 msgid "PySequence_GetItem (C function)"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "sum_list()"
-msgstr ""
+msgstr "sum_list()"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "sum_sequence()"
-msgstr ""
+msgstr "sum_sequence()"
 
 msgid "PyErr_Occurred (C function)"
 msgstr ""
@@ -1275,8 +1566,10 @@ msgstr ""
 msgid "exc_info (in module sys)"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "incr_item()"
-msgstr ""
+msgstr "incr_item()"
 
 msgid "PyErr_ExceptionMatches (C function)"
 msgstr ""
@@ -1288,36 +1581,30 @@ msgid "Py_Initialize (C function)"
 msgstr ""
 
 msgid "module"
-msgstr ""
+msgstr "module"
 
 msgid "builtins"
-msgstr ""
+msgstr "builtins"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "__main__"
-msgstr ""
+msgstr "__main__"
 
 msgid "sys"
-msgstr ""
+msgstr "sys"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "search"
-msgstr ""
+msgstr "search"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "path"
-msgstr ""
+msgstr "path"
 
 msgid "path (in module sys)"
-msgstr ""
-
-msgid "Py_GetPath (C function)"
-msgstr ""
-
-msgid "Py_GetPrefix (C function)"
-msgstr ""
-
-msgid "Py_GetExecPrefix (C function)"
-msgstr ""
-
-msgid "Py_GetProgramFullPath (C function)"
 msgstr ""
 
 msgid "Py_IsInitialized (C function)"

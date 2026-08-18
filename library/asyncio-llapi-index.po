@@ -9,18 +9,18 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-17 14:50+0000\n"
-"PO-Revision-Date: 2025-09-16 00:00+0000\n"
-"Last-Translator: python-doc bot, 2025\n"
-"Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
-"vi/)\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: pydocvi 0.1.2\n"
 
 msgid "Low-level API Index"
 msgstr ""
@@ -31,26 +31,34 @@ msgstr ""
 msgid "Obtaining the Event Loop"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`asyncio.get_running_loop`"
-msgstr ""
+msgstr ":func:`asyncio.get_running_loop`"
 
 msgid "The **preferred** function to get the running event loop."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`asyncio.get_event_loop`"
-msgstr ""
+msgstr ":func:`asyncio.get_event_loop`"
 
 msgid "Get an event loop instance (running or current via the current policy)."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`asyncio.set_event_loop`"
-msgstr ""
+msgstr ":func:`asyncio.set_event_loop`"
 
 msgid "Set the event loop as current via the current policy."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`asyncio.new_event_loop`"
-msgstr ""
+msgstr ":func:`asyncio.new_event_loop`"
 
 msgid "Create a new event loop."
 msgstr ""
@@ -58,8 +66,10 @@ msgstr ""
 msgid "Examples"
 msgstr "Ví dụ"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":ref:`Using asyncio.get_running_loop() <asyncio_example_future>`."
-msgstr ""
+msgstr ":ref:`Using asyncio.get_running_loop() <asyncio_example_future>`."
 
 msgid "Event Loop Methods"
 msgstr ""
@@ -69,62 +79,84 @@ msgid ""
 "methods`."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Lifecycle"
-msgstr ""
+msgstr "Lifecycle"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`loop.run_until_complete`"
-msgstr ""
+msgstr ":meth:`loop.run_until_complete`"
 
 msgid "Run a Future/Task/awaitable until complete."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`loop.run_forever`"
-msgstr ""
+msgstr ":meth:`loop.run_forever`"
 
 msgid "Run the event loop forever."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`loop.stop`"
-msgstr ""
+msgstr ":meth:`loop.stop`"
 
 msgid "Stop the event loop."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`loop.close`"
-msgstr ""
+msgstr ":meth:`loop.close`"
 
 msgid "Close the event loop."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`loop.is_running`"
-msgstr ""
+msgstr ":meth:`loop.is_running`"
 
 msgid "Return ``True`` if the event loop is running."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`loop.is_closed`"
-msgstr ""
+msgstr ":meth:`loop.is_closed`"
 
 msgid "Return ``True`` if the event loop is closed."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``await`` :meth:`loop.shutdown_asyncgens`"
-msgstr ""
+msgstr "``await`` :meth:`loop.shutdown_asyncgens`"
 
 msgid "Close asynchronous generators."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Debugging"
-msgstr ""
+msgstr "Debugging"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`loop.set_debug`"
-msgstr ""
+msgstr ":meth:`loop.set_debug`"
 
 msgid "Enable or disable the debug mode."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`loop.get_debug`"
-msgstr ""
+msgstr ":meth:`loop.get_debug`"
 
 msgid "Get the current debug mode."
 msgstr ""
@@ -132,26 +164,34 @@ msgstr ""
 msgid "Scheduling Callbacks"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`loop.call_soon`"
-msgstr ""
+msgstr ":meth:`loop.call_soon`"
 
 msgid "Invoke a callback soon."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`loop.call_soon_threadsafe`"
-msgstr ""
+msgstr ":meth:`loop.call_soon_threadsafe`"
 
 msgid "A thread-safe variant of :meth:`loop.call_soon`."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`loop.call_later`"
-msgstr ""
+msgstr ":meth:`loop.call_later`"
 
 msgid "Invoke a callback *after* the given time."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`loop.call_at`"
-msgstr ""
+msgstr ":meth:`loop.call_at`"
 
 msgid "Invoke a callback *at* the given time."
 msgstr ""
@@ -159,16 +199,20 @@ msgstr ""
 msgid "Thread/Interpreter/Process Pool"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``await`` :meth:`loop.run_in_executor`"
-msgstr ""
+msgstr "``await`` :meth:`loop.run_in_executor`"
 
 msgid ""
 "Run a CPU-bound or other blocking function in a :mod:`concurrent.futures` "
 "executor."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`loop.set_default_executor`"
-msgstr ""
+msgstr ":meth:`loop.set_default_executor`"
 
 msgid "Set the default executor for :meth:`loop.run_in_executor`."
 msgstr ""
@@ -176,45 +220,59 @@ msgstr ""
 msgid "Tasks and Futures"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`loop.create_future`"
-msgstr ""
+msgstr ":meth:`loop.create_future`"
 
 msgid "Create a :class:`Future` object."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`loop.create_task`"
-msgstr ""
+msgstr ":meth:`loop.create_task`"
 
 msgid "Schedule coroutine as a :class:`Task`."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`loop.set_task_factory`"
-msgstr ""
+msgstr ":meth:`loop.set_task_factory`"
 
 msgid ""
 "Set a factory used by :meth:`loop.create_task` to create :class:`Tasks "
 "<Task>`."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`loop.get_task_factory`"
-msgstr ""
+msgstr ":meth:`loop.get_task_factory`"
 
 msgid ""
 "Get the factory :meth:`loop.create_task` uses to create :class:`Tasks "
 "<Task>`."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "DNS"
-msgstr ""
+msgstr "DNS"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``await`` :meth:`loop.getaddrinfo`"
-msgstr ""
+msgstr "``await`` :meth:`loop.getaddrinfo`"
 
 msgid "Asynchronous version of :meth:`socket.getaddrinfo`."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``await`` :meth:`loop.getnameinfo`"
-msgstr ""
+msgstr "``await`` :meth:`loop.getnameinfo`"
 
 msgid "Asynchronous version of :meth:`socket.getnameinfo`."
 msgstr ""
@@ -222,143 +280,191 @@ msgstr ""
 msgid "Networking and IPC"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``await`` :meth:`loop.create_connection`"
-msgstr ""
+msgstr "``await`` :meth:`loop.create_connection`"
 
 msgid "Open a TCP connection."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``await`` :meth:`loop.create_server`"
-msgstr ""
+msgstr "``await`` :meth:`loop.create_server`"
 
 msgid "Create a TCP server."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``await`` :meth:`loop.create_unix_connection`"
-msgstr ""
+msgstr "``await`` :meth:`loop.create_unix_connection`"
 
 msgid "Open a Unix socket connection."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``await`` :meth:`loop.create_unix_server`"
-msgstr ""
+msgstr "``await`` :meth:`loop.create_unix_server`"
 
 msgid "Create a Unix socket server."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``await`` :meth:`loop.connect_accepted_socket`"
-msgstr ""
+msgstr "``await`` :meth:`loop.connect_accepted_socket`"
 
 msgid "Wrap a :class:`~socket.socket` into a ``(transport, protocol)`` pair."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``await`` :meth:`loop.create_datagram_endpoint`"
-msgstr ""
+msgstr "``await`` :meth:`loop.create_datagram_endpoint`"
 
 msgid "Open a datagram (UDP) connection."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``await`` :meth:`loop.sendfile`"
-msgstr ""
+msgstr "``await`` :meth:`loop.sendfile`"
 
 msgid "Send a file over a transport."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``await`` :meth:`loop.start_tls`"
-msgstr ""
+msgstr "``await`` :meth:`loop.start_tls`"
 
 msgid "Upgrade an existing connection to TLS."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``await`` :meth:`loop.connect_read_pipe`"
-msgstr ""
+msgstr "``await`` :meth:`loop.connect_read_pipe`"
 
 msgid "Wrap a read end of a pipe into a ``(transport, protocol)`` pair."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``await`` :meth:`loop.connect_write_pipe`"
-msgstr ""
+msgstr "``await`` :meth:`loop.connect_write_pipe`"
 
 msgid "Wrap a write end of a pipe into a ``(transport, protocol)`` pair."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Sockets"
-msgstr ""
+msgstr "Sockets"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``await`` :meth:`loop.sock_recv`"
-msgstr ""
+msgstr "``await`` :meth:`loop.sock_recv`"
 
 msgid "Receive data from the :class:`~socket.socket`."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``await`` :meth:`loop.sock_recv_into`"
-msgstr ""
+msgstr "``await`` :meth:`loop.sock_recv_into`"
 
 msgid "Receive data from the :class:`~socket.socket` into a buffer."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``await`` :meth:`loop.sock_recvfrom`"
-msgstr ""
+msgstr "``await`` :meth:`loop.sock_recvfrom`"
 
 msgid "Receive a datagram from the :class:`~socket.socket`."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``await`` :meth:`loop.sock_recvfrom_into`"
-msgstr ""
+msgstr "``await`` :meth:`loop.sock_recvfrom_into`"
 
 msgid "Receive a datagram from the :class:`~socket.socket` into a buffer."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``await`` :meth:`loop.sock_sendall`"
-msgstr ""
+msgstr "``await`` :meth:`loop.sock_sendall`"
 
 msgid "Send data to the :class:`~socket.socket`."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``await`` :meth:`loop.sock_sendto`"
-msgstr ""
+msgstr "``await`` :meth:`loop.sock_sendto`"
 
 msgid "Send a datagram via the :class:`~socket.socket` to the given address."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``await`` :meth:`loop.sock_connect`"
-msgstr ""
+msgstr "``await`` :meth:`loop.sock_connect`"
 
 msgid "Connect the :class:`~socket.socket`."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``await`` :meth:`loop.sock_accept`"
-msgstr ""
+msgstr "``await`` :meth:`loop.sock_accept`"
 
 msgid "Accept a :class:`~socket.socket` connection."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``await`` :meth:`loop.sock_sendfile`"
-msgstr ""
+msgstr "``await`` :meth:`loop.sock_sendfile`"
 
 msgid "Send a file over the :class:`~socket.socket`."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`loop.add_reader`"
-msgstr ""
+msgstr ":meth:`loop.add_reader`"
 
 msgid "Start watching a file descriptor for read availability."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`loop.remove_reader`"
-msgstr ""
+msgstr ":meth:`loop.remove_reader`"
 
 msgid "Stop watching a file descriptor for read availability."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`loop.add_writer`"
-msgstr ""
+msgstr ":meth:`loop.add_writer`"
 
 msgid "Start watching a file descriptor for write availability."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`loop.remove_writer`"
-msgstr ""
+msgstr ":meth:`loop.remove_writer`"
 
 msgid "Stop watching a file descriptor for write availability."
 msgstr ""
@@ -366,67 +472,93 @@ msgstr ""
 msgid "Unix Signals"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`loop.add_signal_handler`"
-msgstr ""
+msgstr ":meth:`loop.add_signal_handler`"
 
 msgid "Add a handler for a :mod:`signal`."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`loop.remove_signal_handler`"
-msgstr ""
+msgstr ":meth:`loop.remove_signal_handler`"
 
 msgid "Remove a handler for a :mod:`signal`."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Subprocesses"
-msgstr ""
+msgstr "Subprocesses"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`loop.subprocess_exec`"
-msgstr ""
+msgstr ":meth:`loop.subprocess_exec`"
 
 msgid "Spawn a subprocess."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`loop.subprocess_shell`"
-msgstr ""
+msgstr ":meth:`loop.subprocess_shell`"
 
 msgid "Spawn a subprocess from a shell command."
 msgstr ""
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=21ec5aea4a73 run=2026-08-17T16:43Z
+#, fuzzy
 msgid "Error Handling"
-msgstr ""
+msgstr "Xử lý lỗi"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`loop.call_exception_handler`"
-msgstr ""
+msgstr ":meth:`loop.call_exception_handler`"
 
 msgid "Call the exception handler."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`loop.set_exception_handler`"
-msgstr ""
+msgstr ":meth:`loop.set_exception_handler`"
 
 msgid "Set a new exception handler."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`loop.get_exception_handler`"
-msgstr ""
+msgstr ":meth:`loop.get_exception_handler`"
 
 msgid "Get the current exception handler."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`loop.default_exception_handler`"
-msgstr ""
+msgstr ":meth:`loop.default_exception_handler`"
 
 msgid "The default exception handler implementation."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ""
 ":ref:`Using asyncio.new_event_loop() and loop.run_forever() "
 "<asyncio_example_lowlevel_helloworld>`."
 msgstr ""
+":ref:`Using asyncio.new_event_loop() and loop.run_forever() "
+"<asyncio_example_lowlevel_helloworld>`."
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":ref:`Using loop.call_later() <asyncio_example_call_later>`."
-msgstr ""
+msgstr ":ref:`Using loop.call_later() <asyncio_example_call_later>`."
 
 msgid ""
 "Using ``loop.create_connection()`` to implement :ref:`an echo-client "
@@ -438,49 +570,70 @@ msgid ""
 "<asyncio_example_create_connection>`."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ""
 ":ref:`Using add_reader() to watch an FD for read events "
 "<asyncio_example_watch_fd>`."
 msgstr ""
+":ref:`Using add_reader() to watch an FD for read events "
+"<asyncio_example_watch_fd>`."
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":ref:`Using loop.add_signal_handler() <asyncio_example_unix_signals>`."
-msgstr ""
+msgstr ":ref:`Using loop.add_signal_handler() <asyncio_example_unix_signals>`."
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":ref:`Using loop.subprocess_exec() <asyncio_example_subprocess_proto>`."
 msgstr ""
+":ref:`Using loop.subprocess_exec() <asyncio_example_subprocess_proto>`."
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Transports"
-msgstr ""
+msgstr "Transports"
 
 msgid "All transports implement the following methods:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`transport.close() <BaseTransport.close>`"
-msgstr ""
+msgstr ":meth:`transport.close() <BaseTransport.close>`"
 
 msgid "Close the transport."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`transport.is_closing() <BaseTransport.is_closing>`"
-msgstr ""
+msgstr ":meth:`transport.is_closing() <BaseTransport.is_closing>`"
 
 msgid "Return ``True`` if the transport is closing or is closed."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`transport.get_extra_info() <BaseTransport.get_extra_info>`"
-msgstr ""
+msgstr ":meth:`transport.get_extra_info() <BaseTransport.get_extra_info>`"
 
 msgid "Request for information about the transport."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`transport.set_protocol() <BaseTransport.set_protocol>`"
-msgstr ""
+msgstr ":meth:`transport.set_protocol() <BaseTransport.set_protocol>`"
 
 msgid "Set a new protocol."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`transport.get_protocol() <BaseTransport.get_protocol>`"
-msgstr ""
+msgstr ":meth:`transport.get_protocol() <BaseTransport.get_protocol>`"
 
 msgid "Return the current protocol."
 msgstr ""
@@ -494,20 +647,26 @@ msgstr ""
 msgid "Read Transports"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`transport.is_reading() <ReadTransport.is_reading>`"
-msgstr ""
+msgstr ":meth:`transport.is_reading() <ReadTransport.is_reading>`"
 
 msgid "Return ``True`` if the transport is receiving."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`transport.pause_reading() <ReadTransport.pause_reading>`"
-msgstr ""
+msgstr ":meth:`transport.pause_reading() <ReadTransport.pause_reading>`"
 
 msgid "Pause receiving."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`transport.resume_reading() <ReadTransport.resume_reading>`"
-msgstr ""
+msgstr ":meth:`transport.resume_reading() <ReadTransport.resume_reading>`"
 
 msgid "Resume receiving."
 msgstr ""
@@ -521,56 +680,78 @@ msgstr ""
 msgid "Write Transports"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`transport.write() <WriteTransport.write>`"
-msgstr ""
+msgstr ":meth:`transport.write() <WriteTransport.write>`"
 
 msgid "Write data to the transport."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`transport.writelines() <WriteTransport.writelines>`"
-msgstr ""
+msgstr ":meth:`transport.writelines() <WriteTransport.writelines>`"
 
 msgid "Write buffers to the transport."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`transport.can_write_eof() <WriteTransport.can_write_eof>`"
-msgstr ""
+msgstr ":meth:`transport.can_write_eof() <WriteTransport.can_write_eof>`"
 
 msgid "Return :const:`True` if the transport supports sending EOF."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`transport.write_eof() <WriteTransport.write_eof>`"
-msgstr ""
+msgstr ":meth:`transport.write_eof() <WriteTransport.write_eof>`"
 
 msgid "Close and send EOF after flushing buffered data."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`transport.abort() <WriteTransport.abort>`"
-msgstr ""
+msgstr ":meth:`transport.abort() <WriteTransport.abort>`"
 
 msgid "Close the transport immediately."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ""
-":meth:`transport.get_write_buffer_size() <WriteTransport."
-"get_write_buffer_size>`"
+":meth:`transport.get_write_buffer_size() "
+"<WriteTransport.get_write_buffer_size>`"
 msgstr ""
+":meth:`transport.get_write_buffer_size() "
+"<WriteTransport.get_write_buffer_size>`"
 
 msgid "Return the current size of the output buffer."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ""
-":meth:`transport.get_write_buffer_limits() <WriteTransport."
-"get_write_buffer_limits>`"
+":meth:`transport.get_write_buffer_limits() "
+"<WriteTransport.get_write_buffer_limits>`"
 msgstr ""
+":meth:`transport.get_write_buffer_limits() "
+"<WriteTransport.get_write_buffer_limits>`"
 
 msgid "Return high and low water marks for write flow control."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ""
-":meth:`transport.set_write_buffer_limits() <WriteTransport."
-"set_write_buffer_limits>`"
+":meth:`transport.set_write_buffer_limits() "
+"<WriteTransport.set_write_buffer_limits>`"
 msgstr ""
+":meth:`transport.set_write_buffer_limits() "
+"<WriteTransport.set_write_buffer_limits>`"
 
 msgid "Set new high and low water marks for write flow control."
 msgstr ""
@@ -581,14 +762,18 @@ msgstr ""
 msgid "Datagram Transports"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`transport.sendto() <DatagramTransport.sendto>`"
-msgstr ""
+msgstr ":meth:`transport.sendto() <DatagramTransport.sendto>`"
 
 msgid "Send data to the remote peer."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`transport.abort() <DatagramTransport.abort>`"
-msgstr ""
+msgstr ":meth:`transport.abort() <DatagramTransport.abort>`"
 
 msgid ""
 "Low-level transport abstraction over subprocesses. Returned by :meth:`loop."
@@ -598,78 +783,105 @@ msgstr ""
 msgid "Subprocess Transports"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`transport.get_pid() <SubprocessTransport.get_pid>`"
-msgstr ""
+msgstr ":meth:`transport.get_pid() <SubprocessTransport.get_pid>`"
 
 msgid "Return the subprocess process id."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ""
-":meth:`transport.get_pipe_transport() <SubprocessTransport."
-"get_pipe_transport>`"
+":meth:`transport.get_pipe_transport() "
+"<SubprocessTransport.get_pipe_transport>`"
 msgstr ""
+":meth:`transport.get_pipe_transport() "
+"<SubprocessTransport.get_pipe_transport>`"
 
 msgid ""
 "Return the transport for the requested communication pipe (*stdin*, "
 "*stdout*, or *stderr*)."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`transport.get_returncode() <SubprocessTransport.get_returncode>`"
 msgstr ""
+":meth:`transport.get_returncode() <SubprocessTransport.get_returncode>`"
 
 msgid "Return the subprocess return code."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`transport.kill() <SubprocessTransport.kill>`"
-msgstr ""
+msgstr ":meth:`transport.kill() <SubprocessTransport.kill>`"
 
 msgid "Kill the subprocess."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`transport.send_signal() <SubprocessTransport.send_signal>`"
-msgstr ""
+msgstr ":meth:`transport.send_signal() <SubprocessTransport.send_signal>`"
 
 msgid "Send a signal to the subprocess."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`transport.terminate() <SubprocessTransport.terminate>`"
-msgstr ""
+msgstr ":meth:`transport.terminate() <SubprocessTransport.terminate>`"
 
 msgid "Stop the subprocess."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`transport.close() <SubprocessTransport.close>`"
-msgstr ""
+msgstr ":meth:`transport.close() <SubprocessTransport.close>`"
 
 msgid "Kill the subprocess and close all pipes."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Protocols"
-msgstr ""
+msgstr "Protocols"
 
 msgid "Protocol classes can implement the following **callback methods**:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``callback`` :meth:`connection_made() <BaseProtocol.connection_made>`"
-msgstr ""
+msgstr "``callback`` :meth:`connection_made() <BaseProtocol.connection_made>`"
 
 msgid "Called when a connection is made."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``callback`` :meth:`connection_lost() <BaseProtocol.connection_lost>`"
-msgstr ""
+msgstr "``callback`` :meth:`connection_lost() <BaseProtocol.connection_lost>`"
 
 msgid "Called when the connection is lost or closed."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``callback`` :meth:`pause_writing() <BaseProtocol.pause_writing>`"
-msgstr ""
+msgstr "``callback`` :meth:`pause_writing() <BaseProtocol.pause_writing>`"
 
 msgid "Called when the transport's buffer goes over the high water mark."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``callback`` :meth:`resume_writing() <BaseProtocol.resume_writing>`"
-msgstr ""
+msgstr "``callback`` :meth:`resume_writing() <BaseProtocol.resume_writing>`"
 
 msgid "Called when the transport's buffer drains below the low water mark."
 msgstr ""
@@ -677,14 +889,18 @@ msgstr ""
 msgid "Streaming Protocols (TCP, Unix Sockets, Pipes)"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``callback`` :meth:`data_received() <Protocol.data_received>`"
-msgstr ""
+msgstr "``callback`` :meth:`data_received() <Protocol.data_received>`"
 
 msgid "Called when some data is received."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``callback`` :meth:`eof_received() <Protocol.eof_received>`"
-msgstr ""
+msgstr "``callback`` :meth:`eof_received() <Protocol.eof_received>`"
 
 msgid "Called when an EOF is received."
 msgstr ""
@@ -692,33 +908,46 @@ msgstr ""
 msgid "Buffered Streaming Protocols"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``callback`` :meth:`get_buffer() <BufferedProtocol.get_buffer>`"
-msgstr ""
+msgstr "``callback`` :meth:`get_buffer() <BufferedProtocol.get_buffer>`"
 
 msgid "Called to allocate a new receive buffer."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``callback`` :meth:`buffer_updated() <BufferedProtocol.buffer_updated>`"
 msgstr ""
+"``callback`` :meth:`buffer_updated() <BufferedProtocol.buffer_updated>`"
 
 msgid "Called when the buffer was updated with the received data."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``callback`` :meth:`eof_received() <BufferedProtocol.eof_received>`"
-msgstr ""
+msgstr "``callback`` :meth:`eof_received() <BufferedProtocol.eof_received>`"
 
 msgid "Datagram Protocols"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ""
 "``callback`` :meth:`datagram_received() <DatagramProtocol.datagram_received>`"
 msgstr ""
+"``callback`` :meth:`datagram_received() <DatagramProtocol.datagram_received>`"
 
 msgid "Called when a datagram is received."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``callback`` :meth:`error_received() <DatagramProtocol.error_received>`"
 msgstr ""
+"``callback`` :meth:`error_received() <DatagramProtocol.error_received>`"
 
 msgid ""
 "Called when a previous send or receive operation raises an :class:`OSError`."
@@ -727,23 +956,30 @@ msgstr ""
 msgid "Subprocess Protocols"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``callback`` :meth:`~SubprocessProtocol.pipe_data_received`"
-msgstr ""
+msgstr "``callback`` :meth:`~SubprocessProtocol.pipe_data_received`"
 
 msgid ""
 "Called when the child process writes data into its *stdout* or *stderr* pipe."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``callback`` :meth:`~SubprocessProtocol.pipe_connection_lost`"
-msgstr ""
+msgstr "``callback`` :meth:`~SubprocessProtocol.pipe_connection_lost`"
 
 msgid ""
 "Called when one of the pipes communicating with the child process is closed."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ""
 "``callback`` :meth:`process_exited() <SubprocessProtocol.process_exited>`"
 msgstr ""
+"``callback`` :meth:`process_exited() <SubprocessProtocol.process_exited>`"
 
 msgid ""
 "Called when the child process has exited. It can be called before :meth:"
@@ -763,20 +999,26 @@ msgstr ""
 msgid "Accessing Policies"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`asyncio.get_event_loop_policy`"
-msgstr ""
+msgstr ":meth:`asyncio.get_event_loop_policy`"
 
 msgid "Return the current process-wide policy."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`asyncio.set_event_loop_policy`"
-msgstr ""
+msgstr ":meth:`asyncio.set_event_loop_policy`"
 
 msgid "Set a new process-wide policy."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`AbstractEventLoopPolicy`"
-msgstr ""
+msgstr ":class:`AbstractEventLoopPolicy`"
 
 msgid "Base class for policy objects."
 msgstr ""

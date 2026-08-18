@@ -9,21 +9,23 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-15 15:01+0000\n"
-"PO-Revision-Date: 2025-09-16 00:00+0000\n"
-"Last-Translator: python-doc bot, 2025\n"
-"Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
-"vi/)\n"
+"POT-Creation-Date: 2026-05-05 15:48+0000\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: pydocvi 0.1.2\n"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Runners"
-msgstr ""
+msgstr "Runners"
 
 msgid "**Source code:** :source:`Lib/asyncio/runners.py`"
 msgstr ""
@@ -80,6 +82,8 @@ msgstr ""
 msgid "Example::"
 msgstr "Ví dụ::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "async def main():\n"
 "    await asyncio.sleep(1)\n"
@@ -87,6 +91,11 @@ msgid ""
 "\n"
 "asyncio.run(main())"
 msgstr ""
+"async def main():\n"
+"    await asyncio.sleep(1)\n"
+"    print('hello')\n"
+"\n"
+"asyncio.run(main())"
 
 msgid "Updated to use :meth:`loop.shutdown_default_executor`."
 msgstr ""
@@ -132,6 +141,8 @@ msgid ""
 "usage::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "async def main():\n"
 "    await asyncio.sleep(1)\n"
@@ -140,6 +151,12 @@ msgid ""
 "with asyncio.Runner() as runner:\n"
 "    runner.run(main())"
 msgstr ""
+"async def main():\n"
+"    await asyncio.sleep(1)\n"
+"    print('hello')\n"
+"\n"
+"with asyncio.Runner() as runner:\n"
+"    runner.run(main())"
 
 msgid "Execute *coro* in the embedded event loop."
 msgstr ""

@@ -10,18 +10,18 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-21 15:07+0000\n"
-"PO-Revision-Date: 2025-09-16 00:01+0000\n"
-"Last-Translator: Nguyen Duc Tam, 2026\n"
-"Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
-"vi/)\n"
+"POT-Creation-Date: 2026-05-08 18:34+0000\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: pydocvi 0.1.2\n"
 
 msgid "Built-in Types"
 msgstr ""
@@ -93,41 +93,59 @@ msgstr ""
 msgid "These are the Boolean operations, ordered by ascending priority:"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Operation"
-msgstr ""
+msgstr "Operation"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Result"
-msgstr ""
+msgstr "Result"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Notes"
-msgstr ""
+msgstr "Notes"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``x or y``"
-msgstr ""
+msgstr "``x or y``"
 
 msgid "if *x* is true, then *x*, else *y*"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "\\(1)"
-msgstr ""
+msgstr "\\(1)"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``x and y``"
-msgstr ""
+msgstr "``x and y``"
 
 msgid "if *x* is false, then *x*, else *y*"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "\\(2)"
-msgstr ""
+msgstr "\\(2)"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``not x``"
-msgstr ""
+msgstr "``not x``"
 
 msgid "if *x* is false, then ``True``, else ``False``"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "\\(3)"
-msgstr ""
+msgstr "\\(3)"
 
 msgid "Notes:"
 msgstr ""
@@ -147,8 +165,10 @@ msgid ""
 "is interpreted as ``not (a == b)``, and ``a == not b`` is a syntax error."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Comparisons"
-msgstr ""
+msgstr "Comparisons"
 
 msgid ""
 "There are eight comparison operations in Python.  They all have the same "
@@ -162,52 +182,70 @@ msgid "This table summarizes the comparison operations:"
 msgstr ""
 
 msgid "Meaning"
-msgstr ""
+msgstr "Ý nghĩa"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``<``"
-msgstr ""
+msgstr "``<``"
 
 msgid "strictly less than"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``<=``"
-msgstr ""
+msgstr "``<=``"
 
 msgid "less than or equal"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``>``"
-msgstr ""
+msgstr "``>``"
 
 msgid "strictly greater than"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``>=``"
-msgstr ""
+msgstr "``>=``"
 
 msgid "greater than or equal"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``==``"
-msgstr ""
+msgstr "``==``"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "equal"
-msgstr ""
+msgstr "equal"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``!=``"
-msgstr ""
+msgstr "``!=``"
 
 msgid "not equal"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``is``"
-msgstr ""
+msgstr "``is``"
 
 msgid "object identity"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``is not``"
-msgstr ""
+msgstr "``is not``"
 
 msgid "negated object identity"
 msgstr ""
@@ -319,59 +357,79 @@ msgstr ""
 msgid "Full documentation"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``x + y``"
-msgstr ""
+msgstr "``x + y``"
 
 msgid "sum of *x* and *y*"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``x - y``"
-msgstr ""
+msgstr "``x - y``"
 
 msgid "difference of *x* and *y*"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``x * y``"
-msgstr ""
+msgstr "``x * y``"
 
 msgid "product of *x* and *y*"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``x / y``"
-msgstr ""
+msgstr "``x / y``"
 
 msgid "quotient of *x* and *y*"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``x // y``"
-msgstr ""
+msgstr "``x // y``"
 
 msgid "floored quotient of *x* and *y*"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "\\(1)\\(2)"
-msgstr ""
+msgstr "\\(1)\\(2)"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``x % y``"
-msgstr ""
+msgstr "``x % y``"
 
 msgid "remainder of ``x / y``"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``-x``"
-msgstr ""
+msgstr "``-x``"
 
 msgid "*x* negated"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``+x``"
-msgstr ""
+msgstr "``+x``"
 
 msgid "*x* unchanged"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``abs(x)``"
-msgstr ""
+msgstr "``abs(x)``"
 
 msgid "absolute value or magnitude of *x*"
 msgstr ""
@@ -379,52 +437,68 @@ msgstr ""
 msgid ":func:`abs`"
 msgstr ":func:`abs`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``int(x)``"
-msgstr ""
+msgstr "``int(x)``"
 
 msgid "*x* converted to integer"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "\\(3)\\(6)"
-msgstr ""
+msgstr "\\(3)\\(6)"
 
 msgid ":func:`int`"
 msgstr ":func:`int`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``float(x)``"
-msgstr ""
+msgstr "``float(x)``"
 
 msgid "*x* converted to floating point"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "\\(4)\\(6)"
-msgstr ""
+msgstr "\\(4)\\(6)"
 
 msgid ":func:`float`"
 msgstr ":func:`float`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``complex(re, im)``"
-msgstr ""
+msgstr "``complex(re, im)``"
 
 msgid ""
 "a complex number with real part *re*, imaginary part *im*. *im* defaults to "
 "zero."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "\\(6)"
-msgstr ""
+msgstr "\\(6)"
 
 msgid ":func:`complex`"
 msgstr ":func:`complex`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``c.conjugate()``"
-msgstr ""
+msgstr "``c.conjugate()``"
 
 msgid "conjugate of the complex number *c*"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``divmod(x, y)``"
-msgstr ""
+msgstr "``divmod(x, y)``"
 
 msgid "the pair ``(x // y, x % y)``"
 msgstr ""
@@ -432,20 +506,26 @@ msgstr ""
 msgid ":func:`divmod`"
 msgstr ":func:`divmod`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``pow(x, y)``"
-msgstr ""
+msgstr "``pow(x, y)``"
 
 msgid "*x* to the power *y*"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "\\(5)"
-msgstr ""
+msgstr "\\(5)"
 
 msgid ":func:`pow`"
 msgstr ":func:`pow`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``x ** y``"
-msgstr ""
+msgstr "``x ** y``"
 
 msgid ""
 "Also referred to as integer division.  For operands of type :class:`int`, "
@@ -493,28 +573,36 @@ msgid ""
 "include the following operations:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`math.trunc(\\ x) <math.trunc>`"
-msgstr ""
+msgstr ":func:`math.trunc(\\ x) <math.trunc>`"
 
 msgid "*x* truncated to :class:`~numbers.Integral`"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`round(x[, n]) <round>`"
-msgstr ""
+msgstr ":func:`round(x[, n]) <round>`"
 
 msgid ""
 "*x* rounded to *n* digits, rounding half to even. If *n* is omitted, it "
 "defaults to 0."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`math.floor(\\ x) <math.floor>`"
-msgstr ""
+msgstr ":func:`math.floor(\\ x) <math.floor>`"
 
 msgid "the greatest :class:`~numbers.Integral` <= *x*"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`math.ceil(x) <math.ceil>`"
-msgstr ""
+msgstr ":func:`math.ceil(x) <math.ceil>`"
 
 msgid "the least :class:`~numbers.Integral` >= *x*"
 msgstr ""
@@ -543,47 +631,65 @@ msgstr ""
 msgid "This table lists the bitwise operations sorted in ascending priority:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``x | y``"
-msgstr ""
+msgstr "``x | y``"
 
 msgid "bitwise :dfn:`or` of *x* and *y*"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "\\(4)"
-msgstr ""
+msgstr "\\(4)"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``x ^ y``"
-msgstr ""
+msgstr "``x ^ y``"
 
 msgid "bitwise :dfn:`exclusive or` of *x* and *y*"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``x & y``"
-msgstr ""
+msgstr "``x & y``"
 
 msgid "bitwise :dfn:`and` of *x* and *y*"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``x << n``"
-msgstr ""
+msgstr "``x << n``"
 
 msgid "*x* shifted left by *n* bits"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "(1)(2)"
-msgstr ""
+msgstr "(1)(2)"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``x >> n``"
-msgstr ""
+msgstr "``x >> n``"
 
 msgid "*x* shifted right by *n* bits"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "(1)(3)"
-msgstr ""
+msgstr "(1)(3)"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``~x``"
-msgstr ""
+msgstr "``~x``"
 
 msgid "the bits of *x* inverted"
 msgstr ""
@@ -620,6 +726,8 @@ msgid ""
 "excluding the sign and leading zeros::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> n = -37\n"
 ">>> bin(n)\n"
@@ -627,6 +735,11 @@ msgid ""
 ">>> n.bit_length()\n"
 "6"
 msgstr ""
+">>> n = -37\n"
+">>> bin(n)\n"
+"'-0b100101'\n"
+">>> n.bit_length()\n"
+"6"
 
 msgid ""
 "More precisely, if ``x`` is nonzero, then ``x.bit_length()`` is the unique "
@@ -639,18 +752,26 @@ msgstr ""
 msgid "Equivalent to::"
 msgstr "Tương đương với::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def bit_length(self):\n"
 "    s = bin(self)       # binary representation:  bin(-37) --> '-0b100101'\n"
 "    s = s.lstrip('-0b') # remove leading zeros and minus sign\n"
 "    return len(s)       # len('100101') --> 6"
 msgstr ""
+"def bit_length(self):\n"
+"    s = bin(self)       # binary representation:  bin(-37) --> '-0b100101'\n"
+"    s = s.lstrip('-0b') # remove leading zeros and minus sign\n"
+"    return len(s)       # len('100101') --> 6"
 
 msgid ""
 "Return the number of ones in the binary representation of the absolute value "
 "of the integer. This is also known as the population count. Example::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> n = 19\n"
 ">>> bin(n)\n"
@@ -660,11 +781,22 @@ msgid ""
 ">>> (-n).bit_count()\n"
 "3"
 msgstr ""
+">>> n = 19\n"
+">>> bin(n)\n"
+"'0b10011'\n"
+">>> n.bit_count()\n"
+"3\n"
+">>> (-n).bit_count()\n"
+"3"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def bit_count(self):\n"
 "    return bin(self).count(\"1\")"
 msgstr ""
+"def bit_count(self):\n"
+"    return bin(self).count(\"1\")"
 
 msgid "Return an array of bytes representing an integer."
 msgstr ""
@@ -694,16 +826,22 @@ msgid ""
 "byte object::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> (65).to_bytes()\n"
 "b'A'"
 msgstr ""
+">>> (65).to_bytes()\n"
+"b'A'"
 
 msgid ""
 "However, when using the default arguments, don't try to convert a value "
 "greater than 255 or you'll get an :exc:`OverflowError`."
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def to_bytes(n, length=1, byteorder='big', signed=False):\n"
 "    if byteorder == 'little':\n"
@@ -715,6 +853,15 @@ msgid ""
 "\n"
 "    return bytes((n >> i*8) & 0xff for i in order)"
 msgstr ""
+"def to_bytes(n, length=1, byteorder='big', signed=False):\n"
+"    if byteorder == 'little':\n"
+"        order = range(length)\n"
+"    elif byteorder == 'big':\n"
+"        order = reversed(range(length))\n"
+"    else:\n"
+"        raise ValueError(\"byteorder must be either 'little' or 'big'\")\n"
+"\n"
+"    return bytes((n >> i*8) & 0xff for i in order)"
 
 msgid "Added default argument values for ``length`` and ``byteorder``."
 msgstr ""
@@ -741,6 +888,8 @@ msgid ""
 "represent the integer."
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def from_bytes(bytes, byteorder='big', signed=False):\n"
 "    if byteorder == 'little':\n"
@@ -756,6 +905,19 @@ msgid ""
 "\n"
 "    return n"
 msgstr ""
+"def from_bytes(bytes, byteorder='big', signed=False):\n"
+"    if byteorder == 'little':\n"
+"        little_ordered = list(bytes)\n"
+"    elif byteorder == 'big':\n"
+"        little_ordered = list(reversed(bytes))\n"
+"    else:\n"
+"        raise ValueError(\"byteorder must be either 'little' or 'big'\")\n"
+"\n"
+"    n = sum(b << i*8 for i, b in enumerate(little_ordered))\n"
+"    if signed and little_ordered and (little_ordered[-1] & 0x80):\n"
+"        n -= 1 << 8*len(little_ordered)\n"
+"\n"
+"    return n"
 
 msgid "Added default argument value for ``byteorder``."
 msgstr ""
@@ -807,12 +969,18 @@ msgid ""
 "``False`` otherwise::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> (-2.0).is_integer()\n"
 "True\n"
 ">>> (3.2).is_integer()\n"
 "False"
 msgstr ""
+">>> (-2.0).is_integer()\n"
+"True\n"
+">>> (3.2).is_integer()\n"
+"False"
 
 msgid ""
 "Two methods support conversion to and from hexadecimal strings.  Since "
@@ -865,20 +1033,28 @@ msgid ""
 "number ``(3 + 10./16 + 7./16**2) * 2.0**10``, or ``3740.0``::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> float.fromhex('0x3.a7p10')\n"
 "3740.0"
 msgstr ""
+">>> float.fromhex('0x3.a7p10')\n"
+"3740.0"
 
 msgid ""
 "Applying the reverse conversion to ``3740.0`` gives a different hexadecimal "
 "string representing the same number::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> float.hex(3740.0)\n"
 "'0x1.d380000000000p+11'"
 msgstr ""
+">>> float.hex(3740.0)\n"
+"'0x1.d380000000000p+11'"
 
 msgid "Additional Methods on Complex"
 msgstr ""
@@ -963,6 +1139,8 @@ msgid ""
 "`float`, or :class:`complex`::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import sys, math\n"
 "\n"
@@ -1004,8 +1182,8 @@ msgid ""
 "def hash_complex(z):\n"
 "    \"\"\"Compute the hash of a complex number z.\"\"\"\n"
 "\n"
-"    hash_value = hash_float(z.real) + sys.hash_info.imag * hash_float(z."
-"imag)\n"
+"    hash_value = hash_float(z.real) + sys.hash_info.imag * "
+"hash_float(z.imag)\n"
 "    # do a signed reduction modulo 2**sys.hash_info.width\n"
 "    M = 2**(sys.hash_info.width - 1)\n"
 "    hash_value = (hash_value & (M - 1)) - (hash_value & M)\n"
@@ -1013,6 +1191,54 @@ msgid ""
 "        hash_value = -2\n"
 "    return hash_value"
 msgstr ""
+"import sys, math\n"
+"\n"
+"def hash_fraction(m, n):\n"
+"    \"\"\"Compute the hash of a rational number m / n.\n"
+"\n"
+"    Assumes m and n are integers, with n positive.\n"
+"    Equivalent to hash(fractions.Fraction(m, n)).\n"
+"\n"
+"    \"\"\"\n"
+"    P = sys.hash_info.modulus\n"
+"    # Remove common factors of P.  (Unnecessary if m and n already "
+"coprime.)\n"
+"    while m % P == n % P == 0:\n"
+"        m, n = m // P, n // P\n"
+"\n"
+"    if n % P == 0:\n"
+"        hash_value = sys.hash_info.inf\n"
+"    else:\n"
+"        # Fermat's Little Theorem: pow(n, P-1, P) is 1, so\n"
+"        # pow(n, P-2, P) gives the inverse of n modulo P.\n"
+"        hash_value = (abs(m) % P) * pow(n, P - 2, P) % P\n"
+"    if m < 0:\n"
+"        hash_value = -hash_value\n"
+"    if hash_value == -1:\n"
+"        hash_value = -2\n"
+"    return hash_value\n"
+"\n"
+"def hash_float(x):\n"
+"    \"\"\"Compute the hash of a float x.\"\"\"\n"
+"\n"
+"    if math.isnan(x):\n"
+"        return object.__hash__(x)\n"
+"    elif math.isinf(x):\n"
+"        return sys.hash_info.inf if x > 0 else -sys.hash_info.inf\n"
+"    else:\n"
+"        return hash_fraction(*x.as_integer_ratio())\n"
+"\n"
+"def hash_complex(z):\n"
+"    \"\"\"Compute the hash of a complex number z.\"\"\"\n"
+"\n"
+"    hash_value = hash_float(z.real) + sys.hash_info.imag * "
+"hash_float(z.imag)\n"
+"    # do a signed reduction modulo 2**sys.hash_info.width\n"
+"    M = 2**(sys.hash_info.width - 1)\n"
+"    hash_value = (hash_value & (M - 1)) - (hash_value & M)\n"
+"    if hash_value == -1:\n"
+"        hash_value = -2\n"
+"    return hash_value"
 
 msgid "Boolean Type - :class:`bool`"
 msgstr ""
@@ -1152,26 +1378,34 @@ msgid ""
 "[3]_"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``x in s``"
-msgstr ""
+msgstr "``x in s``"
 
 msgid "``True`` if an item of *s* is equal to *x*, else ``False``"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``x not in s``"
-msgstr ""
+msgstr "``x not in s``"
 
 msgid "``False`` if an item of *s* is equal to *x*, else ``True``"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``s + t``"
-msgstr ""
+msgstr "``s + t``"
 
 msgid "the concatenation of *s* and *t*"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "(6)(7)"
-msgstr ""
+msgstr "(6)(7)"
 
 msgid "``s * n`` or ``n * s``"
 msgstr ""
@@ -1179,50 +1413,70 @@ msgstr ""
 msgid "equivalent to adding *s* to itself *n* times"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "(2)(7)"
-msgstr ""
+msgstr "(2)(7)"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``s[i]``"
-msgstr ""
+msgstr "``s[i]``"
 
 msgid "*i*\\ th item of *s*, origin 0"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "(3)(8)"
-msgstr ""
+msgstr "(3)(8)"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``s[i:j]``"
-msgstr ""
+msgstr "``s[i:j]``"
 
 msgid "slice of *s* from *i* to *j*"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "(3)(4)"
-msgstr ""
+msgstr "(3)(4)"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``s[i:j:k]``"
-msgstr ""
+msgstr "``s[i:j:k]``"
 
 msgid "slice of *s* from *i* to *j* with step *k*"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "(3)(5)"
-msgstr ""
+msgstr "(3)(5)"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``len(s)``"
-msgstr ""
+msgstr "``len(s)``"
 
 msgid "length of *s*"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``min(s)``"
-msgstr ""
+msgstr "``min(s)``"
 
 msgid "smallest item of *s*"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``max(s)``"
-msgstr ""
+msgstr "``max(s)``"
 
 msgid "largest item of *s*"
 msgstr ""
@@ -1250,10 +1504,14 @@ msgid ""
 "subsequence testing::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> \"gg\" in \"eggs\"\n"
 "True"
 msgstr ""
+">>> \"gg\" in \"eggs\"\n"
+"True"
 
 msgid ""
 "Values of *n* less than ``0`` are treated as ``0`` (which yields an empty "
@@ -1262,6 +1520,8 @@ msgid ""
 "Python programmers; consider::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> lists = [[]] * 3\n"
 ">>> lists\n"
@@ -1270,6 +1530,12 @@ msgid ""
 ">>> lists\n"
 "[[3], [3], [3]]"
 msgstr ""
+">>> lists = [[]] * 3\n"
+">>> lists\n"
+"[[], [], []]\n"
+">>> lists[0].append(3)\n"
+">>> lists\n"
+"[[3], [3], [3]]"
 
 msgid ""
 "What has happened is that ``[[]]`` is a one-element list containing an empty "
@@ -1278,6 +1544,8 @@ msgid ""
 "list. You can create a list of different lists this way::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> lists = [[] for i in range(3)]\n"
 ">>> lists[0].append(3)\n"
@@ -1286,6 +1554,12 @@ msgid ""
 ">>> lists\n"
 "[[3], [5], [7]]"
 msgstr ""
+">>> lists = [[] for i in range(3)]\n"
+">>> lists[0].append(3)\n"
+">>> lists[1].append(5)\n"
+">>> lists[2].append(7)\n"
+">>> lists\n"
+"[[3], [5], [7]]"
 
 msgid ""
 "Further explanation is available in the FAQ entry :ref:`faq-multidimensional-"
@@ -1427,54 +1701,70 @@ msgid ""
 "integers that meet the value restriction ``0 <= x <= 255``)."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``s[i] = x``"
-msgstr ""
+msgstr "``s[i] = x``"
 
 msgid "item *i* of *s* is replaced by *x*"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``del s[i]``"
-msgstr ""
+msgstr "``del s[i]``"
 
 msgid "removes item *i* of *s*"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``s[i:j] = t``"
-msgstr ""
+msgstr "``s[i:j] = t``"
 
 msgid ""
 "slice of *s* from *i* to *j* is replaced by the contents of the iterable *t*"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``del s[i:j]``"
-msgstr ""
+msgstr "``del s[i:j]``"
 
 msgid ""
 "removes the elements of ``s[i:j]`` from the list (same as ``s[i:j] = []``)"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``s[i:j:k] = t``"
-msgstr ""
+msgstr "``s[i:j:k] = t``"
 
 msgid "the elements of ``s[i:j:k]`` are replaced by those of *t*"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``del s[i:j:k]``"
-msgstr ""
+msgstr "``del s[i:j:k]``"
 
 msgid "removes the elements of ``s[i:j:k]`` from the list"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``s += t``"
-msgstr ""
+msgstr "``s += t``"
 
 msgid ""
 "extends *s* with the contents of *t* (for the most part the same as "
 "``s[len(s):len(s)] = t``)"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``s *= n``"
-msgstr ""
+msgstr "``s *= n``"
 
 msgid "updates *s* with its contents repeated *n* times"
 msgstr ""
@@ -1614,9 +1904,11 @@ msgid ""
 msgstr ""
 
 msgid ""
-"*reverse* is a boolean value.  If set to ``True``, then the list elements "
-"are sorted as if each comparison were reversed."
+"*reverse* is a boolean value.  If set to ``True``, then the list elements are"
+" sorted as if each comparison were reversed."
 msgstr ""
+"*reverse* là một giá trị boolean. Nếu đặt thành ``True``, các phần tử danh "
+"sách được sắp xếp như thể mỗi phép so sánh bị đảo ngược."
 
 msgid ""
 "This method modifies the sequence in place for economy of space when sorting "
@@ -1635,6 +1927,8 @@ msgstr ""
 msgid ""
 "For sorting examples and a brief sorting tutorial, see :ref:`sortinghowto`."
 msgstr ""
+"Để biết ví dụ về sắp xếp và hướng dẫn ngắn về sắp xếp, xem "
+":ref:`sortinghowto`."
 
 msgid ""
 "While a list is being sorted, the effect of attempting to mutate, or even "
@@ -1648,8 +1942,10 @@ msgid ""
 "objects, see :ref:`thread-safety-list`."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Tuples"
-msgstr ""
+msgstr "Tuples"
 
 msgid ""
 "Tuples are immutable sequences, typically used to store collections of "
@@ -1703,8 +1999,10 @@ msgid ""
 "choice than a simple tuple object."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Ranges"
-msgstr ""
+msgstr "Ranges"
 
 msgid ""
 "The :class:`range` type represents an immutable sequence of numbers and is "
@@ -1745,6 +2043,8 @@ msgstr ""
 msgid "Range examples::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> list(range(10))\n"
 "[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]\n"
@@ -1761,6 +2061,20 @@ msgid ""
 ">>> list(range(1, 0))\n"
 "[]"
 msgstr ""
+">>> list(range(10))\n"
+"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]\n"
+">>> list(range(1, 11))\n"
+"[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n"
+">>> list(range(0, 30, 5))\n"
+"[0, 5, 10, 15, 20, 25]\n"
+">>> list(range(0, 10, 3))\n"
+"[0, 3, 6, 9]\n"
+">>> list(range(0, -10, -1))\n"
+"[0, -1, -2, -3, -4, -5, -6, -7, -8, -9]\n"
+">>> list(range(0))\n"
+"[]\n"
+">>> list(range(1, 0))\n"
+"[]"
 
 msgid ""
 "Ranges implement all of the :ref:`common <typesseq-common>` sequence "
@@ -1835,8 +2149,10 @@ msgid ""
 "category."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Category"
-msgstr ""
+msgstr "Category"
 
 msgid ":class:`str` methods"
 msgstr ""
@@ -1844,14 +2160,20 @@ msgstr ""
 msgid ":class:`bytes` and :class:`bytearray` methods"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Formatting"
-msgstr ""
+msgstr "Formatting"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`str.format`"
-msgstr ""
+msgstr ":meth:`str.format`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`str.format_map`"
-msgstr ""
+msgstr ":meth:`str.format_map`"
 
 msgid ":ref:`f-strings`"
 msgstr ":ref:`f-strings`"
@@ -1859,257 +2181,413 @@ msgstr ":ref:`f-strings`"
 msgid ":ref:`old-string-formatting`"
 msgstr ":ref:`old-string-formatting`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":ref:`bytes-formatting`"
-msgstr ""
+msgstr ":ref:`bytes-formatting`"
 
 msgid "Searching and Replacing"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`str.find`"
-msgstr ""
+msgstr ":meth:`str.find`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`str.rfind`"
-msgstr ""
+msgstr ":meth:`str.rfind`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`bytes.find`"
-msgstr ""
+msgstr ":meth:`bytes.find`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`bytes.rfind`"
-msgstr ""
+msgstr ":meth:`bytes.rfind`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`str.index`"
-msgstr ""
+msgstr ":meth:`str.index`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`str.rindex`"
-msgstr ""
+msgstr ":meth:`str.rindex`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`bytes.index`"
-msgstr ""
+msgstr ":meth:`bytes.index`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`bytes.rindex`"
-msgstr ""
+msgstr ":meth:`bytes.rindex`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`str.startswith`"
-msgstr ""
+msgstr ":meth:`str.startswith`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`bytes.startswith`"
-msgstr ""
+msgstr ":meth:`bytes.startswith`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`str.endswith`"
-msgstr ""
+msgstr ":meth:`str.endswith`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`bytes.endswith`"
-msgstr ""
+msgstr ":meth:`bytes.endswith`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`str.count`"
-msgstr ""
+msgstr ":meth:`str.count`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`bytes.count`"
-msgstr ""
+msgstr ":meth:`bytes.count`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`str.replace`"
-msgstr ""
+msgstr ":meth:`str.replace`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`bytes.replace`"
-msgstr ""
+msgstr ":meth:`bytes.replace`"
 
 msgid "Splitting and Joining"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`str.split`"
-msgstr ""
+msgstr ":meth:`str.split`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`str.rsplit`"
-msgstr ""
+msgstr ":meth:`str.rsplit`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`bytes.split`"
-msgstr ""
+msgstr ":meth:`bytes.split`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`bytes.rsplit`"
-msgstr ""
+msgstr ":meth:`bytes.rsplit`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`str.splitlines`"
-msgstr ""
+msgstr ":meth:`str.splitlines`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`bytes.splitlines`"
-msgstr ""
+msgstr ":meth:`bytes.splitlines`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`str.partition`"
-msgstr ""
+msgstr ":meth:`str.partition`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`bytes.partition`"
-msgstr ""
+msgstr ":meth:`bytes.partition`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`str.rpartition`"
-msgstr ""
+msgstr ":meth:`str.rpartition`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`bytes.rpartition`"
-msgstr ""
+msgstr ":meth:`bytes.rpartition`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`str.join`"
-msgstr ""
+msgstr ":meth:`str.join`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`bytes.join`"
-msgstr ""
+msgstr ":meth:`bytes.join`"
 
 msgid "String Classification"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`str.isalpha`"
-msgstr ""
+msgstr ":meth:`str.isalpha`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`bytes.isalpha`"
-msgstr ""
+msgstr ":meth:`bytes.isalpha`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`str.isdecimal`"
-msgstr ""
+msgstr ":meth:`str.isdecimal`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`str.isdigit`"
-msgstr ""
+msgstr ":meth:`str.isdigit`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`bytes.isdigit`"
-msgstr ""
+msgstr ":meth:`bytes.isdigit`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`str.isnumeric`"
-msgstr ""
+msgstr ":meth:`str.isnumeric`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`str.isalnum`"
-msgstr ""
+msgstr ":meth:`str.isalnum`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`bytes.isalnum`"
-msgstr ""
+msgstr ":meth:`bytes.isalnum`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`str.isidentifier`"
-msgstr ""
+msgstr ":meth:`str.isidentifier`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`str.islower`"
-msgstr ""
+msgstr ":meth:`str.islower`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`bytes.islower`"
-msgstr ""
+msgstr ":meth:`bytes.islower`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`str.isupper`"
-msgstr ""
+msgstr ":meth:`str.isupper`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`bytes.isupper`"
-msgstr ""
+msgstr ":meth:`bytes.isupper`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`str.istitle`"
-msgstr ""
+msgstr ":meth:`str.istitle`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`bytes.istitle`"
-msgstr ""
+msgstr ":meth:`bytes.istitle`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`str.isspace`"
-msgstr ""
+msgstr ":meth:`str.isspace`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`bytes.isspace`"
-msgstr ""
+msgstr ":meth:`bytes.isspace`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`str.isprintable`"
-msgstr ""
+msgstr ":meth:`str.isprintable`"
 
 msgid "Case Manipulation"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`str.lower`"
-msgstr ""
+msgstr ":meth:`str.lower`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`bytes.lower`"
-msgstr ""
+msgstr ":meth:`bytes.lower`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`str.upper`"
-msgstr ""
+msgstr ":meth:`str.upper`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`bytes.upper`"
-msgstr ""
+msgstr ":meth:`bytes.upper`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`str.casefold`"
-msgstr ""
+msgstr ":meth:`str.casefold`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`str.capitalize`"
-msgstr ""
+msgstr ":meth:`str.capitalize`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`bytes.capitalize`"
-msgstr ""
+msgstr ":meth:`bytes.capitalize`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`str.title`"
-msgstr ""
+msgstr ":meth:`str.title`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`bytes.title`"
-msgstr ""
+msgstr ":meth:`bytes.title`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`str.swapcase`"
-msgstr ""
+msgstr ":meth:`str.swapcase`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`bytes.swapcase`"
-msgstr ""
+msgstr ":meth:`bytes.swapcase`"
 
 msgid "Padding and Stripping"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`str.ljust`"
-msgstr ""
+msgstr ":meth:`str.ljust`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`str.rjust`"
-msgstr ""
+msgstr ":meth:`str.rjust`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`bytes.ljust`"
-msgstr ""
+msgstr ":meth:`bytes.ljust`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`bytes.rjust`"
-msgstr ""
+msgstr ":meth:`bytes.rjust`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`str.center`"
-msgstr ""
+msgstr ":meth:`str.center`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`bytes.center`"
-msgstr ""
+msgstr ":meth:`bytes.center`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`str.expandtabs`"
-msgstr ""
+msgstr ":meth:`str.expandtabs`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`bytes.expandtabs`"
-msgstr ""
+msgstr ":meth:`bytes.expandtabs`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`str.strip`"
-msgstr ""
+msgstr ":meth:`str.strip`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`bytes.strip`"
-msgstr ""
+msgstr ":meth:`bytes.strip`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`str.lstrip`"
-msgstr ""
+msgstr ":meth:`str.lstrip`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`str.rstrip`"
-msgstr ""
+msgstr ":meth:`str.rstrip`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`bytes.lstrip`"
-msgstr ""
+msgstr ":meth:`bytes.lstrip`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`bytes.rstrip`"
-msgstr ""
+msgstr ":meth:`bytes.rstrip`"
 
 msgid "Translation and Encoding"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`str.translate`"
-msgstr ""
+msgstr ":meth:`str.translate`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`bytes.translate`"
-msgstr ""
+msgstr ":meth:`bytes.translate`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`str.maketrans`"
-msgstr ""
+msgstr ":meth:`str.maketrans`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`bytes.maketrans`"
-msgstr ""
+msgstr ":meth:`bytes.maketrans`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`str.encode`"
-msgstr ""
+msgstr ":meth:`str.encode`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`bytes.decode`"
-msgstr ""
+msgstr ":meth:`bytes.decode`"
 
 msgid "Text Sequence Type --- :class:`str`"
 msgstr ""
@@ -2203,10 +2681,14 @@ msgid ""
 "Python).  For example::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> str(b'Zoot!')\n"
 "\"b'Zoot!'\""
 msgstr ""
+">>> str(b'Zoot!')\n"
+"\"b'Zoot!'\""
 
 msgid ""
 "For more information on the ``str`` class and its methods, see :ref:"
@@ -2262,17 +2744,23 @@ msgid ""
 "`casefold` converts it to ``\"ss\"``. For example:"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> 'straße'.lower()\n"
 "'straße'\n"
 ">>> 'straße'.casefold()\n"
 "'strasse'"
 msgstr ""
+">>> 'straße'.lower()\n"
+"'straße'\n"
+">>> 'straße'.casefold()\n"
+"'strasse'"
 
 msgid ""
-"The casefolding algorithm is `described in section 3.13 'Default Case "
+"The casefolding algorithm is `described in section 3.13.3 'Default Case "
 "Folding' of the Unicode Standard <https://www.unicode.org/versions/"
-"Unicode16.0.0/core-spec/chapter-3/#G33992>`__."
+"Unicode17.0.0/core-spec/chapter-3/#G53253>`__."
 msgstr ""
 
 msgid ""
@@ -2281,6 +2769,8 @@ msgid ""
 "returned if *width* is less than or equal to ``len(s)``.  For example::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> 'Python'.center(10)\n"
 "'  Python  '\n"
@@ -2289,6 +2779,12 @@ msgid ""
 ">>> 'Python'.center(4)\n"
 "'Python'"
 msgstr ""
+">>> 'Python'.center(10)\n"
+"'  Python  '\n"
+">>> 'Python'.center(10, '-')\n"
+"'--Python--'\n"
+">>> 'Python'.center(4)\n"
+"'Python'"
 
 msgid ""
 "Return the number of non-overlapping occurrences of substring *sub* in the "
@@ -2301,6 +2797,8 @@ msgid ""
 "which is the length of the string plus one. For example::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> 'spam, spam, spam'.count('spam')\n"
 "3\n"
@@ -2313,6 +2811,16 @@ msgid ""
 ">>> 'spam, spam, spam'.count('')\n"
 "17"
 msgstr ""
+">>> 'spam, spam, spam'.count('spam')\n"
+"3\n"
+">>> 'spam, spam, spam'.count('spam', 5)\n"
+"2\n"
+">>> 'spam, spam, spam'.count('spam', 5, 10)\n"
+"1\n"
+">>> 'spam, spam, spam'.count('eggs')\n"
+"0\n"
+">>> 'spam, spam, spam'.count('')\n"
+"17"
 
 msgid "Return the string encoded to :class:`bytes`."
 msgstr ""
@@ -2336,6 +2844,8 @@ msgid ""
 "ref:`debug build <debug-build>` is used. For example::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> encoded_str_to_bytes = 'Python'.encode()\n"
 ">>> type(encoded_str_to_bytes)\n"
@@ -2343,6 +2853,11 @@ msgid ""
 ">>> encoded_str_to_bytes\n"
 "b'Python'"
 msgstr ""
+">>> encoded_str_to_bytes = 'Python'.encode()\n"
+">>> type(encoded_str_to_bytes)\n"
+"<class 'bytes'>\n"
+">>> encoded_str_to_bytes\n"
+"b'Python'"
 
 msgid "Added support for keyword arguments."
 msgstr ""
@@ -2360,6 +2875,8 @@ msgid ""
 "equivalent to ``str[start:end].endswith(suffix)``. For example::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> 'Python'.endswith('on')\n"
 "True\n"
@@ -2370,6 +2887,14 @@ msgid ""
 ">>> 'Python is amazing'.endswith('is', 0, 9)\n"
 "True"
 msgstr ""
+">>> 'Python'.endswith('on')\n"
+"True\n"
+">>> 'a tuple of suffixes'.endswith(('at', 'in'))\n"
+"False\n"
+">>> 'a tuple of suffixes'.endswith(('at', 'es'))\n"
+"True\n"
+">>> 'Python is amazing'.endswith('is', 0, 9)\n"
+"True"
 
 msgid "See also :meth:`startswith` and :meth:`removesuffix`."
 msgstr ""
@@ -2389,6 +2914,8 @@ msgid ""
 "printed. For example::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> '01\\t012\\t0123\\t01234'.expandtabs()\n"
 "'01      012     0123    01234'\n"
@@ -2398,6 +2925,13 @@ msgid ""
 "01  012\n"
 "0123    01234"
 msgstr ""
+">>> '01\\t012\\t0123\\t01234'.expandtabs()\n"
+"'01      012     0123    01234'\n"
+">>> '01\\t012\\t0123\\t01234'.expandtabs(4)\n"
+"'01  012 0123    01234'\n"
+">>> print('01\\t012\\n0123\\t01234'.expandtabs(4))\n"
+"01  012\n"
+"0123    01234"
 
 msgid ""
 "Return the lowest index in the string where substring *sub* is found within "
@@ -2406,12 +2940,18 @@ msgid ""
 "example::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> 'spam, spam, spam'.find('sp')\n"
 "0\n"
 ">>> 'spam, spam, spam'.find('sp', 5)\n"
 "6"
 msgstr ""
+">>> 'spam, spam, spam'.find('sp')\n"
+"0\n"
+">>> 'spam, spam, spam'.find('sp', 5)\n"
+"6"
 
 msgid "See also :meth:`rfind` and :meth:`index`."
 msgstr ""
@@ -2422,10 +2962,14 @@ msgid ""
 "keyword:`in` operator::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> 'Py' in 'Python'\n"
 "True"
 msgstr ""
+">>> 'Py' in 'Python'\n"
+"True"
 
 msgid ""
 "Perform a string formatting operation.  The string on which this method is "
@@ -2436,6 +2980,8 @@ msgid ""
 "the corresponding argument. For example:"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> \"The sum of 1 + 2 is {0}\".format(1+2)\n"
 "'The sum of 1 + 2 is 3'\n"
@@ -2444,6 +2990,12 @@ msgid ""
 ">>> \"{1} expects the {0} Inquisition!\".format(\"Spanish\", \"Nobody\")\n"
 "'Nobody expects the Spanish Inquisition!'"
 msgstr ""
+">>> \"The sum of 1 + 2 is {0}\".format(1+2)\n"
+"'The sum of 1 + 2 is 3'\n"
+">>> \"The sum of {a} + {b} is {answer}\".format(answer=1+2, a=1, b=2)\n"
+"'The sum of 1 + 2 is 3'\n"
+">>> \"{1} expects the {0} Inquisition!\".format(\"Spanish\", \"Nobody\")\n"
+"'Nobody expects the Spanish Inquisition!'"
 
 msgid ""
 "See :ref:`formatstrings` for a description of the various formatting options "
@@ -2476,6 +3028,8 @@ msgid ""
 "not found. For example:"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> 'spam, spam, spam'.index('spam')\n"
 "0\n"
@@ -2486,6 +3040,14 @@ msgid ""
 "    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^\n"
 "ValueError: substring not found"
 msgstr ""
+">>> 'spam, spam, spam'.index('spam')\n"
+"0\n"
+">>> 'spam, spam, spam'.index('eggs')\n"
+"Traceback (most recent call last):\n"
+"  File \"<python-input-0>\", line 1, in <module>\n"
+"    'spam, spam, spam'.index('eggs')\n"
+"    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^\n"
+"ValueError: substring not found"
 
 msgid "See also :meth:`rindex`."
 msgstr ""
@@ -2497,6 +3059,8 @@ msgid ""
 "isdecimal()``, ``c.isdigit()``, or ``c.isnumeric()``. For example:"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> 'abc123'.isalnum()\n"
 "True\n"
@@ -2507,6 +3071,14 @@ msgid ""
 ">>> ' '.isalnum()\n"
 "False"
 msgstr ""
+">>> 'abc123'.isalnum()\n"
+"True\n"
+">>> 'abc123!@#'.isalnum()\n"
+"False\n"
+">>> ''.isalnum()\n"
+"False\n"
+">>> ' '.isalnum()\n"
+"False"
 
 msgid ""
 "Return ``True`` if all characters in the string are alphabetic and there is "
@@ -2515,10 +3087,12 @@ msgid ""
 "e., those with general category property being one of \"Lm\", \"Lt\", "
 "\"Lu\", \"Ll\", or \"Lo\".  Note that this is different from the `Alphabetic "
 "property defined in the section 4.10 'Letters, Alphabetic, and Ideographic' "
-"of the Unicode Standard <https://www.unicode.org/versions/Unicode16.0.0/core-"
-"spec/chapter-4/#G91002>`_. For example:"
+"of the Unicode Standard <https://www.unicode.org/versions/Unicode17.0.0/core-"
+"spec/chapter-4/#G91002>`__. For example:"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> 'Letters and spaces'.isalpha()\n"
 "False\n"
@@ -2528,6 +3102,13 @@ msgid ""
 "too\n"
 "True"
 msgstr ""
+">>> 'Letters and spaces'.isalpha()\n"
+"False\n"
+">>> 'LettersOnly'.isalpha()\n"
+"True\n"
+">>> 'µ'.isalpha()  # non-ASCII characters can be considered alphabetical "
+"too\n"
+"True"
 
 msgid "See :ref:`unicode-properties`."
 msgstr ""
@@ -2538,12 +3119,18 @@ msgid ""
 "U+0000-U+007F. For example:"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> 'ASCII characters'.isascii()\n"
 "True\n"
 ">>> 'µ'.isascii()\n"
 "False"
 msgstr ""
+">>> 'ASCII characters'.isascii()\n"
+"True\n"
+">>> 'µ'.isascii()\n"
+"False"
 
 msgid ""
 "Return ``True`` if all characters in the string are decimal characters and "
@@ -2553,6 +3140,8 @@ msgid ""
 "Unicode General Category \"Nd\". For example:"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> '0123456789'.isdecimal()\n"
 "True\n"
@@ -2561,6 +3150,12 @@ msgid ""
 ">>> 'alphabetic'.isdecimal()\n"
 "False"
 msgstr ""
+">>> '0123456789'.isdecimal()\n"
+"True\n"
+">>> '٠١٢٣٤٥٦٧٨٩'.isdecimal()  # Arabic-Indic digits zero to nine\n"
+"True\n"
+">>> 'alphabetic'.isdecimal()\n"
+"False"
 
 msgid ""
 "Return ``True`` if all characters in the string are digits and there is at "
@@ -2584,6 +3179,8 @@ msgstr ""
 msgid "Example: ::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> from keyword import iskeyword\n"
 "\n"
@@ -2592,6 +3189,12 @@ msgid ""
 ">>> 'def'.isidentifier(), iskeyword('def')\n"
 "(True, True)"
 msgstr ""
+">>> from keyword import iskeyword\n"
+"\n"
+">>> 'hello'.isidentifier(), iskeyword('hello')\n"
+"(True, False)\n"
+">>> 'def'.isidentifier(), iskeyword('def')\n"
+"(True, True)"
 
 msgid ""
 "Return ``True`` if all cased characters [4]_ in the string are lowercase and "
@@ -2607,6 +3210,8 @@ msgid ""
 "Numeric_Type=Decimal or Numeric_Type=Numeric. For example:"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> '0123456789'.isnumeric()\n"
 "True\n"
@@ -2617,6 +3222,14 @@ msgid ""
 ">>> '²'.isdecimal(), '²'.isdigit(),  '²'.isnumeric()\n"
 "(False, True, True)"
 msgstr ""
+">>> '0123456789'.isnumeric()\n"
+"True\n"
+">>> '٠١٢٣٤٥٦٧٨٩'.isnumeric()  # Arabic-indic digit zero to nine\n"
+"True\n"
+">>> '⅕'.isnumeric()  # Vulgar fraction one fifth\n"
+"True\n"
+">>> '²'.isdecimal(), '²'.isdigit(),  '²'.isnumeric()\n"
+"(False, True, True)"
 
 msgid ""
 "See also :meth:`isdecimal` and :meth:`isdigit`. Numeric characters are a "
@@ -2646,12 +3259,18 @@ msgstr ""
 msgid "For example:"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> ''.isprintable(), ' '.isprintable()\n"
 "(True, True)\n"
 ">>> '\\t'.isprintable(), '\\n'.isprintable()\n"
 "(False, False)"
 msgstr ""
+">>> ''.isprintable(), ' '.isprintable()\n"
+"(True, True)\n"
+">>> '\\t'.isprintable(), '\\n'.isprintable()\n"
+"(False, False)"
 
 msgid "See also :meth:`isspace`."
 msgstr ""
@@ -2661,6 +3280,8 @@ msgid ""
 "there is at least one character, ``False`` otherwise."
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> ''.isspace()\n"
 "False\n"
@@ -2671,6 +3292,14 @@ msgid ""
 ">>> '\\u3000'.isspace() # IDEOGRAPHIC SPACE\n"
 "True"
 msgstr ""
+">>> ''.isspace()\n"
+"False\n"
+">>> ' '.isspace()\n"
+"True\n"
+">>> '\\t\\n'.isspace() # TAB and BREAK LINE\n"
+"True\n"
+">>> '\\u3000'.isspace() # IDEOGRAPHIC SPACE\n"
+"True"
 
 msgid ""
 "A character is *whitespace* if in the Unicode character database (see :mod:"
@@ -2688,6 +3317,8 @@ msgid ""
 "otherwise."
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> 'Spam, Spam, Spam'.istitle()\n"
 "True\n"
@@ -2696,6 +3327,12 @@ msgid ""
 ">>> 'SPAM, SPAM, SPAM'.istitle()\n"
 "False"
 msgstr ""
+">>> 'Spam, Spam, Spam'.istitle()\n"
+"True\n"
+">>> 'spam, spam, spam'.istitle()\n"
+"False\n"
+">>> 'SPAM, SPAM, SPAM'.istitle()\n"
+"False"
 
 msgid "See also :meth:`title`."
 msgstr ""
@@ -2712,12 +3349,18 @@ msgid ""
 "elements is the string providing this method. For example:"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> ', '.join(['spam', 'spam', 'spam'])\n"
 "'spam, spam, spam'\n"
 ">>> '-'.join('Python')\n"
 "'P-y-t-h-o-n'"
 msgstr ""
+">>> ', '.join(['spam', 'spam', 'spam'])\n"
+"'spam, spam, spam'\n"
+">>> '-'.join('Python')\n"
+"'P-y-t-h-o-n'"
 
 msgid "See also :meth:`split`."
 msgstr ""
@@ -2728,6 +3371,8 @@ msgid ""
 "original string is returned if *width* is less than or equal to ``len(s)``."
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> 'Python'.ljust(10)\n"
 "'Python    '\n"
@@ -2736,6 +3381,12 @@ msgid ""
 ">>> 'Monty Python'.ljust(10, '.')\n"
 "'Monty Python'"
 msgstr ""
+">>> 'Python'.ljust(10)\n"
+"'Python    '\n"
+">>> 'Python'.ljust(10, '.')\n"
+"'Python....'\n"
+">>> 'Monty Python'.ljust(10, '.')\n"
+"'Monty Python'"
 
 msgid "See also :meth:`rjust`."
 msgstr ""
@@ -2745,15 +3396,19 @@ msgid ""
 "lowercase. For example:"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> 'Lower Method Example'.lower()\n"
 "'lower method example'"
 msgstr ""
+">>> 'Lower Method Example'.lower()\n"
+"'lower method example'"
 
 msgid ""
-"The lowercasing algorithm used is `described in section 3.13 'Default Case "
-"Folding' of the Unicode Standard <https://www.unicode.org/versions/"
-"Unicode16.0.0/core-spec/chapter-3/#G33992>`__."
+"The lowercasing algorithm used is `described in section 3.13.2 'Default Case "
+"Conversion' of the Unicode Standard <https://www.unicode.org/versions/"
+"Unicode17.0.0/core-spec/chapter-3/#G34078>`__."
 msgstr ""
 
 msgid ""
@@ -2764,24 +3419,36 @@ msgid ""
 "are stripped::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> '   spacious   '.lstrip()\n"
 "'spacious   '\n"
 ">>> 'www.example.com'.lstrip('cmowz.')\n"
 "'example.com'"
 msgstr ""
+">>> '   spacious   '.lstrip()\n"
+"'spacious   '\n"
+">>> 'www.example.com'.lstrip('cmowz.')\n"
+"'example.com'"
 
 msgid ""
 "See :meth:`str.removeprefix` for a method that will remove a single prefix "
 "string rather than all of a set of characters.  For example::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> 'Arthur: three!'.lstrip('Arthur: ')\n"
 "'ee!'\n"
 ">>> 'Arthur: three!'.removeprefix('Arthur: ')\n"
 "'three!'"
 msgstr ""
+">>> 'Arthur: three!'.lstrip('Arthur: ')\n"
+"'ee!'\n"
+">>> 'Arthur: three!'.removeprefix('Arthur: ')\n"
+"'three!'"
 
 msgid ""
 "This static method returns a translation table usable for :meth:`str."
@@ -2802,6 +3469,9 @@ msgid ""
 "must be a string, whose characters will be mapped to ``None`` in the result."
 msgstr ""
 
+msgid "*dict* can now be a :class:`frozendict`."
+msgstr "*dict* hiện có thể là một :class:`frozendict`."
+
 msgid ""
 "Split the string at the first occurrence of *sep*, and return a 3-tuple "
 "containing the part before the separator, the separator itself, and the part "
@@ -2809,6 +3479,8 @@ msgid ""
 "containing the string itself, followed by two empty strings."
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> 'Monty Python'.partition(' ')\n"
 "('Monty', ' ', 'Python')\n"
@@ -2817,6 +3489,12 @@ msgid ""
 ">>> 'Monty Python'.partition('-')\n"
 "('Monty Python', '', '')"
 msgstr ""
+">>> 'Monty Python'.partition(' ')\n"
+"('Monty', ' ', 'Python')\n"
+">>> \"Monty Python's Flying Circus\".partition(' ')\n"
+"('Monty', ' ', \"Python's Flying Circus\")\n"
+">>> 'Monty Python'.partition('-')\n"
+"('Monty Python', '', '')"
 
 msgid "See also :meth:`rpartition`."
 msgstr ""
@@ -2826,12 +3504,18 @@ msgid ""
 "``string[len(prefix):]``. Otherwise, return a copy of the original string:"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> 'TestHook'.removeprefix('Test')\n"
 "'Hook'\n"
 ">>> 'BaseTestCase'.removeprefix('Test')\n"
 "'BaseTestCase'"
 msgstr ""
+">>> 'TestHook'.removeprefix('Test')\n"
+"'Hook'\n"
+">>> 'BaseTestCase'.removeprefix('Test')\n"
+"'BaseTestCase'"
 
 msgid "See also :meth:`removesuffix` and :meth:`startswith`."
 msgstr ""
@@ -2842,12 +3526,18 @@ msgid ""
 "string:"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> 'MiscTests'.removesuffix('Tests')\n"
 "'Misc'\n"
 ">>> 'TmpDirMixin'.removesuffix('Tests')\n"
 "'TmpDirMixin'"
 msgstr ""
+">>> 'MiscTests'.removesuffix('Tests')\n"
+"'Misc'\n"
+">>> 'TmpDirMixin'.removesuffix('Tests')\n"
+"'TmpDirMixin'"
 
 msgid "See also :meth:`removeprefix` and :meth:`endswith`."
 msgstr ""
@@ -2859,12 +3549,18 @@ msgid ""
 "replaced. For example:"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> 'spam, spam, spam'.replace('spam', 'eggs')\n"
 "'eggs, eggs, eggs'\n"
 ">>> 'spam, spam, spam'.replace('spam', 'eggs', 1)\n"
 "'eggs, spam, spam'"
 msgstr ""
+">>> 'spam, spam, spam'.replace('spam', 'eggs')\n"
+"'eggs, eggs, eggs'\n"
+">>> 'spam, spam, spam'.replace('spam', 'eggs', 1)\n"
+"'eggs, spam, spam'"
 
 msgid "*count* is now supported as a keyword argument."
 msgstr ""
@@ -2876,12 +3572,18 @@ msgid ""
 "For example:"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> 'spam, spam, spam'.rfind('sp')\n"
 "12\n"
 ">>> 'spam, spam, spam'.rfind('sp', 0, 10)\n"
 "6"
 msgstr ""
+">>> 'spam, spam, spam'.rfind('sp')\n"
+"12\n"
+">>> 'spam, spam, spam'.rfind('sp', 0, 10)\n"
+"6"
 
 msgid "See also :meth:`find` and :meth:`rindex`."
 msgstr ""
@@ -2891,6 +3593,8 @@ msgid ""
 "not found. For example:"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> 'spam, spam, spam'.rindex('spam')\n"
 "12\n"
@@ -2901,6 +3605,14 @@ msgid ""
 "    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^\n"
 "ValueError: substring not found"
 msgstr ""
+">>> 'spam, spam, spam'.rindex('spam')\n"
+"12\n"
+">>> 'spam, spam, spam'.rindex('eggs')\n"
+"Traceback (most recent call last):\n"
+"  File \"<stdin-0>\", line 1, in <module>\n"
+"    'spam, spam, spam'.rindex('eggs')\n"
+"    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^\n"
+"ValueError: substring not found"
 
 msgid "See also :meth:`index` and :meth:`find`."
 msgstr ""
@@ -2911,6 +3623,8 @@ msgid ""
 "original string is returned if *width* is less than or equal to ``len(s)``."
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> 'Python'.rjust(10)\n"
 "'    Python'\n"
@@ -2919,6 +3633,12 @@ msgid ""
 ">>> 'Monty Python'.rjust(10, '.')\n"
 "'Monty Python'"
 msgstr ""
+">>> 'Python'.rjust(10)\n"
+"'    Python'\n"
+">>> 'Python'.rjust(10, '.')\n"
+"'....Python'\n"
+">>> 'Monty Python'.rjust(10, '.')\n"
+"'Monty Python'"
 
 msgid "See also :meth:`ljust` and :meth:`zfill`."
 msgstr ""
@@ -2930,6 +3650,8 @@ msgid ""
 "containing two empty strings, followed by the string itself."
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> 'Monty Python'.rpartition(' ')\n"
 "('Monty', ' ', 'Python')\n"
@@ -2938,6 +3660,12 @@ msgid ""
 ">>> 'Monty Python'.rpartition('-')\n"
 "('', '', 'Monty Python')"
 msgstr ""
+">>> 'Monty Python'.rpartition(' ')\n"
+"('Monty', ' ', 'Python')\n"
+">>> \"Monty Python's Flying Circus\".rpartition(' ')\n"
+"(\"Monty Python's Flying\", ' ', 'Circus')\n"
+">>> 'Monty Python'.rpartition('-')\n"
+"('', '', 'Monty Python')"
 
 msgid "See also :meth:`partition`."
 msgstr ""
@@ -2958,24 +3686,36 @@ msgid ""
 "are stripped. For example:"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> '   spacious   '.rstrip()\n"
 "'   spacious'\n"
 ">>> 'mississippi'.rstrip('ipz')\n"
 "'mississ'"
 msgstr ""
+">>> '   spacious   '.rstrip()\n"
+"'   spacious'\n"
+">>> 'mississippi'.rstrip('ipz')\n"
+"'mississ'"
 
 msgid ""
 "See :meth:`removesuffix` for a method that will remove a single suffix "
 "string rather than all of a set of characters.  For example::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> 'Monty Python'.rstrip(' Python')\n"
 "'M'\n"
 ">>> 'Monty Python'.removesuffix(' Python')\n"
 "'Monty'"
 msgstr ""
+">>> 'Monty Python'.rstrip(' Python')\n"
+"'M'\n"
+">>> 'Monty Python'.removesuffix(' Python')\n"
+"'Monty'"
 
 msgid "See also :meth:`strip`."
 msgstr ""
@@ -2997,9 +3737,13 @@ msgid ""
 "``['']``."
 msgstr ""
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=9648862cf2b3 run=2026-08-17T16:43Z
+#, fuzzy
 msgid "For example::"
-msgstr ""
+msgstr "Ví dụ::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> '1,2,3'.split(',')\n"
 "['1', '2', '3']\n"
@@ -3010,6 +3754,14 @@ msgid ""
 ">>> '1<>2<>3<4'.split('<>')\n"
 "['1', '2', '3<4']"
 msgstr ""
+">>> '1,2,3'.split(',')\n"
+"['1', '2', '3']\n"
+">>> '1,2,3'.split(',', maxsplit=1)\n"
+"['1', '2,3']\n"
+">>> '1,2,,3,'.split(',')\n"
+"['1', '2', '', '3', '']\n"
+">>> '1<>2<>3<4'.split('<>')\n"
+"['1', '2', '3<4']"
 
 msgid ""
 "If *sep* is not specified or is ``None``, a different splitting algorithm is "
@@ -3020,6 +3772,8 @@ msgid ""
 "returns ``[]``."
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> '1 2 3'.split()\n"
 "['1', '2', '3']\n"
@@ -3028,12 +3782,20 @@ msgid ""
 ">>> '   1   2   3   '.split()\n"
 "['1', '2', '3']"
 msgstr ""
+">>> '1 2 3'.split()\n"
+"['1', '2', '3']\n"
+">>> '1 2 3'.split(maxsplit=1)\n"
+"['1', '2 3']\n"
+">>> '   1   2   3   '.split()\n"
+"['1', '2', '3']"
 
 msgid ""
 "If *sep* is not specified or is ``None`` and  *maxsplit* is ``0``, only "
 "leading runs of consecutive whitespace are considered."
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> \"\".split(None, 0)\n"
 "[]\n"
@@ -3042,6 +3804,12 @@ msgid ""
 ">>> \"   foo   \".split(maxsplit=0)\n"
 "['foo   ']"
 msgstr ""
+">>> \"\".split(None, 0)\n"
+"[]\n"
+">>> \"   \".split(None, 0)\n"
+"[]\n"
+">>> \"   foo   \".split(maxsplit=0)\n"
+"['foo   ']"
 
 msgid "See also :meth:`join`."
 msgstr ""
@@ -3057,26 +3825,36 @@ msgid ""
 "boundaries are a superset of :term:`universal newlines`."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Representation"
-msgstr ""
+msgstr "Representation"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Description"
-msgstr ""
+msgstr "Description"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\\n``"
-msgstr ""
+msgstr "``\\n``"
 
 msgid "Line Feed"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\\r``"
-msgstr ""
+msgstr "``\\r``"
 
 msgid "Carriage Return"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\\r\\n``"
-msgstr ""
+msgstr "``\\r\\n``"
 
 msgid "Carriage Return + Line Feed"
 msgstr ""
@@ -3093,38 +3871,50 @@ msgstr ""
 msgid "Form Feed"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\\x1c``"
-msgstr ""
+msgstr "``\\x1c``"
 
 msgid "File Separator"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\\x1d``"
-msgstr ""
+msgstr "``\\x1d``"
 
 msgid "Group Separator"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\\x1e``"
-msgstr ""
+msgstr "``\\x1e``"
 
 msgid "Record Separator"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\\x85``"
-msgstr ""
+msgstr "``\\x85``"
 
 msgid "Next Line (C1 Control Code)"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\\u2028``"
-msgstr ""
+msgstr "``\\u2028``"
 
 msgid "Line Separator"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\\u2029``"
-msgstr ""
+msgstr "``\\u2029``"
 
 msgid "Paragraph Separator"
 msgstr ""
@@ -3132,12 +3922,18 @@ msgstr ""
 msgid "``\\v`` and ``\\f`` added to list of line boundaries."
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> 'ab c\\n\\nde fg\\rkl\\r\\n'.splitlines()\n"
 "['ab c', '', 'de fg', 'kl']\n"
 ">>> 'ab c\\n\\nde fg\\rkl\\r\\n'.splitlines(keepends=True)\n"
 "['ab c\\n', '\\n', 'de fg\\r', 'kl\\r\\n']"
 msgstr ""
+">>> 'ab c\\n\\nde fg\\rkl\\r\\n'.splitlines()\n"
+"['ab c', '', 'de fg', 'kl']\n"
+">>> 'ab c\\n\\nde fg\\rkl\\r\\n'.splitlines(keepends=True)\n"
+"['ab c\\n', '\\n', 'de fg\\r', 'kl\\r\\n']"
 
 msgid ""
 "Unlike :meth:`~str.split` when a delimiter string *sep* is given, this "
@@ -3145,22 +3941,34 @@ msgid ""
 "does not result in an extra line::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> \"\".splitlines()\n"
 "[]\n"
 ">>> \"One line\\n\".splitlines()\n"
 "['One line']"
 msgstr ""
+">>> \"\".splitlines()\n"
+"[]\n"
+">>> \"One line\\n\".splitlines()\n"
+"['One line']"
 
 msgid "For comparison, ``split('\\n')`` gives::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> ''.split('\\n')\n"
 "['']\n"
 ">>> 'Two lines\\n'.split('\\n')\n"
 "['Two lines', '']"
 msgstr ""
+">>> ''.split('\\n')\n"
+"['']\n"
+">>> 'Two lines\\n'.split('\\n')\n"
+"['Two lines', '']"
 
 msgid ""
 "Return ``True`` if string starts with the *prefix*, otherwise return "
@@ -3169,6 +3977,8 @@ msgid ""
 "*end*, stop comparing string at that position."
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> 'Python'.startswith('Py')\n"
 "True\n"
@@ -3177,6 +3987,12 @@ msgid ""
 ">>> 'Python is amazing'.startswith('is', 7)\n"
 "True"
 msgstr ""
+">>> 'Python'.startswith('Py')\n"
+"True\n"
+">>> 'a tuple of prefixes'.startswith(('at', 'a'))\n"
+"True\n"
+">>> 'Python is amazing'.startswith('is', 7)\n"
+"True"
 
 msgid "See also :meth:`endswith` and :meth:`removeprefix`."
 msgstr ""
@@ -3189,12 +4005,18 @@ msgid ""
 "all combinations of its values are stripped."
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> '   spacious   '.strip()\n"
 "'spacious'\n"
 ">>> 'www.example.com'.strip('cmowz.')\n"
 "'example'"
 msgstr ""
+">>> '   spacious   '.strip()\n"
+"'spacious'\n"
+">>> 'www.example.com'.strip('cmowz.')\n"
+"'example'"
 
 msgid ""
 "The outermost leading and trailing *chars* argument values are stripped from "
@@ -3203,11 +4025,16 @@ msgid ""
 "A similar action takes place on the trailing end."
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> comment_string = '#....... Section 3.2.1 Issue #32 .......'\n"
 ">>> comment_string.strip('.#! ')\n"
 "'Section 3.2.1 Issue #32'"
 msgstr ""
+">>> comment_string = '#....... Section 3.2.1 Issue #32 .......'\n"
+">>> comment_string.strip('.#! ')\n"
+"'Section 3.2.1 Issue #32'"
 
 msgid "See also :meth:`rstrip`."
 msgstr ""
@@ -3217,20 +4044,28 @@ msgid ""
 "and vice versa. For example:"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> 'Hello World'.swapcase()\n"
 "'hELLO wORLD'"
 msgstr ""
+">>> 'Hello World'.swapcase()\n"
+"'hELLO wORLD'"
 
 msgid ""
 "Note that it is not necessarily true that ``s.swapcase().swapcase() == s``. "
 "For example:"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> 'straße'.swapcase().swapcase()\n"
 "'strasse'"
 msgstr ""
+">>> 'straße'.swapcase().swapcase()\n"
+"'strasse'"
 
 msgid "See also :meth:`str.lower` and :meth:`str.upper`."
 msgstr ""
@@ -3240,10 +4075,14 @@ msgid ""
 "uppercase character and the remaining characters are lowercase."
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> 'Hello world'.title()\n"
 "'Hello World'"
 msgstr ""
+">>> 'Hello world'.title()\n"
+"'Hello World'"
 
 msgid ""
 "The algorithm uses a simple language-independent definition of a word as "
@@ -3252,10 +4091,14 @@ msgid ""
 "which may not be the desired result::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> \"they're bill's friends from the UK\".title()\n"
 "\"They'Re Bill'S Friends From The Uk\""
 msgstr ""
+">>> \"they're bill's friends from the UK\".title()\n"
+"\"They'Re Bill'S Friends From The Uk\""
 
 msgid ""
 "The :func:`string.capwords` function does not have this problem, as it "
@@ -3267,6 +4110,8 @@ msgid ""
 "expressions::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import re\n"
 ">>> def titlecase(s):\n"
@@ -3277,6 +4122,14 @@ msgid ""
 ">>> titlecase(\"they're bill's friends.\")\n"
 "\"They're Bill's Friends.\""
 msgstr ""
+">>> import re\n"
+">>> def titlecase(s):\n"
+"...     return re.sub(r\"[A-Za-z]+('[A-Za-z]+)?\",\n"
+"...                   lambda mo: mo.group(0).capitalize(),\n"
+"...                   s)\n"
+"...\n"
+">>> titlecase(\"they're bill's friends.\")\n"
+"\"They're Bill's Friends.\""
 
 msgid "See also :meth:`istitle`."
 msgstr ""
@@ -3298,6 +4151,20 @@ msgid ""
 msgstr ""
 
 msgid ""
+"The following example uses a mapping to replace ``'a'`` with ``'X'``, "
+"``'b'`` with ``'Y'``, and delete ``'c'``:"
+msgstr ""
+
+# pydocvi: passthrough=doctest
+#, fuzzy
+msgid ""
+">>> 'abc123'.translate({ord('a'): 'X', ord('b'): 'Y', ord('c'): None})\n"
+"'XY123'"
+msgstr ""
+">>> 'abc123'.translate({ord('a'): 'X', ord('b'): 'Y', ord('c'): None})\n"
+"'XY123'"
+
+msgid ""
 "See also the :mod:`codecs` module for a more flexible approach to custom "
 "character mappings."
 msgstr ""
@@ -3311,9 +4178,9 @@ msgid ""
 msgstr ""
 
 msgid ""
-"The uppercasing algorithm used is `described in section 3.13 'Default Case "
-"Folding' of the Unicode Standard <https://www.unicode.org/versions/"
-"Unicode16.0.0/core-spec/chapter-3/#G33992>`__."
+"The uppercasing algorithm used is `described in section 3.13.2 'Default Case "
+"Conversion' of the Unicode Standard <https://www.unicode.org/versions/"
+"Unicode17.0.0/core-spec/chapter-3/#G34078>`__."
 msgstr ""
 
 msgid ""
@@ -3323,12 +4190,18 @@ msgid ""
 "original string is returned if *width* is less than or equal to ``len(s)``."
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> \"42\".zfill(5)\n"
 "'00042'\n"
 ">>> \"-42\".zfill(5)\n"
 "'-0042'"
 msgstr ""
+">>> \"42\".zfill(5)\n"
+"'00042'\n"
+">>> \"-42\".zfill(5)\n"
+"'-0042'"
 
 msgid "Formatted String Literals (f-strings)"
 msgstr ""
@@ -3378,21 +4251,30 @@ msgid ""
 "is often useful for debugging::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> number = 14.3\n"
 ">>> f'{number=}'\n"
 "'number=14.3'"
 msgstr ""
+">>> number = 14.3\n"
+">>> f'{number=}'\n"
+"'number=14.3'"
 
 msgid ""
 "Whitespace before, inside and after the expression, as well as whitespace "
 "after the equal sign, is significant --- it is retained in the result::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> f'{ number  -  4  = }'\n"
 "' number  -  4  = 10.3'"
 msgstr ""
+">>> f'{ number  -  4  = }'\n"
+"' number  -  4  = 10.3'"
 
 msgid "Conversion specifier"
 msgstr ""
@@ -3402,22 +4284,32 @@ msgid ""
 "string using :func:`str`::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> from fractions import Fraction\n"
 ">>> one_third = Fraction(1, 3)\n"
 ">>> f'{one_third}'\n"
 "'1/3'"
 msgstr ""
+">>> from fractions import Fraction\n"
+">>> one_third = Fraction(1, 3)\n"
+">>> f'{one_third}'\n"
+"'1/3'"
 
 msgid ""
 "When a debug specifier but no format specifier is used, the default "
 "conversion instead uses :func:`repr`::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> f'{one_third = }'\n"
 "'one_third = Fraction(1, 3)'"
 msgstr ""
+">>> f'{one_third = }'\n"
+"'one_third = Fraction(1, 3)'"
 
 msgid ""
 "The conversion can be specified explicitly using one of these specifiers:"
@@ -3432,6 +4324,8 @@ msgstr ""
 msgid "``!a`` for :func:`ascii`"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> str(one_third)\n"
 "'1/3'\n"
@@ -3448,6 +4342,20 @@ msgid ""
 ">>> f'{string = !a}'\n"
 "\"string = '\\\\xa1ko\\\\u010dka \\\\U0001f638!'\""
 msgstr ""
+">>> str(one_third)\n"
+"'1/3'\n"
+">>> repr(one_third)\n"
+"'Fraction(1, 3)'\n"
+"\n"
+">>> f'{one_third!s} is {one_third!r}'\n"
+"'1/3 is Fraction(1, 3)'\n"
+"\n"
+">>> string = \"¡kočka 😸!\"\n"
+">>> ascii(string)\n"
+"\"'\\\\xa1ko\\\\u010dka \\\\U0001f638!'\"\n"
+"\n"
+">>> f'{string = !a}'\n"
+"\"string = '\\\\xa1ko\\\\u010dka \\\\U0001f638!'\""
 
 msgid "Format specifier"
 msgstr ""
@@ -3461,6 +4369,8 @@ msgid ""
 "the replacement field. For example::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> from fractions import Fraction\n"
 ">>> one_third = Fraction(1, 3)\n"
@@ -3473,6 +4383,16 @@ msgid ""
 ">>> f'{one_third = :~>10}~'\n"
 "'one_third = ~~~~~~~1/3~'"
 msgstr ""
+">>> from fractions import Fraction\n"
+">>> one_third = Fraction(1, 3)\n"
+">>> f'{one_third:.6f}'\n"
+"'0.333333'\n"
+">>> f'{one_third:_^+10}'\n"
+"'___+1/3___'\n"
+">>> >>> f'{one_third!r:_^20}'\n"
+"'___Fraction(1, 3)___'\n"
+">>> f'{one_third = :~>10}~'\n"
+"'one_third = ~~~~~~~1/3~'"
 
 msgid "Template String Literals (t-strings)"
 msgstr ""
@@ -3545,10 +4465,14 @@ msgid ""
 "function in the C language. For example:"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> print('%s has %d quote types.' % ('Python', 2))\n"
 "Python has 2 quote types."
 msgstr ""
+">>> print('%s has %d quote types.' % ('Python', 2))\n"
+"Python has 2 quote types."
 
 msgid ""
 "If *format* requires a single argument, *values* may be a single non-tuple "
@@ -3609,32 +4533,42 @@ msgstr ""
 msgid "The conversion flag characters are:"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Flag"
-msgstr ""
+msgstr "Flag"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'#'``"
-msgstr ""
+msgstr "``'#'``"
 
 msgid ""
 "The value conversion will use the \"alternate form\" (where defined below)."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'0'``"
-msgstr ""
+msgstr "``'0'``"
 
 msgid "The conversion will be zero padded for numeric values."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'-'``"
-msgstr ""
+msgstr "``'-'``"
 
 msgid ""
 "The converted value is left adjusted (overrides the ``'0'`` conversion if "
 "both are given)."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``' '``"
-msgstr ""
+msgstr "``' '``"
 
 msgid ""
 "(a space) A blank should be left before a positive number (or empty string) "
@@ -3642,7 +4576,7 @@ msgid ""
 msgstr ""
 
 msgid "``'+'``"
-msgstr ""
+msgstr "``'+'``"
 
 msgid ""
 "A sign character (``'+'`` or ``'-'``) will precede the conversion (overrides "
@@ -3657,105 +4591,135 @@ msgstr ""
 msgid "The conversion types are:"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Conversion"
-msgstr ""
+msgstr "Conversion"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'d'``"
-msgstr ""
+msgstr "``'d'``"
 
 msgid "Signed integer decimal."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'i'``"
-msgstr ""
+msgstr "``'i'``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'o'``"
-msgstr ""
+msgstr "``'o'``"
 
 msgid "Signed octal value."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'u'``"
-msgstr ""
+msgstr "``'u'``"
 
 msgid "Obsolete type -- it is identical to ``'d'``."
 msgstr ""
 
 msgid "``'x'``"
-msgstr ""
+msgstr "``'x'``"
 
 msgid "Signed hexadecimal (lowercase)."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'X'``"
-msgstr ""
+msgstr "``'X'``"
 
 msgid "Signed hexadecimal (uppercase)."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'e'``"
-msgstr ""
+msgstr "``'e'``"
 
 msgid "Floating-point exponential format (lowercase)."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'E'``"
-msgstr ""
+msgstr "``'E'``"
 
 msgid "Floating-point exponential format (uppercase)."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'f'``"
-msgstr ""
+msgstr "``'f'``"
 
 msgid "Floating-point decimal format."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'F'``"
-msgstr ""
+msgstr "``'F'``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'g'``"
-msgstr ""
+msgstr "``'g'``"
 
 msgid ""
 "Floating-point format. Uses lowercase exponential format if exponent is less "
 "than -4 or not less than precision, decimal format otherwise."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'G'``"
-msgstr ""
+msgstr "``'G'``"
 
 msgid ""
 "Floating-point format. Uses uppercase exponential format if exponent is less "
 "than -4 or not less than precision, decimal format otherwise."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'c'``"
-msgstr ""
+msgstr "``'c'``"
 
 msgid "Single character (accepts integer or single character string)."
 msgstr ""
 
 msgid "``'r'``"
-msgstr ""
+msgstr "``'r'``"
 
 msgid "String (converts any Python object using :func:`repr`)."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'s'``"
-msgstr ""
+msgstr "``'s'``"
 
 msgid "String (converts any Python object using :func:`str`)."
 msgstr ""
 
 msgid "``'a'``"
-msgstr ""
+msgstr "``'a'``"
 
 msgid "String (converts any Python object using :func:`ascii`)."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'%'``"
-msgstr ""
+msgstr "``'%'``"
 
 msgid "No argument is converted, results in a ``'%'`` character in the result."
 msgstr ""
@@ -4045,6 +5009,33 @@ msgid "Examples:"
 msgstr "Ví dụ:"
 
 msgid ""
+"Remove the first *n* bytes from the bytearray and return them as an "
+"immutable :class:`bytes`. By default (if *n* is ``None``), return all bytes "
+"and clear the bytearray."
+msgstr ""
+
+msgid ""
+"If *n* is negative, index from the end and take the first :func:`len` plus "
+"*n* bytes. If *n* is out of bounds, raise :exc:`IndexError`."
+msgstr ""
+
+msgid ""
+"Taking less than the full length will leave remaining bytes in the :class:"
+"`bytearray`, which requires a copy. If the remaining bytes should be "
+"discarded, use :func:`~bytearray.resize` or :keyword:`del` to truncate then :"
+"func:`~bytearray.take_bytes` without a size."
+msgstr ""
+
+msgid "Taking all bytes is a zero-copy operation."
+msgstr ""
+
+msgid ""
+"See the :ref:`What's New <whatsnew315-bytearray-take-bytes>` entry for "
+"common code patterns which can be optimized with :meth:`bytearray."
+"take_bytes`."
+msgstr ""
+
+msgid ""
 "Since bytearray objects are sequences of integers (akin to a list), for a "
 "bytearray object *b*, ``b[0]`` will be an integer, while ``b[0:1]`` will be "
 "a bytearray object of length 1.  (This contrasts with text strings, where "
@@ -4080,18 +5071,26 @@ msgid ""
 "arguments.  For example, you have to write::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "a = \"abc\"\n"
 "b = a.replace(\"a\", \"f\")"
 msgstr ""
+"a = \"abc\"\n"
+"b = a.replace(\"a\", \"f\")"
 
 msgid "and::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "a = b\"abc\"\n"
 "b = a.replace(b\"a\", b\"f\")"
 msgstr ""
+"a = b\"abc\"\n"
+"b = a.replace(b\"a\", b\"f\")"
 
 msgid ""
 "Some bytes and bytearray operations assume the use of ASCII compatible "
@@ -4134,12 +5133,18 @@ msgid ""
 "data::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> b'TestHook'.removeprefix(b'Test')\n"
 "b'Hook'\n"
 ">>> b'BaseTestCase'.removeprefix(b'Test')\n"
 "b'BaseTestCase'"
 msgstr ""
+">>> b'TestHook'.removeprefix(b'Test')\n"
+"b'Hook'\n"
+">>> b'BaseTestCase'.removeprefix(b'Test')\n"
+"b'BaseTestCase'"
 
 msgid "The *prefix* may be any :term:`bytes-like object`."
 msgstr ""
@@ -4155,12 +5160,18 @@ msgid ""
 "original binary data::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> b'MiscTests'.removesuffix(b'Tests')\n"
 "b'Misc'\n"
 ">>> b'TmpDirMixin'.removesuffix(b'Tests')\n"
 "b'TmpDirMixin'"
 msgstr ""
+">>> b'MiscTests'.removesuffix(b'Tests')\n"
+"b'Misc'\n"
+">>> b'TmpDirMixin'.removesuffix(b'Tests')\n"
+"b'TmpDirMixin'"
 
 msgid "The *suffix* may be any :term:`bytes-like object`."
 msgstr ""
@@ -4210,10 +5221,14 @@ msgid ""
 "keyword:`in` operator::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> b'Py' in b'Python'\n"
 "True"
 msgstr ""
+">>> b'Py' in b'Python'\n"
+"True"
 
 msgid ""
 "Like :meth:`~bytes.find`, but raise :exc:`ValueError` when the subsequence "
@@ -4249,8 +5264,9 @@ msgstr ""
 
 msgid ""
 "Return a copy of the sequence with all occurrences of subsequence *old* "
-"replaced by *new*.  If the optional argument *count* is given, only the "
-"first *count* occurrences are replaced."
+"replaced by *new*.  If *count* is given, only the first *count* occurrences "
+"are replaced.  If *count* is not specified or ``-1``, then all occurrences "
+"are replaced."
 msgstr ""
 
 msgid ""
@@ -4304,10 +5320,14 @@ msgid ""
 "characters::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> b'read this short text'.translate(None, b'aeiou')\n"
 "b'rd ths shrt txt'"
 msgstr ""
+">>> b'read this short text'.translate(None, b'aeiou')\n"
+"b'rd ths shrt txt'"
 
 msgid "*delete* is now supported as a keyword argument."
 msgstr ""
@@ -4342,12 +5362,18 @@ msgid ""
 "all combinations of its values are stripped::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> b'   spacious   '.lstrip()\n"
 "b'spacious   '\n"
 ">>> b'www.example.com'.lstrip(b'cmowz.')\n"
 "b'example.com'"
 msgstr ""
+">>> b'   spacious   '.lstrip()\n"
+"b'spacious   '\n"
+">>> b'www.example.com'.lstrip(b'cmowz.')\n"
+"b'example.com'"
 
 msgid ""
 "The binary sequence of byte values to remove may be any :term:`bytes-like "
@@ -4355,12 +5381,18 @@ msgid ""
 "single prefix string rather than all of a set of characters.  For example::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> b'Arthur: three!'.lstrip(b'Arthur: ')\n"
 "b'ee!'\n"
 ">>> b'Arthur: three!'.removeprefix(b'Arthur: ')\n"
 "b'three!'"
 msgstr ""
+">>> b'Arthur: three!'.lstrip(b'Arthur: ')\n"
+"b'ee!'\n"
+">>> b'Arthur: three!'.removeprefix(b'Arthur: ')\n"
+"b'three!'"
 
 msgid ""
 "Return a copy of the object right justified in a sequence of length *width*. "
@@ -4386,12 +5418,18 @@ msgid ""
 "all combinations of its values are stripped::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> b'   spacious   '.rstrip()\n"
 "b'   spacious'\n"
 ">>> b'mississippi'.rstrip(b'ipz')\n"
 "b'mississ'"
 msgstr ""
+">>> b'   spacious   '.rstrip()\n"
+"b'   spacious'\n"
+">>> b'mississippi'.rstrip(b'ipz')\n"
+"b'mississ'"
 
 msgid ""
 "The binary sequence of byte values to remove may be any :term:`bytes-like "
@@ -4399,12 +5437,18 @@ msgid ""
 "single suffix string rather than all of a set of characters.  For example::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> b'Monty Python'.rstrip(b' Python')\n"
 "b'M'\n"
 ">>> b'Monty Python'.removesuffix(b' Python')\n"
 "b'Monty'"
 msgstr ""
+">>> b'Monty Python'.rstrip(b' Python')\n"
+"b'M'\n"
+">>> b'Monty Python'.removesuffix(b' Python')\n"
+"b'Monty'"
 
 msgid ""
 "Split the binary sequence into subsequences of the same type, using *sep* as "
@@ -4424,6 +5468,8 @@ msgid ""
 "like object`."
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> b'1,2,3'.split(b',')\n"
 "[b'1', b'2', b'3']\n"
@@ -4434,6 +5480,14 @@ msgid ""
 ">>> b'1<>2<>3<4'.split(b'<>')\n"
 "[b'1', b'2', b'3<4']"
 msgstr ""
+">>> b'1,2,3'.split(b',')\n"
+"[b'1', b'2', b'3']\n"
+">>> b'1,2,3'.split(b',', maxsplit=1)\n"
+"[b'1', b'2,3']\n"
+">>> b'1,2,,3,'.split(b',')\n"
+"[b'1', b'2', b'', b'3', b'']\n"
+">>> b'1<>2<>3<4'.split(b'<>')\n"
+"[b'1', b'2', b'3<4']"
 
 msgid ""
 "If *sep* is not specified or is ``None``, a different splitting algorithm is "
@@ -4444,6 +5498,8 @@ msgid ""
 "without a specified separator returns ``[]``."
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> b'1 2 3'.split()\n"
 "[b'1', b'2', b'3']\n"
@@ -4452,6 +5508,12 @@ msgid ""
 ">>> b'   1   2   3   '.split()\n"
 "[b'1', b'2', b'3']"
 msgstr ""
+">>> b'1 2 3'.split()\n"
+"[b'1', b'2', b'3']\n"
+">>> b'1 2 3'.split(maxsplit=1)\n"
+"[b'1', b'2 3']\n"
+">>> b'   1   2   3   '.split()\n"
+"[b'1', b'2', b'3']"
 
 msgid ""
 "Return a copy of the sequence with specified leading and trailing bytes "
@@ -4461,12 +5523,18 @@ msgid ""
 "or suffix; rather, all combinations of its values are stripped::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> b'   spacious   '.strip()\n"
 "b'spacious'\n"
 ">>> b'www.example.com'.strip(b'cmowz.')\n"
 "b'example'"
 msgstr ""
+">>> b'   spacious   '.strip()\n"
+"b'spacious'\n"
+">>> b'www.example.com'.strip(b'cmowz.')\n"
+"b'example'"
 
 msgid ""
 "The binary sequence of byte values to remove may be any :term:`bytes-like "
@@ -4501,12 +5569,18 @@ msgid ""
 "by one regardless of how the byte value is represented when printed::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> b'01\\t012\\t0123\\t01234'.expandtabs()\n"
 "b'01      012     0123    01234'\n"
 ">>> b'01\\t012\\t0123\\t01234'.expandtabs(4)\n"
 "b'01  012 0123    01234'"
 msgstr ""
+">>> b'01\\t012\\t0123\\t01234'.expandtabs()\n"
+"b'01      012     0123    01234'\n"
+">>> b'01\\t012\\t0123\\t01234'.expandtabs(4)\n"
+"b'01  012 0123    01234'"
 
 msgid ""
 "Return ``True`` if all bytes in the sequence are alphabetical ASCII "
@@ -4516,12 +5590,18 @@ msgid ""
 "digits are those byte values in the sequence ``b'0123456789'``."
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> b'ABCabc1'.isalnum()\n"
 "True\n"
 ">>> b'ABC abc1'.isalnum()\n"
 "False"
 msgstr ""
+">>> b'ABCabc1'.isalnum()\n"
+"True\n"
+">>> b'ABC abc1'.isalnum()\n"
+"False"
 
 msgid ""
 "Return ``True`` if all bytes in the sequence are alphabetic ASCII characters "
@@ -4530,12 +5610,18 @@ msgid ""
 "``b'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'``."
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> b'ABCabc'.isalpha()\n"
 "True\n"
 ">>> b'ABCabc1'.isalpha()\n"
 "False"
 msgstr ""
+">>> b'ABCabc'.isalpha()\n"
+"True\n"
+">>> b'ABCabc1'.isalpha()\n"
+"False"
 
 msgid ""
 "Return ``True`` if the sequence is empty or all bytes in the sequence are "
@@ -4548,24 +5634,36 @@ msgid ""
 "those byte values in the sequence ``b'0123456789'``."
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> b'1234'.isdigit()\n"
 "True\n"
 ">>> b'1.23'.isdigit()\n"
 "False"
 msgstr ""
+">>> b'1234'.isdigit()\n"
+"True\n"
+">>> b'1.23'.isdigit()\n"
+"False"
 
 msgid ""
 "Return ``True`` if there is at least one lowercase ASCII character in the "
 "sequence and no uppercase ASCII characters, ``False`` otherwise."
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> b'hello world'.islower()\n"
 "True\n"
 ">>> b'Hello world'.islower()\n"
 "False"
 msgstr ""
+">>> b'hello world'.islower()\n"
+"True\n"
+">>> b'Hello world'.islower()\n"
+"False"
 
 msgid ""
 "Lowercase ASCII characters are those byte values in the sequence "
@@ -4586,12 +5684,18 @@ msgid ""
 "definition of \"titlecase\"."
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> b'Hello World'.istitle()\n"
 "True\n"
 ">>> b'Hello world'.istitle()\n"
 "False"
 msgstr ""
+">>> b'Hello World'.istitle()\n"
+"True\n"
+">>> b'Hello world'.istitle()\n"
+"False"
 
 msgid ""
 "Return ``True`` if there is at least one uppercase alphabetic ASCII "
@@ -4599,22 +5703,32 @@ msgid ""
 "otherwise."
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> b'HELLO WORLD'.isupper()\n"
 "True\n"
 ">>> b'Hello world'.isupper()\n"
 "False"
 msgstr ""
+">>> b'HELLO WORLD'.isupper()\n"
+"True\n"
+">>> b'Hello world'.isupper()\n"
+"False"
 
 msgid ""
 "Return a copy of the sequence with all the uppercase ASCII characters "
 "converted to their corresponding lowercase counterpart."
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> b'Hello World'.lower()\n"
 "b'hello world'"
 msgstr ""
+">>> b'Hello World'.lower()\n"
+"b'hello world'"
 
 msgid ""
 "Return a list of the lines in the binary sequence, breaking at ASCII line "
@@ -4623,12 +5737,18 @@ msgid ""
 "*keepends* is given and true."
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> b'ab c\\n\\nde fg\\rkl\\r\\n'.splitlines()\n"
 "[b'ab c', b'', b'de fg', b'kl']\n"
 ">>> b'ab c\\n\\nde fg\\rkl\\r\\n'.splitlines(keepends=True)\n"
 "[b'ab c\\n', b'\\n', b'de fg\\r', b'kl\\r\\n']"
 msgstr ""
+">>> b'ab c\\n\\nde fg\\rkl\\r\\n'.splitlines()\n"
+"[b'ab c', b'', b'de fg', b'kl']\n"
+">>> b'ab c\\n\\nde fg\\rkl\\r\\n'.splitlines(keepends=True)\n"
+"[b'ab c\\n', b'\\n', b'de fg\\r', b'kl\\r\\n']"
 
 msgid ""
 "Unlike :meth:`~bytes.split` when a delimiter string *sep* is given, this "
@@ -4636,22 +5756,32 @@ msgid ""
 "does not result in an extra line::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> b\"\".split(b'\\n'), b\"Two lines\\n\".split(b'\\n')\n"
 "([b''], [b'Two lines', b''])\n"
 ">>> b\"\".splitlines(), b\"One line\\n\".splitlines()\n"
 "([], [b'One line'])"
 msgstr ""
+">>> b\"\".split(b'\\n'), b\"Two lines\\n\".split(b'\\n')\n"
+"([b''], [b'Two lines', b''])\n"
+">>> b\"\".splitlines(), b\"One line\\n\".splitlines()\n"
+"([], [b'One line'])"
 
 msgid ""
 "Return a copy of the sequence with all the lowercase ASCII characters "
 "converted to their corresponding uppercase counterpart and vice-versa."
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> b'Hello World'.swapcase()\n"
 "b'hELLO wORLD'"
 msgstr ""
+">>> b'Hello World'.swapcase()\n"
+"b'hELLO wORLD'"
 
 msgid ""
 "Unlike :func:`str.swapcase`, it is always the case that ``bin.swapcase()."
@@ -4666,10 +5796,14 @@ msgid ""
 "Uncased byte values are left unmodified."
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> b'Hello world'.title()\n"
 "b'Hello World'"
 msgstr ""
+">>> b'Hello world'.title()\n"
+"b'Hello World'"
 
 msgid ""
 "Lowercase ASCII characters are those byte values in the sequence "
@@ -4678,15 +5812,21 @@ msgid ""
 "values are uncased."
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> b\"they're bill's friends from the UK\".title()\n"
 "b\"They'Re Bill'S Friends From The Uk\""
 msgstr ""
+">>> b\"they're bill's friends from the UK\".title()\n"
+"b\"They'Re Bill'S Friends From The Uk\""
 
 msgid ""
 "A workaround for apostrophes can be constructed using regular expressions::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import re\n"
 ">>> def titlecase(s):\n"
@@ -4698,16 +5838,29 @@ msgid ""
 ">>> titlecase(b\"they're bill's friends.\")\n"
 "b\"They're Bill's Friends.\""
 msgstr ""
+">>> import re\n"
+">>> def titlecase(s):\n"
+"...     return re.sub(rb\"[A-Za-z]+('[A-Za-z]+)?\",\n"
+"...                   lambda mo: mo.group(0)[0:1].upper() +\n"
+"...                              mo.group(0)[1:].lower(),\n"
+"...                   s)\n"
+"...\n"
+">>> titlecase(b\"they're bill's friends.\")\n"
+"b\"They're Bill's Friends.\""
 
 msgid ""
 "Return a copy of the sequence with all the lowercase ASCII characters "
 "converted to their corresponding uppercase counterpart."
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> b'Hello World'.upper()\n"
 "b'HELLO WORLD'"
 msgstr ""
+">>> b'Hello World'.upper()\n"
+"b'HELLO WORLD'"
 
 msgid ""
 "Return a copy of the sequence left filled with ASCII ``b'0'`` digits to make "
@@ -4717,12 +5870,18 @@ msgid ""
 "*width* is less than or equal to ``len(seq)``."
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> b\"42\".zfill(5)\n"
 "b'00042'\n"
 ">>> b\"-42\".zfill(5)\n"
 "b'-0042'"
 msgstr ""
+">>> b\"42\".zfill(5)\n"
+"b'00042'\n"
+">>> b\"-42\".zfill(5)\n"
+"b'-0042'"
 
 msgid "``printf``-style Bytes Formatting"
 msgstr ""
@@ -4757,14 +5916,16 @@ msgid ""
 "mapping key selects the value to be formatted from the mapping.  For example:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "\\(8)"
-msgstr ""
+msgstr "\\(8)"
 
 msgid "Single byte (accepts integer or single byte objects)."
 msgstr ""
 
 msgid "``'b'``"
-msgstr ""
+msgstr "``'b'``"
 
 msgid ""
 "Bytes (any object that follows the :ref:`buffer protocol <bufferobjects>` or "
@@ -4786,8 +5947,10 @@ msgid ""
 "bases."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "\\(7)"
-msgstr ""
+msgstr "\\(7)"
 
 msgid "``b'%s'`` is deprecated, but will not be removed during the 3.x series."
 msgstr ""
@@ -4821,8 +5984,8 @@ msgid ""
 msgstr ""
 
 msgid ""
-"``len(view)`` is equal to the length of :class:`~memoryview.tolist`, which "
-"is the nested list representation of the view. If ``view.ndim = 1``, this is "
+"``len(view)`` is equal to the length of :meth:`~memoryview.tolist`, which is "
+"the nested list representation of the view. If ``view.ndim = 1``, this is "
 "equal to the number of elements in the view."
 msgstr ""
 
@@ -4841,6 +6004,8 @@ msgid ""
 "dimensional slicing will result in a subview::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> v = memoryview(b'abcefg')\n"
 ">>> v[1]\n"
@@ -4852,6 +6017,15 @@ msgid ""
 ">>> bytes(v[1:4])\n"
 "b'bce'"
 msgstr ""
+">>> v = memoryview(b'abcefg')\n"
+">>> v[1]\n"
+"98\n"
+">>> v[-1]\n"
+"103\n"
+">>> v[1:4]\n"
+"<memory at 0x7f3ddc9f4350>\n"
+">>> bytes(v[1:4])\n"
+"b'bce'"
 
 msgid ""
 "If :class:`~memoryview.format` is one of the native format specifiers from "
@@ -4866,6 +6040,8 @@ msgstr ""
 msgid "Here is an example with a non-byte format::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import array\n"
 ">>> a = array.array('l', [-11111111, 22222222, -33333333, 44444444])\n"
@@ -4877,12 +6053,23 @@ msgid ""
 ">>> m[::2].tolist()\n"
 "[-11111111, -33333333]"
 msgstr ""
+">>> import array\n"
+">>> a = array.array('l', [-11111111, 22222222, -33333333, 44444444])\n"
+">>> m = memoryview(a)\n"
+">>> m[0]\n"
+"-11111111\n"
+">>> m[-1]\n"
+"44444444\n"
+">>> m[::2].tolist()\n"
+"[-11111111, -33333333]"
 
 msgid ""
 "If the underlying object is writable, the memoryview supports one-"
 "dimensional slice assignment. Resizing is not allowed::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> data = bytearray(b'abcefg')\n"
 ">>> v = memoryview(data)\n"
@@ -4903,6 +6090,24 @@ msgid ""
 ">>> data\n"
 "bytearray(b'z1spam')"
 msgstr ""
+">>> data = bytearray(b'abcefg')\n"
+">>> v = memoryview(data)\n"
+">>> v.readonly\n"
+"False\n"
+">>> v[0] = ord(b'z')\n"
+">>> data\n"
+"bytearray(b'zbcefg')\n"
+">>> v[1:4] = b'123'\n"
+">>> data\n"
+"bytearray(b'z123fg')\n"
+">>> v[2:3] = b'spam'\n"
+"Traceback (most recent call last):\n"
+"  File \"<stdin>\", line 1, in <module>\n"
+"ValueError: memoryview assignment: lvalue and rvalue have different "
+"structures\n"
+">>> v[2:6] = b'spam'\n"
+">>> data\n"
+"bytearray(b'z1spam')"
 
 msgid ""
 "One-dimensional memoryviews of :term:`hashable` (read-only) types with "
@@ -4910,6 +6115,8 @@ msgid ""
 "== hash(m.tobytes())``::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> v = memoryview(b'abcefg')\n"
 ">>> hash(v) == hash(b'abcefg')\n"
@@ -4919,6 +6126,13 @@ msgid ""
 ">>> hash(v[::-2]) == hash(b'abcefg'[::-2])\n"
 "True"
 msgstr ""
+">>> v = memoryview(b'abcefg')\n"
+">>> hash(v) == hash(b'abcefg')\n"
+"True\n"
+">>> hash(v[2:4]) == hash(b'ce')\n"
+"True\n"
+">>> hash(v[::-2]) == hash(b'abcefg'[::-2])\n"
+"True"
 
 msgid ""
 "One-dimensional memoryviews can now be sliced. One-dimensional memoryviews "
@@ -4950,6 +6164,8 @@ msgid ""
 "`tolist`, ``v`` and ``w`` are equal if ``v.tolist() == w.tolist()``::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import array\n"
 ">>> a = array.array('I', [1, 2, 3, 4, 5])\n"
@@ -4967,6 +6183,21 @@ msgid ""
 ">>> z.tolist() == c.tolist()\n"
 "True"
 msgstr ""
+">>> import array\n"
+">>> a = array.array('I', [1, 2, 3, 4, 5])\n"
+">>> b = array.array('d', [1.0, 2.0, 3.0, 4.0, 5.0])\n"
+">>> c = array.array('b', [5, 3, 1])\n"
+">>> x = memoryview(a)\n"
+">>> y = memoryview(b)\n"
+">>> x == a == y == b\n"
+"True\n"
+">>> x.tolist() == a.tolist() == y.tolist() == b.tolist()\n"
+"True\n"
+">>> z = y[::-2]\n"
+">>> z == c\n"
+"True\n"
+">>> z.tolist() == c.tolist()\n"
+"True"
 
 msgid ""
 "If either format string is not supported by the :mod:`struct` module, then "
@@ -4974,6 +6205,8 @@ msgid ""
 "buffer contents are identical)::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> from ctypes import BigEndianStructure, c_long\n"
 ">>> class BEPoint(BigEndianStructure):\n"
@@ -4987,6 +6220,17 @@ msgid ""
 ">>> a == b\n"
 "False"
 msgstr ""
+">>> from ctypes import BigEndianStructure, c_long\n"
+">>> class BEPoint(BigEndianStructure):\n"
+"...     _fields_ = [(\"x\", c_long), (\"y\", c_long)]\n"
+"...\n"
+">>> point = BEPoint(100, 200)\n"
+">>> a = memoryview(point)\n"
+">>> b = memoryview(point)\n"
+">>> a == point\n"
+"False\n"
+">>> a == b\n"
+"False"
 
 msgid ""
 "Note that, as with floating-point numbers, ``v is w`` does *not* imply ``v "
@@ -5003,6 +6247,8 @@ msgid ""
 "calling the :class:`bytes` constructor on the memoryview. ::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> m = memoryview(b\"abc\")\n"
 ">>> m.tobytes()\n"
@@ -5010,6 +6256,11 @@ msgid ""
 ">>> bytes(m)\n"
 "b'abc'"
 msgstr ""
+">>> m = memoryview(b\"abc\")\n"
+">>> m.tobytes()\n"
+"b'abc'\n"
+">>> bytes(m)\n"
+"b'abc'"
 
 msgid ""
 "For non-contiguous arrays the result is equal to the flattened list "
@@ -5031,11 +6282,16 @@ msgid ""
 "the buffer. ::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> m = memoryview(b\"abc\")\n"
 ">>> m.hex()\n"
 "'616263'"
 msgstr ""
+">>> m = memoryview(b\"abc\")\n"
+">>> m.hex()\n"
+"'616263'"
 
 msgid ""
 "Similar to :meth:`bytes.hex`, :meth:`memoryview.hex` now supports optional "
@@ -5046,6 +6302,8 @@ msgstr ""
 msgid "Return the data in the buffer as a list of elements. ::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> memoryview(b'abc').tolist()\n"
 "[97, 98, 99]\n"
@@ -5055,6 +6313,13 @@ msgid ""
 ">>> m.tolist()\n"
 "[1.1, 2.2, 3.3]"
 msgstr ""
+">>> memoryview(b'abc').tolist()\n"
+"[97, 98, 99]\n"
+">>> import array\n"
+">>> a = array.array('d', [1.1, 2.2, 3.3])\n"
+">>> m = memoryview(a)\n"
+">>> m.tolist()\n"
+"[1.1, 2.2, 3.3]"
 
 msgid ""
 ":meth:`tolist` now supports all single character native formats in :mod:"
@@ -5066,6 +6331,8 @@ msgid ""
 "object is unchanged. ::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> m = memoryview(bytearray(b'abc'))\n"
 ">>> mm = m.toreadonly()\n"
@@ -5079,6 +6346,17 @@ msgid ""
 ">>> mm.tolist()\n"
 "[43, 98, 99]"
 msgstr ""
+">>> m = memoryview(bytearray(b'abc'))\n"
+">>> mm = m.toreadonly()\n"
+">>> mm.tolist()\n"
+"[97, 98, 99]\n"
+">>> mm[0] = 42\n"
+"Traceback (most recent call last):\n"
+"  File \"<stdin>\", line 1, in <module>\n"
+"TypeError: cannot modify read-only memory\n"
+">>> m[0] = 43\n"
+">>> mm.tolist()\n"
+"[43, 98, 99]"
 
 msgid ""
 "Release the underlying buffer exposed by the memoryview object.  Many "
@@ -5094,6 +6372,8 @@ msgid ""
 "multiple times)::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> m = memoryview(b'abc')\n"
 ">>> m.release()\n"
@@ -5102,12 +6382,20 @@ msgid ""
 "  File \"<stdin>\", line 1, in <module>\n"
 "ValueError: operation forbidden on released memoryview object"
 msgstr ""
+">>> m = memoryview(b'abc')\n"
+">>> m.release()\n"
+">>> m[0]\n"
+"Traceback (most recent call last):\n"
+"  File \"<stdin>\", line 1, in <module>\n"
+"ValueError: operation forbidden on released memoryview object"
 
 msgid ""
 "The context management protocol can be used for a similar effect, using the "
 "``with`` statement::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> with memoryview(b'abc') as m:\n"
 "...     m[0]\n"
@@ -5118,6 +6406,14 @@ msgid ""
 "  File \"<stdin>\", line 1, in <module>\n"
 "ValueError: operation forbidden on released memoryview object"
 msgstr ""
+">>> with memoryview(b'abc') as m:\n"
+"...     m[0]\n"
+"...\n"
+"97\n"
+">>> m[0]\n"
+"Traceback (most recent call last):\n"
+"  File \"<stdin>\", line 1, in <module>\n"
+"ValueError: operation forbidden on released memoryview object"
 
 msgid ""
 "Cast a memoryview to a new format or shape. *shape* defaults to "
@@ -5137,6 +6433,8 @@ msgstr ""
 msgid "Cast 1D/long to 1D/unsigned bytes::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import array\n"
 ">>> a = array.array('l', [1,2,3])\n"
@@ -5159,10 +6457,32 @@ msgid ""
 ">>> y.nbytes\n"
 "24"
 msgstr ""
+">>> import array\n"
+">>> a = array.array('l', [1,2,3])\n"
+">>> x = memoryview(a)\n"
+">>> x.format\n"
+"'l'\n"
+">>> x.itemsize\n"
+"8\n"
+">>> len(x)\n"
+"3\n"
+">>> x.nbytes\n"
+"24\n"
+">>> y = x.cast('B')\n"
+">>> y.format\n"
+"'B'\n"
+">>> y.itemsize\n"
+"1\n"
+">>> len(y)\n"
+"24\n"
+">>> y.nbytes\n"
+"24"
 
 msgid "Cast 1D/unsigned bytes to 1D/char::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> b = bytearray(b'zyz')\n"
 ">>> x = memoryview(b)\n"
@@ -5175,10 +6495,22 @@ msgid ""
 ">>> b\n"
 "bytearray(b'ayz')"
 msgstr ""
+">>> b = bytearray(b'zyz')\n"
+">>> x = memoryview(b)\n"
+">>> x[0] = b'a'\n"
+"Traceback (most recent call last):\n"
+"  ...\n"
+"TypeError: memoryview: invalid type for format 'B'\n"
+">>> y = x.cast('c')\n"
+">>> y[0] = b'a'\n"
+">>> b\n"
+"bytearray(b'ayz')"
 
 msgid "Cast 1D/bytes to 3D/ints to 1D/signed char::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import struct\n"
 ">>> buf = struct.pack(\"i\"*12, *list(range(12)))\n"
@@ -5204,10 +6536,35 @@ msgid ""
 ">>> z.nbytes\n"
 "48"
 msgstr ""
+">>> import struct\n"
+">>> buf = struct.pack(\"i\"*12, *list(range(12)))\n"
+">>> x = memoryview(buf)\n"
+">>> y = x.cast('i', shape=[2,2,3])\n"
+">>> y.tolist()\n"
+"[[[0, 1, 2], [3, 4, 5]], [[6, 7, 8], [9, 10, 11]]]\n"
+">>> y.format\n"
+"'i'\n"
+">>> y.itemsize\n"
+"4\n"
+">>> len(y)\n"
+"2\n"
+">>> y.nbytes\n"
+"48\n"
+">>> z = y.cast('b')\n"
+">>> z.format\n"
+"'b'\n"
+">>> z.itemsize\n"
+"1\n"
+">>> len(z)\n"
+"48\n"
+">>> z.nbytes\n"
+"48"
 
 msgid "Cast 1D/unsigned long to 2D/unsigned long::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> buf = struct.pack(\"L\"*6, *list(range(6)))\n"
 ">>> x = memoryview(buf)\n"
@@ -5219,6 +6576,15 @@ msgid ""
 ">>> y.tolist()\n"
 "[[0, 1, 2], [3, 4, 5]]"
 msgstr ""
+">>> buf = struct.pack(\"L\"*6, *list(range(6)))\n"
+">>> x = memoryview(buf)\n"
+">>> y = x.cast('L', shape=[2,3])\n"
+">>> len(y)\n"
+"2\n"
+">>> y.nbytes\n"
+"48\n"
+">>> y.tolist()\n"
+"[[0, 1, 2], [3, 4, 5]]"
 
 msgid "The source format is no longer restricted when casting to a byte view."
 msgstr ""
@@ -5240,12 +6606,18 @@ msgstr ""
 msgid "The underlying object of the memoryview::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> b  = bytearray(b'xyz')\n"
 ">>> m = memoryview(b)\n"
 ">>> m.obj is b\n"
 "True"
 msgstr ""
+">>> b  = bytearray(b'xyz')\n"
+">>> m = memoryview(b)\n"
+">>> m.obj is b\n"
+"True"
 
 msgid ""
 "``nbytes == product(shape) * itemsize == len(m.tobytes())``. This is the "
@@ -5253,6 +6625,8 @@ msgid ""
 "representation. It is not necessarily equal to ``len(m)``::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import array\n"
 ">>> a = array.array('i', [1,2,3,4,5])\n"
@@ -5269,10 +6643,26 @@ msgid ""
 ">>> len(y.tobytes())\n"
 "12"
 msgstr ""
+">>> import array\n"
+">>> a = array.array('i', [1,2,3,4,5])\n"
+">>> m = memoryview(a)\n"
+">>> len(m)\n"
+"5\n"
+">>> m.nbytes\n"
+"20\n"
+">>> y = m[::2]\n"
+">>> len(y)\n"
+"3\n"
+">>> y.nbytes\n"
+"12\n"
+">>> len(y.tobytes())\n"
+"12"
 
 msgid "Multi-dimensional arrays::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import struct\n"
 ">>> buf = struct.pack(\"d\"*12, *[1.5*x for x in range(12)])\n"
@@ -5285,6 +6675,16 @@ msgid ""
 ">>> y.nbytes\n"
 "96"
 msgstr ""
+">>> import struct\n"
+">>> buf = struct.pack(\"d\"*12, *[1.5*x for x in range(12)])\n"
+">>> x = memoryview(buf)\n"
+">>> y = x.cast('d', shape=[3,4])\n"
+">>> y.tolist()\n"
+"[[0.0, 1.5, 3.0, 4.5], [6.0, 7.5, 9.0, 10.5], [12.0, 13.5, 15.0, 16.5]]\n"
+">>> len(y)\n"
+"3\n"
+">>> y.nbytes\n"
+"96"
 
 msgid "A bool indicating whether the memory is read only."
 msgstr ""
@@ -5304,6 +6704,8 @@ msgstr ""
 msgid "The size in bytes of each element of the memoryview::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import array, struct\n"
 ">>> m = memoryview(array.array('H', [32000, 32001, 32002]))\n"
@@ -5314,6 +6716,14 @@ msgid ""
 ">>> struct.calcsize('H') == m.itemsize\n"
 "True"
 msgstr ""
+">>> import array, struct\n"
+">>> m = memoryview(array.array('H', [32000, 32001, 32002]))\n"
+">>> m.itemsize\n"
+"2\n"
+">>> m[0]\n"
+"32000\n"
+">>> struct.calcsize('H') == m.itemsize\n"
+"True"
 
 msgid ""
 "An integer indicating how many dimensions of a multi-dimensional array the "
@@ -5564,15 +6974,14 @@ msgid ""
 "objects, see :ref:`thread-safety-set`."
 msgstr ""
 
-msgid "Mapping Types --- :class:`dict`"
+msgid "Mapping types --- :class:`!dict`, :class:`!frozendict`"
 msgstr ""
 
 msgid ""
 "A :term:`mapping` object maps :term:`hashable` values to arbitrary objects. "
-"Mappings are mutable objects.  There is currently only one standard mapping "
-"type, the :dfn:`dictionary`.  (For other containers see the built-in :class:"
-"`list`, :class:`set`, and :class:`tuple` classes, and the :mod:`collections` "
-"module.)"
+"There are currently two standard mapping types, the :dfn:`dictionary` and :"
+"class:`frozendict`. (For other containers see the built-in :class:`list`, :"
+"class:`set`, and :class:`tuple` classes, and the :mod:`collections` module.)"
 msgstr ""
 
 msgid ""
@@ -5631,6 +7040,8 @@ msgid ""
 "``{\"one\": 1, \"two\": 2, \"three\": 3}``::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> a = dict(one=1, two=2, three=3)\n"
 ">>> b = {'one': 1, 'two': 2, 'three': 3}\n"
@@ -5641,6 +7052,14 @@ msgid ""
 ">>> a == b == c == d == e == f\n"
 "True"
 msgstr ""
+">>> a = dict(one=1, two=2, three=3)\n"
+">>> b = {'one': 1, 'two': 2, 'three': 3}\n"
+">>> c = dict(zip(['one', 'two', 'three'], [1, 2, 3]))\n"
+">>> d = dict([('two', 2), ('one', 1), ('three', 3)])\n"
+">>> e = dict({'three': 3, 'one': 1, 'two': 2})\n"
+">>> f = dict({'one': 1, 'three': 3}, two=2)\n"
+">>> a == b == c == d == e == f\n"
+"True"
 
 msgid ""
 "Providing keyword arguments as in the first example only works for keys that "
@@ -5652,6 +7071,8 @@ msgid ""
 "affect the order.  Keys added after deletion are inserted at the end. ::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> d = {\"one\": 1, \"two\": 2, \"three\": 3, \"four\": 4}\n"
 ">>> d\n"
@@ -5668,6 +7089,20 @@ msgid ""
 ">>> d\n"
 "{'one': 42, 'three': 3, 'four': 4, 'two': None}"
 msgstr ""
+">>> d = {\"one\": 1, \"two\": 2, \"three\": 3, \"four\": 4}\n"
+">>> d\n"
+"{'one': 1, 'two': 2, 'three': 3, 'four': 4}\n"
+">>> list(d)\n"
+"['one', 'two', 'three', 'four']\n"
+">>> list(d.values())\n"
+"[1, 2, 3, 4]\n"
+">>> d[\"one\"] = 42\n"
+">>> d\n"
+"{'one': 42, 'two': 2, 'three': 3, 'four': 4}\n"
+">>> del d[\"two\"]\n"
+">>> d[\"two\"] = None\n"
+">>> d\n"
+"{'one': 42, 'three': 3, 'four': 4, 'two': None}"
 
 msgid ""
 "Dictionary order is guaranteed to be insertion order.  This behavior was an "
@@ -5700,6 +7135,8 @@ msgid ""
 "__missing__` must be a method; it cannot be an instance variable::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> class Counter(dict):\n"
 "...     def __missing__(self, key):\n"
@@ -5712,6 +7149,16 @@ msgid ""
 ">>> c['red']\n"
 "1"
 msgstr ""
+">>> class Counter(dict):\n"
+"...     def __missing__(self, key):\n"
+"...         return 0\n"
+"...\n"
+">>> c = Counter()\n"
+">>> c['red']\n"
+"0\n"
+">>> c['red'] += 1\n"
+">>> c['red']\n"
+"1"
 
 msgid ""
 "The example above shows part of the implementation of :class:`collections."
@@ -5828,11 +7275,16 @@ msgid ""
 "to itself::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> d = {'a': 1}\n"
 ">>> d.values() == d.values()\n"
 "False"
 msgstr ""
+">>> d = {'a': 1}\n"
+">>> d.values() == d.values()\n"
+"False"
 
 msgid ""
 "Create a new dictionary with the merged keys and values of *d* and *other*, "
@@ -5849,6 +7301,8 @@ msgstr ""
 msgid "Dictionaries and dictionary views are reversible. ::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> d = {\"one\": 1, \"two\": 2, \"three\": 3, \"four\": 4}\n"
 ">>> d\n"
@@ -5860,13 +7314,22 @@ msgid ""
 ">>> list(reversed(d.items()))\n"
 "[('four', 4), ('three', 3), ('two', 2), ('one', 1)]"
 msgstr ""
+">>> d = {\"one\": 1, \"two\": 2, \"three\": 3, \"four\": 4}\n"
+">>> d\n"
+"{'one': 1, 'two': 2, 'three': 3, 'four': 4}\n"
+">>> list(reversed(d))\n"
+"['four', 'three', 'two', 'one']\n"
+">>> list(reversed(d.values()))\n"
+"[4, 3, 2, 1]\n"
+">>> list(reversed(d.items()))\n"
+"[('four', 4), ('three', 3), ('two', 2), ('one', 1)]"
 
 msgid "Dictionaries are now reversible."
 msgstr ""
 
 msgid ""
-":class:`types.MappingProxyType` can be used to create a read-only view of a :"
-"class:`dict`."
+":class:`frozendict` and :class:`types.MappingProxyType` can be used to "
+"create a read-only view of a :class:`dict`."
 msgstr ""
 
 msgid ""
@@ -5946,6 +7409,8 @@ msgstr ""
 msgid "An example of dictionary view usage::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> dishes = {'eggs': 2, 'sausage': 1, 'bacon': 1, 'spam': 500}\n"
 ">>> keys = dishes.keys()\n"
@@ -5984,6 +7449,109 @@ msgid ""
 "mappingproxy({'bacon': 1, 'spam': 500})\n"
 ">>> values.mapping['spam']\n"
 "500"
+msgstr ""
+">>> dishes = {'eggs': 2, 'sausage': 1, 'bacon': 1, 'spam': 500}\n"
+">>> keys = dishes.keys()\n"
+">>> values = dishes.values()\n"
+"\n"
+">>> # iteration\n"
+">>> n = 0\n"
+">>> for val in values:\n"
+"...     n += val\n"
+"...\n"
+">>> print(n)\n"
+"504\n"
+"\n"
+">>> # keys and values are iterated over in the same order (insertion order)\n"
+">>> list(keys)\n"
+"['eggs', 'sausage', 'bacon', 'spam']\n"
+">>> list(values)\n"
+"[2, 1, 1, 500]\n"
+"\n"
+">>> # view objects are dynamic and reflect dict changes\n"
+">>> del dishes['eggs']\n"
+">>> del dishes['sausage']\n"
+">>> list(keys)\n"
+"['bacon', 'spam']\n"
+"\n"
+">>> # set operations\n"
+">>> keys & {'eggs', 'bacon', 'salad'}\n"
+"{'bacon'}\n"
+">>> keys ^ {'sausage', 'juice'} == {'juice', 'sausage', 'bacon', 'spam'}\n"
+"True\n"
+">>> keys | ['juice', 'juice', 'juice'] == {'bacon', 'spam', 'juice'}\n"
+"True\n"
+"\n"
+">>> # get back a read-only proxy for the original dictionary\n"
+">>> values.mapping\n"
+"mappingproxy({'bacon': 1, 'spam': 500})\n"
+">>> values.mapping['spam']\n"
+"500"
+
+msgid "Frozen dictionaries"
+msgstr ""
+
+msgid ""
+"Return a new frozen dictionary initialized from an optional positional "
+"argument and a possibly empty set of keyword arguments."
+msgstr ""
+
+msgid ""
+"A :class:`!frozendict` has a similar API to the :class:`dict` API, with the "
+"following differences:"
+msgstr ""
+
+msgid ":class:`!dict` has more methods than :class:`!frozendict`:"
+msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":meth:`!__delitem__`"
+msgstr ":meth:`!__delitem__`"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":meth:`!__setitem__`"
+msgstr ":meth:`!__setitem__`"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":meth:`~dict.clear`"
+msgstr ":meth:`~dict.clear`"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":meth:`~dict.pop`"
+msgstr ":meth:`~dict.pop`"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":meth:`~dict.popitem`"
+msgstr ":meth:`~dict.popitem`"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":meth:`~dict.setdefault`"
+msgstr ":meth:`~dict.setdefault`"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":meth:`~dict.update`"
+msgstr ":meth:`~dict.update`"
+
+msgid ""
+"A :class:`!frozendict` can be hashed with ``hash(frozendict)`` if all keys "
+"and values can be hashed."
+msgstr ""
+
+msgid ""
+"``frozendict |= other`` does not modify the :class:`!frozendict` in-place "
+"but creates a new frozen dictionary."
+msgstr ""
+
+msgid ""
+":class:`!frozendict` is not a :class:`!dict` subclass but inherits directly "
+"from ``object``."
 msgstr ""
 
 msgid "Context Manager Types"
@@ -6147,10 +7715,14 @@ msgid ""
 "expecting a :class:`list` containing :class:`float` elements::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def average(values: list[float]) -> float:\n"
 "    return sum(values) / len(values)"
 msgstr ""
+"def average(values: list[float]) -> float:\n"
+"    return sum(values) / len(values)"
 
 msgid ""
 "Another example for :term:`mapping` objects, using a :class:`dict`, which is "
@@ -6159,22 +7731,32 @@ msgid ""
 "of type :class:`str` and values of type :class:`int`::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def send_post_request(url: str, body: dict[str, int]) -> None:\n"
 "    ..."
 msgstr ""
+"def send_post_request(url: str, body: dict[str, int]) -> None:\n"
+"    ..."
 
 msgid ""
 "The builtin functions :func:`isinstance` and :func:`issubclass` do not "
 "accept ``GenericAlias`` types for their second argument::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> isinstance([1, 2], list[str])\n"
 "Traceback (most recent call last):\n"
 "  File \"<stdin>\", line 1, in <module>\n"
 "TypeError: isinstance() argument 2 cannot be a parameterized generic"
 msgstr ""
+">>> isinstance([1, 2], list[str])\n"
+"Traceback (most recent call last):\n"
+"  File \"<stdin>\", line 1, in <module>\n"
+"TypeError: isinstance() argument 2 cannot be a parameterized generic"
 
 msgid ""
 "The Python runtime does not enforce :term:`type annotations <annotation>`. "
@@ -6184,17 +7766,24 @@ msgid ""
 "discouraged, but will run without errors::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> t = list[str]\n"
 ">>> t([1, 2, 3])\n"
 "[1, 2, 3]"
 msgstr ""
+">>> t = list[str]\n"
+">>> t([1, 2, 3])\n"
+"[1, 2, 3]"
 
 msgid ""
 "Furthermore, parameterized generics erase type parameters during object "
 "creation::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> t = list[str]\n"
 ">>> type(t)\n"
@@ -6204,12 +7793,21 @@ msgid ""
 ">>> type(l)\n"
 "<class 'list'>"
 msgstr ""
+">>> t = list[str]\n"
+">>> type(t)\n"
+"<class 'types.GenericAlias'>\n"
+"\n"
+">>> l = t()\n"
+">>> type(l)\n"
+"<class 'list'>"
 
 msgid ""
 "Calling :func:`repr` or :func:`str` on a generic shows the parameterized "
 "type::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> repr(list[int])\n"
 "'list[int]'\n"
@@ -6217,18 +7815,29 @@ msgid ""
 ">>> str(list[int])\n"
 "'list[int]'"
 msgstr ""
+">>> repr(list[int])\n"
+"'list[int]'\n"
+"\n"
+">>> str(list[int])\n"
+"'list[int]'"
 
 msgid ""
 "The :meth:`~object.__getitem__` method of generic containers will raise an "
 "exception to disallow mistakes like ``dict[str][str]``::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> dict[str][str]\n"
 "Traceback (most recent call last):\n"
 "  ...\n"
 "TypeError: dict[str] is not a generic class"
 msgstr ""
+">>> dict[str][str]\n"
+"Traceback (most recent call last):\n"
+"  ...\n"
+"TypeError: dict[str] is not a generic class"
 
 msgid ""
 "However, such expressions are valid when :ref:`type variables <generics>` "
@@ -6236,12 +7845,18 @@ msgid ""
 "items in the ``GenericAlias`` object's :attr:`~genericalias.__args__`. ::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> from typing import TypeVar\n"
 ">>> Y = TypeVar('Y')\n"
 ">>> dict[str, Y][int]\n"
 "dict[str, int]"
 msgstr ""
+">>> from typing import TypeVar\n"
+">>> Y = TypeVar('Y')\n"
+">>> dict[str, Y][int]\n"
+"dict[str, int]"
 
 msgid "Standard Generic Classes"
 msgstr ""
@@ -6251,173 +7866,290 @@ msgid ""
 "list is non-exhaustive."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`tuple`"
-msgstr ""
+msgstr ":class:`tuple`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`list`"
-msgstr ""
+msgstr ":class:`list`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`dict`"
-msgstr ""
+msgstr ":class:`dict`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`set`"
-msgstr ""
+msgstr ":class:`set`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":class:`frozendict`"
+msgstr ":class:`frozendict`"
+
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`frozenset`"
-msgstr ""
+msgstr ":class:`frozenset`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`type`"
-msgstr ""
+msgstr ":class:`type`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`asyncio.Future`"
-msgstr ""
+msgstr ":class:`asyncio.Future`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`asyncio.Task`"
-msgstr ""
+msgstr ":class:`asyncio.Task`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`collections.deque`"
-msgstr ""
+msgstr ":class:`collections.deque`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`collections.defaultdict`"
-msgstr ""
+msgstr ":class:`collections.defaultdict`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`collections.OrderedDict`"
-msgstr ""
+msgstr ":class:`collections.OrderedDict`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`collections.Counter`"
-msgstr ""
+msgstr ":class:`collections.Counter`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`collections.ChainMap`"
-msgstr ""
+msgstr ":class:`collections.ChainMap`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`collections.abc.Awaitable`"
-msgstr ""
+msgstr ":class:`collections.abc.Awaitable`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`collections.abc.Coroutine`"
-msgstr ""
+msgstr ":class:`collections.abc.Coroutine`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`collections.abc.AsyncIterable`"
-msgstr ""
+msgstr ":class:`collections.abc.AsyncIterable`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`collections.abc.AsyncIterator`"
-msgstr ""
+msgstr ":class:`collections.abc.AsyncIterator`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`collections.abc.AsyncGenerator`"
-msgstr ""
+msgstr ":class:`collections.abc.AsyncGenerator`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`collections.abc.Iterable`"
-msgstr ""
+msgstr ":class:`collections.abc.Iterable`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`collections.abc.Iterator`"
-msgstr ""
+msgstr ":class:`collections.abc.Iterator`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`collections.abc.Generator`"
-msgstr ""
+msgstr ":class:`collections.abc.Generator`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`collections.abc.Reversible`"
-msgstr ""
+msgstr ":class:`collections.abc.Reversible`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`collections.abc.Container`"
-msgstr ""
+msgstr ":class:`collections.abc.Container`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`collections.abc.Collection`"
-msgstr ""
+msgstr ":class:`collections.abc.Collection`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`collections.abc.Callable`"
-msgstr ""
+msgstr ":class:`collections.abc.Callable`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`collections.abc.Set`"
-msgstr ""
+msgstr ":class:`collections.abc.Set`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`collections.abc.MutableSet`"
-msgstr ""
+msgstr ":class:`collections.abc.MutableSet`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`collections.abc.Mapping`"
-msgstr ""
+msgstr ":class:`collections.abc.Mapping`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`collections.abc.MutableMapping`"
-msgstr ""
+msgstr ":class:`collections.abc.MutableMapping`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`collections.abc.Sequence`"
-msgstr ""
+msgstr ":class:`collections.abc.Sequence`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`collections.abc.MutableSequence`"
-msgstr ""
+msgstr ":class:`collections.abc.MutableSequence`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`collections.abc.ByteString`"
-msgstr ""
+msgstr ":class:`collections.abc.ByteString`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`collections.abc.MappingView`"
-msgstr ""
+msgstr ":class:`collections.abc.MappingView`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`collections.abc.KeysView`"
-msgstr ""
+msgstr ":class:`collections.abc.KeysView`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`collections.abc.ItemsView`"
-msgstr ""
+msgstr ":class:`collections.abc.ItemsView`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`collections.abc.ValuesView`"
-msgstr ""
+msgstr ":class:`collections.abc.ValuesView`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`contextlib.AbstractContextManager`"
-msgstr ""
+msgstr ":class:`contextlib.AbstractContextManager`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`contextlib.AbstractAsyncContextManager`"
-msgstr ""
+msgstr ":class:`contextlib.AbstractAsyncContextManager`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`dataclasses.Field`"
-msgstr ""
+msgstr ":class:`dataclasses.Field`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`functools.cached_property`"
-msgstr ""
+msgstr ":class:`functools.cached_property`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`functools.partialmethod`"
-msgstr ""
+msgstr ":class:`functools.partialmethod`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`os.PathLike`"
-msgstr ""
+msgstr ":class:`os.PathLike`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`queue.LifoQueue`"
-msgstr ""
+msgstr ":class:`queue.LifoQueue`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`queue.Queue`"
-msgstr ""
+msgstr ":class:`queue.Queue`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`queue.PriorityQueue`"
-msgstr ""
+msgstr ":class:`queue.PriorityQueue`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`queue.SimpleQueue`"
-msgstr ""
+msgstr ":class:`queue.SimpleQueue`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":ref:`re.Pattern <re-objects>`"
-msgstr ""
+msgstr ":ref:`re.Pattern <re-objects>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":ref:`re.Match <match-objects>`"
-msgstr ""
+msgstr ":ref:`re.Match <match-objects>`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`shelve.BsdDbShelf`"
-msgstr ""
+msgstr ":class:`shelve.BsdDbShelf`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`shelve.DbfilenameShelf`"
-msgstr ""
+msgstr ":class:`shelve.DbfilenameShelf`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`shelve.Shelf`"
-msgstr ""
+msgstr ":class:`shelve.Shelf`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`types.MappingProxyType`"
-msgstr ""
+msgstr ":class:`types.MappingProxyType`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`weakref.WeakKeyDictionary`"
-msgstr ""
+msgstr ":class:`weakref.WeakKeyDictionary`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`weakref.WeakMethod`"
-msgstr ""
+msgstr ":class:`weakref.WeakMethod`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`weakref.WeakSet`"
-msgstr ""
+msgstr ":class:`weakref.WeakSet`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":class:`weakref.WeakValueDictionary`"
-msgstr ""
+msgstr ":class:`weakref.WeakValueDictionary`"
 
 msgid "Special Attributes of ``GenericAlias`` objects"
 msgstr ""
@@ -6428,10 +8160,14 @@ msgstr ""
 msgid "This attribute points at the non-parameterized generic class::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> list[int].__origin__\n"
 "<class 'list'>"
 msgstr ""
+">>> list[int].__origin__\n"
+"<class 'list'>"
 
 msgid ""
 "This attribute is a :class:`tuple` (possibly of length 1) of generic types "
@@ -6439,16 +8175,22 @@ msgid ""
 "class::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> dict[str, list[int]].__args__\n"
 "(<class 'str'>, list[int])"
 msgstr ""
+">>> dict[str, list[int]].__args__\n"
+"(<class 'str'>, list[int])"
 
 msgid ""
 "This attribute is a lazily computed tuple (possibly empty) of unique type "
 "variables found in ``__args__``::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> from typing import TypeVar\n"
 "\n"
@@ -6456,6 +8198,11 @@ msgid ""
 ">>> list[T].__parameters__\n"
 "(~T,)"
 msgstr ""
+">>> from typing import TypeVar\n"
+"\n"
+">>> T = TypeVar('T')\n"
+">>> list[T].__parameters__\n"
+"(~T,)"
 
 msgid ""
 "A ``GenericAlias`` object with :class:`typing.ParamSpec` parameters may not "
@@ -6511,10 +8258,14 @@ msgid ""
 "class:`float`::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def square(number: int | float) -> int | float:\n"
 "    return number ** 2"
 msgstr ""
+"def square(number: int | float) -> int | float:\n"
+"    return number ** 2"
 
 msgid ""
 "The ``|`` operand cannot be used at runtime to define unions where one or "
@@ -6565,16 +8316,22 @@ msgid ""
 "union object::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> isinstance(\"\", int | str)\n"
 "True"
 msgstr ""
+">>> isinstance(\"\", int | str)\n"
+"True"
 
 msgid ""
 "However, :ref:`parameterized generics <types-genericalias>` in union objects "
 "cannot be checked::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> isinstance(1, int | list[int])  # short-circuit evaluation\n"
 "True\n"
@@ -6583,12 +8340,20 @@ msgid ""
 "  ...\n"
 "TypeError: isinstance() argument 2 cannot be a parameterized generic"
 msgstr ""
+">>> isinstance(1, int | list[int])  # short-circuit evaluation\n"
+"True\n"
+">>> isinstance([1], int | list[int])\n"
+"Traceback (most recent call last):\n"
+"  ...\n"
+"TypeError: isinstance() argument 2 cannot be a parameterized generic"
 
 msgid ""
 "The user-exposed type for the union object can be accessed from :class:"
 "`typing.Union` and used for :func:`isinstance` checks::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import typing\n"
 ">>> isinstance(int | str, typing.Union)\n"
@@ -6598,6 +8363,13 @@ msgid ""
 "  File \"<stdin>\", line 1, in <module>\n"
 "TypeError: cannot create 'typing.Union' instances"
 msgstr ""
+">>> import typing\n"
+">>> isinstance(int | str, typing.Union)\n"
+"True\n"
+">>> typing.Union()\n"
+"Traceback (most recent call last):\n"
+"  File \"<stdin>\", line 1, in <module>\n"
+"TypeError: cannot create 'typing.Union' instances"
 
 msgid ""
 "The :meth:`!__or__` method for type objects was added to support the syntax "
@@ -6605,6 +8377,8 @@ msgid ""
 "override it:"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> class M(type):\n"
 "...     def __or__(self, other):\n"
@@ -6618,6 +8392,17 @@ msgid ""
 ">>> int | C\n"
 "int | C"
 msgstr ""
+">>> class M(type):\n"
+"...     def __or__(self, other):\n"
+"...         return \"Hello\"\n"
+"...\n"
+">>> class C(metaclass=M):\n"
+"...     pass\n"
+"...\n"
+">>> C | int\n"
+"'Hello'\n"
+">>> int | C\n"
+"int | C"
 
 msgid ":pep:`604` -- PEP proposing the ``X | Y`` syntax and the Union type."
 msgstr ""
@@ -6636,8 +8421,10 @@ msgid ""
 "support only one or two operations."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Modules"
-msgstr ""
+msgstr "Modules"
 
 msgid ""
 "The only special operation on a module is attribute access: ``m.name``, "
@@ -6671,8 +8458,10 @@ msgstr ""
 msgid "See :ref:`objects` and :ref:`class` for these."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Functions"
-msgstr ""
+msgstr "Functions"
 
 msgid ""
 "Function objects are created by function definitions.  The only operation on "
@@ -6689,8 +8478,10 @@ msgstr ""
 msgid "See :ref:`function` for more information."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Methods"
-msgstr ""
+msgstr "Methods"
 
 msgid ""
 "Methods are functions that are called using the attribute notation. There "
@@ -6721,6 +8512,8 @@ msgid ""
 "underlying function object:"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> class C:\n"
 "...     def method(self):\n"
@@ -6735,6 +8528,18 @@ msgid ""
 ">>> c.method.whoami\n"
 "'my name is method'"
 msgstr ""
+">>> class C:\n"
+"...     def method(self):\n"
+"...         pass\n"
+"...\n"
+">>> c = C()\n"
+">>> c.method.whoami = 'my name is method'  # can't set on the method\n"
+"Traceback (most recent call last):\n"
+"  File \"<stdin>\", line 1, in <module>\n"
+"AttributeError: 'method' object has no attribute 'whoami'\n"
+">>> c.method.__func__.whoami = 'my name is method'\n"
+">>> c.method.whoami\n"
+"'my name is method'"
 
 msgid "See :ref:`instance-methods` for more information."
 msgstr ""
@@ -6929,6 +8734,8 @@ msgid ""
 "When an operation would exceed the limit, a :exc:`ValueError` is raised:"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import sys\n"
 ">>> sys.set_int_max_str_digits(4300)  # Illustrative, this is the default.\n"
@@ -6951,6 +8758,26 @@ msgid ""
 "7144\n"
 ">>> assert int(hex(i_squared), base=16) == i*i  # Hexadecimal is unlimited."
 msgstr ""
+">>> import sys\n"
+">>> sys.set_int_max_str_digits(4300)  # Illustrative, this is the default.\n"
+">>> _ = int('2' * 5432)\n"
+"Traceback (most recent call last):\n"
+"...\n"
+"ValueError: Exceeds the limit (4300 digits) for integer string conversion: "
+"value has 5432 digits; use sys.set_int_max_str_digits() to increase the "
+"limit\n"
+">>> i = int('2' * 4300)\n"
+">>> len(str(i))\n"
+"4300\n"
+">>> i_squared = i*i\n"
+">>> len(str(i_squared))\n"
+"Traceback (most recent call last):\n"
+"...\n"
+"ValueError: Exceeds the limit (4300 digits) for integer string conversion; "
+"use sys.set_int_max_str_digits() to increase the limit\n"
+">>> len(hex(i_squared))\n"
+"7144\n"
+">>> assert int(hex(i_squared), base=16) == i*i  # Hexadecimal is unlimited."
 
 msgid ""
 "The default limit is 4300 digits as provided in :data:`sys.int_info."
@@ -6962,6 +8789,8 @@ msgstr ""
 msgid "Verification:"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import sys\n"
 ">>> assert sys.int_info.default_max_str_digits == 4300, sys.int_info\n"
@@ -6971,6 +8800,13 @@ msgid ""
 "...           '571186405732').to_bytes(53, 'big')\n"
 "..."
 msgstr ""
+">>> import sys\n"
+">>> assert sys.int_info.default_max_str_digits == 4300, sys.int_info\n"
+">>> assert sys.int_info.str_digits_check_threshold == 640, sys.int_info\n"
+">>> msg = int('578966293710682886880994035146873798396722250538762761564'\n"
+"...           '9252925514383915483333812743580549779436104706260696366600'\n"
+"...           '571186405732').to_bytes(53, 'big')\n"
+"..."
 
 msgid "Affected APIs"
 msgstr ""
@@ -6986,11 +8822,15 @@ msgstr ""
 msgid "``int(string, base)`` for all bases that are not a power of 2."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``str(integer)``."
-msgstr ""
+msgstr "``str(integer)``."
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``repr(integer)``."
-msgstr ""
+msgstr "``repr(integer)``."
 
 msgid ""
 "any other string conversion to base 10, for example ``f\"{integer}\"``, "
@@ -7006,8 +8846,10 @@ msgstr ""
 msgid ":func:`int.from_bytes` and :func:`int.to_bytes`."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`hex`, :func:`oct`, :func:`bin`."
-msgstr ""
+msgstr ":func:`hex`, :func:`oct`, :func:`bin`."
 
 msgid ":ref:`formatspec` for hex, octal, and binary numbers."
 msgstr ""
@@ -7032,10 +8874,14 @@ msgid ""
 "the limitation."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ""
 ":option:`-X int_max_str_digits <-X>`, e.g. ``python3 -X "
 "int_max_str_digits=640``"
 msgstr ""
+":option:`-X int_max_str_digits <-X>`, e.g. ``python3 -X "
+"int_max_str_digits=640``"
 
 msgid ""
 ":data:`sys.flags.int_max_str_digits` contains the value of :envvar:"
@@ -7102,6 +8948,8 @@ msgstr ""
 msgid "Example::"
 msgstr "Ví dụ::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import sys\n"
 ">>> if hasattr(sys, \"set_int_max_str_digits\"):\n"
@@ -7113,6 +8961,15 @@ msgid ""
 "...     elif current_limit < lower_bound:\n"
 "...         sys.set_int_max_str_digits(lower_bound)"
 msgstr ""
+">>> import sys\n"
+">>> if hasattr(sys, \"set_int_max_str_digits\"):\n"
+"...     upper_bound = 68000\n"
+"...     lower_bound = 4004\n"
+"...     current_limit = sys.get_int_max_str_digits()\n"
+"...     if current_limit == 0 or current_limit > upper_bound:\n"
+"...         sys.set_int_max_str_digits(upper_bound)\n"
+"...     elif current_limit < lower_bound:\n"
+"...         sys.set_int_max_str_digits(lower_bound)"
 
 msgid "If you need to disable it entirely, set it to ``0``."
 msgstr ""
@@ -7147,35 +9004,51 @@ msgstr ""
 msgid "built-in"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "types"
-msgstr ""
+msgstr "types"
 
 msgid "statement"
-msgstr ""
+msgstr "câu lệnh"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "if"
-msgstr ""
+msgstr "if"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "while"
-msgstr ""
+msgstr "while"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "truth"
-msgstr ""
+msgstr "truth"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "value"
-msgstr ""
+msgstr "value"
 
 msgid "Boolean"
-msgstr ""
+msgstr "Boolean"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "operations"
-msgstr ""
+msgstr "operations"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "false"
-msgstr ""
+msgstr "false"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "true"
-msgstr ""
+msgstr "true"
 
 msgid "None (Built-in object)"
 msgstr ""
@@ -7183,68 +9056,102 @@ msgstr ""
 msgid "False (Built-in object)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "operator"
-msgstr ""
+msgstr "operator"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "or"
-msgstr ""
+msgstr "or"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "and"
-msgstr ""
+msgstr "and"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "False"
-msgstr ""
+msgstr "False"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "True"
-msgstr ""
+msgstr "True"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "not"
-msgstr ""
+msgstr "not"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "chaining"
-msgstr ""
+msgstr "chaining"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "comparisons"
-msgstr ""
+msgstr "comparisons"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "comparison"
-msgstr ""
+msgstr "comparison"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "=="
-msgstr ""
+msgstr "=="
 
 msgid "< (less)"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "<="
-msgstr ""
+msgstr "<="
 
 msgid "> (greater)"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ">="
-msgstr ""
+msgstr ">="
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "!="
-msgstr ""
+msgstr "!="
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "is"
-msgstr ""
+msgstr "is"
 
 msgid "is not"
 msgstr ""
 
 msgid "object"
-msgstr ""
+msgstr "object"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "numeric"
-msgstr ""
+msgstr "numeric"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "objects"
-msgstr ""
+msgstr "objects"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "comparing"
-msgstr ""
+msgstr "comparing"
 
 msgid "__eq__() (instance method)"
 msgstr ""
@@ -7264,14 +9171,18 @@ msgstr ""
 msgid "__ge__() (instance method)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "in"
-msgstr ""
+msgstr "in"
 
 msgid "not in"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "integer"
-msgstr ""
+msgstr "integer"
 
 msgid "floating-point"
 msgstr ""
@@ -7279,38 +9190,58 @@ msgstr ""
 msgid "complex number"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "C"
-msgstr ""
+msgstr "C"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "language"
-msgstr ""
+msgstr "language"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "literals"
-msgstr ""
+msgstr "literals"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "hexadecimal"
-msgstr ""
+msgstr "hexadecimal"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "octal"
-msgstr ""
+msgstr "octal"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "binary"
-msgstr ""
+msgstr "binary"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "arithmetic"
-msgstr ""
+msgstr "arithmetic"
 
 msgid "built-in function"
-msgstr ""
+msgstr "hàm tích hợp sẵn"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "int"
-msgstr ""
+msgstr "int"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "float"
-msgstr ""
+msgstr "float"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "complex"
-msgstr ""
+msgstr "complex"
 
 msgid "+ (plus)"
 msgstr ""
@@ -7324,20 +9255,26 @@ msgstr ""
 msgid "- (minus)"
 msgstr ""
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=d132b9201f27 run=2026-08-17T16:43Z
+#, fuzzy
 msgid "* (asterisk)"
-msgstr ""
+msgstr "* (dấu sao)"
 
 msgid "/ (slash)"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "//"
-msgstr ""
+msgstr "//"
 
 msgid "% (percent)"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "**"
-msgstr ""
+msgstr "**"
 
 msgid "operations on"
 msgstr ""
@@ -7346,10 +9283,12 @@ msgid "conjugate() (complex number method)"
 msgstr ""
 
 msgid "module"
-msgstr ""
+msgstr "module"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "math"
-msgstr ""
+msgstr "math"
 
 msgid "floor() (in module math)"
 msgstr ""
@@ -7360,17 +9299,25 @@ msgstr ""
 msgid "trunc() (in module math)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "conversions"
-msgstr ""
+msgstr "conversions"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "bitwise"
-msgstr ""
+msgstr "bitwise"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "shifting"
-msgstr ""
+msgstr "shifting"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "masking"
-msgstr ""
+msgstr "masking"
 
 msgid "| (vertical bar)"
 msgstr ""
@@ -7381,65 +9328,99 @@ msgstr ""
 msgid "& (ampersand)"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "<<"
-msgstr ""
+msgstr "<<"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ">>"
-msgstr ""
+msgstr ">>"
 
 msgid "~ (tilde)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "values"
-msgstr ""
+msgstr "values"
 
 msgid "iterator protocol"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "protocol"
-msgstr ""
+msgstr "protocol"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "iterator"
-msgstr ""
+msgstr "iterator"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "sequence"
-msgstr ""
+msgstr "sequence"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "iteration"
-msgstr ""
+msgstr "iteration"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "container"
-msgstr ""
+msgstr "container"
 
 msgid "iteration over"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "len"
-msgstr ""
+msgstr "len"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "min"
-msgstr ""
+msgstr "min"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "max"
-msgstr ""
+msgstr "max"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "concatenation"
-msgstr ""
+msgstr "concatenation"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "operation"
-msgstr ""
+msgstr "operation"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "repetition"
-msgstr ""
+msgstr "repetition"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "subscript"
-msgstr ""
+msgstr "subscript"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "slice"
-msgstr ""
+msgstr "slice"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "loop"
-msgstr ""
+msgstr "loop"
 
 msgid "over mutable sequence"
 msgstr ""
@@ -7450,38 +9431,56 @@ msgstr ""
 msgid "loop over"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "immutable"
-msgstr ""
+msgstr "immutable"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "tuple"
-msgstr ""
+msgstr "tuple"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "hash"
-msgstr ""
+msgstr "hash"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "mutable"
-msgstr ""
+msgstr "mutable"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "list"
-msgstr ""
+msgstr "list"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "bytearray"
-msgstr ""
+msgstr "bytearray"
 
 msgid "type"
-msgstr ""
+msgstr "type"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "assignment"
-msgstr ""
+msgstr "assignment"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "del"
-msgstr ""
+msgstr "del"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "range"
-msgstr ""
+msgstr "range"
 
 msgid "string"
-msgstr ""
+msgstr "chuỗi"
 
 msgid "text sequence type"
 msgstr ""
@@ -7492,23 +9491,31 @@ msgstr ""
 msgid "(see also string)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "io.StringIO"
-msgstr ""
+msgstr "io.StringIO"
 
 msgid "buffer protocol"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "bytes"
-msgstr ""
+msgstr "bytes"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "methods"
-msgstr ""
+msgstr "methods"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "re"
-msgstr ""
+msgstr "re"
 
 msgid "universal newlines"
-msgstr ""
+msgstr "ký tự xuống dòng phổ quát"
 
 msgid "str.splitlines method"
 msgstr ""
@@ -7525,17 +9532,25 @@ msgstr ""
 msgid "f-strings"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "fstring"
-msgstr ""
+msgstr "fstring"
 
+# pydocvi: model=gpt-5-6 prompt=574466d7 glossary=1 batch=d773b2b4d733 run=2026-08-17T16:43Z
+#, fuzzy
 msgid "interpolated string literal"
-msgstr ""
+msgstr "chuỗi ký tự nội suy"
 
+# pydocvi: model=gpt-5-6 prompt=574466d7 glossary=1 batch=d773b2b4d733 run=2026-08-17T16:43Z
+#, fuzzy
 msgid "formatted literal"
-msgstr ""
+msgstr "chuỗi ký tự định dạng"
 
+# pydocvi: model=gpt-5-6 prompt=574466d7 glossary=1 batch=d773b2b4d733 run=2026-08-17T16:43Z
+#, fuzzy
 msgid "interpolated literal"
-msgstr ""
+msgstr "chuỗi ký tự nội suy"
 
 msgid "{} (curly brackets)"
 msgstr ""
@@ -7546,8 +9561,10 @@ msgstr ""
 msgid "! (exclamation mark)"
 msgstr ""
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=d132b9201f27 run=2026-08-17T16:43Z
+#, fuzzy
 msgid ": (colon)"
-msgstr ""
+msgstr ": (dấu hai chấm)"
 
 msgid "= (equals)"
 msgstr ""
@@ -7585,17 +9602,23 @@ msgstr ""
 msgid "# (hash)"
 msgstr "# (hash)"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "space"
-msgstr ""
+msgstr "space"
 
 msgid "binary sequence types"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "memoryview"
-msgstr ""
+msgstr "memoryview"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "array"
-msgstr ""
+msgstr "array"
 
 msgid "bytes.splitlines method"
 msgstr ""
@@ -7603,8 +9626,10 @@ msgstr ""
 msgid "bytearray.splitlines method"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "formatting"
-msgstr ""
+msgstr "formatting"
 
 msgid "bytes (%)"
 msgstr ""
@@ -7612,20 +9637,30 @@ msgstr ""
 msgid "bytearray (%)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "interpolation"
-msgstr ""
+msgstr "interpolation"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "set"
-msgstr ""
+msgstr "set"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "mapping"
-msgstr ""
+msgstr "mapping"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "dictionary"
-msgstr ""
+msgstr "dictionary"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "__missing__()"
-msgstr ""
+msgstr "__missing__()"
 
 msgid "context manager"
 msgstr ""
@@ -7636,50 +9671,74 @@ msgstr ""
 msgid "context management"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "annotation"
-msgstr ""
+msgstr "annotation"
 
 msgid "type annotation; type hint"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "GenericAlias"
-msgstr ""
+msgstr "GenericAlias"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Generic"
-msgstr ""
+msgstr "Generic"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Alias"
-msgstr ""
+msgstr "Alias"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Union"
-msgstr ""
+msgstr "Union"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "union"
-msgstr ""
+msgstr "union"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "method"
-msgstr ""
+msgstr "method"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "code"
-msgstr ""
+msgstr "code"
 
 msgid "code object"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "compile"
-msgstr ""
+msgstr "compile"
 
 msgid "__code__ (function object attribute)"
 msgstr ""
 
 msgid "exec"
-msgstr ""
+msgstr "exec"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "eval"
-msgstr ""
+msgstr "eval"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "..."
-msgstr ""
+msgstr "..."
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=d132b9201f27 run=2026-08-17T16:43Z
+#, fuzzy
 msgid "ellipsis literal"
-msgstr ""
+msgstr "chuỗi ký tự ellipsis"

@@ -9,18 +9,18 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-17 14:50+0000\n"
-"PO-Revision-Date: 2025-09-16 00:01+0000\n"
-"Last-Translator: Nguyen Duc Tam, 2026\n"
-"Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
-"vi/)\n"
+"POT-Creation-Date: 2026-05-08 18:34+0000\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: pydocvi 0.1.2\n"
 
 msgid ":mod:`!marshal` --- Internal Python object serialization"
 msgstr ""
@@ -76,8 +76,9 @@ msgid ""
 msgstr ""
 
 msgid ""
-"Containers: :class:`tuple`, :class:`list`, :class:`set`, :class:`frozenset`, "
-"and (since :data:`version` 5), :class:`slice`. It should be understood that "
+"Containers: :class:`tuple`, :class:`list`, :class:`dict`, :class:"
+"`frozendict` (since :data:`version` 6), :class:`set`, :class:`frozenset`, "
+"and :class:`slice` (since :data:`version` 5). It should be understood that "
 "these are supported only if the values contained therein are themselves "
 "supported. Recursive containers are supported since :data:`version` 3."
 msgstr ""
@@ -102,6 +103,9 @@ msgid ""
 msgstr ""
 
 msgid "Added format version 5, which allows marshalling slices."
+msgstr ""
+
+msgid "Added format version 6, which allows marshalling :class:`frozendict`."
 msgstr ""
 
 msgid "The module defines these functions:"
@@ -195,8 +199,10 @@ msgid ""
 "becomes the default when it is introduced."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Version"
-msgstr ""
+msgstr "Version"
 
 msgid "Available since"
 msgstr ""
@@ -204,8 +210,10 @@ msgstr ""
 msgid "New features"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "1"
-msgstr ""
+msgstr "1"
 
 msgid "Python 2.4"
 msgstr ""
@@ -213,8 +221,10 @@ msgstr ""
 msgid "Sharing interned strings"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "2"
-msgstr ""
+msgstr "2"
 
 msgid "Python 2.5"
 msgstr ""
@@ -222,8 +232,10 @@ msgstr ""
 msgid "Binary representation of floats"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "3"
-msgstr ""
+msgstr "3"
 
 msgid "Python 3.4"
 msgstr ""
@@ -231,19 +243,34 @@ msgstr ""
 msgid "Support for object instancing and recursion"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "4"
-msgstr ""
+msgstr "4"
 
 msgid "Efficient representation of short strings"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "5"
-msgstr ""
+msgstr "5"
 
 msgid "Python 3.14"
 msgstr ""
 
 msgid "Support for :class:`slice` objects"
+msgstr ""
+
+# pydocvi: passthrough=version_marker
+#, fuzzy
+msgid "6"
+msgstr "6"
+
+msgid "Python 3.15"
+msgstr ""
+
+msgid "Support for :class:`frozendict` objects"
 msgstr ""
 
 msgid "Footnotes"
@@ -258,19 +285,25 @@ msgid ""
 msgstr ""
 
 msgid "module"
-msgstr ""
+msgstr "module"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "pickle"
-msgstr ""
+msgstr "pickle"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "shelve"
-msgstr ""
+msgstr "shelve"
 
 msgid "object"
-msgstr ""
+msgstr "object"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "code"
-msgstr ""
+msgstr "code"
 
 msgid "code object"
 msgstr ""

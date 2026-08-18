@@ -9,18 +9,18 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-19 14:37+0000\n"
-"PO-Revision-Date: 2025-09-16 00:01+0000\n"
-"Last-Translator: Nguyen Duc Tam, 2026\n"
-"Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
-"vi/)\n"
+"POT-Creation-Date: 2026-05-08 18:34+0000\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: pydocvi 0.1.2\n"
 
 msgid ":mod:`!re` --- Regular expression operations"
 msgstr ""
@@ -78,7 +78,7 @@ msgid ""
 "a more thorough Unicode support."
 msgstr ""
 
-msgid "Regular Expression Syntax"
+msgid "Regular expression syntax"
 msgstr ""
 
 msgid ""
@@ -134,8 +134,10 @@ msgstr ""
 msgid "The special characters are:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``.``"
-msgstr ""
+msgstr "``.``"
 
 msgid ""
 "(Dot.)  In the default mode, this matches any character except a newline.  "
@@ -143,16 +145,20 @@ msgid ""
 "including a newline.  ``(?s:.)`` matches any character regardless of flags."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``^``"
-msgstr ""
+msgstr "``^``"
 
 msgid ""
 "(Caret.)  Matches the start of the string, and in :const:`MULTILINE` mode "
 "also matches immediately after each newline."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``$``"
-msgstr ""
+msgstr "``$``"
 
 msgid ""
 "Matches the end of the string or just before the newline at the end of the "
@@ -165,8 +171,10 @@ msgid ""
 "string."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``*``"
-msgstr ""
+msgstr "``*``"
 
 msgid ""
 "Causes the resulting RE to match 0 or more repetitions of the preceding RE, "
@@ -174,8 +182,10 @@ msgid ""
 "followed by any number of 'b's."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``+``"
-msgstr ""
+msgstr "``+``"
 
 msgid ""
 "Causes the resulting RE to match 1 or more repetitions of the preceding RE. "
@@ -183,16 +193,20 @@ msgid ""
 "match just 'a'."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``?``"
-msgstr ""
+msgstr "``?``"
 
 msgid ""
 "Causes the resulting RE to match 0 or 1 repetitions of the preceding RE. "
 "``ab?`` will match either 'a' or 'ab'."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``*?``, ``+?``, ``??``"
-msgstr ""
+msgstr "``*?``, ``+?``, ``??``"
 
 msgid ""
 "The ``'*'``, ``'+'``, and ``'?'`` quantifiers are all :dfn:`greedy`; they "
@@ -204,8 +218,10 @@ msgid ""
 "only ``'<a>'``."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``*+``, ``++``, ``?+``"
-msgstr ""
+msgstr "``*+``, ``++``, ``?+``"
 
 msgid ""
 "Like the ``'*'``, ``'+'``, and ``'?'`` quantifiers, those where ``'+'`` is "
@@ -223,8 +239,10 @@ msgid ""
 "``(?>x?)`` correspondingly."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``{m}``"
-msgstr ""
+msgstr "``{m}``"
 
 msgid ""
 "Specifies that exactly *m* copies of the previous RE should be matched; "
@@ -232,8 +250,10 @@ msgid ""
 "match exactly six ``'a'`` characters, but not five."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``{m,n}``"
-msgstr ""
+msgstr "``{m,n}``"
 
 msgid ""
 "Causes the resulting RE to match from *m* to *n* repetitions of the "
@@ -246,8 +266,10 @@ msgid ""
 "described form."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``{m,n}?``"
-msgstr ""
+msgstr "``{m,n}?``"
 
 msgid ""
 "Causes the resulting RE to match from *m* to *n* repetitions of the "
@@ -257,23 +279,27 @@ msgid ""
 "while ``a{3,5}?`` will only match 3 characters."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``{m,n}+``"
-msgstr ""
+msgstr "``{m,n}+``"
 
 msgid ""
 "Causes the resulting RE to match from *m* to *n* repetitions of the "
 "preceding RE, attempting to match as many repetitions as possible *without* "
 "establishing any backtracking points. This is the possessive version of the "
 "quantifier above. For example, on the 6-character string ``'aaaaaa'``, "
-"``a{3,5}+aa`` attempt to match 5 ``'a'`` characters, then, requiring 2 more "
+"``a{3,5}+aa`` attempts to match 5 ``'a'`` characters, then, requiring 2 more "
 "``'a'``\\ s, will need more characters than available and thus fail, while "
 "``a{3,5}aa`` will match with ``a{3,5}`` capturing 5, then 4 ``'a'``\\ s by "
 "backtracking and then the final 2 ``'a'``\\ s are matched by the final "
 "``aa`` in the pattern. ``x{m,n}+`` is equivalent to ``(?>x{m,n})``."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\\``"
-msgstr ""
+msgstr "``\\``"
 
 msgid ""
 "Either escapes special characters (permitting you to match characters like "
@@ -291,8 +317,10 @@ msgid ""
 "recommended that you use raw strings for all but the simplest expressions."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``[]``"
-msgstr ""
+msgstr "``[]``"
 
 msgid "Used to indicate a set of characters.  In a set:"
 msgstr ""
@@ -358,8 +386,10 @@ msgid ""
 "will change semantically in the future."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``|``"
-msgstr ""
+msgstr "``|``"
 
 msgid ""
 "``A|B``, where *A* and *B* can be arbitrary REs, creates a regular "
@@ -373,8 +403,10 @@ msgid ""
 "use ``\\|``, or enclose it inside a character class, as in ``[|]``."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``(...)``"
-msgstr ""
+msgstr "``(...)``"
 
 msgid ""
 "Matches whatever regular expression is inside the parentheses, and indicates "
@@ -385,8 +417,10 @@ msgid ""
 "character class: ``[(]``, ``[)]``."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``(?...)``"
-msgstr ""
+msgstr "``(?...)``"
 
 msgid ""
 "This is an extension notation (a ``'?'`` following a ``'('`` is not "
@@ -396,8 +430,10 @@ msgid ""
 "rule. Following are the currently supported extensions."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``(?aiLmsux)``"
-msgstr ""
+msgstr "``(?aiLmsux)``"
 
 msgid ""
 "(One or more letters from the set ``'a'``, ``'i'``, ``'L'``, ``'m'``, "
@@ -436,8 +472,10 @@ msgstr ""
 msgid "This construction can only be used at the start of the expression."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``(?:...)``"
-msgstr ""
+msgstr "``(?:...)``"
 
 msgid ""
 "A non-capturing version of regular parentheses.  Matches whatever regular "
@@ -446,8 +484,10 @@ msgid ""
 "pattern."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``(?aiLmsux-imsx:...)``"
-msgstr ""
+msgstr "``(?aiLmsux-imsx:...)``"
 
 msgid ""
 "(Zero or more letters from the set ``'a'``, ``'i'``, ``'L'``, ``'m'``, "
@@ -474,8 +514,10 @@ msgstr ""
 msgid "The letters ``'a'``, ``'L'`` and ``'u'`` also can be used in a group."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``(?>...)``"
-msgstr ""
+msgstr "``(?>...)``"
 
 msgid ""
 "Attempts to match ``...`` as if it was a separate regular expression, and if "
@@ -490,8 +532,10 @@ msgid ""
 "thus fail to match."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``(?P<name>...)``"
-msgstr ""
+msgstr "``(?P<name>...)``"
 
 msgid ""
 "Similar to regular parentheses, but the substring matched by the group is "
@@ -520,14 +564,18 @@ msgstr ""
 msgid "``(?P=quote)`` (as shown)"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\\1``"
-msgstr ""
+msgstr "``\\1``"
 
 msgid "when processing match object *m*"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``m.group('quote')``"
-msgstr ""
+msgstr "``m.group('quote')``"
 
 msgid "``m.end('quote')`` (etc.)"
 msgstr ""
@@ -535,33 +583,43 @@ msgstr ""
 msgid "in a string passed to the *repl* argument of ``re.sub()``"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\\g<quote>``"
-msgstr ""
+msgstr "``\\g<quote>``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\\g<1>``"
-msgstr ""
+msgstr "``\\g<1>``"
 
 msgid ""
 "In :class:`bytes` patterns, group *name* can only contain bytes in the ASCII "
 "range (``b'\\x00'``-``b'\\x7f'``)."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``(?P=name)``"
-msgstr ""
+msgstr "``(?P=name)``"
 
 msgid ""
 "A backreference to a named group; it matches whatever text was matched by "
 "the earlier group named *name*."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``(?#...)``"
-msgstr ""
+msgstr "``(?#...)``"
 
 msgid "A comment; the contents of the parentheses are simply ignored."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``(?=...)``"
-msgstr ""
+msgstr "``(?=...)``"
 
 msgid ""
 "Matches if ``...`` matches next, but doesn't consume any of the string.  "
@@ -569,8 +627,10 @@ msgid ""
 "=Asimov)`` will match ``'Isaac '`` only if it's followed by ``'Asimov'``."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``(?!...)``"
-msgstr ""
+msgstr "``(?!...)``"
 
 msgid ""
 "Matches if ``...`` doesn't match next.  This is a :dfn:`negative lookahead "
@@ -578,8 +638,10 @@ msgid ""
 "if it's *not* followed by ``'Asimov'``."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``(?<=...)``"
-msgstr ""
+msgstr "``(?<=...)``"
 
 msgid ""
 "Matches if the current position in the string is preceded by a match for "
@@ -600,8 +662,10 @@ msgstr ""
 msgid "Added support for group references of fixed length."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``(?<!...)``"
-msgstr ""
+msgstr "``(?<!...)``"
 
 msgid ""
 "Matches if the current position in the string is not preceded by a match for "
@@ -611,8 +675,10 @@ msgid ""
 "assertions may match at the beginning of the string being searched."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``(?(id/name)yes-pattern|no-pattern)``"
-msgstr ""
+msgstr "``(?(id/name)yes-pattern|no-pattern)``"
 
 msgid ""
 "Will try to match with ``yes-pattern`` if the group with given *id* or "
@@ -635,8 +701,10 @@ msgid ""
 "matches the character ``'$'``."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\\number``"
-msgstr ""
+msgstr "``\\number``"
 
 msgid ""
 "Matches the contents of the group of the same number.  Groups are numbered "
@@ -649,14 +717,18 @@ msgid ""
 "escapes are treated as characters."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\\A``"
-msgstr ""
+msgstr "``\\A``"
 
 msgid "Matches only at the start of the string."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\\b``"
-msgstr ""
+msgstr "``\\b``"
 
 msgid ""
 "Matches the empty string, but only at the beginning or end of a word. A word "
@@ -679,8 +751,10 @@ msgid ""
 "compatibility with Python's string literals."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\\B``"
-msgstr ""
+msgstr "``\\B``"
 
 msgid ""
 "Matches the empty string, but only when it is *not* at the beginning or end "
@@ -695,8 +769,10 @@ msgstr ""
 msgid "``\\B`` now matches empty input string."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\\d``"
-msgstr ""
+msgstr "``\\d``"
 
 msgid "For Unicode (str) patterns:"
 msgstr ""
@@ -718,8 +794,10 @@ msgid ""
 "``[0-9]``."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\\D``"
-msgstr ""
+msgstr "``\\D``"
 
 msgid ""
 "Matches any character which is not a decimal digit. This is the opposite of "
@@ -729,8 +807,10 @@ msgstr ""
 msgid "Matches ``[^0-9]`` if the :py:const:`~re.ASCII` flag is used."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\\s``"
-msgstr ""
+msgstr "``\\s``"
 
 msgid ""
 "Matches Unicode whitespace characters (as defined by :py:meth:`str."
@@ -748,8 +828,10 @@ msgid ""
 "equivalent to ``[ \\t\\n\\r\\f\\v]``."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\\S``"
-msgstr ""
+msgstr "``\\S``"
 
 msgid ""
 "Matches any character which is not a whitespace character. This is the "
@@ -760,8 +842,10 @@ msgid ""
 "Matches ``[^ \\t\\n\\r\\f\\v]`` if the :py:const:`~re.ASCII` flag is used."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\\w``"
-msgstr ""
+msgstr "``\\w``"
 
 msgid ""
 "Matches Unicode word characters; this includes all Unicode alphanumeric "
@@ -779,8 +863,10 @@ msgid ""
 "the underscore."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\\W``"
-msgstr ""
+msgstr "``\\W``"
 
 msgid ""
 "Matches any character which is not a word character. This is the opposite of "
@@ -796,14 +882,18 @@ msgid ""
 "neither alphanumeric in the current locale nor the underscore."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\\z``"
-msgstr ""
+msgstr "``\\z``"
 
 msgid "Matches only at the end of the string."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\\Z``"
-msgstr ""
+msgstr "``\\Z``"
 
 msgid "The same as ``\\z``.  For compatibility with old Python versions."
 msgstr ""
@@ -813,11 +903,16 @@ msgid ""
 "string literals are also accepted by the regular expression parser::"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ""
 "\\a      \\b      \\f      \\n\n"
 "\\N      \\r      \\t      \\u\n"
 "\\U      \\v      \\x      \\\\"
 msgstr ""
+"\\a      \\b      \\f      \\n\n"
+"\\N      \\r      \\t      \\u\n"
+"\\U      \\v      \\x      \\\\"
 
 msgid ""
 "(Note that ``\\b`` is used to represent word boundaries, and means "
@@ -850,7 +945,7 @@ msgid ""
 "DASH}'``)."
 msgstr ""
 
-msgid "Module Contents"
+msgid "Module contents"
 msgstr ""
 
 msgid ""
@@ -860,8 +955,10 @@ msgid ""
 "compiled form."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Flags"
-msgstr ""
+msgstr "Flags"
 
 msgid ""
 "Flag constants are now instances of :class:`RegexFlag`, which is a subclass "
@@ -967,10 +1064,14 @@ msgid ""
 "value::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
-"def myfunc(text, flag=re.NOFLAG):\n"
-"    return re.match(text, flag)"
+"def myfunc(pattern, text, flag=re.NOFLAG):\n"
+"    return re.search(pattern, text, flag)"
 msgstr ""
+"def myfunc(pattern, text, flag=re.NOFLAG):\n"
+"    return re.search(pattern, text, flag)"
 
 msgid ""
 "Make the ``'.'`` special character match any character at all, including a "
@@ -1007,23 +1108,31 @@ msgid ""
 "decimal number are functionally equal::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "a = re.compile(r\"\"\"\\d +  # the integral part\n"
 "                   \\.    # the decimal point\n"
 "                   \\d *  # some fractional digits\"\"\", re.X)\n"
 "b = re.compile(r\"\\d+\\.\\d*\")"
 msgstr ""
+"a = re.compile(r\"\"\"\\d +  # the integral part\n"
+"                   \\.    # the decimal point\n"
+"                   \\d *  # some fractional digits\"\"\", re.X)\n"
+"b = re.compile(r\"\\d+\\.\\d*\")"
 
 msgid "Corresponds to the inline flag ``(?x)``."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Functions"
-msgstr ""
+msgstr "Functions"
 
 msgid ""
 "Compile a regular expression pattern into a :ref:`regular expression object "
 "<re-objects>`, which can be used for matching using its :func:`~Pattern."
-"match`, :func:`~Pattern.search` and other methods, described below."
+"prefixmatch`, :func:`~Pattern.search`, and other methods, described below."
 msgstr ""
 
 msgid ""
@@ -1035,16 +1144,22 @@ msgstr ""
 msgid "The sequence ::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "prog = re.compile(pattern)\n"
-"result = prog.match(string)"
+"result = prog.search(string)"
 msgstr ""
+"prog = re.compile(pattern)\n"
+"result = prog.search(string)"
 
 msgid "is equivalent to ::"
 msgstr ""
 
-msgid "result = re.match(pattern, string)"
-msgstr ""
+# pydocvi: passthrough=literal_block
+#, fuzzy
+msgid "result = re.search(pattern, string)"
+msgstr "result = re.search(pattern, string)"
 
 msgid ""
 "but using :func:`re.compile` and saving the resulting regular expression "
@@ -1075,13 +1190,28 @@ msgid ""
 msgstr ""
 
 msgid ""
-"Note that even in :const:`MULTILINE` mode, :func:`re.match` will only match "
-"at the beginning of the string and not at the beginning of each line."
+"Even in :const:`MULTILINE` mode, this will only match at the beginning of "
+"the string and not at the beginning of each line."
 msgstr ""
 
 msgid ""
 "If you want to locate a match anywhere in *string*, use :func:`search` "
 "instead (see also :ref:`search-vs-match`)."
+msgstr ""
+
+msgid ""
+"This function now has two names and has long been known as :func:`~re."
+"match`.  Use that name when you need to retain compatibility with older "
+"Python versions."
+msgstr ""
+
+msgid ""
+":func:`~re.match` has been :term:`soft deprecated` in favor of the "
+"alternate :func:`~re.prefixmatch` name of this API which is more explicitly "
+"descriptive. Use it to better express intent. The norm in other languages "
+"and regular expression implementations is to use the term *match* to refer "
+"to the behavior of what Python has always called :func:`~re.search`. See :"
+"ref:`prefixmatch-vs-match`."
 msgstr ""
 
 msgid ""
@@ -1098,6 +1228,8 @@ msgid ""
 "final element of the list. ::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> re.split(r'\\W+', 'Words, words, words.')\n"
 "['Words', 'words', 'words', '']\n"
@@ -1108,6 +1240,14 @@ msgid ""
 ">>> re.split('[a-f]+', '0a3B9', flags=re.IGNORECASE)\n"
 "['0', '3', '9']"
 msgstr ""
+">>> re.split(r'\\W+', 'Words, words, words.')\n"
+"['Words', 'words', 'words', '']\n"
+">>> re.split(r'(\\W+)', 'Words, words, words.')\n"
+"['Words', ', ', 'words', ', ', 'words', '.', '']\n"
+">>> re.split(r'\\W+', 'Words, words, words.', maxsplit=1)\n"
+"['Words', 'words, words.']\n"
+">>> re.split('[a-f]+', '0a3B9', flags=re.IGNORECASE)\n"
+"['0', '3', '9']"
 
 msgid ""
 "If there are capturing groups in the separator and it matches at the start "
@@ -1115,10 +1255,14 @@ msgid ""
 "for the end of the string::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> re.split(r'(\\W+)', '...words, words...')\n"
 "['', '...', 'words', ', ', 'words', '...', '']"
 msgstr ""
+">>> re.split(r'(\\W+)', '...words, words...')\n"
+"['', '...', 'words', ', ', 'words', '...', '']"
 
 msgid ""
 "That way, separator components are always found at the same relative indices "
@@ -1130,6 +1274,8 @@ msgid ""
 "immediately after a non-empty match."
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> re.split(r'\\b', 'Words, words, words.')\n"
 "['', 'Words', ', ', 'words', ', ', 'words', '.']\n"
@@ -1139,6 +1285,13 @@ msgid ""
 "['', '...', '', '', 'w', '', 'o', '', 'r', '', 'd', '', 's', '...', '', '', "
 "'']"
 msgstr ""
+">>> re.split(r'\\b', 'Words, words, words.')\n"
+"['', 'Words', ', ', 'words', ', ', 'words', '.']\n"
+">>> re.split(r'\\W*', '...words...')\n"
+"['', '', 'w', 'o', 'r', 'd', 's', '', '']\n"
+">>> re.split(r'(\\W*)', '...words...')\n"
+"['', '...', '', '', 'w', '', 'o', '', 'r', '', 'd', '', 's', '...', '', '', "
+"'']"
 
 msgid "Added the optional flags argument."
 msgstr ""
@@ -1191,12 +1344,18 @@ msgid ""
 "For example::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> re.sub(r'def\\s+([a-zA-Z_][a-zA-Z_0-9]*)\\s*\\(\\s*\\):',\n"
 "...        r'static PyObject*\\npy_\\1(void)\\n{',\n"
 "...        'def myfunc():')\n"
 "'static PyObject*\\npy_myfunc(void)\\n{'"
 msgstr ""
+">>> re.sub(r'def\\s+([a-zA-Z_][a-zA-Z_0-9]*)\\s*\\(\\s*\\):',\n"
+"...        r'static PyObject*\\npy_\\1(void)\\n{',\n"
+"...        'def myfunc():')\n"
+"'static PyObject*\\npy_myfunc(void)\\n{'"
 
 msgid ""
 "If *repl* is a function, it is called for every non-overlapping occurrence "
@@ -1204,6 +1363,8 @@ msgid ""
 "returns the replacement string.  For example::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> def dashrepl(matchobj):\n"
 "...     if matchobj.group(0) == '-': return ' '\n"
@@ -1211,10 +1372,19 @@ msgid ""
 "...\n"
 ">>> re.sub('-{1,2}', dashrepl, 'pro----gram-files')\n"
 "'pro--gram files'\n"
-">>> re.sub(r'\\sAND\\s', ' & ', 'Baked Beans And Spam', flags=re."
-"IGNORECASE)\n"
+">>> re.sub(r'\\sAND\\s', ' & ', 'Baked Beans And Spam', "
+"flags=re.IGNORECASE)\n"
 "'Baked Beans & Spam'"
 msgstr ""
+">>> def dashrepl(matchobj):\n"
+"...     if matchobj.group(0) == '-': return ' '\n"
+"...     else: return '-'\n"
+"...\n"
+">>> re.sub('-{1,2}', dashrepl, 'pro----gram-files')\n"
+"'pro--gram files'\n"
+">>> re.sub(r'\\sAND\\s', ' & ', 'Baked Beans And Spam', "
+"flags=re.IGNORECASE)\n"
+"'Baked Beans & Spam'"
 
 msgid "The pattern may be a string or a :class:`~re.Pattern`."
 msgstr ""
@@ -1279,12 +1449,14 @@ msgid ""
 "in it.  For example::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> print(re.escape('https://www.python.org'))\n"
 "https://www\\.python\\.org\n"
 "\n"
-">>> legal_chars = string.ascii_lowercase + string.digits + \"!#$%&'*+-.^_`|~:"
-"\"\n"
+">>> legal_chars = string.ascii_lowercase + string.digits + "
+"\"!#$%&'*+-.^_`|~:\"\n"
 ">>> print('[%s]+' % re.escape(legal_chars))\n"
 "[abcdefghijklmnopqrstuvwxyz0123456789!\\#\\$%\\&'\\*\\+\\-\\.\\^_`\\|\\~:]+\n"
 "\n"
@@ -1292,18 +1464,35 @@ msgid ""
 ">>> print('|'.join(map(re.escape, sorted(operators, reverse=True))))\n"
 "/|\\-|\\+|\\*\\*|\\*"
 msgstr ""
+">>> print(re.escape('https://www.python.org'))\n"
+"https://www\\.python\\.org\n"
+"\n"
+">>> legal_chars = string.ascii_lowercase + string.digits + "
+"\"!#$%&'*+-.^_`|~:\"\n"
+">>> print('[%s]+' % re.escape(legal_chars))\n"
+"[abcdefghijklmnopqrstuvwxyz0123456789!\\#\\$%\\&'\\*\\+\\-\\.\\^_`\\|\\~:]+\n"
+"\n"
+">>> operators = ['+', '-', '*', '/', '**']\n"
+">>> print('|'.join(map(re.escape, sorted(operators, reverse=True))))\n"
+"/|\\-|\\+|\\*\\*|\\*"
 
 msgid ""
 "This function must not be used for the replacement string in :func:`sub` "
 "and :func:`subn`, only backslashes should be escaped.  For example::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> digits_re = r'\\d+'\n"
 ">>> sample = '/usr/sbin/sendmail - 0 errors, 12 warnings'\n"
 ">>> print(re.sub(digits_re, digits_re.replace('\\\\', r'\\\\'), sample))\n"
 "/usr/sbin/sendmail - \\d+ errors, \\d+ warnings"
 msgstr ""
+">>> digits_re = r'\\d+'\n"
+">>> sample = '/usr/sbin/sendmail - 0 errors, 12 warnings'\n"
+">>> print(re.sub(digits_re, digits_re.replace('\\\\', r'\\\\'), sample))\n"
+"/usr/sbin/sendmail - \\d+ errors, \\d+ warnings"
 
 msgid "The ``'_'`` character is no longer escaped."
 msgstr ""
@@ -1318,8 +1507,10 @@ msgstr ""
 msgid "Clear the regular expression cache."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Exceptions"
-msgstr ""
+msgstr "Exceptions"
 
 msgid ""
 "Exception raised when a string passed to one of the functions here is not a "
@@ -1353,7 +1544,7 @@ msgid ""
 "alias for backward compatibility."
 msgstr ""
 
-msgid "Regular Expression Objects"
+msgid "Regular expression objects"
 msgstr ""
 
 msgid "Compiled regular expression object returned by :func:`re.compile`."
@@ -1389,12 +1580,18 @@ msgid ""
 "equivalent to ``rx.search(string[:50], 0)``. ::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> pattern = re.compile(\"d\")\n"
 ">>> pattern.search(\"dog\")     # Match at index 0\n"
 "<re.Match object; span=(0, 1), match='d'>\n"
 ">>> pattern.search(\"dog\", 1)  # No match; search doesn't include the \"d\""
 msgstr ""
+">>> pattern = re.compile(\"d\")\n"
+">>> pattern.search(\"dog\")     # Match at index 0\n"
+"<re.Match object; span=(0, 1), match='d'>\n"
+">>> pattern.search(\"dog\", 1)  # No match; search doesn't include the \"d\""
 
 msgid ""
 "If zero or more characters at the *beginning* of *string* match this regular "
@@ -1404,22 +1601,50 @@ msgid ""
 msgstr ""
 
 msgid ""
+"Note that even in :const:`MULTILINE` mode, this will only match at the "
+"beginning of the string and not at the beginning of each line."
+msgstr ""
+
+msgid ""
 "The optional *pos* and *endpos* parameters have the same meaning as for the :"
 "meth:`~Pattern.search` method. ::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> pattern = re.compile(\"o\")\n"
-">>> pattern.match(\"dog\")      # No match as \"o\" is not at the start of "
-"\"dog\".\n"
-">>> pattern.match(\"dog\", 1)   # Match as \"o\" is the 2nd character of "
-"\"dog\".\n"
+">>> pattern.prefixmatch(\"dog\")     # No match as \"o\" is not at the start "
+"of \"dog\".\n"
+">>> pattern.prefixmatch(\"dog\", 1)  # Match as \"o\" is the 2nd character of"
+" \"dog\".\n"
 "<re.Match object; span=(1, 2), match='o'>"
 msgstr ""
+">>> pattern = re.compile(\"o\")\n"
+">>> pattern.prefixmatch(\"dog\")     # No match as \"o\" is not at the start "
+"of \"dog\".\n"
+">>> pattern.prefixmatch(\"dog\", 1)  # Match as \"o\" is the 2nd character of"
+" \"dog\".\n"
+"<re.Match object; span=(1, 2), match='o'>"
 
 msgid ""
 "If you want to locate a match anywhere in *string*, use :meth:`~Pattern."
 "search` instead (see also :ref:`search-vs-match`)."
+msgstr ""
+
+msgid ""
+"This method now has two names and has long been known as :meth:`~Pattern."
+"match`.  Use that name when you need to retain compatibility with older "
+"Python versions."
+msgstr ""
+
+msgid ""
+":meth:`~Pattern.match` has been :term:`soft deprecated` in favor of the "
+"alternate :meth:`~Pattern.prefixmatch` name of this API which is more "
+"explicitly descriptive. Use it to better express intent. The norm in other "
+"languages and regular expression implementations is to use the term *match* "
+"to refer to the behavior of what Python has always called :meth:`~Pattern."
+"search`. See :ref:`prefixmatch-vs-match`."
 msgstr ""
 
 msgid ""
@@ -1428,6 +1653,8 @@ msgid ""
 "match the pattern; note that this is different from a zero-length match."
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> pattern = re.compile(\"o[gh]\")\n"
 ">>> pattern.fullmatch(\"dog\")      # No match as \"o\" is not at the start "
@@ -1437,6 +1664,13 @@ msgid ""
 ">>> pattern.fullmatch(\"doggie\", 1, 3)   # Matches within given limits.\n"
 "<re.Match object; span=(1, 3), match='og'>"
 msgstr ""
+">>> pattern = re.compile(\"o[gh]\")\n"
+">>> pattern.fullmatch(\"dog\")      # No match as \"o\" is not at the start "
+"of \"dog\".\n"
+">>> pattern.fullmatch(\"ogre\")     # No match as not the full string "
+"matches.\n"
+">>> pattern.fullmatch(\"doggie\", 1, 3)   # Matches within given limits.\n"
+"<re.Match object; span=(1, 3), match='og'>"
 
 msgid "Identical to the :func:`split` function, using the compiled pattern."
 msgstr ""
@@ -1482,7 +1716,7 @@ msgid ""
 "regular expression objects are considered atomic."
 msgstr ""
 
-msgid "Match Objects"
+msgid "Match objects"
 msgstr ""
 
 msgid ""
@@ -1491,11 +1725,14 @@ msgid ""
 "you can test whether there was a match with a simple ``if`` statement::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
-"match = re.search(pattern, string)\n"
-"if match:\n"
+"if match := re.search(pattern, string):\n"
 "    process(match)"
 msgstr ""
+"if match := re.search(pattern, string):\n"
+"    process(match)"
 
 msgid "Match object returned by successful ``match``\\ es and ``search``\\ es."
 msgstr ""
@@ -1528,17 +1765,30 @@ msgid ""
 "matched multiple times, the last match is returned. ::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
-">>> m = re.match(r\"(\\w+) (\\w+)\", \"Isaac Newton, physicist\")\n"
+">>> m = re.search(r\"\\A(\\w+) (\\w+)\", \"Norwegian Blue, pining for the "
+"fjords\")\n"
 ">>> m.group(0)       # The entire match\n"
-"'Isaac Newton'\n"
+"'Norwegian Blue'\n"
 ">>> m.group(1)       # The first parenthesized subgroup.\n"
-"'Isaac'\n"
+"'Norwegian'\n"
 ">>> m.group(2)       # The second parenthesized subgroup.\n"
-"'Newton'\n"
+"'Blue'\n"
 ">>> m.group(1, 2)    # Multiple arguments give us a tuple.\n"
-"('Isaac', 'Newton')"
+"('Norwegian', 'Blue')"
 msgstr ""
+">>> m = re.search(r\"\\A(\\w+) (\\w+)\", \"Norwegian Blue, pining for the "
+"fjords\")\n"
+">>> m.group(0)       # The entire match\n"
+"'Norwegian Blue'\n"
+">>> m.group(1)       # The first parenthesized subgroup.\n"
+"'Norwegian'\n"
+">>> m.group(2)       # The second parenthesized subgroup.\n"
+"'Blue'\n"
+">>> m.group(1, 2)    # Multiple arguments give us a tuple.\n"
+"('Norwegian', 'Blue')"
 
 msgid ""
 "If the regular expression uses the ``(?P<name>...)`` syntax, the *groupN* "
@@ -1550,60 +1800,98 @@ msgstr ""
 msgid "A moderately complicated example::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
-">>> m = re.match(r\"(?P<first_name>\\w+) (?P<last_name>\\w+)\", \"Malcolm "
-"Reynolds\")\n"
-">>> m.group('first_name')\n"
-"'Malcolm'\n"
-">>> m.group('last_name')\n"
-"'Reynolds'"
+">>> m = re.search(r\"(?P<adjective>\\w+) (?P<animal>\\w+)\", \"killer "
+"rabbit\")\n"
+">>> m.group('adjective')\n"
+"'killer'\n"
+">>> m.group('animal')\n"
+"'rabbit'"
 msgstr ""
+">>> m = re.search(r\"(?P<adjective>\\w+) (?P<animal>\\w+)\", \"killer "
+"rabbit\")\n"
+">>> m.group('adjective')\n"
+"'killer'\n"
+">>> m.group('animal')\n"
+"'rabbit'"
 
 msgid "Named groups can also be referred to by their index::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> m.group(1)\n"
-"'Malcolm'\n"
+"'killer'\n"
 ">>> m.group(2)\n"
-"'Reynolds'"
+"'rabbit'"
 msgstr ""
+">>> m.group(1)\n"
+"'killer'\n"
+">>> m.group(2)\n"
+"'rabbit'"
 
 msgid "If a group matches multiple times, only the last match is accessible::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
-">>> m = re.match(r\"(..)+\", \"a1b2c3\")  # Matches 3 times.\n"
-">>> m.group(1)                        # Returns only the last match.\n"
+">>> m = re.search(r\"(..)+\", \"a1b2c3\")  # Matches 3 times.\n"
+">>> m.group(1)                         # Returns only the last match.\n"
 "'c3'"
 msgstr ""
+">>> m = re.search(r\"(..)+\", \"a1b2c3\")  # Matches 3 times.\n"
+">>> m.group(1)                         # Returns only the last match.\n"
+"'c3'"
 
 msgid ""
 "This is identical to ``m.group(g)``.  This allows easier access to an "
 "individual group from a match::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
-">>> m = re.match(r\"(\\w+) (\\w+)\", \"Isaac Newton, physicist\")\n"
+">>> m = re.search(r\"(\\w+) (\\w+)\", \"Norwegian Blue, pining for the "
+"fjords\")\n"
 ">>> m[0]       # The entire match\n"
-"'Isaac Newton'\n"
+"'Norwegian Blue'\n"
 ">>> m[1]       # The first parenthesized subgroup.\n"
-"'Isaac'\n"
+"'Norwegian'\n"
 ">>> m[2]       # The second parenthesized subgroup.\n"
-"'Newton'"
+"'Blue'"
 msgstr ""
+">>> m = re.search(r\"(\\w+) (\\w+)\", \"Norwegian Blue, pining for the "
+"fjords\")\n"
+">>> m[0]       # The entire match\n"
+"'Norwegian Blue'\n"
+">>> m[1]       # The first parenthesized subgroup.\n"
+"'Norwegian'\n"
+">>> m[2]       # The second parenthesized subgroup.\n"
+"'Blue'"
 
 msgid "Named groups are supported as well::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
-">>> m = re.match(r\"(?P<first_name>\\w+) (?P<last_name>\\w+)\", \"Isaac "
-"Newton\")\n"
-">>> m['first_name']\n"
-"'Isaac'\n"
-">>> m['last_name']\n"
-"'Newton'"
+">>> m = re.search(r\"(?P<adjective>\\w+) (?P<animal>\\w+)\", \"killer "
+"rabbit\")\n"
+">>> m['adjective']\n"
+"'killer'\n"
+">>> m['animal']\n"
+"'rabbit'"
 msgstr ""
+">>> m = re.search(r\"(?P<adjective>\\w+) (?P<animal>\\w+)\", \"killer "
+"rabbit\")\n"
+">>> m['adjective']\n"
+"'killer'\n"
+">>> m['animal']\n"
+"'rabbit'"
 
 msgid ""
 "Return a tuple containing all the subgroups of the match, from 1 up to "
@@ -1611,14 +1899,21 @@ msgid ""
 "groups that did not participate in the match; it defaults to ``None``."
 msgstr ""
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=9648862cf2b3 run=2026-08-17T16:43Z
+#, fuzzy
 msgid "For example::"
-msgstr ""
+msgstr "Ví dụ::"
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
-">>> m = re.match(r\"(\\d+)\\.(\\d+)\", \"24.1632\")\n"
+">>> m = re.search(r\"(\\d+)\\.(\\d+)\", \"24.1632\")\n"
 ">>> m.groups()\n"
 "('24', '1632')"
 msgstr ""
+">>> m = re.search(r\"(\\d+)\\.(\\d+)\", \"24.1632\")\n"
+">>> m.groups()\n"
+"('24', '1632')"
 
 msgid ""
 "If we make the decimal place and everything after it optional, not all "
@@ -1626,13 +1921,20 @@ msgid ""
 "``None`` unless the *default* argument is given::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
-">>> m = re.match(r\"(\\d+)\\.?(\\d+)?\", \"24\")\n"
+">>> m = re.search(r\"(\\d+)\\.?(\\d+)?\", \"24\")\n"
 ">>> m.groups()      # Second group defaults to None.\n"
 "('24', None)\n"
 ">>> m.groups('0')   # Now, the second group defaults to '0'.\n"
 "('24', '0')"
 msgstr ""
+">>> m = re.search(r\"(\\d+)\\.?(\\d+)?\", \"24\")\n"
+">>> m.groups()      # Second group defaults to None.\n"
+"('24', None)\n"
+">>> m.groups('0')   # Now, the second group defaults to '0'.\n"
+"('24', '0')"
 
 msgid ""
 "Return a dictionary containing all the *named* subgroups of the match, keyed "
@@ -1640,12 +1942,18 @@ msgid ""
 "not participate in the match; it defaults to ``None``.  For example::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
-">>> m = re.match(r\"(?P<first_name>\\w+) (?P<last_name>\\w+)\", \"Malcolm "
-"Reynolds\")\n"
+">>> m = re.search(r\"(?P<adjective>\\w+) (?P<animal>\\w+)\", \"killer "
+"rabbit\")\n"
 ">>> m.groupdict()\n"
-"{'first_name': 'Malcolm', 'last_name': 'Reynolds'}"
+"{'adjective': 'killer', 'animal': 'rabbit'}"
 msgstr ""
+">>> m = re.search(r\"(?P<adjective>\\w+) (?P<animal>\\w+)\", \"killer "
+"rabbit\")\n"
+">>> m.groupdict()\n"
+"{'adjective': 'killer', 'animal': 'rabbit'}"
 
 msgid ""
 "Return the indices of the start and end of the substring matched by *group*; "
@@ -1668,12 +1976,18 @@ msgstr ""
 msgid "An example that will remove *remove_this* from email addresses::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> email = \"tony@tiremove_thisger.net\"\n"
 ">>> m = re.search(\"remove_this\", email)\n"
 ">>> email[:m.start()] + email[m.end():]\n"
 "'tony@tiger.net'"
 msgstr ""
+">>> email = \"tony@tiremove_thisger.net\"\n"
+">>> m = re.search(\"remove_this\", email)\n"
+">>> email[:m.start()] + email[m.end():]\n"
+"'tony@tiger.net'"
 
 msgid ""
 "For a match *m*, return the 2-tuple ``(m.start(group), m.end(group))``. Note "
@@ -1719,10 +2033,10 @@ msgid ""
 "are considered atomic."
 msgstr ""
 
-msgid "Regular Expression Examples"
+msgid "Regular expression examples"
 msgstr ""
 
-msgid "Checking for a Pair"
+msgid "Checking for a pair"
 msgstr ""
 
 msgid ""
@@ -1730,12 +2044,18 @@ msgid ""
 "objects a little more gracefully::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def displaymatch(match):\n"
 "    if match is None:\n"
 "        return None\n"
 "    return '<Match: %r, groups=%r>' % (match.group(), match.groups())"
 msgstr ""
+"def displaymatch(match):\n"
+"    if match is None:\n"
+"        return None\n"
+"    return '<Match: %r, groups=%r>' % (match.group(), match.groups())"
 
 msgid ""
 "Suppose you are writing a poker program where a player's hand is represented "
@@ -1747,15 +2067,24 @@ msgstr ""
 msgid "To see if a given string is a valid hand, one could do the following::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
-">>> valid = re.compile(r\"^[a2-9tjqk]{5}$\")\n"
-">>> displaymatch(valid.match(\"akt5q\"))  # Valid.\n"
+">>> valid_hand_re = re.compile(r\"^[a2-9tjqk]{5}$\")\n"
+">>> displaymatch(valid_hand_re.search(\"akt5q\"))  # Valid.\n"
 "\"<Match: 'akt5q', groups=()>\"\n"
-">>> displaymatch(valid.match(\"akt5e\"))  # Invalid.\n"
-">>> displaymatch(valid.match(\"akt\"))    # Invalid.\n"
-">>> displaymatch(valid.match(\"727ak\"))  # Valid.\n"
+">>> displaymatch(valid_hand_re.search(\"akt5e\"))  # Invalid.\n"
+">>> displaymatch(valid_hand_re.search(\"akt\"))    # Invalid.\n"
+">>> displaymatch(valid_hand_re.search(\"727ak\"))  # Valid.\n"
 "\"<Match: '727ak', groups=()>\""
 msgstr ""
+">>> valid_hand_re = re.compile(r\"^[a2-9tjqk]{5}$\")\n"
+">>> displaymatch(valid_hand_re.search(\"akt5q\"))  # Valid.\n"
+"\"<Match: 'akt5q', groups=()>\"\n"
+">>> displaymatch(valid_hand_re.search(\"akt5e\"))  # Invalid.\n"
+">>> displaymatch(valid_hand_re.search(\"akt\"))    # Invalid.\n"
+">>> displaymatch(valid_hand_re.search(\"727ak\"))  # Valid.\n"
+"\"<Match: '727ak', groups=()>\""
 
 msgid ""
 "That last hand, ``\"727ak\"``, contained a pair, or two of the same valued "
@@ -1763,36 +2092,60 @@ msgid ""
 "as such::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
-">>> pair = re.compile(r\".*(.).*\\1\")\n"
-">>> displaymatch(pair.match(\"717ak\"))     # Pair of 7s.\n"
+">>> pair_re = re.compile(r\".*(.).*\\1\")\n"
+">>> displaymatch(pair_re.prefixmatch(\"717ak\"))     # Pair of 7s.\n"
 "\"<Match: '717', groups=('7',)>\"\n"
-">>> displaymatch(pair.match(\"718ak\"))     # No pairs.\n"
-">>> displaymatch(pair.match(\"354aa\"))     # Pair of aces.\n"
+">>> displaymatch(pair_re.prefixmatch(\"718ak\"))     # No pairs.\n"
+">>> displaymatch(pair_re.prefixmatch(\"354aa\"))     # Pair of aces.\n"
 "\"<Match: '354aa', groups=('a',)>\""
 msgstr ""
+">>> pair_re = re.compile(r\".*(.).*\\1\")\n"
+">>> displaymatch(pair_re.prefixmatch(\"717ak\"))     # Pair of 7s.\n"
+"\"<Match: '717', groups=('7',)>\"\n"
+">>> displaymatch(pair_re.prefixmatch(\"718ak\"))     # No pairs.\n"
+">>> displaymatch(pair_re.prefixmatch(\"354aa\"))     # Pair of aces.\n"
+"\"<Match: '354aa', groups=('a',)>\""
 
 msgid ""
 "To find out what card the pair consists of, one could use the :meth:`~Match."
 "group` method of the match object in the following manner::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
-">>> pair = re.compile(r\".*(.).*\\1\")\n"
-">>> pair.match(\"717ak\").group(1)\n"
+">>> pair_re = re.compile(r\".*(.).*\\1\")\n"
+">>> pair_re.prefixmatch(\"717ak\").group(1)\n"
 "'7'\n"
 "\n"
-"# Error because re.match() returns None, which doesn't have a group() "
+"# Error because prefixmatch() returns None, which doesn't have a group() "
 "method:\n"
-">>> pair.match(\"718ak\").group(1)\n"
+">>> pair_re.prefixmatch(\"718ak\").group(1)\n"
 "Traceback (most recent call last):\n"
 "  File \"<pyshell#23>\", line 1, in <module>\n"
-"    re.match(r\".*(.).*\\1\", \"718ak\").group(1)\n"
+"    pair_re.prefixmatch(\"718ak\").group(1)\n"
 "AttributeError: 'NoneType' object has no attribute 'group'\n"
 "\n"
-">>> pair.match(\"354aa\").group(1)\n"
+">>> pair_re.prefixmatch(\"354aa\").group(1)\n"
 "'a'"
 msgstr ""
+">>> pair_re = re.compile(r\".*(.).*\\1\")\n"
+">>> pair_re.prefixmatch(\"717ak\").group(1)\n"
+"'7'\n"
+"\n"
+"# Error because prefixmatch() returns None, which doesn't have a group() "
+"method:\n"
+">>> pair_re.prefixmatch(\"718ak\").group(1)\n"
+"Traceback (most recent call last):\n"
+"  File \"<pyshell#23>\", line 1, in <module>\n"
+"    pair_re.prefixmatch(\"718ak\").group(1)\n"
+"AttributeError: 'NoneType' object has no attribute 'group'\n"
+"\n"
+">>> pair_re.prefixmatch(\"354aa\").group(1)\n"
+"'a'"
 
 msgid "Simulating scanf()"
 msgstr ""
@@ -1811,83 +2164,118 @@ msgstr ""
 msgid "Regular Expression"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``%c``"
-msgstr ""
+msgstr "``%c``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``%5c``"
-msgstr ""
+msgstr "``%5c``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``.{5}``"
-msgstr ""
+msgstr "``.{5}``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``%d``"
-msgstr ""
+msgstr "``%d``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``[-+]?\\d+``"
-msgstr ""
+msgstr "``[-+]?\\d+``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``%e``, ``%E``, ``%f``, ``%g``"
-msgstr ""
+msgstr "``%e``, ``%E``, ``%f``, ``%g``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``[-+]?(\\d+(\\.\\d*)?|\\.\\d+)([eE][-+]?\\d+)?``"
-msgstr ""
+msgstr "``[-+]?(\\d+(\\.\\d*)?|\\.\\d+)([eE][-+]?\\d+)?``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``%i``"
-msgstr ""
+msgstr "``%i``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``[-+]?(0[xX][\\dA-Fa-f]+|0[0-7]*|\\d+)``"
-msgstr ""
+msgstr "``[-+]?(0[xX][\\dA-Fa-f]+|0[0-7]*|\\d+)``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``%o``"
-msgstr ""
+msgstr "``%o``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``[-+]?[0-7]+``"
-msgstr ""
+msgstr "``[-+]?[0-7]+``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``%s``"
-msgstr ""
+msgstr "``%s``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\\S+``"
-msgstr ""
+msgstr "``\\S+``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``%u``"
-msgstr ""
+msgstr "``%u``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\\d+``"
-msgstr ""
+msgstr "``\\d+``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``%x``, ``%X``"
-msgstr ""
+msgstr "``%x``, ``%X``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``[-+]?(0[xX])?[\\dA-Fa-f]+``"
-msgstr ""
+msgstr "``[-+]?(0[xX])?[\\dA-Fa-f]+``"
 
-msgid "To extract the filename and numbers from a string like ::"
+msgid "To extract the filename and numbers from a string like:"
 msgstr ""
 
 msgid "/usr/sbin/sendmail - 0 errors, 4 warnings"
 msgstr ""
 
-msgid "you would use a :c:func:`!scanf` format like ::"
+msgid "you would use a :c:func:`!scanf` format like:"
 msgstr ""
 
 msgid "%s - %d errors, %d warnings"
 msgstr ""
 
-msgid "The equivalent regular expression would be ::"
+msgid "The equivalent regular expression would be:"
 msgstr ""
 
 msgid "(\\S+) - (\\d+) errors, (\\d+) warnings"
 msgstr ""
 
-msgid "search() vs. match()"
+msgid "search() vs. prefixmatch()"
 msgstr ""
 
 msgid ""
 "Python offers different primitive operations based on regular expressions:"
 msgstr ""
 
-msgid ":func:`re.match` checks for a match only at the beginning of the string"
+msgid ""
+":func:`re.prefixmatch` checks for a match only at the beginning of the string"
 msgstr ""
 
 msgid ""
@@ -1898,41 +2286,103 @@ msgstr ""
 msgid ":func:`re.fullmatch` checks for entire string to be a match"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
-">>> re.match(\"c\", \"abcdef\")    # No match\n"
-">>> re.search(\"c\", \"abcdef\")   # Match\n"
+">>> re.prefixmatch(\"c\", \"abcdef\")  # No match\n"
+">>> re.search(\"c\", \"abcdef\")       # Match\n"
 "<re.Match object; span=(2, 3), match='c'>\n"
 ">>> re.fullmatch(\"p.*n\", \"python\") # Match\n"
 "<re.Match object; span=(0, 6), match='python'>\n"
 ">>> re.fullmatch(\"r.*n\", \"python\") # No match"
 msgstr ""
+">>> re.prefixmatch(\"c\", \"abcdef\")  # No match\n"
+">>> re.search(\"c\", \"abcdef\")       # Match\n"
+"<re.Match object; span=(2, 3), match='c'>\n"
+">>> re.fullmatch(\"p.*n\", \"python\") # Match\n"
+"<re.Match object; span=(0, 6), match='python'>\n"
+">>> re.fullmatch(\"r.*n\", \"python\") # No match"
 
 msgid ""
 "Regular expressions beginning with ``'^'`` can be used with :func:`search` "
 "to restrict the match at the beginning of the string::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
-">>> re.match(\"c\", \"abcdef\")    # No match\n"
-">>> re.search(\"^c\", \"abcdef\")  # No match\n"
-">>> re.search(\"^a\", \"abcdef\")  # Match\n"
+">>> re.prefixmatch(\"c\", \"abcdef\")  # No match\n"
+">>> re.search(\"^c\", \"abcdef\")      # No match\n"
+">>> re.search(\"^a\", \"abcdef\")      # Match\n"
 "<re.Match object; span=(0, 1), match='a'>"
 msgstr ""
+">>> re.prefixmatch(\"c\", \"abcdef\")  # No match\n"
+">>> re.search(\"^c\", \"abcdef\")      # No match\n"
+">>> re.search(\"^a\", \"abcdef\")      # Match\n"
+"<re.Match object; span=(0, 1), match='a'>"
 
 msgid ""
-"Note however that in :const:`MULTILINE` mode :func:`match` only matches at "
-"the beginning of the string, whereas using :func:`search` with a regular "
-"expression beginning with ``'^'`` will match at the beginning of each "
-"line. ::"
+"Note however that in :const:`MULTILINE` mode :func:`prefixmatch` only "
+"matches at the beginning of the string, whereas using :func:`search` with a "
+"regular expression beginning with ``'^'`` will match at the beginning of "
+"each line. ::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
-">>> re.match(\"X\", \"A\\nB\\nX\", re.MULTILINE)  # No match\n"
+">>> re.prefixmatch(\"X\", \"A\\nB\\nX\", re.MULTILINE)  # No match\n"
 ">>> re.search(\"^X\", \"A\\nB\\nX\", re.MULTILINE)  # Match\n"
 "<re.Match object; span=(4, 5), match='X'>"
 msgstr ""
+">>> re.prefixmatch(\"X\", \"A\\nB\\nX\", re.MULTILINE)  # No match\n"
+">>> re.search(\"^X\", \"A\\nB\\nX\", re.MULTILINE)  # Match\n"
+"<re.Match object; span=(4, 5), match='X'>"
 
-msgid "Making a Phonebook"
+msgid "prefixmatch() vs. match()"
+msgstr ""
+
+msgid ""
+"Why is the :func:`~re.match` function and method discouraged in favor of the "
+"longer :func:`~re.prefixmatch` spelling?"
+msgstr ""
+
+msgid ""
+"Many other languages have gained regex support libraries since regular "
+"expressions were added to Python. However in the most popular of those, they "
+"use the term *match* in their APIs to mean the unanchored behavior provided "
+"in Python by :func:`~re.search`. Thus use of the plain term *match* can be "
+"unclear to those used to other languages when reading or writing code and "
+"not familiar with the Python API's divergence from what otherwise become the "
+"industry norm."
+msgstr ""
+
+msgid ""
+"Quoting from the Zen Of Python (``python3 -m this``): *\"Explicit is better "
+"than implicit\"*. Anyone reading the name :func:`!prefixmatch` is likely to "
+"understand the intended semantics. When reading :func:`!match` there remains "
+"a seed of doubt about the intended behavior to anyone not already familiar "
+"with this old Python gotcha."
+msgstr ""
+
+msgid ""
+"We **do not** plan to remove the older :func:`!match` name, as it has been "
+"used in code for over 30 years. It has been :term:`soft deprecated`: code "
+"supporting older versions of Python should continue to use :func:`!match`, "
+"while new code should prefer :func:`!prefixmatch`."
+msgstr ""
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":func:`!prefixmatch`"
+msgstr ":func:`!prefixmatch`"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid ":func:`!match`"
+msgstr ":func:`!match`"
+
+msgid "Making a phonebook"
 msgstr ""
 
 msgid ""
@@ -1947,6 +2397,8 @@ msgid ""
 "using triple-quoted string syntax"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> text = \"\"\"Ross McFluff: 834.345.1254 155 Elm Street\n"
 "...\n"
@@ -1956,12 +2408,21 @@ msgid ""
 "...\n"
 "... Heather Albrecht: 548.326.4584 919 Park Place\"\"\""
 msgstr ""
+">>> text = \"\"\"Ross McFluff: 834.345.1254 155 Elm Street\n"
+"...\n"
+"... Ronald Heathmore: 892.345.3428 436 Finley Avenue\n"
+"... Frank Burger: 925.541.7625 662 South Dogwood Way\n"
+"...\n"
+"...\n"
+"... Heather Albrecht: 548.326.4584 919 Park Place\"\"\""
 
 msgid ""
 "The entries are separated by one or more newlines. Now we convert the string "
 "into a list with each nonempty line having its own entry:"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> entries = re.split(\"\\n+\", text)\n"
 ">>> entries\n"
@@ -1970,6 +2431,12 @@ msgid ""
 "'Frank Burger: 925.541.7625 662 South Dogwood Way',\n"
 "'Heather Albrecht: 548.326.4584 919 Park Place']"
 msgstr ""
+">>> entries = re.split(\"\\n+\", text)\n"
+">>> entries\n"
+"['Ross McFluff: 834.345.1254 155 Elm Street',\n"
+"'Ronald Heathmore: 892.345.3428 436 Finley Avenue',\n"
+"'Frank Burger: 925.541.7625 662 South Dogwood Way',\n"
+"'Heather Albrecht: 548.326.4584 919 Park Place']"
 
 msgid ""
 "Finally, split each entry into a list with first name, last name, telephone "
@@ -1977,6 +2444,8 @@ msgid ""
 "because the address has spaces, our splitting pattern, in it:"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> [re.split(\":? \", entry, maxsplit=3) for entry in entries]\n"
 "[['Ross', 'McFluff', '834.345.1254', '155 Elm Street'],\n"
@@ -1984,6 +2453,11 @@ msgid ""
 "['Frank', 'Burger', '925.541.7625', '662 South Dogwood Way'],\n"
 "['Heather', 'Albrecht', '548.326.4584', '919 Park Place']]"
 msgstr ""
+">>> [re.split(\":? \", entry, maxsplit=3) for entry in entries]\n"
+"[['Ross', 'McFluff', '834.345.1254', '155 Elm Street'],\n"
+"['Ronald', 'Heathmore', '892.345.3428', '436 Finley Avenue'],\n"
+"['Frank', 'Burger', '925.541.7625', '662 South Dogwood Way'],\n"
+"['Heather', 'Albrecht', '548.326.4584', '919 Park Place']]"
 
 msgid ""
 "The ``:?`` pattern matches the colon after the last name, so that it does "
@@ -1991,6 +2465,8 @@ msgid ""
 "separate the house number from the street name:"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> [re.split(\":? \", entry, maxsplit=4) for entry in entries]\n"
 "[['Ross', 'McFluff', '834.345.1254', '155', 'Elm Street'],\n"
@@ -1998,8 +2474,13 @@ msgid ""
 "['Frank', 'Burger', '925.541.7625', '662', 'South Dogwood Way'],\n"
 "['Heather', 'Albrecht', '548.326.4584', '919', 'Park Place']]"
 msgstr ""
+">>> [re.split(\":? \", entry, maxsplit=4) for entry in entries]\n"
+"[['Ross', 'McFluff', '834.345.1254', '155', 'Elm Street'],\n"
+"['Ronald', 'Heathmore', '892.345.3428', '436', 'Finley Avenue'],\n"
+"['Frank', 'Burger', '925.541.7625', '662', 'South Dogwood Way'],\n"
+"['Heather', 'Albrecht', '548.326.4584', '919', 'Park Place']]"
 
-msgid "Text Munging"
+msgid "Text munging"
 msgstr ""
 
 msgid ""
@@ -2009,6 +2490,8 @@ msgid ""
 "each word of a sentence except for the first and last characters::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> def repl(m):\n"
 "...     inner_word = list(m.group(2))\n"
@@ -2021,8 +2504,18 @@ msgid ""
 ">>> re.sub(r\"(\\w)(\\w+)(\\w)\", repl, text)\n"
 "'Pofsroser Aodlambelk, plasee reoprt yuor asnebces potlmrpy.'"
 msgstr ""
+">>> def repl(m):\n"
+"...     inner_word = list(m.group(2))\n"
+"...     random.shuffle(inner_word)\n"
+"...     return m.group(1) + \"\".join(inner_word) + m.group(3)\n"
+"...\n"
+">>> text = \"Professor Abdolmalek, please report your absences promptly.\"\n"
+">>> re.sub(r\"(\\w)(\\w+)(\\w)\", repl, text)\n"
+"'Poefsrosr Aealmlobdk, pslaee reorpt your abnseces plmrptoy.'\n"
+">>> re.sub(r\"(\\w)(\\w+)(\\w)\", repl, text)\n"
+"'Pofsroser Aodlambelk, plasee reoprt yuor asnebces potlmrpy.'"
 
-msgid "Finding all Adverbs"
+msgid "Finding all adverbs"
 msgstr ""
 
 msgid ""
@@ -2032,13 +2525,18 @@ msgid ""
 "manner::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> text = \"He was carefully disguised but captured quickly by police.\"\n"
 ">>> re.findall(r\"\\w+ly\\b\", text)\n"
 "['carefully', 'quickly']"
 msgstr ""
+">>> text = \"He was carefully disguised but captured quickly by police.\"\n"
+">>> re.findall(r\"\\w+ly\\b\", text)\n"
+"['carefully', 'quickly']"
 
-msgid "Finding all Adverbs and their Positions"
+msgid "Finding all adverbs and their positions"
 msgstr ""
 
 msgid ""
@@ -2049,6 +2547,8 @@ msgid ""
 "they would use :func:`finditer` in the following manner::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> text = \"He was carefully disguised but captured quickly by police.\"\n"
 ">>> for m in re.finditer(r\"\\w+ly\\b\", text):\n"
@@ -2056,8 +2556,13 @@ msgid ""
 "07-16: carefully\n"
 "40-47: quickly"
 msgstr ""
+">>> text = \"He was carefully disguised but captured quickly by police.\"\n"
+">>> for m in re.finditer(r\"\\w+ly\\b\", text):\n"
+"...     print('%02d-%02d: %s' % (m.start(), m.end(), m.group(0)))\n"
+"07-16: carefully\n"
+"40-47: quickly"
 
-msgid "Raw String Notation"
+msgid "Raw string notation"
 msgstr ""
 
 msgid ""
@@ -2067,12 +2572,18 @@ msgid ""
 "lines of code are functionally identical::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
-">>> re.match(r\"\\W(.)\\1\\W\", \" ff \")\n"
+">>> re.search(r\"\\W(.)\\1\\W\", \" ff \")\n"
 "<re.Match object; span=(0, 4), match=' ff '>\n"
-">>> re.match(\"\\\\W(.)\\\\1\\\\W\", \" ff \")\n"
+">>> re.search(\"\\\\W(.)\\\\1\\\\W\", \" ff \")\n"
 "<re.Match object; span=(0, 4), match=' ff '>"
 msgstr ""
+">>> re.search(r\"\\W(.)\\1\\W\", \" ff \")\n"
+"<re.Match object; span=(0, 4), match=' ff '>\n"
+">>> re.search(\"\\\\W(.)\\\\1\\\\W\", \" ff \")\n"
+"<re.Match object; span=(0, 4), match=' ff '>"
 
 msgid ""
 "When one wants to match a literal backslash, it must be escaped in the "
@@ -2081,14 +2592,20 @@ msgid ""
 "following lines of code functionally identical::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
-">>> re.match(r\"\\\\\", r\"\\\\\")\n"
+">>> re.search(r\"\\\\\", r\"\\\\\")\n"
 "<re.Match object; span=(0, 1), match='\\\\'>\n"
-">>> re.match(\"\\\\\\\\\", r\"\\\\\")\n"
+">>> re.search(\"\\\\\\\\\", r\"\\\\\")\n"
 "<re.Match object; span=(0, 1), match='\\\\'>"
 msgstr ""
+">>> re.search(r\"\\\\\", r\"\\\\\")\n"
+"<re.Match object; span=(0, 1), match='\\\\'>\n"
+">>> re.search(\"\\\\\\\\\", r\"\\\\\")\n"
+"<re.Match object; span=(0, 1), match='\\\\'>"
 
-msgid "Writing a Tokenizer"
+msgid "Writing a tokenizer"
 msgstr ""
 
 msgid ""
@@ -2103,13 +2620,15 @@ msgid ""
 "successive matches::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "from typing import NamedTuple\n"
 "import re\n"
 "\n"
 "class Token(NamedTuple):\n"
 "    type: str\n"
-"    value: str\n"
+"    value: int | float | str\n"
 "    line: int\n"
 "    column: int\n"
 "\n"
@@ -2157,10 +2676,64 @@ msgid ""
 "for token in tokenize(statements):\n"
 "    print(token)"
 msgstr ""
+"from typing import NamedTuple\n"
+"import re\n"
+"\n"
+"class Token(NamedTuple):\n"
+"    type: str\n"
+"    value: int | float | str\n"
+"    line: int\n"
+"    column: int\n"
+"\n"
+"def tokenize(code):\n"
+"    keywords = {'IF', 'THEN', 'ENDIF', 'FOR', 'NEXT', 'GOSUB', 'RETURN'}\n"
+"    token_specification = [\n"
+"        ('NUMBER',   r'\\d+(\\.\\d*)?'),  # Integer or decimal number\n"
+"        ('ASSIGN',   r':='),           # Assignment operator\n"
+"        ('END',      r';'),            # Statement terminator\n"
+"        ('ID',       r'[A-Za-z]+'),    # Identifiers\n"
+"        ('OP',       r'[+\\-*/]'),      # Arithmetic operators\n"
+"        ('NEWLINE',  r'\\n'),           # Line endings\n"
+"        ('SKIP',     r'[ \\t]+'),       # Skip over spaces and tabs\n"
+"        ('MISMATCH', r'.'),            # Any other character\n"
+"    ]\n"
+"    tok_regex = '|'.join('(?P<%s>%s)' % pair for pair in "
+"token_specification)\n"
+"    line_num = 1\n"
+"    line_start = 0\n"
+"    for mo in re.finditer(tok_regex, code):\n"
+"        kind = mo.lastgroup\n"
+"        value = mo.group()\n"
+"        column = mo.start() - line_start\n"
+"        if kind == 'NUMBER':\n"
+"            value = float(value) if '.' in value else int(value)\n"
+"        elif kind == 'ID' and value in keywords:\n"
+"            kind = value\n"
+"        elif kind == 'NEWLINE':\n"
+"            line_start = mo.end()\n"
+"            line_num += 1\n"
+"            continue\n"
+"        elif kind == 'SKIP':\n"
+"            continue\n"
+"        elif kind == 'MISMATCH':\n"
+"            raise RuntimeError(f'{value!r} unexpected on line {line_num}')\n"
+"        yield Token(kind, value, line_num, column)\n"
+"\n"
+"statements = '''\n"
+"    IF quantity THEN\n"
+"        total := total + price * quantity;\n"
+"        tax := price * 0.05;\n"
+"    ENDIF;\n"
+"'''\n"
+"\n"
+"for token in tokenize(statements):\n"
+"    print(token)"
 
 msgid "The tokenizer produces the following output::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "Token(type='IF', value='IF', line=2, column=4)\n"
 "Token(type='ID', value='quantity', line=2, column=7)\n"
@@ -2182,6 +2755,25 @@ msgid ""
 "Token(type='ENDIF', value='ENDIF', line=5, column=4)\n"
 "Token(type='END', value=';', line=5, column=9)"
 msgstr ""
+"Token(type='IF', value='IF', line=2, column=4)\n"
+"Token(type='ID', value='quantity', line=2, column=7)\n"
+"Token(type='THEN', value='THEN', line=2, column=16)\n"
+"Token(type='ID', value='total', line=3, column=8)\n"
+"Token(type='ASSIGN', value=':=', line=3, column=14)\n"
+"Token(type='ID', value='total', line=3, column=17)\n"
+"Token(type='OP', value='+', line=3, column=23)\n"
+"Token(type='ID', value='price', line=3, column=25)\n"
+"Token(type='OP', value='*', line=3, column=31)\n"
+"Token(type='ID', value='quantity', line=3, column=33)\n"
+"Token(type='END', value=';', line=3, column=41)\n"
+"Token(type='ID', value='tax', line=4, column=8)\n"
+"Token(type='ASSIGN', value=':=', line=4, column=12)\n"
+"Token(type='ID', value='price', line=4, column=15)\n"
+"Token(type='OP', value='*', line=4, column=21)\n"
+"Token(type='NUMBER', value=0.05, line=4, column=23)\n"
+"Token(type='END', value=';', line=4, column=27)\n"
+"Token(type='ENDIF', value='ENDIF', line=5, column=4)\n"
+"Token(type='END', value=';', line=5, column=9)"
 
 msgid ""
 "Friedl, Jeffrey. Mastering Regular Expressions. 3rd ed., O'Reilly Media, "
@@ -2199,11 +2791,15 @@ msgstr ""
 msgid "^ (caret)"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "$ (dollar)"
-msgstr ""
+msgstr "$ (dollar)"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=d132b9201f27 run=2026-08-17T16:43Z
+#, fuzzy
 msgid "* (asterisk)"
-msgstr ""
+msgstr "* (dấu sao)"
 
 msgid "+ (plus)"
 msgstr ""
@@ -2211,23 +2807,35 @@ msgstr ""
 msgid "? (question mark)"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "*?"
-msgstr ""
+msgstr "*?"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "+?"
-msgstr ""
+msgstr "+?"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "??"
-msgstr ""
+msgstr "??"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "*+"
-msgstr ""
+msgstr "*+"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "++"
-msgstr ""
+msgstr "++"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "?+"
-msgstr ""
+msgstr "?+"
 
 msgid "{} (curly brackets)"
 msgstr ""
@@ -2247,104 +2855,168 @@ msgstr ""
 msgid "() (parentheses)"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "(?"
-msgstr ""
+msgstr "(?"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "(?:"
-msgstr ""
+msgstr "(?:"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "(?P<"
-msgstr ""
+msgstr "(?P<"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "(?P="
-msgstr ""
+msgstr "(?P="
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "(?#"
-msgstr ""
+msgstr "(?#"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "(?="
-msgstr ""
+msgstr "(?="
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "(?!"
-msgstr ""
+msgstr "(?!"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "(?<="
-msgstr ""
+msgstr "(?<="
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "(?<!"
-msgstr ""
+msgstr "(?<!"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "(?("
-msgstr ""
+msgstr "(?("
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "\\A"
-msgstr ""
+msgstr "\\A"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "\\b"
-msgstr ""
+msgstr "\\b"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "\\B"
-msgstr ""
+msgstr "\\B"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "\\d"
-msgstr ""
+msgstr "\\d"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "\\D"
-msgstr ""
+msgstr "\\D"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "\\s"
-msgstr ""
+msgstr "\\s"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "\\S"
-msgstr ""
+msgstr "\\S"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "\\w"
-msgstr ""
+msgstr "\\w"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "\\W"
-msgstr ""
+msgstr "\\W"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "\\z"
-msgstr ""
+msgstr "\\z"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "\\Z"
-msgstr ""
+msgstr "\\Z"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "\\a"
-msgstr ""
+msgstr "\\a"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "\\f"
-msgstr ""
+msgstr "\\f"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "\\n"
-msgstr ""
+msgstr "\\n"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "\\r"
-msgstr ""
+msgstr "\\r"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "\\t"
-msgstr ""
+msgstr "\\t"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "\\u"
-msgstr ""
+msgstr "\\u"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "\\U"
-msgstr ""
+msgstr "\\U"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "\\v"
-msgstr ""
+msgstr "\\v"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "\\x"
-msgstr ""
+msgstr "\\x"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "\\\\"
-msgstr ""
+msgstr "\\\\"
 
 msgid "# (hash)"
 msgstr "# (hash)"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "\\g"
-msgstr ""
+msgstr "\\g"
 
 msgid "scanf (C function)"
 msgstr ""

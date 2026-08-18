@@ -5,28 +5,31 @@
 #
 # Translators:
 # python-doc bot, 2025
+# Nguyen Duc Tam, 2026
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-17 14:50+0000\n"
-"PO-Revision-Date: 2025-09-16 00:00+0000\n"
-"Last-Translator: python-doc bot, 2025\n"
-"Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
-"vi/)\n"
+"POT-Creation-Date: 2026-05-08 18:34+0000\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: pydocvi 0.1.2\n"
 
 msgid "Memory Management"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Overview"
-msgstr ""
+msgstr "Overview"
 
 msgid ""
 "Memory management in Python involves a private heap containing all Python "
@@ -69,6 +72,8 @@ msgid ""
 "in the following example::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "PyObject *res;\n"
 "char *buf = (char *) malloc(BUFSIZ); /* for I/O */\n"
@@ -80,6 +85,15 @@ msgid ""
 "free(buf); /* malloc'ed */\n"
 "return res;"
 msgstr ""
+"PyObject *res;\n"
+"char *buf = (char *) malloc(BUFSIZ); /* for I/O */\n"
+"\n"
+"if (buf == NULL)\n"
+"    return PyErr_NoMemory();\n"
+"...Do some I/O operation involving buf...\n"
+"res = PyBytes_FromString(buf);\n"
+"free(buf); /* malloc'ed */\n"
+"return res;"
 
 msgid ""
 "In this example, the memory request for the I/O buffer is handled by the C "
@@ -345,20 +359,30 @@ msgstr ""
 msgid "Corresponding function or macro"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`PyMem_Malloc`"
-msgstr ""
+msgstr ":c:func:`PyMem_Malloc`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:macro:`PyMem_New`"
-msgstr ""
+msgstr ":c:macro:`PyMem_New`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`PyMem_Realloc`"
-msgstr ""
+msgstr ":c:func:`PyMem_Realloc`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:macro:`PyMem_Resize`"
-msgstr ""
+msgstr ":c:macro:`PyMem_Resize`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`PyMem_Free`"
-msgstr ""
+msgstr ":c:func:`PyMem_Free`"
 
 msgid ""
 "The macros are now aliases of the corresponding functions and macros. "
@@ -434,26 +458,40 @@ msgid ""
 "allocated by types that support garbage collection."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`PyObject_Malloc`"
-msgstr ""
+msgstr ":c:func:`PyObject_Malloc`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`PyObject_Realloc`"
-msgstr ""
+msgstr ":c:func:`PyObject_Realloc`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`PyObject_Calloc`"
-msgstr ""
+msgstr ":c:func:`PyObject_Calloc`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:macro:`PyObject_New`"
-msgstr ""
+msgstr ":c:macro:`PyObject_New`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:macro:`PyObject_NewVar`"
-msgstr ""
+msgstr ":c:macro:`PyObject_NewVar`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`PyType_GenericAlloc`"
-msgstr ""
+msgstr ":c:func:`PyType_GenericAlloc`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:member:`~PyTypeObject.tp_free`"
-msgstr ""
+msgstr ":c:member:`~PyTypeObject.tp_free`"
 
 msgid "Default Memory Allocators"
 msgstr ""
@@ -461,38 +499,56 @@ msgstr ""
 msgid "Default memory allocators:"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Configuration"
-msgstr ""
+msgstr "Configuration"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "PyMem_RawMalloc"
-msgstr ""
+msgstr "PyMem_RawMalloc"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "PyMem_Malloc"
-msgstr ""
+msgstr "PyMem_Malloc"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "PyObject_Malloc"
-msgstr ""
+msgstr "PyObject_Malloc"
 
 msgid "Release build"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"pymalloc\"``"
-msgstr ""
+msgstr "``\"pymalloc\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``malloc``"
-msgstr ""
+msgstr "``malloc``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``pymalloc``"
-msgstr ""
+msgstr "``pymalloc``"
 
 msgid "Debug build"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"pymalloc_debug\"``"
-msgstr ""
+msgstr "``\"pymalloc_debug\"``"
 
 msgid "``malloc`` + debug"
 msgstr ""
@@ -503,29 +559,39 @@ msgstr ""
 msgid "Release build, without pymalloc"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"malloc\"``"
-msgstr ""
+msgstr "``\"malloc\"``"
 
 msgid "Debug build, without pymalloc"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"malloc_debug\"``"
-msgstr ""
+msgstr "``\"malloc_debug\"``"
 
 msgid "Free-threaded build"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"mimalloc\"``"
-msgstr ""
+msgstr "``\"mimalloc\"``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``mimalloc``"
-msgstr ""
+msgstr "``mimalloc``"
 
 msgid "Free-threaded debug build"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"mimalloc_debug\"``"
-msgstr ""
+msgstr "``\"mimalloc_debug\"``"
 
 msgid "``mimalloc`` + debug"
 msgstr ""
@@ -541,11 +607,15 @@ msgid ""
 "func:`malloc`, :c:func:`calloc`, :c:func:`realloc` and :c:func:`free`."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``pymalloc``: :ref:`pymalloc memory allocator <pymalloc>`."
-msgstr ""
+msgstr "``pymalloc``: :ref:`pymalloc memory allocator <pymalloc>`."
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``mimalloc``: :ref:`mimalloc memory allocator <mimalloc>`."
-msgstr ""
+msgstr "``mimalloc``: :ref:`mimalloc memory allocator <mimalloc>`."
 
 msgid ""
 "\"+ debug\": with :ref:`debug hooks on the Python memory allocators <pymem-"
@@ -563,38 +633,50 @@ msgid ""
 "following fields:"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Field"
-msgstr ""
+msgstr "Field"
 
 msgid "Meaning"
-msgstr ""
+msgstr "Ý nghĩa"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``void *ctx``"
-msgstr ""
+msgstr "``void *ctx``"
 
 msgid "user context passed as first argument"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``void* malloc(void *ctx, size_t size)``"
-msgstr ""
+msgstr "``void* malloc(void *ctx, size_t size)``"
 
 msgid "allocate a memory block"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``void* calloc(void *ctx, size_t nelem, size_t elsize)``"
-msgstr ""
+msgstr "``void* calloc(void *ctx, size_t nelem, size_t elsize)``"
 
 msgid "allocate a memory block initialized with zeros"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``void* realloc(void *ctx, void *ptr, size_t new_size)``"
-msgstr ""
+msgstr "``void* realloc(void *ctx, void *ptr, size_t new_size)``"
 
 msgid "allocate or resize a memory block"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``void free(void *ctx, void *ptr)``"
-msgstr ""
+msgstr "``void free(void *ctx, void *ptr)``"
 
 msgid "free a memory block"
 msgstr ""
@@ -610,26 +692,40 @@ msgstr ""
 msgid "Functions:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`PyMem_RawMalloc`"
-msgstr ""
+msgstr ":c:func:`PyMem_RawMalloc`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`PyMem_RawRealloc`"
-msgstr ""
+msgstr ":c:func:`PyMem_RawRealloc`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`PyMem_RawCalloc`"
-msgstr ""
+msgstr ":c:func:`PyMem_RawCalloc`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`PyMem_RawFree`"
-msgstr ""
+msgstr ":c:func:`PyMem_RawFree`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`PyMem_Malloc`,"
-msgstr ""
+msgstr ":c:func:`PyMem_Malloc`,"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`PyMem_Calloc`"
-msgstr ""
+msgstr ":c:func:`PyMem_Calloc`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":c:func:`PyObject_Free`"
-msgstr ""
+msgstr ":c:func:`PyObject_Free`"
 
 msgid "Get the memory block allocator of the specified domain."
 msgstr ""
@@ -758,16 +854,20 @@ msgid ""
 "from a Python slice):"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``p[-2*S:-S]``"
-msgstr ""
+msgstr "``p[-2*S:-S]``"
 
 msgid ""
 "Number of bytes originally asked for.  This is a size_t, big-endian (easier "
 "to read in a memory dump)."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``p[-S]``"
-msgstr ""
+msgstr "``p[-S]``"
 
 msgid "API identifier (ASCII character):"
 msgstr ""
@@ -781,14 +881,18 @@ msgstr ""
 msgid "``'o'`` for :c:macro:`PYMEM_DOMAIN_OBJ`."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``p[-S+1:0]``"
-msgstr ""
+msgstr "``p[-S+1:0]``"
 
 msgid "Copies of PYMEM_FORBIDDENBYTE.  Used to catch under- writes and reads."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``p[0:N]``"
-msgstr ""
+msgstr "``p[0:N]``"
 
 msgid ""
 "The requested memory, filled with copies of PYMEM_CLEANBYTE, used to catch "
@@ -800,14 +904,18 @@ msgid ""
 "bytes are also filled with PYMEM_DEADBYTE."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``p[N:N+S]``"
-msgstr ""
+msgstr "``p[N:N+S]``"
 
 msgid "Copies of PYMEM_FORBIDDENBYTE.  Used to catch over- writes and reads."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``p[N+S:N+2*S]``"
-msgstr ""
+msgstr "``p[N+S:N+2*S]``"
 
 msgid ""
 "Only used if the ``PYMEM_DEBUG_SERIALNO`` macro is defined (not defined by "
@@ -858,8 +966,13 @@ msgid ""
 "Python has a *pymalloc* allocator optimized for small objects (smaller or "
 "equal to 512 bytes) with a short lifetime. It uses memory mappings called "
 "\"arenas\" with a fixed size of either 256 KiB on 32-bit platforms or 1 MiB "
-"on 64-bit platforms. It falls back to :c:func:`PyMem_RawMalloc` and :c:func:"
-"`PyMem_RawRealloc` for allocations larger than 512 bytes."
+"on 64-bit platforms. When Python is configured with :option:`--with-pymalloc-"
+"hugepages`, the arena size on 64-bit platforms is increased to 2 MiB to "
+"match the huge page size, and arena allocation will attempt to use huge "
+"pages (``MAP_HUGETLB`` on Linux, ``MEM_LARGE_PAGES`` on Windows) with "
+"automatic fallback to regular pages. It falls back to :c:func:"
+"`PyMem_RawMalloc` and :c:func:`PyMem_RawRealloc` for allocations larger than "
+"512 bytes."
 msgstr ""
 
 msgid ""
@@ -900,14 +1013,18 @@ msgid ""
 "fields:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``void* alloc(void *ctx, size_t size)``"
-msgstr ""
+msgstr "``void* alloc(void *ctx, size_t size)``"
 
 msgid "allocate an arena of size bytes"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``void free(void *ctx, void *ptr, size_t size)``"
-msgstr ""
+msgstr "``void free(void *ctx, void *ptr, size_t size)``"
 
 msgid "free an arena"
 msgstr ""
@@ -982,6 +1099,8 @@ msgid ""
 "set::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "PyObject *res;\n"
 "char *buf = (char *) PyMem_Malloc(BUFSIZ); /* for I/O */\n"
@@ -993,10 +1112,21 @@ msgid ""
 "PyMem_Free(buf); /* allocated with PyMem_Malloc */\n"
 "return res;"
 msgstr ""
+"PyObject *res;\n"
+"char *buf = (char *) PyMem_Malloc(BUFSIZ); /* for I/O */\n"
+"\n"
+"if (buf == NULL)\n"
+"    return PyErr_NoMemory();\n"
+"/* ...Do some I/O operation involving buf... */\n"
+"res = PyBytes_FromString(buf);\n"
+"PyMem_Free(buf); /* allocated with PyMem_Malloc */\n"
+"return res;"
 
 msgid "The same code using the type-oriented function set::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "PyObject *res;\n"
 "char *buf = PyMem_New(char, BUFSIZ); /* for I/O */\n"
@@ -1008,6 +1138,15 @@ msgid ""
 "PyMem_Free(buf); /* allocated with PyMem_New */\n"
 "return res;"
 msgstr ""
+"PyObject *res;\n"
+"char *buf = PyMem_New(char, BUFSIZ); /* for I/O */\n"
+"\n"
+"if (buf == NULL)\n"
+"    return PyErr_NoMemory();\n"
+"/* ...Do some I/O operation involving buf... */\n"
+"res = PyBytes_FromString(buf);\n"
+"PyMem_Free(buf); /* allocated with PyMem_New */\n"
+"return res;"
 
 msgid ""
 "Note that in the two examples above, the buffer is always manipulated via "

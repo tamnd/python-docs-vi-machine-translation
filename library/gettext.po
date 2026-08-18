@@ -9,18 +9,18 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-17 14:50+0000\n"
-"PO-Revision-Date: 2025-09-16 00:01+0000\n"
-"Last-Translator: Nguyen Duc Tam, 2026\n"
-"Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
-"vi/)\n"
+"POT-Creation-Date: 2026-05-08 18:34+0000\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: pydocvi 0.1.2\n"
 
 msgid ":mod:`!gettext` --- Multilingual internationalization services"
 msgstr ""
@@ -119,6 +119,8 @@ msgstr ""
 msgid "Here's an example of typical usage for this API::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import gettext\n"
 "gettext.bindtextdomain('myapplication', '/path/to/my/language/directory')\n"
@@ -127,6 +129,12 @@ msgid ""
 "# ...\n"
 "print(_('This is a translatable string.'))"
 msgstr ""
+"import gettext\n"
+"gettext.bindtextdomain('myapplication', '/path/to/my/language/directory')\n"
+"gettext.textdomain('myapplication')\n"
+"_ = gettext.gettext\n"
+"# ...\n"
+"print(_('This is a translatable string.'))"
 
 msgid "Class-based API"
 msgstr ""
@@ -163,8 +171,10 @@ msgid ""
 "through them, searching for an existing file built of these components:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":file:`{localedir}/{language}/LC_MESSAGES/{domain}.mo`"
-msgstr ""
+msgstr ":file:`{localedir}/{language}/LC_MESSAGES/{domain}.mo`"
 
 msgid ""
 "The first such file name that exists is returned by :func:`find`. If no such "
@@ -197,6 +207,7 @@ msgstr ""
 
 msgid ":exc:`IOError` used to be raised, it is now an alias of :exc:`OSError`."
 msgstr ""
+":exc:`IOError` trước đây được kích hoạt, hiện là bí danh của :exc:`OSError`."
 
 msgid "*codeset* parameter is removed."
 msgstr ""
@@ -311,11 +322,16 @@ msgid ""
 "this code to make :func:`!_` available to their module::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import gettext\n"
 "t = gettext.translation('mymodule', ...)\n"
 "_ = t.gettext"
 msgstr ""
+"import gettext\n"
+"t = gettext.translation('mymodule', ...)\n"
+"_ = t.gettext"
 
 msgid ""
 "This puts :func:`!_` only in the module's global namespace and so only "
@@ -391,6 +407,8 @@ msgstr ""
 msgid "Here is an example::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "n = len(os.listdir('.'))\n"
 "cat = GNUTranslations(somefile)\n"
@@ -399,6 +417,12 @@ msgid ""
 "    'There are %(num)d files in this directory',\n"
 "    n) % {'num': n}"
 msgstr ""
+"n = len(os.listdir('.'))\n"
+"cat = GNUTranslations(somefile)\n"
+"message = cat.ngettext(\n"
+"    'There is %(num)d file in this directory',\n"
+"    'There are %(num)d files in this directory',\n"
+"    n) % {'num': n}"
 
 msgid ""
 "Look up the *context* and *message* id in the catalog and return the "
@@ -490,12 +514,18 @@ msgid ""
 "<gettext>`.  For example::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "filename = 'mylog.txt'\n"
 "message = _('writing a log message')\n"
 "with open(filename, 'w') as fp:\n"
 "    fp.write(message)"
 msgstr ""
+"filename = 'mylog.txt'\n"
+"message = _('writing a log message')\n"
+"with open(filename, 'w') as fp:\n"
+"    fp.write(message)"
 
 msgid ""
 "In this example, the string ``'writing a log message'`` is marked as a "
@@ -566,11 +596,16 @@ msgid ""
 "your module::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import gettext\n"
 "t = gettext.translation('spam', '/usr/share/locale')\n"
 "_ = t.gettext"
 msgstr ""
+"import gettext\n"
+"t = gettext.translation('spam', '/usr/share/locale')\n"
+"_ = t.gettext"
 
 msgid "Localizing your application"
 msgstr ""
@@ -587,20 +622,28 @@ msgid ""
 "main driver file of your application::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import gettext\n"
 "gettext.install('myapplication')"
 msgstr ""
+"import gettext\n"
+"gettext.install('myapplication')"
 
 msgid ""
 "If you need to set the locale directory, you can pass it into the :func:"
 "`install` function::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import gettext\n"
 "gettext.install('myapplication', '/usr/share/locale')"
 msgstr ""
+"import gettext\n"
+"gettext.install('myapplication', '/usr/share/locale')"
 
 msgid "Changing languages on the fly"
 msgstr ""
@@ -611,6 +654,8 @@ msgid ""
 "explicitly, like so::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import gettext\n"
 "\n"
@@ -627,6 +672,20 @@ msgid ""
 "# ... more time goes by, user selects language 3\n"
 "lang3.install()"
 msgstr ""
+"import gettext\n"
+"\n"
+"lang1 = gettext.translation('myapplication', languages=['en'])\n"
+"lang2 = gettext.translation('myapplication', languages=['fr'])\n"
+"lang3 = gettext.translation('myapplication', languages=['de'])\n"
+"\n"
+"# start by using language1\n"
+"lang1.install()\n"
+"\n"
+"# ... time goes by, user selects language 2\n"
+"lang2.install()\n"
+"\n"
+"# ... more time goes by, user selects language 3\n"
+"lang3.install()"
 
 msgid "Deferred translations"
 msgstr ""
@@ -637,6 +696,8 @@ msgid ""
 "actual translation until later.  A classic example is::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "animals = ['mollusk',\n"
 "           'albatross',\n"
@@ -647,6 +708,14 @@ msgid ""
 "for a in animals:\n"
 "    print(a)"
 msgstr ""
+"animals = ['mollusk',\n"
+"           'albatross',\n"
+"           'rat',\n"
+"           'penguin',\n"
+"           'python', ]\n"
+"# ...\n"
+"for a in animals:\n"
+"    print(a)"
 
 msgid ""
 "Here, you want to mark the strings in the ``animals`` list as being "
@@ -657,6 +726,8 @@ msgstr ""
 msgid "Here is one way you can handle this situation::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def _(message): return message\n"
 "\n"
@@ -672,6 +743,19 @@ msgid ""
 "for a in animals:\n"
 "    print(_(a))"
 msgstr ""
+"def _(message): return message\n"
+"\n"
+"animals = [_('mollusk'),\n"
+"           _('albatross'),\n"
+"           _('rat'),\n"
+"           _('penguin'),\n"
+"           _('python'), ]\n"
+"\n"
+"del _\n"
+"\n"
+"# ...\n"
+"for a in animals:\n"
+"    print(_(a))"
 
 msgid ""
 "This works because the dummy definition of :func:`!_` simply returns the "
@@ -690,6 +774,8 @@ msgstr ""
 msgid "Another way to handle this is with the following example::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def N_(message): return message\n"
 "\n"
@@ -703,6 +789,17 @@ msgid ""
 "for a in animals:\n"
 "    print(_(a))"
 msgstr ""
+"def N_(message): return message\n"
+"\n"
+"animals = [N_('mollusk'),\n"
+"           N_('albatross'),\n"
+"           N_('rat'),\n"
+"           N_('penguin'),\n"
+"           N_('python'), ]\n"
+"\n"
+"# ...\n"
+"for a in animals:\n"
+"    print(_(a))"
 
 msgid ""
 "In this case, you are marking translatable strings with the function :func:`!"
@@ -715,8 +812,10 @@ msgid ""
 "MarkThisStringForTranslation`."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Acknowledgements"
-msgstr ""
+msgstr "Acknowledgements"
 
 msgid ""
 "The following people contributed code, feedback, design suggestions, "
@@ -767,8 +866,12 @@ msgstr ""
 msgid "_ (underscore)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "gettext"
-msgstr ""
+msgstr "gettext"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "GNOME"
-msgstr ""
+msgstr "GNOME"

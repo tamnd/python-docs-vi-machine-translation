@@ -9,18 +9,18 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-09 15:16+0000\n"
-"PO-Revision-Date: 2025-09-16 00:01+0000\n"
-"Last-Translator: python-doc bot, 2025\n"
-"Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
-"vi/)\n"
+"POT-Creation-Date: 2026-05-08 18:34+0000\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: pydocvi 0.1.2\n"
 
 msgid ":mod:`!stat` --- Interpreting :func:`~os.stat` results"
 msgstr ""
@@ -101,6 +101,8 @@ msgstr ""
 msgid "Example::"
 msgstr "Ví dụ::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import os, sys\n"
 "from stat import *\n"
@@ -128,6 +130,31 @@ msgid ""
 "if __name__ == '__main__':\n"
 "    walktree(sys.argv[1], visitfile)"
 msgstr ""
+"import os, sys\n"
+"from stat import *\n"
+"\n"
+"def walktree(top, callback):\n"
+"    '''recursively descend the directory tree rooted at top,\n"
+"       calling the callback function for each regular file'''\n"
+"\n"
+"    for f in os.listdir(top):\n"
+"        pathname = os.path.join(top, f)\n"
+"        mode = os.lstat(pathname).st_mode\n"
+"        if S_ISDIR(mode):\n"
+"            # It's a directory, recurse into it\n"
+"            walktree(pathname, callback)\n"
+"        elif S_ISREG(mode):\n"
+"            # It's a file, call the callback function\n"
+"            callback(pathname)\n"
+"        else:\n"
+"            # Unknown file type, print a message\n"
+"            print('Skipping %s' % pathname)\n"
+"\n"
+"def visitfile(file):\n"
+"    print('visiting', file)\n"
+"\n"
+"if __name__ == '__main__':\n"
+"    walktree(sys.argv[1], visitfile)"
 
 msgid ""
 "An additional utility function is provided to convert a file's mode in a "
@@ -199,8 +226,10 @@ msgid ""
 "flags:"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Socket."
-msgstr ""
+msgstr "Socket."
 
 msgid "Symbolic link."
 msgstr ""
@@ -211,23 +240,31 @@ msgstr ""
 msgid "Block device."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Directory."
-msgstr ""
+msgstr "Directory."
 
 msgid "Character device."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "FIFO."
-msgstr ""
+msgstr "FIFO."
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Door."
-msgstr ""
+msgstr "Door."
 
 msgid "Event port."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Whiteout."
-msgstr ""
+msgstr "Whiteout."
 
 msgid ""
 ":data:`S_IFDOOR`, :data:`S_IFPORT` or :data:`S_IFWHT` are defined as 0 when "
@@ -350,8 +387,10 @@ msgstr ""
 msgid "All super-user supported flags"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Availability"
-msgstr ""
+msgstr "Availability"
 
 msgid "All super-user read-only synthetic flags"
 msgstr ""
@@ -388,4 +427,12 @@ msgid ""
 "On Windows, the following constants are available for comparing against the "
 "``st_reparse_tag`` member returned by :func:`os.lstat`. These are well-known "
 "constants, but are not an exhaustive list."
+msgstr ""
+
+msgid ""
+"On Linux, the following file attribute constants are available for use when "
+"testing bits in the :attr:`~os.statx_result.stx_attributes` and :attr:`~os."
+"statx_result.stx_attributes_mask` members returned by :func:`os.statx`.  See "
+"the :manpage:`statx(2)` man page for more detail on the meaning of these "
+"constants."
 msgstr ""

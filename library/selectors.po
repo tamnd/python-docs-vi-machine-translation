@@ -5,22 +5,23 @@
 #
 # Translators:
 # python-doc bot, 2025
+# Nguyen Duc Tam, 2026
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-17 14:50+0000\n"
-"PO-Revision-Date: 2025-09-16 00:01+0000\n"
-"Last-Translator: python-doc bot, 2025\n"
-"Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
-"vi/)\n"
+"POT-Creation-Date: 2026-04-23 15:47+0000\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: pydocvi 0.1.2\n"
 
 msgid ":mod:`!selectors` --- High-level I/O multiplexing"
 msgstr ""
@@ -28,8 +29,10 @@ msgstr ""
 msgid "**Source code:** :source:`Lib/selectors.py`"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Introduction"
-msgstr ""
+msgstr "Introduction"
 
 msgid ""
 "This module allows high-level and efficient I/O multiplexing, built upon "
@@ -59,22 +62,28 @@ msgid ""
 "devices)."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`select`"
-msgstr ""
+msgstr ":mod:`select`"
 
 msgid "Low-level I/O multiplexing module."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Availability"
-msgstr ""
+msgstr "Availability"
 
 msgid ""
 "This module does not work or is not available on WebAssembly. See :ref:`wasm-"
 "availability` for more information."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Classes"
-msgstr ""
+msgstr "Classes"
 
 msgid "Classes hierarchy::"
 msgstr ""
@@ -94,11 +103,13 @@ msgid ""
 "module's constants below:"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Constant"
-msgstr ""
+msgstr "Constant"
 
 msgid "Meaning"
-msgstr ""
+msgstr "Ý nghĩa"
 
 msgid "Available for read"
 msgstr ""
@@ -283,6 +294,8 @@ msgstr "Ví dụ"
 msgid "Here is a simple echo server implementation::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import selectors\n"
 "import socket\n"
@@ -317,3 +330,35 @@ msgid ""
 "        callback = key.data\n"
 "        callback(key.fileobj, mask)"
 msgstr ""
+"import selectors\n"
+"import socket\n"
+"\n"
+"sel = selectors.DefaultSelector()\n"
+"\n"
+"def accept(sock, mask):\n"
+"    conn, addr = sock.accept()  # Should be ready\n"
+"    print('accepted', conn, 'from', addr)\n"
+"    conn.setblocking(False)\n"
+"    sel.register(conn, selectors.EVENT_READ, read)\n"
+"\n"
+"def read(conn, mask):\n"
+"    data = conn.recv(1000)  # Should be ready\n"
+"    if data:\n"
+"        print('echoing', repr(data), 'to', conn)\n"
+"        conn.send(data)  # Hope it won't block\n"
+"    else:\n"
+"        print('closing', conn)\n"
+"        sel.unregister(conn)\n"
+"        conn.close()\n"
+"\n"
+"sock = socket.socket()\n"
+"sock.bind(('localhost', 1234))\n"
+"sock.listen(100)\n"
+"sock.setblocking(False)\n"
+"sel.register(sock, selectors.EVENT_READ, accept)\n"
+"\n"
+"while True:\n"
+"    events = sel.select()\n"
+"    for key, mask in events:\n"
+"        callback = key.data\n"
+"        callback(key.fileobj, mask)"

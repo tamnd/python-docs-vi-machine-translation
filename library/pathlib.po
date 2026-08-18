@@ -9,18 +9,18 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-17 14:50+0000\n"
-"PO-Revision-Date: 2025-09-16 00:01+0000\n"
-"Last-Translator: Nguyen Duc Tam, 2026\n"
-"Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
-"vi/)\n"
+"POT-Creation-Date: 2026-05-08 18:34+0000\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: pydocvi 0.1.2\n"
 
 msgid ":mod:`!pathlib` --- Object-oriented filesystem paths"
 msgstr ""
@@ -81,32 +81,48 @@ msgstr ""
 msgid "Importing the main class::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ">>> from pathlib import Path"
-msgstr ""
+msgstr ">>> from pathlib import Path"
 
 msgid "Listing subdirectories::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> p = Path('.')\n"
 ">>> [x for x in p.iterdir() if x.is_dir()]\n"
 "[PosixPath('.hg'), PosixPath('docs'), PosixPath('dist'),\n"
 " PosixPath('__pycache__'), PosixPath('build')]"
 msgstr ""
+">>> p = Path('.')\n"
+">>> [x for x in p.iterdir() if x.is_dir()]\n"
+"[PosixPath('.hg'), PosixPath('docs'), PosixPath('dist'),\n"
+" PosixPath('__pycache__'), PosixPath('build')]"
 
 msgid "Listing Python source files in this directory tree::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> list(p.glob('**/*.py'))\n"
 "[PosixPath('test_pathlib.py'), PosixPath('setup.py'),\n"
 " PosixPath('pathlib.py'), PosixPath('docs/conf.py'),\n"
 " PosixPath('build/lib/pathlib.py')]"
 msgstr ""
+">>> list(p.glob('**/*.py'))\n"
+"[PosixPath('test_pathlib.py'), PosixPath('setup.py'),\n"
+" PosixPath('pathlib.py'), PosixPath('docs/conf.py'),\n"
+" PosixPath('build/lib/pathlib.py')]"
 
 msgid "Navigating inside a directory tree::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> p = Path('/etc')\n"
 ">>> q = p / 'init.d' / 'reboot'\n"
@@ -115,28 +131,47 @@ msgid ""
 ">>> q.resolve()\n"
 "PosixPath('/etc/rc.d/init.d/halt')"
 msgstr ""
+">>> p = Path('/etc')\n"
+">>> q = p / 'init.d' / 'reboot'\n"
+">>> q\n"
+"PosixPath('/etc/init.d/reboot')\n"
+">>> q.resolve()\n"
+"PosixPath('/etc/rc.d/init.d/halt')"
 
 msgid "Querying path properties::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> q.exists()\n"
 "True\n"
 ">>> q.is_dir()\n"
 "False"
 msgstr ""
+">>> q.exists()\n"
+"True\n"
+">>> q.is_dir()\n"
+"False"
 
 msgid "Opening a file::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> with q.open() as f: f.readline()\n"
 "...\n"
 "'#!/bin/bash\\n'"
 msgstr ""
+">>> with q.open() as f: f.readline()\n"
+"...\n"
+"'#!/bin/bash\\n'"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Exceptions"
-msgstr ""
+msgstr "Exceptions"
 
 msgid ""
 "An exception inheriting :exc:`NotImplementedError` that is raised when an "
@@ -157,10 +192,14 @@ msgid ""
 "creates either a :class:`PurePosixPath` or a :class:`PureWindowsPath`)::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> PurePath('setup.py')      # Running on a Unix machine\n"
 "PurePosixPath('setup.py')"
 msgstr ""
+">>> PurePath('setup.py')      # Running on a Unix machine\n"
+"PurePosixPath('setup.py')"
 
 msgid ""
 "Each element of *pathsegments* can be either a string representing a path "
@@ -169,42 +208,62 @@ msgid ""
 "path object::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> PurePath('foo', 'some/path', 'bar')\n"
 "PurePosixPath('foo/some/path/bar')\n"
 ">>> PurePath(Path('foo'), Path('bar'))\n"
 "PurePosixPath('foo/bar')"
 msgstr ""
+">>> PurePath('foo', 'some/path', 'bar')\n"
+"PurePosixPath('foo/some/path/bar')\n"
+">>> PurePath(Path('foo'), Path('bar'))\n"
+"PurePosixPath('foo/bar')"
 
 msgid "When *pathsegments* is empty, the current directory is assumed::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> PurePath()\n"
 "PurePosixPath('.')"
 msgstr ""
+">>> PurePath()\n"
+"PurePosixPath('.')"
 
 msgid ""
 "If a segment is an absolute path, all previous segments are ignored (like :"
 "func:`os.path.join`)::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> PurePath('/etc', '/usr', 'lib64')\n"
 "PurePosixPath('/usr/lib64')\n"
 ">>> PureWindowsPath('c:/Windows', 'd:bar')\n"
 "PureWindowsPath('d:bar')"
 msgstr ""
+">>> PurePath('/etc', '/usr', 'lib64')\n"
+"PurePosixPath('/usr/lib64')\n"
+">>> PureWindowsPath('c:/Windows', 'd:bar')\n"
+"PureWindowsPath('d:bar')"
 
 msgid ""
 "On Windows, the drive is not reset when a rooted relative path segment (e."
 "g., ``r'\\foo'``) is encountered::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> PureWindowsPath('c:/Windows', '/Program Files')\n"
 "PureWindowsPath('c:/Program Files')"
 msgstr ""
+">>> PureWindowsPath('c:/Windows', '/Program Files')\n"
+"PureWindowsPath('c:/Program Files')"
 
 msgid ""
 "Spurious slashes and single dots are collapsed, but double dots (``'..'``) "
@@ -212,6 +271,8 @@ msgid ""
 "meaning of a path for various reasons (e.g. symbolic links, UNC paths)::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> PurePath('foo//bar')\n"
 "PurePosixPath('foo/bar')\n"
@@ -222,6 +283,14 @@ msgid ""
 ">>> PurePath('foo/../bar')\n"
 "PurePosixPath('foo/../bar')"
 msgstr ""
+">>> PurePath('foo//bar')\n"
+"PurePosixPath('foo/bar')\n"
+">>> PurePath('//foo/bar')\n"
+"PurePosixPath('//foo/bar')\n"
+">>> PurePath('foo/./bar')\n"
+"PurePosixPath('foo/bar')\n"
+">>> PurePath('foo/../bar')\n"
+"PurePosixPath('foo/../bar')"
 
 msgid ""
 "(a naïve approach would make ``PurePosixPath('foo/../bar')`` equivalent to "
@@ -242,10 +311,14 @@ msgid ""
 "filesystem paths::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> PurePosixPath('/etc/hosts')\n"
 "PurePosixPath('/etc/hosts')"
 msgstr ""
+">>> PurePosixPath('/etc/hosts')\n"
+"PurePosixPath('/etc/hosts')"
 
 msgid "*pathsegments* is specified similarly to :class:`PurePath`."
 msgstr ""
@@ -255,12 +328,18 @@ msgid ""
 "filesystem paths, including `UNC paths`_::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> PureWindowsPath('c:/', 'Users', 'Ximénez')\n"
 "PureWindowsPath('c:/Users/Ximénez')\n"
 ">>> PureWindowsPath('//server/share/file')\n"
 "PureWindowsPath('//server/share/file')"
 msgstr ""
+">>> PureWindowsPath('c:/', 'Users', 'Ximénez')\n"
+"PureWindowsPath('c:/Users/Ximénez')\n"
+">>> PureWindowsPath('//server/share/file')\n"
+"PureWindowsPath('//server/share/file')"
 
 msgid ""
 "Regardless of the system you're running on, you can instantiate all of these "
@@ -276,6 +355,8 @@ msgid ""
 "folding semantics::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> PurePosixPath('foo') == PurePosixPath('FOO')\n"
 "False\n"
@@ -286,10 +367,20 @@ msgid ""
 ">>> PureWindowsPath('C:') < PureWindowsPath('d:')\n"
 "True"
 msgstr ""
+">>> PurePosixPath('foo') == PurePosixPath('FOO')\n"
+"False\n"
+">>> PureWindowsPath('foo') == PureWindowsPath('FOO')\n"
+"True\n"
+">>> PureWindowsPath('FOO') in { PureWindowsPath('foo') }\n"
+"True\n"
+">>> PureWindowsPath('C:') < PureWindowsPath('d:')\n"
+"True"
 
 msgid "Paths of a different flavour compare unequal and cannot be ordered::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> PureWindowsPath('foo') == PurePosixPath('foo')\n"
 "False\n"
@@ -299,9 +390,18 @@ msgid ""
 "TypeError: '<' not supported between instances of 'PureWindowsPath' and "
 "'PurePosixPath'"
 msgstr ""
+">>> PureWindowsPath('foo') == PurePosixPath('foo')\n"
+"False\n"
+">>> PureWindowsPath('foo') < PurePosixPath('foo')\n"
+"Traceback (most recent call last):\n"
+"  File \"<stdin>\", line 1, in <module>\n"
+"TypeError: '<' not supported between instances of 'PureWindowsPath' and "
+"'PurePosixPath'"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Operators"
-msgstr ""
+msgstr "Operators"
 
 msgid ""
 "The slash operator helps create child paths, like :func:`os.path.join`. If "
@@ -310,6 +410,8 @@ msgid ""
 "``r'\\foo'``)::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> p = PurePath('/etc')\n"
 ">>> p\n"
@@ -324,18 +426,36 @@ msgid ""
 ">>> PureWindowsPath('c:/Windows', '/Program Files')\n"
 "PureWindowsPath('c:/Program Files')"
 msgstr ""
+">>> p = PurePath('/etc')\n"
+">>> p\n"
+"PurePosixPath('/etc')\n"
+">>> p / 'init.d' / 'apache2'\n"
+"PurePosixPath('/etc/init.d/apache2')\n"
+">>> q = PurePath('bin')\n"
+">>> '/usr' / q\n"
+"PurePosixPath('/usr/bin')\n"
+">>> p / '/an_absolute_path'\n"
+"PurePosixPath('/an_absolute_path')\n"
+">>> PureWindowsPath('c:/Windows', '/Program Files')\n"
+"PureWindowsPath('c:/Program Files')"
 
 msgid ""
 "A path object can be used anywhere an object implementing :class:`os."
 "PathLike` is accepted::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import os\n"
 ">>> p = PurePath('/etc')\n"
 ">>> os.fspath(p)\n"
 "'/etc'"
 msgstr ""
+">>> import os\n"
+">>> p = PurePath('/etc')\n"
+">>> os.fspath(p)\n"
+"'/etc'"
 
 msgid ""
 "The string representation of a path is the raw filesystem path itself (in "
@@ -343,6 +463,8 @@ msgid ""
 "function taking a file path as a string::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> p = PurePath('/etc')\n"
 ">>> str(p)\n"
@@ -351,16 +473,26 @@ msgid ""
 ">>> str(p)\n"
 "'c:\\\\Program Files'"
 msgstr ""
+">>> p = PurePath('/etc')\n"
+">>> str(p)\n"
+"'/etc'\n"
+">>> p = PureWindowsPath('c:/Program Files')\n"
+">>> str(p)\n"
+"'c:\\\\Program Files'"
 
 msgid ""
 "Similarly, calling :class:`bytes` on a path gives the raw filesystem path as "
 "a bytes object, as encoded by :func:`os.fsencode`::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> bytes(p)\n"
 "b'/etc'"
 msgstr ""
+">>> bytes(p)\n"
+"b'/etc'"
 
 msgid ""
 "Calling :class:`bytes` is only recommended under Unix.  Under Windows, the "
@@ -378,6 +510,8 @@ msgstr ""
 msgid "A tuple giving access to the path's various components::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> p = PurePath('/usr/bin/python3')\n"
 ">>> p.parts\n"
@@ -387,6 +521,13 @@ msgid ""
 ">>> p.parts\n"
 "('c:\\\\', 'Program Files', 'PSF')"
 msgstr ""
+">>> p = PurePath('/usr/bin/python3')\n"
+">>> p.parts\n"
+"('/', 'usr', 'bin', 'python3')\n"
+"\n"
+">>> p = PureWindowsPath('c:/Program Files/PSF')\n"
+">>> p.parts\n"
+"('c:\\\\', 'Program Files', 'PSF')"
 
 msgid "(note how the drive and local root are regrouped in a single part)"
 msgstr ""
@@ -405,6 +546,8 @@ msgstr ""
 msgid "A string representing the drive letter or name, if any::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> PureWindowsPath('c:/Program Files/').drive\n"
 "'c:'\n"
@@ -413,18 +556,30 @@ msgid ""
 ">>> PurePosixPath('/etc').drive\n"
 "''"
 msgstr ""
+">>> PureWindowsPath('c:/Program Files/').drive\n"
+"'c:'\n"
+">>> PureWindowsPath('/Program Files/').drive\n"
+"''\n"
+">>> PurePosixPath('/etc').drive\n"
+"''"
 
 msgid "UNC shares are also considered drives::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> PureWindowsPath('//host/share/foo.txt').drive\n"
 "'\\\\\\\\host\\\\share'"
 msgstr ""
+">>> PureWindowsPath('//host/share/foo.txt').drive\n"
+"'\\\\\\\\host\\\\share'"
 
 msgid "A string representing the (local or global) root, if any::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> PureWindowsPath('c:/Program Files/').root\n"
 "'\\\\'\n"
@@ -433,20 +588,32 @@ msgid ""
 ">>> PurePosixPath('/etc').root\n"
 "'/'"
 msgstr ""
+">>> PureWindowsPath('c:/Program Files/').root\n"
+"'\\\\'\n"
+">>> PureWindowsPath('c:Program Files/').root\n"
+"''\n"
+">>> PurePosixPath('/etc').root\n"
+"'/'"
 
 msgid "UNC shares always have a root::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> PureWindowsPath('//host/share').root\n"
 "'\\\\'"
 msgstr ""
+">>> PureWindowsPath('//host/share').root\n"
+"'\\\\'"
 
 msgid ""
 "If the path starts with more than two successive slashes, :class:`~pathlib."
 "PurePosixPath` collapses them::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> PurePosixPath('//etc').root\n"
 "'//'\n"
@@ -455,6 +622,12 @@ msgid ""
 ">>> PurePosixPath('////etc').root\n"
 "'/'"
 msgstr ""
+">>> PurePosixPath('//etc').root\n"
+"'//'\n"
+">>> PurePosixPath('///etc').root\n"
+"'/'\n"
+">>> PurePosixPath('////etc').root\n"
+"'/'"
 
 msgid ""
 "This behavior conforms to *The Open Group Base Specifications Issue 6*, "
@@ -471,6 +644,8 @@ msgstr ""
 msgid "The concatenation of the drive and root::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> PureWindowsPath('c:/Program Files/').anchor\n"
 "'c:\\\\'\n"
@@ -481,11 +656,21 @@ msgid ""
 ">>> PureWindowsPath('//host/share').anchor\n"
 "'\\\\\\\\host\\\\share\\\\'"
 msgstr ""
+">>> PureWindowsPath('c:/Program Files/').anchor\n"
+"'c:\\\\'\n"
+">>> PureWindowsPath('c:Program Files/').anchor\n"
+"'c:'\n"
+">>> PurePosixPath('/etc').anchor\n"
+"'/'\n"
+">>> PureWindowsPath('//host/share').anchor\n"
+"'\\\\\\\\host\\\\share\\\\'"
 
 msgid ""
 "An immutable sequence providing access to the logical ancestors of the path::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> p = PureWindowsPath('c:/foo/bar/setup.py')\n"
 ">>> p.parents[0]\n"
@@ -495,6 +680,13 @@ msgid ""
 ">>> p.parents[2]\n"
 "PureWindowsPath('c:/')"
 msgstr ""
+">>> p = PureWindowsPath('c:/foo/bar/setup.py')\n"
+">>> p.parents[0]\n"
+"PureWindowsPath('c:/foo/bar')\n"
+">>> p.parents[1]\n"
+"PureWindowsPath('c:/foo')\n"
+">>> p.parents[2]\n"
+"PureWindowsPath('c:/')"
 
 msgid ""
 "The parents sequence now supports :term:`slices <slice>` and negative index "
@@ -504,15 +696,22 @@ msgstr ""
 msgid "The logical parent of the path::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> p = PurePosixPath('/a/b/c/d')\n"
 ">>> p.parent\n"
 "PurePosixPath('/a/b/c')"
 msgstr ""
+">>> p = PurePosixPath('/a/b/c/d')\n"
+">>> p.parent\n"
+"PurePosixPath('/a/b/c')"
 
 msgid "You cannot go past an anchor, or empty path::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> p = PurePosixPath('/')\n"
 ">>> p.parent\n"
@@ -521,15 +720,26 @@ msgid ""
 ">>> p.parent\n"
 "PurePosixPath('.')"
 msgstr ""
+">>> p = PurePosixPath('/')\n"
+">>> p.parent\n"
+"PurePosixPath('/')\n"
+">>> p = PurePosixPath('.')\n"
+">>> p.parent\n"
+"PurePosixPath('.')"
 
 msgid "This is a purely lexical operation, hence the following behaviour::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> p = PurePosixPath('foo/..')\n"
 ">>> p.parent\n"
 "PurePosixPath('foo')"
 msgstr ""
+">>> p = PurePosixPath('foo/..')\n"
+">>> p.parent\n"
+"PurePosixPath('foo')"
 
 msgid ""
 "If you want to walk an arbitrary filesystem path upwards, it is recommended "
@@ -542,24 +752,36 @@ msgid ""
 "root, if any::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> PurePosixPath('my/library/setup.py').name\n"
 "'setup.py'"
 msgstr ""
+">>> PurePosixPath('my/library/setup.py').name\n"
+"'setup.py'"
 
 msgid "UNC drive names are not considered::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> PureWindowsPath('//some/share/setup.py').name\n"
 "'setup.py'\n"
 ">>> PureWindowsPath('//some/share').name\n"
 "''"
 msgstr ""
+">>> PureWindowsPath('//some/share/setup.py').name\n"
+"'setup.py'\n"
+">>> PureWindowsPath('//some/share').name\n"
+"''"
 
 msgid "The last dot-separated portion of the final component, if any::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> PurePosixPath('my/library/setup.py').suffix\n"
 "'.py'\n"
@@ -568,6 +790,12 @@ msgid ""
 ">>> PurePosixPath('my/library').suffix\n"
 "''"
 msgstr ""
+">>> PurePosixPath('my/library/setup.py').suffix\n"
+"'.py'\n"
+">>> PurePosixPath('my/library.tar.gz').suffix\n"
+"'.gz'\n"
+">>> PurePosixPath('my/library').suffix\n"
+"''"
 
 msgid "This is commonly called the file extension."
 msgstr ""
@@ -578,6 +806,8 @@ msgstr ""
 msgid "A list of the path's suffixes, often called file extensions::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> PurePosixPath('my/library.tar.gar').suffixes\n"
 "['.tar', '.gar']\n"
@@ -586,10 +816,18 @@ msgid ""
 ">>> PurePosixPath('my/library').suffixes\n"
 "[]"
 msgstr ""
+">>> PurePosixPath('my/library.tar.gar').suffixes\n"
+"['.tar', '.gar']\n"
+">>> PurePosixPath('my/library.tar.gz').suffixes\n"
+"['.tar', '.gz']\n"
+">>> PurePosixPath('my/library').suffixes\n"
+"[]"
 
 msgid "The final path component, without its suffix::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> PurePosixPath('my/library.tar.gz').stem\n"
 "'library.tar'\n"
@@ -598,11 +836,19 @@ msgid ""
 ">>> PurePosixPath('my/library').stem\n"
 "'library'"
 msgstr ""
+">>> PurePosixPath('my/library.tar.gz').stem\n"
+"'library.tar'\n"
+">>> PurePosixPath('my/library.tar').stem\n"
+"'library'\n"
+">>> PurePosixPath('my/library').stem\n"
+"'library'"
 
 msgid ""
 "Return a string representation of the path with forward slashes (``/``)::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> p = PureWindowsPath('c:\\\\windows')\n"
 ">>> str(p)\n"
@@ -610,12 +856,19 @@ msgid ""
 ">>> p.as_posix()\n"
 "'c:/windows'"
 msgstr ""
+">>> p = PureWindowsPath('c:\\\\windows')\n"
+">>> str(p)\n"
+"'c:\\\\windows'\n"
+">>> p.as_posix()\n"
+"'c:/windows'"
 
 msgid ""
 "Return whether the path is absolute or not.  A path is considered absolute "
 "if it has both a root and (if the flavour allows) a drive::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> PurePosixPath('/a/b').is_absolute()\n"
 "True\n"
@@ -631,6 +884,19 @@ msgid ""
 ">>> PureWindowsPath('//some/share').is_absolute()\n"
 "True"
 msgstr ""
+">>> PurePosixPath('/a/b').is_absolute()\n"
+"True\n"
+">>> PurePosixPath('a/b').is_absolute()\n"
+"False\n"
+"\n"
+">>> PureWindowsPath('c:/a/b').is_absolute()\n"
+"True\n"
+">>> PureWindowsPath('/a/b').is_absolute()\n"
+"False\n"
+">>> PureWindowsPath('c:').is_absolute()\n"
+"False\n"
+">>> PureWindowsPath('//some/share').is_absolute()\n"
+"True"
 
 msgid "Return whether or not this path is relative to the *other* path."
 msgstr ""
@@ -646,26 +912,12 @@ msgid ""
 msgstr ""
 
 msgid ""
-"With :class:`PureWindowsPath`, return ``True`` if the path is considered "
-"reserved under Windows, ``False`` otherwise.  With :class:`PurePosixPath`, "
-"``False`` is always returned."
-msgstr ""
-
-msgid ""
-"Windows path names that contain a colon, or end with a dot or a space, are "
-"considered reserved. UNC paths may be reserved."
-msgstr ""
-
-msgid ""
-"This method is deprecated; use :func:`os.path.isreserved` to detect reserved "
-"paths on Windows."
-msgstr ""
-
-msgid ""
 "Calling this method is equivalent to combining the path with each of the "
 "given *pathsegments* in turn::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> PurePosixPath('/etc').joinpath('passwd')\n"
 "PurePosixPath('/etc/passwd')\n"
@@ -676,12 +928,22 @@ msgid ""
 ">>> PureWindowsPath('c:').joinpath('/Program Files')\n"
 "PureWindowsPath('c:/Program Files')"
 msgstr ""
+">>> PurePosixPath('/etc').joinpath('passwd')\n"
+"PurePosixPath('/etc/passwd')\n"
+">>> PurePosixPath('/etc').joinpath(PurePosixPath('passwd'))\n"
+"PurePosixPath('/etc/passwd')\n"
+">>> PurePosixPath('/etc').joinpath('init.d', 'apache2')\n"
+"PurePosixPath('/etc/init.d/apache2')\n"
+">>> PureWindowsPath('c:').joinpath('/Program Files')\n"
+"PureWindowsPath('c:/Program Files')"
 
 msgid ""
 "Match this path against the provided glob-style pattern.  Return ``True`` if "
 "matching is successful, ``False`` otherwise.  For example::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> PurePath('a/b.py').full_match('a/*.py')\n"
 "True\n"
@@ -692,6 +954,14 @@ msgid ""
 ">>> PurePath('/a/b/c.py').full_match('**/*.py')\n"
 "True"
 msgstr ""
+">>> PurePath('a/b.py').full_match('a/*.py')\n"
+"True\n"
+">>> PurePath('a/b.py').full_match('*.py')\n"
+"False\n"
+">>> PurePath('/a/b/c.py').full_match('/a/**')\n"
+"True\n"
+">>> PurePath('/a/b/c.py').full_match('**/*.py')\n"
+"True"
 
 msgid ":ref:`pathlib-pattern-language` documentation."
 msgstr ""
@@ -699,12 +969,18 @@ msgstr ""
 msgid "As with other methods, case-sensitivity follows platform defaults::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> PurePosixPath('b.py').full_match('*.PY')\n"
 "False\n"
 ">>> PureWindowsPath('b.py').full_match('*.PY')\n"
 "True"
 msgstr ""
+">>> PurePosixPath('b.py').full_match('*.PY')\n"
+"False\n"
+">>> PureWindowsPath('b.py').full_match('*.PY')\n"
+"True"
 
 msgid ""
 "Set *case_sensitive* to ``True`` or ``False`` to override this behaviour."
@@ -722,6 +998,8 @@ msgid ""
 "relative pattern is provided, then matching is done from the right::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> PurePath('a/b.py').match('*.py')\n"
 "True\n"
@@ -730,6 +1008,12 @@ msgid ""
 ">>> PurePath('/a/b/c.py').match('a/*.py')\n"
 "False"
 msgstr ""
+">>> PurePath('a/b.py').match('*.py')\n"
+"True\n"
+">>> PurePath('/a/b/c.py').match('b/*.py')\n"
+"True\n"
+">>> PurePath('/a/b/c.py').match('a/*.py')\n"
+"False"
 
 msgid "The *pattern* parameter accepts a :term:`path-like object`."
 msgstr ""
@@ -742,6 +1026,8 @@ msgid ""
 "If it's impossible, :exc:`ValueError` is raised::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> p = PurePosixPath('/etc/passwd')\n"
 ">>> p.relative_to('/')\n"
@@ -756,6 +1042,18 @@ msgid ""
 "ValueError: '/etc/passwd' is not in the subpath of '/usr' OR one path is "
 "relative and the other is absolute."
 msgstr ""
+">>> p = PurePosixPath('/etc/passwd')\n"
+">>> p.relative_to('/')\n"
+"PurePosixPath('etc/passwd')\n"
+">>> p.relative_to('/etc')\n"
+"PurePosixPath('passwd')\n"
+">>> p.relative_to('/usr')\n"
+"Traceback (most recent call last):\n"
+"  File \"<stdin>\", line 1, in <module>\n"
+"  File \"pathlib.py\", line 941, in relative_to\n"
+"    raise ValueError(error_message.format(str(self), str(formatted)))\n"
+"ValueError: '/etc/passwd' is not in the subpath of '/usr' OR one path is "
+"relative and the other is absolute."
 
 msgid ""
 "When *walk_up* is false (the default), the path must start with *other*. "
@@ -764,6 +1062,8 @@ msgid ""
 "exc:`ValueError` is raised.::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> p.relative_to('/usr', walk_up=True)\n"
 "PurePosixPath('../etc/passwd')\n"
@@ -775,6 +1075,15 @@ msgid ""
 "ValueError: '/etc/passwd' is not on the same drive as 'foo' OR one path is "
 "relative and the other is absolute."
 msgstr ""
+">>> p.relative_to('/usr', walk_up=True)\n"
+"PurePosixPath('../etc/passwd')\n"
+">>> p.relative_to('foo', walk_up=True)\n"
+"Traceback (most recent call last):\n"
+"  File \"<stdin>\", line 1, in <module>\n"
+"  File \"pathlib.py\", line 941, in relative_to\n"
+"    raise ValueError(error_message.format(str(self), str(formatted)))\n"
+"ValueError: '/etc/passwd' is not on the same drive as 'foo' OR one path is "
+"relative and the other is absolute."
 
 msgid ""
 "This function is part of :class:`PurePath` and works with strings. It does "
@@ -798,6 +1107,8 @@ msgid ""
 "doesn't have a name, ValueError is raised::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> p = PureWindowsPath('c:/Downloads/pathlib.tar.gz')\n"
 ">>> p.with_name('setup.py')\n"
@@ -811,12 +1122,25 @@ msgid ""
 "    raise ValueError(\"%r has an empty name\" % (self,))\n"
 "ValueError: PureWindowsPath('c:/') has an empty name"
 msgstr ""
+">>> p = PureWindowsPath('c:/Downloads/pathlib.tar.gz')\n"
+">>> p.with_name('setup.py')\n"
+"PureWindowsPath('c:/Downloads/setup.py')\n"
+">>> p = PureWindowsPath('c:/')\n"
+">>> p.with_name('setup.py')\n"
+"Traceback (most recent call last):\n"
+"  File \"<stdin>\", line 1, in <module>\n"
+"  File \"/home/antoine/cpython/default/Lib/pathlib.py\", line 751, in "
+"with_name\n"
+"    raise ValueError(\"%r has an empty name\" % (self,))\n"
+"ValueError: PureWindowsPath('c:/') has an empty name"
 
 msgid ""
 "Return a new path with the :attr:`stem` changed.  If the original path "
 "doesn't have a name, ValueError is raised::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> p = PureWindowsPath('c:/Downloads/draft.txt')\n"
 ">>> p.with_stem('final')\n"
@@ -836,6 +1160,23 @@ msgid ""
 "    raise ValueError(\"%r has an empty name\" % (self,))\n"
 "ValueError: PureWindowsPath('c:/') has an empty name"
 msgstr ""
+">>> p = PureWindowsPath('c:/Downloads/draft.txt')\n"
+">>> p.with_stem('final')\n"
+"PureWindowsPath('c:/Downloads/final.txt')\n"
+">>> p = PureWindowsPath('c:/Downloads/pathlib.tar.gz')\n"
+">>> p.with_stem('lib')\n"
+"PureWindowsPath('c:/Downloads/lib.gz')\n"
+">>> p = PureWindowsPath('c:/')\n"
+">>> p.with_stem('')\n"
+"Traceback (most recent call last):\n"
+"  File \"<stdin>\", line 1, in <module>\n"
+"  File \"/home/antoine/cpython/default/Lib/pathlib.py\", line 861, in "
+"with_stem\n"
+"    return self.with_name(stem + self.suffix)\n"
+"  File \"/home/antoine/cpython/default/Lib/pathlib.py\", line 851, in "
+"with_name\n"
+"    raise ValueError(\"%r has an empty name\" % (self,))\n"
+"ValueError: PureWindowsPath('c:/') has an empty name"
 
 msgid ""
 "Return a new path with the :attr:`suffix` changed.  If the original path "
@@ -843,6 +1184,8 @@ msgid ""
 "*suffix* is an empty string, the original suffix is removed::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> p = PureWindowsPath('c:/Downloads/pathlib.tar.gz')\n"
 ">>> p.with_suffix('.bz2')\n"
@@ -854,6 +1197,15 @@ msgid ""
 ">>> p.with_suffix('')\n"
 "PureWindowsPath('README')"
 msgstr ""
+">>> p = PureWindowsPath('c:/Downloads/pathlib.tar.gz')\n"
+">>> p.with_suffix('.bz2')\n"
+"PureWindowsPath('c:/Downloads/pathlib.tar.bz2')\n"
+">>> p = PureWindowsPath('README')\n"
+">>> p.with_suffix('.txt')\n"
+"PureWindowsPath('README.txt')\n"
+">>> p = PureWindowsPath('README.txt')\n"
+">>> p.with_suffix('')\n"
+"PureWindowsPath('README')"
 
 msgid ""
 "A single dot (\"``.``\") is considered a valid suffix. In previous "
@@ -867,6 +1219,8 @@ msgid ""
 "this method to pass information to derivative paths, for example::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "from pathlib import PurePosixPath\n"
 "\n"
@@ -882,6 +1236,19 @@ msgid ""
 "hosts = etc / 'hosts'\n"
 "print(hosts.session_id)  # 42"
 msgstr ""
+"from pathlib import PurePosixPath\n"
+"\n"
+"class MyPath(PurePosixPath):\n"
+"    def __init__(self, *pathsegments, session_id):\n"
+"        super().__init__(*pathsegments)\n"
+"        self.session_id = session_id\n"
+"\n"
+"    def with_segments(self, *pathsegments):\n"
+"        return type(self)(*pathsegments, session_id=self.session_id)\n"
+"\n"
+"etc = MyPath('/etc', session_id=42)\n"
+"hosts = etc / 'hosts'\n"
+"print(hosts.session_id)  # 42"
 
 msgid "Concrete paths"
 msgstr ""
@@ -898,20 +1265,28 @@ msgid ""
 "or a :class:`WindowsPath`)::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> Path('setup.py')\n"
 "PosixPath('setup.py')"
 msgstr ""
+">>> Path('setup.py')\n"
+"PosixPath('setup.py')"
 
 msgid ""
 "A subclass of :class:`Path` and :class:`PurePosixPath`, this class "
 "represents concrete non-Windows filesystem paths::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> PosixPath('/etc/hosts')\n"
 "PosixPath('/etc/hosts')"
 msgstr ""
+">>> PosixPath('/etc/hosts')\n"
+"PosixPath('/etc/hosts')"
 
 msgid ""
 "Raises :exc:`UnsupportedOperation` on Windows. In previous versions, :exc:"
@@ -923,10 +1298,14 @@ msgid ""
 "represents concrete Windows filesystem paths::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> WindowsPath('c:/', 'Users', 'Ximénez')\n"
 "WindowsPath('c:/Users/Ximénez')"
 msgstr ""
+">>> WindowsPath('c:/', 'Users', 'Ximénez')\n"
+"WindowsPath('c:/Users/Ximénez')"
 
 msgid ""
 "Raises :exc:`UnsupportedOperation` on non-Windows platforms. In previous "
@@ -939,6 +1318,8 @@ msgid ""
 "failures in your application)::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import os\n"
 ">>> os.name\n"
@@ -954,6 +1335,19 @@ msgid ""
 "    % (cls.__name__,))\n"
 "UnsupportedOperation: cannot instantiate 'WindowsPath' on your system"
 msgstr ""
+">>> import os\n"
+">>> os.name\n"
+"'posix'\n"
+">>> Path('setup.py')\n"
+"PosixPath('setup.py')\n"
+">>> PosixPath('setup.py')\n"
+"PosixPath('setup.py')\n"
+">>> WindowsPath('setup.py')\n"
+"Traceback (most recent call last):\n"
+"  File \"<stdin>\", line 1, in <module>\n"
+"  File \"pathlib.py\", line 798, in __new__\n"
+"    % (cls.__name__,))\n"
+"UnsupportedOperation: cannot instantiate 'WindowsPath' on your system"
 
 msgid ""
 "Some concrete path methods can raise an :exc:`OSError` if a system call "
@@ -976,24 +1370,36 @@ msgstr ""
 msgid "Return a new path object from parsing a 'file' URI. For example::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> p = Path.from_uri('file:///etc/hosts')\n"
 "PosixPath('/etc/hosts')"
 msgstr ""
+">>> p = Path.from_uri('file:///etc/hosts')\n"
+"PosixPath('/etc/hosts')"
 
 msgid "On Windows, DOS device and UNC paths may be parsed from URIs::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> p = Path.from_uri('file:///c:/windows')\n"
 "WindowsPath('c:/windows')\n"
 ">>> p = Path.from_uri('file://server/share')\n"
 "WindowsPath('//server/share')"
 msgstr ""
+">>> p = Path.from_uri('file:///c:/windows')\n"
+"WindowsPath('c:/windows')\n"
+">>> p = Path.from_uri('file://server/share')\n"
+"WindowsPath('//server/share')"
 
 msgid "Several variant forms are supported::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> p = Path.from_uri('file:////server/share')\n"
 "WindowsPath('//server/share')\n"
@@ -1004,6 +1410,14 @@ msgid ""
 ">>> p = Path.from_uri('file:/c|/windows')\n"
 "WindowsPath('c:/windows')"
 msgstr ""
+">>> p = Path.from_uri('file:////server/share')\n"
+"WindowsPath('//server/share')\n"
+">>> p = Path.from_uri('file://///server/share')\n"
+"WindowsPath('//server/share')\n"
+">>> p = Path.from_uri('file:c:/windows')\n"
+"WindowsPath('c:/windows')\n"
+">>> p = Path.from_uri('file:/c|/windows')\n"
+"WindowsPath('c:/windows')"
 
 msgid ""
 ":exc:`ValueError` is raised if the URI does not start with ``file:``, or the "
@@ -1021,6 +1435,8 @@ msgid ""
 "isn't absolute."
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> p = PosixPath('/etc/passwd')\n"
 ">>> p.as_uri()\n"
@@ -1029,6 +1445,12 @@ msgid ""
 ">>> p.as_uri()\n"
 "'file:///c:/Windows'"
 msgstr ""
+">>> p = PosixPath('/etc/passwd')\n"
+">>> p.as_uri()\n"
+"'file:///etc/passwd'\n"
+">>> p = WindowsPath('c:/Windows')\n"
+">>> p.as_uri()\n"
+"'file:///c:/Windows'"
 
 msgid ""
 "Calling this method from :class:`PurePath` rather than :class:`Path` is "
@@ -1045,10 +1467,14 @@ msgid ""
 "can't be resolved, :exc:`RuntimeError` is raised."
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> Path.home()\n"
 "PosixPath('/home/antoine')"
 msgstr ""
+">>> Path.home()\n"
+"PosixPath('/home/antoine')"
 
 msgid ""
 "Return a new path with expanded ``~`` and ``~user`` constructs, as returned "
@@ -1056,27 +1482,38 @@ msgid ""
 "`RuntimeError` is raised."
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> p = PosixPath('~/films/Monty Python')\n"
 ">>> p.expanduser()\n"
 "PosixPath('/home/eric/films/Monty Python')"
 msgstr ""
+">>> p = PosixPath('~/films/Monty Python')\n"
+">>> p.expanduser()\n"
+"PosixPath('/home/eric/films/Monty Python')"
 
 msgid ""
 "Return a new path object representing the current directory (as returned by :"
 "func:`os.getcwd`)::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> Path.cwd()\n"
 "PosixPath('/home/antoine/pathlib')"
 msgstr ""
+">>> Path.cwd()\n"
+"PosixPath('/home/antoine/pathlib')"
 
 msgid ""
 "Make the path absolute, without normalization or resolving symlinks. Returns "
 "a new path object::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> p = Path('tests')\n"
 ">>> p\n"
@@ -1084,12 +1521,19 @@ msgid ""
 ">>> p.absolute()\n"
 "PosixPath('/home/antoine/pathlib/tests')"
 msgstr ""
+">>> p = Path('tests')\n"
+">>> p\n"
+"PosixPath('tests')\n"
+">>> p.absolute()\n"
+"PosixPath('/home/antoine/pathlib/tests')"
 
 msgid ""
 "Make the path absolute, resolving any symlinks.  A new path object is "
 "returned::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> p = Path()\n"
 ">>> p\n"
@@ -1097,17 +1541,27 @@ msgid ""
 ">>> p.resolve()\n"
 "PosixPath('/home/antoine/pathlib')"
 msgstr ""
+">>> p = Path()\n"
+">>> p\n"
+"PosixPath('.')\n"
+">>> p.resolve()\n"
+"PosixPath('/home/antoine/pathlib')"
 
 msgid ""
 "\"``..``\" components are also eliminated (this is the only method to do "
 "so)::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> p = Path('docs/../setup.py')\n"
 ">>> p.resolve()\n"
 "PosixPath('/home/antoine/pathlib/setup.py')"
 msgstr ""
+">>> p = Path('docs/../setup.py')\n"
+">>> p.resolve()\n"
+"PosixPath('/home/antoine/pathlib/setup.py')"
 
 msgid ""
 "If a path doesn't exist or a symlink loop is encountered, and *strict* is "
@@ -1130,12 +1584,18 @@ msgid ""
 "readlink`)::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> p = Path('mylink')\n"
 ">>> p.symlink_to('setup.py')\n"
 ">>> p.readlink()\n"
 "PosixPath('setup.py')"
 msgstr ""
+">>> p = Path('mylink')\n"
+">>> p.symlink_to('setup.py')\n"
+">>> p.readlink()\n"
+"PosixPath('setup.py')"
 
 msgid ""
 "Raises :exc:`UnsupportedOperation` if :func:`os.readlink` is not available. "
@@ -1173,6 +1633,8 @@ msgid ""
 "``follow_symlinks=False``, or use :meth:`~Path.lstat`."
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> p = Path('setup.py')\n"
 ">>> p.stat().st_size\n"
@@ -1180,6 +1642,11 @@ msgid ""
 ">>> p.stat().st_mtime\n"
 "1327883547.852554"
 msgstr ""
+">>> p = Path('setup.py')\n"
+">>> p.stat().st_size\n"
+"956\n"
+">>> p.stat().st_mtime\n"
+"1327883547.852554"
 
 msgid "The *follow_symlinks* parameter was added."
 msgstr ""
@@ -1200,6 +1667,8 @@ msgid ""
 "argument ``follow_symlinks=False``."
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> Path('.').exists()\n"
 "True\n"
@@ -1210,6 +1679,14 @@ msgid ""
 ">>> Path('nonexistentfile').exists()\n"
 "False"
 msgstr ""
+">>> Path('.').exists()\n"
+"True\n"
+">>> Path('setup.py').exists()\n"
+"True\n"
+">>> Path('/etc').exists()\n"
+"True\n"
+">>> Path('nonexistentfile').exists()\n"
+"False"
 
 msgid ""
 "Return ``True`` if the path points to a regular file. ``False`` will be "
@@ -1299,6 +1776,8 @@ msgid ""
 "reason."
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> p = Path('spam')\n"
 ">>> q = Path('eggs')\n"
@@ -1307,6 +1786,12 @@ msgid ""
 ">>> p.samefile('spam')\n"
 "True"
 msgstr ""
+">>> p = Path('spam')\n"
+">>> q = Path('eggs')\n"
+">>> p.samefile(q)\n"
+"False\n"
+">>> p.samefile('spam')\n"
+"True"
 
 msgid ""
 "A :class:`~pathlib.types.PathInfo` object that supports querying file type "
@@ -1315,6 +1800,8 @@ msgid ""
 "For example::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> p = Path('src')\n"
 ">>> if p.info.is_symlink():\n"
@@ -1328,6 +1815,17 @@ msgid ""
 "...\n"
 "directory"
 msgstr ""
+">>> p = Path('src')\n"
+">>> if p.info.is_symlink():\n"
+"...     print('symlink')\n"
+"... elif p.info.is_dir():\n"
+"...     print('directory')\n"
+"... elif p.info.exists():\n"
+"...     print('something else')\n"
+"... else:\n"
+"...     print('not found')\n"
+"...\n"
+"directory"
 
 msgid ""
 "If the path was generated from :meth:`Path.iterdir` then this attribute is "
@@ -1351,6 +1849,8 @@ msgid ""
 "function does::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> p = Path('setup.py')\n"
 ">>> with p.open() as f:\n"
@@ -1358,10 +1858,17 @@ msgid ""
 "...\n"
 "'#!/usr/bin/env python3\\n'"
 msgstr ""
+">>> p = Path('setup.py')\n"
+">>> with p.open() as f:\n"
+"...     f.readline()\n"
+"...\n"
+"'#!/usr/bin/env python3\\n'"
 
 msgid "Return the decoded contents of the pointed-to file as a string::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> p = Path('my_text_file')\n"
 ">>> p.write_text('Text file contents')\n"
@@ -1369,6 +1876,11 @@ msgid ""
 ">>> p.read_text()\n"
 "'Text file contents'"
 msgstr ""
+">>> p = Path('my_text_file')\n"
+">>> p.write_text('Text file contents')\n"
+"18\n"
+">>> p.read_text()\n"
+"'Text file contents'"
 
 msgid ""
 "The file is opened and then closed. The optional parameters have the same "
@@ -1381,6 +1893,8 @@ msgstr ""
 msgid "Return the binary contents of the pointed-to file as a bytes object::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> p = Path('my_binary_file')\n"
 ">>> p.write_bytes(b'Binary file contents')\n"
@@ -1388,6 +1902,11 @@ msgid ""
 ">>> p.read_bytes()\n"
 "b'Binary file contents'"
 msgstr ""
+">>> p = Path('my_binary_file')\n"
+">>> p.write_bytes(b'Binary file contents')\n"
+"20\n"
+">>> p.read_bytes()\n"
+"b'Binary file contents'"
 
 msgid ""
 "Open the file pointed to in text mode, write *data* to it, and close the "
@@ -1415,6 +1934,8 @@ msgid ""
 "contents::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> p = Path('docs')\n"
 ">>> for child in p.iterdir(): child\n"
@@ -1427,6 +1948,16 @@ msgid ""
 "PosixPath('docs/_static')\n"
 "PosixPath('docs/Makefile')"
 msgstr ""
+">>> p = Path('docs')\n"
+">>> for child in p.iterdir(): child\n"
+"...\n"
+"PosixPath('docs/conf.py')\n"
+"PosixPath('docs/_templates')\n"
+"PosixPath('docs/make.bat')\n"
+"PosixPath('docs/index.rst')\n"
+"PosixPath('docs/_build')\n"
+"PosixPath('docs/_static')\n"
+"PosixPath('docs/Makefile')"
 
 msgid ""
 "The children are yielded in arbitrary order, and the special entries ``'.'`` "
@@ -1445,10 +1976,12 @@ msgid ""
 "yielding all matching files (of any kind)::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> sorted(Path('.').glob('*.py'))\n"
-"[PosixPath('pathlib.py'), PosixPath('setup.py'), PosixPath('test_pathlib."
-"py')]\n"
+"[PosixPath('pathlib.py'), PosixPath('setup.py'), "
+"PosixPath('test_pathlib.py')]\n"
 ">>> sorted(Path('.').glob('*/*.py'))\n"
 "[PosixPath('docs/conf.py')]\n"
 ">>> sorted(Path('.').glob('**/*.py'))\n"
@@ -1458,6 +1991,17 @@ msgid ""
 " PosixPath('setup.py'),\n"
 " PosixPath('test_pathlib.py')]"
 msgstr ""
+">>> sorted(Path('.').glob('*.py'))\n"
+"[PosixPath('pathlib.py'), PosixPath('setup.py'), "
+"PosixPath('test_pathlib.py')]\n"
+">>> sorted(Path('.').glob('*/*.py'))\n"
+"[PosixPath('docs/conf.py')]\n"
+">>> sorted(Path('.').glob('**/*.py'))\n"
+"[PosixPath('build/lib/pathlib.py'),\n"
+" PosixPath('docs/conf.py'),\n"
+" PosixPath('pathlib.py'),\n"
+" PosixPath('setup.py'),\n"
+" PosixPath('test_pathlib.py')]"
 
 msgid ""
 "The paths are returned in no particular order. If you need a specific order, "
@@ -1592,10 +2136,12 @@ msgid ""
 "directory, while ignoring ``__pycache__`` directories::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "from pathlib import Path\n"
-"for root, dirs, files in Path(\"cpython/Lib/concurrent\")."
-"walk(on_error=print):\n"
+"for root, dirs, files in "
+"Path(\"cpython/Lib/concurrent\").walk(on_error=print):\n"
 "  print(\n"
 "      root,\n"
 "      \"consumes\",\n"
@@ -1607,6 +2153,19 @@ msgid ""
 "  if '__pycache__' in dirs:\n"
 "        dirs.remove('__pycache__')"
 msgstr ""
+"from pathlib import Path\n"
+"for root, dirs, files in "
+"Path(\"cpython/Lib/concurrent\").walk(on_error=print):\n"
+"  print(\n"
+"      root,\n"
+"      \"consumes\",\n"
+"      sum((root / file).stat().st_size for file in files),\n"
+"      \"bytes in\",\n"
+"      len(files),\n"
+"      \"non-directory files\"\n"
+"  )\n"
+"  if '__pycache__' in dirs:\n"
+"        dirs.remove('__pycache__')"
 
 msgid ""
 "This next example is a simple implementation of :func:`shutil.rmtree`. "
@@ -1614,6 +2173,8 @@ msgid ""
 "deleting a directory before it is empty::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "# Delete everything reachable from the directory \"top\".\n"
 "# CAUTION:  This is dangerous! For example, if top == Path('/'),\n"
@@ -1624,6 +2185,14 @@ msgid ""
 "    for name in dirs:\n"
 "        (root / name).rmdir()"
 msgstr ""
+"# Delete everything reachable from the directory \"top\".\n"
+"# CAUTION:  This is dangerous! For example, if top == Path('/'),\n"
+"# it could delete all of your files.\n"
+"for root, dirs, files in top.walk(top_down=False):\n"
+"    for name in files:\n"
+"        (root / name).unlink()\n"
+"    for name in dirs:\n"
+"        (root / name).rmdir()"
 
 msgid "Creating files and directories"
 msgstr ""
@@ -1683,6 +2252,8 @@ msgid ""
 "otherwise.  On non-Windows platforms, *target_is_directory* is ignored."
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> p = Path('mylink')\n"
 ">>> p.symlink_to('setup.py')\n"
@@ -1693,6 +2264,14 @@ msgid ""
 ">>> p.lstat().st_size\n"
 "8"
 msgstr ""
+">>> p = Path('mylink')\n"
+">>> p.symlink_to('setup.py')\n"
+">>> p.resolve()\n"
+"PosixPath('/home/antoine/pathlib/setup.py')\n"
+">>> p.stat().st_size\n"
+"956\n"
+">>> p.lstat().st_size\n"
+"8"
 
 msgid ""
 "The order of arguments (link, target) is the reverse of :func:`os.symlink`'s."
@@ -1759,6 +2338,8 @@ msgid ""
 "either a string or another path object::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> p = Path('foo')\n"
 ">>> p.open('w').write('some text')\n"
@@ -1769,6 +2350,14 @@ msgid ""
 ">>> target.open().read()\n"
 "'some text'"
 msgstr ""
+">>> p = Path('foo')\n"
+">>> p.open('w').write('some text')\n"
+"9\n"
+">>> target = Path('bar')\n"
+">>> p.rename(target)\n"
+"PosixPath('bar')\n"
+">>> target.open().read()\n"
+"'some text'"
 
 msgid ""
 "The target path may be absolute or relative. Relative paths are interpreted "
@@ -1877,6 +2466,8 @@ msgid ""
 "argument ``follow_symlinks=False``, or use :meth:`~Path.lchmod`."
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> p = Path('setup.py')\n"
 ">>> p.stat().st_mode\n"
@@ -1885,6 +2476,12 @@ msgid ""
 ">>> p.stat().st_mode\n"
 "33060"
 msgstr ""
+">>> p = Path('setup.py')\n"
+">>> p.stat().st_mode\n"
+"33277\n"
+">>> p.chmod(0o444)\n"
+">>> p.stat().st_mode\n"
+"33060"
 
 msgid ""
 "Like :meth:`Path.chmod` but, if the path points to a symbolic link, the "
@@ -1917,14 +2514,18 @@ msgstr ""
 msgid "Matches any number of non-separator characters, including zero."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``?``"
-msgstr ""
+msgstr "``?``"
 
 msgid "Matches one non-separator character."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``[seq]``"
-msgstr ""
+msgstr "``[seq]``"
 
 msgid ""
 "Matches one character in *seq*, where *seq* is a sequence of characters. "
@@ -1933,8 +2534,10 @@ msgid ""
 "matches any ASCII letter, digit, or underscore."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``[!seq]``"
-msgstr ""
+msgstr "``[!seq]``"
 
 msgid ""
 "Matches one character not in *seq*, where *seq* follows the same rules as "
@@ -1949,32 +2552,42 @@ msgstr ""
 msgid "The \"``**``\" wildcard enables recursive globbing. A few examples:"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Pattern"
-msgstr ""
+msgstr "Pattern"
 
 msgid "Meaning"
-msgstr ""
+msgstr "Ý nghĩa"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "\"``**/*``\""
-msgstr ""
+msgstr "\"``**/*``\""
 
 msgid "Any path with at least one segment."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "\"``**/*.py``\""
-msgstr ""
+msgstr "\"``**/*.py``\""
 
 msgid "Any path with a final segment ending \"``.py``\"."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "\"``assets/**``\""
-msgstr ""
+msgstr "\"``assets/**``\""
 
 msgid "Any path starting with \"``assets/``\"."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "\"``assets/**/*``\""
-msgstr ""
+msgstr "\"``assets/**/*``\""
 
 msgid ""
 "Any path starting with \"``assets/``\", excluding \"``assets/``\" itself."
@@ -2109,194 +2722,320 @@ msgstr ""
 msgid ":mod:`os` and :mod:`os.path`"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`!pathlib`"
-msgstr ""
+msgstr ":mod:`!pathlib`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`os.path.dirname`"
-msgstr ""
+msgstr ":func:`os.path.dirname`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":attr:`PurePath.parent`"
-msgstr ""
+msgstr ":attr:`PurePath.parent`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`os.path.basename`"
-msgstr ""
+msgstr ":func:`os.path.basename`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":attr:`PurePath.name`"
-msgstr ""
+msgstr ":attr:`PurePath.name`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`os.path.splitext`"
-msgstr ""
+msgstr ":func:`os.path.splitext`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":attr:`PurePath.stem`, :attr:`PurePath.suffix`"
-msgstr ""
+msgstr ":attr:`PurePath.stem`, :attr:`PurePath.suffix`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`os.path.join`"
-msgstr ""
+msgstr ":func:`os.path.join`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`PurePath.joinpath`"
-msgstr ""
+msgstr ":meth:`PurePath.joinpath`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`os.path.isabs`"
-msgstr ""
+msgstr ":func:`os.path.isabs`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`PurePath.is_absolute`"
-msgstr ""
+msgstr ":meth:`PurePath.is_absolute`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`os.path.relpath`"
-msgstr ""
+msgstr ":func:`os.path.relpath`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`PurePath.relative_to` [1]_"
-msgstr ""
+msgstr ":meth:`PurePath.relative_to` [1]_"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`os.path.expanduser`"
-msgstr ""
+msgstr ":func:`os.path.expanduser`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`Path.expanduser` [2]_"
-msgstr ""
+msgstr ":meth:`Path.expanduser` [2]_"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`os.path.realpath`"
-msgstr ""
+msgstr ":func:`os.path.realpath`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`Path.resolve`"
-msgstr ""
+msgstr ":meth:`Path.resolve`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`os.path.abspath`"
-msgstr ""
+msgstr ":func:`os.path.abspath`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`Path.absolute` [3]_"
-msgstr ""
+msgstr ":meth:`Path.absolute` [3]_"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`os.path.exists`"
-msgstr ""
+msgstr ":func:`os.path.exists`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`Path.exists`"
-msgstr ""
+msgstr ":meth:`Path.exists`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`os.path.isfile`"
-msgstr ""
+msgstr ":func:`os.path.isfile`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`Path.is_file`"
-msgstr ""
+msgstr ":meth:`Path.is_file`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`os.path.isdir`"
-msgstr ""
+msgstr ":func:`os.path.isdir`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`Path.is_dir`"
-msgstr ""
+msgstr ":meth:`Path.is_dir`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`os.path.islink`"
-msgstr ""
+msgstr ":func:`os.path.islink`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`Path.is_symlink`"
-msgstr ""
+msgstr ":meth:`Path.is_symlink`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`os.path.isjunction`"
-msgstr ""
+msgstr ":func:`os.path.isjunction`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`Path.is_junction`"
-msgstr ""
+msgstr ":meth:`Path.is_junction`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`os.path.ismount`"
-msgstr ""
+msgstr ":func:`os.path.ismount`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`Path.is_mount`"
-msgstr ""
+msgstr ":meth:`Path.is_mount`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`os.path.samefile`"
-msgstr ""
+msgstr ":func:`os.path.samefile`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`Path.samefile`"
-msgstr ""
+msgstr ":meth:`Path.samefile`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`os.getcwd`"
-msgstr ""
+msgstr ":func:`os.getcwd`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`Path.cwd`"
-msgstr ""
+msgstr ":meth:`Path.cwd`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`os.stat`"
-msgstr ""
+msgstr ":func:`os.stat`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`Path.stat`"
-msgstr ""
+msgstr ":meth:`Path.stat`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`os.lstat`"
-msgstr ""
+msgstr ":func:`os.lstat`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`Path.lstat`"
-msgstr ""
+msgstr ":meth:`Path.lstat`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`os.listdir`"
-msgstr ""
+msgstr ":func:`os.listdir`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`Path.iterdir`"
-msgstr ""
+msgstr ":meth:`Path.iterdir`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`os.walk`"
-msgstr ""
+msgstr ":func:`os.walk`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`Path.walk` [4]_"
-msgstr ""
+msgstr ":meth:`Path.walk` [4]_"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`os.mkdir`, :func:`os.makedirs`"
-msgstr ""
+msgstr ":func:`os.mkdir`, :func:`os.makedirs`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`Path.mkdir`"
-msgstr ""
+msgstr ":meth:`Path.mkdir`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`os.link`"
-msgstr ""
+msgstr ":func:`os.link`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`Path.hardlink_to`"
-msgstr ""
+msgstr ":meth:`Path.hardlink_to`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`os.symlink`"
-msgstr ""
+msgstr ":func:`os.symlink`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`Path.symlink_to`"
-msgstr ""
+msgstr ":meth:`Path.symlink_to`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`os.readlink`"
-msgstr ""
+msgstr ":func:`os.readlink`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`Path.readlink`"
-msgstr ""
+msgstr ":meth:`Path.readlink`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`os.rename`"
-msgstr ""
+msgstr ":func:`os.rename`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`Path.rename`"
-msgstr ""
+msgstr ":meth:`Path.rename`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`os.replace`"
-msgstr ""
+msgstr ":func:`os.replace`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`Path.replace`"
-msgstr ""
+msgstr ":meth:`Path.replace`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`os.remove`, :func:`os.unlink`"
-msgstr ""
+msgstr ":func:`os.remove`, :func:`os.unlink`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`Path.unlink`"
-msgstr ""
+msgstr ":meth:`Path.unlink`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`os.rmdir`"
-msgstr ""
+msgstr ":func:`os.rmdir`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`Path.rmdir`"
-msgstr ""
+msgstr ":meth:`Path.rmdir`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`os.chmod`"
-msgstr ""
+msgstr ":func:`os.chmod`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`Path.chmod`"
-msgstr ""
+msgstr ":meth:`Path.chmod`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":func:`os.lchmod`"
-msgstr ""
+msgstr ":func:`os.lchmod`"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":meth:`Path.lchmod`"
-msgstr ""
+msgstr ":meth:`Path.lchmod`"
 
 msgid "Footnotes"
 msgstr " Chú thích"
@@ -2326,8 +3065,10 @@ msgid ""
 "symlinks into *filenames* when *follow_symlinks* is false (the default.)"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Protocols"
-msgstr ""
+msgstr "Protocols"
 
 msgid ""
 "The :mod:`!pathlib.types` module provides types for static type checking."
@@ -2379,8 +3120,12 @@ msgid ""
 "exist."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "path"
-msgstr ""
+msgstr "path"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "operations"
-msgstr ""
+msgstr "operations"

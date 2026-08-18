@@ -9,18 +9,18 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-17 14:50+0000\n"
-"PO-Revision-Date: 2025-09-16 00:02+0000\n"
-"Last-Translator: Nguyen Duc Tam, 2026\n"
-"Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
-"vi/)\n"
+"POT-Creation-Date: 2026-05-08 18:34+0000\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: pydocvi 0.1.2\n"
 
 msgid "The import system"
 msgstr ""
@@ -75,8 +75,10 @@ msgid ""
 "namespace package support has been implemented (see :pep:`420`)."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":mod:`importlib`"
-msgstr ""
+msgstr ":mod:`importlib`"
 
 msgid ""
 "The :mod:`importlib` module provides a rich API for interacting with the "
@@ -86,8 +88,10 @@ msgid ""
 "additional detail."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Packages"
-msgstr ""
+msgstr "Packages"
 
 msgid ""
 "Python has only one type of module object, and all modules are of this type, "
@@ -141,6 +145,8 @@ msgid ""
 "package with three subpackages::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "parent/\n"
 "    __init__.py\n"
@@ -151,6 +157,14 @@ msgid ""
 "    three/\n"
 "        __init__.py"
 msgstr ""
+"parent/\n"
+"    __init__.py\n"
+"    one/\n"
+"        __init__.py\n"
+"    two/\n"
+"        __init__.py\n"
+"    three/\n"
+"        __init__.py"
 
 msgid ""
 "Importing ``parent.one`` will implicitly execute ``parent/__init__.py`` and "
@@ -192,8 +206,10 @@ msgstr ""
 msgid "See also :pep:`420` for the namespace package specification."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Searching"
-msgstr ""
+msgstr "Searching"
 
 msgid ""
 "To begin the search, Python needs the :term:`fully qualified <qualified "
@@ -397,8 +413,10 @@ msgid ""
 "MetaPathFinder.find_spec` instead."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Loading"
-msgstr ""
+msgstr "Loading"
 
 msgid ""
 "If and when a module spec is found, the import machinery will use it (and "
@@ -406,6 +424,8 @@ msgid ""
 "of what happens during the loading portion of import::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "module = None\n"
 "if spec.loader is not None and hasattr(spec.loader, 'create_module'):\n"
@@ -419,23 +439,41 @@ msgid ""
 "if spec.loader is None:\n"
 "    # unsupported\n"
 "    raise ImportError\n"
-"if spec.origin is None and spec.submodule_search_locations is not None:\n"
-"    # namespace package\n"
-"    sys.modules[spec.name] = module\n"
-"elif not hasattr(spec.loader, 'exec_module'):\n"
-"    module = spec.loader.load_module(spec.name)\n"
-"else:\n"
-"    sys.modules[spec.name] = module\n"
+"\n"
+"sys.modules[spec.name] = module\n"
+"try:\n"
+"    spec.loader.exec_module(module)\n"
+"except BaseException:\n"
 "    try:\n"
-"        spec.loader.exec_module(module)\n"
-"    except BaseException:\n"
-"        try:\n"
-"            del sys.modules[spec.name]\n"
-"        except KeyError:\n"
-"            pass\n"
-"        raise\n"
+"        del sys.modules[spec.name]\n"
+"    except KeyError:\n"
+"        pass\n"
+"    raise\n"
 "return sys.modules[spec.name]"
 msgstr ""
+"module = None\n"
+"if spec.loader is not None and hasattr(spec.loader, 'create_module'):\n"
+"    # It is assumed 'exec_module' will also be defined on the loader.\n"
+"    module = spec.loader.create_module(spec)\n"
+"if module is None:\n"
+"    module = ModuleType(spec.name)\n"
+"# The import-related module attributes get set here:\n"
+"_init_module_attrs(spec, module)\n"
+"\n"
+"if spec.loader is None:\n"
+"    # unsupported\n"
+"    raise ImportError\n"
+"\n"
+"sys.modules[spec.name] = module\n"
+"try:\n"
+"    spec.loader.exec_module(module)\n"
+"except BaseException:\n"
+"    try:\n"
+"        del sys.modules[spec.name]\n"
+"    except KeyError:\n"
+"        pass\n"
+"    raise\n"
+"return sys.modules[spec.name]"
 
 msgid "Note the following details:"
 msgstr ""
@@ -481,12 +519,17 @@ msgstr ""
 
 msgid ""
 "The import system has taken over the boilerplate responsibilities of "
-"loaders.  These were previously performed by the :meth:`importlib.abc.Loader."
-"load_module` method."
+"loaders.  These were previously performed by the ``importlib.abc.Loader."
+"load_module`` method."
 msgstr ""
 
-msgid "Loaders"
+msgid "The ``load_module`` method is no longer used."
 msgstr ""
+
+# pydocvi: passthrough=version_marker
+#, fuzzy
+msgid "Loaders"
+msgstr "Loaders"
 
 msgid ""
 "Module loaders provide the critical function of loading: module execution. "
@@ -529,7 +572,7 @@ msgid "The :meth:`~importlib.abc.Loader.create_module` method of loaders."
 msgstr ""
 
 msgid ""
-"The :meth:`~importlib.abc.Loader.load_module` method was replaced by :meth:"
+"The ``importlib.abc.Loader.load_module`` method was replaced by :meth:"
 "`~importlib.abc.Loader.exec_module` and the import machinery assumed all the "
 "boilerplate responsibilities of loading."
 msgstr ""
@@ -579,8 +622,10 @@ msgstr ""
 msgid "Use of ``load_module()`` will raise :exc:`ImportWarning`."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Submodules"
-msgstr ""
+msgstr "Submodules"
 
 msgid ""
 "When a submodule is loaded using any mechanism (e.g. ``importlib`` APIs, the "
@@ -591,23 +636,32 @@ msgid ""
 "submodule.  Let's say you have the following directory structure::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "spam/\n"
 "    __init__.py\n"
 "    foo.py"
 msgstr ""
+"spam/\n"
+"    __init__.py\n"
+"    foo.py"
 
 msgid "and ``spam/__init__.py`` has the following line in it::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "from .foo import Foo"
-msgstr ""
+msgstr "from .foo import Foo"
 
 msgid ""
 "then executing the following puts name bindings for ``foo`` and ``Foo`` in "
 "the ``spam`` module::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import spam\n"
 ">>> spam.foo\n"
@@ -615,6 +669,11 @@ msgid ""
 ">>> spam.Foo\n"
 "<class 'spam.foo.Foo'>"
 msgstr ""
+">>> import spam\n"
+">>> spam.foo\n"
+"<module 'spam.foo' from '/tmp/imports/spam/foo.py'>\n"
+">>> spam.Foo\n"
+"<class 'spam.foo.Foo'>"
 
 msgid ""
 "Given Python's familiar name binding rules this might seem surprising, but "
@@ -1026,6 +1085,8 @@ msgid ""
 "after the first. For example, given the following package layout::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "package/\n"
 "    __init__.py\n"
@@ -1038,12 +1099,24 @@ msgid ""
 "        moduleZ.py\n"
 "    moduleA.py"
 msgstr ""
+"package/\n"
+"    __init__.py\n"
+"    subpackage1/\n"
+"        __init__.py\n"
+"        moduleX.py\n"
+"        moduleY.py\n"
+"    subpackage2/\n"
+"        __init__.py\n"
+"        moduleZ.py\n"
+"    moduleA.py"
 
 msgid ""
 "In either ``subpackage1/moduleX.py`` or ``subpackage1/__init__.py``, the "
 "following are valid relative imports::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "from .moduleY import spam\n"
 "from .moduleY import spam as ham\n"
@@ -1052,6 +1125,12 @@ msgid ""
 "from ..subpackage2.moduleZ import eggs\n"
 "from ..moduleA import foo"
 msgstr ""
+"from .moduleY import spam\n"
+"from .moduleY import spam as ham\n"
+"from . import moduleY\n"
+"from ..subpackage1 import moduleY\n"
+"from ..subpackage2.moduleZ import eggs\n"
+"from ..moduleA import foo"
 
 msgid ""
 "Absolute imports may use either the ``import <>`` or ``from <> import <>`` "
@@ -1059,8 +1138,10 @@ msgid ""
 "this is that::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "import XXX.YYY.ZZZ"
-msgstr ""
+msgstr "import XXX.YYY.ZZZ"
 
 msgid ""
 "should expose ``XXX.YYY.ZZZ`` as a usable expression, but .moduleY is not a "
@@ -1080,8 +1161,10 @@ msgid ""
 "interpreter is invoked."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "__main__.__spec__"
-msgstr ""
+msgstr "__main__.__spec__"
 
 msgid ""
 "Depending on how :mod:`__main__` is initialized, ``__main__.__spec__`` gets "
@@ -1128,8 +1211,10 @@ msgid ""
 "populate the ``__main__`` namespace, and not during normal import."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "References"
-msgstr ""
+msgstr "References"
 
 msgid ""
 "The import machinery has evolved considerably since Python's early days.  "
@@ -1185,35 +1270,53 @@ msgid ""
 "behavior that is not guaranteed to work in other Python implementations."
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "import machinery"
-msgstr ""
+msgstr "import machinery"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "package"
-msgstr ""
+msgstr "package"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "regular"
-msgstr ""
+msgstr "regular"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "namespace"
-msgstr ""
+msgstr "namespace"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "portion"
-msgstr ""
+msgstr "portion"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "sys.modules"
-msgstr ""
+msgstr "sys.modules"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "finder"
-msgstr ""
+msgstr "finder"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "loader"
-msgstr ""
+msgstr "loader"
 
 msgid "module spec"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "import hooks"
-msgstr ""
+msgstr "import hooks"
 
 msgid "meta hooks"
 msgstr ""
@@ -1221,35 +1324,53 @@ msgstr ""
 msgid "path hooks"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "hooks"
-msgstr ""
+msgstr "hooks"
 
 msgid "import"
-msgstr ""
+msgstr "import"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "meta"
-msgstr ""
+msgstr "meta"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "path"
-msgstr ""
+msgstr "path"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "sys.meta_path"
-msgstr ""
+msgstr "sys.meta_path"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "find_spec"
-msgstr ""
+msgstr "find_spec"
 
 msgid "path based finder"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "sys.path"
-msgstr ""
+msgstr "sys.path"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "sys.path_hooks"
-msgstr ""
+msgstr "sys.path_hooks"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "sys.path_importer_cache"
-msgstr ""
+msgstr "sys.path_importer_cache"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "PYTHONPATH"
-msgstr ""
+msgstr "PYTHONPATH"

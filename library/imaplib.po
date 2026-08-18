@@ -9,18 +9,18 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-17 14:50+0000\n"
-"PO-Revision-Date: 2025-09-16 00:01+0000\n"
-"Last-Translator: python-doc bot, 2025\n"
-"Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
-"vi/)\n"
+"POT-Creation-Date: 2026-05-08 18:34+0000\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: pydocvi 0.1.2\n"
 
 msgid ":mod:`!imaplib` --- IMAP4 protocol client"
 msgstr ""
@@ -36,8 +36,10 @@ msgid ""
 "that the ``STATUS`` command is not supported in IMAP4."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Availability"
-msgstr ""
+msgstr "Availability"
 
 msgid ""
 "This module does not work or is not available on WebAssembly. See :ref:`wasm-"
@@ -65,6 +67,8 @@ msgid ""
 "keyword:`!with` statement exits.  E.g.::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> from imaplib import IMAP4\n"
 ">>> with IMAP4(\"domain.org\") as M:\n"
@@ -72,6 +76,11 @@ msgid ""
 "...\n"
 "('OK', [b'Nothing Accomplished. d25if65hy903weo.87'])"
 msgstr ""
+">>> from imaplib import IMAP4\n"
+">>> with IMAP4(\"domain.org\") as M:\n"
+"...     M.noop()\n"
+"...\n"
+"('OK', [b'Nothing Accomplished. d25if65hy903weo.87'])"
 
 msgid "Support for the :keyword:`with` statement was added."
 msgstr ""
@@ -239,8 +248,10 @@ msgstr ""
 msgid "*authobject* must be a callable object::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "data = authobject(response)"
-msgstr ""
+msgstr "data = authobject(response)"
 
 msgid ""
 "It will be called to process server continuation responses; the *response* "
@@ -348,6 +359,8 @@ msgid ""
 "``None`` on :class:`IMAP4_stream` connections."
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> with M.idle(duration=29 * 60) as idler:\n"
 "...     for typ, data in idler:\n"
@@ -356,6 +369,12 @@ msgid ""
 "EXISTS [b'1']\n"
 "RECENT [b'1']"
 msgstr ""
+">>> with M.idle(duration=29 * 60) as idler:\n"
+"...     for typ, data in idler:\n"
+"...         print(typ, data)\n"
+"...\n"
+"EXISTS [b'1']\n"
+"RECENT [b'1']"
 
 msgid ""
 "Yield a burst of responses no more than *interval* seconds apart (expressed "
@@ -374,6 +393,8 @@ msgid ""
 "connections."
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> with M.idle() as idler:\n"
 "...     # get a response and any others following by < 0.1 seconds\n"
@@ -384,6 +405,14 @@ msgid ""
 "processing 3 responses...\n"
 "[('EXPUNGE', [b'2']), ('EXPUNGE', [b'1']), ('RECENT', [b'0'])]"
 msgstr ""
+">>> with M.idle() as idler:\n"
+"...     # get a response and any others following by < 0.1 seconds\n"
+"...     batch = list(idler.burst())\n"
+"...     print(f'processing {len(batch)} responses...')\n"
+"...     print(batch)\n"
+"...\n"
+"processing 3 responses...\n"
+"[('EXPUNGE', [b'2']), ('EXPUNGE', [b'1']), ('RECENT', [b'0'])]"
 
 msgid ""
 "The ``IDLE`` context's maximum duration, as passed to :meth:`IMAP4.idle`, is "
@@ -510,6 +539,8 @@ msgstr ""
 msgid "Example::"
 msgstr "Ví dụ::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "# M is a connected IMAP4 instance...\n"
 "typ, msgnums = M.search(None, 'FROM', '\"LDJ\"')\n"
@@ -517,6 +548,11 @@ msgid ""
 "# or:\n"
 "typ, msgnums = M.search(None, '(FROM \"LDJ\")')"
 msgstr ""
+"# M is a connected IMAP4 instance...\n"
+"typ, msgnums = M.search(None, 'FROM', '\"LDJ\"')\n"
+"\n"
+"# or:\n"
+"typ, msgnums = M.search(None, '(FROM \"LDJ\")')"
 
 msgid ""
 "Select a mailbox. Returned data is the count of messages in *mailbox* "
@@ -598,12 +634,18 @@ msgstr ""
 msgid "For example, to set the delete flag on all messages::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "typ, data = M.search(None, 'ALL')\n"
 "for num in data[0].split():\n"
 "   M.store(num, '+FLAGS', '\\\\Deleted')\n"
 "M.expunge()"
 msgstr ""
+"typ, data = M.search(None, 'ALL')\n"
+"for num in data[0].split():\n"
+"   M.store(num, '+FLAGS', '\\\\Deleted')\n"
+"M.expunge()"
 
 msgid ""
 "Creating flags containing ']' (for example: \"[test]\") violates :rfc:`3501` "
@@ -683,6 +725,13 @@ msgid ""
 "`enable` command is successfully issued for the ``UTF8=ACCEPT`` capability."
 msgstr ""
 
+msgid ""
+"Internal :class:`~io.BufferedReader` associated with the underlying socket. "
+"This property is documented for legacy purposes but not part of the public "
+"interface. The caller is responsible to ensure that the current file is "
+"closed before changing it."
+msgstr ""
+
 msgid "IMAP4 Example"
 msgstr ""
 
@@ -691,6 +740,8 @@ msgid ""
 "retrieves and prints all messages::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import getpass, imaplib\n"
 "\n"
@@ -704,15 +755,34 @@ msgid ""
 "M.close()\n"
 "M.logout()"
 msgstr ""
+"import getpass, imaplib\n"
+"\n"
+"M = imaplib.IMAP4(host='example.org')\n"
+"M.login(getpass.getuser(), getpass.getpass())\n"
+"M.select()\n"
+"typ, data = M.search(None, 'ALL')\n"
+"for num in data[0].split():\n"
+"    typ, data = M.fetch(num, '(RFC822)')\n"
+"    print('Message %s\\n%s\\n' % (num, data[0][1]))\n"
+"M.close()\n"
+"M.logout()"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "IMAP4"
-msgstr ""
+msgstr "IMAP4"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "protocol"
-msgstr ""
+msgstr "protocol"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "IMAP4_SSL"
-msgstr ""
+msgstr "IMAP4_SSL"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "IMAP4_stream"
-msgstr ""
+msgstr "IMAP4_stream"

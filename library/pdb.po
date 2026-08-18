@@ -10,18 +10,18 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-17 14:50+0000\n"
-"PO-Revision-Date: 2025-09-16 00:01+0000\n"
-"Last-Translator: Nguyen Duc Tam, 2026\n"
-"Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
-"vi/)\n"
+"POT-Creation-Date: 2026-05-08 18:34+0000\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: pydocvi 0.1.2\n"
 
 msgid ":mod:`!pdb` --- The Python Debugger"
 msgstr ""
@@ -63,14 +63,18 @@ msgstr ""
 msgid "The typical usage to break into the debugger is to insert::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "import pdb; pdb.set_trace()"
-msgstr ""
+msgstr "import pdb; pdb.set_trace()"
 
 msgid "Or::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "breakpoint()"
-msgstr ""
+msgstr "breakpoint()"
 
 msgid ""
 "at the location you want to break into the debugger, and then run the "
@@ -83,6 +87,8 @@ msgid ""
 "instead of ``import pdb; pdb.set_trace()``."
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def double(x):\n"
 "   breakpoint()\n"
@@ -90,6 +96,11 @@ msgid ""
 "val = 3\n"
 "print(f\"{val} * 2 is {double(val)}\")"
 msgstr ""
+"def double(x):\n"
+"   breakpoint()\n"
+"   return x * 2\n"
+"val = 3\n"
+"print(f\"{val} * 2 is {double(val)}\")"
 
 msgid ""
 "The debugger's prompt is ``(Pdb)``, which is the indicator that you are in "
@@ -119,8 +130,10 @@ msgid ""
 "scripts.  For example::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "python -m pdb [-c command] (-m module | -p pid | pyfile) [args ...]"
-msgstr ""
+msgstr "python -m pdb [-c command] (-m module | -p pid | pyfile) [args ...]"
 
 msgid ""
 "When invoked as a module, pdb will automatically enter post-mortem debugging "
@@ -154,8 +167,10 @@ msgid ""
 "or ``--pid`` option with the target process's PID::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "python -m pdb -p 1234"
-msgstr ""
+msgstr "python -m pdb -p 1234"
 
 msgid ""
 "Attaching to a process that is blocked in a system call or waiting for I/O "
@@ -166,6 +181,8 @@ msgstr ""
 msgid "Typical usage to execute a statement under control of the debugger is::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import pdb\n"
 ">>> def f(x):\n"
@@ -176,10 +193,20 @@ msgid ""
 "0.5\n"
 ">>>"
 msgstr ""
+">>> import pdb\n"
+">>> def f(x):\n"
+"...     print(1 / x)\n"
+">>> pdb.run(\"f(2)\")\n"
+"> <string>(1)<module>()\n"
+"(Pdb) continue\n"
+"0.5\n"
+">>>"
 
 msgid "The typical usage to inspect a crashed program is::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
 ">>> import pdb\n"
 ">>> def f(x):\n"
@@ -196,6 +223,20 @@ msgid ""
 "0\n"
 "(Pdb)"
 msgstr ""
+">>> import pdb\n"
+">>> def f(x):\n"
+"...     print(1 / x)\n"
+"...\n"
+">>> f(0)\n"
+"Traceback (most recent call last):\n"
+"  File \"<stdin>\", line 1, in <module>\n"
+"  File \"<stdin>\", line 2, in f\n"
+"ZeroDivisionError: division by zero\n"
+">>> pdb.pm()\n"
+"> <stdin>(2)f()\n"
+"(Pdb) p x\n"
+"0\n"
+"(Pdb)"
 
 msgid ""
 "The implementation of :pep:`667` means that name assignments made via "
@@ -257,10 +298,14 @@ msgid ""
 "async function with :keyword:`await`."
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "async def f():\n"
 "    await pdb.set_trace_async()"
 msgstr ""
+"async def f():\n"
+"    await pdb.set_trace_async()"
 
 msgid ""
 ":keyword:`await` statements are supported if the debugger is invoked by this "
@@ -352,8 +397,10 @@ msgstr ""
 msgid "Example call to enable tracing with *skip*::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "import pdb; pdb.Pdb(skip=['django.*']).set_trace()"
-msgstr ""
+msgstr "import pdb; pdb.Pdb(skip=['django.*']).set_trace()"
 
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``pdb.Pdb`` with no arguments."
@@ -601,7 +648,8 @@ msgid ""
 msgstr ""
 
 msgid ""
-"With no *bpnumber* argument, ``commands`` refers to the last breakpoint set."
+"With no *bpnumber* argument, ``commands`` refers to the most recently set "
+"breakpoint that still exists."
 msgstr ""
 
 msgid ""
@@ -833,12 +881,18 @@ msgid ""
 "file:`.pdbrc` file)::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "# Print instance variables (usage \"pi classInst\")\n"
 "alias pi for k in %1.__dict__.keys(): print(f\"%1.{k} = {%1.__dict__[k]}\")\n"
 "# Print instance variables in self\n"
 "alias ps pi self"
 msgstr ""
+"# Print instance variables (usage \"pi classInst\")\n"
+"alias pi for k in %1.__dict__.keys(): print(f\"%1.{k} = {%1.__dict__[k]}\")\n"
+"# Print instance variables in self\n"
+"alias ps pi self"
 
 msgid "Delete the specified alias *name*."
 msgstr ""
@@ -912,6 +966,8 @@ msgid ""
 "``exceptions <number>`` to switch to that exception."
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def out():\n"
 "    try:\n"
@@ -930,10 +986,28 @@ msgid ""
 "\n"
 " out()"
 msgstr ""
+"def out():\n"
+"    try:\n"
+"        middle()\n"
+"    except Exception as e:\n"
+"        raise ValueError(\"reraise middle() error\") from e\n"
+"\n"
+"def middle():\n"
+"    try:\n"
+"        return inner(0)\n"
+"    except Exception as e:\n"
+"        raise ValueError(\"Middle fail\")\n"
+"\n"
+"def inner(x):\n"
+"    1 / x\n"
+"\n"
+" out()"
 
 msgid "calling ``pdb.pm()`` will allow to move between exceptions::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "> example.py(5)out()\n"
 "-> raise ValueError(\"reraise middle() error\") from e\n"
@@ -951,6 +1025,21 @@ msgid ""
 "> example.py(10)middle()\n"
 "-> return inner(0)"
 msgstr ""
+"> example.py(5)out()\n"
+"-> raise ValueError(\"reraise middle() error\") from e\n"
+"\n"
+"(Pdb) exceptions\n"
+"  0 ZeroDivisionError('division by zero')\n"
+"  1 ValueError('Middle fail')\n"
+"> 2 ValueError('reraise middle() error')\n"
+"\n"
+"(Pdb) exceptions 0\n"
+"> example.py(16)inner()\n"
+"-> 1 / x\n"
+"\n"
+"(Pdb) up\n"
+"> example.py(10)middle()\n"
+"-> return inner(0)"
 
 msgid "Footnotes"
 msgstr " Chú thích"
@@ -960,20 +1049,26 @@ msgid ""
 "by the ``__name__`` in the frame globals."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "debugging"
-msgstr ""
+msgstr "debugging"
 
 msgid "Pdb (class in pdb)"
 msgstr ""
 
 msgid "module"
-msgstr ""
+msgstr "module"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "bdb"
-msgstr ""
+msgstr "bdb"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "cmd"
-msgstr ""
+msgstr "cmd"
 
 msgid ".pdbrc"
 msgstr ""
@@ -981,8 +1076,12 @@ msgstr ""
 msgid "file"
 msgstr "tệp tin"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "debugger"
-msgstr ""
+msgstr "debugger"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "configuration"
-msgstr ""
+msgstr "configuration"

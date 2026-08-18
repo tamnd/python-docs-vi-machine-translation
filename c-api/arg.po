@@ -10,18 +10,18 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-19 14:37+0000\n"
-"PO-Revision-Date: 2025-09-16 00:00+0000\n"
-"Last-Translator: Nguyen Duc Tam, 2026\n"
-"Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
-"vi/)\n"
+"POT-Creation-Date: 2026-05-08 18:34+0000\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: pydocvi 0.1.2\n"
 
 msgid "Parsing arguments and building values"
 msgstr ""
@@ -368,9 +368,11 @@ msgstr ""
 
 msgid ""
 "For signed integer formats, :exc:`OverflowError` is raised if the value is "
-"out of range for the C type. For unsigned integer formats, no range checking "
-"is done --- the most significant bits are silently truncated when the "
-"receiving field is too small to receive the value."
+"out of range for the C type. For unsigned integer formats, the most "
+"significant bits are silently truncated when the receiving field is too "
+"small to receive the value, and :exc:`DeprecationWarning` is emitted when "
+"the value is larger than the maximal value for the C type or less than the "
+"minimal value for the corresponding signed integer type of the same size."
 msgstr ""
 
 msgid "``b`` (:class:`int`) [unsigned char]"
@@ -386,7 +388,8 @@ msgstr ""
 
 msgid ""
 "Convert a Python integer to a tiny integer without overflow checking, stored "
-"in a C :c:expr:`unsigned char`."
+"in a C :c:expr:`unsigned char`. Convert a Python integer to a C :c:expr:"
+"`unsigned char`."
 msgstr ""
 
 msgid "``h`` (:class:`int`) [short int]"
@@ -398,9 +401,7 @@ msgstr ""
 msgid "``H`` (:class:`int`) [unsigned short int]"
 msgstr ""
 
-msgid ""
-"Convert a Python integer to a C :c:expr:`unsigned short int`, without "
-"overflow checking."
+msgid "Convert a Python integer to a C :c:expr:`unsigned short int`."
 msgstr ""
 
 msgid "``i`` (:class:`int`) [int]"
@@ -412,9 +413,7 @@ msgstr ""
 msgid "``I`` (:class:`int`) [unsigned int]"
 msgstr ""
 
-msgid ""
-"Convert a Python integer to a C :c:expr:`unsigned int`, without overflow "
-"checking."
+msgid "Convert a Python integer to a C :c:expr:`unsigned int`."
 msgstr ""
 
 msgid "``l`` (:class:`int`) [long int]"
@@ -426,9 +425,7 @@ msgstr ""
 msgid "``k`` (:class:`int`) [unsigned long]"
 msgstr ""
 
-msgid ""
-"Convert a Python integer to a C :c:expr:`unsigned long` without overflow "
-"checking."
+msgid "Convert a Python integer to a C :c:expr:`unsigned long`."
 msgstr ""
 
 msgid "Use :meth:`~object.__index__` if available."
@@ -443,13 +440,13 @@ msgstr ""
 msgid "``K`` (:class:`int`) [unsigned long long]"
 msgstr ""
 
-msgid ""
-"Convert a Python integer to a C :c:expr:`unsigned long long` without "
-"overflow checking."
+msgid "Convert a Python integer to a C :c:expr:`unsigned long long`."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``n`` (:class:`int`) [:c:type:`Py_ssize_t`]"
-msgstr ""
+msgstr "``n`` (:class:`int`) [:c:type:`Py_ssize_t`]"
 
 msgid "Convert a Python integer to a C :c:type:`Py_ssize_t`."
 msgstr ""
@@ -491,6 +488,13 @@ msgstr ""
 msgid "Convert a Python complex number to a C :c:type:`Py_complex` structure."
 msgstr ""
 
+msgid ""
+"For unsigned integer formats ``B``, ``H``, ``I``, ``k`` and ``K``, :exc:"
+"`DeprecationWarning` is emitted when the value is larger than the maximal "
+"value for the C type or less than the minimal value for the corresponding "
+"signed integer type of the same size."
+msgstr ""
+
 msgid "Other objects"
 msgstr ""
 
@@ -525,8 +529,10 @@ msgid ""
 "*converter* function in turn is called as follows::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "status = converter(object, address);"
-msgstr ""
+msgstr "status = converter(object, address);"
 
 msgid ""
 "where *object* is the Python object to be converted and *address* is the :c:"
@@ -596,8 +602,10 @@ msgid ""
 "occur inside nested parentheses.  They are:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``|``"
-msgstr ""
+msgstr "``|``"
 
 msgid ""
 "Indicates that the remaining arguments in the Python argument list are "
@@ -607,8 +615,10 @@ msgid ""
 "corresponding C variable(s)."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``$``"
-msgstr ""
+msgstr "``$``"
 
 msgid ""
 ":c:func:`PyArg_ParseTupleAndKeywords` only: Indicates that the remaining "
@@ -617,8 +627,10 @@ msgid ""
 "be specified before ``$`` in the format string."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``:``"
-msgstr ""
+msgstr "``:``"
 
 msgid ""
 "The list of format units ends here; the string after the colon is used as "
@@ -626,8 +638,10 @@ msgid ""
 "exception that :c:func:`PyArg_ParseTuple` raises)."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``;``"
-msgstr ""
+msgstr "``;``"
 
 msgid ""
 "The list of format units ends here; the string after the semicolon is used "
@@ -719,6 +733,8 @@ msgstr ""
 msgid "Example::"
 msgstr "Ví dụ::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "// Function using METH_O calling convention\n"
 "static PyObject*\n"
@@ -730,6 +746,31 @@ msgid ""
 "    }\n"
 "    // ... use value ...\n"
 "}"
+msgstr ""
+"// Function using METH_O calling convention\n"
+"static PyObject*\n"
+"my_function(PyObject *module, PyObject *arg)\n"
+"{\n"
+"    int value;\n"
+"    if (!PyArg_Parse(arg, \"i:my_function\", &value)) {\n"
+"        return NULL;\n"
+"    }\n"
+"    // ... use value ...\n"
+"}"
+
+msgid ""
+"Parse the parameters of a function that takes only array parameters into "
+"local variables (that is, a function using the :c:macro:`METH_FASTCALL` "
+"calling convention). Returns true on success; on failure, it returns false "
+"and raises the appropriate exception."
+msgstr ""
+
+msgid ""
+"Parse the parameters of a function that takes both array and keyword "
+"parameters into local variables (that is, a function using the :c:macro:"
+"`METH_FASTCALL` ``|`` :c:macro:`METH_KEYWORDS` calling convention). Returns "
+"true on success; on failure, it returns false and raises the appropriate "
+"exception."
 msgstr ""
 
 msgid ""
@@ -754,6 +795,8 @@ msgid ""
 "the :mod:`!_weakref` helper module for weak references::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "static PyObject *\n"
 "weakref_ref(PyObject *self, PyObject *args)\n"
@@ -768,14 +811,28 @@ msgid ""
 "    return result;\n"
 "}"
 msgstr ""
+"static PyObject *\n"
+"weakref_ref(PyObject *self, PyObject *args)\n"
+"{\n"
+"    PyObject *object;\n"
+"    PyObject *callback = NULL;\n"
+"    PyObject *result = NULL;\n"
+"\n"
+"    if (PyArg_UnpackTuple(args, \"ref\", 1, 2, &object, &callback)) {\n"
+"        result = PyWeakref_NewRef(object, callback);\n"
+"    }\n"
+"    return result;\n"
+"}"
 
 msgid ""
 "The call to :c:func:`PyArg_UnpackTuple` in this example is entirely "
 "equivalent to this call to :c:func:`PyArg_ParseTuple`::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "PyArg_ParseTuple(args, \"O|O:ref\", &object, &callback)"
-msgstr ""
+msgstr "PyArg_ParseTuple(args, \"O|O:ref\", &object, &callback)"
 
 msgid ""
 "The value to be inserted, if any, before :c:expr:`char * const *` in the "

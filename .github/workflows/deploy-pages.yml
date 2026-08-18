@@ -27,8 +27,20 @@ jobs:
       - name: Checkout CPython
         uses: actions/checkout@v4
         with:
+          # The last commit on the 3.15 branch before this corpus was extracted,
+          # which is what the POT-Creation-Date of 2026-05-08 18:34+0000 in every
+          # catalog header refers to. It has to be that tree and not a later one,
+          # because a msgid is only a key: an entry whose English moved by one
+          # comma since the extraction stops matching and Sphinx quietly renders
+          # the English instead. There is no error and no warning, the page just
+          # comes out less translated than the coverage table says it is.
+          #
+          # This was pinned to a 3.14 backport until August 2026, so the site was
+          # rendering the 3.14 documentation from 3.15 msgids and losing every
+          # string that changed between the two. The step below is there so that
+          # cannot happen again without the build going red.
           repository: python/cpython
-          ref: "67100b3e926c2c7cdd9d0825add677b19664f377"
+          ref: "0bdbc4810165bcbaefd16560d48e94a472557d23"
           path: cpython
 
       - name: Set up CPython Doc venv
@@ -38,6 +50,29 @@ jobs:
         uses: actions/checkout@v4
         with:
           path: cpython/Doc/locales/vi/LC_MESSAGES
+
+      - name: the catalogs and the checkout are the same Python
+        run: |
+          # Both sides say which version they are, and until this step existed
+          # nothing compared them. The catalogs carry Project-Id-Version, written
+          # by the extraction; CPython carries its own version in patchlevel.h.
+          # Disagreement here is not a build failure of any kind, which is
+          # precisely the problem: it produces a site that looks finished and is
+          # missing whatever the two releases worded differently.
+          catalogs=$(sed -n 's/^"Project-Id-Version: Python \([0-9.]*\)\\n"$/\1/p' \
+            cpython/Doc/locales/vi/LC_MESSAGES/bugs.po | head -1)
+          major=$(sed -n 's/^#define PY_MAJOR_VERSION *\([0-9]*\).*/\1/p' cpython/Include/patchlevel.h)
+          minor=$(sed -n 's/^#define PY_MINOR_VERSION *\([0-9]*\).*/\1/p' cpython/Include/patchlevel.h)
+          checkout="$major.$minor"
+          echo "catalogs say Python $catalogs, the checkout is Python $checkout"
+          if [ -z "$catalogs" ]; then
+            echo "::error::no Project-Id-Version in bugs.po, so there is nothing to compare"
+            exit 1
+          fi
+          if [ "$catalogs" != "$checkout" ]; then
+            echo "::error::the catalogs are Python $catalogs and this builds Python $checkout, so every string the two releases word differently will render in English"
+            exit 1
+          fi
 
       - name: Build HTML
         run: |

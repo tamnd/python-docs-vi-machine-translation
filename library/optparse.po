@@ -9,18 +9,18 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-17 14:50+0000\n"
-"PO-Revision-Date: 2025-09-16 00:01+0000\n"
-"Last-Translator: python-doc bot, 2025\n"
-"Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
-"vi/)\n"
+"POT-Creation-Date: 2026-05-08 18:34+0000\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: pydocvi 0.1.2\n"
 
 msgid ":mod:`!optparse` --- Parser for command line options"
 msgstr ""
@@ -116,6 +116,8 @@ msgid ""
 "``argparse``:"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import optparse\n"
 "\n"
@@ -126,7 +128,17 @@ msgid ""
 "    opts, args = parser.parse_args()\n"
 "    process(args, output=opts.output, verbose=opts.verbose)"
 msgstr ""
+"import optparse\n"
+"\n"
+"if __name__ == '__main__':\n"
+"    parser = optparse.OptionParser()\n"
+"    parser.add_option('-o', '--output')\n"
+"    parser.add_option('-v', dest='verbose', action='store_true')\n"
+"    opts, args = parser.parse_args()\n"
+"    process(args, output=opts.output, verbose=opts.verbose)"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import argparse\n"
 "\n"
@@ -138,6 +150,15 @@ msgid ""
 "    args = parser.parse_args()\n"
 "    process(args.rest, output=args.output, verbose=args.verbose)"
 msgstr ""
+"import argparse\n"
+"\n"
+"if __name__ == '__main__':\n"
+"    parser = argparse.ArgumentParser()\n"
+"    parser.add_argument('-o', '--output')\n"
+"    parser.add_argument('-v', dest='verbose', action='store_true')\n"
+"    parser.add_argument('rest', nargs='*')\n"
+"    args = parser.parse_args()\n"
+"    process(args.rest, output=args.output, verbose=args.verbose)"
 
 msgid ""
 "The most obvious difference is that in the ``optparse`` version, the non-"
@@ -191,8 +212,10 @@ msgid ""
 "integrate with static checking of Python type annotations."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Introduction"
-msgstr ""
+msgstr "Introduction"
 
 msgid ""
 ":mod:`!optparse` is a more convenient, flexible, and powerful library for "
@@ -207,6 +230,8 @@ msgstr ""
 msgid "Here's an example of using :mod:`!optparse` in a simple script::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "from optparse import OptionParser\n"
 "...\n"
@@ -219,6 +244,16 @@ msgid ""
 "\n"
 "(options, args) = parser.parse_args()"
 msgstr ""
+"from optparse import OptionParser\n"
+"...\n"
+"parser = OptionParser()\n"
+"parser.add_option(\"-f\", \"--file\", dest=\"filename\",\n"
+"                  help=\"write report to FILE\", metavar=\"FILE\")\n"
+"parser.add_option(\"-q\", \"--quiet\",\n"
+"                  action=\"store_false\", dest=\"verbose\", default=True,\n"
+"                  help=\"don't print status messages to stdout\")\n"
+"\n"
+"(options, args) = parser.parse_args()"
 
 msgid ""
 "With these few lines of code, users of your script can now do the \"usual "
@@ -259,6 +294,8 @@ msgid ""
 "and :mod:`!optparse` will print out a brief summary of your script's options:"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "Usage: <yourscript> [options]\n"
 "\n"
@@ -267,14 +304,22 @@ msgid ""
 "  -f FILE, --file=FILE  write report to FILE\n"
 "  -q, --quiet           don't print status messages to stdout"
 msgstr ""
+"Usage: <yourscript> [options]\n"
+"\n"
+"Options:\n"
+"  -h, --help            show this help message and exit\n"
+"  -f FILE, --file=FILE  write report to FILE\n"
+"  -q, --quiet           don't print status messages to stdout"
 
 msgid ""
 "where the value of *yourscript* is determined at runtime (normally from "
 "``sys.argv[0]``)."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Background"
-msgstr ""
+msgstr "Background"
 
 msgid ""
 ":mod:`!optparse` was explicitly designed to encourage the creation of "
@@ -286,11 +331,15 @@ msgid ""
 "to acquaint yourself with them."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Terminology"
-msgstr ""
+msgstr "Terminology"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "argument"
-msgstr ""
+msgstr "argument"
 
 msgid ""
 "a string entered on the command-line, and passed by the shell to ``execl()`` "
@@ -306,8 +355,10 @@ msgid ""
 "argv[1:]``\"."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "option"
-msgstr ""
+msgstr "option"
 
 msgid ""
 "an argument used to supply extra information to guide or customize the "
@@ -488,8 +539,10 @@ msgid ""
 "make your code much harder to maintain."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Tutorial"
-msgstr ""
+msgstr "Tutorial"
 
 msgid ""
 "While :mod:`!optparse` is quite flexible and powerful, it's also "
@@ -511,10 +564,14 @@ msgstr ""
 msgid "Then you can start defining options.  The basic syntax is::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "parser.add_option(opt_str, ...,\n"
 "                  attr=value, ...)"
 msgstr ""
+"parser.add_option(opt_str, ...,\n"
+"                  attr=value, ...)"
 
 msgid ""
 "Each option has one or more option strings, such as ``-f`` or ``--file``, "
@@ -527,8 +584,10 @@ msgid ""
 "string, e.g.::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "parser.add_option(\"-f\", \"--file\", ...)"
-msgstr ""
+msgstr "parser.add_option(\"-f\", \"--file\", ...)"
 
 msgid ""
 "You're free to define as many short option strings and as many long option "
@@ -604,13 +663,19 @@ msgid ""
 "that it is of the correct type, and store it to your chosen destination."
 msgstr ""
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=9648862cf2b3 run=2026-08-17T16:43Z
+#, fuzzy
 msgid "For example::"
-msgstr ""
+msgstr "Ví dụ::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "parser.add_option(\"-f\", \"--file\",\n"
 "                  action=\"store\", type=\"string\", dest=\"filename\")"
 msgstr ""
+"parser.add_option(\"-f\", \"--file\",\n"
+"                  action=\"store\", type=\"string\", dest=\"filename\")"
 
 msgid ""
 "Now let's make up a fake command line and ask :mod:`!optparse` to parse it::"
@@ -633,8 +698,10 @@ msgid ""
 "``float``. Here's an option that expects an integer argument::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "parser.add_option(\"-n\", type=\"int\", dest=\"num\")"
-msgstr ""
+msgstr "parser.add_option(\"-n\", type=\"int\", dest=\"num\")"
 
 msgid ""
 "Note that this option has no long option string, which is perfectly "
@@ -661,8 +728,10 @@ msgid ""
 "example can be a lot shorter::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "parser.add_option(\"-f\", \"--file\", dest=\"filename\")"
-msgstr ""
+msgstr "parser.add_option(\"-f\", \"--file\", dest=\"filename\")"
 
 msgid ""
 "If you don't supply a destination, :mod:`!optparse` figures out a sensible "
@@ -687,10 +756,14 @@ msgid ""
 "``verbose`` flag that is turned on with ``-v`` and off with ``-q``::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "parser.add_option(\"-v\", action=\"store_true\", dest=\"verbose\")\n"
 "parser.add_option(\"-q\", action=\"store_false\", dest=\"verbose\")"
 msgstr ""
+"parser.add_option(\"-v\", action=\"store_true\", dest=\"verbose\")\n"
+"parser.add_option(\"-q\", action=\"store_false\", dest=\"verbose\")"
 
 msgid ""
 "Here we have two different options with the same destination, which is "
@@ -710,26 +783,34 @@ msgstr ""
 msgid "Some other actions supported by :mod:`!optparse` are:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"store_const\"``"
-msgstr ""
+msgstr "``\"store_const\"``"
 
 msgid "store a constant value, pre-set via :attr:`Option.const`"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"append\"``"
-msgstr ""
+msgstr "``\"append\"``"
 
 msgid "append this option's argument to a list"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"count\"``"
-msgstr ""
+msgstr "``\"count\"``"
 
 msgid "increment a counter by one"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"callback\"``"
-msgstr ""
+msgstr "``\"callback\"``"
 
 msgid "call a specified function"
 msgstr ""
@@ -756,11 +837,16 @@ msgid ""
 "set ``verbose`` to ``True`` unless ``-q`` is seen, then we can do this::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "parser.add_option(\"-v\", action=\"store_true\", dest=\"verbose\", "
 "default=True)\n"
 "parser.add_option(\"-q\", action=\"store_false\", dest=\"verbose\")"
 msgstr ""
+"parser.add_option(\"-v\", action=\"store_true\", dest=\"verbose\", "
+"default=True)\n"
+"parser.add_option(\"-q\", action=\"store_false\", dest=\"verbose\")"
 
 msgid ""
 "Since default values apply to the *destination* rather than to any "
@@ -768,21 +854,32 @@ msgid ""
 "destination, this is exactly equivalent::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "parser.add_option(\"-v\", action=\"store_true\", dest=\"verbose\")\n"
 "parser.add_option(\"-q\", action=\"store_false\", dest=\"verbose\", "
 "default=True)"
 msgstr ""
+"parser.add_option(\"-v\", action=\"store_true\", dest=\"verbose\")\n"
+"parser.add_option(\"-q\", action=\"store_false\", dest=\"verbose\", "
+"default=True)"
 
 msgid "Consider this::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "parser.add_option(\"-v\", action=\"store_true\", dest=\"verbose\", "
 "default=False)\n"
 "parser.add_option(\"-q\", action=\"store_false\", dest=\"verbose\", "
 "default=True)"
 msgstr ""
+"parser.add_option(\"-v\", action=\"store_true\", dest=\"verbose\", "
+"default=False)\n"
+"parser.add_option(\"-q\", action=\"store_false\", dest=\"verbose\", "
+"default=True)"
 
 msgid ""
 "Again, the default value for ``verbose`` will be ``True``: the last default "
@@ -818,6 +915,8 @@ msgid ""
 "populated with user-friendly (documented) options::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "usage = \"usage: %prog [options] arg1 arg2\"\n"
 "parser = OptionParser(usage=usage)\n"
@@ -834,6 +933,20 @@ msgid ""
 "                  help=\"interaction mode: novice, intermediate, \"\n"
 "                       \"or expert [default: %default]\")"
 msgstr ""
+"usage = \"usage: %prog [options] arg1 arg2\"\n"
+"parser = OptionParser(usage=usage)\n"
+"parser.add_option(\"-v\", \"--verbose\",\n"
+"                  action=\"store_true\", dest=\"verbose\", default=True,\n"
+"                  help=\"make lots of noise [default]\")\n"
+"parser.add_option(\"-q\", \"--quiet\",\n"
+"                  action=\"store_false\", dest=\"verbose\",\n"
+"                  help=\"be vewwy quiet (I'm hunting wabbits)\")\n"
+"parser.add_option(\"-f\", \"--filename\",\n"
+"                  metavar=\"FILE\", help=\"write output to FILE\")\n"
+"parser.add_option(\"-m\", \"--mode\",\n"
+"                  default=\"intermediate\",\n"
+"                  help=\"interaction mode: novice, intermediate, \"\n"
+"                       \"or expert [default: %default]\")"
 
 msgid ""
 "If :mod:`!optparse` encounters either ``-h`` or ``--help`` on the command-"
@@ -841,6 +954,8 @@ msgid ""
 "to standard output:"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "Usage: <yourscript> [options] arg1 arg2\n"
 "\n"
@@ -853,6 +968,16 @@ msgid ""
 "  -m MODE, --mode=MODE  interaction mode: novice, intermediate, or\n"
 "                        expert [default: intermediate]"
 msgstr ""
+"Usage: <yourscript> [options] arg1 arg2\n"
+"\n"
+"Options:\n"
+"  -h, --help            show this help message and exit\n"
+"  -v, --verbose         make lots of noise [default]\n"
+"  -q, --quiet           be vewwy quiet (I'm hunting wabbits)\n"
+"  -f FILE, --filename=FILE\n"
+"                        write output to FILE\n"
+"  -m MODE, --mode=MODE  interaction mode: novice, intermediate, or\n"
+"                        expert [default: intermediate]"
 
 msgid ""
 "(If the help output is triggered by a help option, :mod:`!optparse` exits "
@@ -867,8 +992,10 @@ msgstr ""
 msgid "the script defines its own usage message::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "usage = \"usage: %prog [options] arg1 arg2\""
-msgstr ""
+msgstr "usage = \"usage: %prog [options] arg1 arg2\""
 
 msgid ""
 ":mod:`!optparse` expands ``%prog`` in the usage string to the name of the "
@@ -936,8 +1063,10 @@ msgstr ""
 msgid "An option group is obtained using the class :class:`OptionGroup`:"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "where"
-msgstr ""
+msgstr "where"
 
 msgid ""
 "parser is the :class:`OptionParser` instance the group will be inserted in to"
@@ -965,6 +1094,8 @@ msgid ""
 "`OptionGroup` to a parser is easy::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "group = OptionGroup(parser, \"Dangerous Options\",\n"
 "                    \"Caution: use these options at your own risk.  \"\n"
@@ -972,10 +1103,17 @@ msgid ""
 "group.add_option(\"-g\", action=\"store_true\", help=\"Group option.\")\n"
 "parser.add_option_group(group)"
 msgstr ""
+"group = OptionGroup(parser, \"Dangerous Options\",\n"
+"                    \"Caution: use these options at your own risk.  \"\n"
+"                    \"It is believed that some of them bite.\")\n"
+"group.add_option(\"-g\", action=\"store_true\", help=\"Group option.\")\n"
+"parser.add_option_group(group)"
 
 msgid "This would result in the following help output:"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "Usage: <yourscript> [options] arg1 arg2\n"
 "\n"
@@ -994,12 +1132,30 @@ msgid ""
 "\n"
 "    -g                  Group option."
 msgstr ""
+"Usage: <yourscript> [options] arg1 arg2\n"
+"\n"
+"Options:\n"
+"  -h, --help            show this help message and exit\n"
+"  -v, --verbose         make lots of noise [default]\n"
+"  -q, --quiet           be vewwy quiet (I'm hunting wabbits)\n"
+"  -f FILE, --filename=FILE\n"
+"                        write output to FILE\n"
+"  -m MODE, --mode=MODE  interaction mode: novice, intermediate, or\n"
+"                        expert [default: intermediate]\n"
+"\n"
+"  Dangerous Options:\n"
+"    Caution: use these options at your own risk.  It is believed that some\n"
+"    of them bite.\n"
+"\n"
+"    -g                  Group option."
 
 msgid ""
 "A bit more complete example might involve using more than one group: still "
 "extending the previous example::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "group = OptionGroup(parser, \"Dangerous Options\",\n"
 "                    \"Caution: use these options at your own risk.  \"\n"
@@ -1016,10 +1172,26 @@ msgid ""
 "done\")\n"
 "parser.add_option_group(group)"
 msgstr ""
+"group = OptionGroup(parser, \"Dangerous Options\",\n"
+"                    \"Caution: use these options at your own risk.  \"\n"
+"                    \"It is believed that some of them bite.\")\n"
+"group.add_option(\"-g\", action=\"store_true\", help=\"Group option.\")\n"
+"parser.add_option_group(group)\n"
+"\n"
+"group = OptionGroup(parser, \"Debug Options\")\n"
+"group.add_option(\"-d\", \"--debug\", action=\"store_true\",\n"
+"                 help=\"Print debug information\")\n"
+"group.add_option(\"-s\", \"--sql\", action=\"store_true\",\n"
+"                 help=\"Print all SQL statements executed\")\n"
+"group.add_option(\"-e\", action=\"store_true\", help=\"Print every action "
+"done\")\n"
+"parser.add_option_group(group)"
 
 msgid "that results in the following output:"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "Usage: <yourscript> [options] arg1 arg2\n"
 "\n"
@@ -1043,6 +1215,27 @@ msgid ""
 "    -s, --sql           Print all SQL statements executed\n"
 "    -e                  Print every action done"
 msgstr ""
+"Usage: <yourscript> [options] arg1 arg2\n"
+"\n"
+"Options:\n"
+"  -h, --help            show this help message and exit\n"
+"  -v, --verbose         make lots of noise [default]\n"
+"  -q, --quiet           be vewwy quiet (I'm hunting wabbits)\n"
+"  -f FILE, --filename=FILE\n"
+"                        write output to FILE\n"
+"  -m MODE, --mode=MODE  interaction mode: novice, intermediate, or expert\n"
+"                        [default: intermediate]\n"
+"\n"
+"  Dangerous Options:\n"
+"    Caution: use these options at your own risk.  It is believed that some\n"
+"    of them bite.\n"
+"\n"
+"    -g                  Group option.\n"
+"\n"
+"  Debug Options:\n"
+"    -d, --debug         Print debug information\n"
+"    -s, --sql           Print all SQL statements executed\n"
+"    -e                  Print every action done"
 
 msgid ""
 "Another interesting method, in particular when working programmatically with "
@@ -1064,8 +1257,11 @@ msgid ""
 "argument to OptionParser::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "parser = OptionParser(usage=\"%prog [-f] [-q]\", version=\"%prog 1.0\")"
 msgstr ""
+"parser = OptionParser(usage=\"%prog [-f] [-q]\", version=\"%prog 1.0\")"
 
 msgid ""
 "``%prog`` is expanded just like it is in ``usage``.  Apart from that, "
@@ -1078,10 +1274,14 @@ msgstr ""
 msgid "For example, if your script is called ``/usr/bin/foo``:"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "$ /usr/bin/foo --version\n"
 "foo 1.0"
 msgstr ""
+"$ /usr/bin/foo --version\n"
+"foo 1.0"
 
 msgid ""
 "The following two methods can be used to print and get the ``version`` "
@@ -1122,12 +1322,18 @@ msgid ""
 "application-defined error condition::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "(options, args) = parser.parse_args()\n"
 "...\n"
 "if options.a and options.b:\n"
 "    parser.error(\"options -a and -b are mutually exclusive\")"
 msgstr ""
+"(options, args) = parser.parse_args()\n"
+"...\n"
+"if options.a and options.b:\n"
+"    parser.error(\"options -a and -b are mutually exclusive\")"
 
 msgid ""
 "In either case, :mod:`!optparse` handles the error the same way: it prints "
@@ -1140,22 +1346,34 @@ msgid ""
 "that takes an integer:"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "$ /usr/bin/foo -n 4x\n"
 "Usage: foo [options]\n"
 "\n"
 "foo: error: option -n: invalid integer value: '4x'"
 msgstr ""
+"$ /usr/bin/foo -n 4x\n"
+"Usage: foo [options]\n"
+"\n"
+"foo: error: option -n: invalid integer value: '4x'"
 
 msgid "Or, where the user fails to pass a value at all:"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "$ /usr/bin/foo -n\n"
 "Usage: foo [options]\n"
 "\n"
 "foo: error: -n option requires an argument"
 msgstr ""
+"$ /usr/bin/foo -n\n"
+"Usage: foo [options]\n"
+"\n"
+"foo: error: -n option requires an argument"
 
 msgid ""
 ":mod:`!optparse`\\ -generated error messages take care always to mention the "
@@ -1175,6 +1393,8 @@ msgstr ""
 msgid "Here's what :mod:`!optparse`\\ -based scripts usually look like::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "from optparse import OptionParser\n"
 "...\n"
@@ -1198,6 +1418,27 @@ msgid ""
 "if __name__ == \"__main__\":\n"
 "    main()"
 msgstr ""
+"from optparse import OptionParser\n"
+"...\n"
+"def main():\n"
+"    usage = \"usage: %prog [options] arg\"\n"
+"    parser = OptionParser(usage)\n"
+"    parser.add_option(\"-f\", \"--file\", dest=\"filename\",\n"
+"                      help=\"read data from FILENAME\")\n"
+"    parser.add_option(\"-v\", \"--verbose\",\n"
+"                      action=\"store_true\", dest=\"verbose\")\n"
+"    parser.add_option(\"-q\", \"--quiet\",\n"
+"                      action=\"store_false\", dest=\"verbose\")\n"
+"    ...\n"
+"    (options, args) = parser.parse_args()\n"
+"    if len(args) != 1:\n"
+"        parser.error(\"incorrect number of arguments\")\n"
+"    if options.verbose:\n"
+"        print(\"reading %s...\" % options.filename)\n"
+"    ...\n"
+"\n"
+"if __name__ == \"__main__\":\n"
+"    main()"
 
 msgid "Reference Guide"
 msgstr ""
@@ -1289,8 +1530,10 @@ msgid ""
 "and ``--help``) to the parser."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``prog``"
-msgstr ""
+msgstr "``prog``"
 
 msgid ""
 "The string to use when expanding ``%prog`` in ``usage`` and ``version`` "
@@ -1326,6 +1569,8 @@ msgid ""
 "to the OptionParser constructor, as in::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "option_list = [\n"
 "    make_option(\"-f\", \"--filename\",\n"
@@ -1335,6 +1580,13 @@ msgid ""
 "    ]\n"
 "parser = OptionParser(option_list=option_list)"
 msgstr ""
+"option_list = [\n"
+"    make_option(\"-f\", \"--filename\",\n"
+"                action=\"store\", type=\"string\", dest=\"filename\"),\n"
+"    make_option(\"-q\", \"--quiet\",\n"
+"                action=\"store_false\", dest=\"verbose\"),\n"
+"    ]\n"
+"parser = OptionParser(option_list=option_list)"
 
 msgid ""
 "(:func:`make_option` is a factory function for creating Option instances; "
@@ -1361,14 +1613,18 @@ msgstr ""
 msgid "To define an option with only a short option string::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "parser.add_option(\"-f\", attr=value, ...)"
-msgstr ""
+msgstr "parser.add_option(\"-f\", attr=value, ...)"
 
 msgid "And to define an option with only a long option string::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "parser.add_option(\"--foo\", attr=value, ...)"
-msgstr ""
+msgstr "parser.add_option(\"--foo\", attr=value, ...)"
 
 msgid ""
 "The keyword arguments define attributes of the new Option object.  The most "
@@ -1384,32 +1640,42 @@ msgid ""
 "hard-coded into :mod:`!optparse` are:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"store\"``"
-msgstr ""
+msgstr "``\"store\"``"
 
 msgid "store this option's argument (default)"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"store_true\"``"
-msgstr ""
+msgstr "``\"store_true\"``"
 
 msgid "store ``True``"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"store_false\"``"
-msgstr ""
+msgstr "``\"store_false\"``"
 
 msgid "store ``False``"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"append_const\"``"
-msgstr ""
+msgstr "``\"append_const\"``"
 
 msgid "append a constant value to a list, pre-set via :attr:`Option.const`"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"help\"``"
-msgstr ""
+msgstr "``\"help\"``"
 
 msgid ""
 "print a usage message including all options and the documentation for them"
@@ -1443,24 +1709,32 @@ msgstr ""
 msgid "For example, when you call ::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "parser.parse_args()"
-msgstr ""
+msgstr "parser.parse_args()"
 
 msgid ""
 "one of the first things :mod:`!optparse` does is create the ``options`` "
 "object::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "options = Values()"
-msgstr ""
+msgstr "options = Values()"
 
 msgid "If one of the options in this parser is defined with ::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "parser.add_option(\"-f\", \"--file\", action=\"store\", type=\"string\", "
 "dest=\"filename\")"
 msgstr ""
+"parser.add_option(\"-f\", \"--file\", action=\"store\", type=\"string\", "
+"dest=\"filename\")"
 
 msgid "and the command-line being parsed includes any of the following::"
 msgstr ""
@@ -1476,8 +1750,10 @@ msgid ""
 "then :mod:`!optparse`, on seeing this option, will do the equivalent of ::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "options.filename = \"foo\""
-msgstr ""
+msgstr "options.filename = \"foo\""
 
 msgid ""
 "The :attr:`~Option.type` and :attr:`~Option.dest` option attributes are "
@@ -1618,10 +1894,14 @@ msgstr ""
 msgid "Example::"
 msgstr "Ví dụ::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "parser.add_option(\"-f\")\n"
 "parser.add_option(\"-p\", type=\"float\", nargs=3, dest=\"point\")"
 msgstr ""
+"parser.add_option(\"-f\")\n"
+"parser.add_option(\"-p\", type=\"float\", nargs=3, dest=\"point\")"
 
 msgid "As it parses the command line ::"
 msgstr ""
@@ -1632,11 +1912,16 @@ msgstr ""
 msgid ":mod:`!optparse` will set ::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "options.f = \"foo.txt\"\n"
 "options.point = (1.0, -3.5, 4.0)\n"
 "options.f = \"bar.txt\""
 msgstr ""
+"options.f = \"foo.txt\"\n"
+"options.point = (1.0, -3.5, 4.0)\n"
+"options.f = \"bar.txt\""
 
 msgid ""
 "``\"store_const\"`` [required: :attr:`~Option.const`; relevant: :attr:"
@@ -1646,6 +1931,8 @@ msgstr ""
 msgid "The value :attr:`~Option.const` is stored in :attr:`~Option.dest`."
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "parser.add_option(\"-q\", \"--quiet\",\n"
 "                  action=\"store_const\", const=0, dest=\"verbose\")\n"
@@ -1654,12 +1941,20 @@ msgid ""
 "parser.add_option(\"--noisy\",\n"
 "                  action=\"store_const\", const=2, dest=\"verbose\")"
 msgstr ""
+"parser.add_option(\"-q\", \"--quiet\",\n"
+"                  action=\"store_const\", const=0, dest=\"verbose\")\n"
+"parser.add_option(\"-v\", \"--verbose\",\n"
+"                  action=\"store_const\", const=1, dest=\"verbose\")\n"
+"parser.add_option(\"--noisy\",\n"
+"                  action=\"store_const\", const=2, dest=\"verbose\")"
 
 msgid "If ``--noisy`` is seen, :mod:`!optparse` will set  ::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "options.verbose = 2"
-msgstr ""
+msgstr "options.verbose = 2"
 
 msgid "``\"store_true\"`` [relevant: :attr:`~Option.dest`]"
 msgstr ""
@@ -1675,10 +1970,14 @@ msgstr ""
 msgid "Like ``\"store_true\"``, but stores ``False``."
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "parser.add_option(\"--clobber\", action=\"store_true\", dest=\"clobber\")\n"
 "parser.add_option(\"--no-clobber\", action=\"store_false\", dest=\"clobber\")"
 msgstr ""
+"parser.add_option(\"--clobber\", action=\"store_true\", dest=\"clobber\")\n"
+"parser.add_option(\"--no-clobber\", action=\"store_false\", dest=\"clobber\")"
 
 msgid ""
 "``\"append\"`` [relevant: :attr:`~Option.type`, :attr:`~Option.dest`, :attr:"
@@ -1699,25 +1998,34 @@ msgid ""
 "as for the ``\"store\"`` action."
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "parser.add_option(\"-t\", \"--tracks\", action=\"append\", type=\"int\")"
 msgstr ""
+"parser.add_option(\"-t\", \"--tracks\", action=\"append\", type=\"int\")"
 
 msgid ""
 "If ``-t3`` is seen on the command-line, :mod:`!optparse` does the equivalent "
 "of::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "options.tracks = []\n"
 "options.tracks.append(int(\"3\"))"
 msgstr ""
+"options.tracks = []\n"
+"options.tracks.append(int(\"3\"))"
 
 msgid "If, a little later on, ``--tracks=4`` is seen, it does::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "options.tracks.append(int(\"4\"))"
-msgstr ""
+msgstr "options.tracks.append(int(\"4\"))"
 
 msgid ""
 "The ``append`` action calls the ``append`` method on the current value of "
@@ -1727,13 +2035,20 @@ msgid ""
 "with any values from the command line appended after those default values::"
 msgstr ""
 
+# pydocvi: passthrough=doctest
+#, fuzzy
 msgid ""
-">>> parser.add_option(\"--files\", action=\"append\", default=['~/.mypkg/"
-"defaults'])\n"
+">>> parser.add_option(\"--files\", action=\"append\", "
+"default=['~/.mypkg/defaults'])\n"
 ">>> opts, args = parser.parse_args(['--files', 'overrides.mypkg'])\n"
 ">>> opts.files\n"
 "['~/.mypkg/defaults', 'overrides.mypkg']"
 msgstr ""
+">>> parser.add_option(\"--files\", action=\"append\", "
+"default=['~/.mypkg/defaults'])\n"
+">>> opts, args = parser.parse_args(['--files', 'overrides.mypkg'])\n"
+">>> opts.files\n"
+"['~/.mypkg/defaults', 'overrides.mypkg']"
 
 msgid ""
 "``\"append_const\"`` [required: :attr:`~Option.const`; relevant: :attr:"
@@ -1756,24 +2071,32 @@ msgid ""
 "the first time."
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "parser.add_option(\"-v\", action=\"count\", dest=\"verbosity\")"
-msgstr ""
+msgstr "parser.add_option(\"-v\", action=\"count\", dest=\"verbosity\")"
 
 msgid ""
 "The first time ``-v`` is seen on the command line, :mod:`!optparse` does the "
 "equivalent of::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "options.verbosity = 0\n"
 "options.verbosity += 1"
 msgstr ""
+"options.verbosity = 0\n"
+"options.verbosity += 1"
 
 msgid "Every subsequent occurrence of ``-v`` results in  ::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "options.verbosity += 1"
-msgstr ""
+msgstr "options.verbosity += 1"
 
 msgid ""
 "``\"callback\"`` [required: :attr:`~Option.callback`; relevant: :attr:"
@@ -1786,8 +2109,10 @@ msgid ""
 "as ::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "func(option, opt_str, value, parser, *args, **kwargs)"
-msgstr ""
+msgstr "func(option, opt_str, value, parser, *args, **kwargs)"
 
 msgid "See section :ref:`optparse-option-callbacks` for more detail."
 msgstr ""
@@ -1810,6 +2135,8 @@ msgid ""
 "OptionParsers, so you do not normally need to create one."
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "from optparse import OptionParser, SUPPRESS_HELP\n"
 "\n"
@@ -1824,6 +2151,18 @@ msgid ""
 "                  help=\"Input file to read data from\")\n"
 "parser.add_option(\"--secret\", help=SUPPRESS_HELP)"
 msgstr ""
+"from optparse import OptionParser, SUPPRESS_HELP\n"
+"\n"
+"# usually, a help option is added automatically, but that can\n"
+"# be suppressed using the add_help_option argument\n"
+"parser = OptionParser(add_help_option=False)\n"
+"\n"
+"parser.add_option(\"-h\", \"--help\", action=\"help\")\n"
+"parser.add_option(\"-v\", action=\"store_true\", dest=\"verbose\",\n"
+"                  help=\"Be moderately verbose\")\n"
+"parser.add_option(\"--file\", dest=\"filename\",\n"
+"                  help=\"Input file to read data from\")\n"
+"parser.add_option(\"--secret\", help=SUPPRESS_HELP)"
 
 msgid ""
 "If :mod:`!optparse` sees either ``-h`` or ``--help`` on the command line, it "
@@ -1831,6 +2170,8 @@ msgid ""
 "``sys.argv[0]`` is ``\"foo.py\"``):"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "Usage: foo.py [options]\n"
 "\n"
@@ -1839,14 +2180,22 @@ msgid ""
 "  -v                Be moderately verbose\n"
 "  --file=FILENAME   Input file to read data from"
 msgstr ""
+"Usage: foo.py [options]\n"
+"\n"
+"Options:\n"
+"  -h, --help        Show this help message and exit\n"
+"  -v                Be moderately verbose\n"
+"  --file=FILENAME   Input file to read data from"
 
 msgid ""
 "After printing the help message, :mod:`!optparse` terminates your process "
 "with ``sys.exit(0)``."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"version\"``"
-msgstr ""
+msgstr "``\"version\"``"
 
 msgid ""
 "Prints the version number supplied to the OptionParser to stdout and exits. "
@@ -1920,14 +2269,18 @@ msgstr ""
 msgid "The input parameters are"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``args``"
-msgstr ""
+msgstr "``args``"
 
 msgid "the list of arguments to process (default: ``sys.argv[1:]``)"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``values``"
-msgstr ""
+msgstr "``values``"
 
 msgid ""
 "a :class:`Values` object to store option arguments in (default: a new "
@@ -1938,8 +2291,10 @@ msgstr ""
 msgid "and the return value is a pair ``(options, args)`` where"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``options``"
-msgstr ""
+msgstr "``options``"
 
 msgid ""
 "the same object that was passed in as *values*, or the ``optparse.Values`` "
@@ -2047,14 +2402,18 @@ msgid ""
 "constructor::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "parser = OptionParser(..., conflict_handler=handler)"
-msgstr ""
+msgstr "parser = OptionParser(..., conflict_handler=handler)"
 
 msgid "or with a separate call::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "parser.set_conflict_handler(handler)"
-msgstr ""
+msgstr "parser.set_conflict_handler(handler)"
 
 msgid "The available conflict handlers are:"
 msgstr ""
@@ -2067,8 +2426,10 @@ msgid ""
 "`OptionConflictError`"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``\"resolve\"``"
-msgstr ""
+msgstr "``\"resolve\"``"
 
 msgid "resolve option conflicts intelligently (see below)"
 msgstr ""
@@ -2093,12 +2454,18 @@ msgid ""
 "message will reflect that::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "Options:\n"
 "  --dry-run     do no harm\n"
 "  ...\n"
 "  -n, --noisy   be noisy"
 msgstr ""
+"Options:\n"
+"  --dry-run     do no harm\n"
+"  ...\n"
+"  -n, --noisy   be noisy"
 
 msgid ""
 "It's possible to whittle away the option strings for a previously added "
@@ -2116,15 +2483,23 @@ msgid ""
 "accessible, so :mod:`!optparse` removes it, leaving this help text::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "Options:\n"
 "  ...\n"
 "  -n, --noisy   be noisy\n"
 "  --dry-run     new dry-run option"
 msgstr ""
+"Options:\n"
+"  ...\n"
+"  -n, --noisy   be noisy\n"
+"  --dry-run     new dry-run option"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Cleanup"
-msgstr ""
+msgstr "Cleanup"
 
 msgid ""
 "OptionParser instances have several cyclic references.  This should not be a "
@@ -2168,6 +2543,8 @@ msgid ""
 "default, and the last one wins::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "parser.add_option(\"--advanced\", action=\"store_const\",\n"
 "                  dest=\"mode\", const=\"advanced\",\n"
@@ -2176,10 +2553,18 @@ msgid ""
 "                  dest=\"mode\", const=\"novice\",\n"
 "                  default=\"advanced\")  # overrides above setting"
 msgstr ""
+"parser.add_option(\"--advanced\", action=\"store_const\",\n"
+"                  dest=\"mode\", const=\"advanced\",\n"
+"                  default=\"novice\")    # overridden below\n"
+"parser.add_option(\"--novice\", action=\"store_const\",\n"
+"                  dest=\"mode\", const=\"novice\",\n"
+"                  default=\"advanced\")  # overrides above setting"
 
 msgid "To avoid this confusion, use :meth:`set_defaults`::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "parser.set_defaults(mode=\"advanced\")\n"
 "parser.add_option(\"--advanced\", action=\"store_const\",\n"
@@ -2187,6 +2572,11 @@ msgid ""
 "parser.add_option(\"--novice\", action=\"store_const\",\n"
 "                  dest=\"mode\", const=\"novice\")"
 msgstr ""
+"parser.set_defaults(mode=\"advanced\")\n"
+"parser.add_option(\"--advanced\", action=\"store_const\",\n"
+"                  dest=\"mode\", const=\"advanced\")\n"
+"parser.add_option(\"--novice\", action=\"store_const\",\n"
+"                  dest=\"mode\", const=\"novice\")"
 
 msgid "Option Callbacks"
 msgstr ""
@@ -2219,8 +2609,10 @@ msgid ""
 "call::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "parser.add_option(\"-c\", action=\"callback\", callback=my_callback)"
-msgstr ""
+msgstr "parser.add_option(\"-c\", action=\"callback\", callback=my_callback)"
 
 msgid ""
 "``callback`` is a function (or other callable object), so you must have "
@@ -2251,8 +2643,10 @@ msgid ""
 "define a callback option:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":attr:`~Option.type`"
-msgstr ""
+msgstr ":attr:`~Option.type`"
 
 msgid ""
 "has its usual meaning: as with the ``\"store\"`` or ``\"append\"`` actions, "
@@ -2261,8 +2655,10 @@ msgid ""
 "though, :mod:`!optparse` passes it to your callback function."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":attr:`~Option.nargs`"
-msgstr ""
+msgstr ":attr:`~Option.nargs`"
 
 msgid ""
 "also has its usual meaning: if it is supplied and > 1, :mod:`!optparse` will "
@@ -2271,14 +2667,18 @@ msgid ""
 "callback."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":attr:`~Option.callback_args`"
-msgstr ""
+msgstr ":attr:`~Option.callback_args`"
 
 msgid "a tuple of extra positional arguments to pass to the callback"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid ":attr:`~Option.callback_kwargs`"
-msgstr ""
+msgstr ":attr:`~Option.callback_kwargs`"
 
 msgid "a dictionary of extra keyword arguments to pass to the callback"
 msgstr ""
@@ -2289,14 +2689,18 @@ msgstr ""
 msgid "All callbacks are called as follows::"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``option``"
-msgstr ""
+msgstr "``option``"
 
 msgid "is the Option instance that's calling the callback"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``opt_str``"
-msgstr ""
+msgstr "``opt_str``"
 
 msgid ""
 "is the option string seen on the command-line that's triggering the "
@@ -2306,8 +2710,10 @@ msgid ""
 "``\"--foobar\"``.)"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``value``"
-msgstr ""
+msgstr "``value``"
 
 msgid ""
 "is the argument to this option seen on the command-line.  :mod:`!optparse` "
@@ -2318,16 +2724,20 @@ msgid ""
 "of values of the appropriate type."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``parser``"
-msgstr ""
+msgstr "``parser``"
 
 msgid ""
 "is the OptionParser instance driving the whole thing, mainly useful because "
 "you can access some other interesting data through its instance attributes:"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``parser.largs``"
-msgstr ""
+msgstr "``parser.largs``"
 
 msgid ""
 "the current list of leftover arguments, ie. arguments that have been "
@@ -2337,8 +2747,10 @@ msgid ""
 "parse_args`.)"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``parser.rargs``"
-msgstr ""
+msgstr "``parser.rargs``"
 
 msgid ""
 "the current list of remaining arguments, ie. with ``opt_str`` and ``value`` "
@@ -2346,8 +2758,10 @@ msgid ""
 "Feel free to modify ``parser.rargs``, e.g. by consuming more arguments."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``parser.values``"
-msgstr ""
+msgstr "``parser.values``"
 
 msgid ""
 "the object where option values are by default stored (an instance of "
@@ -2362,8 +2776,10 @@ msgid ""
 "callback_args` option attribute."
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``kwargs``"
-msgstr ""
+msgstr "``kwargs``"
 
 msgid ""
 "is a dictionary of arbitrary keyword arguments supplied via :attr:`~Option."
@@ -2390,12 +2806,18 @@ msgid ""
 "records that the option was seen::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def record_foo_seen(option, opt_str, value, parser):\n"
 "    parser.values.saw_foo = True\n"
 "\n"
 "parser.add_option(\"--foo\", action=\"callback\", callback=record_foo_seen)"
 msgstr ""
+"def record_foo_seen(option, opt_str, value, parser):\n"
+"    parser.values.saw_foo = True\n"
+"\n"
+"parser.add_option(\"--foo\", action=\"callback\", callback=record_foo_seen)"
 
 msgid "Of course, you could do that with the ``\"store_true\"`` action."
 msgstr ""
@@ -2408,6 +2830,8 @@ msgid ""
 "seen, but blow up if it comes after ``-b`` in the command-line.  ::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def check_order(option, opt_str, value, parser):\n"
 "    if parser.values.b:\n"
@@ -2417,6 +2841,13 @@ msgid ""
 "parser.add_option(\"-a\", action=\"callback\", callback=check_order)\n"
 "parser.add_option(\"-b\", action=\"store_true\", dest=\"b\")"
 msgstr ""
+"def check_order(option, opt_str, value, parser):\n"
+"    if parser.values.b:\n"
+"        raise OptionValueError(\"can't use -a after -b\")\n"
+"    parser.values.a = 1\n"
+"...\n"
+"parser.add_option(\"-a\", action=\"callback\", callback=check_order)\n"
+"parser.add_option(\"-b\", action=\"store_true\", dest=\"b\")"
 
 msgid "Callback example 3: check option order (generalized)"
 msgstr ""
@@ -2427,6 +2858,8 @@ msgid ""
 "error message and the flag that it sets must be generalized.  ::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def check_order(option, opt_str, value, parser):\n"
 "    if parser.values.b:\n"
@@ -2439,6 +2872,16 @@ msgid ""
 "parser.add_option(\"-c\", action=\"callback\", callback=check_order, "
 "dest='c')"
 msgstr ""
+"def check_order(option, opt_str, value, parser):\n"
+"    if parser.values.b:\n"
+"        raise OptionValueError(\"can't use %s after -b\" % opt_str)\n"
+"    setattr(parser.values, option.dest, 1)\n"
+"...\n"
+"parser.add_option(\"-a\", action=\"callback\", callback=check_order, "
+"dest='a')\n"
+"parser.add_option(\"-b\", action=\"store_true\", dest=\"b\")\n"
+"parser.add_option(\"-c\", action=\"callback\", callback=check_order, "
+"dest='c')"
 
 msgid "Callback example 4: check arbitrary condition"
 msgstr ""
@@ -2450,6 +2893,8 @@ msgid ""
 "is this::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def check_moon(option, opt_str, value, parser):\n"
 "    if is_moon_full():\n"
@@ -2460,6 +2905,14 @@ msgid ""
 "parser.add_option(\"--foo\",\n"
 "                  action=\"callback\", callback=check_moon, dest=\"foo\")"
 msgstr ""
+"def check_moon(option, opt_str, value, parser):\n"
+"    if is_moon_full():\n"
+"        raise OptionValueError(\"%s option invalid when moon is full\"\n"
+"                               % opt_str)\n"
+"    setattr(parser.values, option.dest, 1)\n"
+"...\n"
+"parser.add_option(\"--foo\",\n"
+"                  action=\"callback\", callback=check_moon, dest=\"foo\")"
 
 msgid ""
 "(The definition of ``is_moon_full()`` is left as an exercise for the reader.)"
@@ -2481,6 +2934,8 @@ msgid ""
 "Here's an example that just emulates the standard ``\"store\"`` action::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def store_value(option, opt_str, value, parser):\n"
 "    setattr(parser.values, option.dest, value)\n"
@@ -2489,6 +2944,12 @@ msgid ""
 "                  action=\"callback\", callback=store_value,\n"
 "                  type=\"int\", nargs=3, dest=\"foo\")"
 msgstr ""
+"def store_value(option, opt_str, value, parser):\n"
+"    setattr(parser.values, option.dest, value)\n"
+"...\n"
+"parser.add_option(\"--foo\",\n"
+"                  action=\"callback\", callback=store_value,\n"
+"                  type=\"int\", nargs=3, dest=\"foo\")"
 
 msgid ""
 "Note that :mod:`!optparse` takes care of consuming 3 arguments and "
@@ -2534,6 +2995,8 @@ msgid ""
 "arguments::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def vararg_callback(option, opt_str, value, parser):\n"
 "    assert value is None\n"
@@ -2562,6 +3025,32 @@ msgid ""
 "parser.add_option(\"-c\", \"--callback\", dest=\"vararg_attr\",\n"
 "                  action=\"callback\", callback=vararg_callback)"
 msgstr ""
+"def vararg_callback(option, opt_str, value, parser):\n"
+"    assert value is None\n"
+"    value = []\n"
+"\n"
+"    def floatable(str):\n"
+"        try:\n"
+"            float(str)\n"
+"            return True\n"
+"        except ValueError:\n"
+"            return False\n"
+"\n"
+"    for arg in parser.rargs:\n"
+"        # stop on --foo like options\n"
+"        if arg[:2] == \"--\" and len(arg) > 2:\n"
+"            break\n"
+"        # stop on -a, but not on -3 or -3.0\n"
+"        if arg[:1] == \"-\" and len(arg) > 1 and not floatable(arg):\n"
+"            break\n"
+"        value.append(arg)\n"
+"\n"
+"    del parser.rargs[:len(value)]\n"
+"    setattr(parser.values, option.dest, value)\n"
+"\n"
+"...\n"
+"parser.add_option(\"-c\", \"--callback\", dest=\"vararg_attr\",\n"
+"                  action=\"callback\", callback=vararg_callback)"
 
 msgid "Extending :mod:`!optparse`"
 msgstr ""
@@ -2623,16 +3112,22 @@ msgstr ""
 msgid "First, the necessary imports::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "from copy import copy\n"
 "from optparse import Option, OptionValueError"
 msgstr ""
+"from copy import copy\n"
+"from optparse import Option, OptionValueError"
 
 msgid ""
 "You need to define your type-checker first, since it's referred to later (in "
 "the :attr:`~Option.TYPE_CHECKER` class attribute of your Option subclass)::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def check_complex(option, opt, value):\n"
 "    try:\n"
@@ -2641,16 +3136,28 @@ msgid ""
 "        raise OptionValueError(\n"
 "            \"option %s: invalid complex value: %r\" % (opt, value))"
 msgstr ""
+"def check_complex(option, opt, value):\n"
+"    try:\n"
+"        return complex(value)\n"
+"    except ValueError:\n"
+"        raise OptionValueError(\n"
+"            \"option %s: invalid complex value: %r\" % (opt, value))"
 
 msgid "Finally, the Option subclass::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "class MyOption (Option):\n"
 "    TYPES = Option.TYPES + (\"complex\",)\n"
 "    TYPE_CHECKER = copy(Option.TYPE_CHECKER)\n"
 "    TYPE_CHECKER[\"complex\"] = check_complex"
 msgstr ""
+"class MyOption (Option):\n"
+"    TYPES = Option.TYPES + (\"complex\",)\n"
+"    TYPE_CHECKER = copy(Option.TYPE_CHECKER)\n"
+"    TYPE_CHECKER[\"complex\"] = check_complex"
 
 msgid ""
 "(If we didn't make a :func:`copy` of :attr:`Option.TYPE_CHECKER`, we would "
@@ -2665,10 +3172,14 @@ msgid ""
 "your OptionParser to use MyOption instead of Option::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "parser = OptionParser(option_class=MyOption)\n"
 "parser.add_option(\"-c\", type=\"complex\")"
 msgstr ""
+"parser = OptionParser(option_class=MyOption)\n"
+"parser.add_option(\"-c\", type=\"complex\")"
 
 msgid ""
 "Alternately, you can build your own option list and pass it to OptionParser; "
@@ -2676,11 +3187,16 @@ msgid ""
 "OptionParser which option class to use::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "option_list = [MyOption(\"-c\", action=\"store\", type=\"complex\", "
 "dest=\"c\")]\n"
 "parser = OptionParser(option_list=option_list)"
 msgstr ""
+"option_list = [MyOption(\"-c\", action=\"store\", type=\"complex\", "
+"dest=\"c\")]\n"
+"parser = OptionParser(option_list=option_list)"
 
 msgid "Adding new actions"
 msgstr ""
@@ -2757,12 +3273,16 @@ msgstr ""
 msgid "would result in a list  ::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "[\"foo\", \"bar\", \"blah\", \"ding\", \"dong\"]"
-msgstr ""
+msgstr "[\"foo\", \"bar\", \"blah\", \"ding\", \"dong\"]"
 
 msgid "Again we define a subclass of Option::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "class MyOption(Option):\n"
 "\n"
@@ -2779,6 +3299,20 @@ msgid ""
 "            Option.take_action(\n"
 "                self, action, dest, opt, value, values, parser)"
 msgstr ""
+"class MyOption(Option):\n"
+"\n"
+"    ACTIONS = Option.ACTIONS + (\"extend\",)\n"
+"    STORE_ACTIONS = Option.STORE_ACTIONS + (\"extend\",)\n"
+"    TYPED_ACTIONS = Option.TYPED_ACTIONS + (\"extend\",)\n"
+"    ALWAYS_TYPED_ACTIONS = Option.ALWAYS_TYPED_ACTIONS + (\"extend\",)\n"
+"\n"
+"    def take_action(self, action, dest, opt, value, values, parser):\n"
+"        if action == \"extend\":\n"
+"            lvalue = value.split(\",\")\n"
+"            values.ensure_value(dest, []).extend(lvalue)\n"
+"        else:\n"
+"            Option.take_action(\n"
+"                self, action, dest, opt, value, values, parser)"
 
 msgid "Features of note:"
 msgstr ""
@@ -2807,8 +3341,10 @@ msgid ""
 "is essentially :func:`getattr` with a safety valve; it is called as ::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "values.ensure_value(attr, value)"
-msgstr ""
+msgstr "values.ensure_value(attr, value)"
 
 msgid ""
 "If the ``attr`` attribute of ``values`` doesn't exist or is ``None``, then "
@@ -2822,8 +3358,10 @@ msgid ""
 "meth:`ensure_value` will take care of getting it right when it's needed."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Exceptions"
-msgstr ""
+msgstr "Exceptions"
 
 msgid ""
 "Raised if an :class:`Option` instance is created with invalid or "

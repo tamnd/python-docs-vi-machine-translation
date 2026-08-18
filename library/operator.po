@@ -9,18 +9,18 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-21 15:07+0000\n"
-"PO-Revision-Date: 2025-09-16 00:01+0000\n"
-"Last-Translator: Nguyen Duc Tam, 2026\n"
-"Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
-"vi/)\n"
+"POT-Creation-Date: 2026-05-08 18:34+0000\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: pydocvi 0.1.2\n"
 
 msgid ":mod:`!operator` --- Standard operators as functions"
 msgstr ""
@@ -220,6 +220,8 @@ msgstr ""
 msgid "Equivalent to::"
 msgstr "Tương đương với::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def attrgetter(*items):\n"
 "    if any(not isinstance(item, str) for item in items):\n"
@@ -238,6 +240,22 @@ msgid ""
 "        obj = getattr(obj, name)\n"
 "    return obj"
 msgstr ""
+"def attrgetter(*items):\n"
+"    if any(not isinstance(item, str) for item in items):\n"
+"        raise TypeError('attribute name must be a string')\n"
+"    if len(items) == 1:\n"
+"        attr = items[0]\n"
+"        def g(obj):\n"
+"            return resolve_attr(obj, attr)\n"
+"    else:\n"
+"        def g(obj):\n"
+"            return tuple(resolve_attr(obj, attr) for attr in items)\n"
+"    return g\n"
+"\n"
+"def resolve_attr(obj, attr):\n"
+"    for name in attr.split(\".\"):\n"
+"        obj = getattr(obj, name)\n"
+"    return obj"
 
 msgid ""
 "Return a callable object that fetches *item* from its operand using the "
@@ -253,6 +271,8 @@ msgid ""
 "r[3])``."
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def itemgetter(*items):\n"
 "    if len(items) == 1:\n"
@@ -264,6 +284,15 @@ msgid ""
 "            return tuple(obj[item] for item in items)\n"
 "    return g"
 msgstr ""
+"def itemgetter(*items):\n"
+"    if len(items) == 1:\n"
+"        item = items[0]\n"
+"        def g(obj):\n"
+"            return obj[item]\n"
+"    else:\n"
+"        def g(obj):\n"
+"            return tuple(obj[item] for item in items)\n"
+"    return g"
 
 msgid ""
 "The items can be any type accepted by the operand's :meth:`~object."
@@ -291,12 +320,18 @@ msgid ""
 "``b.name('foo', bar=1)``."
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "def methodcaller(name, /, *args, **kwargs):\n"
 "    def caller(obj):\n"
 "        return getattr(obj, name)(*args, **kwargs)\n"
 "    return caller"
 msgstr ""
+"def methodcaller(name, /, *args, **kwargs):\n"
+"    def caller(obj):\n"
+"        return getattr(obj, name)(*args, **kwargs)\n"
+"    return caller"
 
 msgid "Mapping Operators to Functions"
 msgstr ""
@@ -306,326 +341,508 @@ msgid ""
 "the Python syntax and the functions in the :mod:`!operator` module."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Operation"
-msgstr ""
+msgstr "Operation"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Syntax"
-msgstr ""
+msgstr "Syntax"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Function"
-msgstr ""
+msgstr "Function"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Addition"
-msgstr ""
+msgstr "Addition"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``a + b``"
-msgstr ""
+msgstr "``a + b``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``add(a, b)``"
-msgstr ""
+msgstr "``add(a, b)``"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Concatenation"
-msgstr ""
+msgstr "Concatenation"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``seq1 + seq2``"
-msgstr ""
+msgstr "``seq1 + seq2``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``concat(seq1, seq2)``"
-msgstr ""
+msgstr "``concat(seq1, seq2)``"
 
 msgid "Containment Test"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``obj in seq``"
-msgstr ""
+msgstr "``obj in seq``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``contains(seq, obj)``"
-msgstr ""
+msgstr "``contains(seq, obj)``"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Division"
-msgstr ""
+msgstr "Division"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``a / b``"
-msgstr ""
+msgstr "``a / b``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``truediv(a, b)``"
-msgstr ""
+msgstr "``truediv(a, b)``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``a // b``"
-msgstr ""
+msgstr "``a // b``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``floordiv(a, b)``"
-msgstr ""
+msgstr "``floordiv(a, b)``"
 
 msgid "Bitwise And"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``a & b``"
-msgstr ""
+msgstr "``a & b``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``and_(a, b)``"
-msgstr ""
+msgstr "``and_(a, b)``"
 
 msgid "Bitwise Exclusive Or"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``a ^ b``"
-msgstr ""
+msgstr "``a ^ b``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``xor(a, b)``"
-msgstr ""
+msgstr "``xor(a, b)``"
 
 msgid "Bitwise Inversion"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``~ a``"
-msgstr ""
+msgstr "``~ a``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``invert(a)``"
-msgstr ""
+msgstr "``invert(a)``"
 
 msgid "Bitwise Or"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``a | b``"
-msgstr ""
+msgstr "``a | b``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``or_(a, b)``"
-msgstr ""
+msgstr "``or_(a, b)``"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Exponentiation"
-msgstr ""
+msgstr "Exponentiation"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``a ** b``"
-msgstr ""
+msgstr "``a ** b``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``pow(a, b)``"
-msgstr ""
+msgstr "``pow(a, b)``"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Identity"
-msgstr ""
+msgstr "Identity"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``a is b``"
-msgstr ""
+msgstr "``a is b``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``is_(a, b)``"
-msgstr ""
+msgstr "``is_(a, b)``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``a is not b``"
-msgstr ""
+msgstr "``a is not b``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``is_not(a, b)``"
-msgstr ""
+msgstr "``is_not(a, b)``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``a is None``"
-msgstr ""
+msgstr "``a is None``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``is_none(a)``"
-msgstr ""
+msgstr "``is_none(a)``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``a is not None``"
-msgstr ""
+msgstr "``a is not None``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``is_not_none(a)``"
-msgstr ""
+msgstr "``is_not_none(a)``"
 
 msgid "Indexed Assignment"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``obj[k] = v``"
-msgstr ""
+msgstr "``obj[k] = v``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``setitem(obj, k, v)``"
-msgstr ""
+msgstr "``setitem(obj, k, v)``"
 
 msgid "Indexed Deletion"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``del obj[k]``"
-msgstr ""
+msgstr "``del obj[k]``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``delitem(obj, k)``"
-msgstr ""
+msgstr "``delitem(obj, k)``"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Indexing"
-msgstr ""
+msgstr "Indexing"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``obj[k]``"
-msgstr ""
+msgstr "``obj[k]``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``getitem(obj, k)``"
-msgstr ""
+msgstr "``getitem(obj, k)``"
 
 msgid "Left Shift"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``a << b``"
-msgstr ""
+msgstr "``a << b``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``lshift(a, b)``"
-msgstr ""
+msgstr "``lshift(a, b)``"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Modulo"
-msgstr ""
+msgstr "Modulo"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``a % b``"
-msgstr ""
+msgstr "``a % b``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``mod(a, b)``"
-msgstr ""
+msgstr "``mod(a, b)``"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Multiplication"
-msgstr ""
+msgstr "Multiplication"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``a * b``"
-msgstr ""
+msgstr "``a * b``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``mul(a, b)``"
-msgstr ""
+msgstr "``mul(a, b)``"
 
 msgid "Matrix Multiplication"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``a @ b``"
-msgstr ""
+msgstr "``a @ b``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``matmul(a, b)``"
-msgstr ""
+msgstr "``matmul(a, b)``"
 
 msgid "Negation (Arithmetic)"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``- a``"
-msgstr ""
+msgstr "``- a``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``neg(a)``"
-msgstr ""
+msgstr "``neg(a)``"
 
 msgid "Negation (Logical)"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``not a``"
-msgstr ""
+msgstr "``not a``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``not_(a)``"
-msgstr ""
+msgstr "``not_(a)``"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Positive"
-msgstr ""
+msgstr "Positive"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``+ a``"
-msgstr ""
+msgstr "``+ a``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``pos(a)``"
-msgstr ""
+msgstr "``pos(a)``"
 
 msgid "Right Shift"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``a >> b``"
-msgstr ""
+msgstr "``a >> b``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``rshift(a, b)``"
-msgstr ""
+msgstr "``rshift(a, b)``"
 
 msgid "Slice Assignment"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``seq[i:j] = values``"
-msgstr ""
+msgstr "``seq[i:j] = values``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``setitem(seq, slice(i, j), values)``"
-msgstr ""
+msgstr "``setitem(seq, slice(i, j), values)``"
 
 msgid "Slice Deletion"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``del seq[i:j]``"
-msgstr ""
+msgstr "``del seq[i:j]``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``delitem(seq, slice(i, j))``"
-msgstr ""
+msgstr "``delitem(seq, slice(i, j))``"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Slicing"
-msgstr ""
+msgstr "Slicing"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``seq[i:j]``"
-msgstr ""
+msgstr "``seq[i:j]``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``getitem(seq, slice(i, j))``"
-msgstr ""
+msgstr "``getitem(seq, slice(i, j))``"
 
 msgid "String Formatting"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``s % obj``"
-msgstr ""
+msgstr "``s % obj``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``mod(s, obj)``"
-msgstr ""
+msgstr "``mod(s, obj)``"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Subtraction"
-msgstr ""
+msgstr "Subtraction"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``a - b``"
-msgstr ""
+msgstr "``a - b``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``sub(a, b)``"
-msgstr ""
+msgstr "``sub(a, b)``"
 
 msgid "Truth Test"
 msgstr ""
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``obj``"
-msgstr ""
+msgstr "``obj``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``truth(obj)``"
-msgstr ""
+msgstr "``truth(obj)``"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Ordering"
-msgstr ""
+msgstr "Ordering"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``a < b``"
-msgstr ""
+msgstr "``a < b``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``lt(a, b)``"
-msgstr ""
+msgstr "``lt(a, b)``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``a <= b``"
-msgstr ""
+msgstr "``a <= b``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``le(a, b)``"
-msgstr ""
+msgstr "``le(a, b)``"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Equality"
-msgstr ""
+msgstr "Equality"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``a == b``"
-msgstr ""
+msgstr "``a == b``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``eq(a, b)``"
-msgstr ""
+msgstr "``eq(a, b)``"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Difference"
-msgstr ""
+msgstr "Difference"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``a != b``"
-msgstr ""
+msgstr "``a != b``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``ne(a, b)``"
-msgstr ""
+msgstr "``ne(a, b)``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``a >= b``"
-msgstr ""
+msgstr "``a >= b``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``ge(a, b)``"
-msgstr ""
+msgstr "``ge(a, b)``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``a > b``"
-msgstr ""
+msgstr "``a > b``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``gt(a, b)``"
-msgstr ""
+msgstr "``gt(a, b)``"
 
 msgid "In-place Operators"
 msgstr ""

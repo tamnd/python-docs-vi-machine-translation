@@ -9,18 +9,18 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-17 14:50+0000\n"
-"PO-Revision-Date: 2025-09-16 00:02+0000\n"
-"Last-Translator: Nguyen Duc Tam, 2026\n"
-"Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
-"vi/)\n"
+"POT-Creation-Date: 2026-05-08 18:34+0000\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: pydocvi 0.1.2\n"
 
 msgid ":mod:`!webbrowser` --- Convenient web-browser controller"
 msgstr ""
@@ -93,11 +93,15 @@ msgstr ""
 msgid "The options are, naturally, mutually exclusive.  Usage example:"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "python -m webbrowser -t \"https://www.python.org\""
-msgstr ""
+msgstr "python -m webbrowser -t \"https://www.python.org\""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Availability"
-msgstr ""
+msgstr "Availability"
 
 msgid "The following exception is defined:"
 msgstr ""
@@ -179,125 +183,210 @@ msgstr ""
 msgid "Class Name"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Notes"
-msgstr ""
+msgstr "Notes"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'mozilla'``"
-msgstr ""
+msgstr "``'mozilla'``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``Mozilla('mozilla')``"
-msgstr ""
+msgstr "``Mozilla('mozilla')``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'firefox'``"
-msgstr ""
+msgstr "``'firefox'``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'epiphany'``"
-msgstr ""
+msgstr "``'epiphany'``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``Epiphany('epiphany')``"
-msgstr ""
+msgstr "``Epiphany('epiphany')``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'kfmclient'``"
-msgstr ""
+msgstr "``'kfmclient'``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``Konqueror()``"
-msgstr ""
+msgstr "``Konqueror()``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "\\(1)"
-msgstr ""
+msgstr "\\(1)"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'konqueror'``"
-msgstr ""
+msgstr "``'konqueror'``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'kfm'``"
-msgstr ""
+msgstr "``'kfm'``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'opera'``"
-msgstr ""
+msgstr "``'opera'``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``Opera()``"
-msgstr ""
+msgstr "``Opera()``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'links'``"
-msgstr ""
+msgstr "``'links'``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``GenericBrowser('links')``"
-msgstr ""
+msgstr "``GenericBrowser('links')``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'elinks'``"
-msgstr ""
+msgstr "``'elinks'``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``Elinks('elinks')``"
-msgstr ""
+msgstr "``Elinks('elinks')``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'lynx'``"
-msgstr ""
+msgstr "``'lynx'``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``GenericBrowser('lynx')``"
-msgstr ""
+msgstr "``GenericBrowser('lynx')``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'w3m'``"
-msgstr ""
+msgstr "``'w3m'``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``GenericBrowser('w3m')``"
-msgstr ""
+msgstr "``GenericBrowser('w3m')``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'windows-default'``"
-msgstr ""
+msgstr "``'windows-default'``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``WindowsDefault``"
-msgstr ""
+msgstr "``WindowsDefault``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "\\(2)"
-msgstr ""
+msgstr "\\(2)"
 
-msgid "``'macosx'``"
-msgstr ""
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "``'macos'``"
+msgstr "``'macos'``"
 
-msgid "``MacOSXOSAScript('default')``"
-msgstr ""
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "``MacOS('default')``"
+msgstr "``MacOS('default')``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "\\(3)"
-msgstr ""
+msgstr "\\(3)"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'safari'``"
-msgstr ""
+msgstr "``'safari'``"
 
-msgid "``MacOSXOSAScript('safari')``"
-msgstr ""
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "``MacOS('safari')``"
+msgstr "``MacOS('safari')``"
 
-msgid "``'google-chrome'``"
-msgstr ""
-
-msgid "``Chrome('google-chrome')``"
-msgstr ""
-
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'chrome'``"
-msgstr ""
+msgstr "``'chrome'``"
 
-msgid "``Chrome('chrome')``"
-msgstr ""
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "``MacOS('google chrome')``"
+msgstr "``MacOS('google chrome')``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "``MacOS('firefox')``"
+msgstr "``MacOS('firefox')``"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "``'google-chrome'``"
+msgstr "``'google-chrome'``"
+
+# pydocvi: passthrough=noop
+#, fuzzy
+msgid "``Chrome('google-chrome')``"
+msgstr "``Chrome('google-chrome')``"
+
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'chromium'``"
-msgstr ""
+msgstr "``'chromium'``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``Chromium('chromium')``"
-msgstr ""
+msgstr "``Chromium('chromium')``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'chromium-browser'``"
-msgstr ""
+msgstr "``'chromium-browser'``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``Chromium('chromium-browser')``"
-msgstr ""
+msgstr "``Chromium('chromium-browser')``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``'iosbrowser'``"
-msgstr ""
+msgstr "``'iosbrowser'``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "``IOSBrowser``"
-msgstr ""
+msgstr "``IOSBrowser``"
 
+# pydocvi: passthrough=noop
+#, fuzzy
 msgid "\\(4)"
-msgstr ""
+msgstr "\\(4)"
 
 msgid "Notes:"
 msgstr ""
@@ -338,9 +427,25 @@ msgstr ""
 msgid "Support for iOS has been added."
 msgstr ""
 
+msgid ""
+":class:`!MacOS` has been added as a replacement for :class:`!"
+"MacOSXOSAScript`, opening browsers via :program:`/usr/bin/open` instead of :"
+"program:`osascript`."
+msgstr ""
+
+msgid ""
+":class:`!MacOSXOSAScript` is deprecated in favour of :class:`!MacOS`. Using :"
+"program:`/usr/bin/open` instead of :program:`osascript` is a security and "
+"usability improvement: :program:`osascript` may be blocked on managed "
+"systems due to its abuse potential as a general-purpose scripting "
+"interpreter."
+msgstr ""
+
 msgid "Here are some simple examples::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "url = 'https://docs.python.org/'\n"
 "\n"
@@ -350,6 +455,13 @@ msgid ""
 "# Open URL in new window, raising the window if possible.\n"
 "webbrowser.open_new(url)"
 msgstr ""
+"url = 'https://docs.python.org/'\n"
+"\n"
+"# Open URL in a new tab, if a browser window is already open.\n"
+"webbrowser.open_new_tab(url)\n"
+"\n"
+"# Open URL in new window, raising the window if possible.\n"
+"webbrowser.open_new(url)"
 
 msgid "Browser controller objects"
 msgstr ""

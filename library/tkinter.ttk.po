@@ -9,18 +9,18 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-17 14:50+0000\n"
-"PO-Revision-Date: 2025-09-16 00:01+0000\n"
-"Last-Translator: python-doc bot, 2025\n"
-"Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
-"vi/)\n"
+"POT-Creation-Date: 2026-05-08 18:34+0000\n"
+"PO-Revision-Date: 2026-08-18T03:55Z\n"
+"Last-Translator: pydocvi (machine translation, unreviewed)\n"
+"Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: pydocvi 0.1.2\n"
 
 msgid ":mod:`!tkinter.ttk` --- Tk themed widgets"
 msgstr ""
@@ -54,17 +54,23 @@ msgstr ""
 msgid "To start using Ttk, import its module::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "from tkinter import ttk"
-msgstr ""
+msgstr "from tkinter import ttk"
 
 msgid ""
 "To override the basic Tk widgets, the import should follow the Tk import::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "from tkinter import *\n"
 "from tkinter.ttk import *"
 msgstr ""
+"from tkinter import *\n"
+"from tkinter.ttk import *"
 
 msgid ""
 "That code causes several :mod:`!tkinter.ttk` widgets (:class:`Button`, :"
@@ -114,14 +120,20 @@ msgstr ""
 msgid "Tk code::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "l1 = tkinter.Label(text=\"Test\", fg=\"black\", bg=\"white\")\n"
 "l2 = tkinter.Label(text=\"Test\", fg=\"black\", bg=\"white\")"
 msgstr ""
+"l1 = tkinter.Label(text=\"Test\", fg=\"black\", bg=\"white\")\n"
+"l2 = tkinter.Label(text=\"Test\", fg=\"black\", bg=\"white\")"
 
 msgid "Ttk code::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "style = ttk.Style()\n"
 "style.configure(\"BW.TLabel\", foreground=\"black\", background=\"white\")\n"
@@ -129,14 +141,21 @@ msgid ""
 "l1 = ttk.Label(text=\"Test\", style=\"BW.TLabel\")\n"
 "l2 = ttk.Label(text=\"Test\", style=\"BW.TLabel\")"
 msgstr ""
+"style = ttk.Style()\n"
+"style.configure(\"BW.TLabel\", foreground=\"black\", background=\"white\")\n"
+"\n"
+"l1 = ttk.Label(text=\"Test\", style=\"BW.TLabel\")\n"
+"l2 = ttk.Label(text=\"Test\", style=\"BW.TLabel\")"
 
 msgid ""
 "For more information about TtkStyling_, see the :class:`Style` class "
 "documentation."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Widget"
-msgstr ""
+msgstr "Widget"
 
 msgid ""
 ":class:`ttk.Widget` defines standard options and methods supported by Tk "
@@ -149,14 +168,20 @@ msgstr ""
 msgid "All the :mod:`ttk` Widgets accept the following options:"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Option"
-msgstr ""
+msgstr "Option"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Description"
-msgstr ""
+msgstr "Description"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "class"
-msgstr ""
+msgstr "class"
 
 msgid ""
 "Specifies the window class. The class is used when querying the option "
@@ -165,16 +190,20 @@ msgid ""
 "option is read-only, and may only be specified when the window is created."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "cursor"
-msgstr ""
+msgstr "cursor"
 
 msgid ""
 "Specifies the mouse cursor to be used for the widget. If set to the empty "
 "string (the default), the cursor is inherited for the parent widget."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "takefocus"
-msgstr ""
+msgstr "takefocus"
 
 msgid ""
 "Determines whether the window accepts the focus during keyboard traversal. "
@@ -185,8 +214,10 @@ msgid ""
 "whether or not to focus on the window."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "style"
-msgstr ""
+msgstr "style"
 
 msgid "May be used to specify a custom widget style."
 msgstr ""
@@ -199,8 +230,10 @@ msgid ""
 "scrollbar."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "xscrollcommand"
-msgstr ""
+msgstr "xscrollcommand"
 
 msgid "Used to communicate with horizontal scrollbars."
 msgstr ""
@@ -216,8 +249,10 @@ msgid ""
 "the window changes."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "yscrollcommand"
-msgstr ""
+msgstr "yscrollcommand"
 
 msgid ""
 "Used to communicate with vertical scrollbars. For some more information, see "
@@ -232,30 +267,38 @@ msgid ""
 "widgets."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "text"
-msgstr ""
+msgstr "text"
 
 msgid "Specifies a text string to be displayed inside the widget."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "textvariable"
-msgstr ""
+msgstr "textvariable"
 
 msgid ""
 "Specifies a name whose value will be used in place of the text option "
 "resource."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "underline"
-msgstr ""
+msgstr "underline"
 
 msgid ""
 "If set, specifies the index (0-based) of a character to underline in the "
 "text string. The underline character is used for mnemonic activation."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "image"
-msgstr ""
+msgstr "image"
 
 msgid ""
 "Specifies an image to display. This is a list of 1 or more elements. The "
@@ -265,8 +308,10 @@ msgid ""
 "combination of states. All images in the list should have the same size."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "compound"
-msgstr ""
+msgstr "compound"
 
 msgid ""
 "Specifies how to display the image relative to the text, in the case both "
@@ -287,8 +332,10 @@ msgstr ""
 msgid "none: the default. display the image if present, otherwise the text."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "width"
-msgstr ""
+msgstr "width"
 
 msgid ""
 "If greater than zero, specifies how much space, in character widths, to "
@@ -299,8 +346,10 @@ msgstr ""
 msgid "Compatibility Options"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "state"
-msgstr ""
+msgstr "state"
 
 msgid ""
 "May be set to \"normal\" or \"disabled\" to control the \"disabled\" state "
@@ -314,45 +363,59 @@ msgstr ""
 msgid "The widget state is a bitmap of independent state flags."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Flag"
-msgstr ""
+msgstr "Flag"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "active"
-msgstr ""
+msgstr "active"
 
 msgid ""
 "The mouse cursor is over the widget and pressing a mouse button will cause "
 "some action to occur"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "disabled"
-msgstr ""
+msgstr "disabled"
 
 msgid "Widget is disabled under program control"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "focus"
-msgstr ""
+msgstr "focus"
 
 msgid "Widget has keyboard focus"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "pressed"
-msgstr ""
+msgstr "pressed"
 
 msgid "Widget is being pressed"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "selected"
-msgstr ""
+msgstr "selected"
 
 msgid ""
 "\"On\", \"true\", or \"current\" for things like Checkbuttons and "
 "radiobuttons"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "background"
-msgstr ""
+msgstr "background"
 
 msgid ""
 "Windows and Mac have a notion of an \"active\" or foreground window. The "
@@ -360,20 +423,26 @@ msgid ""
 "for those in the foreground window"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "readonly"
-msgstr ""
+msgstr "readonly"
 
 msgid "Widget should not allow user modification"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "alternate"
-msgstr ""
+msgstr "alternate"
 
 msgid "A widget-specific alternate display format"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "invalid"
-msgstr ""
+msgstr "invalid"
 
 msgid "The widget's value is invalid"
 msgstr ""
@@ -383,8 +452,10 @@ msgid ""
 "an exclamation point indicating that the bit is off."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "ttk.Widget"
-msgstr ""
+msgstr "ttk.Widget"
 
 msgid ""
 "Besides the methods described below, the :class:`ttk.Widget` supports the "
@@ -415,8 +486,10 @@ msgstr ""
 msgid "*statespec* will usually be a list or a tuple."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Combobox"
-msgstr ""
+msgstr "Combobox"
 
 msgid ""
 "The :class:`ttk.Combobox` widget combines a text field with a pop-down list "
@@ -432,14 +505,18 @@ msgid ""
 "it has some other methods, described at :class:`ttk.Combobox`."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Options"
-msgstr ""
+msgstr "Options"
 
 msgid "This widget accepts the following specific options:"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "exportselection"
-msgstr ""
+msgstr "exportselection"
 
 msgid ""
 "Boolean value. If set, the widget selection is linked to the Window Manager "
@@ -447,22 +524,28 @@ msgid ""
 "example)."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "justify"
-msgstr ""
+msgstr "justify"
 
 msgid ""
 "Specifies how the text is aligned within the widget. One of \"left\", "
 "\"center\", or \"right\"."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "height"
-msgstr ""
+msgstr "height"
 
 msgid "Specifies the height of the pop-down listbox, in rows."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "postcommand"
-msgstr ""
+msgstr "postcommand"
 
 msgid ""
 "A script (possibly registered with Misc.register) that is called immediately "
@@ -482,8 +565,10 @@ msgid ""
 "vice versa. See :class:`tkinter.StringVar`."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "values"
-msgstr ""
+msgstr "values"
 
 msgid "Specifies the list of values to display in the drop-down listbox."
 msgstr ""
@@ -501,8 +586,10 @@ msgid ""
 "the user selects an element from the list of values."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "ttk.Combobox"
-msgstr ""
+msgstr "ttk.Combobox"
 
 msgid ""
 "If *newindex* is specified, sets the combobox value to the element position "
@@ -516,8 +603,10 @@ msgstr ""
 msgid "Sets the value of the combobox to *value*."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Spinbox"
-msgstr ""
+msgstr "Spinbox"
 
 msgid ""
 "The :class:`ttk.Spinbox` widget is a :class:`ttk.Entry` enhanced with "
@@ -534,8 +623,10 @@ msgid ""
 "methods, described at :class:`ttk.Spinbox`."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "from"
-msgstr ""
+msgstr "from"
 
 msgid ""
 "Float value.  If set, this is the minimum value to which the decrement "
@@ -543,16 +634,20 @@ msgid ""
 "argument, since ``from`` is a Python keyword."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "to"
-msgstr ""
+msgstr "to"
 
 msgid ""
 "Float value.  If set, this is the maximum value to which the increment "
 "button will increment."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "increment"
-msgstr ""
+msgstr "increment"
 
 msgid ""
 "Float value.  Specifies the amount which the increment/decrement buttons "
@@ -565,8 +660,10 @@ msgid ""
 "incrementing or decrementing numbers."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "wrap"
-msgstr ""
+msgstr "wrap"
 
 msgid ""
 "Boolean value.  If ``True``, increment and decrement buttons will cycle from "
@@ -574,8 +671,10 @@ msgid ""
 "value, respectively."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "format"
-msgstr ""
+msgstr "format"
 
 msgid ""
 "String value.  This specifies the format of numbers set by the increment/"
@@ -583,8 +682,10 @@ msgid ""
 "width of the value, P is the precision, and '%' and 'f' are literal."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "command"
-msgstr ""
+msgstr "command"
 
 msgid ""
 "Python callable.  Will be called with no arguments whenever either of the "
@@ -597,8 +698,10 @@ msgid ""
 "presses <Down>."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "ttk.Spinbox"
-msgstr ""
+msgstr "ttk.Spinbox"
 
 msgid "Returns the current value of the spinbox."
 msgstr ""
@@ -606,8 +709,10 @@ msgstr ""
 msgid "Sets the value of the spinbox to *value*."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Notebook"
-msgstr ""
+msgstr "Notebook"
 
 msgid ""
 "Ttk Notebook widget manages a collection of windows and displays a single "
@@ -621,8 +726,10 @@ msgid ""
 "of all panes is used."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "padding"
-msgstr ""
+msgstr "padding"
 
 msgid ""
 "Specifies the amount of extra space to add around the outside of the "
@@ -648,8 +755,10 @@ msgid ""
 "is not selectable. If \"hidden\", then the tab is not shown."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "sticky"
-msgstr ""
+msgstr "sticky"
 
 msgid ""
 "Specifies how the child window is positioned within the pane area. Value is "
@@ -717,8 +826,10 @@ msgid ""
 "tab is selected."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "ttk.Notebook"
-msgstr ""
+msgstr "ttk.Notebook"
 
 msgid "Adds a new tab to the notebook."
 msgstr ""
@@ -814,8 +925,10 @@ msgid ""
 "if all panes have the notebook they are in as master."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Progressbar"
-msgstr ""
+msgstr "Progressbar"
 
 msgid ""
 "The :class:`ttk.Progressbar` widget shows the status of a long-running "
@@ -825,36 +938,46 @@ msgid ""
 "know that work is progressing."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "orient"
-msgstr ""
+msgstr "orient"
 
 msgid ""
 "One of \"horizontal\" or \"vertical\". Specifies the orientation of the "
 "progress bar."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "length"
-msgstr ""
+msgstr "length"
 
 msgid ""
 "Specifies the length of the long axis of the progress bar (width if "
 "horizontal, height if vertical)."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "mode"
-msgstr ""
+msgstr "mode"
 
 msgid "One of \"determinate\" or \"indeterminate\"."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "maximum"
-msgstr ""
+msgstr "maximum"
 
 msgid "A number specifying the maximum value. Defaults to 100."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "value"
-msgstr ""
+msgstr "value"
 
 msgid ""
 "The current value of the progress bar. In \"determinate\" mode, this "
@@ -863,8 +986,10 @@ msgid ""
 "\"cycle\" when its value increases by *maximum*."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "variable"
-msgstr ""
+msgstr "variable"
 
 msgid ""
 "A name which is linked to the option value. If specified, the value of the "
@@ -872,8 +997,10 @@ msgid ""
 "latter is modified."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "phase"
-msgstr ""
+msgstr "phase"
 
 msgid ""
 "Read-only option. The widget periodically increments the value of this "
@@ -882,8 +1009,10 @@ msgid ""
 "additional animation effects."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "ttk.Progressbar"
-msgstr ""
+msgstr "ttk.Progressbar"
 
 msgid ""
 "Begin autoincrement mode: schedules a recurring timer event that calls :meth:"
@@ -902,8 +1031,10 @@ msgid ""
 "meth:`Progressbar.start` for this progress bar."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Separator"
-msgstr ""
+msgstr "Separator"
 
 msgid ""
 "The :class:`ttk.Separator` widget displays a horizontal or vertical "
@@ -922,8 +1053,10 @@ msgid ""
 "separator."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Sizegrip"
-msgstr ""
+msgstr "Sizegrip"
 
 msgid ""
 "The :class:`ttk.Sizegrip` widget (also known as a grow box) allows the user "
@@ -944,8 +1077,10 @@ msgid ""
 "will just mask the widget."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Bugs"
-msgstr ""
+msgstr "Bugs"
 
 msgid ""
 "If the containing toplevel's position was specified relative to the right or "
@@ -956,8 +1091,10 @@ msgstr ""
 msgid "This widget supports only \"southeast\" resizing."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Treeview"
-msgstr ""
+msgstr "Treeview"
 
 msgid ""
 "The :class:`ttk.Treeview` widget displays a hierarchical collection of "
@@ -991,16 +1128,20 @@ msgid ""
 "`Treeview.xview` and :meth:`Treeview.yview`."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "columns"
-msgstr ""
+msgstr "columns"
 
 msgid ""
 "A list of column identifiers, specifying the number of columns and their "
 "names."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "displaycolumns"
-msgstr ""
+msgstr "displaycolumns"
 
 msgid ""
 "A list of column identifiers (either symbolic or integer indices) specifying "
@@ -1018,8 +1159,10 @@ msgid ""
 "to four length specifications."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "selectmode"
-msgstr ""
+msgstr "selectmode"
 
 msgid ""
 "Controls how the built-in class bindings manage the selection. One of "
@@ -1033,8 +1176,10 @@ msgid ""
 "however they wish, regardless of the value  of this option."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "show"
-msgstr ""
+msgstr "show"
 
 msgid ""
 "A list containing zero or more of the following values, specifying which "
@@ -1079,16 +1224,20 @@ msgid ""
 "ignored."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "open"
-msgstr ""
+msgstr "open"
 
 msgid ""
 "``True``/``False`` value indicating whether the item's children should be "
 "displayed or hidden."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "tags"
-msgstr ""
+msgstr "tags"
 
 msgid "A list of tags associated with this item."
 msgstr ""
@@ -1099,8 +1248,10 @@ msgstr ""
 msgid "The following options may be specified on tags:"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "foreground"
-msgstr ""
+msgstr "foreground"
 
 msgid "Specifies the text foreground color."
 msgstr ""
@@ -1108,8 +1259,10 @@ msgstr ""
 msgid "Specifies the cell or item background color."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "font"
-msgstr ""
+msgstr "font"
 
 msgid "Specifies the font to use when drawing text."
 msgstr ""
@@ -1184,8 +1337,10 @@ msgid ""
 "used to determine the affected item or items."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "ttk.Treeview"
-msgstr ""
+msgstr "ttk.Treeview"
 
 msgid ""
 "Returns the bounding box (relative to the treeview widget's window) of the "
@@ -1347,32 +1502,44 @@ msgstr ""
 msgid "Returns one of:"
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "region"
-msgstr ""
+msgstr "region"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "meaning"
-msgstr ""
+msgstr "meaning"
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "heading"
-msgstr ""
+msgstr "heading"
 
 msgid "Tree heading area."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "separator"
-msgstr ""
+msgstr "separator"
 
 msgid "Space between two columns headings."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "tree"
-msgstr ""
+msgstr "tree"
 
 msgid "The tree area."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "cell"
-msgstr ""
+msgstr "cell"
 
 msgid "A data cell."
 msgstr ""
@@ -1549,6 +1716,8 @@ msgid ""
 "padding and a different background color::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "from tkinter import ttk\n"
 "import tkinter\n"
@@ -1563,6 +1732,18 @@ msgid ""
 "\n"
 "root.mainloop()"
 msgstr ""
+"from tkinter import ttk\n"
+"import tkinter\n"
+"\n"
+"root = tkinter.Tk()\n"
+"\n"
+"ttk.Style().configure(\"TButton\", padding=6, relief=\"flat\",\n"
+"   background=\"#ccc\")\n"
+"\n"
+"btn = ttk.Button(text=\"Sample\")\n"
+"btn.pack()\n"
+"\n"
+"root.mainloop()"
 
 msgid "Query or sets dynamic values of the specified option(s) in *style*."
 msgstr ""
@@ -1576,6 +1757,8 @@ msgstr ""
 msgid "An example may make it more understandable::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import tkinter\n"
 "from tkinter import ttk\n"
@@ -1592,6 +1775,20 @@ msgid ""
 "\n"
 "root.mainloop()"
 msgstr ""
+"import tkinter\n"
+"from tkinter import ttk\n"
+"\n"
+"root = tkinter.Tk()\n"
+"\n"
+"style = ttk.Style()\n"
+"style.map(\"C.TButton\",\n"
+"    foreground=[('pressed', 'red'), ('active', 'blue')],\n"
+"    background=[('pressed', '!disabled', 'black'), ('active', 'white')]\n"
+"    )\n"
+"\n"
+"colored_btn = ttk.Button(text=\"Test\", style=\"C.TButton\").pack()\n"
+"\n"
+"root.mainloop()"
 
 msgid ""
 "Note that the order of the (states, value) sequences for an option does "
@@ -1612,11 +1809,16 @@ msgstr ""
 msgid "To check what font a Button uses by default::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "from tkinter import ttk\n"
 "\n"
 "print(ttk.Style().lookup(\"TButton\", \"font\"))"
 msgstr ""
+"from tkinter import ttk\n"
+"\n"
+"print(ttk.Style().lookup(\"TButton\", \"font\"))"
 
 msgid ""
 "Define the widget layout for given *style*. If *layoutspec* is omitted, "
@@ -1635,6 +1837,8 @@ msgid ""
 "do anything useful)::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "from tkinter import ttk\n"
 "import tkinter\n"
@@ -1658,6 +1862,27 @@ msgid ""
 "mbtn.pack()\n"
 "root.mainloop()"
 msgstr ""
+"from tkinter import ttk\n"
+"import tkinter\n"
+"\n"
+"root = tkinter.Tk()\n"
+"\n"
+"style = ttk.Style()\n"
+"style.layout(\"TMenubutton\", [\n"
+"   (\"Menubutton.background\", None),\n"
+"   (\"Menubutton.button\", {\"children\":\n"
+"       [(\"Menubutton.focus\", {\"children\":\n"
+"           [(\"Menubutton.padding\", {\"children\":\n"
+"               [(\"Menubutton.label\", {\"side\": \"left\", \"expand\": "
+"1})]\n"
+"           })]\n"
+"       })]\n"
+"   }),\n"
+"])\n"
+"\n"
+"mbtn = ttk.Menubutton(text='Text')\n"
+"mbtn.pack()\n"
+"root.mainloop()"
 
 msgid ""
 "Create a new element in the current theme, of the given *etype* which is "
@@ -1671,40 +1896,50 @@ msgid ""
 "following options:"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "border=padding"
-msgstr ""
+msgstr "border=padding"
 
 msgid ""
 "padding is a list of up to four integers, specifying the left, top, right, "
 "and bottom borders, respectively."
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "height=height"
-msgstr ""
+msgstr "height=height"
 
 msgid ""
 "Specifies a minimum height for the element. If less than zero, the base "
 "image's height is used as a default."
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "padding=padding"
-msgstr ""
+msgstr "padding=padding"
 
 msgid ""
 "Specifies the element's interior padding. Defaults to border's value if not "
 "specified."
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "sticky=spec"
-msgstr ""
+msgstr "sticky=spec"
 
 msgid ""
 "Specifies how the image is placed within the final parcel. spec contains "
 "zero or more characters \"n\", \"s\", \"w\", or \"e\"."
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "width=width"
-msgstr ""
+msgstr "width=width"
 
 msgid ""
 "Specifies a minimum width for the element. If less than zero, the base "
@@ -1714,6 +1949,8 @@ msgstr ""
 msgid "Example::"
 msgstr "Ví dụ::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "img1 = tkinter.PhotoImage(master=root, file='button.png')\n"
 "img1 = tkinter.PhotoImage(master=root, file='button-pressed.png')\n"
@@ -1723,6 +1960,13 @@ msgid ""
 "                     img1, ('pressed', img2), ('active', img3),\n"
 "                     border=(2, 4), sticky='we')"
 msgstr ""
+"img1 = tkinter.PhotoImage(master=root, file='button.png')\n"
+"img1 = tkinter.PhotoImage(master=root, file='button-pressed.png')\n"
+"img1 = tkinter.PhotoImage(master=root, file='button-active.png')\n"
+"style = ttk.Style(root)\n"
+"style.element_create('Button.button', 'image',\n"
+"                     img1, ('pressed', img2), ('active', img3),\n"
+"                     border=(2, 4), sticky='we')"
 
 msgid ""
 "If \"from\" is used as the value of *etype*, :meth:`element_create` will "
@@ -1732,10 +1976,14 @@ msgid ""
 "used. *kw* is discarded."
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "style = ttk.Style(root)\n"
 "style.element_create('plain.background', 'from', 'default')"
 msgstr ""
+"style = ttk.Style(root)\n"
+"style.element_create('plain.background', 'from', 'default')"
 
 msgid ""
 "If \"vsapi\" is used as the value of *etype*, :meth:`element_create` will "
@@ -1758,8 +2006,10 @@ msgid ""
 "may not be mixed with any other options."
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "margins=padding"
-msgstr ""
+msgstr "margins=padding"
 
 msgid ""
 "Specifies the elements exterior padding. *padding* is a list of up to four "
@@ -1777,6 +2027,8 @@ msgstr ""
 msgid "Specifies the height of the element. See the comments for *width*."
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "style = ttk.Style(root)\n"
 "style.element_create('pin', 'vsapi', 'EXPLORERBAR', 3, [\n"
@@ -1791,6 +2043,18 @@ msgid ""
 "pin = ttk.Checkbutton(style='Explorer.Pin')\n"
 "pin.pack(expand=True, fill='both')"
 msgstr ""
+"style = ttk.Style(root)\n"
+"style.element_create('pin', 'vsapi', 'EXPLORERBAR', 3, [\n"
+"                     ('pressed', '!selected', 3),\n"
+"                     ('active', '!selected', 2),\n"
+"                     ('pressed', 'selected', 6),\n"
+"                     ('active', 'selected', 5),\n"
+"                     ('selected', 4),\n"
+"                     ('', 1)])\n"
+"style.layout('Explorer.Pin',\n"
+"             [('Explorer.Pin.pin', {'sticky': 'news'})])\n"
+"pin = ttk.Checkbutton(style='Explorer.Pin')\n"
+"pin.pack(expand=True, fill='both')"
 
 msgid "Added support of the \"vsapi\" element factory."
 msgstr ""
@@ -1827,6 +2091,8 @@ msgstr ""
 msgid "As an example, let's change the Combobox for the default theme a bit::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "from tkinter import ttk\n"
 "import tkinter\n"
@@ -1851,6 +2117,28 @@ msgid ""
 "\n"
 "root.mainloop()"
 msgstr ""
+"from tkinter import ttk\n"
+"import tkinter\n"
+"\n"
+"root = tkinter.Tk()\n"
+"\n"
+"style = ttk.Style()\n"
+"style.theme_settings(\"default\", {\n"
+"   \"TCombobox\": {\n"
+"       \"configure\": {\"padding\": 5},\n"
+"       \"map\": {\n"
+"           \"background\": [(\"active\", \"green2\"),\n"
+"                          (\"!disabled\", \"green4\")],\n"
+"           \"fieldbackground\": [(\"!disabled\", \"green3\")],\n"
+"           \"foreground\": [(\"focus\", \"OliveDrab1\"),\n"
+"                          (\"!disabled\", \"OliveDrab2\")]\n"
+"       }\n"
+"   }\n"
+"})\n"
+"\n"
+"combo = ttk.Combobox().pack()\n"
+"\n"
+"root.mainloop()"
 
 msgid "Returns a list of all known themes."
 msgstr ""
@@ -1861,8 +2149,10 @@ msgid ""
 "<<ThemeChanged>> event."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "Layouts"
-msgstr ""
+msgstr "Layouts"
 
 msgid ""
 "A layout can be just ``None``, if it takes no options, or a dict of options "
@@ -1903,5 +2193,7 @@ msgid ""
 "the other is a `Layout`_."
 msgstr ""
 
+# pydocvi: passthrough=version_marker
+#, fuzzy
 msgid "ttk"
-msgstr ""
+msgstr "ttk"
