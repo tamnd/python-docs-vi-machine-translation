@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-17 14:50+0000\n"
-"PO-Revision-Date: 2026-08-18 08:25+0000\n"
+"PO-Revision-Date: 2026-08-18 08:47+0000\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
-"X-Generator: pydocvi 0.1.9\n"
+"X-Generator: pydocvi 0.1.10\n"
 
 msgid "Security Considerations"
 msgstr ""
@@ -30,16 +30,11 @@ msgid ""
 "rfc:`4648`"
 msgstr ""
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ""
 ":mod:`hashlib`: :ref:`all constructors take a \"usedforsecurity\" keyword-"
 "only argument disabling known insecure and blocked algorithms <hashlib-"
 "usedforsecurity>`"
 msgstr ""
-":mod:`hashlib`: :ref:`all constructors take a \"usedforsecurity\" keyword-"
-"only argument disabling known insecure and blocked algorithms <hashlib-"
-"usedforsecurity>`"
 
 msgid ""
 ":mod:`http.server` is not suitable for production use, only implementing "
@@ -47,79 +42,49 @@ msgid ""
 "security>`."
 msgstr ""
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ""
 ":mod:`logging`: :ref:`Logging configuration uses eval() <logging-eval-"
 "security>`"
 msgstr ""
-":mod:`logging`: :ref:`Logging configuration uses eval() <logging-eval-"
-"security>`"
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ""
 ":mod:`multiprocessing`: :ref:`Connection.recv() uses pickle <multiprocessing-"
 "recv-pickle-security>`"
 msgstr ""
-":mod:`multiprocessing`: :ref:`Connection.recv() uses pickle <multiprocessing-"
-"recv-pickle-security>`"
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ":mod:`pickle`: :ref:`Restricting globals in pickle <pickle-restrict>`"
-msgstr ":mod:`pickle`: :ref:`Restricting globals in pickle <pickle-restrict>`"
+msgstr ""
 
 msgid ""
 ":mod:`random` shouldn't be used for security purposes, use :mod:`secrets` "
 "instead"
 msgstr ""
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ""
 ":mod:`shelve`: :ref:`shelve is based on pickle and thus unsuitable for "
 "dealing with untrusted sources <shelve-security>`"
 msgstr ""
-":mod:`shelve`: :ref:`shelve is based on pickle and thus unsuitable for "
-"dealing with untrusted sources <shelve-security>`"
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ":mod:`ssl`: :ref:`SSL/TLS security considerations <ssl-security>`"
-msgstr ":mod:`ssl`: :ref:`SSL/TLS security considerations <ssl-security>`"
+msgstr ""
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ""
 ":mod:`subprocess`: :ref:`Subprocess security considerations <subprocess-"
 "security>`"
 msgstr ""
-":mod:`subprocess`: :ref:`Subprocess security considerations <subprocess-"
-"security>`"
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ""
 ":mod:`tempfile`: :ref:`mktemp is deprecated due to vulnerability to race "
 "conditions <tempfile-mktemp-deprecated>`"
 msgstr ""
-":mod:`tempfile`: :ref:`mktemp is deprecated due to vulnerability to race "
-"conditions <tempfile-mktemp-deprecated>`"
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ":mod:`xml`: :ref:`XML security <xml-security>`"
-msgstr ":mod:`xml`: :ref:`XML security <xml-security>`"
+msgstr ""
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ""
 ":mod:`zipfile`: :ref:`maliciously prepared .zip files can cause disk volume "
 "exhaustion <zipfile-resources-limitations>`"
 msgstr ""
-":mod:`zipfile`: :ref:`maliciously prepared .zip files can cause disk volume "
-"exhaustion <zipfile-resources-limitations>`"
 
 msgid ""
 "The :option:`-I` command line option can be used to run Python in isolated "

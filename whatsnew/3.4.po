@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 08:25+0000\n"
+"PO-Revision-Date: 2026-08-18 08:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.9\n"
+"X-Generator: pydocvi 0.1.10\n"
 
 msgid "What's New In Python 3.4"
 msgstr ""
@@ -52,19 +52,13 @@ msgstr ""
 msgid "Other new features:"
 msgstr ""
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ":ref:`pip should always be available <whatsnew-pep-453>` (:pep:`453`)."
-msgstr ":ref:`pip should always be available <whatsnew-pep-453>` (:pep:`453`)."
+msgstr ""
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ""
 ":ref:`Newly created file descriptors are non-inheritable <whatsnew-pep-446>` "
 "(:pep:`446`)."
 msgstr ""
-":ref:`Newly created file descriptors are non-inheritable <whatsnew-pep-446>` "
-"(:pep:`446`)."
 
 msgid ""
 "command line option for :ref:`isolated mode <whatsnew-isolated-mode>` (:"
@@ -89,41 +83,25 @@ msgstr ""
 msgid "New library modules:"
 msgstr ""
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ""
 ":mod:`asyncio`: :ref:`New provisional API for asynchronous IO <whatsnew-"
 "asyncio>` (:pep:`3156`)."
 msgstr ""
-":mod:`asyncio`: :ref:`New provisional API for asynchronous IO <whatsnew-"
-"asyncio>` (:pep:`3156`)."
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ""
-":mod:`ensurepip`: :ref:`Bootstrapping the pip installer <whatsnew-ensurepip>`"
-" (:pep:`453`)."
+":mod:`ensurepip`: :ref:`Bootstrapping the pip installer <whatsnew-"
+"ensurepip>` (:pep:`453`)."
 msgstr ""
-":mod:`ensurepip`: :ref:`Bootstrapping the pip installer <whatsnew-ensurepip>`"
-" (:pep:`453`)."
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ""
-":mod:`enum`: :ref:`Support for enumeration types <whatsnew-enum>` "
-"(:pep:`435`)."
+":mod:`enum`: :ref:`Support for enumeration types <whatsnew-enum>` (:pep:"
+"`435`)."
 msgstr ""
-":mod:`enum`: :ref:`Support for enumeration types <whatsnew-enum>` "
-"(:pep:`435`)."
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ""
-":mod:`pathlib`: :ref:`Object-oriented filesystem paths <whatsnew-pathlib>` "
-"(:pep:`428`)."
+":mod:`pathlib`: :ref:`Object-oriented filesystem paths <whatsnew-pathlib>` (:"
+"pep:`428`)."
 msgstr ""
-":mod:`pathlib`: :ref:`Object-oriented filesystem paths <whatsnew-pathlib>` "
-"(:pep:`428`)."
 
 msgid ""
 ":mod:`selectors`: :ref:`High-level and efficient I/O multiplexing <whatsnew-"
@@ -136,14 +114,10 @@ msgid ""
 "<whatsnew-statistics>` (:pep:`450`)."
 msgstr ""
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ""
 ":mod:`tracemalloc`: :ref:`Trace Python memory allocations <whatsnew-"
 "tracemalloc>` (:pep:`454`)."
 msgstr ""
-":mod:`tracemalloc`: :ref:`Trace Python memory allocations <whatsnew-"
-"tracemalloc>` (:pep:`454`)."
 
 msgid "Significantly improved library modules:"
 msgstr ""
@@ -181,14 +155,10 @@ msgstr ""
 msgid "Security improvements:"
 msgstr ""
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ""
-":ref:`Secure and interchangeable hash algorithm <whatsnew-pep-456>` "
-"(:pep:`456`)."
+":ref:`Secure and interchangeable hash algorithm <whatsnew-pep-456>` (:pep:"
+"`456`)."
 msgstr ""
-":ref:`Secure and interchangeable hash algorithm <whatsnew-pep-456>` "
-"(:pep:`456`)."
 
 msgid ""
 ":ref:`Make newly created file descriptors non-inheritable <whatsnew-"
@@ -244,25 +214,19 @@ msgstr ""
 msgid "CPython implementation improvements:"
 msgstr ""
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ":ref:`Safe object finalization <whatsnew-pep-442>` (:pep:`442`)."
-msgstr ":ref:`Safe object finalization <whatsnew-pep-442>` (:pep:`442`)."
+msgstr ""
 
 msgid ""
 "Leveraging :pep:`442`, in most cases :ref:`module globals are no longer set "
 "to None during finalization <whatsnew-pep-442>` (:issue:`18214`)."
 msgstr ""
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ":ref:`Configurable memory allocators <whatsnew-pep-445>` (:pep:`445`)."
-msgstr ":ref:`Configurable memory allocators <whatsnew-pep-445>` (:pep:`445`)."
+msgstr ""
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ":ref:`Argument Clinic <whatsnew-pep-436>` (:pep:`436`)."
-msgstr ":ref:`Argument Clinic <whatsnew-pep-436>` (:pep:`436`)."
+msgstr ""
 
 msgid ""
 "Please read on for a comprehensive list of user-facing changes, including "

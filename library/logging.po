@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 08:25+0000\n"
+"PO-Revision-Date: 2026-08-18 08:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.9\n"
+"X-Generator: pydocvi 0.1.10\n"
 
 msgid ":mod:`!logging` --- Logging facility for Python"
 msgstr ""
@@ -33,20 +33,14 @@ msgid ""
 "and discussion of more advanced topics, see"
 msgstr ""
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ":ref:`Basic Tutorial <logging-basic-tutorial>`"
-msgstr ":ref:`Basic Tutorial <logging-basic-tutorial>`"
+msgstr ""
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ":ref:`Advanced Tutorial <logging-advanced-tutorial>`"
-msgstr ":ref:`Advanced Tutorial <logging-advanced-tutorial>`"
+msgstr ""
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ":ref:`Logging Cookbook <logging-cookbook>`"
-msgstr ":ref:`Logging Cookbook <logging-cookbook>`"
+msgstr ""
 
 msgid ""
 "This module defines functions and classes which implement a flexible event "

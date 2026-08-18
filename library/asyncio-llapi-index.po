@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-17 14:50+0000\n"
-"PO-Revision-Date: 2026-08-18 08:25+0000\n"
+"PO-Revision-Date: 2026-08-18 08:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.9\n"
+"X-Generator: pydocvi 0.1.10\n"
 
 msgid "Low-level API Index"
 msgstr ""
@@ -536,14 +536,10 @@ msgstr ":meth:`loop.default_exception_handler`"
 msgid "The default exception handler implementation."
 msgstr ""
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ""
 ":ref:`Using asyncio.new_event_loop() and loop.run_forever() "
 "<asyncio_example_lowlevel_helloworld>`."
 msgstr ""
-":ref:`Using asyncio.new_event_loop() and loop.run_forever() "
-"<asyncio_example_lowlevel_helloworld>`."
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -560,14 +556,10 @@ msgid ""
 "<asyncio_example_create_connection>`."
 msgstr ""
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ""
 ":ref:`Using add_reader() to watch an FD for read events "
 "<asyncio_example_watch_fd>`."
 msgstr ""
-":ref:`Using add_reader() to watch an FD for read events "
-"<asyncio_example_watch_fd>`."
 
 # pydocvi: passthrough=noop
 #, fuzzy

@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 08:25+0000\n"
+"PO-Revision-Date: 2026-08-18 08:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.9\n"
+"X-Generator: pydocvi 0.1.10\n"
 
 msgid ":mod:`!ssl` --- TLS/SSL wrapper for socket objects"
 msgstr ""
@@ -3533,54 +3533,38 @@ msgstr ""
 msgid "Intro from the Apache HTTP Server documentation"
 msgstr ""
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ""
 ":rfc:`RFC 1422: Privacy Enhancement for Internet Electronic Mail: Part II: "
 "Certificate-Based Key Management <1422>`"
 msgstr ""
-":rfc:`RFC 1422: Privacy Enhancement for Internet Electronic Mail: Part II: "
-"Certificate-Based Key Management <1422>`"
 
 msgid "Steve Kent"
 msgstr ""
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ":rfc:`RFC 4086: Randomness Requirements for Security <4086>`"
-msgstr ":rfc:`RFC 4086: Randomness Requirements for Security <4086>`"
+msgstr ""
 
 msgid "Donald E. Eastlake, Jeffrey I. Schiller, Steve Crocker"
 msgstr ""
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ""
 ":rfc:`RFC 5280: Internet X.509 Public Key Infrastructure Certificate and "
 "Certificate Revocation List (CRL) Profile <5280>`"
 msgstr ""
-":rfc:`RFC 5280: Internet X.509 Public Key Infrastructure Certificate and "
-"Certificate Revocation List (CRL) Profile <5280>`"
 
 msgid "David Cooper et al."
 msgstr ""
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ""
 ":rfc:`RFC 5246: The Transport Layer Security (TLS) Protocol Version 1.2 "
 "<5246>`"
 msgstr ""
-":rfc:`RFC 5246: The Transport Layer Security (TLS) Protocol Version 1.2 "
-"<5246>`"
 
 msgid "Tim Dierks and Eric Rescorla."
 msgstr ""
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ":rfc:`RFC 6066: Transport Layer Security (TLS) Extensions <6066>`"
-msgstr ":rfc:`RFC 6066: Transport Layer Security (TLS) Extensions <6066>`"
+msgstr ""
 
 msgid "Donald E. Eastlake"
 msgstr ""
@@ -3593,14 +3577,10 @@ msgstr ""
 msgid "IANA"
 msgstr ""
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ""
 ":rfc:`RFC 7525: Recommendations for Secure Use of Transport Layer Security "
 "(TLS) and Datagram Transport Layer Security (DTLS) <7525>`"
 msgstr ""
-":rfc:`RFC 7525: Recommendations for Secure Use of Transport Layer Security "
-"(TLS) and Datagram Transport Layer Security (DTLS) <7525>`"
 
 msgid "IETF"
 msgstr ""

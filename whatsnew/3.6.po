@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 08:25+0000\n"
+"PO-Revision-Date: 2026-08-18 08:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.9\n"
+"X-Generator: pydocvi 0.1.10\n"
 
 msgid "What's New In Python 3.6"
 msgstr ""
@@ -64,14 +64,10 @@ msgstr ""
 msgid "New library modules:"
 msgstr ""
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ""
 ":mod:`secrets`: :ref:`PEP 506 -- Adding A Secrets Module To The Standard "
 "Library <whatsnew36-pep506>`."
 msgstr ""
-":mod:`secrets`: :ref:`PEP 506 -- Adding A Secrets Module To The Standard "
-"Library <whatsnew36-pep506>`."
 
 msgid "CPython implementation improvements:"
 msgstr ""
@@ -251,10 +247,8 @@ msgstr ""
 msgid "PEP written and implemented by Eric V. Smith."
 msgstr ""
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ":ref:`Feature documentation <f-strings>`."
-msgstr ":ref:`Feature documentation <f-strings>`."
+msgstr ""
 
 msgid "PEP 526: Syntax for variable annotations"
 msgstr ""
@@ -473,10 +467,8 @@ msgstr ""
 msgid "PEP written and implemented by Martin Teichmann."
 msgstr ""
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ":ref:`Feature documentation <class-customization>`"
-msgstr ":ref:`Feature documentation <class-customization>`"
+msgstr ""
 
 msgid "PEP 487: Descriptor Protocol Enhancements"
 msgstr ""
@@ -526,10 +518,8 @@ msgstr ""
 "class Model:\n"
 "    int_field = IntField()"
 
-# pydocvi: passthrough=noop
-#, fuzzy
 msgid ":ref:`Feature documentation <descriptors>`"
-msgstr ":ref:`Feature documentation <descriptors>`"
+msgstr ""
 
 msgid "PEP 519: Adding a file system path protocol"
 msgstr ""
