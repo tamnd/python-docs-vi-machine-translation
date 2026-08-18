@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 04:47+0000\n"
+"PO-Revision-Date: 2026-08-18 05:15+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -88,8 +88,10 @@ msgid ""
 "additional detail."
 msgstr ""
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=57e87dfdd296 run=2026-08-18T04:53Z
+#, fuzzy
 msgid "Packages"
-msgstr ""
+msgstr "Các gói"
 
 msgid ""
 "Python has only one type of module object, and all modules are of this type, "
@@ -1309,8 +1311,10 @@ msgstr "import"
 msgid "meta"
 msgstr ""
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=cca5a33de288 run=2026-08-18T04:53Z
+#, fuzzy
 msgid "path"
-msgstr ""
+msgstr "đường dẫn"
 
 # pydocvi: passthrough=version_marker
 #, fuzzy

@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 04:47+0000\n"
+"PO-Revision-Date: 2026-08-18 05:15+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -2258,8 +2258,10 @@ msgstr ""
 msgid "statement"
 msgstr "câu lệnh"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=a5a4871c332d run=2026-08-18T04:53Z
+#, fuzzy
 msgid "for"
-msgstr ""
+msgstr "cho"
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -2276,8 +2278,10 @@ msgstr "chuỗi ký tự ellipsis"
 msgid "documentation strings"
 msgstr "chuỗi tài liệu"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=a5a4871c332d run=2026-08-18T04:53Z
+#, fuzzy
 msgid "docstrings"
-msgstr ""
+msgstr "docstring"
 
 # pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=d132b9201f27 run=2026-08-17T16:43Z
 #, fuzzy
@@ -2299,11 +2303,15 @@ msgstr "trong các lời gọi hàm"
 msgid "**"
 msgstr "**"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=a5a4871c332d run=2026-08-18T04:53Z
+#, fuzzy
 msgid "function"
-msgstr ""
+msgstr "hàm"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=a5a4871c332d run=2026-08-18T04:53Z
+#, fuzzy
 msgid "annotations"
-msgstr ""
+msgstr "chú thích"
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -2320,8 +2328,12 @@ msgstr "chú thích hàm"
 msgid ": (colon)"
 msgstr ": (dấu hai chấm)"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=a5a4871c332d run=2026-08-18T04:53Z
+#, fuzzy
 msgid "coding"
-msgstr ""
+msgstr "tài liệu mã hóa"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=5d1348f87c13 run=2026-08-18T04:53Z
+#, fuzzy
 msgid "style"
-msgstr ""
+msgstr "kiểu dáng"

@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 04:47+0000\n"
+"PO-Revision-Date: 2026-08-18 05:15+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -1075,8 +1075,10 @@ msgstr ""
 "nhiều biến thực chất chỉ là sự kết hợp của tuple packing và sequence "
 "unpacking."
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=01b711b516dd run=2026-08-18T04:53Z
+#, fuzzy
 msgid "Sets"
-msgstr ""
+msgstr "Tập hợp"
 
 # pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=36b6449c9aef run=2026-08-17T16:43Z
 #, fuzzy
@@ -1203,8 +1205,10 @@ msgstr ""
 ">>> {*fruit for fruit in fruits}\n"
 "{'blueberry', 'banana', 'avocado', 'apple', 'apricot'}"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=01b711b516dd run=2026-08-18T04:53Z
+#, fuzzy
 msgid "Dictionaries"
-msgstr ""
+msgstr "Từ điển"
 
 # pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=36b6449c9aef run=2026-08-17T16:43Z
 #, fuzzy

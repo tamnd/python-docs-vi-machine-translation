@@ -275,10 +275,32 @@
    "source": "human"
   },
   {
+   "id": "03b7315570f1e5f3",
+   "msgid": "Logging",
+   "msgstr": "Ghi nhật ký",
+   "source": "machine",
+   "model": "gpt-5-6-mini",
+   "prompt": "574466d7ee1dbb429a6fc14bd9d62f35db2518edfd6f743f96a2295421cc5ea2",
+   "glossary": 1,
+   "batch": "b70cb9ce10c6",
+   "run": "2026-08-18T04:53Z"
+  },
+  {
    "id": "03c6e99f1775eda5",
    "msgid": "A function definition associates the function name with the function object in the current symbol table.  The interpreter recognizes the object pointed to by that name as a user-defined function.  Other names can also point to that same function object and can also be used to access the function::",
    "msgstr": "Định nghĩa hàm liên kết tên hàm với object hàm trong bảng ký hiệu hiện tại. Trình thông dịch nhận ra object được trỏ bởi tên đó là một hàm do người dùng định nghĩa. Các tên khác cũng có thể trỏ đến cùng object hàm đó và cũng có thể dùng để truy cập hàm::",
    "source": "human"
+  },
+  {
+   "id": "03f872fd1f5b6d71",
+   "msgid": "Dictionaries",
+   "msgstr": "Từ điển",
+   "source": "machine",
+   "model": "gpt-5-6-mini",
+   "prompt": "574466d7ee1dbb429a6fc14bd9d62f35db2518edfd6f743f96a2295421cc5ea2",
+   "glossary": 1,
+   "batch": "01b711b516dd",
+   "run": "2026-08-18T04:53Z"
   },
   {
    "id": "04137aae4435d671",
@@ -1794,6 +1816,17 @@
    "source": "human"
   },
   {
+   "id": "249b92177e362bd7",
+   "msgid": "Exceptions",
+   "msgstr": "Ngoại lệ",
+   "source": "machine",
+   "model": "gpt-5-6-mini",
+   "prompt": "574466d7ee1dbb429a6fc14bd9d62f35db2518edfd6f743f96a2295421cc5ea2",
+   "glossary": 1,
+   "batch": "775f4a94807d",
+   "run": "2026-08-18T04:53Z"
+  },
+  {
    "id": "24aa90c7af06f103",
    "msgid": "Unlike strings, which are :term:`immutable`, lists are a :term:`mutable` type, i.e. it is possible to change their content::",
    "msgstr": "Khác với chuỗi vốn có tính bất biến :term:`immutable`, list là kiểu dữ liệu có thể thay đổi :term:`mutable`, nghĩa là có thể thay đổi nội dung của chúng::",
@@ -3015,6 +3048,17 @@
    "run": "2026-08-17T16:43Z"
   },
   {
+   "id": "39bce04feb6757ae",
+   "msgid": "search",
+   "msgstr": "tìm kiếm",
+   "source": "machine",
+   "model": "gpt-5-6-mini",
+   "prompt": "574466d7ee1dbb429a6fc14bd9d62f35db2518edfd6f743f96a2295421cc5ea2",
+   "glossary": 1,
+   "batch": "cca5a33de288",
+   "run": "2026-08-18T04:53Z"
+  },
+  {
    "id": "3a07b5597a9afad0",
    "msgid": "Name your classes and functions consistently; the convention is to use ``UpperCamelCase`` for classes and ``lowercase_with_underscores`` for functions and methods.  Always use ``self`` as the name for the first method argument (see :ref:`tut-firstclasses` for more on classes and methods).",
    "msgstr": "Đặt tên class và hàm một cách nhất quán; quy ước là dùng ``UpperCamelCase`` cho class và ``lowercase_with_underscores`` cho hàm và method. Luôn dùng ``self`` làm tên cho đối số đầu tiên của method (xem :ref:`tut-firstclasses` để biết thêm về class và method).",
@@ -3800,6 +3844,17 @@
    "run": "2026-08-17T16:43Z"
   },
   {
+   "id": "4c52fd811562d367",
+   "msgid": "Generators",
+   "msgstr": "Trình sinh",
+   "source": "machine",
+   "model": "gpt-5-6-mini",
+   "prompt": "574466d7ee1dbb429a6fc14bd9d62f35db2518edfd6f743f96a2295421cc5ea2",
+   "glossary": 1,
+   "batch": "6c6f030603f0",
+   "run": "2026-08-18T04:53Z"
+  },
+  {
    "id": "4c7c2732ae063d27",
    "msgid": "Python strings cannot be changed --- they are :term:`immutable`. Therefore, assigning to an indexed position in the string results in an error::",
    "msgstr": "Chuỗi Python không thể thay đổi --- chúng có tính bất biến :term:`immutable`. Do đó, việc gán giá trị vào một vị trí chỉ số trong chuỗi sẽ dẫn đến lỗi::",
@@ -4301,6 +4356,17 @@
    "source": "human"
   },
   {
+   "id": "555220b031aab2c9",
+   "msgid": "Introduction",
+   "msgstr": "Giới thiệu",
+   "source": "machine",
+   "model": "gpt-5-6-mini",
+   "prompt": "574466d7ee1dbb429a6fc14bd9d62f35db2518edfd6f743f96a2295421cc5ea2",
+   "glossary": 1,
+   "batch": "118148d50dd5",
+   "run": "2026-08-18T04:53Z"
+  },
+  {
    "id": "5573cb18de9dd085",
    "msgid": "The principal challenge of multi-threaded applications is coordinating threads that share data or other resources.  To that end, the threading module provides a number of synchronization primitives including locks, events, condition variables, and semaphores.",
    "msgstr": "Thách thức chính của các ứng dụng đa luồng là điều phối các thread chia sẻ dữ liệu hoặc tài nguyên khác. Để đạt được điều đó, module threading cung cấp một số nguyên thủy đồng bộ hóa bao gồm khóa, sự kiện, biến điều kiện và semaphore.",
@@ -4721,6 +4787,17 @@
    "msgid": "Convert an integer number to an octal string prefixed with \"0o\".  The result is a valid Python expression. If *integer* is not a Python :class:`int` object, it has to define an :meth:`~object.__index__` method that returns an integer. For example:",
    "msgstr": "Chuyển đổi một số nguyên thành chuỗi bát phân có tiền tố \"0o\". Kết quả là một biểu thức Python hợp lệ. Nếu *integer* không phải là đối tượng :class:`int` của Python, nó phải định nghĩa phương thức :meth:`~object.__index__` trả về một số nguyên. Ví dụ:",
    "source": "human"
+  },
+  {
+   "id": "5b73477635c6e5f2",
+   "msgid": "Modules",
+   "msgstr": "Mô-đun",
+   "source": "machine",
+   "model": "gpt-5-6-mini",
+   "prompt": "574466d7ee1dbb429a6fc14bd9d62f35db2518edfd6f743f96a2295421cc5ea2",
+   "glossary": 1,
+   "batch": "ea0c35ce78c8",
+   "run": "2026-08-18T04:53Z"
   },
   {
    "id": "5b8278e269ace6f6",
@@ -5474,6 +5551,17 @@
    "source": "human"
   },
   {
+   "id": "684a2907f7515eb9",
+   "msgid": "for",
+   "msgstr": "cho",
+   "source": "machine",
+   "model": "gpt-5-6-mini",
+   "prompt": "574466d7ee1dbb429a6fc14bd9d62f35db2518edfd6f743f96a2295421cc5ea2",
+   "glossary": 1,
+   "batch": "a5a4871c332d",
+   "run": "2026-08-18T04:53Z"
+  },
+  {
    "id": "688435141b31c9d8",
    "msgid": "A second way of starting the interpreter is ``python -c command [arg] ...``, which executes the statement(s) in *command*, analogous to the shell's :option:`-c` option.  Since Python statements often contain spaces or other characters that are special to the shell, it is usually advised to quote *command* in its entirety.",
    "msgstr": "Một cách thứ hai để khởi chạy trình thông dịch là ``python -c command [arg] ...``, lệnh này thực thi (các) câu lệnh trong *command*, tương tự như tùy chọn :option:`-c` của shell. Vì các câu lệnh Python thường chứa khoảng trắng hoặc các ký tự đặc biệt khác đối với shell, bạn thường được khuyên nên đặt toàn bộ *command* trong dấu ngoặc kép.",
@@ -5512,6 +5600,17 @@
    "glossary": 1,
    "batch": "297a621f1359",
    "run": "2026-08-17T16:43Z"
+  },
+  {
+   "id": "69051d4af3588e80",
+   "msgid": "annotations",
+   "msgstr": "chú thích",
+   "source": "machine",
+   "model": "gpt-5-6-mini",
+   "prompt": "574466d7ee1dbb429a6fc14bd9d62f35db2518edfd6f743f96a2295421cc5ea2",
+   "glossary": 1,
+   "batch": "a5a4871c332d",
+   "run": "2026-08-18T04:53Z"
   },
   {
    "id": "6916b9e4312740d9",
@@ -6041,6 +6140,17 @@
    "source": "human"
   },
   {
+   "id": "72bff07999671448",
+   "msgid": "coding",
+   "msgstr": "tài liệu mã hóa",
+   "source": "machine",
+   "model": "gpt-5-6-mini",
+   "prompt": "574466d7ee1dbb429a6fc14bd9d62f35db2518edfd6f743f96a2295421cc5ea2",
+   "glossary": 1,
+   "batch": "a5a4871c332d",
+   "run": "2026-08-18T04:53Z"
+  },
+  {
    "id": "72dc5194c1b9affe",
    "msgid": "# File demo.py\nimport sys\nprint(sys.argv)",
    "msgstr": "Tệp demo.py\nimport sys\nprint(sys.argv)",
@@ -6083,6 +6193,17 @@
    "glossary": 1,
    "batch": "a1947e59918c",
    "run": "2026-08-17T16:43Z"
+  },
+  {
+   "id": "7353107d1eccc125",
+   "msgid": "Classes",
+   "msgstr": "Các lớp",
+   "source": "machine",
+   "model": "gpt-5-6-mini",
+   "prompt": "574466d7ee1dbb429a6fc14bd9d62f35db2518edfd6f743f96a2295421cc5ea2",
+   "glossary": 1,
+   "batch": "bae4b26e4b0d",
+   "run": "2026-08-18T04:53Z"
   },
   {
    "id": "735c4006d4ed1f57",
@@ -6485,6 +6606,17 @@
    "source": "human"
   },
   {
+   "id": "7bc7296123d5cf08",
+   "msgid": "method",
+   "msgstr": "phương thức",
+   "source": "machine",
+   "model": "gpt-5-6-mini",
+   "prompt": "574466d7ee1dbb429a6fc14bd9d62f35db2518edfd6f743f96a2295421cc5ea2",
+   "glossary": 1,
+   "batch": "cae42d21846f",
+   "run": "2026-08-18T04:53Z"
+  },
+  {
    "id": "7bc947914e33e919",
    "msgid": "If it is a *string*, you must also give the *encoding* (and optionally, *errors*) parameters; :func:`bytearray` then converts the string to bytes using :meth:`str.encode`.",
    "msgstr": "Nếu đó là một *chuỗi*, bạn cũng phải cung cấp tham số *encoding* (và tùy chọn là *errors*); sau đó :func:`bytearray` sẽ chuyển đổi chuỗi thành các byte bằng phương thức :meth:`str.encode`.",
@@ -6547,6 +6679,17 @@
    "glossary": 1,
    "batch": "a1947e59918c",
    "run": "2026-08-17T16:43Z"
+  },
+  {
+   "id": "7d950d58ad867531",
+   "msgid": "help",
+   "msgstr": "trợ giúp",
+   "source": "machine",
+   "model": "gpt-5-6-mini",
+   "prompt": "574466d7ee1dbb429a6fc14bd9d62f35db2518edfd6f743f96a2295421cc5ea2",
+   "glossary": 1,
+   "batch": "5d6ce2504317",
+   "run": "2026-08-18T04:53Z"
   },
   {
    "id": "7d9946e4c86e00ce",
@@ -6676,6 +6819,17 @@
    "run": "2026-08-17T16:43Z"
   },
   {
+   "id": "7fdeceb11a3fecd0",
+   "msgid": "open",
+   "msgstr": "mở",
+   "source": "machine",
+   "model": "gpt-5-6-mini",
+   "prompt": "574466d7ee1dbb429a6fc14bd9d62f35db2518edfd6f743f96a2295421cc5ea2",
+   "glossary": 1,
+   "batch": "1f9f334a06bb",
+   "run": "2026-08-18T04:53Z"
+  },
+  {
    "id": "7ffa32023727da23",
    "msgid": "Syntax errors are reported as exceptions.",
    "msgstr": "Các lỗi cú pháp được báo cáo dưới dạng các ngoại lệ.",
@@ -6714,6 +6868,17 @@
    "msgid": "More Control Flow Tools",
    "msgstr": "Thêm các công cụ điều khiển luồng dữ liệu",
    "source": "human"
+  },
+  {
+   "id": "81592391ef031027",
+   "msgid": "Mathematics",
+   "msgstr": "Toán học",
+   "source": "machine",
+   "model": "gpt-5-6-mini",
+   "prompt": "574466d7ee1dbb429a6fc14bd9d62f35db2518edfd6f743f96a2295421cc5ea2",
+   "glossary": 1,
+   "batch": "c94206e9a024",
+   "run": "2026-08-18T04:53Z"
   },
   {
    "id": "81a1689300347f63",
@@ -7248,6 +7413,17 @@
    "run": "2026-08-17T16:43Z"
   },
   {
+   "id": "8cfd1af9145c61d5",
+   "msgid": "Iterators",
+   "msgstr": "Trình lặp",
+   "source": "machine",
+   "model": "gpt-5-6-mini",
+   "prompt": "574466d7ee1dbb429a6fc14bd9d62f35db2518edfd6f743f96a2295421cc5ea2",
+   "glossary": 1,
+   "batch": "6c6f030603f0",
+   "run": "2026-08-18T04:53Z"
+  },
+  {
    "id": "8d10f1b8f38095b4",
    "msgid": "Like all decorators, it is also possible to call ``staticmethod`` as a regular function and do something with its result.  This is needed in some cases where you need a reference to a function from a class body and you want to avoid the automatic transformation to instance method.  For these cases, use this idiom::",
    "msgstr": "Giống như tất cả các decorator, cũng có thể gọi ``staticmethod`` như một hàm thông thường và làm gì đó với kết quả của nó. Điều này cần thiết trong một số trường hợp khi bạn cần tham chiếu đến một hàm từ thân lớp và muốn tránh việc tự động chuyển đổi thành phương thức thể hiện. Đối với những trường hợp này, hãy dùng cú pháp sau::",
@@ -7292,6 +7468,17 @@
    "msgid": "case (Point(x1, y1), Point(x2, y2) as p2): ...",
    "msgstr": "case (Point(x1, y1), Point(x2, y2) as p2): ...",
    "source": "human"
+  },
+  {
+   "id": "8e5ed76e5a5c3ddf",
+   "msgid": "name",
+   "msgstr": "tên",
+   "source": "machine",
+   "model": "gpt-5-6-mini",
+   "prompt": "574466d7ee1dbb429a6fc14bd9d62f35db2518edfd6f743f96a2295421cc5ea2",
+   "glossary": 1,
+   "batch": "cae42d21846f",
+   "run": "2026-08-18T04:53Z"
   },
   {
    "id": "8e6096d0b04e5e92",
@@ -7587,6 +7774,17 @@
    "msgid": "The Interpreter and Its Environment",
    "msgstr": "Trình thông dịch và môi trường của nó",
    "source": "human"
+  },
+  {
+   "id": "952d9a5f04e9cf03",
+   "msgid": "Inheritance",
+   "msgstr": "Kế thừa",
+   "source": "machine",
+   "model": "gpt-5-6-mini",
+   "prompt": "574466d7ee1dbb429a6fc14bd9d62f35db2518edfd6f743f96a2295421cc5ea2",
+   "glossary": 1,
+   "batch": "0edd52604a75",
+   "run": "2026-08-18T04:53Z"
   },
   {
    "id": "9532b2a6499851a1",
@@ -7939,6 +8137,17 @@
    "source": "human"
   },
   {
+   "id": "9d3b69c4bb0ac54c",
+   "msgid": "Templating",
+   "msgstr": "Tạo template",
+   "source": "machine",
+   "model": "gpt-5-6-mini",
+   "prompt": "574466d7ee1dbb429a6fc14bd9d62f35db2518edfd6f743f96a2295421cc5ea2",
+   "glossary": 1,
+   "batch": "b70cb9ce10c6",
+   "run": "2026-08-18T04:53Z"
+  },
+  {
    "id": "9d4c5124b8843d21",
    "msgid": "Infinity",
    "msgstr": "Infinity",
@@ -8036,6 +8245,17 @@
    "glossary": 1,
    "batch": "a9d03541538c",
    "run": "2026-08-17T16:43Z"
+  },
+  {
+   "id": "9f396466e63456f3",
+   "msgid": "Packages",
+   "msgstr": "Các gói",
+   "source": "machine",
+   "model": "gpt-5-6-mini",
+   "prompt": "574466d7ee1dbb429a6fc14bd9d62f35db2518edfd6f743f96a2295421cc5ea2",
+   "glossary": 1,
+   "batch": "57e87dfdd296",
+   "run": "2026-08-18T04:53Z"
   },
   {
    "id": "9f3c1f06e6e44722",
@@ -8842,6 +9062,17 @@
    "run": "2026-08-17T16:43Z"
   },
   {
+   "id": "ae5a1a2003f016d4",
+   "msgid": "function",
+   "msgstr": "hàm",
+   "source": "machine",
+   "model": "gpt-5-6-mini",
+   "prompt": "574466d7ee1dbb429a6fc14bd9d62f35db2518edfd6f743f96a2295421cc5ea2",
+   "glossary": 1,
+   "batch": "a5a4871c332d",
+   "run": "2026-08-18T04:53Z"
+  },
+  {
    "id": "ae64f4294aa9d79e",
    "msgid": "Use :func:`functools.cmp_to_key` to convert an old-style *cmp* function to a *key* function.",
    "msgstr": "Dùng :func:`functools.cmp_to_key` để chuyển đổi hàm *cmp* kiểu cũ thành hàm *key*.",
@@ -8945,6 +9176,17 @@
    "msgid": "Binary files are buffered in fixed-size chunks; the size of the buffer is ``max(min(blocksize, 8 MiB), DEFAULT_BUFFER_SIZE)`` when the device block size is available. On most systems, the buffer will typically be 128 kilobytes long.",
    "msgstr": "Các tệp nhị phân được đệm theo các khối kích thước cố định; kích thước bộ đệm là ``max(min(blocksize, 8 MiB), DEFAULT_BUFFER_SIZE)`` khi kích thước khối thiết bị có sẵn. Trên hầu hết các hệ thống, bộ đệm thường dài 128 kilobyte.",
    "source": "human"
+  },
+  {
+   "id": "b0394c517a175b02",
+   "msgid": "Sets",
+   "msgstr": "Tập hợp",
+   "source": "machine",
+   "model": "gpt-5-6-mini",
+   "prompt": "574466d7ee1dbb429a6fc14bd9d62f35db2518edfd6f743f96a2295421cc5ea2",
+   "glossary": 1,
+   "batch": "01b711b516dd",
+   "run": "2026-08-18T04:53Z"
   },
   {
    "id": "b068fd1a6640a8e7",
@@ -9662,6 +9904,17 @@
    "source": "human"
   },
   {
+   "id": "c05ccec82d9f9f52",
+   "msgid": "path",
+   "msgstr": "đường dẫn",
+   "source": "machine",
+   "model": "gpt-5-6-mini",
+   "prompt": "574466d7ee1dbb429a6fc14bd9d62f35db2518edfd6f743f96a2295421cc5ea2",
+   "glossary": 1,
+   "batch": "cca5a33de288",
+   "run": "2026-08-18T04:53Z"
+  },
+  {
    "id": "c05d1310a5cef8bb",
    "msgid": "Packages in Multiple Directories",
    "msgstr": "Các gói trong nhiều thư mục",
@@ -10255,6 +10508,17 @@
    "run": "2026-08-17T16:43Z"
   },
   {
+   "id": "caef281a302d1b1d",
+   "msgid": "style",
+   "msgstr": "kiểu dáng",
+   "source": "machine",
+   "model": "gpt-5-6-mini",
+   "prompt": "574466d7ee1dbb429a6fc14bd9d62f35db2518edfd6f743f96a2295421cc5ea2",
+   "glossary": 1,
+   "batch": "5d1348f87c13",
+   "run": "2026-08-18T04:53Z"
+  },
+  {
    "id": "caf357e2322c9495",
    "msgid": "Batteries included",
    "msgstr": "Bao gồm mọi thứ",
@@ -10322,6 +10586,17 @@
    "glossary": 1,
    "batch": "21ec5aea4a73",
    "run": "2026-08-17T16:43Z"
+  },
+  {
+   "id": "cc852f6adbf47763",
+   "msgid": "Appendix",
+   "msgstr": "Phụ lục",
+   "source": "machine",
+   "model": "gpt-5-6",
+   "prompt": "574466d7ee1dbb429a6fc14bd9d62f35db2518edfd6f743f96a2295421cc5ea2",
+   "glossary": 1,
+   "batch": "6fe97173fe1a",
+   "run": "2026-08-18T04:53Z"
   },
   {
    "id": "ccb50bbce3cc7874",
@@ -11938,6 +12213,17 @@
    "run": "2026-08-17T16:43Z"
   },
   {
+   "id": "ebac4dc53e7ba4fc",
+   "msgid": "docstrings",
+   "msgstr": "docstring",
+   "source": "machine",
+   "model": "gpt-5-6-mini",
+   "prompt": "574466d7ee1dbb429a6fc14bd9d62f35db2518edfd6f743f96a2295421cc5ea2",
+   "glossary": 1,
+   "batch": "a5a4871c332d",
+   "run": "2026-08-18T04:53Z"
+  },
+  {
    "id": "ebb0c74fe400801e",
    "msgid": "If ``x = MyClass()``, as above, this will return the string ``'hello world'``. However, it is not necessary to call a method right away: ``x.f`` is a method object, and can be stored away and called at a later time.  For example::",
    "msgstr": "Nếu ``x = MyClass()``, như trên, điều này sẽ trả về chuỗi ``'hello world'``. Tuy nhiên, không cần thiết phải gọi một phương thức ngay lập tức: ``x.f`` là một đối tượng phương thức, có thể được lưu lại và gọi vào thời điểm sau đó. Ví dụ::",
@@ -12457,6 +12743,17 @@
    "glossary": 1,
    "batch": "d110ccf74f93",
    "run": "2026-08-17T16:43Z"
+  },
+  {
+   "id": "f5075995c985447e",
+   "msgid": "mangling",
+   "msgstr": "làm rối tên",
+   "source": "machine",
+   "model": "gpt-5-6-mini",
+   "prompt": "574466d7ee1dbb429a6fc14bd9d62f35db2518edfd6f743f96a2295421cc5ea2",
+   "glossary": 1,
+   "batch": "cae42d21846f",
+   "run": "2026-08-18T04:53Z"
   },
   {
    "id": "f51a9c248c894786",

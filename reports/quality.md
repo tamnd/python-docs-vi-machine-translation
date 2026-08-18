@@ -2,25 +2,38 @@
 
 ## Invariants, recounted
 
-737 machine-written entries in the corpus. Every one of them passed the invariants when it was accepted, so anything below is a rule that was tightened afterwards or an entry something else edited.
+867 machine-written entries in the corpus. Every one of them passed the invariants when it was accepted, so anything below is a rule that was tightened afterwards or an entry something else edited.
 
 | Rule | Failing | Pass rate |
 | --- | ---: | ---: |
-| `P01` | 373 | 49.39% |
-| `P02` | 373 | 49.39% |
+| `P01` | 373 | 56.98% |
+| `P02` | 373 | 56.98% |
 
 ## Refusals
 
-No translation run on record. Refusal rates come from the run that produced the entries and cannot be recovered from the corpus afterwards.
+1 runs, 27 batches, 414 entries accepted, 26 refused, 0 batches refused whole, 6 entries out of rungs. Acceptance rate 94.09%.
+
+| Rule | Refusals | Share |
+| --- | ---: | ---: |
+| `P05` | 24 | 75.0% |
+| `P08` | 4 | 12.5% |
+| `P01` | 2 | 6.2% |
+| `P02` | 2 | 6.2% |
+
+| Rung | Refusals |
+| --- | ---: |
+| 1 | 21 |
+| 2 | 7 |
+| 3 | 4 |
 
 ## Glossary adherence
 
-639 terms against 1,900 translated entries. 277 misses over 91 terms.
+639 terms against 2,030 translated entries. 277 misses over 91 terms.
 
 | Written by | Entries | Misses | Misses per entry | Terms |
 | --- | ---: | ---: | ---: | ---: |
 | human | 1,168 | 246 | 0.21 | 85 |
-| machine | 732 | 31 | 0.04 | 18 |
+| machine | 862 | 31 | 0.04 | 18 |
 
 | Term | Misses |
 | --- | ---: |
@@ -47,8 +60,21 @@ No translation run on record. Refusal rates come from the run that produced the 
 
 ## Dead entries
 
-Nothing in the dead letter queue.
+6 jobs out of rungs, 29 entries between them.
+
+| Job | File | Entries | Reason |
+| --- | --- | ---: | --- |
+| `5d1f704cdc373879` | tutorial/datastructures.po | 2 | 1 entries refused, rung 3 already climbed |
+| `6bb4383c38465217` | tutorial/modules.po | 1 | 1 entries refused, out of rungs |
+| `b07df84f784f7a08` | tutorial/classes.po | 23 | 1 entries refused, rung 2 already climbed |
+| `d0e0b58b8358d0f5` | tutorial/inputoutput.po | 1 | 1 entries refused, out of rungs |
+| `f95296a5ce7f88a6` | tutorial/inputoutput.po | 1 | 1 entries refused, out of rungs |
+| `fa8a9850ecbb91fb` | tutorial/modules.po | 1 | 1 entries refused, out of rungs |
 
 ## Routes
 
-No translation run on record.
+27 calls over 0.3 hours.
+
+| Route | Calls | Share |
+| --- | ---: | ---: |
+| server3 | 27 | 100.0% |

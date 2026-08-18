@@ -1,6 +1,6 @@
 # Audit
 
-Fail. 41 checks, 15 failing, 1,410 findings.
+Fail. 41 checks, 16 failing, 1,543 findings.
 
 ## Structure
 
@@ -49,7 +49,7 @@ Fail. 41 checks, 15 failing, 1,410 findings.
 | `L04` | yes | 0 | no English sentence copied through |
 | `L05` | no | 3 | second-person pronoun policy |
 | `L06` | no | 0 | headings are noun phrases |
-| `L07` | no | 687 | no cut-down model wrote an entry |
+| `L07` | no | 816 | no cut-down model wrote an entry |
 | `L08` | no | 5 | sentence counts are close |
 
 ## Availability
@@ -59,7 +59,7 @@ Fail. 41 checks, 15 failing, 1,410 findings.
 | `A01` | yes | 0 | the coverage report is current |
 | `A02` | yes | 0 | every dead job is accounted for |
 | `A03` | yes | 0 | the memory and the catalogs agree |
-| `A04` | no | 0 | dead entries per file below a ceiling |
+| `A04` | no | 4 | dead entries per file below a ceiling |
 | `A05` | no | 0 | heavily refused batches are named |
 
 ## Hygiene
@@ -130,7 +130,7 @@ Fail. 41 checks, 15 failing, 1,410 findings.
 - extending/newtypes_tutorial.po:2949  leading whitespace '' became ' '
 - library/abc.po:548  leading whitespace '' became ' '
 - library/collections.abc.po:539  leading whitespace '' became ' '
-- library/configparser.po:2000  leading whitespace '' became ' '
+- library/configparser.po:2002  leading whitespace '' became ' '
 - library/csv.po:784  leading whitespace '' became ' '
 - library/datetime.po:4634  leading whitespace '' became ' '
 - library/doctest.po:2660  leading whitespace '' became ' '
@@ -153,7 +153,7 @@ Fail. 41 checks, 15 failing, 1,410 findings.
 
 ### `P07` code entries copied exactly
 
-- tutorial/errors.po:753  literal_block entry differs from its source
+- tutorial/errors.po:755  literal_block entry differs from its source
 - tutorial/interpreter.po:198  literal_block entry differs from its source
 - tutorial/interpreter.po:222  doctest entry differs from its source
 - tutorial/introduction.po:73  literal_block entry differs from its source
@@ -281,11 +281,11 @@ Fail. 41 checks, 15 failing, 1,410 findings.
 - c-api/interp-lifecycle.po:1140  identical to the English
 - c-api/interp-lifecycle.po:1143  identical to the English
 - c-api/interp-lifecycle.po:1151  identical to the English
-- c-api/intro.po:1512  identical to the English
-- c-api/intro.po:1515  identical to the English
-- c-api/intro.po:1577  identical to the English
-- c-api/intro.po:1580  identical to the English
-- c-api/intro.po:1588  identical to the English
+- c-api/intro.po:1516  identical to the English
+- c-api/intro.po:1519  identical to the English
+- c-api/intro.po:1581  identical to the English
+- c-api/intro.po:1584  identical to the English
+- c-api/intro.po:1592  identical to the English
 - and 124 more, not printed
 
 ### `L03` no narration
@@ -303,25 +303,25 @@ Fail. 41 checks, 15 failing, 1,410 findings.
 
 - c-api/dict.po:304  written by gpt-5-6-mini
 - c-api/exceptions.po:442  written by gpt-5-6-mini
+- c-api/function.po:243  written by gpt-5-6-mini
 - c-api/init_config.po:148  written by gpt-5-6-mini
-- c-api/intro.po:316  written by gpt-5-6-mini
+- c-api/interp-lifecycle.po:1154  written by gpt-5-6-mini
+- c-api/interp-lifecycle.po:1159  written by gpt-5-6-mini
+- c-api/intro.po:26  written by gpt-5-6-mini
+- c-api/intro.po:318  written by gpt-5-6-mini
+- c-api/intro.po:1131  written by gpt-5-6-mini
+- c-api/intro.po:1595  written by gpt-5-6-mini
+- c-api/intro.po:1600  written by gpt-5-6-mini
 - c-api/method.po:59  written by gpt-5-6-mini
+- c-api/method.po:105  written by gpt-5-6-mini
 - c-api/refcounting.po:124  written by gpt-5-6-mini
 - c-api/threads.po:248  written by gpt-5-6-mini
 - extending/extending.po:35  written by gpt-5-6-mini
 - faq/library.po:632  written by gpt-5-6-mini
 - faq/programming.po:2885  written by gpt-5-6-mini
-- glossary.po:2666  written by gpt-5-6-mini
-- howto/gdb_helpers.po:410  written by gpt-5-6-mini
-- howto/isolating-extensions.po:790  written by gpt-5-6-mini
-- howto/sorting.po:588  written by gpt-5-6-mini
-- howto/urllib2.po:338  written by gpt-5-6-mini
-- library/argparse.po:3853  written by gpt-5-6-mini
-- library/ast.po:4256  written by gpt-5-6-mini
-- library/asyncio-llapi-index.po:502  written by gpt-5-6-mini
-- library/constants.po:141  written by gpt-5-6-mini
-- library/contextlib.po:467  written by gpt-5-6-mini
-- and 667 more, not printed
+- faq/programming.po:3348  written by gpt-5-6-mini
+- glossary.po:939  written by gpt-5-6-mini
+- and 796 more, not printed
 
 ### `L08` sentence counts are close
 
@@ -330,3 +330,10 @@ Fail. 41 checks, 15 failing, 1,410 findings.
 - tutorial/datastructures.po:1001  the English has 3 sentences, the translation has 6
 - tutorial/datastructures.po:1058  the English has 3 sentences, the translation has 6
 - tutorial/introduction.po:128  the English has 4 sentences, the translation has 2
+
+### `A04` dead entries per file below a ceiling
+
+- tutorial/classes.po  23 of 154 entries dead, over the 1% ceiling
+- tutorial/datastructures.po  2 of 139 entries dead, over the 1% ceiling
+- tutorial/inputoutput.po  2 of 112 entries dead, over the 1% ceiling
+- tutorial/modules.po  2 of 117 entries dead, over the 1% ceiling

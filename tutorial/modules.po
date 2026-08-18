@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-23 15:47+0000\n"
-"PO-Revision-Date: 2026-08-18 04:47+0000\n"
+"PO-Revision-Date: 2026-08-18 05:15+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -22,8 +22,10 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: pydocvi 0.1.4\n"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=ea0c35ce78c8 run=2026-08-18T04:53Z
+#, fuzzy
 msgid "Modules"
-msgstr ""
+msgstr "Mô-đun"
 
 # pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=60800e02afb8 run=2026-08-17T16:43Z
 #, fuzzy
@@ -912,8 +914,10 @@ msgstr ""
 " 'sorted', 'staticmethod', 'str', 'sum', 'super', 'tuple', 'type', 'vars',\n"
 " 'zip']"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=57e87dfdd296 run=2026-08-18T04:53Z
+#, fuzzy
 msgid "Packages"
-msgstr ""
+msgstr "Các gói"
 
 # pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=723495c45e5f run=2026-08-17T16:43Z
 #, fuzzy
@@ -1410,11 +1414,15 @@ msgstr ""
 msgid "module"
 msgstr "module"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=cca5a33de288 run=2026-08-18T04:53Z
+#, fuzzy
 msgid "search"
-msgstr ""
+msgstr "tìm kiếm"
 
+# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=cca5a33de288 run=2026-08-18T04:53Z
+#, fuzzy
 msgid "path"
-msgstr ""
+msgstr "đường dẫn"
 
 msgid "sys"
 msgstr "sys"
