@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 07:47+0000\n"
+"PO-Revision-Date: 2026-08-18 08:10+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.6\n"
+"X-Generator: pydocvi 0.1.8\n"
 
 msgid ":mod:`!gettext` --- Multilingual internationalization services"
 msgstr ""
@@ -230,8 +230,10 @@ msgid ""
 "function, like this::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "print(_('This string will be translated.'))"
-msgstr ""
+msgstr "print(_('This string will be translated.'))"
 
 msgid ""
 "For convenience, you want the :func:`!_` function to be installed in "
@@ -463,12 +465,18 @@ msgid ""
 "this version has a slightly different API.  Its documented usage was::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "import gettext\n"
 "cat = gettext.Catalog(domain, localedir)\n"
 "_ = cat.gettext\n"
 "print(_('hello world'))"
 msgstr ""
+"import gettext\n"
+"cat = gettext.Catalog(domain, localedir)\n"
+"_ = cat.gettext\n"
+"print(_('hello world'))"
 
 msgid ""
 "For compatibility with this older module, the function :func:`!Catalog` is "

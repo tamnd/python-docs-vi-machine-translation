@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 07:47+0000\n"
+"PO-Revision-Date: 2026-08-18 08:10+0000\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
-"X-Generator: pydocvi 0.1.6\n"
+"X-Generator: pydocvi 0.1.8\n"
 
 # pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=a899e7fdc638 run=2026-08-17T16:43Z
 #, fuzzy
@@ -519,7 +519,7 @@ msgstr ""
 "hoạt. Ở dạng đơn giản nhất, các thông điệp log được gửi đến một tệp hoặc đến "
 "``sys.stderr``::"
 
-# pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=a000845f44be run=2026-08-17T16:43Z
+# pydocvi: passthrough=literal_block
 #, fuzzy
 msgid ""
 "import logging\n"
@@ -530,11 +530,11 @@ msgid ""
 "logging.critical('Critical error -- shutting down')"
 msgstr ""
 "import logging\n"
-"logging.debug('Thông tin gỡ lỗi')\n"
-"logging.info('Thông báo thông tin')\n"
-"logging.warning('Cảnh báo: không tìm thấy tệp cấu hình %s', 'server.conf')\n"
-"logging.error('Đã xảy ra lỗi')\n"
-"logging.critical('Lỗi nghiêm trọng -- đang tắt hệ thống')"
+"logging.debug('Debugging information')\n"
+"logging.info('Informational message')\n"
+"logging.warning('Warning:config file %s not found', 'server.conf')\n"
+"logging.error('Error occurred')\n"
+"logging.critical('Critical error -- shutting down')"
 
 # pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=a899e7fdc638 run=2026-08-17T16:43Z
 #, fuzzy

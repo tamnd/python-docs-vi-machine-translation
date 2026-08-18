@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 07:47+0000\n"
+"PO-Revision-Date: 2026-08-18 08:10+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.6\n"
+"X-Generator: pydocvi 0.1.8\n"
 
 msgid "What's New In Python 3.8"
 msgstr ""
@@ -160,10 +160,14 @@ msgstr "f(10, 20, 30, d=40, e=50, f=60)"
 msgid "However, these are invalid calls::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "f(10, b=20, c=30, d=40, e=50, f=60)   # b cannot be a keyword argument\n"
 "f(10, 20, 30, 40, 50, f=60)           # e must be a keyword argument"
 msgstr ""
+"f(10, b=20, c=30, d=40, e=50, f=60)   # b cannot be a keyword argument\n"
+"f(10, 20, 30, 40, 50, f=60)           # e must be a keyword argument"
 
 msgid ""
 "One use case for this notation is that it allows pure Python functions to "
@@ -188,8 +192,10 @@ msgid ""
 "signature ``len(obj, /)``.  This precludes awkward calls such as::"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "len(obj='hello')  # The \"obj\" keyword argument impairs readability"
-msgstr ""
+msgstr "len(obj='hello')  # The \"obj\" keyword argument impairs readability"
 
 msgid ""
 "A further benefit of marking a parameter as positional-only is that it "

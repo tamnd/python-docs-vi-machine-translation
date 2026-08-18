@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-17 14:50+0000\n"
-"PO-Revision-Date: 2026-08-18 07:47+0000\n"
+"PO-Revision-Date: 2026-08-18 08:10+0000\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
-"X-Generator: pydocvi 0.1.6\n"
+"X-Generator: pydocvi 0.1.8\n"
 
 msgid "Thread Safety Guarantees"
 msgstr ""
@@ -179,10 +179,14 @@ msgid ""
 "required are :term:`atomic <atomic operation>`:"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "lst.append(x)  # append to the end of the list, no shifting required\n"
 "lst.pop()      # pop element from the end of the list, no shifting required"
 msgstr ""
+"lst.append(x)  # append to the end of the list, no shifting required\n"
+"lst.pop()      # pop element from the end of the list, no shifting required"
 
 msgid ""
 "The :meth:`~list.clear` method is also :term:`atomic <atomic operation>`. "
@@ -200,11 +204,16 @@ msgid ""
 "intermediate states since they modify multiple elements in place:"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "lst.insert(idx, item)  # shifts elements\n"
 "lst.pop(idx)           # idx not at the end of the list, shifts elements\n"
 "lst *= x               # copies elements in place"
 msgstr ""
+"lst.insert(idx, item)  # shifts elements\n"
+"lst.pop(idx)           # idx not at the end of the list, shifts elements\n"
+"lst *= x               # copies elements in place"
 
 msgid ""
 "The :meth:`~list.remove` method may allow concurrent modifications since "
@@ -364,12 +373,18 @@ msgid ""
 "locked. The iterable may be concurrently modified by another thread:"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "d.update(iterable)        # iterable is not a dict: only d locked\n"
 "d |= iterable             # iterable is not a dict: only d locked\n"
-"dict.fromkeys(iterable)   # iterable is not a dict/set/frozenset: only "
-"result locked"
+"dict.fromkeys(iterable)   # iterable is not a dict/set/frozenset: only result"
+" locked"
 msgstr ""
+"d.update(iterable)        # iterable is not a dict: only d locked\n"
+"d |= iterable             # iterable is not a dict: only d locked\n"
+"dict.fromkeys(iterable)   # iterable is not a dict/set/frozenset: only result"
+" locked"
 
 msgid ""
 "Operations that involve multiple accesses, as well as iteration, are never "
@@ -480,12 +495,18 @@ msgid ""
 "and will not corrupt the set:"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "s.add(elem)      # add element\n"
 "s.remove(elem)   # remove element, raise if missing\n"
 "s.discard(elem)  # remove element if present\n"
 "s.pop()          # remove and return arbitrary element"
 msgstr ""
+"s.add(elem)      # add element\n"
+"s.remove(elem)   # remove element, raise if missing\n"
+"s.discard(elem)  # remove element if present\n"
+"s.pop()          # remove and return arbitrary element"
 
 msgid ""
 "These operations also compare elements, so the same :meth:`~object.__eq__` "
@@ -561,11 +582,16 @@ msgstr ""
 msgid "The following methods always try to lock both objects:"
 msgstr ""
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "s.isdisjoint(other)          # both locked\n"
 "s.issubset(other)            # both locked\n"
 "s.issuperset(other)          # both locked"
 msgstr ""
+"s.isdisjoint(other)          # both locked\n"
+"s.issubset(other)            # both locked\n"
+"s.issuperset(other)          # both locked"
 
 # pydocvi: passthrough=literal_block
 #, fuzzy
