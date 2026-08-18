@@ -810,12 +810,6 @@
    "run": "2026-08-17T16:43Z"
   },
   {
-   "id": "0f14103f9c057d0d",
-   "msgid": "parrot(1000)                                          # 1 positional argument\nparrot(voltage=1000)                                  # 1 keyword argument\nparrot(voltage=1000000, action='VOOOOOM')             # 2 keyword arguments\nparrot(action='VOOOOOM', voltage=1000000)             # 2 keyword arguments\nparrot('a million', 'bereft of life', 'jump')         # 3 positional arguments\nparrot('a thousand', state='pushing up the daisies')  # 1 positional, 1 keyword",
-   "msgstr": "parrot(1000)                                          # 1 positional argument\nparrot(voltage=1000)                                  # 1 keyword argument\nparrot(voltage=1000000, action='VOOOOOM')             # 2 keyword arguments\nparrot(action='VOOOOOM', voltage=1000000)             # 2 keyword arguments\nparrot('a million', 'bereft of life', 'jump')         # 3 positional arguments\nparrot('a thousand', state='pushing up the daisies')  # 1 positional, 1 keyword",
-   "source": "human"
-  },
-  {
    "id": "0f577af8f11c1d51",
    "msgid": "Shallow and deep copies of a sentinel object return the object itself.",
    "msgstr": "Bản sao nông và bản sao sâu của một đối tượng lính canh trả về chính đối tượng đó.",
@@ -7038,12 +7032,6 @@
    "source": "human"
   },
   {
-   "id": "8e2bb0f3cf4a5f56",
-   "msgid": "case (Point(x1, y1), Point(x2, y2) as p2): ...",
-   "msgstr": "case (Point(x1, y1), Point(x2, y2) as p2): ...",
-   "source": "human"
-  },
-  {
    "id": "8e5ed76e5a5c3ddf",
    "msgid": "name",
    "msgstr": "tên",
@@ -7828,12 +7816,6 @@
    "glossary": 1,
    "batch": "d132b9201f27",
    "run": "2026-08-17T16:43Z"
-  },
-  {
-   "id": "a0aaeb054b774c5c",
-   "msgid": "def f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2):",
-   "msgstr": "def f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2):",
-   "source": "human"
   },
   {
    "id": "a10782067cfa5e74",
@@ -10431,12 +10413,6 @@
    "glossary": 1,
    "batch": "9648862cf2b3",
    "run": "2026-08-17T16:43Z"
-  },
-  {
-   "id": "d7a500572b468da4",
-   "msgid": "parrot()                     # required argument missing\nparrot(voltage=5.0, 'dead')  # non-keyword argument after a keyword argument\nparrot(110, voltage=220)     # duplicate value for the same argument\nparrot(actor='John Cleese')  # unknown keyword argument",
-   "msgstr": "parrot()                     # required argument missing\nparrot(voltage=5.0, 'dead')  # non-keyword argument after a keyword argument\nparrot(110, voltage=220)     # duplicate value for the same argument\nparrot(actor='John Cleese')  # unknown keyword argument",
-   "source": "human"
   },
   {
    "id": "d7d4a517df734ed8",

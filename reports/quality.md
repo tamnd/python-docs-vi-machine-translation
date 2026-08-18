@@ -2,12 +2,12 @@
 
 ## Invariants, recounted
 
-862 machine-written entries in the corpus. Every one of them passed the invariants when it was accepted, so anything below is a rule that was tightened afterwards or an entry something else edited.
+860 machine-written entries in the corpus. Every one of them passed the invariants when it was accepted, so anything below is a rule that was tightened afterwards or an entry something else edited.
 
 | Rule | Failing | Pass rate |
 | --- | ---: | ---: |
-| `P01` | 372 | 56.84% |
-| `P02` | 372 | 56.84% |
+| `P01` | 371 | 56.86% |
+| `P02` | 371 | 56.86% |
 
 ## Refusals
 
@@ -28,12 +28,12 @@
 
 ## Glossary adherence
 
-639 terms against 2,030 translated entries. 277 misses over 91 terms.
+639 terms against 2,023 translated entries. 272 misses over 89 terms.
 
 | Written by | Entries | Misses | Misses per entry | Terms |
 | --- | ---: | ---: | ---: | ---: |
-| human | 1,168 | 246 | 0.21 | 85 |
-| machine | 862 | 31 | 0.04 | 18 |
+| human | 1,163 | 241 | 0.21 | 83 |
+| machine | 860 | 31 | 0.04 | 18 |
 
 | Term | Misses |
 | --- | ---: |
@@ -46,13 +46,13 @@
 | key | 6 |
 | class | 5 |
 | namespace | 5 |
-| positional arguments | 5 |
 | slice | 5 |
 | callable | 4 |
 | file | 4 |
 | local namespace | 4 |
 | mapping | 4 |
 | package | 4 |
+| positional arguments | 4 |
 | attribute | 3 |
 | base classes | 3 |
 | data types | 3 |

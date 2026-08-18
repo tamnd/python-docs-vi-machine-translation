@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 07:47+0000\n"
+"PO-Revision-Date: 2026-08-18 08:10+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.6\n"
+"X-Generator: pydocvi 0.1.8\n"
 
 msgid "More Control Flow Tools"
 msgstr "Thêm các công cụ điều khiển luồng"
@@ -912,6 +912,8 @@ msgstr ""
 msgid "Subpatterns may be captured using the ``as`` keyword::"
 msgstr "Các mẫu con có thể được bắt bằng từ khóa ``as``::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "case (Point(x1, y1), Point(x2, y2) as p2): ..."
 msgstr "case (Point(x1, y1), Point(x2, y2) as p2): ..."
 
@@ -1409,32 +1411,44 @@ msgstr ""
 "(``state``, ``action`` và ``type``). Hàm này có thể được gọi theo bất kỳ "
 "cách nào sau đây::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
-"parrot(1000)                                          # 1 positional argument\n"
+"parrot(1000)                                          # 1 positional "
+"argument\n"
 "parrot(voltage=1000)                                  # 1 keyword argument\n"
 "parrot(voltage=1000000, action='VOOOOOM')             # 2 keyword arguments\n"
 "parrot(action='VOOOOOM', voltage=1000000)             # 2 keyword arguments\n"
-"parrot('a million', 'bereft of life', 'jump')         # 3 positional arguments\n"
-"parrot('a thousand', state='pushing up the daisies')  # 1 positional, 1 keyword"
+"parrot('a million', 'bereft of life', 'jump')         # 3 positional "
+"arguments\n"
+"parrot('a thousand', state='pushing up the daisies')  # 1 positional, 1 "
+"keyword"
 msgstr ""
-"parrot(1000)                                          # 1 positional argument\n"
+"parrot(1000)                                          # 1 positional "
+"argument\n"
 "parrot(voltage=1000)                                  # 1 keyword argument\n"
 "parrot(voltage=1000000, action='VOOOOOM')             # 2 keyword arguments\n"
 "parrot(action='VOOOOOM', voltage=1000000)             # 2 keyword arguments\n"
-"parrot('a million', 'bereft of life', 'jump')         # 3 positional arguments\n"
-"parrot('a thousand', state='pushing up the daisies')  # 1 positional, 1 keyword"
+"parrot('a million', 'bereft of life', 'jump')         # 3 positional "
+"arguments\n"
+"parrot('a thousand', state='pushing up the daisies')  # 1 positional, 1 "
+"keyword"
 
 msgid "but all the following calls would be invalid::"
 msgstr "nhưng tất cả các lời gọi sau đây đều không hợp lệ::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid ""
 "parrot()                     # required argument missing\n"
-"parrot(voltage=5.0, 'dead')  # non-keyword argument after a keyword argument\n"
+"parrot(voltage=5.0, 'dead')  # non-keyword argument after a keyword "
+"argument\n"
 "parrot(110, voltage=220)     # duplicate value for the same argument\n"
 "parrot(actor='John Cleese')  # unknown keyword argument"
 msgstr ""
 "parrot()                     # required argument missing\n"
-"parrot(voltage=5.0, 'dead')  # non-keyword argument after a keyword argument\n"
+"parrot(voltage=5.0, 'dead')  # non-keyword argument after a keyword "
+"argument\n"
 "parrot(110, voltage=220)     # duplicate value for the same argument\n"
 "parrot(actor='John Cleese')  # unknown keyword argument"
 
@@ -1888,6 +1902,8 @@ msgid ""
 msgstr ""
 "Trường hợp sử dụng sẽ quyết định tham số nào nên dùng trong định nghĩa hàm::"
 
+# pydocvi: passthrough=literal_block
+#, fuzzy
 msgid "def f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2):"
 msgstr "def f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2):"
 
