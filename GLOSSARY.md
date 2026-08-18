@@ -93,7 +93,7 @@ disagree.
 
 <!-- generated: terms -->
 
-Version 1. 639 terms, 52 of them kept in English.
+Version 2. 640 terms, 53 of them kept in English.
 
 | English | Vietnamese | Notes |
 | --- | --- | --- |
@@ -709,6 +709,7 @@ Version 1. 639 terms, 52 of them kept in English.
 | timeout | thời gian chờ |  |
 | c type | kiểu C |  |
 | finder | trình tìm |  |
+| import | `import` (kept) |  |
 | lambda | `lambda` (kept) |  |
 | loader | trình tải |  |
 | method | phương thức |  |
