@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 04:23+0000\n"
+"PO-Revision-Date: 2026-08-18 04:47+0000\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
-"X-Generator: pydocvi 0.1.3\n"
+"X-Generator: pydocvi 0.1.4\n"
 
 msgid "Enum HOWTO"
 msgstr ""
@@ -615,10 +615,8 @@ msgid ""
 "members."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Iteration"
-msgstr "Iteration"
+msgstr ""
 
 msgid "Iterating over the members of an enum does not provide the aliases::"
 msgstr ""
@@ -691,10 +689,8 @@ msgid ""
 "no flags set, i.e. ``0``."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Comparisons"
-msgstr "Comparisons"
+msgstr ""
 
 msgid "Enumeration members are compared by identity::"
 msgstr ""
@@ -1020,10 +1016,8 @@ msgstr ""
 ">>> Color.RED == Color.BLUE  # problem is here: they should not be equal\n"
 "True"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Pickling"
-msgstr "Pickling"
+msgstr ""
 
 msgid "Enumerations can be pickled and unpickled::"
 msgstr ""
@@ -1249,10 +1243,8 @@ msgstr ""
 msgid "Derived Enumerations"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "IntEnum"
-msgstr "IntEnum"
+msgstr ""
 
 msgid ""
 "The first variation of :class:`Enum` that is provided is also a subclass of :"
@@ -1347,10 +1339,8 @@ msgstr ""
 ">>> [i for i in range(Shape.SQUARE)]\n"
 "[0, 1]"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "StrEnum"
-msgstr "StrEnum"
+msgstr ""
 
 msgid ""
 "The second variation of :class:`Enum` that is provided is also a subclass "
@@ -1359,10 +1349,8 @@ msgid ""
 "each other."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "IntFlag"
-msgstr "IntFlag"
+msgstr ""
 
 msgid ""
 "The next variation of :class:`Enum` provided, :class:`IntFlag`, is also "
@@ -1519,10 +1507,8 @@ msgstr ""
 ">>> list(RW)\n"
 "[<Perm.R: 4>, <Perm.W: 2>]"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Flag"
-msgstr "Flag"
+msgstr ""
 
 msgid ""
 "The last variation is :class:`Flag`.  Like :class:`IntFlag`, :class:`Flag` "
@@ -1643,10 +1629,8 @@ msgid ""
 "enumerations, or for interoperability with other systems."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Others"
-msgstr "Others"
+msgstr ""
 
 msgid ""
 "While :class:`IntEnum` is part of the :mod:`enum` module, it would be very "
@@ -2464,10 +2448,8 @@ msgstr ""
 msgid "obj = int.__new__(cls, value)"
 msgstr "obj = int.__new__(cls, value)"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "OrderedEnum"
-msgstr "OrderedEnum"
+msgstr ""
 
 msgid ""
 "An ordered enumeration that is not based on :class:`IntEnum` and so "
@@ -2534,10 +2516,8 @@ msgstr ""
 ">>> Grade.C < Grade.A\n"
 "True"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "DuplicateFreeEnum"
-msgstr "DuplicateFreeEnum"
+msgstr ""
 
 msgid ""
 "Raises an error if a duplicate member value is found instead of creating an "
@@ -2595,10 +2575,8 @@ msgid ""
 "disallowing aliases, the :func:`unique` decorator can be used instead."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "MultiValueEnum"
-msgstr "MultiValueEnum"
+msgstr ""
 
 msgid "Supports having more than one value per member::"
 msgstr ""
@@ -2640,10 +2618,8 @@ msgstr ""
 ">>> DType(9)\n"
 "<DType.double64: 'd'>"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Planet"
-msgstr "Planet"
+msgstr ""
 
 msgid ""
 "If :meth:`~object.__new__` or :meth:`~object.__init__` is defined, the value "
@@ -2699,10 +2675,8 @@ msgstr ""
 ">>> Planet.EARTH.surface_gravity\n"
 "9.802652743337129"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "TimePeriod"
-msgstr "TimePeriod"
+msgstr ""
 
 msgid "An example to show the :attr:`~Enum._ignore_` attribute in use::"
 msgstr ""

@@ -1,6 +1,6 @@
 # Audit
 
-Fail. 41 checks, 15 failing, 1,270 findings.
+Fail. 41 checks, 15 failing, 1,410 findings.
 
 ## Structure
 
@@ -33,9 +33,9 @@ Fail. 41 checks, 15 failing, 1,270 findings.
 | Check | Hard | Findings | What it checks |
 | --- | --- | --- | --- |
 | `G01` | no | 0 | the glossary is self-consistent |
-| `G02` | no | 192 | glossary renderings are used |
-| `G03` | no | 80 | kept terms stayed in English |
-| `G04` | no | 147 | no untranslated glossary term |
+| `G02` | no | 196 | glossary renderings are used |
+| `G03` | no | 81 | kept terms stayed in English |
+| `G04` | no | 148 | no untranslated glossary term |
 | `G05` | no | 0 | GLOSSARY.md matches the YAML |
 | `G06` | no | 0 | no entry is on a stale glossary |
 
@@ -44,7 +44,7 @@ Fail. 41 checks, 15 failing, 1,270 findings.
 | Check | Hard | Findings | What it checks |
 | --- | --- | --- | --- |
 | `L01` | yes | 9 | the translation is in Vietnamese |
-| `L02` | yes | 10 | no entry is the English verbatim |
+| `L02` | yes | 144 | no entry is the English verbatim |
 | `L03` | yes | 2 | no narration |
 | `L04` | yes | 0 | no English sentence copied through |
 | `L05` | no | 3 | second-person pronoun policy |
@@ -95,8 +95,8 @@ Fail. 41 checks, 15 failing, 1,270 findings.
 - library/functions.po:3595  ':mod:`pickleable <pickle>`' appears 0 time(s), the source has 1
 - library/functions.po:3595  ':mod:`copyable <copy>`' appears 0 time(s), the source has 1
 - library/functions.po:3649  ':ref:`Documentation on attributes and methods on classes <class-attrs-and-methods>`' appears 0 time(s), the source has 1
-- library/io.po:868  ':ref:`non-inheritable <fd_inheritance>`' appears 0 time(s), the source has 1
-- library/os.po:1169  ':ref:`auditing event <auditing>`' appears 0 time(s), the source has 1
+- library/io.po:862  ':ref:`non-inheritable <fd_inheritance>`' appears 0 time(s), the source has 1
+- library/os.po:1167  ':ref:`auditing event <auditing>`' appears 0 time(s), the source has 1
 - and 7 more, not printed
 
 ### `P03` role targets unchanged
@@ -120,31 +120,31 @@ Fail. 41 checks, 15 failing, 1,270 findings.
 - library/functions.po:3595  :mod:`copyable <copy>` is not in the translation
 - library/functions.po:3595  :mod:`pickleable <pickle>` is not in the translation
 - library/functions.po:3649  :ref:`Documentation on attributes and methods on classes <class-attrs-and-methods>` is not in the translation
-- library/io.po:868  :ref:`non-inheritable <fd_inheritance>` is not in the translation
+- library/io.po:862  :ref:`non-inheritable <fd_inheritance>` is not in the translation
 - and 7 more, not printed
 
 ### `P04` surrounding whitespace matches
 
 - extending/extending.po:1728  leading whitespace '' became ' '
-- extending/first-extension-module.po:1116  leading whitespace '' became ' '
+- extending/first-extension-module.po:1114  leading whitespace '' became ' '
 - extending/newtypes_tutorial.po:2949  leading whitespace '' became ' '
 - library/abc.po:548  leading whitespace '' became ' '
-- library/collections.abc.po:541  leading whitespace '' became ' '
-- library/configparser.po:2002  leading whitespace '' became ' '
+- library/collections.abc.po:539  leading whitespace '' became ' '
+- library/configparser.po:2000  leading whitespace '' became ' '
 - library/csv.po:784  leading whitespace '' became ' '
-- library/datetime.po:4650  leading whitespace '' became ' '
-- library/doctest.po:2668  leading whitespace '' became ' '
+- library/datetime.po:4634  leading whitespace '' became ' '
+- library/doctest.po:2660  leading whitespace '' became ' '
 - library/email.contentmanager.po:250  leading whitespace '' became ' '
 - library/email.encoders.po:102  leading whitespace '' became ' '
 - library/email.examples.po:833  leading whitespace '' became ' '
 - library/email.generator.po:281  leading whitespace '' became ' '
-- library/email.headerregistry.po:617  leading whitespace '' became ' '
+- library/email.headerregistry.po:579  leading whitespace '' became ' '
 - library/email.message.po:814  leading whitespace '' became ' '
 - library/email.policy.po:764  leading whitespace '' became ' '
 - library/email.utils.po:245  leading whitespace '' became ' '
 - library/functions.po:1163  leading whitespace '' became ' '
 - library/functions.po:4024  leading whitespace '' became ' '
-- library/gettext.po:850  leading whitespace '' became ' '
+- library/gettext.po:848  leading whitespace '' became ' '
 - and 27 more, not printed
 
 ### `P05` format specifiers match
@@ -153,7 +153,7 @@ Fail. 41 checks, 15 failing, 1,270 findings.
 
 ### `P07` code entries copied exactly
 
-- tutorial/errors.po:755  literal_block entry differs from its source
+- tutorial/errors.po:753  literal_block entry differs from its source
 - tutorial/interpreter.po:198  literal_block entry differs from its source
 - tutorial/interpreter.po:222  doctest entry differs from its source
 - tutorial/introduction.po:73  literal_block entry differs from its source
@@ -177,8 +177,8 @@ Fail. 41 checks, 15 failing, 1,270 findings.
 
 ### `P08` no fence or horizontal rule
 
-- c-api/call.po:273  opens with a fence or a horizontal rule
-- howto/mro.po:167  opens with a fence or a horizontal rule
+- c-api/call.po:263  opens with a fence or a horizontal rule
+- howto/mro.po:165  opens with a fence or a horizontal rule
 
 ### `G02` glossary renderings are used
 
@@ -202,13 +202,14 @@ Fail. 41 checks, 15 failing, 1,270 findings.
 - library/functions.po:1050  'different types' should render as 'các kiểu khác nhau'
 - library/functions.po:1065  'class object' should render as 'đối tượng lớp'
 - library/functions.po:1084  'metaclass' should render as 'siêu lớp'
-- and 172 more, not printed
+- and 176 more, not printed
 
 ### `G03` kept terms stayed in English
 
 - bugs.po:88  'list' is kept in English and did not survive
 - bugs.po:120  'list' is kept in English and did not survive
 - bugs.po:158  'list' is kept in English and did not survive
+- library/asyncio-sync.po:80  'Lock' is kept in English and did not survive
 - library/functions.po:455  'type' is kept in English and did not survive
 - library/functions.po:499  'type' is kept in English and did not survive
 - library/functions.po:581  'callable' is kept in English and did not survive
@@ -225,8 +226,7 @@ Fail. 41 checks, 15 failing, 1,270 findings.
 - library/functions.po:1084  'list' is kept in English and did not survive
 - library/functions.po:1477  'type' is kept in English and did not survive
 - library/functions.po:1487  'type' is kept in English and did not survive
-- library/functions.po:1626  'list' is kept in English and did not survive
-- and 60 more, not printed
+- and 61 more, not printed
 
 ### `G04` no untranslated glossary term
 
@@ -250,7 +250,7 @@ Fail. 41 checks, 15 failing, 1,270 findings.
 - library/functions.po:1914  'iterator' is still in English, and renders as 'trình lặp'
 - library/functions.po:1914  'sequence' is still in English, and renders as 'dãy'
 - library/functions.po:1964  'dictionary' is still in English, and renders as 'từ điển'
-- and 127 more, not printed
+- and 128 more, not printed
 
 ### `L01` the translation is in Vietnamese
 
@@ -262,25 +262,36 @@ Fail. 41 checks, 15 failing, 1,270 findings.
 - tutorial/controlflow.po:1373  258 characters of prose with no Vietnamese diacritic
 - tutorial/controlflow.po:1475  245 characters of prose with no Vietnamese diacritic
 - tutorial/controlflow.po:1812  48 characters of prose with no Vietnamese diacritic
-- whatsnew/3.10.po:1084  46 characters of prose with no Vietnamese diacritic
+- whatsnew/3.10.po:1072  46 characters of prose with no Vietnamese diacritic
 
 ### `L02` no entry is the English verbatim
 
 - bugs.po:93  identical to the English
-- copyright.po:34  identical to the English
-- copyright.po:37  identical to the English
-- copyright.po:44  identical to the English
-- tutorial/controlflow.po:873  identical to the English
-- tutorial/controlflow.po:1349  identical to the English
-- tutorial/controlflow.po:1373  identical to the English
-- tutorial/controlflow.po:1475  identical to the English
-- tutorial/controlflow.po:1812  identical to the English
-- whatsnew/3.10.po:1084  identical to the English
+- c-api/bytearray.po:107  identical to the English
+- c-api/bytes.po:562  identical to the English
+- c-api/capsule.po:199  identical to the English
+- c-api/code.po:409  identical to the English
+- c-api/complex.po:199  identical to the English
+- c-api/concrete.po:76  identical to the English
+- c-api/dict.po:727  identical to the English
+- c-api/exceptions.po:1573  identical to the English
+- c-api/file.po:175  identical to the English
+- c-api/float.po:271  identical to the English
+- c-api/function.po:240  identical to the English
+- c-api/interp-lifecycle.po:1140  identical to the English
+- c-api/interp-lifecycle.po:1143  identical to the English
+- c-api/interp-lifecycle.po:1151  identical to the English
+- c-api/intro.po:1512  identical to the English
+- c-api/intro.po:1515  identical to the English
+- c-api/intro.po:1577  identical to the English
+- c-api/intro.po:1580  identical to the English
+- c-api/intro.po:1588  identical to the English
+- and 124 more, not printed
 
 ### `L03` no narration
 
-- c-api/call.po:273  '---' at offset 0
-- howto/mro.po:167  '---' at offset 0
+- c-api/call.po:263  '---' at offset 0
+- howto/mro.po:165  '---' at offset 0
 
 ### `L05` second-person pronoun policy
 
@@ -291,25 +302,25 @@ Fail. 41 checks, 15 failing, 1,270 findings.
 ### `L07` no cut-down model wrote an entry
 
 - c-api/dict.po:304  written by gpt-5-6-mini
-- c-api/exceptions.po:444  written by gpt-5-6-mini
-- c-api/init_config.po:150  written by gpt-5-6-mini
-- c-api/intro.po:318  written by gpt-5-6-mini
+- c-api/exceptions.po:442  written by gpt-5-6-mini
+- c-api/init_config.po:148  written by gpt-5-6-mini
+- c-api/intro.po:316  written by gpt-5-6-mini
 - c-api/method.po:59  written by gpt-5-6-mini
 - c-api/refcounting.po:124  written by gpt-5-6-mini
-- c-api/threads.po:250  written by gpt-5-6-mini
+- c-api/threads.po:248  written by gpt-5-6-mini
 - extending/extending.po:35  written by gpt-5-6-mini
-- faq/library.po:636  written by gpt-5-6-mini
-- faq/programming.po:2893  written by gpt-5-6-mini
-- glossary.po:2792  written by gpt-5-6-mini
-- howto/gdb_helpers.po:412  written by gpt-5-6-mini
-- howto/isolating-extensions.po:794  written by gpt-5-6-mini
-- howto/sorting.po:590  written by gpt-5-6-mini
-- howto/urllib2.po:346  written by gpt-5-6-mini
-- library/argparse.po:3891  written by gpt-5-6-mini
-- library/ast.po:4270  written by gpt-5-6-mini
-- library/asyncio-llapi-index.po:512  written by gpt-5-6-mini
+- faq/library.po:632  written by gpt-5-6-mini
+- faq/programming.po:2885  written by gpt-5-6-mini
+- glossary.po:2666  written by gpt-5-6-mini
+- howto/gdb_helpers.po:410  written by gpt-5-6-mini
+- howto/isolating-extensions.po:790  written by gpt-5-6-mini
+- howto/sorting.po:588  written by gpt-5-6-mini
+- howto/urllib2.po:338  written by gpt-5-6-mini
+- library/argparse.po:3853  written by gpt-5-6-mini
+- library/ast.po:4256  written by gpt-5-6-mini
+- library/asyncio-llapi-index.po:502  written by gpt-5-6-mini
 - library/constants.po:141  written by gpt-5-6-mini
-- library/contextlib.po:469  written by gpt-5-6-mini
+- library/contextlib.po:467  written by gpt-5-6-mini
 - and 667 more, not printed
 
 ### `L08` sentence counts are close

@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-23 15:47+0000\n"
-"PO-Revision-Date: 2026-08-18 04:23+0000\n"
+"PO-Revision-Date: 2026-08-18 04:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.3\n"
+"X-Generator: pydocvi 0.1.4\n"
 
 msgid ":mod:`!selectors` --- High-level I/O multiplexing"
 msgstr ""
@@ -29,10 +29,8 @@ msgstr ""
 msgid "**Source code:** :source:`Lib/selectors.py`"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Introduction"
-msgstr "Introduction"
+msgstr ""
 
 msgid ""
 "This module allows high-level and efficient I/O multiplexing, built upon "
@@ -70,20 +68,16 @@ msgstr ":mod:`select`"
 msgid "Low-level I/O multiplexing module."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Availability"
-msgstr "Availability"
+msgstr ""
 
 msgid ""
 "This module does not work or is not available on WebAssembly. See :ref:`wasm-"
 "availability` for more information."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Classes"
-msgstr "Classes"
+msgstr ""
 
 msgid "Classes hierarchy::"
 msgstr ""
@@ -103,10 +97,8 @@ msgid ""
 "module's constants below:"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Constant"
-msgstr "Constant"
+msgstr ""
 
 msgid "Meaning"
 msgstr "Ý nghĩa"

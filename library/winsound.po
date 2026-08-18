@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 04:23+0000\n"
+"PO-Revision-Date: 2026-08-18 04:47+0000\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
-"X-Generator: pydocvi 0.1.3\n"
+"X-Generator: pydocvi 0.1.4\n"
 
 msgid ":mod:`!winsound` --- Sound-playing interface for Windows"
 msgstr ""
@@ -31,15 +31,11 @@ msgid ""
 "constants."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Availability"
-msgstr "Availability"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Functions"
-msgstr "Functions"
+msgstr ""
 
 msgid ""
 "Beep the PC's speaker. The *frequency* parameter specifies frequency, in "
@@ -70,10 +66,8 @@ msgid ""
 "raised."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Constants"
-msgstr "Constants"
+msgstr ""
 
 msgid ""
 "The *sound* parameter is the name of a WAV file. Do not use with :const:"
@@ -103,20 +97,16 @@ msgstr ""
 msgid "``'SystemAsterisk'``"
 msgstr "``'SystemAsterisk'``"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Asterisk"
-msgstr "Asterisk"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
 msgid "``'SystemExclamation'``"
 msgstr "``'SystemExclamation'``"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Exclamation"
-msgstr "Exclamation"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -139,10 +129,8 @@ msgstr ""
 msgid "``'SystemQuestion'``"
 msgstr "``'SystemQuestion'``"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Question"
-msgstr "Question"
+msgstr ""
 
 # pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=9648862cf2b3 run=2026-08-17T16:43Z
 #, fuzzy

@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 04:23+0000\n"
+"PO-Revision-Date: 2026-08-18 04:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.3\n"
+"X-Generator: pydocvi 0.1.4\n"
 
 msgid ":mod:`!typing` --- Support for type hints"
 msgstr ""
@@ -196,10 +196,8 @@ msgid ""
 "Vector: TypeAlias = list[float]"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "NewType"
-msgstr "NewType"
+msgstr ""
 
 msgid "Use the :class:`NewType` helper to create distinct types::"
 msgstr ""
@@ -491,10 +489,8 @@ msgid ""
 "examples of usage in ``Callable``."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Generics"
-msgstr "Generics"
+msgstr ""
 
 msgid ""
 "Since type information about objects kept in containers cannot be statically "
@@ -3886,10 +3882,8 @@ msgstr ""
 ">>> call_evaluate_function(Alias.evaluate_value, Format.FORWARDREF)\n"
 "ForwardRef('undefined')"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Unpacking"
-msgstr "Unpacking"
+msgstr ""
 
 msgid ""
 "Type aliases support star unpacking using the ``*Alias`` syntax. This is "
@@ -4776,10 +4770,8 @@ msgid ""
 "pep:`728`."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Protocols"
-msgstr "Protocols"
+msgstr ""
 
 msgid ""
 "The following protocols are provided by the :mod:`!typing` module. All are "
@@ -5159,10 +5151,8 @@ msgstr ""
 msgid "Parameter name"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Description"
-msgstr "Description"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -5788,10 +5778,8 @@ msgstr ""
 ">>> Point.__extra_items__ is NoExtraItems\n"
 "True"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Constant"
-msgstr "Constant"
+msgstr ""
 
 msgid ""
 "A special constant that is assumed to be ``True`` by 3rd party static type "
@@ -6330,10 +6318,8 @@ msgid ""
 "listed."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Feature"
-msgstr "Feature"
+msgstr ""
 
 msgid "Deprecated in"
 msgstr ""
@@ -6387,10 +6373,8 @@ msgstr ":data:`typing.Text`"
 msgid "3.11"
 msgstr "3.11"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Undecided"
-msgstr "Undecided"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy

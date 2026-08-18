@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 04:23+0000\n"
+"PO-Revision-Date: 2026-08-18 04:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -20,12 +20,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.3\n"
+"X-Generator: pydocvi 0.1.4\n"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Glossary"
-msgstr "Glossary"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -83,10 +81,8 @@ msgid ""
 "subset of :term:`evaluate functions <evaluate function>`."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "annotation"
-msgstr "annotation"
+msgstr ""
 
 msgid ""
 "A label associated with a variable, a class attribute or a function "
@@ -106,10 +102,8 @@ msgid ""
 "`annotations-howto` for best practices on working with annotations."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "argument"
-msgstr "argument"
+msgstr ""
 
 msgid ""
 "A value passed to a :term:`function` (or :term:`method`) when calling the "
@@ -268,10 +262,8 @@ msgid ""
 "interpreter."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "attribute"
-msgstr "attribute"
+msgstr ""
 
 msgid ""
 "A value associated with an object which is usually referenced by name using "
@@ -287,10 +279,8 @@ msgid ""
 "`getattr`."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "awaitable"
-msgstr "awaitable"
+msgstr ""
 
 msgid ""
 "An object that can be used in an :keyword:`await` expression.  Can be a :"
@@ -298,10 +288,8 @@ msgid ""
 "also :pep:`492`."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "BDFL"
-msgstr "BDFL"
+msgstr ""
 
 msgid ""
 "Benevolent Dictator For Life, a.k.a. `Guido van Rossum <https://gvanrossum."
@@ -363,10 +351,8 @@ msgid ""
 "include :class:`bytes` and a :class:`memoryview` of a :class:`bytes` object."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "bytecode"
-msgstr "bytecode"
+msgstr ""
 
 msgid ""
 "Python source code is compiled into bytecode, the internal representation of "
@@ -384,10 +370,8 @@ msgid ""
 "`the dis module <bytecodes>`."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "callable"
-msgstr "callable"
+msgstr ""
 
 msgid ""
 "A callable is an object that can be called, possibly with a set of arguments "
@@ -405,20 +389,16 @@ msgid ""
 "also a callable."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "callback"
-msgstr "callback"
+msgstr ""
 
 msgid ""
 "A subroutine function which is passed as an argument to be executed at some "
 "point in the future."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "class"
-msgstr "class"
+msgstr ""
 
 msgid ""
 "A template for creating user-defined objects. Class definitions normally "
@@ -492,10 +472,8 @@ msgid ""
 "not aware of a need for them, it's almost certain you can safely ignore them."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "concurrency"
-msgstr "concurrency"
+msgstr ""
 
 msgid ""
 "The ability of a computer program to perform multiple tasks at the same "
@@ -517,10 +495,8 @@ msgid ""
 "data corruption, or both."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "context"
-msgstr "context"
+msgstr ""
 
 msgid ""
 "This term has different meanings depending on where and how it is used. Some "
@@ -569,10 +545,8 @@ msgid ""
 "asynchronous tasks."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "contiguous"
-msgstr "contiguous"
+msgstr ""
 
 msgid ""
 "A buffer is considered contiguous exactly if it is either *C-contiguous* or "
@@ -584,10 +558,8 @@ msgid ""
 "arrays, the first index varies the fastest."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "coroutine"
-msgstr "coroutine"
+msgstr ""
 
 msgid ""
 "Coroutines are a more generalized form of subroutines. Subroutines are "
@@ -606,10 +578,8 @@ msgid ""
 "These were introduced by :pep:`492`."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "CPython"
-msgstr "CPython"
+msgstr ""
 
 msgid ""
 "The canonical implementation of the Python programming language, as "
@@ -655,10 +625,8 @@ msgid ""
 "a Python API.  See also :term:`race condition` and :term:`thread-safe`."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "deadlock"
-msgstr "deadlock"
+msgstr ""
 
 msgid ""
 "A situation in which two or more tasks (threads, processes, or coroutines) "
@@ -672,10 +640,8 @@ msgid ""
 "`reentrant`."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "decorator"
-msgstr "decorator"
+msgstr ""
 
 msgid ""
 "A function returning another function, usually applied as a function "
@@ -713,10 +679,8 @@ msgid ""
 "definitions <class>` for more about decorators."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "descriptor"
-msgstr "descriptor"
+msgstr ""
 
 msgid ""
 "Any object which defines the methods :meth:`~object.__get__`, :meth:`~object."
@@ -735,10 +699,8 @@ msgid ""
 "the :ref:`Descriptor How To Guide <descriptorhowto>`."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "dictionary"
-msgstr "dictionary"
+msgstr ""
 
 msgid ""
 "An associative array, where arbitrary keys are mapped to values.  The keys "
@@ -767,10 +729,8 @@ msgid ""
 "use ``list(dictview)``.  See :ref:`dict-views`."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "docstring"
-msgstr "docstring"
+msgstr ""
 
 msgid ""
 "A string literal which appears as the first expression in a class, function "
@@ -795,10 +755,8 @@ msgid ""
 "employs :func:`hasattr` tests or :term:`EAFP` programming."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "dunder"
-msgstr "dunder"
+msgstr ""
 
 msgid ""
 "An informal short-hand for \"double underscore\", used when talking about a :"
@@ -806,10 +764,8 @@ msgid ""
 "\"dunder init\"."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "EAFP"
-msgstr "EAFP"
+msgstr ""
 
 msgid ""
 "Easier to ask for forgiveness than permission.  This common Python coding "
@@ -829,10 +785,8 @@ msgid ""
 "statement."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "expression"
-msgstr "expression"
+msgstr ""
 
 msgid ""
 "A piece of syntax which can be evaluated to some value.  In other words, an "
@@ -920,10 +874,8 @@ msgstr ""
 msgid "See also the :term:`locale encoding`."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "finder"
-msgstr "finder"
+msgstr ""
 
 msgid ""
 "An object that tries to find the :term:`loader` for a module that is being "
@@ -984,10 +936,8 @@ msgid ""
 "variable`."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "function"
-msgstr "function"
+msgstr ""
 
 msgid ""
 "A series of statements which returns some value to a caller. It can also be "
@@ -1062,10 +1012,8 @@ msgid ""
 "can be controlled using the :mod:`gc` module."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "generator"
-msgstr "generator"
+msgstr ""
 
 msgid ""
 "A function which returns a :term:`generator iterator`.  It looks like a "
@@ -1140,10 +1088,8 @@ msgid ""
 "`483`, :pep:`484`, :pep:`585`, and the :mod:`typing` module."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "GIL"
-msgstr "GIL"
+msgstr ""
 
 msgid "See :term:`global interpreter lock`."
 msgstr ""
@@ -1203,10 +1149,8 @@ msgid ""
 "invalidation`."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "hashable"
-msgstr "hashable"
+msgstr ""
 
 msgid ""
 "An object is *hashable* if it has a hash value which never changes during "
@@ -1229,10 +1173,8 @@ msgid ""
 "value is derived from their :func:`id`."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "IDLE"
-msgstr "IDLE"
+msgstr ""
 
 msgid ""
 "An Integrated Development and Learning Environment for Python. :ref:`idle` "
@@ -1240,10 +1182,8 @@ msgid ""
 "distribution of Python."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "immortal"
-msgstr "immortal"
+msgstr ""
 
 msgid ""
 "*Immortal objects* are a CPython implementation detail introduced in :pep:"
@@ -1261,10 +1201,8 @@ msgid ""
 "func:`PyUnstable_IsImmortal` in the C API."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "immutable"
-msgstr "immutable"
+msgstr ""
 
 msgid ""
 "An object with a fixed value.  Immutable objects include numbers, strings "
@@ -1288,30 +1226,24 @@ msgid ""
 "it may also come from the parent package's ``__path__`` attribute."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "importing"
-msgstr "importing"
+msgstr ""
 
 msgid ""
 "The process by which Python code in one module is made available to Python "
 "code in another module."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "importer"
-msgstr "importer"
+msgstr ""
 
 msgid ""
 "An object that both finds and loads a module; both a :term:`finder` and :"
 "term:`loader` object."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "index"
-msgstr "index"
+msgstr ""
 
 msgid ""
 "A numeric value that represents the position of an element in a :term:"
@@ -1331,10 +1263,8 @@ msgstr ""
 msgid "See also :term:`subscript`."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "interactive"
-msgstr "interactive"
+msgstr ""
 
 msgid ""
 "Python has an interactive interpreter which means you can enter statements "
@@ -1345,10 +1275,8 @@ msgid ""
 "For more on interactive mode, see :ref:`tut-interac`."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "interpreted"
-msgstr "interpreted"
+msgstr ""
 
 msgid ""
 "Python is an interpreted language, as opposed to a compiled one, though the "
@@ -1378,10 +1306,8 @@ msgid ""
 "the script being run has finished executing."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "iterable"
-msgstr "iterable"
+msgstr ""
 
 msgid ""
 "An object capable of returning its members one at a time. Examples of "
@@ -1404,10 +1330,8 @@ msgid ""
 "loop.  See also :term:`iterator`, :term:`sequence`, and :term:`generator`."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "iterator"
-msgstr "iterator"
+msgstr ""
 
 msgid ""
 "An object representing a stream of data.  Repeated calls to the iterator's :"
@@ -1436,10 +1360,8 @@ msgid ""
 "iterator operations."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "key"
-msgstr "key"
+msgstr ""
 
 msgid ""
 "A value that identifies an entry in a :term:`mapping`. See also :term:"
@@ -1478,10 +1400,8 @@ msgstr ""
 msgid "See :term:`argument`."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "lambda"
-msgstr "lambda"
+msgstr ""
 
 msgid ""
 "An anonymous inline function consisting of a single :term:`expression` which "
@@ -1489,10 +1409,8 @@ msgid ""
 "function is ``lambda [parameters]: expression``"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "LBYL"
-msgstr "LBYL"
+msgstr ""
 
 msgid ""
 "Look before you leap.  This coding style explicitly tests for pre-conditions "
@@ -1516,10 +1434,8 @@ msgstr ""
 msgid "Formal name for the *tokenizer*; see :term:`token`."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "list"
-msgstr "list"
+msgstr ""
 
 msgid ""
 "A built-in Python :term:`sequence`.  Despite its name it is more akin to an "
@@ -1538,10 +1454,8 @@ msgid ""
 "optional.  If omitted, all elements in ``range(256)`` are processed."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "lock"
-msgstr "lock"
+msgstr ""
 
 msgid ""
 "A :term:`synchronization primitive` that allows only one thread at a time to "
@@ -1571,10 +1485,8 @@ msgid ""
 "object lock`."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "loader"
-msgstr "loader"
+msgstr ""
 
 msgid ""
 "An object that loads a module. It must define the :meth:`!exec_module` and :"
@@ -1625,10 +1537,8 @@ msgstr ""
 msgid "An informal synonym for :term:`special method`."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "mapping"
-msgstr "mapping"
+msgstr ""
 
 msgid ""
 "A container object that supports arbitrary key lookups and implements the "
@@ -1653,10 +1563,8 @@ msgid ""
 "finders implement."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "metaclass"
-msgstr "metaclass"
+msgstr ""
 
 msgid ""
 "The class of a class.  Class definitions create a class name, a class "
@@ -1673,10 +1581,8 @@ msgstr ""
 msgid "More information can be found in :ref:`metaclasses`."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "method"
-msgstr "method"
+msgstr ""
 
 msgid ""
 "A function which is defined inside a class body.  If called as an attribute "
@@ -1717,18 +1623,14 @@ msgstr ""
 msgid "See also :ref:`module-specs`."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "MRO"
-msgstr "MRO"
+msgstr ""
 
 msgid "See :term:`method resolution order`."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "mutable"
-msgstr "mutable"
+msgstr ""
 
 msgid ""
 "An :term:`object` with state that is allowed to change during the course of "
@@ -1780,10 +1682,8 @@ msgid ""
 "be found in hand-written or built-in named tuples."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "namespace"
-msgstr "namespace"
+msgstr ""
 
 msgid ""
 "The place where a variable is stored.  Namespaces are implemented as "
@@ -1900,10 +1800,8 @@ msgid ""
 "require third-party libraries."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "package"
-msgstr "package"
+msgstr ""
 
 msgid ""
 "A Python :term:`module` which can contain submodules or recursively, "
@@ -1914,10 +1812,8 @@ msgstr ""
 msgid "See also :term:`regular package` and :term:`namespace package`."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "parallelism"
-msgstr "parallelism"
+msgstr ""
 
 msgid ""
 "Executing multiple operations at the same time (e.g. on multiple CPU "
@@ -1929,10 +1825,8 @@ msgid ""
 "threads can run Python code simultaneously on different cores."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "parameter"
-msgstr "parameter"
+msgstr ""
 
 msgid ""
 "A named entity in a :term:`function` (or method) definition that specifies "
@@ -2067,10 +1961,8 @@ msgid ""
 "`519`."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "PEP"
-msgstr "PEP"
+msgstr ""
 
 msgid ""
 "Python Enhancement Proposal. A PEP is a design document providing "
@@ -2090,10 +1982,8 @@ msgstr ""
 msgid "See :pep:`1`."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "portion"
-msgstr "portion"
+msgstr ""
 
 msgid ""
 "A set of files in a single directory (possibly stored in a zip file) that "
@@ -2143,10 +2033,8 @@ msgid ""
 "\"Py3k\"."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Pythonic"
-msgstr "Pythonic"
+msgstr ""
 
 msgid ""
 "An idea or piece of code which closely follows the most common idioms of the "
@@ -2276,10 +2164,8 @@ msgstr ""
 msgid "See also :term:`namespace package`."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "reentrant"
-msgstr "reentrant"
+msgstr ""
 
 msgid ""
 "A property of a function or :term:`lock` that allows it to be called or "
@@ -2305,10 +2191,8 @@ msgstr ""
 msgid "See also :term:`lock` and :term:`deadlock`."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "REPL"
-msgstr "REPL"
+msgstr ""
 
 msgid ""
 "An acronym for the \"read–eval–print loop\", another name for the :term:"
@@ -2328,10 +2212,8 @@ msgid ""
 "application."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "sequence"
-msgstr "sequence"
+msgstr ""
 
 msgid ""
 "An :term:`iterable` which supports efficient element access using integer "
@@ -2372,10 +2254,8 @@ msgid ""
 "chosen based on the type of a single argument."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "slice"
-msgstr "slice"
+msgstr ""
 
 msgid ""
 "An object of type :class:`slice`, used to describe a portion of a :term:"
@@ -2447,10 +2327,8 @@ msgid ""
 "mod:`typing` module."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "stdlib"
-msgstr "stdlib"
+msgstr ""
 
 msgid "An abbreviation of :term:`standard library`."
 msgstr ""
@@ -2475,10 +2353,8 @@ msgstr ""
 msgid "See also :term:`borrowed reference`."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "subscript"
-msgstr "subscript"
+msgstr ""
 
 msgid ""
 "The expression in square brackets of a :ref:`subscription expression "
@@ -2600,10 +2476,8 @@ msgid ""
 "<data race>` when used in multi-threaded programs."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "token"
-msgstr "token"
+msgstr ""
 
 msgid ""
 "A small unit of source code, generated by the :ref:`lexical analyzer "
@@ -2800,12 +2674,8 @@ msgstr ""
 msgid "Fortran contiguous"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "magic"
-msgstr "magic"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "special"
-msgstr "special"
+msgstr ""

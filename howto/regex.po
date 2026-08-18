@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 04:23+0000\n"
+"PO-Revision-Date: 2026-08-18 04:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -20,23 +20,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.3\n"
+"X-Generator: pydocvi 0.1.4\n"
 
 msgid "Regular expression HOWTO"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Author"
-msgstr "Author"
+msgstr ""
 
 msgid "A.M. Kuchling <amk@amk.ca>"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Abstract"
-msgstr "Abstract"
+msgstr ""
 
 msgid ""
 "This document is an introductory tutorial to using regular expressions in "
@@ -44,10 +40,8 @@ msgid ""
 "the corresponding section in the Library Reference."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Introduction"
-msgstr "Introduction"
+msgstr ""
 
 msgid ""
 "Regular expressions (called REs, or regexes, or regex patterns) are "
@@ -292,20 +286,14 @@ msgid ""
 "imagine matching this RE against the string ``'abcbd'``."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Step"
-msgstr "Step"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Matched"
-msgstr "Matched"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Explanation"
-msgstr "Explanation"
+msgstr ""
 
 # pydocvi: passthrough=version_marker
 #, fuzzy
@@ -525,15 +513,11 @@ msgid ""
 "*again*."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Characters"
-msgstr "Characters"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Stage"
-msgstr "Stage"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -630,10 +614,8 @@ msgstr ""
 msgid "Method/Attribute"
 msgstr "Method/Attribute"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Purpose"
-msgstr "Purpose"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -962,10 +944,8 @@ msgid ""
 "explanation of each one."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Flag"
-msgstr "Flag"
+msgstr ""
 
 msgid "Meaning"
 msgstr "Ý nghĩa"
@@ -1360,10 +1340,8 @@ msgid ""
 "when the current position is not at a word boundary."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Grouping"
-msgstr "Grouping"
+msgstr ""
 
 msgid ""
 "Frequently you need to obtain more information than just whether the RE "
@@ -2355,10 +2333,8 @@ msgstr ""
 msgid "pat = re.compile(r\"\\s*(?P<header>[^:]+)\\s*:(?P<value>.*?)\\s*$\")"
 msgstr "pat = re.compile(r\"\\s*(?P<header>[^:]+)\\s*:(?P<value>.*?)\\s*$\")"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Feedback"
-msgstr "Feedback"
+msgstr ""
 
 msgid ""
 "Regular expressions are a complicated topic.  Did this document help you "

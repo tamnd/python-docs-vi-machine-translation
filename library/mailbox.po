@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 04:23+0000\n"
+"PO-Revision-Date: 2026-08-18 04:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.3\n"
+"X-Generator: pydocvi 0.1.4\n"
 
 msgid ":mod:`!mailbox` --- Manipulate mailboxes in various formats"
 msgstr ""
@@ -949,95 +949,77 @@ msgid ""
 "flags for Maildir messages are as follows:"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Flag"
-msgstr "Flag"
+msgstr ""
 
 msgid "Meaning"
 msgstr "Ý nghĩa"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Explanation"
-msgstr "Explanation"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
+# pydocvi: passthrough=noop
 #, fuzzy
 msgid "D"
 msgstr "D"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Draft"
-msgstr "Draft"
+msgstr ""
 
 msgid "Under composition"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
+# pydocvi: passthrough=noop
 #, fuzzy
 msgid "F"
 msgstr "F"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Flagged"
-msgstr "Flagged"
+msgstr ""
 
 msgid "Marked as important"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
+# pydocvi: passthrough=noop
 #, fuzzy
 msgid "P"
 msgstr "P"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Passed"
-msgstr "Passed"
+msgstr ""
 
 msgid "Forwarded, resent, or bounced"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
+# pydocvi: passthrough=noop
 #, fuzzy
 msgid "R"
 msgstr "R"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Replied"
-msgstr "Replied"
+msgstr ""
 
 msgid "Replied to"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
+# pydocvi: passthrough=noop
 #, fuzzy
 msgid "S"
 msgstr "S"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Seen"
-msgstr "Seen"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Read"
-msgstr "Read"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
+# pydocvi: passthrough=noop
 #, fuzzy
 msgid "T"
 msgstr "T"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Trashed"
-msgstr "Trashed"
+msgstr ""
 
 msgid "Marked for subsequent deletion"
 msgstr ""
@@ -1213,33 +1195,27 @@ msgstr ""
 msgid "Conventional flags for mbox messages are as follows:"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
+# pydocvi: passthrough=noop
 #, fuzzy
 msgid "O"
 msgstr "O"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Old"
-msgstr "Old"
+msgstr ""
 
 msgid "Previously detected by MUA"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Deleted"
-msgstr "Deleted"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
+# pydocvi: passthrough=noop
 #, fuzzy
 msgid "A"
 msgstr "A"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Answered"
-msgstr "Answered"
+msgstr ""
 
 msgid ""
 "The \"R\" and \"O\" flags are stored in the :mailheader:`Status` header, and "
@@ -1338,28 +1314,20 @@ msgid ""
 "formats, as follows:"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Sequence"
-msgstr "Sequence"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "unseen"
-msgstr "unseen"
+msgstr ""
 
 msgid "Not read, but previously detected by MUA"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "replied"
-msgstr "replied"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "flagged"
-msgstr "flagged"
+msgstr ""
 
 msgid ":class:`!MHMessage` instances offer the following methods:"
 msgstr ""
@@ -1412,56 +1380,38 @@ msgid ""
 "to have special meanings. The attributes are as follows:"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Label"
-msgstr "Label"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "deleted"
-msgstr "deleted"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "filed"
-msgstr "filed"
+msgstr ""
 
 msgid "Copied to another file or mailbox"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "answered"
-msgstr "answered"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "forwarded"
-msgstr "forwarded"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Forwarded"
-msgstr "Forwarded"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "edited"
-msgstr "edited"
+msgstr ""
 
 msgid "Modified by the user"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "resent"
-msgstr "resent"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Resent"
-msgstr "Resent"
+msgstr ""
 
 msgid ""
 "By default, Rmail displays only visible headers. The :class:`!BabylMessage` "
@@ -1579,10 +1529,8 @@ msgstr ""
 msgid ":class:`mboxMessage` state"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Exceptions"
-msgstr "Exceptions"
+msgstr ""
 
 msgid ""
 "The following exception classes are defined in the :mod:`!mailbox` module:"

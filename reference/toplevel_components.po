@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-23 15:47+0000\n"
-"PO-Revision-Date: 2026-08-18 04:23+0000\n"
+"PO-Revision-Date: 2026-08-18 04:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.3\n"
+"X-Generator: pydocvi 0.1.4\n"
 
 msgid "Top-level components"
 msgstr ""
@@ -105,15 +105,11 @@ msgid ""
 "The string argument to :func:`eval` must have the following form:"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "interpreter"
-msgstr "interpreter"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "program"
-msgstr "program"
+msgstr ""
 
 msgid "module"
 msgstr "module"
@@ -132,15 +128,11 @@ msgstr "builtins"
 msgid "interactive mode"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "UNIX"
-msgstr "UNIX"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Windows"
-msgstr "Windows"
+msgstr ""
 
 msgid "command line"
 msgstr ""
@@ -148,15 +140,11 @@ msgstr ""
 msgid "standard input"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "input"
-msgstr "input"
+msgstr ""
 
 msgid "built-in function"
 msgstr "hàm tích hợp sẵn"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "eval"
-msgstr "eval"
+msgstr ""

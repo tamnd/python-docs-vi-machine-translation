@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 04:23+0000\n"
+"PO-Revision-Date: 2026-08-18 04:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.3\n"
+"X-Generator: pydocvi 0.1.4\n"
 
 msgid "Compound statements"
 msgstr ""
@@ -745,10 +745,8 @@ msgstr ""
 msgid ":pep:`636` -- Structural Pattern Matching: Tutorial"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Overview"
-msgstr "Overview"
+msgstr ""
 
 msgid "Here's an overview of the logical flow of a match statement:"
 msgstr ""
@@ -835,10 +833,8 @@ msgid ""
 "section."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Guards"
-msgstr "Guards"
+msgstr ""
 
 msgid ""
 "A ``guard`` (which is part of the ``case``) must succeed for code inside the "
@@ -914,10 +910,8 @@ msgstr ":ref:`wildcard-patterns`"
 msgid "parenthesized irrefutable patterns"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Patterns"
-msgstr "Patterns"
+msgstr ""
 
 msgid "This section uses grammar notations beyond standard EBNF:"
 msgstr ""
@@ -1981,10 +1975,8 @@ msgstr ""
 "  ...\n"
 "TypeError: multiple bases have instance lay-out conflict"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Coroutines"
-msgstr "Coroutines"
+msgstr ""
 
 msgid "Coroutine function definition"
 msgstr ""
@@ -2551,10 +2543,8 @@ msgid ""
 "``TYPE_PARAMS_OF_ListOrSet`` are not actually bound at runtime."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Annotations"
-msgstr "Annotations"
+msgstr ""
 
 msgid "Annotations are now lazily evaluated by default."
 msgstr ""
@@ -2704,23 +2694,17 @@ msgid ""
 "the class's :term:`docstring`."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "compound"
-msgstr "compound"
+msgstr ""
 
 msgid "statement"
 msgstr "câu lệnh"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "clause"
-msgstr "clause"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "suite"
-msgstr "suite"
+msgstr ""
 
 msgid "; (semicolon)"
 msgstr ""
@@ -2731,30 +2715,20 @@ msgstr ""
 msgid "DEDENT token"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "dangling"
-msgstr "dangling"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "else"
-msgstr "else"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "if"
-msgstr "if"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "keyword"
-msgstr "keyword"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "elif"
-msgstr "elif"
+msgstr ""
 
 # pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=d132b9201f27 run=2026-08-17T16:43Z
 #, fuzzy
@@ -2764,81 +2738,53 @@ msgstr ": (dấu hai chấm)"
 msgid "compound statement"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "while"
-msgstr "while"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "loop"
-msgstr "loop"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "break"
-msgstr "break"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "continue"
-msgstr "continue"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "for"
-msgstr "for"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "in"
-msgstr "in"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "target"
-msgstr "target"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "list"
-msgstr "list"
+msgstr ""
 
 msgid "object"
 msgstr "object"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "sequence"
-msgstr "sequence"
+msgstr ""
 
 msgid "built-in function"
 msgstr "hàm tích hợp sẵn"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "range"
-msgstr "range"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "try"
-msgstr "try"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "except"
-msgstr "except"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "finally"
-msgstr "finally"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "as"
-msgstr "as"
+msgstr ""
 
 msgid "except clause"
 msgstr ""
@@ -2849,25 +2795,19 @@ msgstr "module"
 msgid "sys"
 msgstr "sys"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "traceback"
-msgstr "traceback"
+msgstr ""
 
 # pydocvi: passthrough=version_marker
 #, fuzzy
 msgid "except_star"
 msgstr "except_star"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "return"
-msgstr "return"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "with"
-msgstr "with"
+msgstr ""
 
 msgid "with statement"
 msgstr ""
@@ -2875,15 +2815,11 @@ msgstr ""
 msgid ", (comma)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "match"
-msgstr "match"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "case"
-msgstr "case"
+msgstr ""
 
 msgid "pattern matching"
 msgstr ""
@@ -2891,10 +2827,8 @@ msgstr ""
 msgid "match statement"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "guard"
-msgstr "guard"
+msgstr ""
 
 msgid "irrefutable case block"
 msgstr ""
@@ -2908,38 +2842,26 @@ msgstr ""
 msgid "AS pattern, OR pattern, capture pattern, wildcard pattern"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "parameter"
-msgstr "parameter"
+msgstr ""
 
 msgid "function definition"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "def"
-msgstr "def"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "function"
-msgstr "function"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "definition"
-msgstr "definition"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "name"
-msgstr "name"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "binding"
-msgstr "binding"
+msgstr ""
 
 msgid "user-defined function"
 msgstr ""
@@ -2953,20 +2875,14 @@ msgstr ""
 msgid "@ (at)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "default"
-msgstr "default"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "value"
-msgstr "value"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "argument"
-msgstr "argument"
+msgstr ""
 
 msgid "= (equals)"
 msgstr ""
@@ -2984,10 +2900,8 @@ msgstr "* (dấu sao)"
 msgid "**"
 msgstr "**"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "annotations"
-msgstr "annotations"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -2999,40 +2913,26 @@ msgstr "->"
 msgid "function annotations"
 msgstr "chú thích hàm"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "lambda"
-msgstr "lambda"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "expression"
-msgstr "expression"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "class"
-msgstr "class"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "execution"
-msgstr "execution"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "frame"
-msgstr "frame"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "inheritance"
-msgstr "inheritance"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "docstring"
-msgstr "docstring"
+msgstr ""
 
 msgid "class definition"
 msgstr ""
@@ -3043,15 +2943,11 @@ msgstr ""
 msgid "async def"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "async"
-msgstr "async"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "await"
-msgstr "await"
+msgstr ""
 
 msgid "async for"
 msgstr ""

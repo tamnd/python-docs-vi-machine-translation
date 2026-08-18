@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 04:23+0000\n"
+"PO-Revision-Date: 2026-08-18 04:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.3\n"
+"X-Generator: pydocvi 0.1.4\n"
 
 msgid ""
 ":mod:`!compression.zstd` --- Compression compatible with the Zstandard format"
@@ -75,10 +75,8 @@ msgid ""
 "module-requirements`."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Exceptions"
-msgstr "Exceptions"
+msgstr ""
 
 msgid ""
 "This exception is raised when an error occurs during compression or "
@@ -525,10 +523,8 @@ msgid ""
 "``ldm_hash_rate_log``, and some non-public parameters."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "None"
-msgstr "None"
+msgstr ""
 
 msgid ":class:`!ZstdDict` internally caches the dictionary"
 msgstr ""
@@ -895,10 +891,8 @@ msgstr ""
 msgid "The following strategies are available:"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Miscellaneous"
-msgstr "Miscellaneous"
+msgstr ""
 
 msgid ""
 "Retrieve a :class:`FrameInfo` object containing metadata about a Zstandard "

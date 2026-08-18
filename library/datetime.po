@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 04:23+0000\n"
+"PO-Revision-Date: 2026-08-18 04:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.3\n"
+"X-Generator: pydocvi 0.1.4\n"
 
 msgid ":mod:`!datetime` --- Basic date and time types"
 msgstr ""
@@ -120,10 +120,8 @@ msgid ""
 "there is no standard suitable for every application aside from UTC."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Constants"
-msgstr "Constants"
+msgstr ""
 
 msgid "The :mod:`!datetime` module exports the following constants:"
 msgstr ""
@@ -462,15 +460,11 @@ msgstr ""
 msgid "Supported operations:"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Operation"
-msgstr "Operation"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Result"
-msgstr "Result"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -3727,10 +3721,8 @@ msgstr "``strftime``"
 msgid "``strptime``"
 msgstr "``strptime``"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Usage"
-msgstr "Usage"
+msgstr ""
 
 msgid "Convert object to a string according to a given format"
 msgstr ""
@@ -3747,10 +3739,8 @@ msgstr ""
 msgid "Class method"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Signature"
-msgstr "Signature"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -3792,23 +3782,17 @@ msgid ""
 "requires, and these work on all supported platforms."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Directive"
-msgstr "Directive"
+msgstr ""
 
 msgid "Meaning"
 msgstr "Ý nghĩa"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Example"
-msgstr "Example"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Notes"
-msgstr "Notes"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy

@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 04:23+0000\n"
+"PO-Revision-Date: 2026-08-18 04:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.3\n"
+"X-Generator: pydocvi 0.1.4\n"
 
 msgid ":mod:`!ctypes` --- A foreign function library for Python"
 msgstr ""
@@ -1693,10 +1693,8 @@ msgid ""
 "details on the default behavior and how to change it."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Arrays"
-msgstr "Arrays"
+msgstr ""
 
 msgid ""
 "Arrays are sequences, containing a fixed number of instances of the same "
@@ -1792,10 +1790,8 @@ msgstr ""
 "1 2 3 4 5 6 7 8 9 10\n"
 ">>>"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Pointers"
-msgstr "Pointers"
+msgstr ""
 
 msgid ""
 "Pointer instances are created by calling the :func:`pointer` function on a :"
@@ -2630,10 +2626,8 @@ msgid ""
 "used for testing. Try it out with ``import __hello__`` for example."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Surprises"
-msgstr "Surprises"
+msgstr ""
 
 msgid ""
 "There are some edges in :mod:`!ctypes` where you might expect something "
@@ -3023,10 +3017,8 @@ msgid ""
 "value signals a failure, an :class:`OSError` is automatically raised."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Availability"
-msgstr "Availability"
+msgstr ""
 
 msgid ""
 ":exc:`WindowsError` used to be raised, which is now an alias of :exc:"
@@ -4850,10 +4842,8 @@ msgid ""
 "changes the pointer to point to the assigned object."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Exceptions"
-msgstr "Exceptions"
+msgstr ""
 
 msgid ""
 "This exception is raised when a foreign function call cannot convert one of "

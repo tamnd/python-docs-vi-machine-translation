@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 04:23+0000\n"
+"PO-Revision-Date: 2026-08-18 04:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.3\n"
+"X-Generator: pydocvi 0.1.4\n"
 
 msgid "Type Object Structures"
 msgstr ""
@@ -71,22 +71,22 @@ msgstr ""
 msgid "Info [#cols]_"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
+# pydocvi: passthrough=noop
 #, fuzzy
 msgid "O"
 msgstr "O"
 
-# pydocvi: passthrough=version_marker
+# pydocvi: passthrough=noop
 #, fuzzy
 msgid "T"
 msgstr "T"
 
-# pydocvi: passthrough=version_marker
+# pydocvi: passthrough=noop
 #, fuzzy
 msgid "D"
 msgstr "D"
 
-# pydocvi: passthrough=version_marker
+# pydocvi: passthrough=noop
 #, fuzzy
 msgid "I"
 msgstr "I"
@@ -104,7 +104,7 @@ msgstr ""
 msgid "__name__"
 msgstr "__name__"
 
-# pydocvi: passthrough=version_marker
+# pydocvi: passthrough=noop
 #, fuzzy
 msgid "X"
 msgstr "X"
@@ -152,7 +152,7 @@ msgstr ":c:type:`getattrfunc`"
 msgid "__getattribute__, __getattr__"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
+# pydocvi: passthrough=noop
 #, fuzzy
 msgid "G"
 msgstr "G"
@@ -689,10 +689,8 @@ msgstr ""
 msgid "sub-slots"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Slot"
-msgstr "Slot"
+msgstr ""
 
 msgid "special methods"
 msgstr ""
@@ -1220,10 +1218,8 @@ msgstr ""
 msgid "slot typedefs"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "typedef"
-msgstr "typedef"
+msgstr ""
 
 msgid "Parameter Types"
 msgstr ""
@@ -1231,20 +1227,16 @@ msgstr ""
 msgid "Return Type"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "void"
-msgstr "void"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
 msgid ":c:type:`visitproc`"
 msgstr ":c:type:`visitproc`"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "int"
-msgstr "int"
+msgstr ""
 
 # pydocvi: passthrough=version_marker
 #, fuzzy
@@ -2863,15 +2855,11 @@ msgid ""
 "member:`~PyTypeObject.tp_richcompare` and for :c:func:`PyObject_RichCompare`:"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Constant"
-msgstr "Constant"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Comparison"
-msgstr "Comparison"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -4548,12 +4536,8 @@ msgstr ""
 msgid "built-in function"
 msgstr "hàm tích hợp sẵn"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "repr"
-msgstr "repr"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "hash"
-msgstr "hash"
+msgstr ""

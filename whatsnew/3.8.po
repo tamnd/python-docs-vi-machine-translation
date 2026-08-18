@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 04:23+0000\n"
+"PO-Revision-Date: 2026-08-18 04:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -21,15 +21,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.3\n"
+"X-Generator: pydocvi 0.1.4\n"
 
 msgid "What's New In Python 3.8"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Editor"
-msgstr "Editor"
+msgstr ""
 
 msgid "Raymond Hettinger"
 msgstr ""
@@ -914,10 +912,8 @@ msgstr ""
 msgid "Improved Modules"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "ast"
-msgstr "ast"
+msgstr ""
 
 msgid ""
 "AST nodes now have ``end_lineno`` and ``end_col_offset`` attributes, which "
@@ -955,10 +951,8 @@ msgstr ""
 msgid "(Contributed by Guido van Rossum in :issue:`35766`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "asyncio"
-msgstr "asyncio"
+msgstr ""
 
 msgid ""
 ":func:`asyncio.run` has graduated from the provisional to stable API. This "
@@ -1117,10 +1111,8 @@ msgid ""
 "(Contributed by Matthias Bussonnier in :issue:`34616`)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "collections"
-msgstr "collections"
+msgstr ""
 
 msgid ""
 "The :meth:`~collections.somenamedtuple._asdict` method for :func:"
@@ -1132,10 +1124,8 @@ msgid ""
 "issue:`35864`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "cProfile"
-msgstr "cProfile"
+msgstr ""
 
 msgid ""
 "The :class:`cProfile.Profile <profile.Profile>` class can now be used as a "
@@ -1160,10 +1150,8 @@ msgstr ""
 msgid "(Contributed by Scott Sanderson in :issue:`29235`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "csv"
-msgstr "csv"
+msgstr ""
 
 msgid ""
 "The :class:`csv.DictReader` now returns instances of :class:`dict` instead "
@@ -1172,10 +1160,8 @@ msgid ""
 "in :issue:`34003`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "curses"
-msgstr "curses"
+msgstr ""
 
 msgid ""
 "Added a new variable holding structured version information for the "
@@ -1183,10 +1169,8 @@ msgid ""
 "Serhiy Storchaka in :issue:`31680`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "ctypes"
-msgstr "ctypes"
+msgstr ""
 
 msgid ""
 "On Windows, :class:`~ctypes.CDLL` and subclasses now accept a *winmode* "
@@ -1197,10 +1181,8 @@ msgid ""
 "add_dll_directory`. (Contributed by Steve Dower in :issue:`36085`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "datetime"
-msgstr "datetime"
+msgstr ""
 
 msgid ""
 "Added new alternate constructors :meth:`datetime.date.fromisocalendar` and :"
@@ -1210,10 +1192,8 @@ msgid ""
 "``isocalendar`` method. (Contributed by Paul Ganssle in :issue:`36004`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "functools"
-msgstr "functools"
+msgstr ""
 
 msgid ""
 ":func:`functools.lru_cache` can now be used as a straight decorator rather "
@@ -1324,10 +1304,8 @@ msgstr ""
 msgid "(Contributed by Ethan Smith in :issue:`32380`)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "gc"
-msgstr "gc"
+msgstr ""
 
 msgid ""
 ":func:`~gc.get_objects` can now receive an optional *generation* parameter "
@@ -1335,20 +1313,16 @@ msgid ""
 "in :issue:`36016`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "gettext"
-msgstr "gettext"
+msgstr ""
 
 msgid ""
 "Added :func:`~gettext.pgettext` and its variants. (Contributed by Franz "
 "Glasner, Éric Araujo, and Cheryl Sabella in :issue:`2504`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "gzip"
-msgstr "gzip"
+msgstr ""
 
 msgid ""
 "Added the *mtime* parameter to :func:`gzip.compress` for reproducible "
@@ -1419,10 +1393,8 @@ msgid ""
 "in :issue:`37765`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "inspect"
-msgstr "inspect"
+msgstr ""
 
 msgid ""
 "The :func:`inspect.getdoc` function can now find docstrings for "
@@ -1451,10 +1423,8 @@ msgstr ""
 msgid "(Contributed by Raymond Hettinger in :issue:`36326`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "io"
-msgstr "io"
+msgstr ""
 
 msgid ""
 "In development mode (:option:`-X` ``env``) and in :ref:`debug build <debug-"
@@ -1463,10 +1433,8 @@ msgid ""
 "release build. (Contributed by Victor Stinner in :issue:`18748`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "itertools"
-msgstr "itertools"
+msgstr ""
 
 msgid ""
 "The :func:`itertools.accumulate` function added an option *initial* keyword "
@@ -1497,10 +1465,8 @@ msgid ""
 "object. (Contributed by Weipeng Hong in :issue:`31553`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "logging"
-msgstr "logging"
+msgstr ""
 
 msgid ""
 "Added a *force* keyword argument to :func:`logging.basicConfig`. When set to "
@@ -1521,10 +1487,8 @@ msgid ""
 "Vinay Sajip in :issue:`33897`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "math"
-msgstr "math"
+msgstr ""
 
 msgid ""
 "Added new function :func:`math.dist` for computing Euclidean distance "
@@ -1614,10 +1578,8 @@ msgid ""
 "int-like. (Contributed by Pablo Galindo in :issue:`33083`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "mmap"
-msgstr "mmap"
+msgstr ""
 
 msgid ""
 "The :class:`mmap.mmap` class now has an :meth:`~mmap.mmap.madvise` method to "
@@ -1625,10 +1587,8 @@ msgid ""
 "issue:`32941`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "multiprocessing"
-msgstr "multiprocessing"
+msgstr ""
 
 msgid ""
 "Added new :mod:`multiprocessing.shared_memory` module. (Contributed by Davin "
@@ -1640,10 +1600,8 @@ msgid ""
 "Victor Stinner in :issue:`33725`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "os"
-msgstr "os"
+msgstr ""
 
 msgid ""
 "Added new function :func:`~os.add_dll_directory` on Windows for providing "
@@ -1713,10 +1671,8 @@ msgid ""
 "symlinks and directory junctions."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "pathlib"
-msgstr "pathlib"
+msgstr ""
 
 msgid ""
 ":mod:`pathlib.Path` methods that return a boolean result like :meth:"
@@ -1737,10 +1693,8 @@ msgid ""
 "existing ``symlink_to`` method."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "pickle"
-msgstr "pickle"
+msgstr ""
 
 msgid ""
 ":mod:`pickle` extensions subclassing the C-optimized :class:`~pickle."
@@ -1749,10 +1703,8 @@ msgid ""
 "(Contributed by Pierre Glaser and Olivier Grisel in :issue:`35900`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "plistlib"
-msgstr "plistlib"
+msgstr ""
 
 msgid ""
 "Added new :class:`plistlib.UID` and enabled support for reading and writing "
@@ -1760,10 +1712,8 @@ msgid ""
 "`26707`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "pprint"
-msgstr "pprint"
+msgstr ""
 
 msgid ""
 "The :mod:`pprint` module added a *sort_dicts* parameter to several "
@@ -1818,20 +1768,16 @@ msgid ""
 "Nanjekye in :issue:`22640`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "shlex"
-msgstr "shlex"
+msgstr ""
 
 msgid ""
 "The new :func:`shlex.join` function acts as the inverse of :func:`shlex."
 "split`. (Contributed by Bo Bayles in :issue:`32102`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "shutil"
-msgstr "shutil"
+msgstr ""
 
 msgid ""
 ":func:`shutil.copytree` now accepts a new ``dirs_exist_ok`` keyword "
@@ -1851,10 +1797,8 @@ msgid ""
 "issue:`37834`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "socket"
-msgstr "socket"
+msgstr ""
 
 msgid ""
 "Added :meth:`~socket.create_server` and :meth:`~socket.has_dualstack_ipv6` "
@@ -1869,10 +1813,8 @@ msgid ""
 "(Contributed by Zackery Spytz in :issue:`37007`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "ssl"
-msgstr "ssl"
+msgstr ""
 
 msgid ""
 "Added :attr:`~ssl.SSLContext.post_handshake_auth` to enable and :meth:`~ssl."
@@ -1880,10 +1822,8 @@ msgid ""
 "authentication. (Contributed by Christian Heimes in :issue:`34670`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "statistics"
-msgstr "statistics"
+msgstr ""
 
 msgid ""
 "Added :func:`statistics.fmean` as a faster, floating-point variant of :func:"
@@ -1971,10 +1911,8 @@ msgid ""
 "(:func:`gc.collect`). (Contributed by Victor Stinner in :issue:`36829`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "tarfile"
-msgstr "tarfile"
+msgstr ""
 
 msgid ""
 "The :mod:`tarfile` module now defaults to the modern pax (POSIX.1-2001) "
@@ -1984,10 +1922,8 @@ msgid ""
 "(Contributed by C.A.M. Gerlach in :issue:`36268`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "threading"
-msgstr "threading"
+msgstr ""
 
 msgid ""
 "Add a new :func:`threading.excepthook` function which handles uncaught :meth:"
@@ -2005,10 +1941,8 @@ msgid ""
 "by Jake Tesler in :issue:`36084`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "tokenize"
-msgstr "tokenize"
+msgstr ""
 
 msgid ""
 "The :mod:`tokenize` module now implicitly emits a ``NEWLINE`` token when "
@@ -2017,10 +1951,8 @@ msgid ""
 "Askar in :issue:`33899`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "tkinter"
-msgstr "tkinter"
+msgstr ""
 
 msgid ""
 "Added methods :meth:`!selection_from`, :meth:`!selection_present`, :meth:`!"
@@ -2039,20 +1971,16 @@ msgid ""
 "issue:`25451`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "time"
-msgstr "time"
+msgstr ""
 
 msgid ""
 "Added new clock :const:`~time.CLOCK_UPTIME_RAW` for macOS 10.12. "
 "(Contributed by Joannah Nanjekye in :issue:`35702`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "typing"
-msgstr "typing"
+msgstr ""
 
 msgid "The :mod:`typing` module incorporates several new features:"
 msgstr ""
@@ -2113,10 +2041,8 @@ msgstr ""
 msgid "New functions :func:`typing.get_origin` and :func:`typing.get_args`."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "unicodedata"
-msgstr "unicodedata"
+msgstr ""
 
 msgid ""
 "The :mod:`unicodedata` module has been upgraded to use the `Unicode 12.1.0 "
@@ -2130,10 +2056,8 @@ msgid ""
 "Greg Price in :issue:`32285` and :issue:`37966`)."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "unittest"
-msgstr "unittest"
+msgstr ""
 
 msgid ""
 "Added :class:`~unittest.mock.AsyncMock` to support an asynchronous version "
@@ -2204,10 +2128,8 @@ msgstr ""
 "if __name__ == \"__main__\":\n"
 "    unittest.main()"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "venv"
-msgstr "venv"
+msgstr ""
 
 msgid ""
 ":mod:`venv` now includes an ``Activate.ps1`` script on all platforms for "
@@ -2215,10 +2137,8 @@ msgid ""
 "Brett Cannon in :issue:`32718`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "weakref"
-msgstr "weakref"
+msgstr ""
 
 msgid ""
 "The proxy objects returned by :func:`weakref.proxy` now support the matrix "
@@ -2226,10 +2146,8 @@ msgid ""
 "operators. (Contributed by Mark Dickinson in :issue:`36669`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "xml"
-msgstr "xml"
+msgstr ""
 
 msgid ""
 "As mitigation against DTD and external entity retrieval, the :mod:`xml.dom."
@@ -2259,10 +2177,8 @@ msgid ""
 "by Stefan Behnel in :issue:`36676` and :issue:`36673`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "xmlrpc"
-msgstr "xmlrpc"
+msgstr ""
 
 msgid ""
 ":class:`xmlrpc.client.ServerProxy` now supports an optional *headers* "
@@ -2272,10 +2188,8 @@ msgid ""
 "Cédric Krier in :issue:`35153`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Optimizations"
-msgstr "Optimizations"
+msgstr ""
 
 msgid ""
 "The :mod:`subprocess` module can now use the :func:`os.posix_spawn` function "
@@ -2534,10 +2448,8 @@ msgid ""
 "`38234`.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Deprecated"
-msgstr "Deprecated"
+msgstr ""
 
 msgid ""
 "The distutils ``bdist_wininst`` command is now deprecated, use "

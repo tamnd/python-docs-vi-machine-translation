@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 04:23+0000\n"
+"PO-Revision-Date: 2026-08-18 04:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.3\n"
+"X-Generator: pydocvi 0.1.4\n"
 
 msgid "More Control Flow Tools"
 msgstr "Thêm các công cụ điều khiển luồng"
@@ -2258,10 +2258,8 @@ msgstr ""
 msgid "statement"
 msgstr "câu lệnh"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "for"
-msgstr "for"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -2278,10 +2276,8 @@ msgstr "chuỗi ký tự ellipsis"
 msgid "documentation strings"
 msgstr "chuỗi tài liệu"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "docstrings"
-msgstr "docstrings"
+msgstr ""
 
 # pydocvi: model=gpt-5-6-mini prompt=574466d7 glossary=1 batch=d132b9201f27 run=2026-08-17T16:43Z
 #, fuzzy
@@ -2303,15 +2299,11 @@ msgstr "trong các lời gọi hàm"
 msgid "**"
 msgstr "**"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "function"
-msgstr "function"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "annotations"
-msgstr "annotations"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -2328,12 +2320,8 @@ msgstr "chú thích hàm"
 msgid ": (colon)"
 msgstr ": (dấu hai chấm)"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "coding"
-msgstr "coding"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "style"
-msgstr "style"
+msgstr ""

@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-17 14:50+0000\n"
-"PO-Revision-Date: 2026-08-18 04:23+0000\n"
+"PO-Revision-Date: 2026-08-18 04:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.3\n"
+"X-Generator: pydocvi 0.1.4\n"
 
 msgid "Event loop"
 msgstr ""
@@ -30,10 +30,8 @@ msgid ""
 "base_events.py`"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Preface"
-msgstr "Preface"
+msgstr ""
 
 msgid ""
 "The event loop is the core of every asyncio application. Event loops run "
@@ -113,10 +111,8 @@ msgid ""
 "custom event loop policy <asyncio-policies>`."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Contents"
-msgstr "Contents"
+msgstr ""
 
 msgid "This documentation page contains the following sections:"
 msgstr ""
@@ -821,10 +817,8 @@ msgid ""
 "information about arguments to this method."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Availability"
-msgstr "Availability"
+msgstr ""
 
 msgid ""
 "Added the *ssl_handshake_timeout* parameter. The *path* parameter can now be "
@@ -1264,10 +1258,8 @@ msgid ""
 "*sendfile* syscall and *fallback* is ``False``."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "DNS"
-msgstr "DNS"
+msgstr ""
 
 msgid "Asynchronous version of :meth:`socket.getaddrinfo`."
 msgstr ""

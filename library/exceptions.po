@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 04:23+0000\n"
+"PO-Revision-Date: 2026-08-18 04:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.3\n"
+"X-Generator: pydocvi 0.1.4\n"
 
 msgid "Built-in Exceptions"
 msgstr ""
@@ -859,10 +859,8 @@ msgstr ""
 msgid ":pep:`3151` - Reworking the OS and IO exception hierarchy"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Warnings"
-msgstr "Warnings"
+msgstr ""
 
 msgid ""
 "The following exceptions are used as warning categories; see the :ref:"
@@ -1281,30 +1279,20 @@ msgstr ""
 msgid "statement"
 msgstr "câu lệnh"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "try"
-msgstr "try"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "except"
-msgstr "except"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "raise"
-msgstr "raise"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "exception"
-msgstr "exception"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "chaining"
-msgstr "chaining"
+msgstr ""
 
 msgid "__cause__ (exception attribute)"
 msgstr ""
@@ -1315,15 +1303,11 @@ msgstr ""
 msgid "__suppress_context__ (exception attribute)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "assert"
-msgstr "assert"
+msgstr ""
 
 msgid "module"
 msgstr "module"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "errno"
-msgstr "errno"
+msgstr ""

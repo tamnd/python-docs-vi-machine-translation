@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-17 14:50+0000\n"
-"PO-Revision-Date: 2026-08-18 04:23+0000\n"
+"PO-Revision-Date: 2026-08-18 04:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -20,15 +20,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.3\n"
+"X-Generator: pydocvi 0.1.4\n"
 
 msgid "Logging HOWTO"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Author"
-msgstr "Author"
+msgstr ""
 
 msgid "Vinay Sajip <vinay_sajip at red-dove dot com>"
 msgstr ""
@@ -122,10 +120,8 @@ msgid ""
 "below (in increasing order of severity):"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Level"
-msgstr "Level"
+msgstr ""
 
 msgid "When it's used"
 msgstr ""
@@ -578,10 +574,8 @@ msgid ""
 "the following diagram."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Loggers"
-msgstr "Loggers"
+msgstr ""
 
 msgid ""
 ":class:`Logger` objects have a threefold job.  First, they expose several "
@@ -685,10 +679,8 @@ msgid ""
 "attribute of a logger to ``False``.)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Handlers"
-msgstr "Handlers"
+msgstr ""
 
 msgid ""
 ":class:`~logging.Handler` objects are responsible for dispatching the "
@@ -741,10 +733,8 @@ msgid ""
 "behavior that child classes can use (or override)."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Formatters"
-msgstr "Formatters"
+msgstr ""
 
 msgid ""
 "Formatter objects configure the final order, structure, and contents of the "
@@ -1513,10 +1503,8 @@ msgid ""
 "the wire."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Optimization"
-msgstr "Optimization"
+msgstr ""
 
 msgid ""
 "Formatting of message arguments is deferred until it cannot be avoided. "

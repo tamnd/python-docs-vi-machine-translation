@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-17 14:50+0000\n"
-"PO-Revision-Date: 2026-08-18 04:23+0000\n"
+"PO-Revision-Date: 2026-08-18 04:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -20,15 +20,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.3\n"
+"X-Generator: pydocvi 0.1.4\n"
 
 msgid "Transports and Protocols"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Preface"
-msgstr "Preface"
+msgstr ""
 
 msgid ""
 "Transports and Protocols are used by the **low-level** event loop APIs such "
@@ -45,10 +43,8 @@ msgstr ""
 msgid "This documentation page covers both `Transports`_ and `Protocols`_."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Introduction"
-msgstr "Introduction"
+msgstr ""
 
 msgid ""
 "At the highest level, the transport is concerned with *how* bytes are "
@@ -81,10 +77,8 @@ msgid ""
 "protocol)``."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Contents"
-msgstr "Contents"
+msgstr ""
 
 msgid "This documentation page contains the following sections:"
 msgstr ""
@@ -106,10 +100,8 @@ msgid ""
 "and low-level event loop APIs."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Transports"
-msgstr "Transports"
+msgstr ""
 
 msgid "**Source code:** :source:`Lib/asyncio/transports.py`"
 msgstr ""
@@ -512,10 +504,8 @@ msgid ""
 "*stdout*, and *stderr* pipes."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Protocols"
-msgstr "Protocols"
+msgstr ""
 
 msgid "**Source code:** :source:`Lib/asyncio/protocols.py`"
 msgstr ""

@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 04:23+0000\n"
+"PO-Revision-Date: 2026-08-18 04:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.3\n"
+"X-Generator: pydocvi 0.1.4\n"
 
 msgid "Coroutines and tasks"
 msgstr ""
@@ -30,10 +30,8 @@ msgid ""
 "Tasks."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Coroutines"
-msgstr "Coroutines"
+msgstr ""
 
 msgid "**Source code:** :source:`Lib/asyncio/coroutines.py`"
 msgstr ""
@@ -244,10 +242,8 @@ msgstr ""
 msgid ":class:`asyncio.TaskGroup`."
 msgstr ":class:`asyncio.TaskGroup`."
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Awaitables"
-msgstr "Awaitables"
+msgstr ""
 
 msgid ""
 "We say that an object is an **awaitable** object if it can be used in an :"
@@ -312,10 +308,8 @@ msgid ""
 "a *coroutine object*: an object returned by calling a *coroutine function*."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Tasks"
-msgstr "Tasks"
+msgstr ""
 
 msgid "*Tasks* are used to schedule coroutines *concurrently*."
 msgstr ""
@@ -360,10 +354,8 @@ msgstr ""
 "\n"
 "asyncio.run(main())"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Futures"
-msgstr "Futures"
+msgstr ""
 
 msgid ""
 "A :class:`Future` is a special **low-level** awaitable object that "
@@ -691,10 +683,8 @@ msgid ""
 "correct preservation of cancellation counts."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Sleeping"
-msgstr "Sleeping"
+msgstr ""
 
 msgid "Block for *delay* seconds."
 msgstr ""
@@ -1024,10 +1014,8 @@ msgid ""
 "is no running event loop."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Timeouts"
-msgstr "Timeouts"
+msgstr ""
 
 msgid ""
 "Return an :ref:`asynchronous context manager <async-context-managers>` that "
@@ -1311,15 +1299,11 @@ msgid ""
 "the following constants:"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Constant"
-msgstr "Constant"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Description"
-msgstr "Description"
+msgstr ""
 
 msgid "The function will return when any future finishes or is cancelled."
 msgstr ""
@@ -1702,10 +1686,8 @@ msgid ""
 "be passed explicitly."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Introspection"
-msgstr "Introspection"
+msgstr ""
 
 msgid ""
 "Return the currently running :class:`Task` instance, or ``None`` if no task "

@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 04:23+0000\n"
+"PO-Revision-Date: 2026-08-18 04:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.3\n"
+"X-Generator: pydocvi 0.1.4\n"
 
 msgid ":mod:`!struct` --- Interpret bytes as packed binary data"
 msgstr ""
@@ -150,40 +150,30 @@ msgstr "Ký tự"
 msgid "Byte order"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Size"
-msgstr "Size"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Alignment"
-msgstr "Alignment"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
 msgid "``@``"
 msgstr "``@``"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "native"
-msgstr "native"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
 msgid "``=``"
 msgstr "``=``"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "standard"
-msgstr "standard"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "none"
-msgstr "none"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -289,10 +279,8 @@ msgid ""
 "platform-dependent."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Format"
-msgstr "Format"
+msgstr ""
 
 msgid "C Type"
 msgstr ""
@@ -303,10 +291,8 @@ msgstr ""
 msgid "Standard size"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Notes"
-msgstr "Notes"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -352,10 +338,8 @@ msgstr "``b``"
 msgid ":c:expr:`signed char`"
 msgstr ":c:expr:`signed char`"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "int"
-msgstr "int"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -382,10 +366,8 @@ msgstr "``?``"
 msgid ":c:expr:`_Bool`"
 msgstr ":c:expr:`_Bool`"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "bool"
-msgstr "bool"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -522,10 +504,8 @@ msgstr "``e``"
 msgid ":c:expr:`_Float16`"
 msgstr ":c:expr:`_Float16`"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "float"
-msgstr "float"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -567,10 +547,8 @@ msgstr "``F``"
 msgid ":c:expr:`float complex`"
 msgstr ":c:expr:`float complex`"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "complex"
-msgstr "complex"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -612,10 +590,8 @@ msgstr "``s``"
 msgid ":c:expr:`char[]`"
 msgstr ":c:expr:`char[]`"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "bytes"
-msgstr "bytes"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -939,10 +915,8 @@ msgstr ""
 msgid "Python object serialization."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Applications"
-msgstr "Applications"
+msgstr ""
 
 msgid ""
 "Two main applications for the :mod:`!struct` module exist, data interchange "
@@ -1080,10 +1054,8 @@ msgstr ""
 ">>> pack('@llh0l', 1, 2, 3) == pack('<qqh6x', 1, 2, 3)\n"
 "False"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Classes"
-msgstr "Classes"
+msgstr ""
 
 msgid "The :mod:`!struct` module also defines the following type:"
 msgstr ""
@@ -1142,30 +1114,22 @@ msgstr ""
 msgid "The *repr()* of structs has changed.  It is now:"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
+# pydocvi: passthrough=noop
 #, fuzzy
 msgid "C"
 msgstr "C"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "structures"
-msgstr "structures"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "packing"
-msgstr "packing"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "binary"
-msgstr "binary"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "data"
-msgstr "data"
+msgstr ""
 
 msgid "@ (at)"
 msgstr ""

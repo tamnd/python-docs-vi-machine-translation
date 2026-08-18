@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 04:23+0000\n"
+"PO-Revision-Date: 2026-08-18 04:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.3\n"
+"X-Generator: pydocvi 0.1.4\n"
 
 msgid ":mod:`!inspect` --- Inspect live objects"
 msgstr ""
@@ -55,25 +55,17 @@ msgid ""
 "attributes):"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Type"
-msgstr "Type"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Attribute"
-msgstr "Attribute"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Description"
-msgstr "Description"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "class"
-msgstr "class"
+msgstr ""
 
 # pydocvi: passthrough=version_marker
 #, fuzzy
@@ -117,10 +109,8 @@ msgid ""
 "class"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "method"
-msgstr "method"
+msgstr ""
 
 msgid "name with which this method was defined"
 msgstr ""
@@ -144,10 +134,8 @@ msgstr ""
 msgid "name of module in which this method was defined"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "function"
-msgstr "function"
+msgstr ""
 
 msgid "name with which this function was defined"
 msgstr ""
@@ -210,10 +198,8 @@ msgstr ""
 msgid "name of module in which this function was defined"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "traceback"
-msgstr "traceback"
+msgstr ""
 
 # pydocvi: passthrough=version_marker
 #, fuzzy
@@ -247,10 +233,8 @@ msgstr "tb_next"
 msgid "next inner traceback object (called by this level)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "frame"
-msgstr "frame"
+msgstr ""
 
 # pydocvi: passthrough=version_marker
 #, fuzzy
@@ -345,10 +329,8 @@ msgstr "clear()"
 msgid "used to clear all references to local variables"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "code"
-msgstr "code"
+msgstr ""
 
 # pydocvi: passthrough=version_marker
 #, fuzzy
@@ -506,15 +488,11 @@ msgstr "replace()"
 msgid "returns a copy of the code object with new values"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "generator"
-msgstr "generator"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "name"
-msgstr "name"
+msgstr ""
 
 # pydocvi: passthrough=version_marker
 #, fuzzy
@@ -601,10 +579,8 @@ msgid ""
 "``AGEN_SUSPENDED``, or ``AGEN_CLOSED``"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "coroutine"
-msgstr "coroutine"
+msgstr ""
 
 # pydocvi: passthrough=version_marker
 #, fuzzy
@@ -655,10 +631,8 @@ msgid ""
 "``CORO_SUSPENDED``, or ``CORO_CLOSED``"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "builtin"
-msgstr "builtin"
+msgstr ""
 
 msgid "original name of this function or method"
 msgstr ""
@@ -1359,10 +1333,8 @@ msgid ""
 "KEYWORD_ONLY``), and support comparison and ordering, in the following order:"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Name"
-msgstr "Name"
+msgstr ""
 
 msgid "Meaning"
 msgstr "Ý nghĩa"

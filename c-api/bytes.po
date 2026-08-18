@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 04:23+0000\n"
+"PO-Revision-Date: 2026-08-18 04:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.3\n"
+"X-Generator: pydocvi 0.1.4\n"
 
 msgid "Bytes Objects"
 msgstr ""
@@ -77,15 +77,11 @@ msgstr ""
 msgid "Format Characters"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Type"
-msgstr "Type"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Comment"
-msgstr "Comment"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -105,10 +101,8 @@ msgstr ""
 msgid "``%c``"
 msgstr "``%c``"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "int"
-msgstr "int"
+msgstr ""
 
 msgid "A single byte, represented as a C int."
 msgstr ""
@@ -137,10 +131,8 @@ msgstr ""
 msgid "``%ld``"
 msgstr "``%ld``"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "long"
-msgstr "long"
+msgstr ""
 
 msgid "Equivalent to ``printf(\"%ld\")``. [1]_"
 msgstr ""
@@ -392,10 +384,8 @@ msgstr ""
 msgid "*unicode* and *recode_encoding* are now unused."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "PyBytesWriter"
-msgstr "PyBytesWriter"
+msgstr ""
 
 msgid ""
 "The :c:type:`PyBytesWriter` API can be used to create a Python :class:"
@@ -504,10 +494,8 @@ msgid ""
 "written size to the writer size."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Getters"
-msgstr "Getters"
+msgstr ""
 
 msgid "Get the writer size."
 msgstr ""
@@ -574,7 +562,5 @@ msgstr ""
 msgid "object"
 msgstr "object"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "bytes"
-msgstr "bytes"
+msgstr ""

@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 04:23+0000\n"
+"PO-Revision-Date: 2026-08-18 04:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.3\n"
+"X-Generator: pydocvi 0.1.4\n"
 
 msgid ":mod:`!pprint` --- Data pretty printer"
 msgstr ""
@@ -49,10 +49,8 @@ msgstr ""
 msgid "Added support for pretty-printing :class:`dataclasses.dataclass`."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Functions"
-msgstr "Functions"
+msgstr ""
 
 msgid ""
 "Prints the formatted representation of *object*, followed by a newline. This "
@@ -224,10 +222,8 @@ msgid ""
 "of the current call."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Example"
-msgstr "Example"
+msgstr ""
 
 msgid ""
 "To demonstrate several uses of the :func:`~pprint.pp` function and its "
@@ -571,17 +567,13 @@ msgstr ""
 msgid "built-in function"
 msgstr "hàm tích hợp sẵn"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "eval"
-msgstr "eval"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
 msgid "..."
 msgstr "..."
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "placeholder"
-msgstr "placeholder"
+msgstr ""

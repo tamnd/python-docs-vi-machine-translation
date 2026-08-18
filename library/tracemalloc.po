@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-21 15:07+0000\n"
-"PO-Revision-Date: 2026-08-18 04:23+0000\n"
+"PO-Revision-Date: 2026-08-18 04:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.3\n"
+"X-Generator: pydocvi 0.1.4\n"
 
 msgid ":mod:`!tracemalloc` --- Trace memory allocations"
 msgstr ""
@@ -536,15 +536,11 @@ msgid ""
 "writing ``sum(range(...))``)."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "API"
-msgstr "API"
+msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Functions"
-msgstr "Functions"
+msgstr ""
 
 msgid "Clear traces of memory blocks allocated by Python."
 msgstr ""
@@ -684,10 +680,8 @@ msgstr ""
 msgid "See also the :func:`get_object_traceback` function."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "DomainFilter"
-msgstr "DomainFilter"
+msgstr ""
 
 msgid "Filter traces of memory blocks by their address space (domain)."
 msgstr ""
@@ -705,10 +699,8 @@ msgstr ""
 msgid "Address space of a memory block (``int``). Read-only property."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Filter"
-msgstr "Filter"
+msgstr ""
 
 msgid "Filter on traces of memory blocks."
 msgstr ""
@@ -779,10 +771,8 @@ msgid ""
 "attribute."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Frame"
-msgstr "Frame"
+msgstr ""
 
 msgid "Frame of a traceback."
 msgstr ""
@@ -796,10 +786,8 @@ msgstr ""
 msgid "Line number (``int``)."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Snapshot"
-msgstr "Snapshot"
+msgstr ""
 
 msgid "Snapshot of traces of memory blocks allocated by Python."
 msgstr ""
@@ -862,20 +850,16 @@ msgstr ""
 msgid "key_type"
 msgstr "key_type"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "description"
-msgstr "description"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
 msgid "``'filename'``"
 msgstr "``'filename'``"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "filename"
-msgstr "filename"
+msgstr ""
 
 # pydocvi: passthrough=noop
 #, fuzzy
@@ -890,10 +874,8 @@ msgstr ""
 msgid "``'traceback'``"
 msgstr "``'traceback'``"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "traceback"
-msgstr "traceback"
+msgstr ""
 
 msgid ""
 "If *cumulative* is ``True``, cumulate size and count of memory blocks of all "
@@ -922,10 +904,8 @@ msgid ""
 "method to get a sorted list of statistics."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Statistic"
-msgstr "Statistic"
+msgstr ""
 
 msgid "Statistic on memory allocations."
 msgstr ""
@@ -947,10 +927,8 @@ msgid ""
 "Traceback where the memory block was allocated, :class:`Traceback` instance."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "StatisticDiff"
-msgstr "StatisticDiff"
+msgstr ""
 
 msgid ""
 "Statistic difference on memory allocations between an old and a new :class:"
@@ -989,10 +967,8 @@ msgid ""
 "instance."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Trace"
-msgstr "Trace"
+msgstr ""
 
 msgid "Trace of a memory block."
 msgstr ""
@@ -1005,10 +981,8 @@ msgstr ""
 msgid "Size of the memory block in bytes (``int``)."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Traceback"
-msgstr "Traceback"
+msgstr ""
 
 msgid ""
 "Sequence of :class:`Frame` instances sorted from the oldest frame to the "

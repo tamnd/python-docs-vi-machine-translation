@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 18:34+0000\n"
-"PO-Revision-Date: 2026-08-18 04:23+0000\n"
+"PO-Revision-Date: 2026-08-18 04:47+0000\n"
 "Last-Translator: pydocvi (machine translation, unreviewed)\n"
 "Language-Team: Vietnamese <tamnd@liteio.dev>\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: pydocvi 0.1.3\n"
+"X-Generator: pydocvi 0.1.4\n"
 
 msgid ":mod:`!doctest` --- Test interactive Python examples"
 msgstr ""
@@ -1098,10 +1098,8 @@ msgstr ""
 msgid "MY_FLAG = register_optionflag('MY_FLAG')"
 msgstr "MY_FLAG = register_optionflag('MY_FLAG')"
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Directives"
-msgstr "Directives"
+msgstr ""
 
 msgid ""
 "Doctest directives may be used to modify the :ref:`option flags <doctest-"
@@ -1206,10 +1204,8 @@ msgid ""
 "be useful."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Warnings"
-msgstr "Warnings"
+msgstr ""
 
 msgid ""
 ":mod:`!doctest` is serious about requiring exact matches in expected "
@@ -2239,10 +2235,8 @@ msgid ""
 "the set of option flags used to compare *want* and *got*."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Debugging"
-msgstr "Debugging"
+msgstr ""
 
 msgid "Doctest provides several mechanisms for debugging doctest examples:"
 msgstr ""
@@ -2545,10 +2539,8 @@ msgid ""
 "by :func:`sys.exc_info`."
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "Soapbox"
-msgstr "Soapbox"
+msgstr ""
 
 msgid ""
 "As mentioned in the introduction, :mod:`!doctest` has grown to have three "
@@ -2690,10 +2682,8 @@ msgstr "..."
 msgid "^ (caret)"
 msgstr ""
 
-# pydocvi: passthrough=version_marker
-#, fuzzy
 msgid "marker"
-msgstr "marker"
+msgstr ""
 
 msgid "<BLANKLINE>"
 msgstr ""
